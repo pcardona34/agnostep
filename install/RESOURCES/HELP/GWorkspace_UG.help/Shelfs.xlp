@@ -1,0 +1,42 @@
+<section name="Introduction">
+
+All kinds of objects can be stored on the Shelf (applications, folders or files). Better explained is to say the links can be created on a Shelf. The actual object stays where it is, but a symbolic link is created so you can find it easier.
+
+<br><br>In the Browser mode the main Shelf is the one in your File Viewer window. Since the space on that one is limited there are two other Shelfs available to you. The 'TabbedShelf' and the 'Fiend'.
+
+</section>
+
+<section name="The Fiend">
+
+The Fiend is another way of storing applications, files or folders. From the 'Tools &gt;  Fiend' menu you can select the 'Show Fiend' command. Which gives you the fiend, which is probably empty on your system (and it is within PiSiN Desktop):
+
+<br><br>With the green arrows you can switch from one 'shelf' to another and by dragging and dropping you can add icons to a certain 'shelf', like I did for the development tools.
+<br><br>By giving each layer another name you can create distinguishable shelfs e.g. related to type of application, or by project.
+
+<section name="The Fiend and its detached menu">
+<legendfig src="Fiend.tiff">
+	<legend x="10" y="20">Named layer: 'Util.'</legend>
+	<legend x="160" y="30">No Fiend on the desktop</legend>
+	<legend x="160" y="80">Add a new storage place</legend>
+</legendfig>
+</section>
+
+</section>
+
+<section name="The TabbedShelf">
+
+The Tabbed Shelf is comparable with the Shelf. One can stick applications, documents and folders for future use on the Tabbed Shelf. To activate the Shelf select from the 'Tools' menu the 'Tabbed Shelf' entry. This will activate the Shelf at the bottom of your screen.
+
+<section name="The Tabbed Shelf within PiSiN">
+<legendfig src="TabbedShelf.tiff">
+</legendfig>
+</section>
+
+<br>
+<information>
+Within PiSiN Desktop, the Tabbed Shelf is preconfigured with several tabs: 'Utilities', 'Devel', 'Games'. It is auto-hidding when you move the mouse pointer to the top of the screen. And it shows again if you move the mouse pointer to the bottom of the screen. &nbsp;&nbsp;&nbsp;&nbsp;
+</information>
+
+<br><br>Double clicking an folder object in the TabbedShelf opens a new viewer with the folder. If you click the object with the CTRL pressed opens the selection in the current viewer.
+
+</section>

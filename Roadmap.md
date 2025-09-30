@@ -1,6 +1,6 @@
 # The way to do it
 Porting PiSiN Desktop to an agnostic installation process means to better clarify and dispatch the steps:
-1) Setting the tools and the environment to build. Make them agnostic: maybe in something like a Docker container?
+1) Setting the tools and the environment to build. Make them agnostic: no test about arch nor model.
 2) Installing the Window Manager;
 3) Installing the Core GNUstep;
 4) Installing the Frameworks;

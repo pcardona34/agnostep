@@ -1,0 +1,13 @@
+{
+  NSExecutable = "Writer";
+  NSRole = "Application";
+  NSIcon = "Focuswriter.tiff";
+  CFBundleIdentifier = "org.gottcode.Focuswriter";
+	XAppWrapper = YES;
+  NSTypes = (
+    {
+      NSUnixExtensions = ( "odt" );
+      NSIcon = "File_odt.tiff";
+    }
+  );
+}

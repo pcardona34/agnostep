@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>NSWindow Frame mainWindow</key>
+    <string>441 340 593 475 0 0  1920 1080 </string>
+    <key>NSWindow Frame preferencesPanel</key>
+    <string>693 761 377 262 0 0  1920 1080 </string>
+    <key>appIconShowDate</key>
+    <string>0</string>
+    <key>appIconShowTime</key>
+    <string>0</string>
+    <key>defaultAlarmBackend</key>
+    <string>Log backend</string>
+    <key>defaultStore</key>
+    <string>Personal Agenda</string>
+</dict>
+</plist>

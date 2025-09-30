@@ -1,0 +1,25 @@
+{
+    ApplicationDescription = "A graphical diff utility";
+    ApplicationIcon = "EasyDiff.png";
+    ApplicationName = EasyDiff;
+    ApplicationRelease = "0.4.1";
+    Authors = (
+	"GNUstep Team",
+	"Pierre-Yves Rivaille",
+	"Adam Fedor",
+	"Riccardo Mottola",
+	"Wolfgang Lux"
+    );
+    Copyright = "2002-2016";
+    CopyrightDescription = "Released under GPL 2.0";
+    FullVersionID = "0.4.1";
+    GSMainMarkupFile = "";
+    NOTE = "Automatically generated!";
+    NSExecutable = EasyDiff;
+    NSIcon = "EasyDiff.png";
+    CFBundleIdentifier = "org.gnustep.EasyDiff";
+    NSMainNibFile = "main.gorm";
+    NSMainStoryboardFile = "";
+    NSPrincipalClass = NSApplication;
+    NSRole = Application;
+}

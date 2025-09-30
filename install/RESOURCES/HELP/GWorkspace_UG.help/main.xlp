@@ -1,0 +1,44 @@
+<document>
+
+<header>
+<title>GWorkspace User Guide</title>
+</header>
+
+<plain name="Cover">
+
+		<center>
+	    	<img src="banniere_GW_UG.png">
+		</center>
+
+<left>	
+	    <br><br>
+		<information>
+	    <br />GWorkspace is a Workspace Manager for GNUstep.
+		<br />It is a reimplementation of the NeXT workspace manager with some added features as spatial viewing, an advanced database based search system, etc. Inspired by OpenStep's Workspace it adds a Fiend and a TabbedShelf as a multipurpose launcher and container; while inspired by Mac's Finder it offers a Dock.&nbsp;<br />&nbsp;
+	    </information>
+
+	    <caution>
+	    <br>&copy; GNUstep project and &copy; March 29, 2006 Dennis Leeuw for the original GWorkspace User Guide
+		<br>&copy; 2025 Patrick Cardona for this revisited User Guide for PiSiN Desktop. This project is a Free Software provided under the GNU Public Licence (GPL).<br>&nbsp;<br>&nbsp;
+	    </caution>
+
+	    <note>
+            <br>
+	    Site: original User Guide 	<url>http://gnustep.made-it.com/Guides/GWorkspace.html</url>&nbsp;&nbsp;
+            <br>
+	    Site: PiSiN Project 			<br><url>https://github.com/pcardona34/pi-step-initiative</url>&nbsp;&nbsp;
+	    <br>&nbsp;<br>&nbsp;
+	    </note>
+</left>
+</plain>
+
+<chapter src="Legal.xlp" name="Permission"></chapter>
+<chapter src="Introduction.xlp" name="Introduction"></chapter>
+<chapter src="Workspace.xlp" name="Chapter 1. The Workspace"></chapter>
+<chapter src="FileSystem.xlp" name="Chapter 2. Viewing the Filesystem"></chapter>
+<chapter src="Managing.xlp" name="Chapter 3. Managing Files and Folders"></chapter>
+<chapter src="Searching.xlp" name="Chapter 4. Searching for Files and Folders"></chapter>
+<chapter src="Applications.xlp" name="Chapter 5. Managing Applications"></chapter>
+<chapter src="Shelfs.xlp" name="Chapter 6. Making life easier with Shelfs"></chapter>
+
+</document>

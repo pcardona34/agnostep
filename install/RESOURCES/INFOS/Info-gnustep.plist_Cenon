@@ -1,0 +1,90 @@
+{
+    ApplicationDescription = "Cenon Vector Graphics Editor";
+    ApplicationName = Cenon;
+    Copyright = "Copyright (C) 1993 - 2013 by vhf-interservice GmbH, Georg Fleischmann";
+    GSMainMarkupFile = "";
+    NOTE = "Automatically generated, do not edit!";
+    NSExecutable = Cenon;
+    NSIcon = "Cenon.tiff";
+    CFBundleIdentifier = "org.vhf-interservice.Cenon";
+    NSMainNibFile = Main;
+    NSMainStoryboardFile = "";
+    NSPrincipalClass = App;
+    NSRole = Application;
+    NSTypes = (
+	{
+	    NSDOSExtensions = (
+		cen
+	    );
+	    NSHumanReadableName = "Cenon Project";
+	    NSIcon = "typeCenon.tiff";
+	    NSName = Cenon;
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		cenon,
+		cen
+	    );
+	},
+	{
+	    NSIcon = "typeDXF.tiff";
+	    NSName = NSTIFFPboardType;
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		dxf
+	    );
+	},
+	{
+	    NSIcon = "typeHPGL.tiff";
+	    NSName = HPGL;
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		hpgl,
+		plt,
+		hgl
+	    );
+	},
+	{
+	    NSIcon = "typeEPS.tiff";
+	    NSName = NSPostScriptPboardType;
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		eps,
+		ps
+	    );
+	},
+	{
+	    NSIcon = "typeDrill.tiff";
+	    NSName = DIN;
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		din,
+		drl
+	    );
+	},
+	{
+	    NSIcon = "typeGerber.tiff";
+	    NSName = Gerber;
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		gerber,
+		ger
+	    );
+	},
+	{
+	    NSName = SVG;
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		svg
+	    );
+	},
+	{
+	    NSIcon = "typeAI.tiff";
+	    NSName = "Adobe Illustrator";
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		ai
+	    );
+	}
+    );
+    NSVersion = "4.0.2";
+}

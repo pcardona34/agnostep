@@ -1,0 +1,126 @@
+# A G N o S t e p
+
+## How to install (from SOURCES)
+
+### Base OS and Locale
+
+1) Install Minimal Debian: you can download the minimal installation image from the Debian website and create a bootable USB drive. Then, boot from the USB and follow the installation prompts to set up your system.
+See: https://www.debian.org/distrib/netinst
+
+THE FOLLOWING MUST BE UPDATED AFTER FIRT TRY...
+
+********************************************************
+
+	sudo apt update && sudo apt upgrade
+
+You should get the latest Bookworm release: 12.12 as shown by:
+	
+	cat /etc/debian_version
+
+4) Enable and install your desired locale:
+
+- Uncomment your locale in '/etc/locale.gen':
+
+	sudo nano /etc/locale.gen
+
+- Generate your locale:
+
+	sudo locale-gen
+
+- Set your locale (adapt the command below to your locale):
+
+	sudo localectl set-locale fr_FR.UTF-8
+
+- Log out and Log in again to apply the new locale in your context.
+- Verify the locale is correctly set:
+
+	locale
+
+- **Nota**: until now, installation scripts are only in English. i18n of PiSin depends of the state of the respective translations of the apps in the GNUstep project. For the Conky Panel, French and English are available now.
+
+### Prerequisites
+
+- Install 'git':
+
+	sudo apt install git
+
+- Add a 'SOURCES' directory to build all is needed:
+
+	mkdir SOURCES && cd SOURCES
+
+- Clone this repository:
+
+	git clone https://github.com/pcardona34/pi-step-initiative.git
+	cd pi-step-initiative/pisin
+
+
+### Start All-in-One install script
+
+This script should work on well tested Pi's SBC: Models 3B, 400, 4B.
+
+	./enjoy.sh
+
+You can see progress and info messages while PiSiN is installing.
+After several minutes, you should be able to start the PiSiN Desktop with 'startx'. 
+
+
+If all is ok, logout and install the Display Manager (lightdm):
+
+	./7_install_DM.sh
+
+Now, after every login, the Desktop will be launched.
+
+TIP: If you need to use CLI again, use TTY2 to login to the console: CTRL-ALT-F2.
+	
+---
+
+If the above 'enjoy.sh' script failed for some reason, try the following manual steps to note the issue concerned:
+
+### Prepare the installation (mainly build tools on debian dependencies)
+	
+(i) Tip: the point './' below means to search and execute the script in the current directory:
+
+	./1_prep.sh
+
+### Install Window Maker
+
+	./2_install_wmaker.sh
+
+### Install the Core GNUstep
+
+	./3_install_gnustep.sh	
+	
+### Install the Frameworks
+
+	./4_install_frameworks.sh
+
+### Start the main installation script with the 'apps' option.
+
+	./5_install_AGNOSTEP.sh apps
+
+If all is ok, you can run the same command with each option: 'devel', 'extra' and 'games'.
+
+### Set the current user's environment and PISI theme
+
+	./6_user_settings.sh
+
+IMPORTANT! Step 6 must be run after every new step 5.
+	
+### Start the X server and PiSiN Desktop:
+	
+	cd && startx
+
+## CAUTION!
+
+/!\ Do not install any GNUstep deb package: this would conflict with the GNUstep built by AGNoStep and break your Desktop.
+
+### Notes
+
+- If you want to regenerate your default user's setting, log out the Desktop and do that:
+	cd && rm -fR GNUstep
+	cd SOURCES/agnostep/install
+	./6_user_settings.sh
+
+### If all is right, logout and install the Display Manager:
+
+	./7_install_DM.sh

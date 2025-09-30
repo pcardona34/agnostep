@@ -1,0 +1,6 @@
+#!/bin/sh
+
+APP=rpinters
+
+sudo $APP &
+

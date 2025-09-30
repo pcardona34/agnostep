@@ -1,0 +1,19 @@
+{
+    ApplicationDescription = "A Little GNUstep GUI Demo";
+    ApplicationName = Calculator;
+    ApplicationRelease = "Calculator 1.1";
+    Authors = (
+	"Nicola Pero <n.pero@mi.flashnet.it>"
+    );
+    Copyright = "Copyright (C) 1999, 2000 Free Software Foundation, Inc.";
+    CopyrightDescription = "Released under the GNU General Public License 2.0";
+    FullVersionID = "1.1.0 Jul 2000";
+    GSMainMarkupFile = "";
+    NOTE = "Automatically generated, do not edit!";
+    NSExecutable = Calculator;
+    NSIcon = "Calculator.app.tiff";
+    CFBundleIdentifier = "org.gnustep.Calculator";
+    NSMainNibFile = "";
+    NSMainStoryboardFile = "";
+    NSPrincipalClass = NSApplication;
+}

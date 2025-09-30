@@ -1,0 +1,210 @@
+
+<section name="Introduction">
+
+One of the most important aspects of working with GWorkspace is the handling of files and folders. Maintaining an organized working environment makes your life much easier. <br>Planning where you archive certain data can help you tremendously when you need to find that certain document several years from now.
+
+<br><br>This chapter will not teach you how to organize you files, that is more a matter of personal taste, but it will teach you how to create files and folders, delete and move them and how to maintain some basic security measures.
+
+</section>
+
+<section  name="Creating Folders">
+
+<br>To create a new folder go to the GWorkspace menu and click the 'File' item. This will open a submenu. Click 'New Folder'. The new folder will appear in the FileViewer icon path. Double click on the 'NewFolder' name and type the name you want the folder to have. For now we call it 'Demo'.
+
+<section name="New Folder Command">
+<legendfig src="menu_newFolder.jpg">
+	<legend x="200" y="70">Create a new folder</legend>
+</legendfig>
+</section>
+
+<br><br>With <b>ALT-n</b> you can create new folders without using the menu, which is much faster when you have to create more then one folder.
+
+<br>Create two more folders called 'Test' and 'Backup' within this newly created folder.
+
+</section>
+
+
+
+<section  name="Setting the permissions">
+
+We do not want everybody to have access to our files. So lets make sure that we are the only one who has access rights to this folder.
+
+<br><br>Make sure the 'Demo' folder we just created is the one highlighted in the Icon Path. Then select the 'Attributes' from the 'Tools &gt; Inspectors' submenu:
+
+<section name="Attributes">
+<legendfig src="attributes.jpg">
+	<legend x="260" y="40">Select Attributes</legend>
+	<legend x="430" y="320">Date and Time when the folder was last changed</legend>
+	<legend x="420" y="410">Toggle the access to 'x' for Other.</legend>
+	<legend x="420" y="470">Validate the new attributes.</legend>
+</legendfig>
+</section>
+
+
+<br><br>On Unix-like systems the rights someone has are are devided into the owner of the file, a group of users and everybody else (Other). The Owner does not have to belong to the group, but most of the times does.
+
+<br><br>For each of these you can set read, write and execute permissions. The execute permission gives someone the right to start e.g. an application or a script Bash. But also folders have execute permissions. To have access to a folder one needs the execute permission and the read permission to view the content of the folder and read and write to also be able to create files or other folders in a folder.
+
+<br><br>In the shown example the user 'patrick', belongs to the group 'patrick' and is the only one who can access the folder. People belonging to the group 'patrick' can read the contents of the folder, but not write to it. While the owner can read and write to the folder.
+
+</section>
+
+<section  name="Opening a new viewer">
+
+Hold down the <b>CTRL-key</b>&nbsp; and double click on the 'Demo' folder, to open a new viewer with your 'Demo' folder as the root.
+
+<section name="A new Viewer">
+<legendfig src="Demo.tiff">
+</legendfig>
+</section>
+
+<br><br>Now you have two viewers one with the entire filesystem, and one starting from the folder you double clicked.
+
+</section>
+
+<section  name="Files and the Inspector">
+
+Go back to the File menu command and select 'New File'. Rename it with the same procedure as above (use 'Test.txt' as its name).
+
+<section name="File Attributes">
+<legendfig src="Test_File.jpg">
+</legendfig>
+</section>
+
+<br><br>In the GWorkspace menu select the 'Tools' item and go to the 'Inspectors'. Select 'attributes'. A panel will popup with the file attributes. Check that the rights on the file are the way you want them.
+
+<br><br>Select the Tools section from the Inspector.
+
+<section name="Tools Inspector">
+<legendfig src="Tools_Inspector.tiff">
+</legendfig>
+</section>
+
+<br><br>The two available applications on my system to open this kind of file are TextEdit and Ink. TextEdit is the default choice.
+
+<br><br>Because we are the one that created the file through GWorkspace it is completely empty. The only way the computer guesses the type of application is because we gave it a '.txt' extension (text file).
+
+<br><br>To prove that it is an empty file select 'Contents' from the 'Inspectors' list.
+
+<br><br>Clicking 'Edit' in the Inspector opens TextEdit with our file. So add the following line to the file:<br>
+
+<note>
+The quick brown fox jumps over the lazy dog.&nbsp;&nbsp;&nbsp;&nbsp;
+</note>
+
+<br><br>Save the document and see the 'Contents' view in the 'Inspector' change.
+
+</section>
+
+
+<section  name="Moving, Copying or Linking files">
+
+When you select a file from the Icon Path and start to move it around, you will notice that the pointer changes. It is changed to the 'NoAccess' pointer. Which means that if you release your mouse button, nothing happens. Every area where you release the file, while the systems says you can not drop a file, means the system will not do anything and everything will stay as it was.
+
+<br><br>If however the pointer changes into a green arrow it means you can perform an operation, which will change your system. The green arrow means that the file is moved from its current position to the position the pointer is pointing to.
+
+<br><br>Before releasing your mouse button, you can press the right <b>ALT-key</b>&nbsp; and you again see a change in the pointer. If you release the mouse button now, the file will be copied. So an identical file will be created in the folder you are pointing to and the original will stay where it was.<br>
+
+<caution>
+<br>The above Copy method with the mouse and the <b>ALT</b>&nbsp; modifier key does not produce the desired copy. Due to the Underlying Window Manager, the <b>ALT</b>&nbsp; key is misinterpreted and the result is a 'NoAccess' pointer: so nothing happens. See alternative methods below.&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;
+</caution>
+
+<br><br>And the last option you have is to not press the ALT-key, but use your left <b>CTRL-key</b>. This will create a link if you release the mouse button. A link means that the file stays at its original place and in the new position a file is created with an identical name, which tells the system where the original is.
+
+<section name="No Access">
+<legendfig src="NoAccess.tiff">
+</legendfig>
+</section>
+
+<section name="Move">
+<legendfig src="Move.tiff">
+</legendfig>
+</section>
+
+<section name="Link">
+<legendfig src="Link.tiff">
+</legendfig>
+</section>
+
+<br><br><b>Moving a file</b>. Moving files or folders means you put the file or folder in a different location. It will not be available in the old location anymore after the move. An alternative for the drag and drop procedure is to use ALT-x and ALT-v (or 'Cut' and 'Paste' from the 'Edit' menu).
+
+<br><br><b>Copying a file</b>. Copying files or folders means you put a copy of the file or folder in a different location. The file or folder still exists in the old location. Changing one of the files, does not affect the other one and they are no longer identical copies, you can even remove the original witout affecting the copy. To make a copy of a file in the same folder, press <b>ALT-u</b>.
+
+<section name="Duplicate">
+<legendfig src="Duplicate.tiff">
+</legendfig>
+</section>
+
+<br><br>Another way of copying a file is using the <b>ALT-c</b>&nbsp; and <b>ALT-v</b>&nbsp; key combinations (or the 'Copy' and 'Paste' commands from the 'Edit' menu.
+<br><br><b>Linking a file</b>. Linking a file or folder means that you create a new file or folder in another location that is linked to the original. Changing the contents of the original, or the link, keeps both files identical. To be precise when you change the linked file or folder, you are actually changing the original. Removing the link does not alter the original. Removing the original however creates a dead link. The link will persist, but there is no destination it is pointing to anymore.
+
+<br><br>Create a copy of the 'Text.txt' file in the 'Backup' folder and a link to the 'Test.txt' file in the 'Test' folder.
+
+</section>
+
+
+<section  name="Deleting files and folders">
+
+The easiest and quickest way to delete a file or folder is to select it in the File Viewer window and to press <b>ALT-r</b>. One single popup asks for a confirmation and pressing 'Enter' is all that is needed to definitively remove the file.
+
+The same thing can be accomplished through the 'File' menu and selecting 'Destroy'.
+
+<section name="Delete confirmation">
+<legendfig src="Delete.tiff">
+</legendfig>
+</section>
+
+<br><br>The downside of this way of working is the definitive nature. Files deleted this way can not be retrieved, there are gone, for good!
+
+<br><br>A more subtle way of doing things is through the use of the Recycler. This gives you the benefit of undoing the delete action.
+
+<section  name="The Recycler"
+
+The Recycler is part of the Dock. The bottom icon on the Dock is always the Recycler.
+
+<br><br>The icon on the Dock can change based on the state of the Recycler. It can indicate that there are no files in the Recycler (it is empty) or that there are files in it.
+
+<section name="Empty Recycler">
+<legendfig src="Empty.tif">
+</legendfig>
+</section>
+
+<section name="Full Recycler">
+<legendfig src="Full.tif">
+</legendfig>
+</section>
+
+<br><br>There are various ways to place a file in the Recycler.
+
+<br><br>The first one is to drag the file towards the Recycler icon on the Dock and as soon as the pointer turns green release the mouse button.
+
+<section name="To the Recycler">
+<legendfig src="TotheRecycler.tiff">
+</legendfig>
+</section>
+
+<br><br>Another way is to select the file and press <b>ALT-d</b>&nbsp; on your keyboard.
+
+<br><br>And the last version is by using the 'File' menu entry 'Move to Recycler'. If the option on the menu is greyed out, you forgot to select the file.
+
+<br><br>Before the action is performed a panel will popup to ask you for confirmation.
+
+<br><br>When you started with an empty Recycler icon, you will after using one of the above options on e.g. the 'Test_copy.txt' file see the icon of the Recycler change.
+
+Double clicking on the Recycler icon in the Dock opens a viewer on the '.Trash' folder.
+
+<section name="Trash Folder">
+<legendfig src="Trash_Folder.tiff">
+	<legend x="30" y="170">The file you have thrown away.</legend>
+</legendfig>
+</section>
+
+<br><br>Dragging the file back to a folder on the system removes it from the recycler.
+The downside of the Recycler is that it is a temporary store for files or folders that need to be thrown away. By placing items in the Recycler they are still part of the filesystem and thus take up space. So placing files in the recycler, does not create more disk space on your system.
+
+<br><br>To free the diskspace occupied by the items in the Recycler you must empty the Recycler. Select from the 'File' the menu entry 'Empty Recycler' command and the files will be removed from your system.
+
+</section>
+
+</section>

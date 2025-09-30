@@ -1,0 +1,73 @@
+{
+    ApplicationDescription = "Precision Raster Image Convolution Engine";
+    ApplicationIcon = "price-icon-os.tiff";
+    ApplicationName = PRICE;
+    ApplicationRelease = "1.3.0";
+    Authors = (
+	"Riccardo Mottola"
+    );
+    Copyright = "Copyright (C) 2002-2014";
+    CopyrightDescription = "Released under the GNU General Public License v2+.";
+    FullVersionID = "1.3.0";
+    GSMainMarkupFile = "";
+    NOTE = "Automatically generated!";
+    NSExecutable = PRICE;
+    NSIcon = "price-icon-os.tiff";
+    CFBundleIdentifier = "org.gnustep.PRICE";
+    NSMainNibFile = "MainMenu.gorm";
+    NSMainStoryboardFile = "";
+    NSPrincipalClass = NSApplication;
+    NSRole = Application;
+    NSTypes = (
+	{
+	    NSDocumentClass = MyDocument;
+	    NSHumanReadableName = "TIFF Document";
+	    NSName = TIFF;
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		tif,
+		tiff
+	    );
+	},
+	{
+	    NSDocumentClass = MyDocument;
+	    NSHumanReadableName = "JPEG Document";
+	    NSName = JPEG;
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		jpg,
+		jpeg,
+		JPG,
+		JPEG
+	    );
+	},
+	{
+	    NSDocumentClass = MyDocument;
+	    NSHumanReadableName = "GIF Document";
+	    NSName = GIF;
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		gif
+	    );
+	},
+	{
+	    NSDocumentClass = MyDocument;
+	    NSHumanReadableName = "PNG Document";
+	    NSName = PNG;
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		png
+	    );
+	},
+	{
+	    NSDocumentClass = MyDocument;
+	    NSHumanReadableName = "XPM Document";
+	    NSName = XPM;
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		xpm
+	    );
+	}
+    );
+    URL = "http://price.sf.net";
+}

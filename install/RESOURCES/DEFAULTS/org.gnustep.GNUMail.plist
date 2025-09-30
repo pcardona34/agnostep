@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>MAILHEADERCELL_COLOR</key>
+    <string>0.619370 0.619370 0.897638</string>
+    <key>QUOTE_COLOR_LEVEL_1</key>
+    <string>0.166774 0.400093 1.000000</string>
+    <key>QUOTE_COLOR_LEVEL_2</key>
+    <string>1.000000 0.214640 0.543376</string>
+    <key>QUOTE_COLOR_LEVEL_3</key>
+    <string>0.000000 1.000000 0.000000</string>
+    <key>QUOTE_COLOR_LEVEL_4</key>
+    <string>0.000000 1.000000 1.000000</string>
+</dict>
+</plist>

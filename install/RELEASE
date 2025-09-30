@@ -1,0 +1,131 @@
+AGNOSTEP - agnostic GNUstep Desktop
+===================================
+
+We start from the release 0.8.3 of PiSiN to make it agnostic.
+- **Release**: 0.8.3
+- **Status**: Alpha
+
+### Tests: (date)
+
+Passed: 0 / 13
+
+- Window manager / Theming: todo
+- Workspace / Dock / Wallpaper: todo
+- Home customized folder: todo
+- Applications Folder / TabbedShelf: todo
+- Autostart: todo
+- Sysinfo Panel: todo
+- Notify: todo
+- Open/save: todo
+- Web Browser: todo
+- Printing / set default printer: todo
+- Scanning: todo
+- Screensaver: todo
+- Display Manager: todo
+- Mount/Unmount a removable device: todo
+- Listening to music, watching video: todo
+
+### The Desktop Components
+
+- Operating System: Debian Bookworm 12.12. Not yet tested on Trixie.
+- Window Manager: this is Window Maker 0.95.9 (debian default package version) with AGNOSTEP.themed and options: --no-dock  --no-clip --static. Some apps and tools are launched with the 'autostart' script of Window Maker.
+	 (MEMO: 0.96.0 was broken: "symbol lookup error: wuserdatapath": unresolved until now, so we reverted to previous stable version)
+- Notifyer: dunst - SimpleAgenda won't use it because libDBUSKit is not installed.
+- Compositing: compton.
+- Sys Infos: conky. Weather data is fetched from Wttr.in. The system monitoring is upon: date, time, uptime, CPU, Memory, Storage and Networking.
+	(Conky Panel is localized in French and in English)
+
+- GNUstep: latest built from sources with GNU Runtime (not OBJC2). Use: `agostep --info` for a more complete release info.
+All the apps below were built from sources and so are the latest.
+- Preferences Manager: SystemPreferences
+- Workspace: GWorkspace and Recycler: 1.1.0 (02 2025) - Its own Desktop layer and its Dock (modern flavour) are shown. The Wallpaper is shown on this layer. It is a mandatory set to manage mounted removable devices on the Desktop and to unmount those by DND on the Recycler Icon.
+- Theme: AGNOSTEP mostly inspired by Papirus Icon theme and GNUstep Sleek Theme: finished.
+- Session: Display Manager (Lightdm) and DBus (but without DBUSKit).
+- Alsa compliant Audio Mixer: see VolumeControl below.
+- RPI tools: removed, so to be substituted: cf. how to set default printer within CUPS.
+===========================================
+
+### Applications and Tools for the End-User and The Developer
+
+- All-in-One install script is available: './enjoy.sh'
+- Installation of a Display Manager is available.
+- See INSTALL to understand the steps.
+
+===========================================
+
+
+For the End-User: 
+- Main installation option is 'apps'.
+
+Note-1: Extra GNUstep Applications have a "(E)" mention in the list below.
+- Installation option is 'extra'.
+
+Note-2: GNUstep Games have "(G)" mention in the list below.
+- Installation option is 'games'.
+
+Note-3: Non GNUstep Application Wrappers have a "(W)" mention in the list below. Those have been installed with the 'apps' option.
+
+Note-4: Devel GNUstep Applications have a "(D)" mention in the list below.
+- Installation option is 'devel'.
+
+===========================================
+
+The complete list:
+
+- AddressManager: contacts
+- Calculator (E)
+- Chess (G)
+- Chromium (W): a wrapper for the Chromium Web Browser
+- Cynthiune: Music Player
+- Dictionary (E): Dictionary Lookup for the English User
+- EasyDiff (D): graphical Diff Tool
+- EBookReader.app (W): a wrapper for FBReader
+- FlexiSheet (E): a Spreadsheet inspired by Quantrix
+- FontManager (E)
+- Freecell (G): a card game
+- Gemas (D): a specialized editor for objectiveC, plist, GSmarkup...
+- GNUMail: Mail User Agent
+- Gomoku (G): a TicTacToe game
+- Gorm (D): Interface Builder for GNUstep
+- Graphos (E): a simple Vectorial Drawing app
+- Grr: RSS Reader
+- GShisen (G): a MahJong game
+- GSMarkupBrowser: it is a Devel tool, but it was installed within libs-renaissance at stage 1 (Frameworks and Libs).
+- GSMarkupLocalizableStrings: idem.
+- GSPdf: PS and PDF reader/viewer
+- GSSpeechServer: Vocal Synthesis
+- GWorkspace: the Workspace manager: see above.
+- HelpViewer: .help reader (Help Files have a .help extension).
+- ImageViewer
+- InnerSpace: screen saver
+- Ink: Rich text (rtf and rtfd) editor.
+- Inkscape (W): a wrapper for inkscape SVG editor.
+- LapisPuzzle (G): a Tetris like game
+- Librarian: Books and Documents Organizing
+- MDFinder: within GWorkspace indexing
+- OpenUp: archive manager
+- PikoPixel (E): Pixel Art Editor
+- Player: a wrapper for VLC video player
+- PowerPaint (E): Bitmap Drawing
+- PRICE (E): Image Manipulation program
+- ProjectCenter (D): Project Builder for GNUstep
+- Recycler: see GWorkspace.
+- ScanImage: Scanner (sane) client
+- ScreenShot: screen recorder
+- SimpleAgenda: agenda
+- StepSync (E): Syncing Folders
+- SystemPreferences
+- Terminal: a Terminal emulator
+- TextEdit: text editor and note taking
+- Thematic (D): a Theme Editor for GNUstep
+- VolumeControl: AlsaMixer compliant mixer
+- Writer (W): a wrapper for Focuswriter
+
+Removed (R)
+=================
+
+Some apps or frameworks won't build with the GNU Runtime: so we needed to remove those until we do not use libobjc2.
+
+- Cenon (ER): Desktop Publishing
+- DBusKit (R): DBus framework (to be checked again)
+- Rpinters.app ans Rpi-imager.app: tied to the Pi's.

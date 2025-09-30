@@ -1,0 +1,172 @@
+{
+    ApplicationDescription = "A simple code editor for GNUstepers";
+    ApplicationName = Gemas;
+    ApplicationRelease = "0.4";
+    Authors = (
+	"Germ\U00E1n A. Arias"
+    );
+    Copyright = "Copyright (C) 2010, 2011, 2012, 2013, 2014";
+    CopyrightDescription = "Released under GPLv3";
+    GSMainMarkupFile = "";
+    NOTE = "Automatically generated, do not edit!";
+    NSBuildVersion = "February 2014";
+    NSExecutable = Gemas;
+    NSIcon = Gemas;
+    CFBundleIdentifier = "org.gnustep.Gemas";
+    NSMainNibFile = Gemas;
+    NSMainStoryboardFile = "";
+    NSPrincipalClass = NSApplication;
+    NSRole = Editor;
+    NSTypes = (
+	{
+	    NSDOSExtensions = (
+		m
+	    );
+	    NSDocumentClass = GemasDocument;
+	    NSHumanReadableName = "Objective-C";
+	    NSIcon = "FileIcon_.m.tiff";
+	    NSName = ObjC;
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		m
+	    );
+	},
+	{
+	    NSDOSExtensions = (
+		c
+	    );
+	    NSDocumentClass = GemasDocument;
+	    NSHumanReadableName = "C source file";
+	    NSIcon = "FileIcon_.c.tiff";
+	    NSName = C;
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		c
+	    );
+	},
+	{
+	    NSDOSExtensions = (
+		h
+	    );
+	    NSDocumentClass = GemasDocument;
+	    NSHumanReadableName = "C/Objective-C header";
+	    NSIcon = "FileIcon_.h.tiff";
+	    NSName = "C-Header";
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		h
+	    );
+	},
+	{
+	    NSDOSExtensions = (
+		cc,
+		cpp
+	    );
+	    NSDocumentClass = GemasDocument;
+	    NSHumanReadableName = "C++";
+	    NSIcon = "FileIcon_.cc.tiff";
+	    NSName = "C++";
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		cc,
+		cpp
+	    );
+	},
+	{
+	    NSDOSExtensions = (
+		mm
+	    );
+	    NSDocumentClass = GemasDocument;
+	    NSHumanReadableName = "Objective-C++";
+	    NSIcon = "FileIcon_.mm.tiff";
+	    NSName = "ObjC++";
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		mm
+	    );
+	},
+	{
+	    NSDOSExtensions = (
+		strings
+	    );
+	    NSDocumentClass = GemasDocument;
+	    NSHumanReadableName = "Localizable strings";
+	    NSIcon = "FileIcon_.strings.tiff";
+	    NSName = Strings;
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		strings
+	    );
+	},
+	{
+	    NSDOSExtensions = (
+		gsmarkup
+	    );
+	    NSDocumentClass = GemasDocument;
+	    NSHumanReadableName = "Renaissance file";
+	    NSIcon = "FileIcon_.gsmarkup.tiff";
+	    NSName = GSmarkup;
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		gsmarkup
+	    );
+	},
+	{
+	    NSDOSExtensions = (
+		plist
+	    );
+	    NSDocumentClass = GemasDocument;
+	    NSHumanReadableName = "Property list";
+	    NSIcon = "FileIcon_.plist.tiff";
+	    NSName = Plist;
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		plist
+	    );
+	},
+	{
+	    NSDOSExtensions = (
+		"*",
+		preamble,
+		postamble
+	    );
+	    NSDocumentClass = GemasDocument;
+	    NSHumanReadableName = GNUmakefile;
+	    NSIcon = "FileIcon_makefile.tiff";
+	    NSName = GNUmakefile;
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		"*",
+		preamble,
+		postamble
+	    );
+	},
+	{
+	    NSDOSExtensions = (
+		"*"
+	    );
+	    NSDocumentClass = GemasDocument;
+	    NSHumanReadableName = ChangeLog;
+	    NSIcon = "FileIcon_makefile.tiff";
+	    NSName = ChangeLog;
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		"*"
+	    );
+	},
+	{
+	    NSDOSExtensions = (
+		"*"
+	    );
+	    NSDocumentClass = GemasDocument;
+	    NSHumanReadableName = Other;
+	    NSIcon = "FileIcon_makefile.tiff";
+	    NSName = Generic;
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		"*"
+	    );
+	}
+    );
+    URL = "home.gna.org/gnustep-nonfsf/gemas.html";
+}

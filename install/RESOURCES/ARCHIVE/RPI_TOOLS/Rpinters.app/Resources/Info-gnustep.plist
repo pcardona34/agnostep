@@ -1,0 +1,7 @@
+{
+  NSExecutable = "Rpinters";
+  NSRole = "Application";
+  NSIcon = "Rpinters.tiff";
+  CFBundleIdentifier = "com.raspberrypi.Rpinters";
+  XAppWrapper = YES;
+}

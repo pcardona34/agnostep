@@ -1,0 +1,236 @@
+{
+    ApplicationDescription = "A free and romantic music player";
+    ApplicationName = Cynthiune;
+    ApplicationRelease = "1.0.0";
+    Authors = (
+	"Wolfgang Sourdeau <Wolfgang@Contre.COM>",
+	"The GNUstep Application Team"
+    );
+    Copyright = "Copyright \U00A9 2002-2006 by Wolfgang Sourdeau
+        2012-2013 The GNUstep Application Project";
+    CopyrightDescription = "Released under the GNU General Public License 2.0 or later";
+    FullVersionID = "1.0.0 (01 2013)";
+    GSMainMarkupFile = "";
+    NOTE = "Automatically generated, do not edit!";
+    NSExecutable = Cynthiune;
+    NSIcon = "Cynthiune.tiff";
+    CFBundleIdentifier = "org.gap.Cynthiune";
+    NSMainNibFile = Cynthiune;
+    NSMainStoryboardFile = "";
+    NSPrincipalClass = NSApplication;
+    NSTypes = (
+	{
+	    NSHumanReadableName = "Music format plugin for Cynthiune";
+	    NSUnixExtensions = (
+		format
+	    );
+	},
+	{
+	    NSHumanReadableName = "Output plugin for Cynthiune";
+	    NSUnixExtensions = (
+		output
+	    );
+	},
+	{
+	    NSHumanReadableName = "Music playlist file";
+	    NSIcon = "Cynthiune-playlist-48.tiff";
+	    NSMIMETypes = (
+		"audio/mpegurl",
+		"audio/x-mpegurl",
+		"audio/scpls",
+		"audio/x-scpls"
+	    );
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		m3u,
+		pls
+	    );
+	},
+	{
+	    NSHumanReadableName = "Ogg music file";
+	    NSIcon = "Cynthiune-song-48.tiff";
+	    NSMIMETypes = (
+		"application/ogg",
+		"application/x-ogg"
+	    );
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		ogg
+	    );
+	},
+	{
+	    NSHumanReadableName = "FLAC music file";
+	    NSIcon = "Cynthiune-song-48.tiff";
+	    NSMIMETypes = (
+		"audio/flac",
+		"audio/x-flac"
+	    );
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		fla,
+		flac
+	    );
+	},
+	{
+	    NSHumanReadableName = "MPEG music file";
+	    NSIcon = "Cynthiune-song-48.tiff";
+	    NSMIMETypes = (
+		"audio/mpeg",
+		"audio/x-mpeg",
+		"audio/mpeg3",
+		"audio/x-mpeg3",
+		"audio/mpg",
+		"audio/x-mpg",
+		"audio/mp3",
+		"audio/x-mp3"
+	    );
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		mp3,
+		mp2,
+		mpa,
+		mpga,
+		mpega
+	    );
+	},
+	{
+	    NSHumanReadableName = "Musepack music file";
+	    NSIcon = "Cynthiune-song-48.tiff";
+	    NSMIMETypes = (
+		"audio/musepack",
+		"audio/x-musepack"
+	    );
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		mpc,
+		"mp+"
+	    );
+	},
+	{
+	    NSHumanReadableName = "Windows Media file";
+	    NSIcon = "Cynthiune-song-48.tiff";
+	    NSMIMETypes = (
+		"audio/x-ms-wma"
+	    );
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		asf,
+		wma
+	    );
+	},
+	{
+	    NSHumanReadableName = "Tracker music file";
+	    NSIcon = "Cynthiune-song-48.tiff";
+	    NSMIMETypes = (
+		"audio/669",
+		"audio/amf",
+		"audio/ams",
+		"audio/dbm",
+		"audio/dmf",
+		"audio/dsm",
+		"audio/far",
+		"audio/it",
+		"audio/j2b",
+		"audio/mdl",
+		"audio/med",
+		"audio/mod",
+		"audio/mt2",
+		"audio/mtm",
+		"audio/okt",
+		"audio/psm",
+		"audio/ptm",
+		"audio/s3m",
+		"audio/stm",
+		"audio/ult",
+		"audio/umx",
+		"audio/mod",
+		"audio/xm",
+		"audio/x-669",
+		"audio/x-amf",
+		"audio/x-ams",
+		"audio/x-dbm",
+		"audio/x-dmf",
+		"audio/x-dsm",
+		"audio/x-far",
+		"audio/x-it",
+		"audio/x-j2b",
+		"audio/x-mdl",
+		"audio/x-med",
+		"audio/x-mod",
+		"audio/x-mt2",
+		"audio/x-mtm",
+		"audio/x-okt",
+		"audio/x-psm",
+		"audio/x-ptm",
+		"audio/x-s3m",
+		"audio/x-stm",
+		"audio/x-ult",
+		"audio/x-umx",
+		"audio/x-mod",
+		"audio/x-xm"
+	    );
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		669,
+		amf,
+		ams,
+		dbm,
+		dmf,
+		dsm,
+		far,
+		it,
+		j2b,
+		mdl,
+		med,
+		mod,
+		mt2,
+		mtm,
+		okt,
+		psm,
+		ptm,
+		s3m,
+		stm,
+		ult,
+		umx,
+		mod,
+		xm
+	    );
+	},
+	{
+	    NSHumanReadableName = "Sound file";
+	    NSIcon = "Cynthiune-song-48.tiff";
+	    NSMIMETypes = (
+		"audio/aiff",
+		"audio/x-aiff",
+		"audio/basic",
+		"audio/x-basic",
+		"audio/au",
+		"audio/x-au",
+		"audio/x-ulaw",
+		"audio/avr",
+		"audio/x-avr",
+		"application/iff",
+		"application/x-iff",
+		"audio/nist",
+		"audio/x-nist",
+		"audio/snd",
+		"audio/x-snd",
+		"audio/wav",
+		"audio/x-wav"
+	    );
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		aif,
+		aifc,
+		aiff,
+		au,
+		avr,
+		iff,
+		nist,
+		snd,
+		wav
+	    );
+	}
+    );
+    URL = "http://gap.nongnu.org/cynthiune/";
+}

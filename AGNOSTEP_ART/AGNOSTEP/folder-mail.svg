@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="48"
+   height="48"
+   version="1"
+   id="svg31704"
+   sodipodi:docname="folder-mail.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs31708" />
+  <sodipodi:namedview
+     id="namedview31706"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="15.791667"
+     inkscape:cx="21.562005"
+     inkscape:cy="23.999999"
+     inkscape:window-width="1645"
+     inkscape:window-height="1047"
+     inkscape:window-x="273"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg31704" />
+  <rect
+     style="opacity:0.2;stroke-width:1.04003"
+     width="40"
+     height="28.123213"
+     x="4"
+     y="14.87679"
+     rx="2"
+     ry="2.1633241"
+     id="rect31690"
+     inkscape:export-filename="TIFF/dir_Mailboxes.tiff"
+     inkscape:export-xdpi="307.20001"
+     inkscape:export-ydpi="307.20001" />
+  <path
+     style="fill:#8686bf;fill-opacity:1;stroke-width:1.04003"
+     d="m 4,33.265044 c 0,1.198481 0.892,2.163324 2,2.163324 h 36 c 1.108,0 2,-0.964843 2,-2.163324 V 9.4684798 C 44,8.2699983 43.108,7.3051558 42,7.3051558 H 24 c -3,0 -4,-4.326648 -7,-4.326648 H 6 c -1.108,0 -2,0.9648425 -2,2.163324"
+     id="path31692" />
+  <rect
+     style="opacity:0.2;stroke-width:1.04003"
+     width="40"
+     height="28.123213"
+     x="4"
+     y="12.713466"
+     rx="2"
+     ry="2.1633241"
+     id="rect31694" />
+  <rect
+     style="fill:#e4e4e4;stroke-width:1.04003"
+     width="36"
+     height="17.306593"
+     x="6"
+     y="10.550141"
+     rx="2"
+     ry="2.1633241"
+     id="rect31696" />
+  <rect
+     style="fill:#8686bf;fill-opacity:1;stroke-width:1.04003"
+     width="40"
+     height="28.123213"
+     x="4"
+     y="13.795128"
+     rx="2"
+     ry="2.1633241"
+     id="rect31698" />
+  <path
+     style="opacity:0.1;fill:#ffffff;stroke-width:1.04003"
+     d="m 6,2.9785078 c -1.108,0 -2,0.9648425 -2,2.163324 v 1.081662 C 4,5.0250123 4.892,4.0601698 6,4.0601698 h 11 c 3,0 4,4.326648 7,4.326648 h 18 c 1.108,0 2,0.9648425 2,2.1633242 V 9.4684798 C 44,8.2699983 43.108,7.3051558 42,7.3051558 H 24 c -3,0 -4,-4.326648 -7,-4.326648 z"
+     id="path31700" />
+  <path
+     style="fill:#3a3a55;fill-opacity:1;stroke-width:1.08119"
+     d="m 24,19.203438 c -4.774648,0 -8.64581,3.874513 -8.64581,8.653296 0,4.778783 3.871161,8.653296 8.645811,8.653296 h 5.403631 c 0,0 1.012641,0 1.080727,-1.081662 0,-1.081662 -1.080727,-1.081662 -1.080727,-1.081662 h -5.403631 c -3.581528,0 -6.484358,-2.905344 -6.484358,-6.489972 0,-3.584628 2.90283,-6.489972 6.484358,-6.489972 3.581527,0 6.484358,2.905344 6.484358,6.489972 v 1.081662 c 0,0.597077 -0.484166,1.081662 -1.080727,1.081662 -0.596561,0 -1.080726,-0.484585 -1.080726,-1.081662 v -1.081662 c 0,-2.389392 -1.935581,-4.326648 -4.322905,-4.326648 -2.387325,0 -4.322906,1.937256 -4.322906,4.326648 0,2.389391 1.935581,4.326648 4.322906,4.326648 1.130439,0 2.150645,-0.444563 2.921202,-1.155215 0.616014,0.732285 1.524905,1.155215 2.482428,1.155215 1.790764,0 3.242179,-1.453754 3.242179,-3.244986 v -1.081662 c 0,-4.778783 -3.871161,-8.653296 -8.64581,-8.653296 z m 0,6.489972 c 1.194202,0 2.161452,0.968087 2.161452,2.163324 0,1.195236 -0.96725,2.163324 -2.161452,2.163324 -1.194203,0 -2.161453,-0.968088 -2.161453,-2.163324 0,-1.195237 0.96725,-2.163324 2.161453,-2.163324 z"
+     id="path31702" />
+</svg>

@@ -1,0 +1,219 @@
+
+<section name="Main Components">
+
+The workspace is supplied to help you get your work done on a computer. GWorkspace is responsible for displaying the GNUstep graphical interface called the workspace. It is this workspace where all your interaction with GNUstep begins and ends.
+
+<br>The most important features of GWorkspace is the maintenance of files, folders and applications. You can rename, delete and copy files and folders. With GWorkspace you can access SD cards, removable disks or USB-sticks.
+
+This might all seem complex at first, but GWorkspace only consists of a few basic parts: The FileViewer for browsing and manipulating files, a menu containing commands and an application Dock for easy access to applications which also contains the Recycler for deleting files.
+
+<section name="The Workspace">
+<legendfig src="workspace.tiff">
+	<legend x="1" y="50">Command Menu</legend>
+	<legend x="1" y="400">Dock</legend>
+	<legend x="25" y="250">Icons</legend>
+	<legend x="400" y="220">Icons</legend>
+	<legend x="500" y="50">Desktop</legend>
+	<legend x="530" y="115">Window</legend>
+	<legend x="450" y="350">File Viewer</legend>
+	<legend x="22" y="550">Recycler</legend>
+</legendfig>
+</section>
+
+</section>
+
+<section name="Pointers">
+
+Pointers follow the movements of your mouse. If you move your mouse to the left the pointer will move to the left. The standard pointer is the Arrow pointer. If you perform special operations with your mouse, the pointer changes.
+
+<section name="Arrow pointer">
+<legendfig src="arrowCursor.png">
+<legend x="1" y="1">Default cursor state</legend>
+</legendfig>
+</section>
+
+<section name="Copy pointer">
+<legendfig src="copyCursor.tiff">
+<legend x="1" y="1">Default cursor state</legend>
+</legendfig>
+</section>
+
+<section name="No access pointer">
+<legendfig src="noCursor.tiff">
+<legend x="1" y="1">Default cursor state</legend>
+</legendfig>
+</section>
+
+<section name="Link pointer">
+<legendfig src="linkCursor.tiff">
+<legend x="1" y="1">Default cursor state</legend>
+</legendfig>
+</section>
+
+</section>
+
+<section name="Icons">
+
+Icons give a graphical representation of what can be found on your system. It shows you objects that you can access or view. There are a couple of default icons available to represent files and folders.
+
+<section name="GNUstep Icons (with PisiN Theme)">
+
+<section name="Folder">
+<legendfig src="common_Folder.tiff">
+<legend x="1" y="1">Folder</legend>
+</legendfig>
+</section>
+
+<section name="Tool">
+<legendfig src="common_UnknownTool.tif">
+<legend x="1" y="1">Tool</legend>
+</legendfig>
+</section>
+
+<section name="Unknown application">
+<legendfig src="common_UnknownApplication.tif">
+<legend x="1" y="1">Unknown application</legend>
+</legendfig>
+</section>
+
+<section name="Unknown file">
+<legendfig src="common_Unknown.tiff">
+<legend x="1" y="1">Unknown file</legend>
+</legendfig>
+</section>
+
+</section>
+
+<br>The idea behind the GNUstep system is that everything on your system is represented by an icon.
+
+<br>The left most icon represents a folder. Folders are place holders for other objects like files and applications.
+
+<br>And the second one is the Tool icon. Tools are commandline programs, they can not be run in a graphical environment, and thus have a generic icon to represent them.
+
+<br>Every application that is supported by the GNUstep system has an icon that represents that application. In very rare cases you could come across the Unknon Application icon. But in normal cases you should not.
+
+<br>Files are objects that can be handled by applications, like text files, or spreadsheets. If the system does not know which application can handle a certain file, the Unknown File icon is shown.
+
+</section>
+
+<section name="Windows">
+
+A window is a part of the screen where you can view the results of your actions. It can hold a document, or a spreadsheet, or in the case of GWorkspace the contents of the filesystem. It is in a window where you perform your actions.
+
+<br>A window consists of a top-bar and a bottom-bar. The top bar displays the window name and a couple of control elements, like this:
+
+<section name="Window Top Bar">
+<legendfig src="window-top_bar.tiff">
+	<legend x="5" y="15">Minimize Button</legend>
+	<legend x="450" y="15">Close Button</legend>
+	<legend x="180" y="20">Title</legend>
+</legendfig>
+</section>
+
+<br>This bar is often called the title bar since it displays the name of the window.
+When the minimize button is clicked a mini-windows is placed at the bottom of the screen. Double clicking this mini-window resizes it again to full size.
+
+<br><br>The button on the right closes the window, but is also a <b>status indicator</b>. As long as the cross is solid you can close the window or use <b>ALT-w</b>&nbsp; to close it.
+
+<section name="Unsaved document indicator">
+<legendfig src="unsaved.tiff">
+	<legend x="42" y="12">Broken cross</legend>
+</legendfig>
+</section>
+
+<br>If however the cross changes to a 'broken cross', then something in the window has changed which you might want to save first. So if you edited a document, but did not save it the cross indicates that it is not saved. Clicking the cross will popup a panel asking you if you want to save or discard the changed contents of the window.
+
+<br><br>The bottom of the window is made up of a bar that is also refered to as the resize-bar:
+
+<section name="Window Bottom Bar">
+<legendfig src="window-bottom_bar.tiff">
+	<legend x="2" y="25">Resize the width</legend>
+	<legend x="60" y="28">Resize the height</legend>
+	<legend x="450" y="25">Resize the width</legend>
+</legendfig>
+</section>
+
+<br><br>The middle part of the resize-bar can be used to make a window larger or smaller. The width stays the same. To also change the width of a window you can use the two smaller parts on the left and the right. Clicking a part of the resize-bar and holding down your mouse button while moving you mouse, resizes the window.
+
+</section>
+
+<section name="The Command Menu">
+
+A special kind of window is the command menu. It does not have a close or minimize button, but otherwise it acts exactly like the other windows.
+
+<br>The command menus hold the commands you can use to control the computer. The entries witin this menu are commands you can access directly like 'Quit' or 'Hide', but they can also have a triangle next to it, which means that those entries lead to a submenu, like 'Info' and 'Edit'.
+
+<section name="Main menu">
+<legendfig src="main_menu.tiff">
+	<legend x="89" y="23">Submenu that leads to more commands</legend>
+	<legend x="3" y="143">Command</legend>
+</legendfig>
+</section>
+
+<br><br>Clicking on the triangle will open the submenu, which is a window on its own, so you can access the commands.
+
+<br>Every application has its own list of commands that can be used. The one presented in this section is the one from GWorkspace. Menus can be moved with the mouse. Put your mouse pointer on the title-bar of the menu, click and keep the mouse button pressed. Now you can move the menu around. Releasing the mouse button will release the menu.
+
+<br>If you click the Info bar the submenu appears.
+
+<section name="Submenu">
+<legendfig src="submenu.jpg">
+</legendfig>
+</section>
+
+<br><br>The name of the submenu window gets the name of the menu entry you choose.
+<br>If you now try to move the Info menu you will notice that the main menu stays where it is, but the Info menu will get detached. It becomes a standalone menu which you can move around.
+
+<section name="Detached Submenu">
+<legendfig src="detached_submenu.jpg">
+</legendfig>
+</section>
+
+<br><br>Another thing you will notice is that it gets a close button in the upper right corner. Clicking this button closes the menu.
+
+
+<br><br>Menus are windows that belong to the main menu, but can be moved independantly. 
+
+<br><br>The title bar of the menu indicates the name of the bar you have choosen. Not the entire path, but just the name of bar from the previous menu entry.
+
+<br><br>Another thing that you might have noticed is the fact that the entry you selected, like Info stayed highlighted when the menu was still attached to the main menu, to indicate how you got to a certain submenu. But as soon as you detached the menu the path highlighting stops at the last entry still shown.
+
+</section>
+
+<section name="The File Viewer">
+
+The most important feature of GWorkspace is the access to the filesystem. A computer organises everything that is stored on the harddisk into logical elements. The basic organisation is files and folders, where a folder is an element that can contain files. A folder is also called a directory.
+
+<br><br>Files are all other objects like documents, spreadsheets, images, etc.
+
+<section name="File Viewer window">
+<legendfig src="FileViewer.tiff">
+	<legend x="15" y="40">Shortcut to your Home Folder</legend>
+	<legend x="300" y="40">The Shelf</legend>
+	<legend x="290" y="110">The highlighted item</legend>
+	<legend x="210" y="130">The Icon Path</legend>
+	<legend x="320" y="230">The View Area</legend>
+</legendfig>
+</section>
+
+<br><br>The Shelf is a place holder for shortcuts. Initially the only shortcut present is the one to your home folder. PiSiN Desktop added the shortcut to the Applications Folder. If you click the icon you are immediately transfered to the place where you store your files and folders. By dragging files, folders or applications to the Shelf you can create your own shortcuts.
+
+<br><br>The icon path represents the path from the root of the filesystem towards the point where you are now. It always ends at an highlighted folder or file. It is this highlighted element on which you can perform operations, like dragging and dropping.
+
+<br><br>And the last section is the viewing area. Here the contents of the filesystem is displayed. It presents to you in a graphical way the surroundings of the highlighted item.
+
+</section>
+
+<section  name="The Dock">
+
+The Dock is a place to store often used applications.
+
+<section name="The Dock">
+<legendfig src="Dock.jpg">
+	<legend x="15" y="20">The File Viewer</legend>
+	<legend x="15" y="120">Application Icon</legend>
+	<legend x="22" y="310">Recycler</legend>
+</legendfig>
+</section>
+
+</section>

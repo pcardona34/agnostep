@@ -1,0 +1,30 @@
+{
+    ApplicationDescription = "A graphical Chess game";
+    ApplicationRelease = "2.8";
+    Authors = (
+	"Apple Computer",
+	"Gregory Casamento",
+	"Riccardo Mottola"
+    );
+    CFBundleDocumentTypes = (
+	{
+	    CFBundleTypeExtensions = (
+		chess
+	    );
+	    CFBundleTypeIconFile = (
+		"chess.tiff"
+	    );
+	    CFBundleTypeName = chess;
+	    CFBundleTypeRole = Editor;
+	}
+    );
+    Copyright = "2000-2017";
+    GSMainMarkupFile = "";
+    NOTE = "Automatically generated, do not edit!";
+    NSExecutable = Chess;
+    NSIcon = "ChessApp.tiff";
+    CFBundleIdentifier = "org.gap.Chess";
+    NSMainNibFile = Chess;
+    NSMainStoryboardFile = "";
+    NSPrincipalClass = Chess;
+}

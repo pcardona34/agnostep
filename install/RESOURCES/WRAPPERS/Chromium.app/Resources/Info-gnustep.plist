@@ -1,0 +1,30 @@
+{
+  NSExecutable = "Chromium";
+  NSRole = "Viewer";
+  NSIcon = "Web-Browser.tiff";
+  CFBundleIdentifier = "org.gnustep.Chromium";
+	XAppWrapper = YES;
+  CFBundleURLTypes = (
+  	{
+		CFBundleURLName = "Web site URL";
+		CFBundleURLSchemes = (
+		    http,
+		   https
+	    );
+	}
+  );
+  NSTypes = (
+    {
+      NSUnixExtensions = ( "html" );
+      NSIcon = "FileIcon_.html.tiff";
+    },
+    {
+      NSUnixExtensions = ( "htm" );
+      NSIcon = "FileIcon_.html.tiff";
+    },
+    {
+      NSUnixExtensions = ( "webp" );
+      NSIcon = "FileIcon_.webp.tiff";
+    }
+  );
+}

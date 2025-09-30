@@ -1,0 +1,143 @@
+		<part name="The Workspace">
+
+		<section name="Components of the Workspace">
+		<legendfig src="desktop01_menu.tiff">
+				<legend x="1" y="52">Vertical menu</legend>
+				<legend x="78" y="70">Submenu arrow</legend>
+				<legend x="72" y="144">ShortKey</legend>
+				<legend x="20" y="240">AppIcon</legend>
+				<legend x="2" y="265">Dock</legend>
+				<legend x="320" y="300">FileView Window</legend>
+				<legend x="148" y="80">Minifier Button</legend>
+				<legend x="250" y="80">Window Bar</legend>
+				<legend x="260" y="20">Desktop</legend>
+		</legendfig>
+		</section>
+
+		<section name="The Vertical Menu">
+
+		It is the menu of the active application. If you launch another application or if you click on the Window of another application, this application becomes active and its menu shows in place of the previous one.
+
+		<br>A simple menu item is a command inside the active application. If a shortcut key is shown a the right of this item, you can use it as an alternative.
+		<br>The symbol <b>#</b> &nbsp;before a letter means to push down and hold the  'Command' key as a prefix.<br>
+ 
+		<caution>
+ On a Pi keyboard, the 'Command' key is the <b>left Alt</b> &nbsp;key as on almost the PC running a GNU/Linux operating system. It is <b>not</b> &nbsp;the 'Pi' key.
+		</caution>
+
+		<br>The <b>arrow</b> &nbsp;at the right of an item suggests a submenu.
+
+		</section>
+
+
+		<section name="The Dock">
+		It is the vertical panel at the left: icons of the favorite applications are yet placed on the Dock. In this context, those are also named <b>appicons</b> &nbsp;and the relevant applications are so called 'docked' apps. The first one at the top of the Dock is <b>GWorkspace</b>, which manages the whole workspace. The last one, at the bottom, is the <b>Recycler</b>, which namely manages the Trash Folder.<br>
+
+	<information>
+	Tip: if you let the mouse pointer a few seconds over an appicon, you will see a tag with the name of that application.
+	<br>&nbsp;
+	</information>
+
+<br>The <b>three dots</b> &nbsp;under an appicon mean that this applicaion has not been launched yet. <b>One click</b> &nbsp;on an appicon allows you to start this app from the Dock or to make it active if it was already launched. 
+
+<section name="The Dock and the dots">
+		<legendfig src="Dock.tiff">
+				<legend x="20" y="20">A launched and active application</legend>
+				<legend x="1" y="142">Three dots</legend>
+				<legend x="1" y="189">A single dot</legend>
+		</legendfig>
+		</section>
+
+<br>If you launch an application from another place (i.e: the Applications window, the Tabshelf...) its appicon will appear on the Dock, but it will be removed at the end of the current session. If a launched application is inactive, you will see a <b>single dot</b> &nbsp;under the appicon.
+		</section>
+
+		<section name="MiniWindows">
+		<section name="MiniWindows sample">
+		<legendfig src="desktop03_MiniWindows.tiff">
+			<legend x="180" y="150">A document window minimized</legend>
+		</legendfig>
+		</section>
+		
+			If you click on the 'Minifier Button' at the left of the top bar of a window, it will be minimized, and its miniwindow icon will show at the bottom left of the workspace. If it is a document window, the icon will show a kind of black title bar on its top.
+
+		<br>To show the window again, just click once on its miniwindow.
+
+		</section>
+
+		<section name="TabbedShelf">
+		<section name="TabbedShelf sample">
+		<legendfig src="desktop02_TShelf.tiff">
+			<legend x="155" y="230">Named tab</legend>
+		</legendfig>
+		</section>
+			If you move the mouse pointer to the bottom of the workspace, the Tabbed Shelf will show on. This is an organized shelf with different categories of apps shortcuts: 'Utilities', 'Devel', 'Games' and a 'Pasteboard' where you can put pasted parts of a selected text with a simple drag and drop.<br>&nbsp;
+
+		<information>
+
+		To Hide again the Tabbed Shelf, just move the mouse pointer to the top.
+		<br>&nbsp;&nbsp;&nbsp;
+
+		</information>
+
+		</section>
+		</part>
+
+		<part name="The FileViewer">
+
+		<section name="FileViewer">
+
+		<section name="Home Folder">
+		<legendfig src="Home_window.tiff">
+			<legend x="1" y="40">Shelf</legend>
+			<legend x="15" y="50">Home Icon shortcut</legend>
+			<legend x="15" y="120">Path View</legend>
+			<legend x="30" y="250">Icon View</legend>
+		</legendfig>
+		</section>
+		
+			<br>To manage your files, just select the FileViewer window and click on the 'Home' icon to show your HomeFolder. You can change the view with shortcut keys like this:
+
+		<ul>
+			<li><b>#i</b>: Icon view</li>
+			<li><b>#l</b>: List view</li>
+			<li><b>#b</b>: Browser view</li>
+		</ul>
+
+		<br>&nbsp;		
+<information>
+			To show another FileView window: menu 'View &gt; Viewer' <br>(shortcut key: #V)<br>&nbsp;&nbsp;&nbsp;
+		</information>
+
+		<br>To view all the available applications, click on the 'Applications' shotcut on the Shelf. To launch an application, select its icon, and press the 'Enter' key.<br>
+
+
+<section name="Apps Folder">
+		<legendfig src="App_window.tiff">
+			<legend x="250" y="40">Applications Icon shortcut</legend>
+			<legend x="30" y="260">Applications Icons</legend>
+		</legendfig>
+		</section>
+
+		</section>
+		</part>
+
+		<part name="The Monitoring Panel">
+
+		The Monitoring Panel gives you useful infos about your Pi SBC. CPU and Memory usage are good clues for an application misbehaviour. With SD cards, it is also useful to look at the storage amount.
+
+		<section name="System Infos">
+
+			<legendfig src="conky_en.tiff">
+			<legend x="50" y="40">Current date and time</legend>
+			<legend x="40" y="110">Uptime</legend>
+			<legend x="206" y="225">CPU usage</legend>
+			<legend x="20" y="290">Memory bar</legend>
+			<legend x="20" y="340">Storage bar</legend>
+			<legend x="200" y="390">Network activity</legend>
+		</legendfig>
+	
+		</section>
+		</part>
+
+
+		

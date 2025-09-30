@@ -1,0 +1,53 @@
+<part name="How to launch the Desktop">
+
+<section name="Launch the Desktop">
+
+Until now, PiSiN Desktop does not provide a Graphic Login Manager. You must login first and then run this command to start the Desktop:<br>
+
+<listing>
+startx&nbsp;&nbsp;&nbsp;&nbsp;
+</listing>
+
+<br>It will do all the necessary stuff for you.
+
+</section>
+
+<section name="Under the hood">
+
+If you want to learn how it works and how to customize this process, look at these two files:<br>
+
+<ul>
+	<li><b>$HOME/.xinitrc</b>: it is the main script called by the xinit process. The prefixed dot means it is an hidden file.</li>
+	<li><b>$HOME/GNUstep/Library/WindowMaker/autostart</b>: as you guessed, it is the script used by the Window Manager to launch several files and tools.
+</ul>
+
+</section>
+
+</part>
+
+<part name="How to shutdown the Desktop">
+
+<section name="How to log out">
+
+<ol>
+<li>Select a FileView window or click on the Desktop to make the application GWorkspace active and to show its menu.</li>
+<li>On the main menu, click on the command 'Logout' and confirm this choice within the Dialog Panel.</li>
+</ol>
+
+<br>This will close the workspace and the graphic session.
+
+</section>
+
+<section name="Shutdown">
+
+In the console, execute this command to shutdown the Raspberry Pi:
+
+<listing>
+sudo&nbsp;halt&nbsp;&nbsp;&nbsp;&nbsp;
+</listing>
+
+</section>
+
+</part>
+
+

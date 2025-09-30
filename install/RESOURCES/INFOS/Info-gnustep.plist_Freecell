@@ -1,0 +1,29 @@
+{
+    ApplicationDescription = "A graphical Freecell card game";
+    ApplicationRelease = "0.1";
+    Authors = (
+	"Alisdair McDiarmid",
+	"Alex Myczko",
+	"with help from GNUstep devel mailing list"
+    );
+    CFBundleDevelopmentRegion = English;
+    CFBundleExecutable = Freecell;
+    CFBundleGetInfoString = "2.2";
+    CFBundleHelpBookFolder = Help;
+    CFBundleIconFile = "Freecell.tiff";
+    CFBundleIdentifier = "org.wasters.Freecell";
+    CFBundleInfoDictionaryVersion = "6.0";
+    CFBundleName = Freecell;
+    CFBundlePackageType = APPL;
+    CFBundleShortVersionString = "2.2";
+    CFBundleSignature = "????";
+    CFBundleVersion = 56;
+    Copyright = "2003-2012";
+    GSMainMarkupFile = "";
+    NOTE = "Automatically generated, do not edit!";
+    NSExecutable = Freecell;
+	 NSIcon = "Freecell.tiff";
+    NSMainNibFile = MainMenu;
+    NSMainStoryboardFile = "";
+    NSPrincipalClass = NSApplication;
+}

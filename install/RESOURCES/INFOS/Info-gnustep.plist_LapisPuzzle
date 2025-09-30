@@ -1,0 +1,22 @@
+{
+    ApplicationDescription = "A garma puzzle game";
+    ApplicationIcon = LapisPuzzle;
+    ApplicationName = LapisPuzzle;
+    ApplicationRelease = "1.2";
+    Authors = (
+	"GAP Team",
+	"Banlu Kemiyatorn <object@gmail.com>"
+    );
+    Copyright = "Copyright \U00A9 2004-2011 GNUstep Application Project";
+    CopyrightDescription = "Released under the GNU General Public License 2.0 and later version";
+    FullVersionID = "1.2";
+    GSMainMarkupFile = "";
+    NOTE = "Automatically generated, do not edit!";
+    NSExecutable = LapisPuzzle;
+    NSIcon = "LapisPuzzle.tiff";
+    CFBundleIdentifier = "org.gnustep.LapisPuzzle";
+    NSMainNibFile = LapisPuzzle;
+    NSMainStoryboardFile = "";
+    NSPrincipalClass = NSApplication;
+    URL = "http://gap.nongnu.org/lapispuzzle/index.html";
+}

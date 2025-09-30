@@ -1,0 +1,84 @@
+
+<section name="Your Home Folder">
+
+
+<section name="Home Icon">
+<legendfig src="common_HomeDirectory.tiff">
+</legendfig>
+</section>
+
+<br>In the upper left corner of the File Viewer window, you find an icon with your username (the name with which you logged into the system) under it. Clicking it will bring you to the folder that is called your home folder. This is the place where you can store your documents and create additional folders.
+
+<br><br>The place where you end up depends on your system. Most Unix-like systems use '/home/&lt;username&gt;' as the home folder of a user. To make it easy for you the entire '/home/&lt;username&gt;' can be abbreviated to the ˜ (tilde character), which saves a lot of typing in the console.
+
+</section>
+
+<section name="A Filesystem">
+
+A filesystem is organised as a hierarchical tree where the higest part is called the root. If you look at the following picture and turn it upside down you understand the tree analogy.
+
+<section name="File System">
+<legendfig src="filesystem.png">
+</legendfig>
+</section>
+
+
+<br><br>Everything within the filesystem is placed in folders, even folders (with the exception of root of course). Folders can contain other folders or files or applications.
+This way of organizing your data is very efficient. Assume you have a folder in your home folder called 'Documents', you can then subdivide that one into 'Memos' for business documents and 'Private' for your own documents. This way you can quickly create a hierarchical structure to maintain your data.
+
+<br><br>Another probably more familiar example is sound files (like MP3). Under the folder 'Music', subdivide it per artist and then per album.
+
+<br><br>If you organize your work this way it gets very easy to find your data. The folder tree of GNUstep is setup in a similar fashion.
+
+<section name="GNUstep File System">
+<legendfig src="GNUstep_FileSystem.png">
+</legendfig>	
+</section>
+
+</section>
+
+<section name="Different Views">
+
+GWorkspace gives you a great deal of flexibility of how you want to view the filesystem. If you are quickly browsing through a large tree of folders the browser might be fine for you. But if you are trying to locate an application it would be easier if you can look at the icons, instead of only the names.
+
+<br><br>And for this there are different views:
+
+<section name="Command View">
+<legendfig src="menu_View.tiff">
+</legendfig>	
+</section>
+
+<br><br>The Browser view and the Icon view you have already seen, and now you know how to access them. New is the List view. If you encounter that the commands in the View menu are grey instead of black it means you have not selected a viewer. Move your mouse to the viewer and click on it, so its title bar gets black and the commands in the menu are accessible.
+
+<section name="Icon View and List View">
+<legendfig src="views.tiff">
+	<legend x="475" y="125">Hold the CTRL key and double click on a Folder to open a new window of its content</legend>
+	<legend x="260" y="220">Browser view</legend>
+	<legend x="160" y="500">List view</legend>
+	<legend x="600" y="360">Icon view</legend>
+</legendfig>	
+</section>
+
+<br><br>With the arrow keys you can walk through the objects of a view. Sometimes this is easier then using the mouse to select elements. Another keyboard replacement for the mouse is the 'Enter'. Pressing Enter while an object is selected is equal to double clicking the same object.
+
+<br><br>Within the Icon View mode or the List View mode you can use the 'PgUp' to scroll an entire screen up or 'PgDn' to scroll an entire page down.
+
+<br><br>And the last way to walk fast through a list is by selecting the first letter. It moves you immediately to the first matching item. If you want to jump to the objects that start with a 'k', type the letter 'k' on your keyboard. Note that this is a case sensitive action. The 'k' and 'K' are two different places.
+
+<br><br>If you hold down the <b>Shift</b> key while selecting objects the selection gets expanded with the new objects. This way you can select multiple objects before performing a certain operation. Of course in the Icon View mode this can also be performed with the mouse. Hold down the left mouse button and select an area. All objects within the area will light up.
+
+<br><br>In the Icon View you can also change the size of the Icon Size, Icon Position and Label Size get active.
+
+<br><br>Using the Icon Size submenu you can change the size of the icons from 48x48 pixels to 24x24 size.
+
+<br><br>Instead of having the name of the file below the icon, you could use the Icon Position to have the title to the left of the icon.
+
+<br><br>And the last option you can change is the size of the filename. Which is called the Label Size. This can be lowered to a font size of 10 points, or as great as 16 points.
+
+</section>
+
+<section name="About Spatial Browsing?">
+
+This feature has been removed from GWorkspace.
+
+</section>

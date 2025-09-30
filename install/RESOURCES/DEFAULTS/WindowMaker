@@ -1,0 +1,137 @@
+{
+  FTitleColor = white;
+  DontLinkWorkspaces = YES;
+  WindowTitleBalloons = YES;
+  MenuDisabledColor = gray40;
+  IconTitleBack = black;
+  PixmapPath = (
+    "~/GNUstep/Library/WindowMaker/Pixmaps",
+    "~/GNUstep/Library/WindowMaker/Backgrounds",
+    "~/GNUstep/Library/WindowMaker/CachedPixmaps",
+    "/usr/share/WindowMaker/Backgrounds",
+    "/usr/share/WindowMaker/Pixmaps",
+    "/usr/share/pixmaps",
+    "/usr/local/share/WindowMaker/Pixmaps",
+    "/usr/local/share/WindowMaker/Backgrounds",
+    "/usr/local/share/pixmaps"
+  );
+  FTitleBack = (solid, black);
+  RaiseDelay = 0;
+  ClipTitleFont = "Verdana:bold:pixelsize=10";
+  MaximizeKey = None;
+  HideKey = "Mod1+H";
+  IconTitleFont = "sans serif:bold:pixelsize=9:xlfd=-*-helvetica-bold-r-normal-*-9-*-*-*-*-*-*-*";
+  LargeDisplayFont = "sans serif:bold:pixelsize=24:xlfd=-*-helvetica-bold-r-normal-*-24-*-*-*-*-*-*-*";
+  DisableClip = NO;
+  ClipLowerKey = None;
+  IconificationStyle = Zoom;
+  MoveDisplay = floating;
+  IconTitleColor = white;
+  ScrollableMenus = YES;
+  MenuTitleColor = white;
+  MenuTitleFont = "sans serif:bold:pixelsize=12:xlfd=-*-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*";
+  DoubleClickTime = 250;
+  SmoothWorkspaceBack = NO;
+  SelectKey = None;
+  IconPosition = blh;
+  ShadeSpeed = fast;
+  AlignSubmenus = NO;
+  WorkspaceBack = (spixmap, "/usr/share/WindowMaker/Backgrounds/debian.tiff", gray20);
+  HighlightTextColor = black;
+  EdgeResistance = 30;
+  MenuScrollSpeed = fast;
+  ClipRaiseLowerKey = None;
+  AutoArrangeIcons = NO;
+  PrevWorkspaceKey = "Mod1+Control+Left";
+  ClipTitleColor = black;
+  IgnoreFocusClick = NO;
+  WindowTitleFont = "sans serif:bold:pixelsize=12:xlfd=-*-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*";
+  WindowPlaceOrigin = (64, 64);
+  Workspace8Key = "Mod1+8";
+  Workspace9Key = "Mod1+9";
+  UseSaveUnders = NO;
+  DisableWSMouseActions = NO;
+  RootMenuKey = F12;
+  ResizebarBack = (solid, "rgb:aa/aa/aa");
+  Workspace4Key = "Mod1+4";
+  KbdModeLock = NO;
+  Workspace5Key = "Mod1+5";
+  Workspace6Key = "Mod1+6";
+  OpenTransientOnOwnerWorkspace = NO;
+  Workspace7Key = "Mod1+7";
+  Workspace1Key = "Mod1+1";
+  PrevWorkspaceLayerKey = None;
+  Workspace2Key = "Mod1+2";
+  ColormapMode = auto;
+  Workspace3Key = "Mod1+3";
+  MiniaturizeKey = "Mod1+M";
+  DisableDock = NO;
+  MouseMiddleButtonAction = OpenWindowListMenu;
+  Superfluous = NO;
+  ConstrainWindowSize = NO;
+  FocusNextKey = "Mod1+Tab";
+  PopupSwitchMenu = NO;
+  WindowMenuKey = "Control+Escape";
+  OpaqueMove = YES;
+  ShadeKey = None;
+  MenuTextBack = (solid, "rgb:aa/aa/aa");
+  MouseLeftButtonAction = SelectWindows;
+  ColormapSize = 4;
+  WindowPlacement = auto;
+  CycleWorkspaces = NO;
+  AutoFocus = YES;
+  ClipRaiseKey = None;
+  DisableAnimations = NO;
+  DisableDithering = NO;
+  TitleJustify = center;
+  MenuTextColor = black;
+  IconBack = (dgradient, "rgb:a6/a6/b6", "rgb:51/55/61");
+  DontConfirmKill = NO;
+  LowerKey = "Mod1+Down";
+  NewStyle = new;
+  FocusPrevKey = "Mod1+Shift+Tab";
+  WindowListKey = F11;
+  IconSize = 64;
+  MenuTextFont = "sans serif:bold:pixelsize=12:xlfd=-*-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*";
+  NoWindowOverIcons = NO;
+  AdvanceToNewWorkspace = NO;
+  MenuTitleBack = (solid, black);
+  DisableMiniwindows = NO;
+  MouseWheelAction = None;
+  MouseRightButtonAction = OpenApplicationsMenu;
+  CloseKey = None;
+  HighlightColor = white;
+  FocusMode = manual;
+  NextWorkspaceKey = "Mod1+Control+Right";
+  WrapMenus = NO;
+  Workspace10Key = "Mod1+0";
+  CClipTitleColor = gray20;
+  VMaximizeKey = None;
+  IconSlideSpeed = fast;
+  MenuStyle = normal;
+  WindozeCycling = NO;
+  IconPath = (
+    "~/GNUstep/Library/Icons",
+    "~/GNUstep/Library/WindowMaker/Pixmaps",
+    "~/GNUstep/Library/WindowMaker/CachedPixmaps",
+    "/usr/share/WindowMaker/Icons",
+    "/usr/share/WindowMaker/Pixmaps",
+    "/usr/share/icons",
+    "/usr/local/share/WindowMaker/Icons",
+    "/usr/local/share/WindowMaker/Pixmaps",
+    "/usr/local/share/icons"
+  );
+  RaiseKey = "Mod1+Up";
+  MultiByteText = AUTO;
+  ModifierKey = Mod1;
+  NextWorkspaceLayerKey = None;
+  DisableSound = NO;
+  PTitleBack = (solid, gray40);
+  SaveSessionOnExit = NO;
+  UTitleColor = black;
+  UTitleBack = (solid, "rgb:aa/aa/aa");
+  PTitleColor = white;
+  ResizeDisplay = line;
+  StickyIcons = NO;
+  RaiseLowerKey = None;
+}

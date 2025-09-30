@@ -1,0 +1,17 @@
+
+### We need a cache directory
+if [ -z $XDG_CACHE_HOME ];then
+	XDG_CACHE_HOME=$HOME/.cache
+fi
+
+if ! [ -d $XDG_CACHE_HOME ];then
+	mkdir -p $XDG_CACHE_HOME
+fi
+
+### Set the right permissions
+sudo chown -fR $USER:$USER $XDG_CACHE_HOME
+
+### MESA
+if [ -z "$MESA_SHADER_CACHE_DIR" ];then
+	MESA_SHADER_CACHE_DIR=$XDG_CACHE_HOME
+fi

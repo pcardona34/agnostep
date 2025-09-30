@@ -1,0 +1,13 @@
+{
+  NSExecutable = "EBookReader";
+  NSRole = "Viewer";
+  NSIcon = "EBookReader.tiff";
+  CFBundleIdentifier = "org.gnustep.EBookReader";
+	XAppWrapper = YES;
+  NSTypes = (
+    {
+      NSUnixExtensions = ( "epub" );
+      NSIcon = "FileIcon_epub.tiff";
+    }
+  );
+}

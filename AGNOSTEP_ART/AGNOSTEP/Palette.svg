@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="Palette.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.67526655"
+     inkscape:cx="297.66024"
+     inkscape:cy="561.25985"
+     inkscape:window-width="1236"
+     inkscape:window-height="1047"
+     inkscape:window-x="649"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#3a3a55;fill-opacity:1;stroke:#3a3a55;stroke-width:0.79375;stroke-miterlimit:0;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect9722"
+       width="73.116531"
+       height="58.655018"
+       x="2.714694"
+       y="31.470673" />
+    <rect
+       style="fill:#4f4f74;fill-opacity:1;stroke-width:0.79375;stroke-miterlimit:0;paint-order:markers fill stroke;stroke:#ffffff;stroke-opacity:1"
+       id="rect584"
+       width="73.116531"
+       height="58.655018"
+       x="11.457788"
+       y="57.372955" />
+    <rect
+       style="fill:#59597f;fill-opacity:1;stroke-width:0.79375;stroke-miterlimit:0;paint-order:markers fill stroke;stroke:#ffffff;stroke-opacity:1"
+       id="rect2856"
+       width="73.116531"
+       height="58.655018"
+       x="29.732473"
+       y="79.948936" />
+    <rect
+       style="fill:#8686bf;fill-opacity:1;stroke:#ffffff;stroke-width:0.79375;stroke-miterlimit:0;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect2858"
+       width="73.116531"
+       height="58.655018"
+       x="54.125957"
+       y="105.73156" />
+    <rect
+       style="fill:#d7d7ff;fill-opacity:1;stroke:#ffffff;stroke-width:0.79375;stroke-miterlimit:0;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect2860"
+       width="73.116531"
+       height="58.655018"
+       x="78.081825"
+       y="127.28844" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       x="89.410767"
+       y="16.532816"
+       id="text2924"
+       transform="scale(0.82278828,1.2153795)"><tspan
+         sodipodi:role="line"
+         id="tspan2922"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:none;stroke:#ffffff;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+         x="89.410767"
+         y="16.532816">Palette Pisin Theme</tspan></text>
+  </g>
+</svg>

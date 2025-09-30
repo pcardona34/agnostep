@@ -1,0 +1,172 @@
+		<part name="Prerequisite">
+		<section name="The UNIX way">
+
+		Before you can use a removable device within the workspace, you must do several things the first time: it is due to the underlying GNU/Linux operating system. When a new device is plugged, you must add it like a new branch of the filesystem root: this action is called to 'mount' the device. So we need to:<br>
+		<ol>
+			<li>Identify the device</li>
+			<li>Avoid a well known driver issue</li>
+			<li>Declare this identified device to the system and allow the average user to mount it, use it and unmount it.</li>
+		</ol>
+		
+		</section
+		</part>
+
+		<part name="Step by step">
+		<section name="STEP 1 - Identify the device">
+			
+		Let's plug the new device... Now, to get the UUID of the plugged device, open the 'Terminal' app and execute this command:<br>
+			<listing>
+				ls&nbsp;-l&nbsp;/dev/disk/by-uuid&nbsp;&nbsp;&nbsp;&nbsp;
+			</listing>
+
+		<br>This command shows on my Pi 400 the SD card where the operating system is installed: it begegins with 'mmcblk0'. And what we are looking for, as '/dev/sda1':<br>
+		<information>
+		<br>lrwxrwxrwx 1 root root 10  1 sept. 09:27  5B74-A562 -&gt; ../../sda1&nbsp;&nbsp;<br>&nbsp;&nbsp;<br>&nbsp;&nbsp;
+		</information>
+
+		<br>We got the desired UUID: <b>5B74-A562</b>.
+		
+		</section>
+
+		<section name="STEP 2 - Creating the path for the new device">
+
+		We need to create a folder under the '/mnt' path with a significant name. Mine is 'CLEPAT':<br>
+
+		<listing>
+			sudo&nbsp;mkdir&nbsp;-p&nbsp;/mnt/CLEPAT&nbsp;&nbsp;&nbsp;&nbsp;
+		</listing>
+
+		</section>
+
+		<section name="STEP 3 - Declaring the device">
+
+		To tell the system we have a new allowed device, we must add a line to the  file '/etc/fstab': edit this file as a superuser:<br>
+
+		<listing>
+			sudo&nbsp;nano&nbsp;/etc/fstab&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</listing>
+
+		<br>And add this line, mutatis mutandis, with your UUID and the path associated:<br>
+
+		<note>
+			<br>UUID=5B74-A562 /mnt/CLEPAT vfat nofail,noauto,users,noatime,rw 0 0 &nbsp;&nbsp;<br>&nbsp;
+		</note>
+
+		<br>Save the file with <b>F3</b>&nbsp; and close it with <b>F2</b>.
+		<br>Restart the daemons with this command:
+
+		<listing>
+			sudo&nbsp;systemctl&nbsp;daemon-reload;&nbsp;&nbsp;
+		</listing>
+
+		<br>It is time to test:
+		<listing>
+			mount&nbsp;/mnt/CLEPAT&nbsp;&amp;&amp;&nbsp;ls&nbsp;/mnt/CLEPAT &nbsp;&nbsp;&nbsp;
+		</listing>
+
+		<br>If you could see the content of the device, you can go on: first, we dismount the device:<br>
+
+		<listing>
+			umount&nbsp;/mnt/CLEPAT&nbsp;&nbsp;&nbsp;&nbsp;
+		</listing>
+		</section>
+
+		<section name="STEP 4 - Setting for the Workspace">
+
+		Open the application 'SystemPreferences' and select the tab 'Volumes'...
+
+		<br>Then, in the 'mount points for removable media' column, add the new path: '/mnt/CLEPAT' and click the 'set' button to confirm. Then close the 'SystemPreferences' app.
+
+		<section name="Volumes setting">
+		<legendfig src="volumes.tiff">
+			<legend x="320" y="130">The new path has been added</legend>
+		</legendfig>
+		</section>
+
+		<br>It is time to test and use now within the workspace...
+
+		</section>
+		</part>
+
+		<part name="Using Removable Devices within the Workspace">
+
+		<section name="Mounting a removable device">
+		<ol>
+			<li>Select the File Viewer window or click on the desktop to activate the GWorkspace application.</li>
+			<li>In the menu, select: 'Tools &gt; Check for disks' or use the shortcut key: '#E'.
+		</ol>
+
+		<br>
+		<information>
+			The mounted disk is shown as an icon on the Desktop. Double click on the disk icon to open its File Viewer window.
+		</information>
+
+		<section name="Volume mounted">
+		<legendfig src="mounted_volume.tiff">
+			<legend x="430" y="20">Mounted disk icon on the Desktop.</legend>
+			<legend x="40" y="240">Opened disk content in its File Viewer window.</legend>
+		</legendfig>
+		</section>
+
+		</section>
+
+		<section name="Removing a mounted disk">
+		<ol>
+			<li>Close the File Viewer window of the disk.</li>
+			<li>Select the icon of the disk, drag it onto the Recycler icon of the Dock...</li>
+			<li>Release the mouse button when the pointer is green. If not, just make a little move to get it green.</li>
+		</ol>
+		
+		<section name="Unmounting...">
+		<legendfig src="DND_umount.tiff">
+			<legend x="20" y="50">A disk dragged onto the Recycler</legend>
+		</legendfig>
+		</section>
+
+		<br>
+
+		<information>
+			The disk icon has gone. Wait a few seconds. You can unplug the removable disk.&nbsp;&nbsp;
+<br>&nbsp;&nbsp;
+		</information>
+
+		</section>
+		</part>
+
+		<part name="Particular cases">
+
+		<section name="UASP known issues">
+
+		<caution>
+			Some SATA/USB3.0 removable disks are known to not work with the UASP norm on Raspberry Pi's.
+		</caution>
+
+		<br>To avoid loss of data, be sure to identifiy such controllers: their ID (got with 'lsusb' command) begins with '152d' which identifies a 'JMicron' controller.
+
+		<br>To use safely those disks, you must modify the boot kernel with quirks like this:<br>
+
+		<ol>
+			<li>Edit the 'cmdline.txt' as a superuser:<br>
+			<listing>
+				sudo&nbsp;nano&nbsp;/boot/firmware/cmdline.txt&nbsp;&nbsp;&nbsp;&nbsp;
+				<br>&nbsp;&nbsp;
+			</listing>
+			</li>
+			<li>Add this at the begining of the line, mutatis mutandis, with the ID (xxxx:xxxx) of your disk:<br>
+				<note>usb-storage.quirks=xxxx:xxxx:u&nbsp;&nbsp;&nbsp;&nbsp;</note>
+ 			</li>
+			<li>Save (F3), close (F2), logout the Workspace, and reboot the Pi:<br>
+				<listing>sudo&nbsp;reboot&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</listing>
+			</li>
+			<li>Login and follow the <ref id="Prerequisite">Prerequisite</ref>&nbsp; steps to add your disk and make it available for your workspace.</li>
+			</ol>
+
+			<br>
+			<caution>
+				You must distinguish ID (xxxx:xxxx) and UUID (XXXX-XXXX). ID is hardware info (vendor...) while UUID is used to identify the device in your system.
+			</caution>
+
+ 
+			</section>
+			</part>
+

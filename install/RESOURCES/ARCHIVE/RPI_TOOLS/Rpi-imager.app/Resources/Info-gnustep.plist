@@ -1,0 +1,7 @@
+{
+  NSExecutable = "Rpi-imager";
+  NSRole = "Application";
+  NSIcon = "Rpi-imager.tiff";
+  CFBundleIdentifier = "com.raspberrypi.Rpi-imager";
+  XAppWrapper = YES;
+}

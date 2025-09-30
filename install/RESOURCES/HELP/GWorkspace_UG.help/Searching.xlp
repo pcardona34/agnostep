@@ -1,0 +1,135 @@
+<section  name="Introduction">
+
+When you select the 'Demo' folder and type <b>ALT-f</b>&nbsp; the 'Finder' is started. The Finder is also available from the 'Tools' section in the menu.
+
+<section name="Search Panel">
+<legendfig src="Search_Panel.tiff">
+	<legend x="60" y="32">Root of the Search / Specific places</legend>
+	<legend x="290" y="32">Add / Remove a Specific place</legend>
+	<legend x="260" y="100">List of places to search in</legend>
+	<legend x="350" y="174">Add / remove search option</legend>
+	<legend x="40" y="166">Search by item List</legend>
+	<legend x="5" y="202">Search also in the subfolders</legend>
+</legendfig>
+</section>
+
+<br><br>If you search on 'Name' 'contains' 'est' and click 'Search' you get:
+
+<section name="Search results">
+<legendfig src="Results.tiff">
+	<legend x="316" y="30">Stop search</legend>
+	<legend x="336" y="30">Restart search</legend>
+	<legend x="360" y="30">Create a Life Search Folder</legend>
+	<legend x="160" y="94">Found results</legend>
+	<legend x="236" y="262">Path to found item</legend>
+</legendfig>
+</section>
+
+<br><br>Using the plus (+) and minus (-) signs you can add or remove more search options. This way you can create very complex constructions for very exact matches.
+
+</section>
+
+<section  name="The search area">
+
+You can search in a single folder, or you could build a list of folders where you want to search. Select the 'Specific places' item and use the 'Add' button to build a list of places to search in.
+
+<section name="Specific Places">
+<legendfig src="Places.tiff">
+</legendfig>
+</section>
+
+<br><br>This way you can specify exactly where to search.
+
+</section>
+
+section name="Define a search">
+
+<section  name="Searching on filename">
+
+The 'Name' search option gives you the ability to search a file or folder by its name. To search on the exact match select 'is'. If you only know a part of the name then 'contains' might be better for you.
+
+<br><br>To further refine your search you can exclude the ones the 'contains not' or the 'start with' options. If you know the extension of the file you could e.g. filter out all '.txt' files by using the 'ends with' option.
+
+<section name="Filename items List">
+<legendfig src="Filename_Search.tiff">
+</legendfig>
+</section>
+
+<br><br>The text field, in which you can type text, is case sensitive. So there is a distinction between uppercase and lowercase.
+
+</section>
+
+<section  name="Searching by file type">
+
+The file type search can be searched for in a match or does not match variant: 'is' or 'is not'
+
+<br><br>Currently the Finder functionality can be used to find folders, tools, applications, symbolic links and of course normal files like documents.
+
+<section name="File Type Search">
+<legendfig src="Filetype_Search.tiff">
+</legendfig>
+</section>
+
+</section>
+
+<section  name="Searching by contents">
+
+Using the 'contents' search option, one can search through the contents of documents for matches. Note that this might be a heavy task for your computer, since this will inspect the contents of the files and it needs to open and read them.
+
+<br><br>The text you enter is <b>case sensitive</b>, so only exact uppercase and lowercase matches are performed.
+</section>
+
+<section  name="Searching by annotation">
+
+Through the 'Annotations' Inspector one can add keywords to a file. And with the 'Annotations search option' you can search on the added keywords.
+<br>There are several ways to search through the annotations.
+
+<section name="Annotations Search">
+<legendfig src="Annotations.tiff">
+</legendfig>
+</section>
+
+</section>
+
+<section  name="Searching by size">
+This search feature is quite simple. You can search on 'is greater than' or on is 'is less than'.
+<br>Combining the two using the (+) button you can define an almost exact match on the size of a document.
+
+<section name="Search by Size">
+<legendfig src="Size.tiff">
+</legendfig>
+</section>
+
+</section>
+
+<section  name="Search by date">
+
+<b>Created or modified</b>
+
+<br><br>There are two ways a date is connected to a file. The first one is the date on which the file is created and the other is the last modified date. The Finder gives you the ability to search on both of these (date created and date modified).
+<br>Both options have a uniform structure for searchig the dates. The options on the left are the ones you can choose from, and after that you can, with some options, enter a date.
+
+<section name="Search by date">
+<legendfig src="Date.tiff">
+</legendfig>
+</section>
+
+</section>
+</section>
+
+
+<section name="Live Search Folders">
+
+By dragging the 'Live Search Folder' from your 'Search results window' to e.g. the Desktop you can store the search for future use. A Live Search Folder is a Finder search saved in a file and capable of <b>auto-updating</b>&nbsp; itself.
+
+<br><br>To reuse this search double click the 'Live Search Folder'. The LSF window that will open has two buttons and a popup; the Edit button opens the folder editor where you can modify the search criteria used by the folder, the popup let you choose the auto-update cycle time and the Update now button updates the results.
+
+<section name="LiveSearch">
+<legendfig src="LiveSearch.tiff">
+	<legend x="190" y="110">Adjust the search criteria</legend>
+	<legend x="310" y="110">How often the search needs to be updated</legend>
+</legendfig>
+</section>
+
+</section>
+

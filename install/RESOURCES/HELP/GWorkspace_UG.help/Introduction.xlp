@@ -1,0 +1,16 @@
+
+<section name="A Workspace manager">
+
+GWorkspace is a GNUstep-based application that handles the Workspace for you. The Workspace is defined as the background, a file manager and places that hold the icons of the running applications: a Dock to provide Icon shortcuts to your favorite applications, a tabbedShelf to organize them by categories and miniwindows to handle also the minimized windows of the documents.
+
+This guide will help you to manage the Workspace. It will explain all the elements that you might encounter and even the more hidden features of GWorkspace.
+
+This document is written using a GNU/Linux system with a default GNUstep installation located in /usr/local/lib/GNUstep.
+
+This updated guide was written using GWorkspace 1.1.0, built from the latest sources available. The figures provided in this Guide were from the PiSiN Desktop project.
+
+</section>
+
+
+
+

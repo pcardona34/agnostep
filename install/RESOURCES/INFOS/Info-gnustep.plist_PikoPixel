@@ -1,0 +1,141 @@
+{
+    ApplicationDescription = "Pixel-art image editor";
+    ApplicationName = PikoPixel;
+    ApplicationRelease = "1.0 BETA10";
+    Authors = (
+	"Developed by Josh Freeman ",
+	"Twilight Edge Software ",
+	"http://twilightedge.com ",
+	"pikopixel@twilightedge.com ",
+	" ",
+	"Contributors: ",
+	"Fred Kiefer, Riccardo Mottola ",
+	" ",
+	"Thank you: ",
+	"\U2022 GNUstep framework developers ",
+	"\U2022 G\U00FCrkan Myczko, Yavor Doganov (Debian package) ",
+	"\U2022 David Chisnall, Edwin Ancaer, Steve Wills (FreeBSD port) ",
+	"\U2022 Bernard Cafarelli (Gentoo package) ",
+	"\U2022 Carsten Teibes (AUR package) ",
+	"\U2022 Kira Patton (Void Linux package) "
+    );
+    Copyright = "Copyright (C) 2013-2018,2020 Josh Freeman";
+    CopyrightDescription = "Released under the GNU Affero General Public License v3";
+    FreeDesktopCategories = (
+	Graphics,
+	2DGraphics,
+	RasterGraphics,
+	"X-GNUstep"
+    );
+    GSMainMarkupFile = "";
+    NOTE = "Automatically generated, do not edit!";
+    NSExecutable = PikoPixel;
+    NSIcon = "GNUstepAppIcon.png";
+    CFBundleIdentifier = "com.twilightedge.PikoPixel";
+    NSMainNibFile = "MainMenu.nib";
+    NSMainStoryboardFile = "";
+    NSPrincipalClass = PPApplication;
+    NSRole = Application;
+    NSTypes = (
+	{
+	    NSDocumentClass = PPDocument;
+	    NSHumanReadableName = "PikoPixel Document";
+	    NSMIMETypes = (
+		"image/piko",
+		"image/x-piko"
+	    );
+	    NSName = "PikoPixel Document";
+	    NSRole = Editor;
+       NSIcon = "File_piko.tiff";
+	    NSUnixExtensions = (
+		piko,
+		"piko-gif",
+		"piko-jpg",
+		"piko-jpeg",
+		"piko-png",
+		"piko-tif",
+		"piko-tiff",
+		"piko-bmp"
+	    );
+	},
+	{
+	    NSHumanReadableName = "PikoPixel Background Patterns Archive";
+	    NSName = "PikoPixel Background Patterns Archive";
+	    NSRole = None;
+	    NSUnixExtensions = (
+		pikopatr
+	    );
+	},
+	{
+	    NSHumanReadableName = "PikoPixel Grid Patterns Archive";
+	    NSName = "PikoPixel Grid Patterns Archive";
+	    NSRole = None;
+	    NSUnixExtensions = (
+		pikogrid
+	    );
+	},
+	{
+	    NSDocumentClass = PPDocument;
+	    NSHumanReadableName = "GIF Graphic";
+	    NSMIMETypes = (
+		"image/gif"
+	    );
+	    NSName = "GIF Graphic";
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		gif
+	    );
+	},
+	{
+	    NSDocumentClass = PPDocument;
+	    NSHumanReadableName = "JPEG Graphic";
+	    NSMIMETypes = (
+		"image/jpeg"
+	    );
+	    NSName = "JPEG Graphic";
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		jpg,
+		jpeg
+	    );
+	},
+	{
+	    NSDocumentClass = PPDocument;
+	    NSHumanReadableName = "PNG Graphic";
+	    NSMIMETypes = (
+		"image/png",
+		"image/x-png"
+	    );
+	    NSName = "PNG Graphic";
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		png
+	    );
+	},
+	{
+	    NSDocumentClass = PPDocument;
+	    NSHumanReadableName = "TIFF Graphic";
+	    NSMIMETypes = (
+		"image/tiff"
+	    );
+	    NSName = "TIFF Graphic";
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		tif,
+		tiff
+	    );
+	},
+	{
+	    NSDocumentClass = PPDocument;
+	    NSHumanReadableName = "BMP Graphic";
+	    NSMIMETypes = (
+		"image/bmp"
+	    );
+	    NSName = "BMP Graphic";
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		bmp
+	    );
+	}
+    );
+}

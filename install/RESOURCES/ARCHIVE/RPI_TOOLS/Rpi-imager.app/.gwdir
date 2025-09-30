@@ -1,0 +1,12 @@
+{
+    "fsn_info_type" = <*I0>;
+    geometry = "1212 246 450 350 0 0  1920 1080 ";
+    lastselection = (
+	"/home/patrick/SOURCES/pi-step-initiative/pisin/RESOURCES/RPI_TOOLS/Rpi-imager.app/Resources/Rpi-imager.tiff"
+    );
+    shelfdicts = (
+    );
+    shelfheight = <*R77>;
+    singlenode = <*BN>;
+    viewtype = Browser;
+}

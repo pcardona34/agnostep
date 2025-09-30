@@ -1,0 +1,10 @@
+### My /etc/fstab
+### Of course, you must adapt the lines which begin by "UUID..." to your case.
+
+proc            /proc           proc    defaults          0       0
+PARTUUID=d9c86127-01  /boot/firmware  vfat    defaults          0       2
+PARTUUID=d9c86127-02  /               ext4    defaults,noatime  0       1
+# a swapfile is not a swap partition, no line here
+#   use  dphys-swapfile swap[on|off]  for that
+### Below must be changed with your UUID and the mount name of your choice
+UUID=5B74-A562 /mnt/CLEPAT vfat defaults,noauto,users,rw,nofail 0 0

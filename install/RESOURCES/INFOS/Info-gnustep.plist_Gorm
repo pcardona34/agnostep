@@ -1,0 +1,85 @@
+{
+    ApplicationDescription = "[GNUstep | Graphical] Object Relationship Modeller";
+    ApplicationIcon = "Gorm.tiff";
+    ApplicationName = Gorm;
+    ApplicationRelease = "Gorm 1.5.0 (Released)";
+    Authors = (
+	"Gregory John Casamento <greg.casamento@gmail.com>",
+	"Adam Fedor <fedor@gnu.org>",
+	"Richard Frith-Macdonald <rfm@gnu.org>",
+	"Wolfgang Lux <wolfgang.lux@gmail.com>",
+	"Pierre-Yves Rivaille <pyrivail@ens-lyon.fr>",
+	"Sergii Stoian <stoyan255@gmail.com>"
+    );
+    Copyright = "Copyright (C) 1999-2023 FSF";
+    CopyrightDescription = "Released under the GNU General Public License 3.0";
+    GSDesktopInstallationDomain = SYSTEM;
+    GSMainMarkupFile = "";
+    NOTE = "Automatically generated, do not edit!";
+    NSBuildVersion = "1.5.0";
+    NSExecutable = Gorm;
+    NSIcon = "Gorm.tiff";
+    CFBundleIdentifier = "org.gnustep.Gorm";
+    NSMainNibFile = "Gorm.gorm";
+    NSMainStoryboardFile = "";
+    NSPrincipalClass = NSApplication;
+    NSRole = Editor;
+    NSTypes = (
+	{
+	    NSDocumentClass = GormDocument;
+	    NSHumanReadableName = "GNUstep Gorm";
+	    NSIcon = "GormFile.tiff";
+	    NSName = GSGormFileType;
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		gorm
+	    );
+	},
+	{
+	    NSDocumentClass = GormDocument;
+	    NSHumanReadableName = "Cocoa Storyboard";
+	    NSIcon = "GormFile.tiff";
+	    NSName = GSStoryboardFileType;
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		storyboard
+	    );
+	},
+	{
+	    NSDocumentClass = GormDocument;
+	    NSHumanReadableName = "Cocoa Nib";
+	    NSIcon = "GormNib.tiff";
+	    NSName = GSNibFileType;
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		nib
+	    );
+	},
+	{
+	    NSDocumentClass = GormDocument;
+	    NSHumanReadableName = "GNUstep GModel";
+	    NSIcon = "FileIcon_gmodel.tiff";
+	    NSName = GSGModelFileType;
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		gmodel
+	    );
+	},
+	{
+	    NSDocumentClass = GormDocument;
+	    NSHumanReadableName = "Cocoa Xib";
+	    NSIcon = "GormNib.tiff";
+	    NSName = GSXibFileType;
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		xib
+	    );
+	},
+	{
+	    NSIcon = "GormPalette.tiff";
+	    NSUnixExtensions = (
+		palette
+	    );
+	}
+    );
+}

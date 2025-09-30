@@ -1,0 +1,31 @@
+{
+    ApplicationDescription = "The Theme editor for GNUstep";
+    ApplicationIcon = "Thematic.tiff";
+    ApplicationName = Thematic;
+    ApplicationRelease = "0.2";
+    Authors = (
+	"Richard Frith-MacDonald",
+	"Riccardo Mottola"
+    );
+    CFBundleIdentifier = "org.gnustep.Thematic";
+    Copyright = "Copyright (C) 2006-2021";
+    CopyrightDescription = "Released under GPL3";
+    FullVersionID = "0.2";
+    GSHelpContentsFile = "ThematicHelp.rtf";
+    GSMainMarkupFile = "";
+    NOTE = "Automatically generated, do not edit!";
+    NSExecutable = Thematic;
+    NSIcon = "Thematic.tiff";
+    NSMainNibFile = "Thematic.gorm";
+    NSMainStoryboardFile = "";
+    NSPrincipalClass = NSApplication;
+    NSRole = Application;
+    NSTypes = (
+	{
+	    NSIcon = "Thematic.tiff";
+	    NSUnixExtensions = (
+		theme
+	    );
+	}
+    );
+}

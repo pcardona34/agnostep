@@ -1,0 +1,59 @@
+# Dunst Notify Daemon
+[global]
+    follow = none
+    width = 300
+    height = (0,300)
+    origin = top-right
+    offset = (10, 50)
+    scale = 0
+    notification_limit = 10
+    separator_height = 2
+    padding = 8
+    horizontal_padding = 8
+    frame_width = 0
+    #frame_color = "#444444"
+    gap_size = 0
+    separator_color = frame
+    sort = yes
+    idle_threshold = 0
+    font = Monospace 10
+    line_height = 0
+    markup = full
+    format = "<b>%s</b>\n%b"
+    alignment = left
+    vertical_alignment = top
+    show_age_threshold = 0
+    word_wrap = no
+    ellipsize = end
+    ignore_newline = no
+    stack_duplicates = true
+    hide_duplicate_count = false
+    #show_indicators = yes
+    enable_recursive_icon_lookup = true
+    sticky_history = yes
+    history_length = 50
+    always_run_script = true
+    title = ""
+    class = Dunst
+    #corner_radius = 9
+    ignore_dbusclose = false
+    mouse_left_click = close_current
+
+[urgency_low]
+    background = "#8383BF"
+    foreground = "#303046"
+    timeout = 10
+
+[urgency_normal]
+    background = "#8383BF"
+    foreground = "#303046"
+    timeout = 10
+ #   override_pause_level = 30
+
+[urgency_critical]
+    background = "#303046"
+    foreground = "#FFFFFF"
+#    frame_color = "#8383BF"
+    timeout = 0
+ #   override_pause_level = 60
+

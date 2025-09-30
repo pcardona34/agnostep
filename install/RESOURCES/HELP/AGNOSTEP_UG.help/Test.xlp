@@ -1,0 +1,14 @@
+		<chapter name="testing">
+
+		<part name="test">
+
+			<section name="Behind the Scene">
+
+				<legendfig src="desktop01_menu.tiff">
+				<legend x="50" y="50">Vertical menu</legend>
+		</legendfig>
+
+			</section>
+
+		</part>
+		</chapter>

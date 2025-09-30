@@ -1,0 +1,10 @@
+{
+  NOTE = "Automatically generated, do not edit!";
+  NSExecutable = "GSSpeechServer";
+  NSMainNibFile = "";
+  NSMainStoryboardFile = "";
+  GSMainMarkupFile = "";
+  CFBundleIdentifier = "org.gnustep.GSSpeech";
+  NSIcon = "GSSpeech.tiff";
+  NSPrincipalClass = "NSApplication";
+}

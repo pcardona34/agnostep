@@ -1,0 +1,177 @@
+#!/bin/bash
+
+# PiSiN Desktop
+### Template to install new Applications
+
+### Color Message Funtions
+. SCRIPTS/colors.sh
+
+### ENV
+_PWD=`pwd`
+. SCRIPTS/environ.sh
+. /usr/local/share/GNUstep/Makefiles/GNUstep.sh
+SPIN='/-\|'
+APPLICATIONS=/usr/local/lib/GNUstep/Applications
+if ! [ -d $APPLICATIONS ];then
+	printf "The Applications Folder is not found.\nYou must correct this path in ${0}.\n"
+	exit 1
+fi
+
+if ! [ -d ../build ];then
+	mkdir ../build
+fi
+
+LOG="$HOME/PISI_BUILD.log"
+echo "..." >$LOG
+
+##################################
+### Spinner
+function spinner()
+{
+i=1
+echo -n ' '
+while [ -d /proc/$PID ]
+do
+	sleep 0.2
+	printf "\b${SPIN:i++%${#SPIN}:1}"
+done
+}
+### End of Spinner
+##################################
+
+
+##################################
+## TEMPLATES			##
+##################################
+
+##########################
+## Template: for git...
+##########################
+
+function install_foo()
+{
+
+cd ../build || exit 1
+
+APPNAME="foo"
+REPO="gap"
+OWNER="gnustep"
+HUB="https://github.com"
+BRANCH="master"
+BUILD_DIR="user-apps" # "system-apps" | "ported-apps"
+TARGET="${APPLICATIONS}"
+
+title "${APPNAME} ${RELEASE}"
+
+printf "Fetching...\n"
+if [ -d $REPO ];then
+        cd $REPO
+        git pull origin $BRANCH &>/dev/null
+else
+	git clone ${HUB}/${OWNER}/${REPO}.git &>/dev/null
+	cd $REPO
+fi
+
+
+cd $BUILD_DIR/$APPNAME
+
+#####################################
+echo "$APPNAME - $RELEASE" >> $LOG
+
+CONFIG_ARGS=""
+if [ -f configure ];then
+	printf "Building...\n"
+	./configure ${CONFIG_ARGS} &>>$LOG
+fi
+
+printf "Building...\n"
+make &>>$LOG &
+PID=$!
+spinner
+
+printf "\rInstalling...\n"
+if [ "$TARGET" == "$APPLICATIONS" ];then
+	sudo make install &>>$LOG &
+else
+	sudo cp --recursive ${APPNAME}.app $TARGET/ &>>$LOG &
+fi
+PID=$!
+spinner
+
+cd $_PWD
+printf "\rDone."
+
+}
+
+################################
+## Template for: get method
+################################
+
+function install_bar()
+{
+cd ../build || exit 1
+
+APPNAME="bar"
+RELEASE="1.0.0"
+EXT=".tar.gz"
+HUB=http://savannah.nongnu.org/download/gap
+TARGET="${APPLICATIONS}"
+
+printf "Fetching...\n"
+if [ -d ${APPNAME}-${RELEASE} ];then
+	cd ${APPNAME}-${RELEASE}
+else
+	wget --quiet ${HUB}/${APPNAME}-${RELEASE}${EXT}
+	gunzip ${HUB}/${APPNAME}-${RELEASE}${EXT}
+	tar -xf ${APPNAME}-${RELEASE}.tar
+	cd ${APPNAME}-${RELEASE}
+fi
+
+#####################################
+echo "$APPNAME - $RELEASE" >> $LOG
+
+CONFIG_ARGS=""
+if [ -f configure ];then
+	printf "Configuring...\n"
+	./configure ${CONFIG_ARGS} &>>$LOG
+fi
+
+printf "Building...\n"
+make clean &>/dev/null
+make | tee -a $LOG >/dev/null &
+PID=$!
+spinner
+
+printf "\rInstalling...\n"
+if [ "$TARGET" == "$APPLICATIONS" ];then
+	sudo make install &>>$LOG &
+else
+	sudo cp --recursive ${APPNAME}.app $TARGET/ &>>$LOGl &
+fi
+PID=$!
+spinner
+
+cd $_PWD
+printf "\rDone."
+
+}
+
+##################################
+## END OF TEMPLATES		##
+##################################
+
+######################################
+## BELOW BEGINS THE INST. FUNCTIONS ##
+######################################
+
+################################
+## Uncomment below to install
+################################
+
+#install_foo
+#install_bar
+
+################################
+
+make_services
+sudo ldconfig

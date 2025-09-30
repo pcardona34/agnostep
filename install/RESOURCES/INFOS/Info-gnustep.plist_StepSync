@@ -1,0 +1,21 @@
+{
+    ApplicationDescription = "File Synchronizer";
+    ApplicationName = StepSync;
+    ApplicationRelease = "0.1";
+    Authors = (
+	"Riccardo Mottola"
+    );
+    CFBundleIdentifier = "org.gap.StepSync";
+	 NSIcon = "StepSync.tiff";
+    Copyright = "Copyright (C) 2017";
+    CopyrightDescription = "Released under GPL v2+";
+    FullVersionID = "0.1";
+    GSMainMarkupFile = "";
+    NOTE = "Automatically generated, do not edit!";
+    NSExecutable = StepSync;
+    NSMainNibFile = "MainMenu.gorm";
+    NSMainStoryboardFile = "";
+    NSPrincipalClass = NSApplication;
+    NSRole = Application;
+    URL = "http://gap.nongnu.org/stepsync/";
+}

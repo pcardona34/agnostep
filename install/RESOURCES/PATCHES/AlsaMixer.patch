@@ -1,0 +1,11 @@
+--- Makefile	2025-06-29 14:45:49.597812309 +0200
++++ Makefile.2	2025-06-29 15:22:16.351393746 +0200
+@@ -7,7 +7,7 @@
+ # SPDX-License-Identifier: GPL-2.0+
+ 
+ DESTDIR =
+-GNUSTEP_BINDIR = /usr/local/GNUstep/Apps/AlsaMixer.app
++GNUSTEP_BINDIR = /usr/local/lib/GNUstep/Applications/AlsaMixer.app
+ X11_BINDIR = /usr/X11R6/bin
+ 
+ CXX=c++

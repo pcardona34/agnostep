@@ -1,0 +1,43 @@
+{
+    ApplicationDescription = "FlexiSheet Technology Preview";
+    ApplicationName = FlexiSheet;
+    ApplicationRelease = "0.5.7";
+    Copyright = "";
+    CopyrightDescription = "";
+    GSMainMarkupFile = "";
+    NOTE = "Automatically generated, do not edit!";
+    NSExecutable = FlexiSheet;
+    NSIcon = Application;
+    CFBundleIdentifier = "org.gap.FlexiSheet";
+    NSMainNibFile = MainMenu;
+    NSMainStoryboardFile = "";
+    NSPrincipalClass = NSApplication;
+    NSTypes = (
+	{
+	    NSDOSExtensions = (
+		fsd
+	    );
+	    NSDocumentClass = FSDocument;
+	    NSHumanReadableName = "FlexiSheet Document";
+	    NSIcon = Sheet;
+	    NSName = fsd;
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		fsd
+	    );
+	},
+	{
+	    NSDOSExtensions = (
+		qtx
+	    );
+	    NSDocumentClass = FSDocument;
+	    NSHumanReadableName = "Quantrix Document";
+	    NSIcon = Quantrix;
+	    NSName = quantrix;
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		quantrix
+	    );
+	}
+    );
+}

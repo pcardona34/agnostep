@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="48"
+   height="48"
+   version="1"
+   id="svg40977"
+   sodipodi:docname="folder-download.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs40981" />
+  <sodipodi:namedview
+     id="namedview40979"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="15.791667"
+     inkscape:cx="20.358839"
+     inkscape:cy="23.999999"
+     inkscape:window-width="1645"
+     inkscape:window-height="1047"
+     inkscape:window-x="273"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg40977" />
+  <rect
+     style="opacity:0.2;stroke-width:1.0388"
+     width="40"
+     height="28.05654"
+     x="4"
+     y="14.94346"
+     rx="2"
+     ry="2.1581955"
+     id="rect40963"
+     inkscape:export-filename="TIFF/common_DownloadFolder.tiff"
+     inkscape:export-xdpi="307.20001"
+     inkscape:export-ydpi="307.20001" />
+  <path
+     style="fill:#8686bf;fill-opacity:1;stroke-width:1.0388"
+     d="m 4,33.288121 c 0,1.19564 0.892,2.158195 2,2.158195 h 36 c 1.108,0 2,-0.962555 2,-2.158195 V 9.5479714 C 44,8.3523312 43.108,7.389776 42,7.389776 H 24 c -3,0 -4,-4.3163907 -7,-4.3163907 H 6 c -1.108,0 -2,0.9625551 -2,2.1581953"
+     id="path40965" />
+  <rect
+     style="opacity:0.2;stroke-width:1.0388"
+     width="40"
+     height="28.05654"
+     x="4"
+     y="12.785265"
+     rx="2"
+     ry="2.1581955"
+     id="rect40967" />
+  <rect
+     style="fill:#e4e4e4;stroke-width:1.0388"
+     width="36"
+     height="17.265564"
+     x="6"
+     y="10.627069"
+     rx="2"
+     ry="2.1581955"
+     id="rect40969" />
+  <rect
+     style="fill:#8686bf;fill-opacity:1;stroke-width:1.0388"
+     width="40"
+     height="28.05654"
+     x="4"
+     y="13.864362"
+     rx="2"
+     ry="2.1581955"
+     id="rect40971" />
+  <path
+     style="opacity:0.1;fill:#ffffff;stroke-width:1.0388"
+     d="m 6,3.0733853 c -1.108,0 -2,0.9625551 -2,2.1581953 V 6.3106783 C 4,5.1150381 4.892,4.152483 6,4.152483 h 11 c 3,0 4,4.3163907 7,4.3163907 h 18 c 1.108,0 2,0.9625552 2,2.1581953 V 9.5479714 C 44,8.3523312 43.108,7.389776 42,7.389776 H 24 c -3,0 -4,-4.3163907 -7,-4.3163907 z"
+     id="path40973" />
+  <path
+     style="fill:#3a3a55;fill-opacity:1;stroke-width:1.23865"
+     d="m 26.84355,19.259851 v 6.474586 h 3.554437 L 24,33.288121 17.602013,25.734437 H 21.15645 V 19.259851 Z M 15.469351,34.367218 h 17.061298 v 2.158196 H 15.469351 Z"
+     id="path40975" />
+</svg>

@@ -1,0 +1,18 @@
+{
+    ApplicationDescription = "Control your volume settings";
+    ApplicationRelease = "0.7";
+    Authors = (
+	"G\U00FCrkan Myczko <alex@aiei.ch>, Yavor Doganov <yavor@gnu.org>"
+    );
+    Copyright = "Copyright 2004-2018 G\U00FCrkan Myczko, Yavor Doganov";
+    CopyrightDescription = "GNU General Public License";
+    GSMainMarkupFile = "";
+    NOTE = "Automatically generated, do not edit!";
+    NSExecutable = VolumeControl;
+    NSIcon = "headphones.tiff";
+    CFBundleIdentifier = "org.gap.VolumeControl";
+    NSMainNibFile = VolumeControl;
+    NSMainStoryboardFile = "";
+    NSPrincipalClass = NSApplication;
+    URL = "https://github.com/alexmyczko/VolumeControl.app/";
+}

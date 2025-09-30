@@ -1,0 +1,49 @@
+{
+    ApplicationDescription = "Simple agenda and calendar application";
+    ApplicationIcon = "Calendar.tiff";
+    ApplicationName = SimpleAgenda;
+    ApplicationRelease = "0.47";
+    Authors = (
+	"Philippe Roussel <p.o.roussel@free.fr>"
+    );
+    Copyright = "Copyright (C) 2007-2025";
+    CopyrightDescription = "Released under GPL Version 2 or any later version";
+    FreeDesktopCategories = (
+	Office,
+	Calendar
+    );
+    FullVersionID = "0.47";
+    GSMainMarkupFile = "";
+    NOTE = "Automatically generated, do not edit!";
+    NSExecutable = SimpleAgenda;
+    NSIcon = "Calendar.tiff";
+    CFBundleIdentifier = "org.poroussel.SimpleAgenda";
+    NSMainNibFile = "Agenda.gorm";
+    NSMainStoryboardFile = "";
+    NSPrincipalClass = NSApplication;
+    NSRole = Application;
+    NSServices = (
+	{
+	    NSKeyEquivalent = {
+		default = t;
+	    };
+	    NSMenuItem = {
+		default = "SimpleAgenda/Create Task";
+	    };
+	    NSMessage = newTask;
+	    NSPortName = SimpleAgenda;
+	    NSSendTypes = (
+		NSStringPboardType
+	    );
+	}
+    );
+    NSTypes = (
+	{
+	    NSIcon = "ical-file.tiff";
+	    NSUnixExtensions = (
+		ics
+	    );
+	}
+    );
+    URL = "https://github.com/poroussel/simpleagenda";
+}

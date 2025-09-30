@@ -1,0 +1,54 @@
+
+<section name="Introduction">
+
+As we have seen before 'TextEdit' was started when we double clicked a '.txt' file. This is by far the easiest way to start an application and get working where you left of.
+
+<br><br>An alternative for this is to highlight the document and use 'Open with' contextual menu (shown by a click with the right button of your mouse) then select the application of your choice in the list.<br>
+
+<section name="Open with menu">
+<legendfig src="openwith.tiff">
+</legendfig>
+</section>
+
+<caution>
+The alternative 'Open with...' command from the 'File' menu is not&nbsp;working. &nbsp;&nbsp;&nbsp;>&nbsp;
+</caution>
+
+<br><br>However there are cases where you can not start with just an empty file to work with. You want to start an application to create a file or you do not want to work with a file but just use some application like a chat program.
+
+<br><br>The GNUstep filesystem has three logical places where applications are stored. <br>First of all there is the '/usr/local/lib/Applications' folder where the applications are stored that belong to the initial installation. In this folder you will find 'GWorkspace' (the workspace is also an application).<br>
+
+<information>
+Within PiSiN Desktop, a shorcut to this 'Applications' folder has been added to the shelf of the File&nbsp;Viewer. &nbsp;&nbsp;&nbsp;&nbsp;
+</information>
+
+<br><br>The second place is '˜/GNUstep/Applications' where you can store applications you want.
+
+<br><br>Using the FileViewer you can browse to these places and by double clicking the application icon, the application will be started. It is as simple as that. And of course there is more and that is what the rest of this chapter is about.
+
+</section>
+
+<section name="The Dock Revisited">
+
+The Dock is a place to store applications that you want to be ready at hand. From the Icon Path you can drag applications to the Dock.<br>
+
+<section name="The Dock">
+<legendfig src="Dock.tiff">
+	<legend x="1" y="95">The dots indicate that an application is not started</legend>
+</legendfig>
+</section>
+
+<br><br>Applications you start will also be visible at the Dock. Started applications will not have the three dots '...' marker, while the not started applications have the '...' marker.
+
+</section>
+
+<section name="Using Run">
+
+With the 'Run...' command from the 'Tools' menu, you can start applications if you know the name. Just type the name in the panel and click 'Ok'.<br>
+
+<caution>
+Issue: unfortunately, the 'Run' panel returns this error: 'No executable&nbsp;found!' &nbsp;&nbsp;&nbsp;&nbsp;
+</caution>
+<br>
+
+</section>

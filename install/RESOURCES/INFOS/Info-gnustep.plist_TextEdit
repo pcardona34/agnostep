@@ -1,0 +1,50 @@
+{
+    ApplicationDescription = "an OpenStep text editor";
+    ApplicationIcon = "Edit.tiff";
+    ApplicationName = TextEdit;
+    ApplicationRelease = 4;
+    Authors = (
+	"Ali Ozer",
+	"Jeff Teunissen"
+    );
+    Copyright = (
+	"Copyright \U00A9 1995-1996 NeXT Software, Inc.",
+	"Copyright \U00A9 2001-2003 Dusk to Dawn Computing, Inc."
+    );
+    CopyrightDescription = "You may freely copy, distribute, and reuse the code in this example.";
+    GSMainMarkupFile = "";
+    NOTE = "Automatically generated, do not edit!";
+    NSExecutable = TextEdit;
+    NSPrincipalClass = NSApplication;
+    NSIcon = "Edit.tiff";
+    CFBundleIdentifier = "com.next.TextEdit";
+    NSMainNibFile = Edit;
+    NSMainStoryboardFile = "";
+    NSRole = "Application";
+    NSTypes = (
+    {
+	    NSIcon = "rtf.tiff";
+       NSUnixExtensions = (
+		rtf
+	    );
+	},
+	{
+	    NSIcon = "rtfd.tiff";
+	    NSUnixExtensions = (
+		rtfd
+	    );
+	},
+	{
+	    NSIcon = "text.tiff";
+	    NSUnixExtensions = (
+		txt
+	    );
+	},
+   {
+       NSICON = "File_sh.tiff";
+       NSUnixExtensions = (
+		sh
+	    );
+    }
+    );
+}

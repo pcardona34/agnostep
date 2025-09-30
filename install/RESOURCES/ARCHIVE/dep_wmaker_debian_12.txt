@@ -1,0 +1,74 @@
+####################################################
+### P i S i N   Desktop - by Patrick Cardona
+### pcardona34 @ Github
+###
+### Thanks for the GNUstep Developers Community
+### This is Free and Open Source software.
+### Read License in the root directory.
+####################################################
+
+##################################
+### PISIN Desktop 	       ###
+### Dependencies of wmaker     ###
+### on Debian 12 (Bookworm)    ###
+##################################
+
+#########################################
+### WMaker
+#########################################
+# Below is glibc on Debian
+fontconfig
+# GNU gettext: is 0.21 --- the latest on FSF site is 0.25...
+gettext
+libbsd0
+libbsd-dev
+libc6-dev
+libfontconfig
+libfontconfig-dev
+libfreetype6
+libfreetype6-dev
+libfreetype-dev
+# libgif >= 2.3
+libgif7
+libgif-dev
+# libjpeg >= 6.0.1
+libjpeg-dev
+libjpeg-tools
+libjpeg62-turbo
+# libpng >= 0.96: pkg-config --modeversion libpng says: 1.6.39
+libpng16-16
+libpng-dev
+# libtiff >= 3.4 
+libtiff6
+libtiff-dev
+# libmagickwand
+libmagickwand-dev
+libmagickwand-6.q16-6
+# libwebp >= 0.4.1
+libwebp7
+libwebp-dev
+libxft2
+libxft-dev
+# libxpm >= 4.7: debian 12 too old?
+libxmp4
+libxpm-dev
+# For Inotify
+linux-libc-dev
+#### Xorg
+xorg-dev
+x11-utils
+xorg
+libx11-6
+libx11-dev
+libxext6
+libxext-dev
+libxinerama-dev
+xdotool
+xinit
+xnest
+
+#####################
+### Dbus
+#####################
+libdbus-1-dev
+dbus-x11

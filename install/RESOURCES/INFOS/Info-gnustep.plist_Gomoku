@@ -1,0 +1,24 @@
+{
+    ApplicationDescription = "GNUstep Gomoku Game";
+    ApplicationIcon = "Gomoku.tiff";
+    ApplicationName = Gomoku;
+    ApplicationRelease = "1.2.9";
+    Authors = (
+	"Nicola Pero <nicola.pero@meta-innovation.com>"
+    );
+    CFBundleShortVersionString = "1.2.9 - 5 Feb 2009";
+    Copyright = "Copyright (c) 2000-2009 Nicola Pero <nicola.pero@meta-innovation.com>";
+    CopyrightDescription = "Released under the GNU General Public License 2.0";
+    FullVersionID = "1.2.9 - 5 Feb 2009";
+    GSMainMarkupFile = "";
+    NOTE = "Automatically generated, do not edit!";
+    NSExecutable = Gomoku;
+    NSHumanReadableCopyright = "Copyright (c) 2000-2009 Nicola Pero <nicola.pero@meta-innovation.com>
+Released under the GNU General Public License 2.0";
+    NSIcon = "Gomoku.tiff";
+    CFBundleIdentifier = "org.gnustep.Gomoku";
+    NSMainNibFile = "";
+    NSMainStoryboardFile = "";
+    NSPrincipalClass = NSApplication;
+    NSRole = Application;
+}

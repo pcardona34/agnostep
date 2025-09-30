@@ -1,0 +1,13 @@
+{
+  NSExecutable = "Inkscape";
+  NSRole = "Application";
+  NSIcon = "Inkscape.tiff";
+  CFBundleIdentifier = "org.gnustep.Inkscape";
+	XAppWrapper = YES;
+  NSTypes = (
+    {
+      NSUnixExtensions = ( "svg" );
+      NSIcon = "FileIcon_svg.tiff";
+    }
+  );
+}
