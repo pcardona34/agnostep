@@ -1,0 +1,22 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                addDefaults = id; 
+                addShown = id; 
+                cancelClicked = id; 
+                moveDown = id; 
+                moveUp = id; 
+                okClicked = id; 
+                removeShown = id; 
+            }; 
+            CLASS = HeadersWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {keyField = NSTextField; showAllHeaders = NSButton; tableView = NSTableView; }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = StripeTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }
+    ); 
+    IBVersion = 1; 
+}

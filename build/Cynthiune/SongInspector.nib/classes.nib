@@ -1,0 +1,40 @@
+{
+    IBClasses = (
+        {
+            CLASS = CynthiuneAnimatedImageView; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSImageView; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {mbLookup = id; reset = id; save = id; }; 
+            CLASS = SongInspectorController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                albumField = id; 
+                albumLabel = id; 
+                artistField = id; 
+                artistLabel = id; 
+                delegate = id; 
+                filenameField = id; 
+                genreField = id; 
+                genreLabel = id; 
+                inspectorPanel = NSPanel; 
+                lookupAnimation = id; 
+                lookupButton = id; 
+                lookupStatusLabel = id; 
+                pageSelector = id; 
+                resetButton = id; 
+                saveButton = id; 
+                titleField = id; 
+                titleLabel = id; 
+                trackField = id; 
+                trackLabel = id; 
+                yearField = id; 
+                yearLabel = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

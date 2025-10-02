@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		854931A911143DF600C4D928 /* GRDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A37F4AEFDCFA73011CA2CEA /* GRDocument.h */; };
+		854931AA11143DF600C4D928 /* GRDocView.h in Headers */ = {isa = PBXBuildFile; fileRef = F539B1ED08A2D91C01A8012F /* GRDocView.h */; };
+		854931AB11143DF600C4D928 /* GRBezierPathEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = F539B1F708A3570901A8012F /* GRBezierPathEditor.h */; };
+		854931AC11143DF600C4D928 /* GRFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = F539B1FB08A3578301A8012F /* GRFunctions.h */; };
+		854931AD11143DF600C4D928 /* GRBezierControlPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = F539B1FF08A3578C01A8012F /* GRBezierControlPoint.h */; };
+		854931AE11143DF600C4D928 /* GRText.h in Headers */ = {isa = PBXBuildFile; fileRef = F539B20308A3589601A8012F /* GRText.h */; };
+		854931AF11143DF600C4D928 /* GRPropsEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = F539B20708A3595201A8012F /* GRPropsEditor.h */; };
+		854931B011143DF600C4D928 /* GRTextEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = F539B20B08A359DC01A8012F /* GRTextEditor.h */; };
+		854931B111143DF600C4D928 /* GRTextEditorView.h in Headers */ = {isa = PBXBuildFile; fileRef = F539B20F08A35A5001A8012F /* GRTextEditorView.h */; };
+		854931B211143DF600C4D928 /* Graphos.h in Headers */ = {isa = PBXBuildFile; fileRef = F539B25708A35E7001A8012F /* Graphos.h */; };
+		854931B311143DF600C4D928 /* GRTools.h in Headers */ = {isa = PBXBuildFile; fileRef = F539B25B08A35ECD01A8012F /* GRTools.h */; };
+		854931B411143DF600C4D928 /* GRBoxEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = 85DE3FF40CA06C2200A80101 /* GRBoxEditor.h */; };
+		854931B511143DF600C4D928 /* GRObjectControlPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 85DE40060CA0772E00A80101 /* GRObjectControlPoint.h */; };
+		854931B611143DF600C4D928 /* GRBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 85AEB2950CA43E7A00A80101 /* GRBox.h */; };
+		854931B711143DF600C4D928 /* GRBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 85D2B0910D701D4E00A80101 /* GRBezierPath.h */; };
+		854931B811143DF600C4D928 /* GRDrawableObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 85CB5DF20D72C0F000A80101 /* GRDrawableObject.h */; };
+		854931B911143DF600C4D928 /* GRObjectEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = 85CB5DF60D72C8D000A80101 /* GRObjectEditor.h */; };
+		854931BA11143DF600C4D928 /* GRPathObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 85B1DAAA0D8B2E2400A80103 /* GRPathObject.h */; };
+		854931BB11143DF600C4D928 /* GRPathEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = 853877F40DA0375200A80103 /* GRPathEditor.h */; };
+		854931BC11143DF600C4D928 /* GRCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 8518AB1810E8A8ED004A2013 /* GRCircle.h */; };
+		854931BD11143DF600C4D928 /* GRCircleEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8518AB1A10E8A8ED004A2013 /* GRCircleEditor.h */; };
+		854931BF11143DF600C4D928 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
+		854931C011143DF600C4D928 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
+		854931C111143DF600C4D928 /* GRDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B4FDCFA73011CA2CEA /* GRDocument.nib */; };
+		854931C211143DF600C4D928 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
+		854931C311143DF600C4D928 /* blackarrow.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F539B1E108A2D3D101A8012F /* blackarrow.tiff */; };
+		854931C411143DF600C4D928 /* whitearrow.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F539B1E308A2D3DD01A8012F /* whitearrow.tiff */; };
+		854931C511143DF600C4D928 /* bezier.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F539B1E508A2D67E01A8012F /* bezier.tiff */; };
+		854931C611143DF600C4D928 /* text.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F539B1E708A2D84101A8012F /* text.tiff */; };
+		854931C711143DF600C4D928 /* circle.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F539B1E908A2D85401A8012F /* circle.tiff */; };
+		854931C811143DF600C4D928 /* rectangle.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F539B1EB08A2D86901A8012F /* rectangle.tiff */; };
+		854931C911143DF600C4D928 /* x.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F539B26108A3676D01A8012F /* x.tiff */; };
+		854931CA11143DF600C4D928 /* magnify.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F507216008B5ECA701A8012F /* magnify.tiff */; };
+		854931CB11143DF600C4D928 /* pencil.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F507216208B5ED3E01A8012F /* pencil.tiff */; };
+		854931CD11143DF600C4D928 /* reduce.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F507216408B5ED3E01A8012F /* reduce.tiff */; };
+		854931CE11143DF600C4D928 /* reflect.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F507216508B5ED3E01A8012F /* reflect.tiff */; };
+		854931CF11143DF600C4D928 /* rotate.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F507216608B5ED3E01A8012F /* rotate.tiff */; };
+		854931D011143DF600C4D928 /* shissors.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F507216708B5ED3E01A8012F /* shissors.tiff */; };
+		854931D111143DF600C4D928 /* paint.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F507216E08B5ED7501A8012F /* paint.tiff */; };
+		854931D211143DF600C4D928 /* hand.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F507217208B5EEE201A8012F /* hand.tiff */; };
+		854931D311143DF600C4D928 /* txtAlignCenter.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85DC414D0CAC69E400A80101 /* txtAlignCenter.tiff */; };
+		854931D411143DF600C4D928 /* txtAlignLeft.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85DC414E0CAC69E400A80101 /* txtAlignLeft.tiff */; };
+		854931D511143DF600C4D928 /* txtAlignRight.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85DC414F0CAC69E400A80101 /* txtAlignRight.tiff */; };
+		854931D611143DF600C4D928 /* LineCap1.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85DC41530CAC6A3B00A80101 /* LineCap1.tiff */; };
+		854931D711143DF600C4D928 /* LineCap2.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85DC41540CAC6A3B00A80101 /* LineCap2.tiff */; };
+		854931D811143DF600C4D928 /* LineCap3.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85DC41550CAC6A3B00A80101 /* LineCap3.tiff */; };
+		854931D911143DF600C4D928 /* LineJoin1.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85DC41560CAC6A3C00A80101 /* LineJoin1.tiff */; };
+		854931DA11143DF600C4D928 /* LineJoin2.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85DC41570CAC6A3C00A80101 /* LineJoin2.tiff */; };
+		854931DB11143DF600C4D928 /* LineJoin3.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85DC41580CAC6A3C00A80101 /* LineJoin3.tiff */; };
+		854931DC11143DF600C4D928 /* graphos_icons.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8518AB7710E8FC11004A2013 /* graphos_icons.icns */; };
+		854931DD11143DF600C4D928 /* graphos_doc_icons.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8518AB7910E90329004A2013 /* graphos_doc_icons.icns */; };
+		854931DF11143DF600C4D928 /* GRDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* GRDocument.m */; settings = {ATTRIBUTES = (); }; };
+		854931E011143DF600C4D928 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		854931E111143DF600C4D928 /* GRDocView.m in Sources */ = {isa = PBXBuildFile; fileRef = F539B1EE08A2D91C01A8012F /* GRDocView.m */; };
+		854931E211143DF600C4D928 /* GRBezierPathEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = F539B1F808A3570901A8012F /* GRBezierPathEditor.m */; };
+		854931E311143DF600C4D928 /* GRFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = F539B1FC08A3578301A8012F /* GRFunctions.m */; };
+		854931E411143DF600C4D928 /* GRBezierControlPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F539B20008A3578C01A8012F /* GRBezierControlPoint.m */; };
+		854931E511143DF600C4D928 /* GRText.m in Sources */ = {isa = PBXBuildFile; fileRef = F539B20408A3589601A8012F /* GRText.m */; };
+		854931E611143DF600C4D928 /* GRPropsEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = F539B20808A3595201A8012F /* GRPropsEditor.m */; };
+		854931E711143DF600C4D928 /* GRTextEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = F539B20C08A359DC01A8012F /* GRTextEditor.m */; };
+		854931E811143DF600C4D928 /* GRTextEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F539B21008A35A5001A8012F /* GRTextEditorView.m */; };
+		854931E911143DF600C4D928 /* Graphos.m in Sources */ = {isa = PBXBuildFile; fileRef = F539B25808A35E7001A8012F /* Graphos.m */; };
+		854931EA11143DF600C4D928 /* GRTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F539B25C08A35ECD01A8012F /* GRTools.m */; };
+		854931EB11143DF600C4D928 /* GRBoxEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DE3FF50CA06C2200A80101 /* GRBoxEditor.m */; };
+		854931EC11143DF600C4D928 /* GRObjectControlPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DE40070CA0772E00A80101 /* GRObjectControlPoint.m */; };
+		854931ED11143DF600C4D928 /* GRBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 85AEB2960CA43E7A00A80101 /* GRBox.m */; };
+		854931EE11143DF600C4D928 /* GRBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D2B0920D701D4E00A80101 /* GRBezierPath.m */; };
+		854931EF11143DF600C4D928 /* GRDrawableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB5DF30D72C0F000A80101 /* GRDrawableObject.m */; };
+		854931F011143DF600C4D928 /* GRObjectEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB5DF70D72C8D000A80101 /* GRObjectEditor.m */; };
+		854931F111143DF600C4D928 /* GRPathObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B1DAAB0D8B2E2400A80103 /* GRPathObject.m */; };
+		854931F211143DF600C4D928 /* GRPathEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 853877F50DA0375200A80103 /* GRPathEditor.m */; };
+		854931F311143DF600C4D928 /* GRCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8518AB1910E8A8ED004A2013 /* GRCircle.m */; };
+		854931F411143DF600C4D928 /* GRCircleEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8518AB1B10E8A8ED004A2013 /* GRCircleEditor.m */; };
+		854931F611143DF600C4D928 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		8583C8321AC3015C002DC0FD /* GRImageEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8583C8301AC3015C002DC0FD /* GRImageEditor.h */; };
+		8583C8331AC3015C002DC0FD /* GRImageEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8583C8311AC3015C002DC0FD /* GRImageEditor.m */; };
+		85BB08541215F83A00B9699B /* PropertiesEditor.nib in Resources */ = {isa = PBXBuildFile; fileRef = 85BB08521215F83A00B9699B /* PropertiesEditor.nib */; };
+		85DA3CD11A69B9BC00FB9DCC /* GRImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 85DA3CCF1A69B9BC00FB9DCC /* GRImage.h */; };
+		85DA3CD21A69B9BC00FB9DCC /* GRImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DA3CD01A69B9BC00FB9DCC /* GRImage.m */; };
+		85EBE38316505FC700A8EDF9 /* HTMLHelp in Resources */ = {isa = PBXBuildFile; fileRef = 85EBE37F16505FC700A8EDF9 /* HTMLHelp */; };
+		85F4CB6615E074FB00160D61 /* ChangeLog in Resources */ = {isa = PBXBuildFile; fileRef = 85F4CB6515E074FB00160D61 /* ChangeLog */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		2A37F4ACFDCFA73011CA2CEA /* GRDocument.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GRDocument.m; sourceTree = "<group>"; };
+		2A37F4AEFDCFA73011CA2CEA /* GRDocument.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GRDocument.h; sourceTree = "<group>"; };
+		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A37F4B5FDCFA73011CA2CEA /* GRDocument.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = GRDocument.nib; path = English.lproj/GRDocument.nib; sourceTree = "<group>"; };
+		2A37F4B7FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8518AB1810E8A8ED004A2013 /* GRCircle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GRCircle.h; sourceTree = "<group>"; };
+		8518AB1910E8A8ED004A2013 /* GRCircle.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GRCircle.m; sourceTree = "<group>"; };
+		8518AB1A10E8A8ED004A2013 /* GRCircleEditor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GRCircleEditor.h; sourceTree = "<group>"; };
+		8518AB1B10E8A8ED004A2013 /* GRCircleEditor.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GRCircleEditor.m; sourceTree = "<group>"; };
+		8518AB7710E8FC11004A2013 /* graphos_icons.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = graphos_icons.icns; sourceTree = "<group>"; };
+		8518AB7910E90329004A2013 /* graphos_doc_icons.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = graphos_doc_icons.icns; sourceTree = "<group>"; };
+		853877F40DA0375200A80103 /* GRPathEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRPathEditor.h; sourceTree = "<group>"; };
+		853877F50DA0375200A80103 /* GRPathEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRPathEditor.m; sourceTree = "<group>"; };
+		854931FB11143DF600C4D928 /* Info-Draw.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Draw.plist"; sourceTree = "<group>"; };
+		854931FC11143DF600C4D928 /* Graphos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graphos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8583C8301AC3015C002DC0FD /* GRImageEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRImageEditor.h; sourceTree = "<group>"; };
+		8583C8311AC3015C002DC0FD /* GRImageEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRImageEditor.m; sourceTree = "<group>"; };
+		85AEB2950CA43E7A00A80101 /* GRBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRBox.h; sourceTree = "<group>"; };
+		85AEB2960CA43E7A00A80101 /* GRBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRBox.m; sourceTree = "<group>"; };
+		85B1DAAA0D8B2E2400A80103 /* GRPathObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRPathObject.h; sourceTree = "<group>"; };
+		85B1DAAB0D8B2E2400A80103 /* GRPathObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRPathObject.m; sourceTree = "<group>"; };
+		85BB08531215F83A00B9699B /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/PropertiesEditor.nib; sourceTree = "<group>"; };
+		85CB5DF20D72C0F000A80101 /* GRDrawableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRDrawableObject.h; sourceTree = "<group>"; };
+		85CB5DF30D72C0F000A80101 /* GRDrawableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRDrawableObject.m; sourceTree = "<group>"; };
+		85CB5DF60D72C8D000A80101 /* GRObjectEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRObjectEditor.h; sourceTree = "<group>"; };
+		85CB5DF70D72C8D000A80101 /* GRObjectEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRObjectEditor.m; sourceTree = "<group>"; };
+		85D2B0910D701D4E00A80101 /* GRBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRBezierPath.h; sourceTree = "<group>"; };
+		85D2B0920D701D4E00A80101 /* GRBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRBezierPath.m; sourceTree = "<group>"; };
+		85DA3CCF1A69B9BC00FB9DCC /* GRImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRImage.h; sourceTree = "<group>"; };
+		85DA3CD01A69B9BC00FB9DCC /* GRImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRImage.m; sourceTree = "<group>"; };
+		85DC414D0CAC69E400A80101 /* txtAlignCenter.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = txtAlignCenter.tiff; path = Resources/txtAlignCenter.tiff; sourceTree = "<group>"; };
+		85DC414E0CAC69E400A80101 /* txtAlignLeft.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = txtAlignLeft.tiff; path = Resources/txtAlignLeft.tiff; sourceTree = "<group>"; };
+		85DC414F0CAC69E400A80101 /* txtAlignRight.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = txtAlignRight.tiff; path = Resources/txtAlignRight.tiff; sourceTree = "<group>"; };
+		85DC41530CAC6A3B00A80101 /* LineCap1.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = LineCap1.tiff; path = Resources/LineCap1.tiff; sourceTree = "<group>"; };
+		85DC41540CAC6A3B00A80101 /* LineCap2.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = LineCap2.tiff; path = Resources/LineCap2.tiff; sourceTree = "<group>"; };
+		85DC41550CAC6A3B00A80101 /* LineCap3.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = LineCap3.tiff; path = Resources/LineCap3.tiff; sourceTree = "<group>"; };
+		85DC41560CAC6A3C00A80101 /* LineJoin1.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = LineJoin1.tiff; path = Resources/LineJoin1.tiff; sourceTree = "<group>"; };
+		85DC41570CAC6A3C00A80101 /* LineJoin2.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = LineJoin2.tiff; path = Resources/LineJoin2.tiff; sourceTree = "<group>"; };
+		85DC41580CAC6A3C00A80101 /* LineJoin3.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = LineJoin3.tiff; path = Resources/LineJoin3.tiff; sourceTree = "<group>"; };
+		85DE3FF40CA06C2200A80101 /* GRBoxEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRBoxEditor.h; sourceTree = "<group>"; };
+		85DE3FF50CA06C2200A80101 /* GRBoxEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRBoxEditor.m; sourceTree = "<group>"; };
+		85DE40060CA0772E00A80101 /* GRObjectControlPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRObjectControlPoint.h; sourceTree = "<group>"; };
+		85DE40070CA0772E00A80101 /* GRObjectControlPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRObjectControlPoint.m; sourceTree = "<group>"; };
+		85EBE38016505FC700A8EDF9 /* English */ = {isa = PBXFileReference; lastKnownFileType = folder; name = English; path = English.lproj/HTMLHelp; sourceTree = "<group>"; };
+		85F4CB6515E074FB00160D61 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
+		F507216008B5ECA701A8012F /* magnify.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = magnify.tiff; path = Resources/magnify.tiff; sourceTree = "<group>"; };
+		F507216208B5ED3E01A8012F /* pencil.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = pencil.tiff; path = Resources/pencil.tiff; sourceTree = "<group>"; };
+		F507216408B5ED3E01A8012F /* reduce.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = reduce.tiff; path = Resources/reduce.tiff; sourceTree = "<group>"; };
+		F507216508B5ED3E01A8012F /* reflect.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = reflect.tiff; path = Resources/reflect.tiff; sourceTree = "<group>"; };
+		F507216608B5ED3E01A8012F /* rotate.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = rotate.tiff; path = Resources/rotate.tiff; sourceTree = "<group>"; };
+		F507216708B5ED3E01A8012F /* shissors.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = shissors.tiff; path = Resources/shissors.tiff; sourceTree = "<group>"; };
+		F507216E08B5ED7501A8012F /* paint.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = paint.tiff; path = Resources/paint.tiff; sourceTree = "<group>"; };
+		F507217208B5EEE201A8012F /* hand.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = hand.tiff; path = Resources/hand.tiff; sourceTree = "<group>"; };
+		F539B1E108A2D3D101A8012F /* blackarrow.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = blackarrow.tiff; path = Resources/blackarrow.tiff; sourceTree = "<group>"; };
+		F539B1E308A2D3DD01A8012F /* whitearrow.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = whitearrow.tiff; path = Resources/whitearrow.tiff; sourceTree = "<group>"; };
+		F539B1E508A2D67E01A8012F /* bezier.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = bezier.tiff; path = Resources/bezier.tiff; sourceTree = "<group>"; };
+		F539B1E708A2D84101A8012F /* text.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = text.tiff; path = Resources/text.tiff; sourceTree = "<group>"; };
+		F539B1E908A2D85401A8012F /* circle.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = circle.tiff; path = Resources/circle.tiff; sourceTree = "<group>"; };
+		F539B1EB08A2D86901A8012F /* rectangle.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = rectangle.tiff; path = Resources/rectangle.tiff; sourceTree = "<group>"; };
+		F539B1ED08A2D91C01A8012F /* GRDocView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRDocView.h; sourceTree = "<group>"; };
+		F539B1EE08A2D91C01A8012F /* GRDocView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRDocView.m; sourceTree = "<group>"; };
+		F539B1F708A3570901A8012F /* GRBezierPathEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRBezierPathEditor.h; sourceTree = "<group>"; };
+		F539B1F808A3570901A8012F /* GRBezierPathEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRBezierPathEditor.m; sourceTree = "<group>"; };
+		F539B1FB08A3578301A8012F /* GRFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRFunctions.h; sourceTree = "<group>"; };
+		F539B1FC08A3578301A8012F /* GRFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRFunctions.m; sourceTree = "<group>"; };
+		F539B1FF08A3578C01A8012F /* GRBezierControlPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRBezierControlPoint.h; sourceTree = "<group>"; };
+		F539B20008A3578C01A8012F /* GRBezierControlPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRBezierControlPoint.m; sourceTree = "<group>"; };
+		F539B20308A3589601A8012F /* GRText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRText.h; sourceTree = "<group>"; };
+		F539B20408A3589601A8012F /* GRText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRText.m; sourceTree = "<group>"; };
+		F539B20708A3595201A8012F /* GRPropsEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRPropsEditor.h; sourceTree = "<group>"; };
+		F539B20808A3595201A8012F /* GRPropsEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRPropsEditor.m; sourceTree = "<group>"; };
+		F539B20B08A359DC01A8012F /* GRTextEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRTextEditor.h; sourceTree = "<group>"; };
+		F539B20C08A359DC01A8012F /* GRTextEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRTextEditor.m; sourceTree = "<group>"; };
+		F539B20F08A35A5001A8012F /* GRTextEditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRTextEditorView.h; sourceTree = "<group>"; };
+		F539B21008A35A5001A8012F /* GRTextEditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRTextEditorView.m; sourceTree = "<group>"; };
+		F539B25708A35E7001A8012F /* Graphos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graphos.h; sourceTree = "<group>"; };
+		F539B25808A35E7001A8012F /* Graphos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Graphos.m; sourceTree = "<group>"; };
+		F539B25B08A35ECD01A8012F /* GRTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRTools.h; sourceTree = "<group>"; };
+		F539B25C08A35ECD01A8012F /* GRTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRTools.m; sourceTree = "<group>"; };
+		F539B26108A3676D01A8012F /* x.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = x.tiff; path = Resources/x.tiff; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		854931F511143DF600C4D928 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854931F611143DF600C4D928 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				854931FC11143DF600C4D928 /* Graphos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* Draw */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4ABFDCFA73011CA2CEA /* Classes */,
+				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+				854931FB11143DF600C4D928 /* Info-Draw.plist */,
+			);
+			name = Draw;
+			sourceTree = "<group>";
+		};
+		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F539B25708A35E7001A8012F /* Graphos.h */,
+				F539B25808A35E7001A8012F /* Graphos.m */,
+				2A37F4AEFDCFA73011CA2CEA /* GRDocument.h */,
+				2A37F4ACFDCFA73011CA2CEA /* GRDocument.m */,
+				F539B1ED08A2D91C01A8012F /* GRDocView.h */,
+				F539B1EE08A2D91C01A8012F /* GRDocView.m */,
+				85CB5DF20D72C0F000A80101 /* GRDrawableObject.h */,
+				85CB5DF30D72C0F000A80101 /* GRDrawableObject.m */,
+				85B1DAAA0D8B2E2400A80103 /* GRPathObject.h */,
+				85B1DAAB0D8B2E2400A80103 /* GRPathObject.m */,
+				85CB5DF60D72C8D000A80101 /* GRObjectEditor.h */,
+				85CB5DF70D72C8D000A80101 /* GRObjectEditor.m */,
+				85D2B0910D701D4E00A80101 /* GRBezierPath.h */,
+				85D2B0920D701D4E00A80101 /* GRBezierPath.m */,
+				853877F40DA0375200A80103 /* GRPathEditor.h */,
+				853877F50DA0375200A80103 /* GRPathEditor.m */,
+				F539B1F708A3570901A8012F /* GRBezierPathEditor.h */,
+				F539B1F808A3570901A8012F /* GRBezierPathEditor.m */,
+				F539B1FB08A3578301A8012F /* GRFunctions.h */,
+				F539B1FC08A3578301A8012F /* GRFunctions.m */,
+				F539B1FF08A3578C01A8012F /* GRBezierControlPoint.h */,
+				F539B20008A3578C01A8012F /* GRBezierControlPoint.m */,
+				85DE40060CA0772E00A80101 /* GRObjectControlPoint.h */,
+				85DE40070CA0772E00A80101 /* GRObjectControlPoint.m */,
+				85AEB2950CA43E7A00A80101 /* GRBox.h */,
+				85AEB2960CA43E7A00A80101 /* GRBox.m */,
+				85DE3FF40CA06C2200A80101 /* GRBoxEditor.h */,
+				85DE3FF50CA06C2200A80101 /* GRBoxEditor.m */,
+				8518AB1810E8A8ED004A2013 /* GRCircle.h */,
+				8518AB1910E8A8ED004A2013 /* GRCircle.m */,
+				8518AB1A10E8A8ED004A2013 /* GRCircleEditor.h */,
+				8518AB1B10E8A8ED004A2013 /* GRCircleEditor.m */,
+				F539B20708A3595201A8012F /* GRPropsEditor.h */,
+				F539B20808A3595201A8012F /* GRPropsEditor.m */,
+				85DA3CCF1A69B9BC00FB9DCC /* GRImage.h */,
+				85DA3CD01A69B9BC00FB9DCC /* GRImage.m */,
+				8583C8301AC3015C002DC0FD /* GRImageEditor.h */,
+				8583C8311AC3015C002DC0FD /* GRImageEditor.m */,
+				F539B20308A3589601A8012F /* GRText.h */,
+				F539B20408A3589601A8012F /* GRText.m */,
+				F539B20B08A359DC01A8012F /* GRTextEditor.h */,
+				F539B20C08A359DC01A8012F /* GRTextEditor.m */,
+				F539B20F08A35A5001A8012F /* GRTextEditorView.h */,
+				F539B21008A35A5001A8012F /* GRTextEditorView.m */,
+				F539B25B08A35ECD01A8012F /* GRTools.h */,
+				F539B25C08A35ECD01A8012F /* GRTools.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				85EBE37F16505FC700A8EDF9 /* HTMLHelp */,
+				85F4CB6515E074FB00160D61 /* ChangeLog */,
+				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
+				85BB08521215F83A00B9699B /* PropertiesEditor.nib */,
+				2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */,
+				2A37F4B4FDCFA73011CA2CEA /* GRDocument.nib */,
+				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
+				F539B26108A3676D01A8012F /* x.tiff */,
+				8518AB7910E90329004A2013 /* graphos_doc_icons.icns */,
+				8518AB7710E8FC11004A2013 /* graphos_icons.icns */,
+				F539B1E108A2D3D101A8012F /* blackarrow.tiff */,
+				F539B1E308A2D3DD01A8012F /* whitearrow.tiff */,
+				F539B1E508A2D67E01A8012F /* bezier.tiff */,
+				F539B1E708A2D84101A8012F /* text.tiff */,
+				F539B1E908A2D85401A8012F /* circle.tiff */,
+				F539B1EB08A2D86901A8012F /* rectangle.tiff */,
+				F507216008B5ECA701A8012F /* magnify.tiff */,
+				F507216208B5ED3E01A8012F /* pencil.tiff */,
+				F507216408B5ED3E01A8012F /* reduce.tiff */,
+				F507216508B5ED3E01A8012F /* reflect.tiff */,
+				F507216608B5ED3E01A8012F /* rotate.tiff */,
+				F507216708B5ED3E01A8012F /* shissors.tiff */,
+				F507216E08B5ED7501A8012F /* paint.tiff */,
+				F507217208B5EEE201A8012F /* hand.tiff */,
+				85DC414D0CAC69E400A80101 /* txtAlignCenter.tiff */,
+				85DC414E0CAC69E400A80101 /* txtAlignLeft.tiff */,
+				85DC414F0CAC69E400A80101 /* txtAlignRight.tiff */,
+				85DC41530CAC6A3B00A80101 /* LineCap1.tiff */,
+				85DC41540CAC6A3B00A80101 /* LineCap2.tiff */,
+				85DC41550CAC6A3B00A80101 /* LineCap3.tiff */,
+				85DC41560CAC6A3C00A80101 /* LineJoin1.tiff */,
+				85DC41570CAC6A3C00A80101 /* LineJoin2.tiff */,
+				85DC41580CAC6A3C00A80101 /* LineJoin3.tiff */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		854931A811143DF600C4D928 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854931A911143DF600C4D928 /* GRDocument.h in Headers */,
+				854931AA11143DF600C4D928 /* GRDocView.h in Headers */,
+				854931AB11143DF600C4D928 /* GRBezierPathEditor.h in Headers */,
+				854931AC11143DF600C4D928 /* GRFunctions.h in Headers */,
+				854931AD11143DF600C4D928 /* GRBezierControlPoint.h in Headers */,
+				854931AE11143DF600C4D928 /* GRText.h in Headers */,
+				854931AF11143DF600C4D928 /* GRPropsEditor.h in Headers */,
+				854931B011143DF600C4D928 /* GRTextEditor.h in Headers */,
+				854931B111143DF600C4D928 /* GRTextEditorView.h in Headers */,
+				854931B211143DF600C4D928 /* Graphos.h in Headers */,
+				854931B311143DF600C4D928 /* GRTools.h in Headers */,
+				854931B411143DF600C4D928 /* GRBoxEditor.h in Headers */,
+				854931B511143DF600C4D928 /* GRObjectControlPoint.h in Headers */,
+				854931B611143DF600C4D928 /* GRBox.h in Headers */,
+				854931B711143DF600C4D928 /* GRBezierPath.h in Headers */,
+				854931B811143DF600C4D928 /* GRDrawableObject.h in Headers */,
+				854931B911143DF600C4D928 /* GRObjectEditor.h in Headers */,
+				854931BA11143DF600C4D928 /* GRPathObject.h in Headers */,
+				854931BB11143DF600C4D928 /* GRPathEditor.h in Headers */,
+				854931BC11143DF600C4D928 /* GRCircle.h in Headers */,
+				854931BD11143DF600C4D928 /* GRCircleEditor.h in Headers */,
+				85DA3CD11A69B9BC00FB9DCC /* GRImage.h in Headers */,
+				8583C8321AC3015C002DC0FD /* GRImageEditor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		854931A711143DF600C4D928 /* Draw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 854931F711143DF600C4D928 /* Build configuration list for PBXNativeTarget "Draw" */;
+			buildPhases = (
+				854931A811143DF600C4D928 /* Headers */,
+				854931BE11143DF600C4D928 /* Resources */,
+				854931DE11143DF600C4D928 /* Sources */,
+				854931F511143DF600C4D928 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Draw;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Draw;
+			productReference = 854931FC11143DF600C4D928 /* Graphos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 14C7E0B40EC663E0004E8823 /* Build configuration list for PBXProject "Graphos" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* Draw */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				854931A711143DF600C4D928 /* Draw */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		854931BE11143DF600C4D928 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854931BF11143DF600C4D928 /* Credits.rtf in Resources */,
+				854931C011143DF600C4D928 /* MainMenu.nib in Resources */,
+				854931C111143DF600C4D928 /* GRDocument.nib in Resources */,
+				854931C211143DF600C4D928 /* InfoPlist.strings in Resources */,
+				854931C311143DF600C4D928 /* blackarrow.tiff in Resources */,
+				854931C411143DF600C4D928 /* whitearrow.tiff in Resources */,
+				854931C511143DF600C4D928 /* bezier.tiff in Resources */,
+				854931C611143DF600C4D928 /* text.tiff in Resources */,
+				854931C711143DF600C4D928 /* circle.tiff in Resources */,
+				854931C811143DF600C4D928 /* rectangle.tiff in Resources */,
+				854931C911143DF600C4D928 /* x.tiff in Resources */,
+				854931CA11143DF600C4D928 /* magnify.tiff in Resources */,
+				854931CB11143DF600C4D928 /* pencil.tiff in Resources */,
+				854931CD11143DF600C4D928 /* reduce.tiff in Resources */,
+				854931CE11143DF600C4D928 /* reflect.tiff in Resources */,
+				854931CF11143DF600C4D928 /* rotate.tiff in Resources */,
+				854931D011143DF600C4D928 /* shissors.tiff in Resources */,
+				854931D111143DF600C4D928 /* paint.tiff in Resources */,
+				854931D211143DF600C4D928 /* hand.tiff in Resources */,
+				854931D311143DF600C4D928 /* txtAlignCenter.tiff in Resources */,
+				854931D411143DF600C4D928 /* txtAlignLeft.tiff in Resources */,
+				854931D511143DF600C4D928 /* txtAlignRight.tiff in Resources */,
+				854931D611143DF600C4D928 /* LineCap1.tiff in Resources */,
+				854931D711143DF600C4D928 /* LineCap2.tiff in Resources */,
+				854931D811143DF600C4D928 /* LineCap3.tiff in Resources */,
+				854931D911143DF600C4D928 /* LineJoin1.tiff in Resources */,
+				854931DA11143DF600C4D928 /* LineJoin2.tiff in Resources */,
+				854931DB11143DF600C4D928 /* LineJoin3.tiff in Resources */,
+				854931DC11143DF600C4D928 /* graphos_icons.icns in Resources */,
+				854931DD11143DF600C4D928 /* graphos_doc_icons.icns in Resources */,
+				85BB08541215F83A00B9699B /* PropertiesEditor.nib in Resources */,
+				85F4CB6615E074FB00160D61 /* ChangeLog in Resources */,
+				85EBE38316505FC700A8EDF9 /* HTMLHelp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		854931DE11143DF600C4D928 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854931DF11143DF600C4D928 /* GRDocument.m in Sources */,
+				854931E011143DF600C4D928 /* main.m in Sources */,
+				854931E111143DF600C4D928 /* GRDocView.m in Sources */,
+				854931E211143DF600C4D928 /* GRBezierPathEditor.m in Sources */,
+				854931E311143DF600C4D928 /* GRFunctions.m in Sources */,
+				854931E411143DF600C4D928 /* GRBezierControlPoint.m in Sources */,
+				854931E511143DF600C4D928 /* GRText.m in Sources */,
+				854931E611143DF600C4D928 /* GRPropsEditor.m in Sources */,
+				854931E711143DF600C4D928 /* GRTextEditor.m in Sources */,
+				854931E811143DF600C4D928 /* GRTextEditorView.m in Sources */,
+				854931E911143DF600C4D928 /* Graphos.m in Sources */,
+				854931EA11143DF600C4D928 /* GRTools.m in Sources */,
+				854931EB11143DF600C4D928 /* GRBoxEditor.m in Sources */,
+				854931EC11143DF600C4D928 /* GRObjectControlPoint.m in Sources */,
+				854931ED11143DF600C4D928 /* GRBox.m in Sources */,
+				854931EE11143DF600C4D928 /* GRBezierPath.m in Sources */,
+				854931EF11143DF600C4D928 /* GRDrawableObject.m in Sources */,
+				854931F011143DF600C4D928 /* GRObjectEditor.m in Sources */,
+				854931F111143DF600C4D928 /* GRPathObject.m in Sources */,
+				854931F211143DF600C4D928 /* GRPathEditor.m in Sources */,
+				854931F311143DF600C4D928 /* GRCircle.m in Sources */,
+				854931F411143DF600C4D928 /* GRCircleEditor.m in Sources */,
+				85DA3CD21A69B9BC00FB9DCC /* GRImage.m in Sources */,
+				8583C8331AC3015C002DC0FD /* GRImageEditor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165FFE840EACC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1660FE840EACC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A37F4B4FDCFA73011CA2CEA /* GRDocument.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B5FDCFA73011CA2CEA /* GRDocument.nib */,
+			);
+			name = GRDocument.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B7FDCFA73011CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4BAFDCFA73011CA2CEA /* English */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		85BB08521215F83A00B9699B /* PropertiesEditor.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85BB08531215F83A00B9699B /* English */,
+			);
+			name = PropertiesEditor.nib;
+			sourceTree = "<group>";
+		};
+		85EBE37F16505FC700A8EDF9 /* HTMLHelp */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85EBE38016505FC700A8EDF9 /* English */,
+			);
+			name = HTMLHelp;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14C7E0AE0EC663DF004E8823 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		14C7E0AF0EC663DF004E8823 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		854931F811143DF600C4D928 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1 = x86_64;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "";
+				IBC_STRIP_NIBS = NO;
+				INFOPLIST_FILE = "Info-Draw.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = Graphos;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = "";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		854931F911143DF600C4D928 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1 = x86_64;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				HEADER_SEARCH_PATHS = "";
+				IBC_STRIP_NIBS = NO;
+				INFOPLIST_FILE = "Info-Draw.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = Graphos;
+				SDKROOT = "";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14C7E0B40EC663E0004E8823 /* Build configuration list for PBXProject "Graphos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14C7E0AE0EC663DF004E8823 /* Development */,
+				14C7E0AF0EC663DF004E8823 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		854931F711143DF600C4D928 /* Build configuration list for PBXNativeTarget "Draw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				854931F811143DF600C4D928 /* Development */,
+				854931F911143DF600C4D928 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}

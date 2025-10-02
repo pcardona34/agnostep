@@ -1,0 +1,88 @@
+{\rtf1\ansi\ansicpg10000\cocoartf102{\fonttbl\f1\fmodern Courier;\f0\fswiss Helvetica;}
+\paperw12900\paperh7200\hyphauto1\hyphfactor0\pard\tx0\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\qc\f0\fs48\i \uc0 HighlighterKit Syntax File Format\par
+\fs36 \uc0 \par
+\pard\ql\fs28\i0\pard\tx0\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\ql \uc0 This document details the format of the syntax definition files for the HighlighterKit.\par
+\par
+Unlike some other highlighting engines, HighlighterKit uses a run-time compiled text definition of the syntax in order to do its thing. These files are property lists with a ".syntax" file extension. Given a file type for which to highlight, the HighlighterKit will look for a file named "<filetype>.syntax" (case insensitively) at run-time in the following locations and order:\par
+\par
+- First it searches all the resources of all the bundles in your app.\par
+\par
+- If a well named file isn\rquote t found there, it goes on to recursively search the Library/SyntaxDefinitions subdirectory for a suitably named file.\par
+\par
+- Finally, it resorts to looking through the resources of all the frameworks the app has loaded.\par
+\par
+\fs36\i \uc0 Format of the property list\par
+\fs28\i0 \uc0 \par
+The property list in the syntax file should follow this format:\par
+\par
+\f1 \uc0 \{\par
+  Contexts = (\par
+    \{  // a context definition\par
+      Beginning = "<pattern>";\par
+      Ending = "<pattern>";\par
+      ForegroundColor = "<color-spec>";\par
+      BackgroundColor = "<color-spec>";\par
+      Italic = YES/NO;\par
+      Bold = YES/NO;\par
+\par
+      // a list of patterns to ignore when looking for\par
+      // the context ending\par
+      ContextSkips = (\par
+        "<pattern>"\par
+      );\par
+\par
+      Keywords = ( // a list of keywords in the context\par
+        \{\par
+          Pattern = "<pattern>";\par
+          ForegroundColor = "<color-spec>";\par
+          BackgroundColor = "<color-spec>";\par
+          Bold = YES/NO;\par
+          Italic = YES/NO;\par
+        \}\par
+      );\par
+    \}\par
+  );\par
+\}\par
+\f0 \uc0 \par
+For an explanation of the syntax for the "<pattern>" or "<color-spec>" (and simmilar) words please see the following section.\par
+\par
+Syntax definitions in HighlighterKit are separated into contexts. A context is a range of text in the input file which is governed by the same highlighting rules. The initial context, which is implicitly active for the whole document being edited, is the default context - always the first one in the syntax file. Contexts other than the default context must always have a starting and ending pattern defined, so that the parser can find them in the document. Due to how the parser is built and some programming languages are laid out, it is possible that the parser might find a character sequence that it could consider to be a context ending pattern, even though it should really be a keywork within the context. To solve this problem you may have to hint the parser to ignore certain patterns as being context endings in the ContextSkips parameter.\par
+\par
+Besides a starting and ending pattern, contexts can also define the default foreground and background color of text contained in them and whether the text should be drawn italic or bold. Not specifying any of these parameters will apply the user\rquote s default text color and font preferences.\par
+\par
+Contexts only allow a 1-level deep nesting - i.e. every context other than the default context (the first one) is a child of the default context and nothing else. When the document is empty, then the default context is active. By typing a context starting and ending pattern, the user delimits a block of text to be part of a lower-level context. After the ending pattern, the default context is again active.\par
+\par
+Contexts can also define keywords, which are whitespace separated patterns to which special highlighting rules can be applied. The parameter names are simmilar to those for a whole context.\par
+\par
+\cf0\fs36\i \uc0 Format of th\uc0 e special parameter fields\cf0 \uc0 \par
+\fs28\i0 \uc0 \par
+This section defines the formats of the special fields mentioned above:\par
+\par
+<pattern>\par
+\par
+This field denotes a simplified regular expression pattern. The HighlighterKit regex parser understands the following format:\cf0 \uc0 \par
+\par
+- "\f1 \uc0 \\\f0 \uc0 " - removes any special meaning from the letter immediately following it. Please beware that since OpenStep-style property lists use "\f1 \uc0 \\\f0 \uc0 " as an escape character themselves, you may have to type it twice to get the desired effect.\uc0 \par
+\par
+- "\f1 \uc0 <\f0 \uc0 " and "\f1 \uc0 >\f0 \uc0 " denote the beginning and ending of a word at whitespace boundaries.\par
+\par
+- "\f1 \uc0 .\f0 \uc0 " denotes any character\par
+\par
+- "\f1 \uc0 [abc]\f0 \uc0 " denotes an occurence of any of the characters "a", "b" or "c".\par
+\par
+- "\f1 \uc0 [^abc]\f0 \uc0 " denotes an occurence of any character other than "a", "b" or "c"\par
+\par
+- Any other normal character is considered to be part of the text to be matched.\par
+\par
+- in addition, the above four formatting patterns can be suffixed by one of:\par
+ +  "\f1 \uc0 ?\f0 \uc0 " - signifies the pattern may match at most once\par
+ +  "\f1 \uc0 +\f0 \uc0 " - signifies the pattern must match at least once\par
+ +  "\f1 \uc0 *\f0 \uc0 " - signifies the pattern may match any number of times\par
+ + "\f1 \uc0 \{a\}\f0 \uc0 " - signifies the pattern must match extactly a-times.\par
+ + "\f1 \uc0 \{a,b\}\f0 \uc0 " - signifies the pattern must match at least a-times, but no more than b-times.\par
+\par
+The format of the "<color-spec>" field is one of the follows:\par
+\par
+- "\f1 \uc0 R G B\f0 \uc0 " - where either R, G and B a real numbers in the range of 0 to 1 (inclusive) and signify an RGB color value.\par
+- "\f1 \uc0 R G B A\f0 \uc0 " - simmilar to the above code, but the additional A letter signifies transparency of the color, ranging from 0 (fully transparent) to 1 (fully opaque).\par
+}

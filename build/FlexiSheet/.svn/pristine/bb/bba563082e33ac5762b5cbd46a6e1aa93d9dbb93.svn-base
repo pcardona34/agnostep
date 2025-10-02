@@ -1,0 +1,99 @@
+{
+    IBClasses =     (
+                {
+            CLASS = FSChartController;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                chartView = id;
+            };
+            SUPERCLASS = FSWindowController;
+        },
+                {
+            CLASS = FSChartView;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSView;
+        },
+                {
+            ACTIONS =             {
+                showInspector = id;
+            };
+            CLASS = FSController;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                inspectorPanel = id;
+            };
+            SUPERCLASS = NSDocumentController;
+        },
+                {
+            CLASS = FSDocument;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                leftLabel = id;
+                tableView = id;
+                topLabel = id;
+            };
+            SUPERCLASS = NSDocument;
+        },
+                {
+            CLASS = FSHeaderDock;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSControl;
+        },
+                {
+            CLASS = FSLabel;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSControl;
+        },
+                {
+            CLASS = FSTableView;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                dataSource = id;
+            };
+            SUPERCLASS = NSControl;
+        },
+                {
+            ACTIONS =             {
+                insertItem = id;
+            };
+            CLASS = FSWindowController;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                headDock = FSHeaderDock;
+                leftDock = FSHeaderDock;
+                pageDock = FSHeaderDock;
+                rightDock = FSHeaderDock;
+                tableView = FSTableView;
+            };
+            SUPERCLASS = NSWindowController;
+        },
+                {
+            CLASS = FirstResponder;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSObject;
+        },
+                {
+            CLASS = MySound;
+            LANGUAGE = ObjC;
+            SUPERCLASS = Sound;
+        },
+                {
+            CLASS = NSObject;
+            LANGUAGE = ObjC;
+        },
+                {
+            ACTIONS =             {
+                runCustomizationPalette = id;
+            };
+            CLASS = NSToolbar;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSObject;
+        },
+                {
+            CLASS = NSToolbarItem;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSObject;
+        }
+    );
+    IBVersion = 1;
+}

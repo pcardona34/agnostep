@@ -56,7 +56,7 @@ ${font}${color}
 ${voffset -40}
 ${alignc}${color4}${font SansSerif:size=28}${exec date +"%H"}${color}:${color4}${exec date +"%M"}
 ${font}${color}
-${alignc}Durée: ${uptime}
+${alignc}${font ConkySymbols:size=24}S${font}${voffset -10}${distribution} - Durée: ${uptime}
 ${hr}
 ${alignc}${font ConkySymbols:size=24}H${voffset -10}${font}${font SansSerif:size=14}${color1} Météo ${font}${color}
 ${voffset 2}
@@ -77,18 +77,21 @@ ${alignc}${font ConkySymbols:size=24}K${voffset -10}${font SansSerif:size=14}${c
 ${voffset 6}${color3}${fs_bar 16,280 /}${color}
 ${goto 5}${voffset -22}$font root ${goto 80}${fs_type /}${goto 119}${fs_size /}${goto 184}${color8}${fs_free_perc /}%${color}${goto 224}${fs_free /}${goto 279}${voffset 1}
 
+${image /usr/local/share/icons/conky/battery.png -p 70,510}
+${hr}
+${voffset 1}
+${alignc}${font SansSerif:size=14}${color1} Batterie ${font}${color}
+${voffset 2}
+${goto 60}${battery} - ${battery_time}
+
 ${hr}
 ${alignc}${font ConkySymbols:size=24}I${voffset -10}${font SansSerif:size=14}${color1} Réseau ${font}${color}
-${if_existing /proc/net/route wlan0}
-${goto 40}${upspeedgraph wlan0 26,80 00FFFF 00FFFF}${goto 150}${downspeedgraph wlan0 26,80 FFFFFF FFFFFF}
-${goto 40}${color5}Haut: ${color4}${upspeed wlan0}${color5}${goto 150}Desc.: ${color2}${downspeed wlan0}
-${goto 40}${color5}Env.: ${color4}${totalup wlan0}${color5}${goto 150}Recus: ${color2}${totaldown wlan0}
+${if_up enp2s0}
+${alignc}IP: ${addr enp2s0}
+${goto 40}${upspeedgraph enp2s0 26,80 FFB7C5 FFB7C5}${goto 150}${downspeedgraph enp2s0 26,80 3A3A56 D7D7FF}
+${goto 40}${color5}Montée: ${color7}${upspeed enp2s0}${color5}${goto 150}Descente: ${color2}${downspeed enp2s0}
+${goto 40}${color5}Envoyés: ${color7}${totalup enp2s0}${color5}${goto 150}Reçus: ${color2}${totaldown enp2s0}
 ${endif}
-${if_existing /proc/net/route eth0}
-${alignc}IP: ${addr eth0}
-${goto 40}${upspeedgraph eth0 26,80 FFB7C5 FFB7C5}${goto 150}${downspeedgraph eth0 26,80 3A3A56 D7D7FF}
-${goto 40}${color5}Montée: ${color7}${upspeed eth0}${color5}${goto 150}Descente: ${color2}${downspeed eth0}
-${goto 40}${color5}Envoyés: ${color7}${totalup eth0}${color5}${goto 150}Reçus: ${color2}${totaldown eth0}
-${endif}${color}
+${color}
 
 ]]

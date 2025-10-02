@@ -1,0 +1,93 @@
+/***
+Spanish.lproj/Localizable.strings
+updated by make_strings 2012-02-04 12:36:35 -0600
+add comments above this one
+***/
+
+
+/*** Keys found in multiple places ***/
+
+/* File: GemasController.m:206 */
+/* Flag: untranslated */
+/* File: GemasController.m:213 */
+/* Flag: untranslated */
+/* File: GemasController.m:248 */
+/* Flag: untranslated */
+/* File: GemasController.m:259 */
+/* Flag: untranslated */
+/* File: GemasDocument.m:157 */
+/* Flag: untranslated */
+"Error" = "Error";
+
+/* File: GemasController.m:130 */
+/* Flag: untranslated */
+/* File: GemasController.m:208 */
+/* Flag: untranslated */
+/* File: GemasController.m:215 */
+/* Flag: untranslated */
+/* File: GemasController.m:250 */
+/* Flag: untranslated */
+/* File: GemasController.m:261 */
+/* Flag: untranslated */
+/* File: GemasDocument.m:157 */
+/* Flag: untranslated */
+"OK" = "Bien";
+
+/* File: GemasController.m:207 */
+/* Flag: untranslated */
+/* File: GemasController.m:249 */
+/* Flag: untranslated */
+"An error occurred when copy the project files,"
+= "Ha ocurrido un error al copiar los archivos del proyecto,";
+
+/* File: GemasController.m:324 */
+/* Flag: untranslated */
+/* File: GemasController.m:353 */
+/* Flag: untranslated */
+/* File: GemasController.m:364 */
+/* Flag: untranslated */
+/* File: GemasController.m:472 */
+/* Flag: untranslated */
+"Default" = "Por Defecto";
+
+
+/*** Unmatched/untranslated keys ***/
+
+/* File: GemasController.m:102 */
+/* Flag: untranslated */
+"Select a directory" = "Seleccione un directorio";
+
+/* File: GemasController.m:103 */
+/* Flag: untranslated */
+"Project Name:" = "Nombre del proyecto:";
+
+/* File: GemasController.m:128 */
+/* Flag: untranslated */
+"Alert" = "Alerta";
+
+/* File: GemasController.m:129 */
+/* Flag: untranslated */
+"Project path contains whitespaces. The tool Make won't work with this project. Do you want create the project anyway?"
+= "La ruta indicada contiene espacios. La herramienta Make no podr\U00E1 trabajar con este proyecto. \U00BFQuiere crearlo de todas formas?";
+
+/* File: GemasController.m:130 */
+/* Flag: untranslated */
+"Cancel" = "Cancelar";
+
+/* File: GemasController.m:183 */
+/* Flag: untranslated */
+"authors" = "Fulano,\n    Sutano,\n    \"Juan P\U00E9rez\"";
+
+/* File: GemasController.m:214 */
+/* Flag: untranslated */
+"Can't create the project directory."
+= "No se pudo crear el directorio del proyecto.";
+
+/* File: GemasController.m:260 */
+/* Flag: untranslated */
+"You don't have permission to write in that directory."
+= "No tiene permisos para escribir en ese directorio.";
+
+/* File: GemasDocument.m:157 */
+/* Flag: untranslated */
+"Can't load the file." = "No se pudo leer el archivo.";

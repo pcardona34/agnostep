@@ -9,8 +9,8 @@
 xset m 20/10 4
 
 ### This is to prevent DMPS and blanking issues on RPI machine
-xset -dpms
-xset s off
+#xset -dpms
+#xset s off
 
 ### gdnc
 gdomap -L GDNCServer || gdnc &
@@ -21,10 +21,10 @@ pgrep compton || compton -b
 ### Notifications
 systemctl --user import-environment DISPLAY
 pgrep dunst || dunst &
-dunstify "PiSiN Desktop is loading..."
+dunstify "AGNoStep Desktop is loading..."
 
 ### conky
-pgrep conky || sleep 8 && conky -c ~/.config/pisin/conky.conf &
+pgrep conky || sleep 8 && conky -c ~/.config/agnostep/conky.conf &
 
 ### Updater notification
 sleep 60 && /usr/local/bin/Updater.sh -d &

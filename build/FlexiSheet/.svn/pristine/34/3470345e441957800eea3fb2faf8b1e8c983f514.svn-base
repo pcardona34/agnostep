@@ -1,0 +1,55 @@
+
+FlexiSheet Technology Preview
+-----------------------------
+
+DO THIS BEFORE NEXT BETA RELEASE (BUGS AND SUCH):
+
+*** category linking and groups (some fixed, full test pending)
+
+*** printing
+*** search
+
+*** documentation for statistic functions missing
+
+*** extending selection with shift key doesn't work
+*** inspecting cell style does not work at all!  Exceptions!!!
+
+*** finish implementation of FSWorksheet, fix inspector
+    should take care of:
+**  Selection (focus) is not set on undo/redo!
+**  Selection (focus) is not retained when moving tabs!
+*   Moving categories is buggy and needs fixing (also make it undoable)
+*   Undo is incomplete (selections are not restored, etc).
+
+*** pnv financial funcion is broken
+*** tab inspecting.
+
+*** Fix resizing problems with groups (most visible with more than one category in one dock)
+*** Fix editing problems with groups and multiple categories in one dock
+*** Category linking needs to be tested and documented.
+*** Remove deallocated objects from undo manager!
+
+**  Item hiding.
+
+*   Undo while editing cell raises exception (abort editing).
+
+URGENT ADDITIONS (definitely soon):
+
+**  Investigate @ prefix to functions for "ignore text".
+**  Formula evaluation is not complete yet.
+**  Select function returns a selection!  How to implement?
+**  Statistic functions, documentation for all implemented functions.
+*   layout information not read from Quantrix file.
+*   Dates cannot be calculated in formulas.
+
+NICE TO HAVE:
+
+*   Charts.
+*   Perfect Quantrix import.
+*   More and better toolbar support.
+*   Better Notification structure (instead of delegation).
+*   Auto-save.
+*   Ultra fast GUI (ie more caching at the right places)
+
+------------------------
+$Id: TODO,v 1.1 2008/10/14 14:53:34 hns Exp $

@@ -1,0 +1,18 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {selectionHasChanged = id; }; 
+            CLASS = MailboxInspectorPanelController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                box = NSBox; 
+                subject = NSTextField; 
+                textView = NSTextView; 
+                threadArcsView = id; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

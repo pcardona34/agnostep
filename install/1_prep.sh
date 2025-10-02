@@ -20,14 +20,14 @@ LOG="$HOME/AGNOSTEP_DEPS.log"
 SPIN='/-\|'
 STATUS=0
 CONF=RESOURCES/AGNOSTEP.conf
-REQUIRED_OS=`grep -e "OS" $CONF | awk -F= '{print $2}'`
-REQUIRED_RELEASE=`grep -e "REL" $CONF | awk -F= '{print $2}'`
+
 ### End of Vars
 ###############################################################
 
 ###############################################################
 ### include functions
 . /etc/os-release
+. ${CONF}
 . SCRIPTS/colors.sh
 . SCRIPTS/spinner.sh
 . SCRIPTS/size.sh
@@ -40,6 +40,7 @@ REQUIRED_RELEASE=`grep -e "REL" $CONF | awk -F= '{print $2}'`
 echo "AGNoStep Desktop: init log" >>$LOG
 
 clear
+
 title "A G N o S t e p    D e s k t o p"
 
 sleep 1

@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<title>Function Overview</title>
+</head>
+<body marginwidth=4 marginheight=8>
+<h2 align=left> Function Overview </h2>
+<img src="../av/3PixelRule.tiff">
+<p>
+FlexiSheet contains functions divided into these groups:
+<ul>
+<li><b>Mathematical</b>
+<br>bla fasel math functions
+<li><b>Statistical</b>
+<br>bla fasel stat functions
+<li><b>Special</b>
+<br>This group contains such functions like <tt>if</tt>.
+</ul>
+<img src="../av/1PixelRule.tiff">
+<p><b>Related topics</b></p>
+<ul>
+<li><a href="./OperatorOverview.html">Operator Overview</a>
+</ul>
+</body>
+</html>

@@ -1,0 +1,280 @@
+﻿/***
+Italian.lproj/Localizable.strings
+updated by make_strings 2010-01-15 20:49:22 +0100
+add comments above this one
+***/
+
+
+/*** Keys found in multiple places ***/
+
+/* File: ServicesParameterWindowController.m:98 */
+/* File: ServicesPrefs.m:654 */
+"Command line:" = "Linea di Comando:";
+
+/* File: TerminalView.m:1130 */
+/* File: TerminalView.m:1857 */
+"Unexpected error while writing: %m." = "Errore inatteso scrivendo: %m.";
+
+/* File: main.m:324 */
+/* Flag: untranslated */
+/* File: main.m:345 */
+"Quit?" = "Uscire?";
+
+
+/*** Unmatched/untranslated keys ***/
+
+/* File: ServicesParameterWindowController.m:118 */
+/* Flag: untranslated */
+"Parameter for service %@" = "Parametro per il servizio %@";
+
+/* File: TerminalView.m:1992 */
+/* Flag: untranslated */
+"Unable to set non-blocking mode: %m."
+= "Impossibile impostare modalit\U00E0 non bloccante: %m.";
+
+/* File: TerminalViewPrefs.m:289 */
+/* Flag: unmatched */
+"Line" = "Linea";
+
+/* File: TerminalViewPrefs.m:290 */
+/* Flag: unmatched */
+"Stroked block" = "Blocco contornato";
+
+/* File: TerminalViewPrefs.m:291 */
+/* Flag: unmatched */
+"Filled block" = "Blocco solido";
+
+/* File: TerminalViewPrefs.m:292 */
+/* Flag: unmatched */
+"Inverted block" = "Blocco invertito";
+
+/* File: TerminalViewPrefs.m:397 */
+/* Flag: untranslated */
+"Display black on white text" = "Mostra testo bianco su nero";
+
+/* File: main.m:189 */
+/* Flag: untranslated */
+"Miniaturize all" = "Contrai tutte";
+
+/* File: main.m:275 */
+/* Flag: untranslated */
+"Quit anyway" = "Esci comunque";
+
+/* File: main.m:283 */
+/* Flag: untranslated */
+"Don't quit" = "Non uscire.";
+
+/* File: main.m:300 */
+/* Flag: untranslated */
+"There are active windows. Quitting will close them."
+= "Ci sono finestre attive, verranno chiuse in uscita.";
+
+
+/*** Strings from PreferencesWindowController.m ***/
+/* File: PreferencesWindowController.m:95 */
+"Apply and save" = "Applica e salva";
+/* File: PreferencesWindowController.m:140 */
+"Preferences" = "Preferenze";
+/* File: PreferencesWindowController.m:87 */
+"Revert" = "Ripristina";
+
+
+/*** Strings from Services.m ***/
+/* File: Services.m:151 */
+"Service aborted by user." = "Servizio interrotto dall'utente.";
+/* File: Services.m:59 */
+"There is no terminal service called '%@'.\nYour services list is probably out-of-date.\nRun 'make_services' to update it."
+= "Servizio '%@' non esistente.\nL'elenco dei servizi \U00E8 probabilmente non aggiornato.\nLanciare il comando 'make_services' per aggiornarlo.";
+
+
+/*** Strings from ServicesParameterWindowController.m ***/
+/* File: ServicesParameterWindowController.m:66 */
+"Cancel" = "Annulla";
+/* File: ServicesParameterWindowController.m:74 */
+"OK" = "OK";
+
+
+/*** Strings from ServicesPrefs.m ***/
+/* File: ServicesPrefs.m:586 */
+"Accept types" = "Tipi accettati";
+/* File: ServicesPrefs.m:500 */
+"Add" = "Aggiungi";
+/* File: ServicesPrefs.m:348 */
+"Error importing services" = "Errore di importazione dei servizi";
+/* File: ServicesPrefs.m:401 */
+"Export services" = "Esporta servizi";
+/* File: ServicesPrefs.m:524 */
+"Export..." = "Esporta...";
+/* File: ServicesPrefs.m:595 */
+"Filenames" = "Archivi:";
+/* File: ServicesPrefs.m:550 */
+"Ignore output" = "Ignora output";
+/* File: ServicesPrefs.m:254 */
+"Import services" = "Importa servizi";
+/* File: ServicesPrefs.m:516 */
+"Import..." = "Importa...";
+/* File: ServicesPrefs.m:560 */
+"Input in stdin" = "Input nello stdin";
+/* File: ServicesPrefs.m:561 */
+"Input on command line" = "Input dalla linea di comando";
+/* File: ServicesPrefs.m:641 */
+"Key:" = "Chiave:";
+/* File: ServicesPrefs.m:628 */
+"Name:" = "Nome:";
+/* File: ServicesPrefs.m:559 */
+"No input" = "Nessun input";
+/* File: ServicesPrefs.m:603 */
+"Plain text" = "Testo semplice";
+/* File: ServicesPrefs.m:508 */
+"Remove" = "Rimuovi";
+/* File: ServicesPrefs.m:551 */
+"Return output" = "Output di ritorno";
+/* File: ServicesPrefs.m:569 */
+"Run in background" = "Esegui in background";
+/* File: ServicesPrefs.m:571 */
+"Run in idle window" = "Esegui nella finestra inattiva";
+/* File: ServicesPrefs.m:570 */
+"Run in new window" = "Esegui in una nuova finestra";
+/* File: ServicesPrefs.m:469 */
+"Terminal services" = "Servizi di terminale";
+/* File: ServicesPrefs.m:474 */
+"Terminal\nservices" = "Servizi\ndi terminale";
+/* File: ServicesPrefs.m:349 */
+"The file '%@' doesn't contain valid terminal services."
+= "Il file '%@' non contiene servizi di terminale validi.";
+/* File: ServicesPrefs.m:235 */
+"Unnamed service" = "Servizio senza nome";
+
+
+/*** Strings from TerminalParser_LinuxPrefs.m ***/
+/* File: TerminalParser_LinuxPrefs.m:104 */
+"'linux' terminal parser" = "Interprete di terminale 'linux'";
+/* File: TerminalParser_LinuxPrefs.m:109 */
+"'linux'\nparser" = "Interprete\n'linux'";
+/* File: TerminalParser_LinuxPrefs.m:152 */
+"Character set:" = "Codifica caratteri:";
+/* File: TerminalParser_LinuxPrefs.m:44 */
+"Chinese" = "Cinese";
+/* File: TerminalParser_LinuxPrefs.m:45 */
+"Custom, leave unchanged" = "Personalizzata, non modificata";
+/* File: TerminalParser_LinuxPrefs.m:43 */
+"East Europe, latin2" = "Est Europa, latin2";
+/* File: TerminalParser_LinuxPrefs.m:41 */
+"UTF-8" = "UTF-8";
+/* File: TerminalParser_LinuxPrefs.m:42 */
+"West Europe, latin1" = "Ovest Europa , latin1";
+
+
+/*** Strings from TerminalView.m ***/
+/* File: TerminalView.m:1965 */
+"Unable to fork: %m." = "Fork non riuscita: %m.";
+/* File: TerminalView.m:1953 */
+"Unable to open pipe for input: %m." = "Pipe non disponibile per input: %m.";
+/* File: TerminalView.m:1765 */
+"[Process exited]" = "[Processo terminato]";
+
+
+/*** Strings from TerminalViewPrefs.m ***/
+/* File: TerminalViewPrefs.m:408 */
+"Bold font:" = "Grassetto :";
+/* File: TerminalViewPrefs.m:367 */
+"Color:" = "Colore:";
+/* File: TerminalViewPrefs.m:322 */
+"Cursor" = "Cursore";
+/* File: TerminalViewPrefs.m:273 */
+/* File: TerminalViewPrefs.m:268 */
+"Display" = "Display";
+/* File: TerminalViewPrefs.m:390 */
+"Handle wide (multi-cell) glyphs" = "Gestisci glifi estesi (cella multipla)";
+/* File: TerminalViewPrefs.m:690 */
+/* File: TerminalViewPrefs.m:685 */
+"Keyboard" = "Tastiera";
+/* File: TerminalViewPrefs.m:435 */
+"Normal font:" = "Carattere normale:";
+/* File: TerminalViewPrefs.m:447 */
+/* File: TerminalViewPrefs.m:420 */
+"Pick font..." = "Scegli carattere...";
+/* File: TerminalViewPrefs.m:299 */
+"Scroll-back length in lines:" = "Lunghezza scorrimento in linee:";
+/* File: TerminalViewPrefs.m:730 */
+"Send a double escape for the escape key.\n\nThis means that the escape key will be\nrecognized faster by many programs, but\nyou can't use it as a substitute for meta."
+= "Invia un doppio escape per il tasto escape.\n\nSignifica che il carattere di escape sar\U00E0\nriconosciuto piu velocemente da molti programmi, ma\nnon si pu\U00F2 usare come sostituto di meta.";
+/* File: TerminalViewPrefs.m:577 */
+/* File: TerminalViewPrefs.m:572 */
+"Shell" = "Shell";
+/* File: TerminalViewPrefs.m:610 */
+"Shell:" = "Shell:";
+/* File: TerminalViewPrefs.m:598 */
+"Start as login-shell" = "Inizio come shell di login";
+/* File: TerminalViewPrefs.m:327 */
+"Style:" = "Stile:";
+/* File: TerminalViewPrefs.m:715 */
+"Treat the command key as meta.\n\nNote that with this enabled, you won't be\nable to access menu entries with the\nkeyboard."
+= "Tratta il tasto comando come meta.\n\nNota che con questo abilitato,\nnon potrai accedere ai menu con la\ntastiera.";
+
+
+/*** Strings from TerminalWindow.m ***/
+/* File: TerminalWindow.m:203 */
+/* File: TerminalWindow.m:199 */
+" (idle)" = " (inattivo)";
+
+
+/*** Strings from TerminalWindowPrefs.m ***/
+/* File: TerminalWindowPrefs.m:212 */
+"Add top and bottom border" = "Aggiungi bordo in alto e in basso";
+/* File: TerminalWindowPrefs.m:152 */
+"Close new windows when idle"
+= "Chiudi le nuove finestre quando inattive";
+/* File: TerminalWindowPrefs.m:176 */
+"Default size" = "Dimensione di default";
+/* File: TerminalWindowPrefs.m:153 */
+"Don't close new windows" = "Non chiudere le nuove finestre";
+/* File: TerminalWindowPrefs.m:189 */
+"Height:" = "Altezza:";
+/* File: TerminalWindowPrefs.m:114 */
+"Terminal Window" = "Finestra Terminale";
+/* File: TerminalWindowPrefs.m:119 */
+"Terminal\nWindow" = "Finestra\nTerminale";
+/* File: TerminalWindowPrefs.m:180 */
+"Width:" = "Larghezza:";
+
+
+/*** Strings from main.m ***/
+/* File: main.m:152 */
+"Benchmark" = "Benchmark";
+/* File: main.m:186 */
+"Close" = "Chiudi";
+/* File: main.m:175 */
+"Copy" = "Copia";
+/* File: main.m:172 */
+"Cut" = "Taglia";
+/* File: main.m:181 */
+"Edit" = "Modifica";
+"View"="Vista";
+/* File: main.m:201 */
+"Hide" = "Nascondi";
+/* File: main.m:154 */
+"Info" = "Informazioni";
+/* File: main.m:148 */
+"Info..." = "Informazioni...";
+/* File: main.m:166 */
+"New window" = "Nuova finestra";
+"New tab" = "Nuova linguetta";
+/* File: main.m:178 */
+"Paste" = "Incolla";
+/* File: main.m:150 */
+"Preferences..." = "Preferenze...";
+/* File: main.m:205 */
+"Quit" = "Esci";
+/* File: main.m:197 */
+"Services" = "Servizi";
+/* File: main.m:192 */
+"Windows" = "Finestre";
+
+"Show tab bar"="Mostra barra linguette";
+"Close window"="Chiudi finestra";
+"Close tab"="Chiudi linguetta";
+"Show previous tab"="Mostra linguetta precedente";
+"Show next tab"="Mostra prossima linguetta";
+"Move tab left"="Sposta linguetta a sinistra";
+"Move tab right"="Sposta linguetta a destra";

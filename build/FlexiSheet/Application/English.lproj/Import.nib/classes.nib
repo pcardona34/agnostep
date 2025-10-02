@@ -1,0 +1,39 @@
+{
+    IBClasses =     (
+                {
+            CLASS = FSImporter;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                accessory = NSBox;
+                encoding = NSPopUpButton;
+                filenameField = NSTextField;
+                importing = NSTextField;
+                lineBreaker = NSPopUpButton;
+                progressBar = NSProgressIndicator;
+                progressPanel = NSPanel;
+                readColLabels = NSButton;
+                readRowLabels = NSButton;
+                separator = NSPopUpButton;
+            };
+            SUPERCLASS = NSObject;
+        },
+                {
+            CLASS = FSTableView;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                dataSource = id;
+            };
+            SUPERCLASS = NSControl;
+        },
+                {
+            CLASS = FirstResponder;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSObject;
+        },
+                {
+            CLASS = NSObject;
+            LANGUAGE = ObjC;
+        }
+    );
+    IBVersion = 1;
+}

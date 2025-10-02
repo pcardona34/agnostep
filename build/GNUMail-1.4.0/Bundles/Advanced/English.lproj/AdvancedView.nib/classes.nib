@@ -1,0 +1,22 @@
+{
+    IBClasses = (
+        {
+            CLASS = AdvancedViewController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                enabledColumn = NSTableColumn; 
+                optionsColumn = NSTableColumn; 
+                tableView = NSTableView; 
+                view = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = ExtendedTableColumn; LANGUAGE = ObjC; SUPERCLASS = NSTableColumn; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }, 
+        {CLASS = NSTableColumn; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = StripeTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {CLASS = SwitchTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,335 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {cancelPreferences = id; savePreferences = id; showPreferences = id; }; 
+            CLASS = AppController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                closePanelsCheck = NSButton; 
+                enlargeWindowsCheck = NSButton; 
+                prefPanel = NSPanel; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                makeConvolve55 = id; 
+                makeDFT = id; 
+                makeFlippedHoriz = id; 
+                makeFlippedVert = id; 
+                makeGrayscale = id; 
+                makeInverse = id; 
+                makeRotated180 = id; 
+                makeRotated270 = id; 
+                makeRotated90 = id; 
+                makeTransposed = id; 
+            }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                makeDFT = id; 
+                makeEqualization = id; 
+                makeGrayscale = id; 
+                makeRotated180 = id; 
+                makeRotated270 = id; 
+                makeRotated90 = id; 
+                makeTransposed = id; 
+            }; 
+            CLASS = MyDocument; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {
+            ACTIONS = {briconReset = id; changeBri = id; changeCon = id; }; 
+            CLASS = PRCBriCon; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                briSlider = NSSlider; 
+                briStep = NSStepper; 
+                briVal = NSTextField; 
+                briconWindow = NSWindow; 
+                conSlider = NSSlider; 
+                conStep = NSStepper; 
+                conVal = NSTextField; 
+            }; 
+            SUPERCLASS = PRFilterController; 
+        }, 
+        {
+            ACTIONS = {
+                autoRange = id; 
+                convMatrix11 = id; 
+                convMatrix12 = id; 
+                convMatrix13 = id; 
+                convMatrix14 = id; 
+                convMatrix15 = id; 
+                convMatrix21 = id; 
+                convMatrix22 = id; 
+                convMatrix23 = id; 
+                convMatrix24 = id; 
+                convMatrix25 = id; 
+                convMatrix31 = id; 
+                convMatrix32 = id; 
+                convMatrix33 = id; 
+                convMatrix34 = id; 
+                convMatrix35 = id; 
+                convMatrix41 = id; 
+                convMatrix42 = id; 
+                convMatrix43 = id; 
+                convMatrix44 = id; 
+                convMatrix45 = id; 
+                convMatrix51 = id; 
+                convMatrix52 = id; 
+                convMatrix53 = id; 
+                convMatrix54 = id; 
+                convMatrix55 = id; 
+                offsetFactor = id; 
+                scaleFactor = id; 
+            }; 
+            CLASS = PRCConvolve55; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                autoScaleCheck = NSButton; 
+                filterWindow = NSWindow; 
+                matField11 = NSTextField; 
+                matField12 = NSTextField; 
+                matField13 = NSTextField; 
+                matField14 = NSTextField; 
+                matField15 = NSTextField; 
+                matField21 = NSTextField; 
+                matField22 = NSTextField; 
+                matField23 = NSTextField; 
+                matField24 = NSTextField; 
+                matField25 = NSTextField; 
+                matField31 = NSTextField; 
+                matField32 = NSTextField; 
+                matField33 = NSTextField; 
+                matField34 = NSTextField; 
+                matField35 = NSTextField; 
+                matField41 = NSTextField; 
+                matField42 = NSTextField; 
+                matField43 = NSTextField; 
+                matField44 = NSTextField; 
+                matField45 = NSTextField; 
+                matField51 = NSTextField; 
+                matField52 = NSTextField; 
+                matField53 = NSTextField; 
+                matField54 = NSTextField; 
+                matField55 = NSTextField; 
+                offsetField = NSTextField; 
+                scaleField = NSTextField; 
+            }; 
+            SUPERCLASS = PRFilterController; 
+        }, 
+        {
+            ACTIONS = {
+                changeBottom = id; 
+                changeLeft = id; 
+                changeRight = id; 
+                changeTop = id; 
+                resetValues = id; 
+            }; 
+            CLASS = PRCCrop; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                bottomField = NSTextField; 
+                cropWindow = NSWindow; 
+                heightField = NSTextField; 
+                leftField = NSTextField; 
+                rightField = NSTextField; 
+                topField = NSTextField; 
+                widthField = NSTextField; 
+            }; 
+            SUPERCLASS = PRFilterController; 
+        }, 
+        {CLASS = PRCCumHisto; LANGUAGE = ObjC; SUPERCLASS = PRCHistogram; }, 
+        {
+            ACTIONS = {curvesReset = id; }; 
+            CLASS = PRCCurves; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {curvesView = PCCurvesView; curvesWindow = NSWindow; }; 
+            SUPERCLASS = PRFilterController; 
+        }, 
+        {
+            ACTIONS = {
+                changeSize1 = id; 
+                changeSize2 = id; 
+                changeSize3 = id; 
+                changeThreshold = id; 
+                enablePane1 = id; 
+                enablePane2 = id; 
+                enablePane3 = id; 
+            }; 
+            CLASS = PRCCustTraceEdges; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                edgeWindow = NSWindow; 
+                enableCheck1 = NSButton; 
+                enableCheck2 = NSButton; 
+                enableCheck3 = NSButton; 
+                filterType = NSPopUpButton; 
+                formSelect1 = NSPopUpButton; 
+                formSelect2 = NSPopUpButton; 
+                formSelect3 = NSPopUpButton; 
+                separableCheck1 = NSButton; 
+                separableCheck2 = NSButton; 
+                separableCheck3 = NSButton; 
+                sizeField1 = NSTextField; 
+                sizeField2 = NSTextField; 
+                sizeField3 = NSTextField; 
+                sizeSlider1 = NSSlider; 
+                sizeSlider2 = NSSlider; 
+                sizeSlider3 = NSSlider; 
+                thresholdField = NSTextField; 
+                thresholdSlider = NSSlider; 
+                zeroCrossCheck = NSButton; 
+            }; 
+            SUPERCLASS = PRFilterController; 
+        }, 
+        {
+            ACTIONS = {changePassBand = id; changeStopBand = id; dftHPAutoRange = id; }; 
+            CLASS = PRCDFTHighPass; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                autoRangeCheck = NSButton; 
+                filterWindow = NSWindow; 
+                passBandSlider = NSSlider; 
+                passBandVal = NSTextField; 
+                passBandValPi = NSTextField; 
+                stopBandSlider = NSSlider; 
+                stopBandVal = NSTextField; 
+                stopBandValPi = NSTextField; 
+            }; 
+            SUPERCLASS = PRFilterController; 
+        }, 
+        {
+            ACTIONS = {changePassBand = id; changeStopBand = id; dftLPAutoRange = id; }; 
+            CLASS = PRCDFTLowPass; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                autoRangeCheck = NSButton; 
+                filterWindow = NSWindow; 
+                passBandSlider = NSSlider; 
+                passBandVal = NSTextField; 
+                passBandValPi = NSTextField; 
+                stopBandSlider = NSSlider; 
+                stopBandVal = NSTextField; 
+                stopBandValPi = NSTextField; 
+            }; 
+            SUPERCLASS = PRFilterController; 
+        }, 
+        {
+            CLASS = PRCEqualize; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {colorSpaceChoice = NSPopUpButton; equalWindow = NSWindow; }; 
+            SUPERCLASS = PRFilterController; 
+        }, 
+        {
+            ACTIONS = {transformImage = id; }; 
+            CLASS = PRCFourier; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = PRCGrayscale; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {grayWindow = NSWindow; methodChoice = NSPopUpButton; }; 
+            SUPERCLASS = PRFilterController; 
+        }, 
+        {
+            CLASS = PRCHisto; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {histoView = PRHisto; }; 
+            SUPERCLASS = PRCHistogram; 
+        }, 
+        {
+            ACTIONS = {showHistogram = id; }; 
+            CLASS = PRCHistogram; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {histoWindow = NSWindow; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {makeInverse = id; }; 
+            CLASS = PRCInvert; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {changeSize = id; }; 
+            CLASS = PRCMedian; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                formSelect = NSPopUpButton; 
+                medianWindow = NSWindow; 
+                separableCheck = NSButton; 
+                sizeField = NSTextField; 
+                sizeSlider = NSSlider; 
+            }; 
+            SUPERCLASS = PRFilterController; 
+        }, 
+        {
+            ACTIONS = {
+                changePercentX = id; 
+                changePercentY = id; 
+                changePixelsX = id; 
+                changePixelsY = id; 
+            }; 
+            CLASS = PRCScale; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                methodSelect = NSPopUpButton; 
+                percentXField = NSTextField; 
+                percentYField = NSTextField; 
+                pixelsXField = NSTextField; 
+                pixelsYField = NSTextField; 
+                scaleWindow = NSWindow; 
+                uniformToggle = NSButton; 
+            }; 
+            SUPERCLASS = PRFilterController; 
+        }, 
+        {
+            ACTIONS = {changeThreshold = id; filterTypeToggle = id; thresholdToggle = id; }; 
+            CLASS = PRCTraceEdges; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                edgeWindow = NSWindow; 
+                filterType = NSPopUpButton; 
+                thresholdCheck = NSButton; 
+                thresholdField = NSTextField; 
+                thresholdSlider = NSSlider; 
+                zeroCrossCheck = NSButton; 
+            }; 
+            SUPERCLASS = PRFilterController; 
+        }, 
+        {
+            ACTIONS = {
+                flipImageHoriz = id; 
+                flipImageVert = id; 
+                rotateImage180 = id; 
+                rotateImage270 = id; 
+                rotateImage90 = id; 
+                transposeImage = id; 
+            }; 
+            CLASS = PRCTransforms; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {filterCancel = id; filterOK = id; parametersChanged = id; showFilter = id; }; 
+            CLASS = PRFilterController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {changeScale = id; }; 
+            CLASS = PRWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {view = PRImageView; zoomControl = NSTextField; zoomSlider = NSSlider; }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

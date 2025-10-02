@@ -1,0 +1,184 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/FSHeaderDock">FSHeaderDock</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>NSControl</DD>
+</DL></blockquote>
+
+
+
+	<blockquote><DL><DT><B>Conforms To:</B></DT>
+	<DD>FSEditableSelection</DD>
+</DL></blockquote>
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSHeaderDock.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+No class description.
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Global Variables</H2>
+	<blockquote>
+	
+		
+		<H4>Synopsis:</H4>
+		
+			<CODE>NSString *<B><A NAME="//apple_ref/c/data/FSHeadersChangedInDockNotification">FSHeadersChangedInDockNotification</A></B>;</CODE><BR>
+		
+		
+	
+	</blockquote>
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Variables</H2>
+	<blockquote>
+	
+		<CODE>NSMutableArray *<B>_headers</B>;</CODE><BR>
+		<CODE>BOOL <B>_isDragging</B>;</CODE><BR>
+		<CODE>BOOL <B>_isDropping</B>;</CODE><BR>
+		<CODE>BOOL <B>_isLinking</B>;</CODE><BR>
+		<CODE>int <B>_dragIndex</B>;</CODE><BR>
+		<CODE>int <B>_dropIndex</B>;</CODE><BR>
+		<CODE>NSImage *<B>_emptyImage</B>;</CODE><BR>
+		<CODE>id <B>_delegate</B>;</CODE><BR>
+		<CODE>int <B>_selection</B>;</CODE><BR>
+		<CODE>BOOL <B>_isEditing</B>;</CODE><BR>
+		<CODE>FSHeader *<B>_editHeader</B>;</CODE><BR>
+		<CODE>int *<B>_sizeCache</B>;</CODE><BR>
+	<P><TABLE>
+	
+		<TR><TD>_headers</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_isDragging</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_isDropping</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_isLinking</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_dragIndex</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_dropIndex</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_emptyImage</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_delegate</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_selection</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_isEditing</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_editHeader</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_sizeCache</TD><TD>No description.</TD></TR>
+	
+	</TABLE>
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- delegate">- delegate</A></DD>
+		
+			<DD> <A HREF="#- setDelegate:">- setDelegate:</A></DD>
+		
+			<DD> <A HREF="#- headers">- headers</A></DD>
+		
+			<DD> <A HREF="#- setHeaders:">- setHeaders:</A></DD>
+		
+			<DD> <A HREF="#- removeDraggedHeader">- removeDraggedHeader</A></DD>
+		
+			<DD> <A HREF="#- _endEditing">- _endEditing</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- _endEditing"></A><H3><A NAME="//apple_ref/occ/instm/FSHeaderDock/_endEditing">_endEditing</A></H3><P>
+		<CODE>- (BOOL)<B>_endEditing</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- delegate"></A><H3><A NAME="//apple_ref/occ/instm/FSHeaderDock/delegate">delegate</A></H3><P>
+		<CODE>- (id)<B>delegate</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- headers"></A><H3><A NAME="//apple_ref/occ/instm/FSHeaderDock/headers">headers</A></H3><P>
+		<CODE>- (NSArray*)<B>headers</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- removeDraggedHeader"></A><H3><A NAME="//apple_ref/occ/instm/FSHeaderDock/removeDraggedHeader">removeDraggedHeader</A></H3><P>
+		<CODE>- (FSHeader*)<B>removeDraggedHeader</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setDelegate:"></A><H3><A NAME="//apple_ref/occ/instm/FSHeaderDock/setDelegate:">setDelegate:</A></H3><P>
+		<CODE>- (void)<B>setDelegate:</B>(id)<EM>delegate</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setHeaders:"></A><H3><A NAME="//apple_ref/occ/instm/FSHeaderDock/setHeaders:">setHeaders:</A></H3><P>
+		<CODE>- (void)<B>setHeaders:</B>(NSArray*)<EM>headers</EM>
+			
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2001 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

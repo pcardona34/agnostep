@@ -1,0 +1,28 @@
+{
+  ApplicationName = "FlexiSheet";
+  ApplicationDescription = "FlexiSheet Technology Preview";
+  ApplicationRelease = "0.5.7";
+  Copyright = "";
+  CopyrightDescription = ""; 
+  NSIcon = Application;
+  NSTypes = (
+        {
+             NSName = "fsd";
+             NSHumanReadableName = "FlexiSheet Document";
+             NSUnixExtensions = ("fsd");
+             NSDOSExtensions = ("fsd");
+	           NSIcon = Sheet;
+             NSRole = Editor;
+             NSDocumentClass = FSDocument;
+        },
+        {
+             NSName = "quantrix";
+             NSHumanReadableName = "Quantrix Document";
+             NSUnixExtensions = ("quantrix");
+             NSDOSExtensions = ("qtx");
+	           NSIcon = Quantrix;
+             NSRole = Viewer;
+             NSDocumentClass = FSDocument;
+        }
+  );
+}

@@ -1,0 +1,29 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    FirstResponder = {
+	Actions = (
+	    "cancelClicked:",
+	    "expertClicked:",
+	    "handleCellAction:",
+	    "saveAndClose:",
+	    "savePreferences:"
+	);
+	Super = NSObject;
+    };
+    PreferencesWindowController = {
+	Actions = (
+	    "cancelClicked:",
+	    "expertClicked:",
+	    "saveAndClose:",
+	    "savePreferences:",
+	    "handleCellAction:"
+	);
+	Outlets = (
+	    matrix,
+	    scrollView,
+	    box,
+	    expert
+	);
+	Super = NSWindowController;
+    };
+}

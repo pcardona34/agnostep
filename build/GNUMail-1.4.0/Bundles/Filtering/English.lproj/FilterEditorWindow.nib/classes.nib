@@ -1,0 +1,51 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                cancelClicked = id; 
+                chooseFileButtonClicked = id; 
+                criteriaFindOperationSelectionHasChanged = id; 
+                criteriaSourceSelectionHasChanged = id; 
+                okClicked = id; 
+                setMessage = id; 
+            }; 
+            CLASS = FilterEditorWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                actionColorWell = NSColorWell; 
+                actionEMailStringButton = NSButton; 
+                actionEMailStringField = NSTextField; 
+                actionEMailStringPopUpButton = NSPopUpButton; 
+                actionFolderNamePopUpButton = NSPopUpButton; 
+                activeButton = NSButton; 
+                chooseFileButton = NSButton; 
+                criteriaBox = NSBox; 
+                criteriaConditionPopUpButtonB = NSPopUpButton; 
+                criteriaConditionPopUpButtonC = NSPopUpButton; 
+                criteriaFindOperationPopUpButtonA = NSPopUpButton; 
+                criteriaFindOperationPopUpButtonB = NSPopUpButton; 
+                criteriaFindOperationPopUpButtonC = NSPopUpButton; 
+                criteriaPopUpButtonA = NSPopUpButton; 
+                criteriaPopUpButtonB = NSPopUpButton; 
+                criteriaPopUpButtonC = NSPopUpButton; 
+                criteriaSourcePopUpButtonA = NSPopUpButton; 
+                criteriaSourcePopUpButtonB = NSPopUpButton; 
+                criteriaSourcePopUpButtonC = NSPopUpButton; 
+                criteriaStringFieldA = NSTextField; 
+                criteriaStringFieldB = NSTextField; 
+                criteriaStringFieldC = NSTextField; 
+                descriptionField = NSTextField; 
+                externalProgramButton = NSButton; 
+                externalProgramField = NSTextField; 
+                externalProgramPopUpButton = NSPopUpButton; 
+                filterTypeMatrix = NSMatrix; 
+                matrix = NSMatrix; 
+                pathToSoundField = NSTextField; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = FolderNodePopUpItem; LANGUAGE = ObjC; SUPERCLASS = NSMenuItem; }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,10 @@
+
+01-Feb-2007  Guenther Noack
+	* support for reference element. (An element in the database
+	  where the newly created feed is placed in or below, depending
+	  on if it's a category or not)
+	* emptied text box in Gorm
+
+18-Jan-2007  Guenther Noack
+	* initial version
+

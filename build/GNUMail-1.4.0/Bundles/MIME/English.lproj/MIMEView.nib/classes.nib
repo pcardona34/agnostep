@@ -1,0 +1,22 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {add = id; delete = id; edit = id; }; 
+            CLASS = MIMEViewController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                add = NSButton; 
+                delete = NSButton; 
+                edit = NSButton; 
+                fileExtensionsColumn = NSTableColumn; 
+                mimeTypesColumn = NSTableColumn; 
+                tableView = NSTableView; 
+                view = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = StripeTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }
+    ); 
+    IBVersion = 1; 
+}

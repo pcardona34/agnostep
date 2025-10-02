@@ -1,0 +1,425 @@
+2022-02-06 Riccardo mottola <rm@gnu.org>
+	* Components/ArticleView/NSString+TolerantHTML.m:
+	Improve handling of PRE and tags inside it. Mostly by Sergei Golovin.
+
+2022-01-25 Riccardo mottola <rm@gnu.org>
+	* Components/ArticleView/NSString+TolerantHTML.m:
+	Support CODE tag, add preliminary IMG parsing.
+
+2022-01-25 Riccardo mottola <rm@gnu.org>
+	* Components/ArticleView/NSString+TolerantHTML.m:
+	Handle incorrectly terminated entities better.
+
+2022-01-25 Riccardo mottola <rm@gnu.org>
+	* Components/ArticleView/NSString+TolerantHTML.m:
+	Handle null attributes for elements (anchors)
+
+2019-08-22 Riccardo mottola <rm@gnu.org>
+
+	* Article.h
+	* Article.m
+	* Components/ArticleOperations/ArticleOperations.m:
+	Adapt to RSSKit change that uses NSURL instead of NSString to keep the Article URL.
+
+2019-08-21 Riccardo mottola <rm@gnu.org>
+
+	* Components/ArticleOperations/ArticleOperations.m
+	Use urlStr to access an URL under NSString format
+
+2019-08-21 Riccardo mottola <rm@gnu.org>
+
+	* Components/TreeDatabase/TreeDatabaseComponent.m
+	Remove exception for old GNUstep version.
+
+2014-12-22 Riccardo Mottola <rm@gnu.org>
+
+	* Components/ArticleView/ArticleTextViewPlugin.m
+	* Components/Searching/NSSet+ArticleFiltering.m
+	do not use PRIuPTR, doesn't work on Mac
+
+2013-05-17: Sebastian Reitenbach <sebastia@l00-bugdead-prods.de>
+	* Components/DatabaseTreeView/DatabaseTreeViewController.[h|m]
+	* NSBundle+Extensions.m
+	* Article.[h|m]
+	  NS(U)Integer transitions
+	* GNUMakefile, *plist, bump to 1.1
+
+2013-02-24 Sebastian Reitenbach <sebastia@l00-bugdead-prods.de>
+	* Components/ArticleTable/ArticleTablePlugin.h
+	* Components/ArticleView/ArticleTextViewPlugin.m
+	* NS(U)Integer transitions
+
+2013-02-11 Sebastian Reitenbach <sebastia@l00-bugdead-prods.de>
+	* Components/Searching/NSSet+ArticleFiltering.m
+	* Components/ArticleTable/ArticleTablePlugin.m
+	  some NSInteger conversions, and clang warning shutup
+
+2012-05-17 Riccardo Mottola <rm@gnu.org>
+
+	* AppController.m
+	Fix wrong format specifier.
+
+2012-03-28 Riccardo Mottola <rm@gnu.org>
+
+	* Components/ArticleTable/ArticleTablePlugin.m
+	* Components/DatabaseOperations/DatabaseOperations.m
+	* Components/DatabaseTreeView/DatabaseTreeViewController.m
+	* Components/SubscriptionPanel/SubscriptionPanel.m
+	Change indexes to NSInteger / NSUInteger
+
+2011-11-29 Sebastian Reitenbach <sebastia@l00-bugdead-prods.de>
+
+	* GNUmakefile.preamble
+	Do not override ADDITIONAL_GUI_LIBS
+
+2011-10-15 Riccardo Mottola <rm@gnu.org>
+
+	* Compontents/ArticleView/English.lproj/ArticleTextViewPlugin.gorm
+	Fixed order of the title text field.
+
+2011-10-13 Riccardo Mottola <rm@gnu.org>
+
+	* Compontents/ArticleView/English.lproj/ArticleTextViewPlugin.gorm
+	Recreated to set new text style defaults.
+
+2011-07-22 Riccardo Mottola <rm@gnu.org>
+
+	* Components/ArticleView/NSString+TolerantHTML.m
+	Display the absolute URL as ToolTip.
+
+2011-07-19 Riccardo Mottola <rm@gnu.org>
+
+	* Components/ArticleView/NSString+TolerantHTML.m
+	Fixed parser, the handler tables were inited wrongly.
+	Furthermore, set standard link attributes.
+
+2011-07-12 Riccardo Mottola <rm@gnu.org>
+
+	* Resources/Data/HTML-Entities.plist
+	Transformed array ito string values removing GNUstep encoding.
+
+2011-07-03 Riccardo Mottola <rm@gnu.org>
+
+	* English.lproj
+	* Grr.xcode
+	Updated project to build on Panther by using a GrrFramework. Compiling and linking those
+	Objects multiple times confused the Panther linker and runtime with multiple copies.
+
+2011-07-03 Fred Kiefer
+
+	* PipeType.h
+	* PipeType.m
+	Simplify allocation.
+
+2011-07-01 Riccardo Mottola <rm@gnu.org>
+
+	* ArticleFactory.m
+	* Category.m
+	* DatabaseElement.h
+	* Feed.h
+	* Feed.m
+	* PreferencesComponent.m
+
+	Adapt to RSSKit protocol changes.
+
+	* Resources/Icons/AddCategory.tiff
+	* Resources/Icons/AddFeed.tiff
+	* Resources/Icons/ArticleLink.tiff
+	* Resources/Icons/Category.tiff
+	* Resources/Icons/DeleteCategory.tiff
+	* Resources/Icons/DeleteFeed.tiff
+	* Resources/Icons/Feed.tiff
+	* Resources/Icons/FeedFetching.tiff
+)	* Resources/Icons/FetchFeed.tiff
+	* Resources/Icons/FetchFeeds.tiff
+	* Resources/Icons/Star.tiff
+	* Resources/Icons/WebProxy.tiff
+	* Resources/UI/blue-badge-left.tiff
+	* Resources/UI/blue-badge-mid.tiff
+	* Resources/UI/blue-badge-right.tiff
+
+	Convert to 72 dpi.
+
+2010-09-28 Riccardo Mottola
+
+	* AppController.m
+	* Database.h
+	* Components/DatabaseOperations/DatabaseOperations.m
+	* Components/DatabaseTreeView/DatabaseTreeViewController.h
+	* Components/DatabaseTreeView/DatabaseTreeViewController.m
+	* Components/TreeDatabase/TreeDatabaseComponent.m:
+	Warning fixes about categories.
+
+
+2010-03-15 Nicola Pero
+	* GNUmakefile.postamble
+	Components/ArticleOperations/GNUmakefile
+	Components/ArticleTable/GNUmakefile
+	Components/ArticleView/GNUmakefile
+	Components/DatabaseOperations/GNUmakefile
+	Components/DatabaseTreeView/GNUmakefile
+	Components/Fonts/GNUmakefile
+	Components/Proxy/GNUmakefile
+	Components/Searching/GNUmakefile
+	Components/SubscriptionPanel/GNUmakefile
+	Components/TreeDatabase/GNUmakefile:
+	updated makefiles to make 2.4 and better windows compilation
+
+2009-11-16 Riccardo Mottola
+	* Components.h,
+	Components.m,
+	GNUmakefile,
+	PreferencesPanel.h,
+	PreferencesPanel.m: Removed dependency on UKNibOwner
+	UKNibOwner.[h,m]: removed
+
+2009-11-01 Riccardo Mottola
+
+	* Uniformed to GPL v3+ license with consent of Mr. Noack
+
+2009-03-14 19:22-EDT Gregory John Casamento <greg_casamento@yahoo.com>
+
+        * Added new files.
+
+2009-03-14 18:46-EDT Gregory John Casamento <greg_casamento@yahoo.com>
+
+        * Fixed issue with caching selectors as numbers in the dictionary.
+
+Dec-07-2007  Quentin Mathe
+	* Fixed compilation by taking care of linking EtoileFoundation now that
+	  EtoileUI depends on it (see r2634 for the first occurence of this issue).
+
+Jun-29-2007  Yen-Ju Chen
+	* Refresh artible table view when feed is refreshed.
+	  Fix bug #8533.
+	* Set autoresizing all columns. Fix bug #8562.
+
+Jun-19-2007  Yen-Ju Chen
+	* Install components inside applications so it can be relocated easily.
+	  (Bug #9352).
+	* Set window frame in -applicationDidFinishLaunching
+	  which redraw the window and eliminate double toolbar bug.
+	  (Bug #8663).
+
+May-08-2007  Yen-Ju Chen
+	* Update top-level license to MIT agreed by authors.
+	  See COPYING and attached email inside.
+
+May-01-2007  Yen-Ju Chen
+	* UKNibOwner.h: Use AppKit.h instead of Cocoa.h
+
+Mar-18-2007  Yen-Ju Chen
+	* Use EtoileUI for UKNibOwner.
+
+Feb-23-2007  Yen-Ju Chen
+	* Fix for GNUmakefile (applied by Guenther Noack)
+
+Feb-22-2007  Guenther Noack
+	* Upload to the Etoile SVN repository
+
+Feb-21-2007  Guenther Noack
+	* Everywhere: Replaced "Grrr" name with "Grr"
+
+Feb-19-2007  Guenther Noack
+	* Development/OPMLKit
+	* Development/OPMLKitTest:
+	Deleted (has been moved to Etoile SVN)
+	
+	* *.[mh]: Added license information
+	* COPYING, README: Added
+
+Feb-17-2007  Guenther Noack
+	* Resources/Icons/Files: Moved file icons there and replaced
+	  feed file icon by Jesse's version.
+	* Resources/Icons/FeedFetching.tiff: New icon
+	* Components/DatabaseTreeView: Hopefully fixed the "icon not
+	  updating" issue when fetching
+	* Some translation stuff
+
+Feb-16-2007  Guenther Noack
+	* Components/Searching: Added simple searching component
+
+Feb-15-2007  Guenther Noack
+	* Development/RSSKit2 Spec: Added draft specification for RSSKit2
+
+Feb-11-2007  Guenther Noack
+	* AppController.[mh]: Grr window is brought up again when application
+	  is activated and it has been closed before.
+
+Feb-04-2007  Guenther Noack
+	* NSURL+Proxy.[mh]: Fixed bug
+	* Article.m: "Fetch all" fix
+
+Feb-03-2007  Guenther Noack
+	* Components/DatabaseTreeView: Fixed selection bug
+	* some more documentation files
+	* PreferencesPanel.gorm: Fixed window background color
+
+Feb-02-2007  Guenther Noack
+	* DatabaseElement.h: DatabaseElementFocusRequestNotification added
+	* Components/DatabaseTreeView: Recognises and handles the above
+	  notification.
+
+Feb-01-2007  Guenther Noack
+	* Components/SubscriptionPanel, Components/FeedOperations: Made
+	  SubscriptionPanel communication well-defined by defining a
+	  protocol, made the location of newly created subscriptions
+	  relative to the location of the currently selected DatabaseElement.
+	* Development/Deprecated: created, moved some components there
+	* Made TreeDatabase the default database
+	* Documentation: Updated HACKING, MANUAL TESTING
+	* Database.h: Documented protocol
+	* NSURL+Proxy.[mh]: moved back from Components/Proxy
+	* Category.[mh]: Specified and implemented -recursivelyRemoveElement: method
+	* Category.[mh]: Fixed linkage error
+	* DatabaseElement protocol and implementations: -setName: method
+	* Database.h: -addCategoryNamed:... methods added
+	* Components/FeedOperations: Renamed to DatabaseOperations and added the
+	  'Add Category' toolbar item
+
+Jan-30-2007  Guenther Noack
+	* Components/Fonts, Components/URLOpening: Icons for pref panels
+	* Category.[mh]: Category implementation (Class name is GrrCategory,
+	  as 'Category' is already used by the ObjC runtime.)
+	* Added Category icon
+	* Database.h: Removed unnecessary methods, added some convenience
+	  methods
+	* DatabaseElement.h: Changed "super element" type to id<Category>
+	* Components/DatabaseTreeView: Drag&Drop for URLs and within the
+	  view.
+	* Components/TreeDatabase: Wrote some of the elementary methods
+	* PipeType.[mh]: Added database element pipe type
+	* NumberedImageTextCell.m: Removed badge if number == 0
+
+Jan-29-2007  Guenther Noack
+	* Database.[mh]: Added change notification
+	* DatabaseElement.[mh]:
+		* Serialisation methods
+		* Setter for super element
+		* DatabaseElementFromPlistDictionary() function
+	* AppController.m: Loads DatabaseTreeView now
+	* Components/DatabaseTreeView:
+		* Uses NumberedImageTextCell
+		* Basic functionality works
+
+Jan-24-2007  Guenther Noack
+	* DatabaseElement.h, ArticleGroup.h, Category.h, Database.h:
+	  Started writing protocols for the tree-shaped data storage.
+	* AppController.[mh]: Added the setting of the default fonts on start
+	* Components/Fonts: Works now
+	* Components/ArticleView: Uses changeable fonts
+	* PreferencePanel.m: Made the preference panel's toolbar non-
+	  customizable and made all its items "selectable".
+
+Jan-23-2007  Guenther Noack
+	* TODO: Added TODOs
+	* Documentation/RELEASE HOWTO: Mentions the transition from the
+	  "Grrr" name to the "Grr" name now.
+	* Components/Fonts: Initial creation, not yet fully functional.
+
+Jan-20-2007  Guenther Noack
+	* Article.[mh]: Added notification for the specific read flag change
+	  event. Made feed table use it for correct refreshing.
+
+Jan-19-2007  Guenther Noack
+	* Resources/Icons/AddFeed.tiff: imported
+
+Jan-18-2007  Guenther Noack
+	* Components.h: Changed header include to use EtoileFoundation, as
+	  EtoileExtensions is deprecated.
+	* Components/FeedOperations: Added "Subscribe" item
+	* Components/SubscriptionPanel: created
+	* PreferencesPanel.[mh]: Made it a floating panel
+
+Jan-17-2007  Guenther Noack
+	* Components/FeedOperations: FeedOpsToolbarDelegate class moved into
+	  components subdirectory.
+	* Components/ArticleOperations: ArticleOpsToolbarDelegate class moved
+	  into components subdirectory.
+	* NSBundle+Extensions.h: Added missing method declaration
+	* AppController.m, Gorm files: Main window is now ordered to front *after*
+	  the plugin loading. This way the user doesn't see empty spaces in the
+	  window while modules are loaded.
+	* Development/ArticleGroup Idea: article group source code
+	* Documentation/HACKING: Added
+	* NSBundle+Extensions: Modified to also allow loading of bundles
+	  with an extension different to .grrc
+	* ArticleDatabase: Moved to the Component directory
+
+Jan-16-2007  Guenther Noack
+	* Renamed DatabaseProtocol.h to Database.h
+	* Links now clickable
+	* URL Opening component
+
+Jan-15-2007  Guenther Noack
+	* New german translation
+	* Moved web proxy code into an own plugin.
+	* First modules work.
+	* SimpleArticleOutputPlugin: Deleted
+	* Started to modularize the application. (Actually it was pretty
+	  modularized all the time, but I was afraid of bundles. Here they
+	  are now.)
+
+Jan-13-2007  Guenther Noack
+	* Fixed dates in this Changelog; forgot that it's 2007 now...
+	* Added sketchy OPMLKit implementation in Developer directory
+
+Jan-11-2007  Guenther Noack
+	* Feed.[mh]: Added method to return the number of unread articles
+	* FeedTablePlugin.[mh]: Shows unread article count instead of article
+	  count beneath feed names now
+	* ArticleDatabaseComponent.m: Added a security notice when loading
+	  articles while using a GNUstep-base version below or equal 1.13.0
+	* Added missing GNUstep.h
+	* Added Extended Window class that sends events on certain
+	  keystrokes (PageUp, PageDown, Up, Down)
+	* It's possible to scroll the article view using the Page Up
+	  and Page Down keys now.
+	* Added UKNibOwner class and conditional Etoile compilation
+	* Marked some IB outlets and actions
+
+Jan-2-2007  Guenther Noack
+	* Added homepage to repository
+
+Dec-9-2006  Guenther Noack
+	* Tried to tweak HTML output a bit
+	* Implemented HTML Entity interpretation with the said list.
+
+Dec-8-2006  Guenther Noack
+	* Created Development directory, copied HTML Entity list into
+	  it and created a small script to create a Plist from that.
+
+Dec-6-2006  Guenther Noack
+	* Drawed new icon (dog with antenna)
+	* Drawed some UI element textures from scratch
+	* Fixed parsing bug related to attributes quoted with single quote
+	* Refactored HTML parsing code a bit
+	* Got number-entities working ( &#123; in HTML code )
+	* Added TODO file
+	* Added Manual Testing and Release HOWTO file
+
+Dec-5-2006  Guenther Noack
+	* Article notifies now when rating changes (forgot that before)
+	* HTML Parsing works and gives basic results. Problems to be fixed
+	  include: How to resolve entities, images, <pre>-Tags, changing
+	  font attributes
+	* on the GUI side: still lacking: clicking links, ensuring text
+	  breaks at new borders when text view size changes
+	* Better Article Text View GUI
+
+Dec-4-2006  Guenther Noack
+	* Simple HTML parser, compiles but untested.
+	  Not used in the code, although it's linked against it!
+	* Made feeds sort themselves
+	* Made articles sort in the right direction when sorting the dates.
+	* Improved some icons
+	* Added badges for feed table
+
+Nov-28-2006  Guenther Noack
+	* Made icons comply to improved Etoile palette
+
+Nov-27-2006  Guenther Noack
+	* German.lproj: Better translation
+	* ChangeLog: added
+	* Added some assertions
+

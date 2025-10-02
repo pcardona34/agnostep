@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="ViewDevice" targetNamespace="http://some.company.co.uk/device/viewdeviceservice" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dcs="http://some.company.co.uk/device/viewdeviceservice" xmlns:dcd="http://some.company.co.uk/device/viewdevicedata">
+
+ <wsdl:types>
+  <xsd:schema>
+   <xsd:import namespace="http://some.company.co.uk/device/viewdevicecompatibilitydata_1" schemaLocation="viewdevicecompatibilitydata.xsd"/>
+  </xsd:schema>
+ </wsdl:types>
+
+ <wsdl:message name="getDevice">
+  <wsdl:part name="getDevice" element="dcd:getDevice"/>
+ </wsdl:message>
+ <wsdl:message name="getDeviceResponse">
+  <wsdl:part name="getDeviceResponse" element="dcd:getDeviceResponse"/>
+ </wsdl:message>
+ <wsdl:message name="getDeviceFault">
+  <wsdl:part name="getDeviceFault" element="dcd:getDeviceFault"/>
+ </wsdl:message>
+
+ <wsdl:message name="checkDevice">
+  <wsdl:part name="checkDevice" element="dcd:checkDevice"/>
+ </wsdl:message>
+ <wsdl:message name="checkDeviceResponse">
+  <wsdl:part name="checkDeviceResponse" element="dcd:checkDeviceResponse"/>
+ </wsdl:message>
+ <wsdl:message name="checkDeviceFault">
+  <wsdl:part name="checkDeviceFault" element="dcd:checkDeviceFault"/>
+ </wsdl:message>
+
+ <wsdl:message name="getCategories">
+  <wsdl:part name="getCategories" element="dcd:getCategories"/>
+ </wsdl:message>
+ <wsdl:message name="getCategoriesResponse">
+  <wsdl:part name="getCategoriesResponse" element="dcd:getCategoriesResponse"/>
+ </wsdl:message>
+ <wsdl:message name="getCategoriesFault">
+  <wsdl:part name="getCategoriesFault" element="dcd:getCategoriesFault"/>
+ </wsdl:message>
+
+ <wsdl:message name="getAttributesByCategory">
+  <wsdl:part name="getAttributesByCategory" element="dcd:getAttributesByCategory"/>
+ </wsdl:message>
+ <wsdl:message name="getAttributesByCategoryResponse">
+  <wsdl:part name="getAttributesByCategoryResponse" element="dcd:getAttributesByCategoryResponse"/>
+ </wsdl:message>
+ <wsdl:message name="getAttributesByCategoryFault">
+  <wsdl:part name="getAttributesByCategoryFault" element="dcd:getAttributesByCategoryFault"/>
+ </wsdl:message>
+
+ <wsdl:message name="getAllCategoriesAndAttributes">
+  <wsdl:part name="getAllCategoriesAndAttributes" element="dcd:getAllCategoriesAndAttributes"/>
+ </wsdl:message>
+ <wsdl:message name="getAllCategoriesAndAttributesResponse">
+  <wsdl:part name="getAllCategoriesAndAttributesResponse" element="dcd:getAllCategoriesAndAttributesResponse"/>
+ </wsdl:message>
+ <wsdl:message name="getAllCategoriesAndAttributesFault">
+  <wsdl:part name="getAllCategoriesAndAttributesFault" element="dcd:getAllCategoriesAndAttributesFault"/>
+ </wsdl:message>
+
+ <wsdl:message name="getCompatibleDevices">
+  <wsdl:part name="getCompatibleDevices" element="dcd:getCompatibleDevices"/>
+ </wsdl:message>
+ <wsdl:message name="getCompatibleDevicesResponse">
+  <wsdl:part name="getCompatibleDevicesResponse" element="dcd:getCompatibleDevicesResponse"/>
+ </wsdl:message>
+ <wsdl:message name="getCompatibleDevicesFault">
+  <wsdl:part name="getCompatibleDevicesFault" element="dcd:getCompatibleDevicesFault"/>
+ </wsdl:message>
+ 
+ <wsdl:message name="getCompatibleDevicesX">
+  <wsdl:part name="getCompatibleDevicesX" element="dcd:getCompatibleDevicesX"/>
+ </wsdl:message>
+ <wsdl:message name="getCompatibleDevicesXResponse">
+  <wsdl:part name="getCompatibleDevicesXResponse" element="dcd:getCompatibleDevicesXResponse"/>
+ </wsdl:message>
+ <wsdl:message name="getCompatibleDevicesXFault">
+  <wsdl:part name="getCompatibleDevicesXFault" element="dcd:getCompatibleDevicesXFault"/>
+ </wsdl:message>
+
+ <wsdl:portType name="ViewDevicePortType">
+  <wsdl:operation name="getDevice">
+   <wsdl:input name="getDevice" message="dcs:getDevice"/>
+   <wsdl:output name="getDeviceResponse" message="dcs:getDeviceResponse"/>
+   <wsdl:fault name="getDeviceFault" message="dcs:getDeviceFault"/>
+  </wsdl:operation>
+  <wsdl:operation name="checkDevice">
+   <wsdl:input name="checkDevice" message="dcs:checkDevice"/>
+   <wsdl:output name="checkDeviceResponse" message="dcs:checkDeviceResponse"/>
+   <wsdl:fault name="checkDeviceFault" message="dcs:checkDeviceFault"/>
+  </wsdl:operation>
+  <wsdl:operation name="getCategories">
+   <wsdl:input name="getCategories" message="dcs:getCategories"/>
+   <wsdl:output name="getCategoriesResponse" message="dcs:getCategoriesResponse"/>
+   <wsdl:fault name="getCategoriesFault" message="dcs:getCategoriesFault"/>
+  </wsdl:operation>
+  <wsdl:operation name="getAttributesByCategory">
+   <wsdl:input name="getAttributesByCategory" message="dcs:getAttributesByCategory"/>
+   <wsdl:output name="getAttributesByCategoryResponse" message="dcs:getAttributesByCategoryResponse"/>
+   <wsdl:fault name="getAttributesByCategoryFault" message="dcs:getAttributesByCategoryFault"/>
+  </wsdl:operation>
+  <wsdl:operation name="getAllCategoriesAndAttributes">
+   <wsdl:input name="getAllCategoriesAndAttributes" message="dcs:getAllCategoriesAndAttributes"/>
+   <wsdl:output name="getAllCategoriesAndAttributesResponse" message="dcs:getAllCategoriesAndAttributesResponse"/>
+   <wsdl:fault name="getAllCategoriesAndAttributesFault" message="dcs:getAllCategoriesAndAttributesFault"/>
+  </wsdl:operation>
+  <wsdl:operation name="getCompatibleDevices">
+   <wsdl:input name="getCompatibleDevices" message="dcs:getCompatibleDevices"/>
+   <wsdl:output name="getCompatibleDevicesResponse" message="dcs:getCompatibleDevicesResponse"/>
+   <wsdl:fault name="getCompatibleDevicesFault" message="dcs:getCompatibleDevicesFault"/>
+  </wsdl:operation>
+  <wsdl:operation name="getCompatibleDevicesX">
+   <wsdl:input name="getCompatibleDevicesX" message="dcs:getCompatibleDevicesX"/>
+   <wsdl:output name="getCompatibleDevicesXResponse" message="dcs:getCompatibleDevicesXResponse"/>
+   <wsdl:fault name="getCompatibleDevicesXFault" message="dcs:getCompatibleDevicesXFault"/>
+  </wsdl:operation>
+ </wsdl:portType>
+
+ <wsdl:binding name="ViewDeviceBinding" type="dcs:ViewDevicePortType">
+  <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+  <wsdl:operation name="getDevice">
+   <soap:operation soapAction=""/>
+   <wsdl:input name="getDevice">
+    <soap:body parts="getDevice" use="literal"/>
+   </wsdl:input>
+   <wsdl:output name="getDeviceResponse">
+    <soap:body parts="getDeviceResponse" use="literal"/>
+   </wsdl:output>
+   <wsdl:fault name="getDeviceFault">
+    <soap:fault name="getDeviceFault" use="literal"/>
+   </wsdl:fault>
+  </wsdl:operation>
+  <wsdl:operation name="checkDevice">
+   <soap:operation soapAction=""/>
+   <wsdl:input name="checkDevice">
+    <soap:body parts="checkDevice" use="literal"/>
+   </wsdl:input>
+   <wsdl:output name="checkDeviceResponse">
+    <soap:body parts="checkDeviceResponse" use="literal"/>
+   </wsdl:output>
+   <wsdl:fault name="checkDeviceFault">
+    <soap:fault name="checkDeviceFault" use="literal"/>
+   </wsdl:fault>
+  </wsdl:operation>
+  <wsdl:operation name="getCategories">
+   <soap:operation soapAction=""/>
+   <wsdl:input name="getCategories">
+    <soap:body parts="getCategories" use="literal"/>
+   </wsdl:input>
+   <wsdl:output name="getCategoriesResponse">
+    <soap:body parts="getCategoriesResponse" use="literal"/>
+   </wsdl:output>
+   <wsdl:fault name="getCategoriesFault">
+    <soap:fault name="getCategoriesFault" use="literal"/>
+   </wsdl:fault>
+  </wsdl:operation>
+  <wsdl:operation name="getAttributesByCategory">
+   <soap:operation soapAction=""/>
+   <wsdl:input name="getAttributesByCategory">
+    <soap:body parts="getAttributesByCategory" use="literal"/>
+   </wsdl:input>
+   <wsdl:output name="getAttributesByCategoryResponse">
+    <soap:body parts="getAttributesByCategoryResponse" use="literal"/>
+   </wsdl:output>
+   <wsdl:fault name="getAttributesByCategoryFault">
+    <soap:fault name="getAttributesByCategoryFault" use="literal"/>
+   </wsdl:fault>
+  </wsdl:operation>
+  <wsdl:operation name="getAllCategoriesAndAttributes">
+   <soap:operation soapAction=""/>
+   <wsdl:input name="getAllCategoriesAndAttributes">
+    <soap:body parts="getAllCategoriesAndAttributes" use="literal"/>
+   </wsdl:input>
+   <wsdl:output name="getAllCategoriesAndAttributesResponse">
+    <soap:body parts="getAllCategoriesAndAttributesResponse" use="literal"/>
+   </wsdl:output>
+   <wsdl:fault name="getAllCategoriesAndAttributesFault">
+    <soap:fault name="getAllCategoriesAndAttributesFault" use="literal"/>
+   </wsdl:fault>
+  </wsdl:operation>
+  <wsdl:operation name="getCompatibleDevices">
+   <soap:operation soapAction=""/>
+   <wsdl:input name="getCompatibleDevices">
+    <soap:body parts="getCompatibleDevices" use="literal"/>
+   </wsdl:input>
+   <wsdl:output name="getCompatibleDevicesResponse">
+    <soap:body parts="getCompatibleDevicesResponse" use="literal"/>
+   </wsdl:output>
+   <wsdl:fault name="getCompatibleDevicesFault">
+    <soap:fault name="getCompatibleDevicesFault" use="literal"/>
+   </wsdl:fault>
+  </wsdl:operation>
+  <wsdl:operation name="getCompatibleDevicesX">
+   <soap:operation soapAction=""/>
+   <wsdl:input name="getCompatibleDevicesX">
+    <soap:body parts="getCompatibleDevicesX" use="literal"/>
+   </wsdl:input>
+   <wsdl:output name="getCompatibleDevicesXResponse">
+    <soap:body parts="getCompatibleDevicesXResponse" use="literal"/>
+   </wsdl:output>
+   <wsdl:fault name="getCompatibleDevicesXFault">
+    <soap:fault name="getCompatibleDevicesXFault" use="literal"/>
+   </wsdl:fault>
+  </wsdl:operation>
+ </wsdl:binding>
+
+ <wsdl:service name="ViewDevice">
+  <wsdl:port name="ViewDevicePort" binding="dcs:ViewDeviceBinding">
+   <soap:address location="https://gateway.some.company.co.uk/services/device/ViewDevice"/>
+  </wsdl:port>
+ </wsdl:service>
+</wsdl:definitions>

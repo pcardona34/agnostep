@@ -1,0 +1,244 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/bzlib">bzlib</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>bzlib.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Defined Types</H2>
+	<blockquote>
+	
+		
+		<H4>Synopsis:</H4>
+		
+			<CODE><A NAME="//apple_ref/c/tdef/bz_stream">
+			typedef struct {&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;char *next_in;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;unsigned int avail_in;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;unsigned int total_in_lo32;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;unsigned int total_in_hi32;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;char *next_out;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;unsigned int avail_out;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;unsigned int total_out_lo32;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;unsigned int total_out_hi32;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;void *state;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;void *(*bzalloc)(void *,int,int);<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;void (*bzfree)(void *,void *);<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;void *opaque;<BR>
+} <BR>
+<B>bz_stream</B>;</A></CODE><BR>
+		
+		
+	
+		<hr WIDTH=25% ALIGN=LEFT>
+		<H4>Synopsis:</H4>
+		
+			<CODE><A NAME="//apple_ref/c/tdef/BZFILE">
+			typedef void <B>BZFILE</B>;</A></CODE><BR>
+		
+		
+	
+	</blockquote>
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Symbolic Constants</H2>
+	<blockquote>
+	
+		
+		<H4>Synopsis:</H4>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/BZ_RUN">BZ_RUN</A></B>&nbsp;&nbsp;0</CODE><BR>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/BZ_FLUSH">BZ_FLUSH</A></B>&nbsp;&nbsp;1</CODE><BR>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/BZ_FINISH">BZ_FINISH</A></B>&nbsp;&nbsp;2</CODE><BR>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/BZ_OK">BZ_OK</A></B>&nbsp;&nbsp;0</CODE><BR>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/BZ_RUN_OK">BZ_RUN_OK</A></B>&nbsp;&nbsp;1</CODE><BR>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/BZ_FLUSH_OK">BZ_FLUSH_OK</A></B>&nbsp;&nbsp;2</CODE><BR>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/BZ_FINISH_OK">BZ_FINISH_OK</A></B>&nbsp;&nbsp;3</CODE><BR>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/BZ_STREAM_END">BZ_STREAM_END</A></B>&nbsp;&nbsp;4</CODE><BR>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/BZ_SEQUENCE_ERROR">BZ_SEQUENCE_ERROR</A></B>&nbsp;&nbsp;(-1)</CODE><BR>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/BZ_PARAM_ERROR">BZ_PARAM_ERROR</A></B>&nbsp;&nbsp;(-2)</CODE><BR>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/BZ_MEM_ERROR">BZ_MEM_ERROR</A></B>&nbsp;&nbsp;(-3)</CODE><BR>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/BZ_DATA_ERROR">BZ_DATA_ERROR</A></B>&nbsp;&nbsp;(-4)</CODE><BR>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/BZ_DATA_ERROR_MAGIC">BZ_DATA_ERROR_MAGIC</A></B>&nbsp;&nbsp;(-5)</CODE><BR>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/BZ_IO_ERROR">BZ_IO_ERROR</A></B>&nbsp;&nbsp;(-6)</CODE><BR>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/BZ_UNEXPECTED_EOF">BZ_UNEXPECTED_EOF</A></B>&nbsp;&nbsp;(-7)</CODE><BR>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/BZ_OUTBUFF_FULL">BZ_OUTBUFF_FULL</A></B>&nbsp;&nbsp;(-8)</CODE><BR>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/BZ_CONFIG_ERROR">BZ_CONFIG_ERROR</A></B>&nbsp;&nbsp;(-9)</CODE><BR>
+		
+		
+	
+		<hr WIDTH=25% ALIGN=LEFT>
+		<H4>Synopsis:</H4>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/BZ_EXPORT">BZ_EXPORT</A></B>&nbsp;&nbsp;</CODE><BR>
+		
+		
+	
+		<hr WIDTH=25% ALIGN=LEFT>
+		<H4>Synopsis:</H4>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/BZ_EXTERN">BZ_EXTERN</A></B>&nbsp;&nbsp;extern</CODE><BR>
+		
+		
+	
+		<hr WIDTH=25% ALIGN=LEFT>
+		<H4>Synopsis:</H4>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/BZ_EXTERN">BZ_EXTERN</A></B>&nbsp;&nbsp;</CODE><BR>
+		
+		
+	
+		<hr WIDTH=25% ALIGN=LEFT>
+		<H4>Synopsis:</H4>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/BZ_EXTERN">BZ_EXTERN</A></B>&nbsp;&nbsp;extern</CODE><BR>
+		
+		
+	
+		<hr WIDTH=25% ALIGN=LEFT>
+		<H4>Synopsis:</H4>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/BZ_MAX_UNUSED">BZ_MAX_UNUSED</A></B>&nbsp;&nbsp;5000</CODE><BR>
+		
+		
+	
+	</blockquote>
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Macro Definitions</H2>
+	<blockquote>
+	
+		
+		<H4>Synopsis:</H4>
+		
+			<CODE><B><A NAME="//apple_ref/c/func/BZ_API">BZ_API</A></B>(func)</CODE><BR>
+		
+		
+	
+		<hr WIDTH=25% ALIGN=LEFT>
+		<H4>Synopsis:</H4>
+		
+			<CODE><B><A NAME="//apple_ref/c/func/BZ_API">BZ_API</A></B>(func)</CODE><BR>
+		
+		
+	
+		<hr WIDTH=25% ALIGN=LEFT>
+		<H4>Synopsis:</H4>
+		
+			<CODE><B><A NAME="//apple_ref/c/func/BZ_API">BZ_API</A></B>(func)</CODE><BR>
+		
+		
+	
+	</blockquote>
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Functions</H2>
+	<blockquote>
+	
+		
+		<H4>Synopsis:</H4>
+		
+			<CODE>int BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzCompressInit">BZ2_bzCompressInit</A></B>(bz_stream* strm, int blockSize100k, int verbosity, int workFactor);</CODE><BR>
+		
+			<CODE>int BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzCompress">BZ2_bzCompress</A></B>(bz_stream* strm, int action);</CODE><BR>
+		
+			<CODE>int BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzCompressEnd">BZ2_bzCompressEnd</A></B>(bz_stream* strm);</CODE><BR>
+		
+			<CODE>int BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzDecompressInit">BZ2_bzDecompressInit</A></B>(bz_stream *strm, int verbosity, int small);</CODE><BR>
+		
+			<CODE>int BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzDecompress">BZ2_bzDecompress</A></B>(bz_stream* strm);</CODE><BR>
+		
+			<CODE>int BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzDecompressEnd">BZ2_bzDecompressEnd</A></B>(bz_stream *strm);</CODE><BR>
+		
+		
+	
+		<hr WIDTH=25% ALIGN=LEFT>
+		<H4>Synopsis:</H4>
+		
+			<CODE>BZFILE* BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzReadOpen">BZ2_bzReadOpen</A></B>(int* bzerror, FILE* f, int verbosity, int small, void* unused, int nUnused);</CODE><BR>
+		
+			<CODE>void BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzReadClose">BZ2_bzReadClose</A></B>(int* bzerror, BZFILE* b);</CODE><BR>
+		
+			<CODE>void BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzReadGetUnused">BZ2_bzReadGetUnused</A></B>(int* bzerror, BZFILE* b, void** unused, int* nUnused);</CODE><BR>
+		
+			<CODE>int BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzRead">BZ2_bzRead</A></B>(int* bzerror, BZFILE* b, void* buf, int len);</CODE><BR>
+		
+			<CODE>BZFILE* BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzWriteOpen">BZ2_bzWriteOpen</A></B>(int* bzerror, FILE* f, int blockSize100k, int verbosity, int workFactor);</CODE><BR>
+		
+			<CODE>void BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzWrite">BZ2_bzWrite</A></B>(int* bzerror, BZFILE* b, void* buf, int len);</CODE><BR>
+		
+			<CODE>void BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzWriteClose">BZ2_bzWriteClose</A></B>(int* bzerror, BZFILE* b, int abandon, unsigned int* nbytes_in, unsigned int* nbytes_out);</CODE><BR>
+		
+			<CODE>void BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzWriteClose64">BZ2_bzWriteClose64</A></B>(int* bzerror, BZFILE* b, int abandon, unsigned int* nbytes_in_lo32, unsigned int* nbytes_in_hi32, unsigned int* nbytes_out_lo32, unsigned int* nbytes_out_hi32);</CODE><BR>
+		
+			<CODE>int BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzBuffToBuffCompress">BZ2_bzBuffToBuffCompress</A></B>(char* dest, unsigned int* destLen, char* source, unsigned int sourceLen, int blockSize100k, int verbosity, int workFactor);</CODE><BR>
+		
+			<CODE>int BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzBuffToBuffDecompress">BZ2_bzBuffToBuffDecompress</A></B>(char* dest, unsigned int* destLen, char* source, unsigned int sourceLen, int small, int verbosity);</CODE><BR>
+		
+			<CODE>const char * BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzlibVersion">BZ2_bzlibVersion</A></B>(void);</CODE><BR>
+		
+			<CODE>BZFILE * BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzopen">BZ2_bzopen</A></B>(const char *path, const char *mode);</CODE><BR>
+		
+			<CODE>BZFILE * BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzdopen">BZ2_bzdopen</A></B>(int fd, const char *mode);</CODE><BR>
+		
+			<CODE>int BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzread">BZ2_bzread</A></B>(BZFILE* b, void* buf, int len);</CODE><BR>
+		
+			<CODE>int BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzwrite">BZ2_bzwrite</A></B>(BZFILE* b, void* buf, int len);</CODE><BR>
+		
+			<CODE>int BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzflush">BZ2_bzflush</A></B>(BZFILE* b);</CODE><BR>
+		
+			<CODE>void BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzclose">BZ2_bzclose</A></B>(BZFILE* b);</CODE><BR>
+		
+			<CODE>const char * BZ_API(<B><A NAME="//apple_ref/c/func/BZ2_bzerror">BZ2_bzerror</A></B>(BZFILE *b, int *errnum);</CODE><BR>
+		
+		
+	
+	</blockquote>
+
+
+
+
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2001 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

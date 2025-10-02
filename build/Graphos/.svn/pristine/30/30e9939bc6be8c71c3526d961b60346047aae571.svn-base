@@ -1,0 +1,63 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    FirstResponder = {
+	Actions = (
+	    "bringToFront:",
+	    "changePointsOfCurrentPathByExtract:",
+	    "changePointsOfCurrentPathByOverlap:",
+	    "changePointsOfCurrentPathToCusp:",
+	    "changePointsOfCurrentPathToSymmetric:",
+	    "doRedo:",
+	    "doUndo:",
+	    "editObjectsProperties:",
+	    "inspectObject:",
+	    "method:",
+	    "moveSelectedObjectsForward:",
+	    "moveSelectedObjectsToBack:",
+	    "moveSelectedObjectsToFront:",
+	    "new:",
+	    "moveSelectedObjectsBackward:",
+	    "psprint:",
+	    "save:",
+	    "saveas:",
+	    "sendToBack:",
+	    "showObjectInspector:",
+	    "unselectOtherObjects:",
+	    "zoom100:",
+	    "zoom200:",
+	    "zoom50:",
+	    "zoomFitPage:",
+	    "zoomFitWidth:"
+	);
+	Super = NSObject;
+    };
+    GRDocView = {
+	Actions = (
+	    "changePointsOfCurrentPathToSymmetric:",
+	    "changePointsOfCurrentPathToCusp:",
+	    "changePointsOfCurrentPathByOverlap:",
+	    "changePointsOfCurrentPathByExtract:",
+	    "moveSelectedObjectsToFront:",
+	    "moveSelectedObjectsToBack:",
+	    "zoom50:",
+	    "zoom100:",
+	    "zoom200:",
+	    "zoomFitPage:",
+	    "zoomFitWidth:",
+	    "cut:",
+	    "copy:",
+	    "paste:"
+	);
+	Outlets = (
+	);
+	Super = NSView;
+    };
+    Graphos = {
+	Actions = (
+	    "showObjectInspector:"
+	);
+	Outlets = (
+	);
+	Super = NSObject;
+    };
+}

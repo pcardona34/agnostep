@@ -1,0 +1,10 @@
+
+On MacOS-X you can build this framework for use with native MacOS-X applications
+using xcode with no special additions.
+
+The Examples subdirectory is however, GNUstep specific and requires the
+installation of various GNUstep components if you wish to run it on MacOS-X
+
+For rudimentary testing on MacOS-X, you can build and run the testWebServices
+target in xcode, but you must have installed the WebServices framework first.
+

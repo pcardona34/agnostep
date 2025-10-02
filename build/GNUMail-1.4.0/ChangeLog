@@ -1,0 +1,945 @@
+2023-01-17 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/EditWindowController.m
+	* Framework/GNUMail/FindWindowController.m
+	* Framework/GNUMail/GNUMail.h
+	* Framework/GNUMail/GNUMail.m
+	* Framework/GNUMail/MailboxManagerController.m:
+	Fix shadowed variables.
+
+2022-11-01 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MailWindowController.m
+	* Framework/GNUMail/MailboxManagerController.m
+	* Framework/GNUMail/TaskManager.m:
+	Adapt to CWFolder private allMessages and countVisible.
+
+2022-10-26 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/Task.h
+	* Framework/GNUMail/TaskManager.m:
+	Make ivars which have an accessor proteted instead of public.
+
+2022-10-13 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/TaskManager.h
+	* Framework/GNUMail/TaskManager.m:
+	Keep track of store objects, so they can pe properly disposed of.
+
+2021-09-30 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MailboxManagerController.m:
+	Remove obsolete GNUstep specific outline hacks.
+
+2021-09-16 Andreas Schik <andreas@schik.de>
+
+	* Bundles/PGP/PGPController.m
+	Use pinentryloopback for invoking gpg, to avoid passphrase dialog. Allow signing for multiple recipients.
+
+2021-03-11 Riccardo Mottola <rm@gnu.org>
+
+	* Bundles/Account/AccountEditorWindow.m
+	* Bundles/Account/SendView.m
+	Release controls as soon as they are set on a retaining view, not on
+	dealloc.
+
+2020-12-08 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/Constants.h
+	* Framework/GNUMail/Constants.m
+	Declare interface size as real CGFloat constants and not integer enums. Make these Mac/GNUstep dependent and not the code which uses them.
+
+	* Framework/GNUMail/MailWindowToolbar.m
+	Use the new constant instead of MacOS/GS ifdef.
+
+2020-10-04 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/ApplicationIconController.m
+	Improve scaling of icon on Mac and use the main Icon file for display, furthermore provide native notification badges on Mac 10.5.
+
+	* Resources/Icons/GNUMail.icns
+	* Resources/Icons/GNUMail.tiff
+	New icons with higher resolution (... but with VR and not GR post box)
+
+2020-09-28 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/AddressBookController.h
+	* Framework/GNUMail/AddressBookController.m:
+	Cleanup browser delegates and selection setting.
+
+2020-09-27 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/AddressBookController.h
+	* Framework/GNUMail/AddressBookController.m
+	* Framework/GNUMail/AddressBookPanel.h
+	* Framework/GNUMail/AddressBookPanel.m:
+	(Fix) Share common email label selection init and action between
+	GNUstep and MacOS
+
+2020-09-26 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/NewMailboxPanelController.m
+	* Resources/English.lproj/NewMailboxPanel.gorm
+	Transition GNUstep to gorm file use.
+
+2020-09-13 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/Utilities.m:
+	Fix warning about unused var.
+
+	* Framework/GNUMail/MailboxManagerCache.m:
+	Use class instead of id, so that proper synchronized method is
+	ensured.
+
+2020-07-29 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MailHeaderCell.m
+	* Framework/GNUMail/ThreadArcsCell.m
+	Remove some GNUstep specific hacks and fix header tile positioning.
+
+2020-01-06 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/TaskManager.m
+	Explicit aFolder type as CWFolder*
+
+2020-01-05 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MimeTypeManager.h
+	* Framework/GNUMail/MimeTypeManager.m
+	Explicit type of returned singleton in singleInstance.
+
+2019-11-11 Riccardo Mottola <rm@gnu.org>
+
+	* Bundles/Filtering/FilterEditorWindowController.m
+        * Bundles/Filtering/FilteringViewController.m
+        Clean up memory release window closing.
+
+2019-05-13 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/GNUMail.m:
+	Use proper path manipulation methods.
+
+2019-05-12 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/GNUMail.m:
+        Clean up signedess of indices.
+
+2019-05-12 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/GNUMail.m:
+        Enable loading bundles from inside the Application resources.
+
+2019-04-07 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MailboxManagerController.m
+	* Framework/GNUMail/EditWindowController.m
+	* Framework/GNUMail/GNUMail+Extensions.m
+	* Framework/GNUMail/ExtendedTextView.m
+	* Framework/GNUMail/ExtendedFileWrapper.m
+	* Framework/GNUMail/GNUMail.m
+	Use NSUInteger.
+
+2019-04-07 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MessageComposition.m
+	Indices as NSUInteger.
+
+	*  Framework/GNUMail/MailboxManagerController.m
+	Fix memory leak.
+
+2019-01-03 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/ExtendedWindow.m
+	Don't use Ivar for delegate access.
+
+2018-09-18 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MailboxManagerController.m
+        Initialize cache and call windowDidLoad for both Drawer and Panel mailboxes style.
+
+2018-09-18 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MailWindowController.m
+	Do not set last mail window while loading (leave it to windowBecomeKey or the init method). Fixes "window creep" when unarchiving the main window.
+
+2018-08-28 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/GNUMail.m
+	* Framework/GNUMail/MailboxManagerController.h
+	* Framework/GNUMail/MailboxManagerController.m
+	Remove GNUstep/MacOS distinction for Drawer and Floating view, unifying them in initalization dependeing on preferences.
+
+2018-08-23 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MailWindowController.m
+	* Resources/English.lproj/MailWindow.gorm
+	Transition MailWindow to GORM file.
+
+2018-08-22 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/GSProgressIndicator.h
+	* Framework/GNUMail/GSProgressIndicator.m
+	* Framework/GNUMail/GNUmakefile
+	Add custom progress indicator for GNUstep.
+
+2018-04-09 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MailboxManagerController.m
+        Do not setup cache and readAllMessages, since CWLocalCacheManager does it now automatically.
+
+2018-04-09 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/Utilities.m (accountNameForServerName: username:)
+	Check for empty parameters first.
+
+2018-03-22  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MailWindowController.m
+	When searching mails check also CC and, in case of lists, TO addresses
+
+2018-03-17  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MailboxManagerController.m
+	Use new readAllMessages method.
+
+	* Framework/GNUMail/MailWindowController.m
+	More readable sizes in Bytes/KB/MB in the status label
+
+2018-02-18 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/Task.m
+	Safer init code.
+
+	* Framework/GNUMail/ApplicationIconController.m
+	Use unsigned for count and NSNotFound instead of -1 for uninited value.
+
+2018-02-14 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MailWindowController.m
+	Provide To and CC for filter creation in the context menu.
+
+2018-02-07  Yavor Doganov  <yavor@gnu.org>
+
+	* Resources/Spanish.lproj/Localizable.strings:
+	* Framework/GNUMail/GNUMail+Services.m:
+	* Framework/GNUMail/TaskManager.m:
+	Fix few spelling errors.
+
+2018-02-07  Yavor Doganov  <yavor@gnu.org>
+
+	* Framework/GNUMail/GNUmakefile (GNUMail_GUI_LIBS): Rename as...
+	(LIBRARIES_DEPEND_UPON): ...to have the desired effect.  Add
+	missing libraries to fix linking with --no-undefined.  Don't link
+	with OpenSSL libraries.
+	* GNUmakefile (GNUMail_GUI_LIBS): Don't link with OpenSSL.
+
+2018-01-22  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/GNUMail.h
+	* Framework/GNUMail/GNUMail.m
+	* Framework/GNUMail/GNUMail+MenuValidation.m
+	* Resources/English.lproj/MainMenu.nib
+	Use selectors in validation for show/hide Deleted and Read messages.
+
+2018-01-16  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/GNUMail.h
+	* Framework/GNUMail/GNUMail.m
+	* Framework/GNUMail/GNUMail+MenuValidation.m
+	* Resources/English.lproj/MainMenu.nib
+	All Headers / Raw source use selectors in validation.
+
+2018-01-15  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/GNUMail+MenuValidation.m
+	* Framework/GNUMail/GNUMail.h
+	* Framework/GNUMail/GNUMail.m
+	* Resources/English.lproj/MainMenu.nib
+	Handle saveInDrafts: through action validation, remove IBOutlet.
+
+2018-01-11  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MessageViewWindowController.m:
+	Select next/prev message in view.
+
+2018-01-08  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/EditWindowController.m
+	* Framework/GNUMail/GNUMail+MenuValidation.m
+	* Framework/GNUMail/GNUMail.h
+	* Framework/GNUMail/GNUMail.m
+	* Framework/GNUMail/MailWindowController.m
+	* Framework/GNUMail/MessageViewWindowController.m
+	* Resources/English.lproj/MainMenu.nib:
+	Move actions and validations of delete, read/unread, flag/unflag to respective controllers.
+	Validate using selectors and not outlets.
+
+2018-01-08  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/Utilities.m
+	Check for not found also while in loop.
+
+2018-01-03  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/GNUMail+MenuValidation.m
+	* Framework/GNUMail/GNUMail.m
+	* Framework/GNUMail/MailWindowController.m:
+	Move read/unread flag/unflag validation and actions to MailWindowController.
+
+	* Framework/GNUMail/MailWindowController.h:
+	expose corresponding actions
+
+2017-12-31  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/EditWindowController.m:
+	Fix off-by-one index.
+
+
+2017-12-29  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/NSAttributedString+Extensions.m
+	* Framework/GNUMail/Utilities.m
+	* Framework/GNUMail/MailWindowController.m
+	NSUInteger conversions.
+
+2017-12-28  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/GNUMail.m:
+	Use sender information and not menu outlet, so it can work from different compatible menu items.
+
+	* Framework/GNUMail/MailWindowController.h
+	* Framework/GNUMail/MailWindowController.m
+	Add read/unread and flag/unflag to the message context menu.
+
+2017-12-27  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/EditWindowController.m
+	Change index to unsigned.
+
+2017-12-24  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MailWindowController.m:
+	* Framework/GNUMail/TaskManager.m:
+	Count and size are unsigned.
+
+2017-12-23  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MailboxManagerCache.m
+	Decode with compatibility of old int cache version,
+	bump class version
+
+2017-12-22  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MailboxManagerCache.h
+	* Framework/GNUMail/MailboxManagerCache.m:
+	Convert message count to NSUInteger
+
+	* Framework/GNUMail/AddressBookController.m:
+	Cast specific values to correct types.
+
+2017-12-19  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/EditWindowController.m
+	* Framework/GNUMail/Utilities.m:
+	Adapt to characterAtIndex returning NSNotFound and not -1
+
+2017-12-18  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/ApplicationIconController.m:
+	Some NSUInteger/NSInteger transitioning.
+
+	* Framework/GNUMail/MailboxManagerCache.m
+	* Framework/GNUMail/ApplicationIconController.m:
+	Better safe init.
+
+2017-12-17  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MailboxManagerCache.m
+	* Framework/GNUMail/MailboxManagerController.m:
+	Be safe in init and other minor cleanup.
+
+2017-11-12  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/FindWindowController.h
+	* Framework/GNUMail/FindWindowController.m:
+	* Resources/English.lproj/FindWindow.gorm
+	GORM-ize find panel
+
+2017-07-28  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/GNUMail.m:
+	Make Version check work again against new nongnu.org
+
+2017-07-24  Riccardo Mottola <rm@gnu.org>
+
+	* Bundles/Account/AccountEditorWindowController.m:
+	Fix memory release order.
+
+	* Framework/GNUMail/NSAttributedString+Extensions.m:
+	Transition to NSUInteger.
+
+        * Bundles/PGP/PGPViewController.m
+        Fix singleInstance allocation.
+
+2017-07-23  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/AboutPanelController.h
+	* Framework/GNUMail/AboutPanelController.m
+	Use AboutPanel NIB file also on GNUstep
+
+	* Framework/GNUMail/AboutPanel.h
+	* Framework/GNUMail/AboutPanel.m
+	Deleted
+
+2017-07-23  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/Utilities.h
+	* Framework/GNUMail/Utilities.m
+        * Framework/GNUMail/AboutPanelController.m
+        GNUMailBaseURL() function and use its URL in about panel.
+
+2017-07-22  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/Utilities.m
+	NSUInteger transition
+
+2017-07-20  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/STScriptingSupport.m
+	Declare private methods to fix signature warning.
+
+2017-05-21 Riccardo Mottola <rm@gnu.org>
+
+	* Bundles/Face
+	Removed Face Bundle. Very little used nowadays, old code which had non-FAF clear license and original author was not reachable easily.
+
+2016-03-21 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/NSAttributedString+Extensions.m
+	Variable pointer type  match to what actually gets allocated.
+
+2016-01-12 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/ThreadArcsCell.m
+        * Framework/GNUMail/MailHeaderCell.h
+        * Framework/GNUMail/MailHeaderCell.m
+        Transition to cellSize removing height and width.
+
+2016-01-12 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/ThreadArcsCell.m
+        Implement and use cellSize and enable it under GS too.
+
+2016-01-11 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/ThreadArcsCell.m
+        * Framework/GNUMail/MailHeaderCell.h
+        * Framework/GNUMail/MailHeaderCell.m
+        Clean-up size calculation, especially use NSLayoutManager to determine the string height. Implement cellSize which is a protocol method.
+
+2015-12-28 Riccardo Mottola <rm@gnu.org>
+
+	* Bundles/PGP/PGPController.m
+        Release  on failure.
+
+2015-12-27 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MailHeaderCell.m
+	Tweak cell height calculation and string positioning.
+
+2015-07-26  Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/GNUMail.h
+	* Framework/GNUMail/GNUMail.m
+        Create filters using TO and CC addresses.
+
+2015-07-25 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MailWindowController.m
+	If available, use newer table resiying methods.
+
+2015-07-25 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/NSAttributedString+Extensions.m
+        Set text attachment on cocoa or attachment will loose filename when trying to save
+
+2015-05-23 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/TaskManager.m
+	indexOfObject returns NSUInteger
+
+2015-05-22 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/NSAttributedString+Extensions.m
+	Setting the cell image is always needed. The other part of the hack needs to be checked on more Cocoa versions.
+
+2015-05-13 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/AutoCompletingTextField.m
+	Correct some types
+
+2015-03-01 Riccardo Mottola <rm@gnu.org>
+
+	* Resources/English.lproj/EditWindow.gorm
+	* Framework/GNUMail/EditWindowController.m
+	Create GUI with Gorm file like on Mac, remove extra GS code.
+
+	* Framework/GNUMail/EditWindow.h
+	* Framework/GNUMail/EditWindow.m
+	Deleted GNUstep code GUI creation.
+
+2015-02-22 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/ConsoleWindowController.m
+	Use Mac code on GS also.
+
+	* Resources/English.lproj/ConsoleWindow.gorm
+	Use correct subclass for table view, fix contextual menu.
+
+2015-02-06 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/ConsoleWindowController.m
+	* Resources/English.lproj/ConsoleWindow.gorm
+	Transition Console from code generation to GORM file
+
+2015-02-05 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/ConsoleWindowController.h
+	* Framework/GNUMail/ConsoleWindowController.m
+	Remove unused animation code, animation timer was unused on Mac anyway and GS now follows mac.
+
+2015-02-05 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/Utilities.m
+	Use sheet also on GNUstep
+
+2015-02-04 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/TaskManager.m
+	Since we use progress indicators as on mac, remove #ifdef
+
+2015-02-04 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/ConsoleWindowController.h
+	* Framework/GNUMail/ConsoleWindowController.m
+	* Framework/GNUMail/MailWindowController.h
+	Remove GS specific hacks, use progress indicators as on Mac.
+
+2015-02-04 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/GetURLScriptCommand.m
+	Fix memory leak
+
+	* Framework/GNUMail/GNUMail.m
+	Retain/release parameter
+
+2015-01-30 Riccardo Mottola <rm@gnu.org>
+
+	* Bundles/MIME/MIMEViewController.m
+    Fix memory leaks.
+
+2015-01-30 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/GNUMail.m
+	We don't need the special GS case anymore since it supports sheets.
+
+2015-01-29 Riccardo Mottola <rm@gnu.org>
+
+    * Bundles/Account/AccountEditorWindowController.m
+    Fix memory leak
+
+2014-10-06 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/ApplicationIconController.m
+        Retain notificaiton objects used as keys when put into the Map, release them later.
+
+	* Resources/English.lproj/EditWindow.nib
+        * Framework/GNUMail/EditWindowController.h
+        Remove non-functional transport selection.
+
+2014-02-13 Sebastian Reitenbach <sebastia@l00-bugdead-prods.de>
+	* Framework/GNUMail/MailHeaderCell.m
+	  float -> CGFloat, int -> NSUInteger
+
+2014-02-11 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MessageViewWindowController.m
+        * Framework/GNUMail/EditWindowController.m
+        * Framework/GNUMail/MailWindowController.m
+        Unset the window delegate. Needed in GS in the current release,
+        fixed in HEAD (can be removed for future GS releases)
+
+2014-02-02 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/EditWindowController.m
+        * Framework/GNUMail/GNUMail.m
+        * Framework/GNUMail/MailWindowController.m
+        Keep track of Mail and Edit window controllers and release them at the 
+        window closure
+
+2014-01-16 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/EditWindowController.m (_dataValueOfRedirectedMessage)
+	Use same locale code for Mac and GS.
+
+2014-01-16 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/EditWindowController.m (_dataValueOfRedirectedMessage)
+	Simplify date code, fix memory problem.
+
+2014-01-15 Riccardo Mottola <rm@gnu.org>
+
+	* Bundles/Account/AccountEditorWindowController.m
+	Initialize the Folder in the controller earlier.
+
+2014-01-12 Sebastian Reitenbach <sebastia@l00-bugdead-prods.de>
+	* gnumail/Framework/GNUMail/GNUMailBundle.h
+	* gnumail/GNUMailInfo.plist
+	* gnumail/GNUMail.suiteModel
+	* gnumail/Documentation/WHOIS
+	* gnumail/Documentation/PREFERENCES
+	* gnumail/Documentation/TODO
+	* gnumail/Resources/Spanish.lproj/Localizable.strings
+	* gnumail/Resources/English.lproj/GNUMail.scriptTerminology
+	* gnumail/GNUmakefile
+	GNUMail.app -> GNUMail
+
+2014-01-09 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MailboxInspectorPanelController.m
+	* Framework/GNUMail/MailWindowController.m
+	* Framework/GNUMail/FindWindowController.m
+	* Bundles/Account/AccountEditorWindowController.m
+	* Bundles/MIME/MimeTypeEditorWindowController.m
+	Always assign to self and access ivars only after alloc/init.
+
+2014-01-09 Riccardo Mottola <rm@gnu.org>
+
+	* Bundles/Account/AccountViewController.m
+	Skip if no key is found.
+
+2014-01-09 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/EditWindowController.m
+	Change order so that ivars are accessed only after init.
+
+	* Bundles/Account/AccountViewController.m
+	If returned key is nil, throw exception and return.
+
+2014-01-09 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/EditWindowController.m
+	Fix memory leak.
+
+2014-01-04 Riccardo Mottola <rm@gnu.org>
+
+	* Bundles/Account/AccountEditorWindowController.m
+	For gnustep, we are in a modal dialog, add to runloop before connecting
+
+2014-01-03 Riccardo Mottola <rm@gnu.org>
+
+	* Bundles/Account/AccountEditorWindowController.h
+	* Bundles/Account/AccountEditorWindowController.m
+	Keep track of the smtp connection, remove. the delegate and release the connection later.
+	Patch partially by Richard Frith-Macdonald.
+
+2013-12-29 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MailboxManagerController.m
+	* Framework/GNUMail/TaskManager.m
+	Cast to fix warning.
+
+2013-12-29 Riccardo Mottola <rm@gnu.org>
+
+	* Bundles/PGP/PGPController.m
+	Cast to fix warning.
+
+2013-12-29 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MailWindowController.m
+	* Framework/GNUMail/MailboxManagerController.m
+	Revert to intValue, since integerValue is not supported on 10.4
+
+2013-12-29 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/FindWindowController.m
+	Remove PRIuPTR and replace with cast.
+
+2013-12-29 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/FolderNode.h
+	* Framework/GNUMail/TaskManager.h
+	* Framework/GNUMail/PreferencesModule.h
+	Provide NSUInteger definition.
+
+	* Framework/GNUMail/MailHeaderCell.h
+	Provide CGFloat definition.
+
+2013-11-05 Sebastian Reitenbach <sebastia@l00-bugdead-prods.de>
+	* Bundles/PGP/PGPController.m
+	* Framework/GNUMail/EditWindowController.m
+	* Framework/GNUMail/MimeTypeManager.m
+	  fix some potential memory leaks
+	* Bundles/Filtering/FilterHeaderEditorWindow.m
+	  fix button title in Expert filtering window
+	* Bundles/MIME/MIMEViewController.[h|m]
+	  int -> NSInteger transition
+
+
+2013-11-03 Sebastian Reitenbach <sebastia@l00-bugdead-prods.de>
+	* Framework/GNUMail/FilterManager.m
+	  rename private method to adhere to objc coding standards
+	* Framework/GNUMail/NSAttributedString+Extensions.m
+	  autorelease returned object
+
+2013-10-23 German A. Arias <germanandre@gmx.es>
+
+	* Bundles/MIME/MimeTypeEditorWindowController.m (-windowWillClose:):
+	Don't use this method (crash GNUMail).
+
+2013-10-20: Sebastian Reitenbach <sebastia@l00-bugdead-prods.de>
+	* Framework/GNUMail/ApplicationIconController.m
+	* Framework/GNUMail/ConsoleWindow.m
+	* Framework/GNUMail/EditWindowController.h
+	* Framework/GNUMail/FindWindowController.m
+	* Framework/GNUMail/MailboxManagerController.m
+	A couple of warnings fixed emitted by clang
+        * Framework/GNUMail/MessageViewWindowToolbar.m
+        * Framework/GNUMail/GNUMail.m
+        Make the print icon work with GNUstep, patch sent
+        over a year ago to gap-dev-discuss
+	* Bundles/Account/AccountViewController.m
+	* Bundles/Filtering/FilterEditorWindowController.m
+	* Framework/GNUMail/ExtendedWindow.m
+	* Framework/GNUMail/FindWindowController.m
+	* Framework/GNUMail/GNUMail.m
+	* Framework/GNUMail/MailWindowController.m
+	* Framework/GNUMail/MailboxManagerController.m
+	* Framework/GNUMail/MessageViewWindowController.m
+	get rid of some dead assignments spotted by clang
+	while there, some NS(U)Integer transitions
+
+2013-05-26: Sebastian Reitenbach <sebastia@l00-bugdead-prods.de>
+	* Bundles/Account/AccountEditorWindowController.m
+	* Framework/GNUMail/FolderNode.[h|m]
+	* Framework/GNUMail/MailboxManagerController.m
+	* Framework/GNUMail/Utilities.m
+	  some NS(U)Integer conversions
+	* Framework/GNUMail/MailWindowController.m
+	* Framework/GNUMail/MailHeaderCell.[h|m]
+	  some more NS(U)Integer conversions, fixes serious
+	  warnings when compiling MailWindowController.m
+	* Framework/GNUMail/TaskManager.m
+	  fix some NS(U)Integer conversions
+	* Bundles/Account/AccountViewController.m
+	* Framework/GNUMail/AutoCompletingTextField.m
+	* Framework/GNUMail/FindWindowController.m
+	* Framework/GNUMail/ThreadArcsCell.m
+	  fix int comparisions against NSNotFound
+
+	
+2013-04-28 German A. Arias <german@xelalug.org>
+
+	* Bundles/Account/AccountEditorWindowController.m: Select the first tab
+	view item. If not, this is shown as empty.
+
+2013-04-28 Riccardo Mottola <rm@gnu.org>
+
+	* Bundles/Account/AccountEditorWindowController.m
+	* Bundles/Account/AccountViewController.h
+	* Bundles/Account/AccountViewController.m
+	* Framework/GNUMail/Constants.h
+	* Framework/GNUMail/MailWindowController.h
+	Better old-mac defines.
+
+2013-04-28 Riccardo Mottola <rm@gnu.org>
+
+	* Bundles/Account/AccountEditorWindowController.m
+	Revert as it makes Mac not work anymore.
+
+2013-03-22 Gregory John Casamento <greg.casamento@gmail.com>
+
+	* Bundles/Account/AccountEditorWindowController.m
+	unset delegate
+
+2013-02-24 Sebastian Reitenbach <sebastia@l00-bugdead-prods.de>
+	* Bundles/Filtering/FilterEditorWindow.m
+        * Fix button title 
+        * Bundles/Filtering/FilteringViewController.m
+        * gcc-2.95 fixe
+	* Bundles/Account/AccountViewController.m
+	* Bundles/Advanced/AdvancedViewController.m
+	* Bundles/Filtering/FilterHeaderEditorWindowController.m
+	* Bundles/Filtering/FilteringViewController.m
+	* Bundles/Import/MailboxImportController.m
+	* Bundles/PGP/PGPController.m
+	* Bundles/Sending/SendingViewController.m
+	* Bundles/Viewing/HeadersWindowController.m
+	* Framework/GNUMail/AutoCompletingTextField.m
+	* Framework/GNUMail/ConsoleWindowController.m
+	* Framework/GNUMail/ExtendedTextView.m
+	* Framework/GNUMail/GNUMail+Extensions.m
+	* Framework/GNUMail/MailWindowController.h
+	* Framework/GNUMail/MailWindowController.m
+	* Framework/GNUMail/MessageViewWindowController.m
+	* Framework/GNUMail/TaskManager.m
+	* NS(U)Integer transitions to match with 
+	  recent -gui changes
+
+2012-11-17 German Arias <german@xelalug.org>
+
+	* GNUMakefile:
+	* Framework/GNUMail/GNUmakefile: Add new flags.
+
+2012-09-02 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MailHeaderCell.m
+	Remove GS specific difference.
+
+2012-09-02 Sebastian Reitenbach <sebastia@l00-bugdead-prods.de>
+
+	* Framework/GNUMail/MailWindowController.m
+	Use NS[A|De]scendingSortIndicator instead of named images
+	* Framework/GNUMail/MimeTypeManager.m
+	Use NSWorkspace to get the right image for attachments
+	instead of always showing the "unknown" icon
+
+2012-08-31 Riccardo Mottola <rm@gnu.org>
+
+	* Framework/GNUMail/MailboxManagerController.m
+	Remove GNUstep specific setting.
+
+2012-08-15: Sebastian Reitenbach <sebastia@l00-bugdead-prods.de>
+
+	* Framework/GNUMail/EditWindowController.m
+	get rid of unused variable
+	* Framework/GNUMail/ExtendedTextView.m
+	switch from unsigned int to NSUInteger to get
+	rid of compiler warning
+
+2012-05-22 Riccardo Mottola <rm@gnu.org>
+
+	* Bundles/Viewing/ViewingView.m
+	* Bundles/Sending/SendingView.m
+	* Framework/GNUMail/FindWindow.m
+	Use setTitle for buttons
+
+2012-05-15  Hubert Chathi  <uhoreg@debian.org>
+
+        * Rename the PGP bundle -version method to avoid conflict.
+
+2012-05-15  Yavor Doganov  <yavor@gnu.org>
+
+        * MailWindowController.m ([MailWindowController(Private)
+          _showMessage:]): Avoid checking the window height.
+
+2012-04-24 German Arias <german@xelalug.org>
+
+	* Bundles/Account/AccountEditorWindowController.h:
+	* Bundles/Account/AccountEditorWindowController.m: Revert ugly
+	hack that I added previously.
+
+2011-11-07 German Arias <german@xelalug.org>
+
+	* GNUMakefile: Added package info.
+
+2011-11-07 German Arias <german@xelalug.org>
+
+	* Bundles/Account/AccountEditorWindowController.m: Moved
+	variable "_hasInit" from -connectionTerminated: to
+	-serviceInitialized:. This is better.
+
+2011-11-07 German Arias <german@xelalug.org>
+
+	* Bundles/Import/MailboxImportController.m: Don't use
+	variable "singleInstance". If not, the app crash when
+	Import window is closed.
+
+2011-11-07 German Arias <german@xelalug.org>
+
+	* Framework/GNUMail/AboutPanel.m: Updating to release.
+
+2011-11-07 German Arias <german@xelalug.org>
+
+	* Framework/GNUMail/EditWindow.m:
+	* Framework/GNUMail/EditWindowController.m: Use the corresponding
+	information of account to send the email. This mean not allow the
+	user select the account's send info. This prevents use one account
+	information to send an email in another account (This occurs
+	when two or more accounts have the same SMTP host). 
+
+2011-11-06 German Arias <german@xelalug.org>
+
+	* Resources/Spanish.lproj/Localizable.strings: Added more
+	spanish strings.
+
+2011-11-06 German Arias <german@xelalug.org>
+
+	* Framework/GNUMail/ApplicationIconController.m: Added a dot
+	to show when the app is hidden.
+
+2011-11-06 German Arias <german@xelalug.org>
+
+	* Framework/GNUMail/WelcomePanel.m:
+	* Framework/GNUMail/ApplicationIconController.m: Use image
+	"GNUMail" instead "GNUMail_128", since there is an odd
+	problem with the size of this image after some changes
+	in GNUstep.
+
+2011-11-06 German Arias <german@xelalug.org>
+
+	* Framework/GNUMail/AboutPanel.m: Write "Stephane" without
+	accent in first "e". If not the app stuck. And moved the
+	contributors text field.
+
+2011-08-14 German Arias <german@xelalug.org>
+
+	* Resources/Spanish.lproj/Localizable.strings: Changed the file
+	format and add more spanish strings.
+	* Framework/GNUMail/WelcomePanel.m: Improvements for a better
+	internationalization.
+
+2011-08-03 German Arias <german@xelalug.org>
+
+	* Framework/GNUMail/WelcomePanel.m: Move icon to right.
+
+2011-08-02 German Arias <german@xelalug.org>
+
+	* Bundles/Account/AccountEditorWindowController.h:
+	* Bundles/Account/AccountEditorWindowController.m:
+	Ugly hack to fix the problem in Account preferences panel.
+	A better solution can be done in Pantomime side. But since
+	I not have intention to understand in deep how this works.
+	This solution is good, for now.
+
+2011-06-06 German Arias <german@xelalug.org>
+
+	* Framework/GNUMail/MailWindow.m: Set icon title to "". 
+
+2011-06-05 German Arias <german@xelalug.org>
+
+	* Framework/GNUMail/MailWindow.m: Don't call -adjustSubviews
+	because crash the app, I'm investigating this.
+
+2011-06-01 German Arias <german@xelalug.org>
+
+	* GNA: Initial repository at gna.org.
+
+
+Copyright (C) 2011-2017 German Arias, Yavor Doganov,
+                        Sebastian Reitebnach, Riccardo Mottola and others
+
+This file is part of GNUMail
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+ 
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.

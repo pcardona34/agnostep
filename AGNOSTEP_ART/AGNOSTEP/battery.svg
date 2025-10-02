@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="svg1"
+   sodipodi:docname="battery.svg"
+   viewBox="0 0 60 60"
+   sodipodi:version="0.32"
+   _SVGFile__filename="oldscale/apps/klaptopdaemon.svg"
+   version="1.0"
+   y="0"
+   x="0"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     inkscape:window-y="0"
+     pagecolor="#ffffff"
+     inkscape:window-height="699"
+     inkscape:zoom="3.5657483"
+     inkscape:window-x="0"
+     borderopacity="1.0"
+     inkscape:current-layer="svg1"
+     inkscape:cx="39.542892"
+     inkscape:cy="12.339626"
+     inkscape:window-width="1165"
+     inkscape:pageopacity="0.0000000"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:window-maximized="0" />
+  <path
+     id="path1105"
+     style="fill:none;stroke:#ffffff;stroke-width:8.12535;stroke-linejoin:round"
+     d="m 18.607718,9.3324406 c 0,2.5633964 -2.07966,4.6440684 -4.643056,4.6440684 -2.563396,0 -4.644068,-2.080672 -4.644068,-4.6440684 0,-2.5632948 2.080672,-4.6436632 4.644068,-4.6436632 2.563396,0 4.643056,2.0803684 4.643056,4.6436632 z" />
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g8"
+     inkscape:export-filename="../../install/RESOURCES/ICONS/battery.png"
+     inkscape:export-xdpi="59.894676"
+     inkscape:export-ydpi="59.894676">
+    <path
+       id="rect815"
+       style="fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:2.11235332;stroke-linejoin:round;stroke-dasharray:none"
+       d="m 18.682611,10.976815 c -3.228379,0 -5.827399,1.278907 -5.827399,2.867604 V 51.10865 c 0,1.588601 2.59902,2.867508 5.827399,2.867508 h 22.948297 c 3.230321,0 5.829342,-1.278907 5.829342,-2.867508 V 13.844419 c 0,-1.588697 -2.599021,-2.867604 -5.827399,-2.867604 H 18.684554 Z" />
+    <rect
+       style="fill:none;stroke:#e6e6e6;stroke-width:1.63855278;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1"
+       width="11.074874"
+       height="5.6066079"
+       x="24.620295"
+       y="4.5615745"
+       inkscape:export-filename="../../install/RESOURCES/ICONS/battery.png"
+       inkscape:export-xdpi="43.290001"
+       inkscape:export-ydpi="43.290001" />
+    <rect
+       style="fill:none;stroke:#e6e6e6;stroke-width:1.18638;stroke-linejoin:bevel;stroke-dasharray:none"
+       id="rect2"
+       width="34.743542"
+       height="10.905628"
+       x="12.318632"
+       y="21.292906" />
+    <rect
+       style="fill:#e6e6e6;stroke:#e6e6e6;stroke-width:1.10875;stroke-linejoin:bevel;stroke-dasharray:none;fill-opacity:1"
+       id="rect2-7"
+       width="34.540726"
+       height="9.5810289"
+       x="13.362911"
+       y="32.452122" />
+  </g>
+</svg>

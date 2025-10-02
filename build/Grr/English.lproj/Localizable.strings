@@ -1,0 +1,45 @@
+/***
+English.lproj/Localizable.strings
+updated by make_strings 2007-02-17 10:47:10 +0000
+add comments above this one
+***/
+
+
+/*** Keys found in multiple places ***/
+
+/* File: ArticleOpsToolbarDelegate.m:16 */
+/* Flag: unmatched */
+/* File: ArticleOpsToolbarDelegate.m:22 */
+/* Flag: unmatched */
+"View in WWW" = "View in WWW";
+
+/* File: FeedOpsToolbarDelegate.m:22 */
+/* Flag: unmatched */
+/* File: FeedOpsToolbarDelegate.m:51 */
+/* Flag: unmatched */
+"Fetch feed" = "Fetch feed";
+
+/* File: FeedOpsToolbarDelegate.m:28 */
+/* Flag: unmatched */
+/* File: FeedOpsToolbarDelegate.m:56 */
+/* Flag: unmatched */
+"Fetch all" = "Fetch all";
+
+/* File: FeedOpsToolbarDelegate.m:35 */
+/* Flag: unmatched */
+/* File: FeedOpsToolbarDelegate.m:45 */
+/* Flag: unmatched */
+"Delete feed" = "Delete feed";
+
+
+/*** Unmatched/untranslated keys ***/
+
+/* File: ArticleOpsToolbarDelegate.m:56 */
+/* Comment: This translates to the name of the 'Article' main menu entry in the main Nib file. If you get it wrong, the menu will not be filled correctly. */
+/* Flag: unmatched */
+"Article" = "Article";
+
+/* File: FeedOpsToolbarDelegate.m:72 */
+/* Comment: The name of the Feed menu entry. It's important that this is the same name as in the Gorm file, otherwise the menu will not be filled. */
+/* Flag: unmatched */
+"Feed" = "Feed";

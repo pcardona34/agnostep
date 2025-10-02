@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IBClasses</key>
+	<array>
+		<dict>
+			<key>CLASS</key>
+			<string>NSObject</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+		</dict>
+		<dict>
+			<key>CLASS</key>
+			<string>FirstResponder</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>removePassphraseFromCacheButtonClicked</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>PGPViewController</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>OUTLETS</key>
+			<dict>
+				<key>alwaysEncrypt</key>
+				<string>NSButton</string>
+				<key>alwaysSign</key>
+				<string>NSButton</string>
+				<key>alwaysUseMultipartPGP</key>
+				<string>NSButton</string>
+				<key>gpgPathField</key>
+				<string>NSTextField</string>
+				<key>removePassphraseFromCacheButton</key>
+				<string>NSButton</string>
+				<key>removePassphraseFromCacheField</key>
+				<string>NSTextField</string>
+				<key>useFromForSigning</key>
+				<string>NSButton</string>
+				<key>usePinentryLoopback</key>
+				<string>NSButton</string>
+				<key>userEMailAddressField</key>
+				<string>NSTextField</string>
+				<key>versionLabel</key>
+				<string>NSTextField</string>
+				<key>view</key>
+				<string>id</string>
+			</dict>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+	</array>
+	<key>IBVersion</key>
+	<string>1</string>
+</dict>
+</plist>

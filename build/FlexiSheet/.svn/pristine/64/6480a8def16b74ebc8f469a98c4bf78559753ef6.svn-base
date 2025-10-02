@@ -1,0 +1,22 @@
+<HTML><HEAD><META HTTP-EQUIV="content-type" CONTENT="text/html;charset=iso-8859-1"><TITLE>
+
+min Function
+
+</TITLE><META NAME="Copyright" CONTENT="Copyright Stefan Leuker."></HEAD><BODY BGCOLOR="#ffffff"><DIV ALIGN="left"><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%"><TR HEIGHT="40"><TD WIDTH="6" HEIGHT="40"></TD><TD HEIGHT="40" VALIGN="middle"><FONT FACE="Lucida Grande,Helvetica,Arial" SIZE="4"><B>
+
+min&nbsp;Function
+
+</B></FONT></TD></TR></TABLE>
+<img src="../av/3PixelRule.tiff">
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+To calculate the minimum value from a range of values, use the min function.
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+Syntax:
+<pre>  min(range)</pre>
+
+</FONT></P>
+</DIV></BODY></HTML>

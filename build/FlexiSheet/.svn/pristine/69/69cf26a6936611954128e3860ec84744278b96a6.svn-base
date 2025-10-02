@@ -1,0 +1,46 @@
+<HTML><HEAD><META HTTP-EQUIV="content-type" CONTENT="text/html;charset=iso-8859-1"><TITLE>
+
+Move Categories
+</TITLE><META NAME="Copyright" CONTENT="Copyright Stefan Leuker."></HEAD><BODY BGCOLOR="#ffffff"><DIV ALIGN="left"><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%"><TR HEIGHT="40"><TD WIDTH="6" HEIGHT="40"></TD><TD HEIGHT="40" VALIGN="middle"><FONT FACE="Lucida Grande,Helvetica,Arial" SIZE="4"><B>
+
+Move Categories
+
+</B></FONT></TD></TR></TABLE>
+<img src="../av/3PixelRule.tiff">
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+You may wish to reorganize data in a view  to examine it from different perspective.
+
+</FONT></P>
+<P><TABLE BORDER="0" CELLPADDING="5" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#fff8dc"><TD>
+<FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+To rearrange the presentation of data in a view (either a spreadsheet or a chart), drag a category tile to the upper, right, or lower category dock in the view window. When you release the tile, it will "stick" to that category tile dock, changing the way in which information is displayed in the view. 
+
+</FONT></TD></TR></TABLE></P><P><TABLE BORDER="0" CELLPADDING="5" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#fff8dc"><TD>
+<FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+You can, as well, reorder the placement of category tiles along the same axis. Just drag and drop category tiles before and after one another. 
+
+</FONT></TD></TR></TABLE></P><P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+Note that changes made to the placement of category tiles appear only in the view in which the change is made.
+
+</FONT></P>
+<img src="../av/1PixelRule.tiff">
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial"><B>
+Related Topics</B></FONT>
+<TABLE BORDER="0" CELLPADDING="2" CELLSPACING="0" WIDTH="100%">
+
+<TR><TD WIDTH="16" BGCOLOR="#eeeeee"></TD><TD><FONT FACE="Lucida Grande,Helvetica,Arial" SIZE="2">
+
+<A HREF="AddingCategory.html">
+
+Adding a Category
+
+</A></FONT></TD></TR>
+
+</TABLE>
+</DIV></BODY></HTML>

@@ -1,0 +1,9 @@
+{
+    GWSCoderMethod = applicationLoginResponse;
+    GWSCoderOrder = (
+	applicationLoginReturn
+    );
+    GWSCoderParameters = {
+	applicationLoginReturn = "app:8638397129625756426";
+    };
+}

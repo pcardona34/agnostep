@@ -1,0 +1,96 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/FSTableController (FormulaEditing)">FSTableController (FormulaEditing)</A></H1></FONT><BR>
+
+
+
+
+
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSTableController.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Category Description</H2>
+No category description.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- addFormula:">- addFormula:</A></DD>
+		
+			<DD> <A HREF="#- insertFormula:">- insertFormula:</A></DD>
+		
+			<DD> <A HREF="#- deleteFormula:">- deleteFormula:</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- addFormula:"></A><H3><A NAME="//apple_ref/occ/instm/FSTableController (FormulaEditing)/addFormula:">addFormula:</A></H3><P>
+		<CODE>- (void)<B>addFormula:</B>(id)<EM>sender</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- deleteFormula:"></A><H3><A NAME="//apple_ref/occ/instm/FSTableController (FormulaEditing)/deleteFormula:">deleteFormula:</A></H3><P>
+		<CODE>- (void)<B>deleteFormula:</B>(id)<EM>sender</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- insertFormula:"></A><H3><A NAME="//apple_ref/occ/instm/FSTableController (FormulaEditing)/insertFormula:">insertFormula:</A></H3><P>
+		<CODE>- (void)<B>insertFormula:</B>(id)<EM>sender</EM>
+			
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2002 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

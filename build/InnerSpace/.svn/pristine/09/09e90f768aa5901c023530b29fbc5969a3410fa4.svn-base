@@ -1,0 +1,21 @@
+DOCEXTENSIONS = ();
+LANGUAGE = English;
+LOCALIZABLE_FILES = {
+    SporView.nib;
+};
+PROJECTVERSION = 1.1;
+INSTALLDIR = "$(HOME)/Library";
+PROJECTTYPE = Bundle;
+PROJECTNAME = SporView;
+GENERATEMAIN = YES;
+BUNDLE_EXTENSION = bundle;
+FILESTABLE = {
+    C_FILES = (draw.c, spordefs.c, sporen6.c);
+    CLASSES = (SporView.m);
+    OTHER_RESOURCES = ();
+    OTHER_SOURCES = (Makefile.preamble, Makefile, Makefile.postamble);
+    H_FILES = (SporView.h, sporen6.h, spordefs.h, draw.h);
+    INTERFACES = (SporView.nib);
+    OTHER_LINKED = ();
+};
+DOCICONFILES = ();

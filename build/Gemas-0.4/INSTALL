@@ -1,0 +1,63 @@
+REQUIREMENTS
+============
+
+First, make sure you have GNUstep and HighlighterKit:
+
+ gnustep-make 2.6.2
+ gnustep-base 1.24.0
+ gnustep-gui 0.22.0
+ gnustep-back 0.22.0
+ 
+ HighlighterKit 0.1.2 
+
+installed on your system, with the corresponding development headers.
+
+
+COMPILING
+=========
+
+Find the script 'GNUstep.sh' on your system (on GNU/Linux normally
+it's in /usr/GNUstep/System/Library/Makefiles/GNUstep.sh), then source it:
+
+  . /usr/GNUstep/System/Library/Makefiles/GNUstep.sh
+
+Then, 
+
+  make
+
+That should compile the program and put it into a directory called
+'Gemas.app'.  You can launch the app with:
+
+  openapp ./Gemas.app
+
+
+INSTALLING
+==========
+
+Type, as root:
+
+  make install
+
+to install the program. Once installed, you should be able to run it using:
+
+  openapp Gemas.app
+
+
+RUNNING THE PROGRAM IN ENGLISH
+==============================
+
+The program has been translated into the following languages: 
+
+ Spanish
+ English
+
+If for some reason don't run on English, please run the GNUstep script at the shell prompt:
+
+  . /usr/GNUstep/System/Library/Makefiles/GNUstep.sh
+
+and then:
+
+  defaults write NSGlobalDomain NSLanguages "(English)"
+
+and restart the application.
+

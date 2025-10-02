@@ -34,5 +34,6 @@
 
 <chapter src="Introduction.xlp" name="AGNoStep Brief Tour"></chapter>
 <chapter src="Devices.xlp" name="Removable Devices"></chapter>
-
+<chapter src="Sound.xlp" name="Sound"></chapter>
+<chapter src="Printing.xlp" name="Printing"></chapter>
 </document>

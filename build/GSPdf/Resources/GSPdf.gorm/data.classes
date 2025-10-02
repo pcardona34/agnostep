@@ -1,0 +1,55 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    FirstResponder = {
+	Actions = (
+	    "chooseGVPath:",
+	    "chooseGsPath:",
+	    "goToPage:",
+	    "nextPage:",
+	    "openFile:",
+	    "prefCancel:",
+	    "prefSave:",
+	    "previousPage:",
+	    "runInfoPanel:",
+	    "setPaperSize:",
+	    "showConsole:",
+	    "showPrefPanel:"
+	);
+	Super = NSObject;
+    };
+    GSPdf = {
+	Actions = (
+	    "showConsole:",
+	    "showPrefPanel:",
+	    "prefSave:",
+	    "prefCancel:",
+	    "chooseGsPath:",
+	    "previousPage:",
+	    "nextPage:",
+	    "runInfoPanel:"
+	);
+	Outlets = (
+	    prefPanel,
+	    gsPathField
+	);
+	Super = NSObject;
+    };
+    GSPdfDocument = {
+	Actions = (
+	    "goToPage:",
+	    "setPaperSize:"
+	);
+	Outlets = (
+	);
+	Super = NSDocument;
+    };
+    NSApplication = {
+	Actions = (
+	    "openFile:",
+	    "nextPage:",
+	    "previousPage:",
+	    "showConsole:"
+	);
+	Super = NSResponder;
+    };
+}

@@ -1,0 +1,44 @@
+<HTML><HEAD><META HTTP-EQUIV="content-type" CONTENT="text/html;charset=iso-8859-1"><TITLE>
+
+Formula Area</TITLE><META NAME="Copyright" CONTENT="Copyright Stefan Leuker."></HEAD><BODY BGCOLOR="#ffffff"><DIV ALIGN="left"><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%"><TR HEIGHT="40"><TD WIDTH="6" HEIGHT="40"></TD><TD HEIGHT="40" VALIGN="middle"><FONT FACE="Lucida Grande,Helvetica,Arial" SIZE="4"><B>
+
+Formula Area
+</B></FONT></TD></TR></TABLE>
+<img src="../av/3PixelRule.tiff">
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+The formula area is located at the top of a table view, and displays formulas (if they exist) in a numbered list.
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial"><B>
+
+Resizing the formula area
+
+</B></FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+When you are not creating or revising formulas, you might want to reduce the formula area to see more of the table's information. 
+
+</FONT></P>
+<P><TABLE BORDER="0" CELLPADDING="5" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#fff8dc"><TD>
+<FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+Drag the divider to hide the formula area completely, reduce its size or increase its size.
+
+</FONT></TD></TR></TABLE></P>
+<img src="../av/1PixelRule.tiff">
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial"><B>
+Related Topics</B></FONT>
+<TABLE BORDER="0" CELLPADDING="2" CELLSPACING="0" WIDTH="100%">
+
+<TR><TD WIDTH="16" BGCOLOR="#eeeeee"></TD><TD><FONT FACE="Lucida Grande,Helvetica,Arial" SIZE="2">
+
+<A HREF="FormulaList.html">
+
+Formula List
+
+</A></FONT></TD></TR>
+
+</TABLE>
+</DIV></BODY></HTML>

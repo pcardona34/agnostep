@@ -1,0 +1,34 @@
+{
+    GWSCoderMethod = sendSMSResponse;
+    GWSCoderOrder = (
+	result
+    );
+    GWSCoderParameters = {
+	result = {
+	    GWSCoderOrder = (
+		resultCode,
+		resultDescription,
+		sagTransactionId,
+		applicationReference,
+		resultData
+	    );
+	    applicationReference = 0000000000000000000000075428d2;
+	    resultCode = SMS0000S;
+	    resultData = {
+		GWSCoderOrder = (
+		    item
+		);
+		item = {
+		    GWSCoderOrder = (
+			key,
+			value
+		    );
+		    key = 447923027939;
+		    value = ACCEPTED;
+		};
+	    };
+	    resultDescription = "The request is completed successfully";
+	    sagTransactionId = 115883375;
+	};
+    };
+}

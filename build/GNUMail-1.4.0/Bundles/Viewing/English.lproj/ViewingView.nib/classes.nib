@@ -1,0 +1,14 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {ACTIONS = {myAction = id; }; CLASS = NSObject; LANGUAGE = ObjC; }, 
+        {
+            ACTIONS = {headersButtonClicked = id; }; 
+            CLASS = ViewingViewController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {doubleClickPopUpButton = NSPopUpButton; matrix = NSMatrix; view = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

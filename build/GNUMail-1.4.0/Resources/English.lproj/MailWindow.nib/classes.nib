@@ -1,0 +1,97 @@
+{
+    IBClasses = (
+        {CLASS = ExtendedTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {
+            ACTIONS = {concludeDragOperation = id; draggingExited = id; }; 
+            CLASS = ExtendedTextView; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSTextView; 
+        }, 
+        {CLASS = ExtendedWindow; LANGUAGE = ObjC; SUPERCLASS = NSWindow; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                addToAddressBook = id; 
+                bounceMessage = id; 
+                cleanQuit = id; 
+                composeMessage = id; 
+                composeMessageFromDeadLetter = id; 
+                findNext = id; 
+                findPrevious = id; 
+                forwardMessage = id; 
+                getNewMessages = id; 
+                replyAllMessage = id; 
+                replyMessage = id; 
+                saveTextFromMessage = id; 
+                selectAllMessages = id; 
+                selectionOfMessageHasChanged = id; 
+                showAddressBook = id; 
+                showAllHeaders = id; 
+                showFindWindow = id; 
+                showLocalInboxWindow = id; 
+                showMailboxManager = id; 
+                showPrefWindow = id; 
+                undeleteMessage = id; 
+            }; 
+            CLASS = GNUMail; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                collapseItem = id; 
+                deleteMessage = id; 
+                doubleClickedOnDataView = id; 
+                expandItem = id; 
+                filtersHaveChanged = id; 
+                firstMessage = id; 
+                forwardMessage = id; 
+                getNewMessages = id; 
+                lastMessage = id; 
+                nextMessage = id; 
+                nextUnreadMessage = id; 
+                openOrCloseDrawer = id; 
+                pageDownMessage = id; 
+                pageUpMessage = id; 
+                previousMessage = id; 
+                previousUnreadMessage = id; 
+                replyMessage = id; 
+                updateMessageFlags = id; 
+                viewMessageInWindow = id; 
+            }; 
+            CLASS = MailWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                addresses = NSButton; 
+                compose = NSButton; 
+                dataView = id; 
+                dateColumn = NSTableColumn; 
+                delete = id; 
+                drawer = NSDrawer; 
+                find = NSButton; 
+                forward = NSButton; 
+                fromColumn = NSTableColumn; 
+                get = id; 
+                icon = NSButton; 
+                idColumn = NSTableColumn; 
+                label = NSTextField; 
+                mailboxes = NSButton; 
+                navigationView = NSView; 
+                next = NSButton; 
+                outlineView = ExtendedOutlineView; 
+                previous = NSButton; 
+                progressIndicator = NSProgressIndicator; 
+                reply = NSButton; 
+                sizeColumn = NSTableColumn; 
+                splitView = NSSplitView; 
+                statusColumn = NSTableColumn; 
+                subjectColumn = NSTableColumn; 
+                tableScrollView = NSScrollView; 
+                textScrollView = NSScrollView; 
+                textView = NSTextView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

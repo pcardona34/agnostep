@@ -1,0 +1,54 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    FirstResponder = {
+	Actions = (
+	    "fontSelectionChanged:",
+	    "sizeSelectionChanged:"
+	);
+	Super = NSObject;
+    };
+    FontBox = {
+	Actions = (
+	    "fontSelectionChanged:",
+	    "sizeSelectionChanged:"
+	);
+	Outlets = (
+	    fontSelector,
+	    sizeSelector
+	);
+	Super = NSBox;
+    };
+    FontsComponent = {
+	Actions = (
+	);
+	Outlets = (
+	    articleFontBox,
+	    articleTableFontBox,
+	    feedTableFontBox,
+	    articleFixedFontBox
+	);
+	Super = PreferencesComponent;
+    };
+    PreferencesComponent = {
+	Actions = (
+	);
+	Outlets = (
+	);
+	Super = ViewProvidingComponent;
+    };
+    UKNibOwner = {
+	Actions = (
+	);
+	Outlets = (
+	);
+	Super = NSObject;
+    };
+    ViewProvidingComponent = {
+	Actions = (
+	);
+	Outlets = (
+	    _view
+	);
+	Super = UKNibOwner;
+    };
+}

@@ -1,0 +1,91 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                openFile = id; 
+                preferencesWindow = id; 
+                sendABugReport = id; 
+                togglePlaylistWindow = id; 
+            }; 
+            CLASS = CynthiuneController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                bugReportMenuItem = id; 
+                playerWindow = id; 
+                playlistController = id; 
+                playlistSwitch = id; 
+                playlistWindow = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = CynthiuneFadingTextField; LANGUAGE = ObjC; SUPERCLASS = NSTextField; }, 
+        {CLASS = CynthiunePauseButton; LANGUAGE = ObjC; SUPERCLASS = NSButton; }, 
+        {CLASS = CynthiuneWindow; LANGUAGE = ObjC; SUPERCLASS = NSWindow; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = InfoDisplayController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                songAlbumField = id; 
+                songArtistField = id; 
+                songNumberField = id; 
+                songTimerBtn = id; 
+                songTimerField = id; 
+                songTitleField = id; 
+                splashImage = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                addPlaylist = id; 
+                addSongs = id; 
+                addSongsFolders = id; 
+                changeTimeDisplay = id; 
+                eject = id; 
+                nextSong = id; 
+                pausePlayer = id; 
+                previousSong = id; 
+                removeAllSongs = id; 
+                removeSelectedSongs = id; 
+                saveList = id; 
+                saveListAs = id; 
+                songCursorChange = id; 
+                startPlayer = id; 
+                stopPlayer = id; 
+                toggleMute = id; 
+                toggleRepeat = id; 
+                toggleShuffle = id; 
+                toggleSongInspector = id; 
+            }; 
+            CLASS = PlaylistController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                ejectButton = id; 
+                infoDisplayController = id; 
+                nextButton = id; 
+                pauseButton = id; 
+                playButton = id; 
+                playlistStatusLabel = id; 
+                playlistViewController = id; 
+                previousButton = id; 
+                progressSlider = id; 
+                repeatButton = id; 
+                repeatMenuItem = id; 
+                shuffleButton = id; 
+                shuffleMenuItem = id; 
+                songInspectorMenuItem = id; 
+                stopButton = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = PlaylistView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {
+            CLASS = PlaylistViewController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {playlistView = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,124 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/FSViewInspectorPane">FSViewInspectorPane</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>FSInspectorPane</DD>
+</DL></blockquote>
+
+
+
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSViewInspectorPane.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+No class description.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Variables</H2>
+	<blockquote>
+	
+		<CODE>IBOutlet NSTextView *<B>comments</B>;</CODE><BR>
+		<CODE>IBOutlet NSTextField *<B>nameField</B>;</CODE><BR>
+		<CODE>IBOutlet NSTextField *<B>documentField</B>;</CODE><BR>
+		<CODE>IBOutlet NSTextField *<B>tableField</B>;</CODE><BR>
+		<CODE>FSWindowController *<B>view</B>;</CODE><BR>
+	<P><TABLE>
+	
+		<TR><TD>comments</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>nameField</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>documentField</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>tableField</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>view</TD><TD>No description.</TD></TR>
+	
+	</TABLE>
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- setViewName:">- setViewName:</A></DD>
+		
+			<DD> <A HREF="#- inspectDocument:">- inspectDocument:</A></DD>
+		
+			<DD> <A HREF="#- inspectTable:">- inspectTable:</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- inspectDocument:"></A><H3><A NAME="//apple_ref/occ/instm/FSViewInspectorPane/inspectDocument:">inspectDocument:</A></H3><P>
+		<CODE>- (IBAction)<B>inspectDocument:</B><EM>sender</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- inspectTable:"></A><H3><A NAME="//apple_ref/occ/instm/FSViewInspectorPane/inspectTable:">inspectTable:</A></H3><P>
+		<CODE>- (IBAction)<B>inspectTable:</B><EM>sender</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setViewName:"></A><H3><A NAME="//apple_ref/occ/instm/FSViewInspectorPane/setViewName:">setViewName:</A></H3><P>
+		<CODE>- (IBAction)<B>setViewName:</B><EM>sender</EM>
+			
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2001 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

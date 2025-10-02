@@ -20,17 +20,10 @@ function sanity_check
 
 title "Checking your environment"
 
-TEST=1
-
-. /etc/os-release
 ARCHI=`uname -a | awk '{print $10}'`
-MSG="On $ID - $VERSION_ID - ${ARCHI}\nYou are welcome!\n\n"
+MSG="On $ID - $DEBIAN_VERSION_FULL - ${ARCHI}\nYou are welcome!\n\n"
 
-if [ "$ID" == "$REQUIRED_OS" ] && [ $VERSION_ID -eq $REQUIRED_RELEASE ];then
-	TEST=0
-fi
-
-if [[ $TEST -eq 0 ]];then
+if [ "$ID" == "$REQUIRED_OS" ] && [ "$VERSION_ID" == "$REQUIRED_RELEASE" ];then
 	info "$MSG"
 else
 	alert "A G N o S t e p  Desktop should not be installed without $REQUIRED_OS ${REQUIRED_RELEASE}.\nAborting!\n"
@@ -111,6 +104,7 @@ if [ ! -z "STRING" ];then
 	if [ $? -ne 0 ];then
 		alert "ERROR: a dependency was not resolved.\nAborting!!!" | tee -a $LOG
 		warning "You must resolve this dependency trap.\nSee and fix ${FILE}. Then execute again:\n\n\t ${0}\n\n"
+		exit 1
 	else
 		ok "\nDone"
 	fi

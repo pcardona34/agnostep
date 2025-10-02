@@ -1,0 +1,21 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {chooseFileButtonClicked = id; playSoundButtonClicked = id; }; 
+            CLASS = ReceivingViewController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                chooseFileButton = NSButton; 
+                openMailboxAfterTransfer = NSButton; 
+                pathToSoundField = NSTextField; 
+                playSoundButton = NSButton; 
+                showFilterPanelButton = NSButton; 
+                showNoNewMessagesPanelButton = NSButton; 
+                view = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,34 @@
+{
+    IBClasses =     (
+                {
+            CLASS = FSInspectorPane;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                paneView = NSView;
+            };
+            SUPERCLASS = NSObject;
+        },
+                {
+            ACTIONS =             {
+                inspectCategory = id;
+                inspectDocument = id;
+                setTableName = id;
+            };
+            CLASS = FSTableInspectorPane;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                categories = NSTableView;
+                comments = NSTextView;
+                documentField = NSTextField;
+                nameField = NSTextField;
+            };
+            SUPERCLASS = FSInspectorPane;
+        },
+                {
+            CLASS = FirstResponder;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSObject;
+        }
+    );
+    IBVersion = 1;
+}

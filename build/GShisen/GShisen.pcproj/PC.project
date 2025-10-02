@@ -1,0 +1,168 @@
+{
+    APPLICATIONICON = "GShisen.tiff";
+    "APP_DOCUMENT_BASED" = NO;
+    "APP_TYPE" = GORM;
+    "BUILDER_ARGS" = (
+    );
+    "BUILDER_TARGETS" = (
+	all,
+	install,
+	uninstall,
+	clean,
+	distclean,
+	dist
+    );
+    "BUNDLE_IDENTIFIER" = "org.gap.GShisen";
+    "CLASS_FILES" = (
+	"board.m",
+	"gshisen.m",
+	"tile.m",
+	"tilepair.m"
+    );
+    COMPILEROPTIONS = "";
+    CPPOPTIONS = "";
+    "CREATION_DATE" = "2009-05-28 00:31:02 +0200";
+    "DOCU_FILES" = (
+    );
+    FRAMEWORKS = (
+    );
+    "HEADER_FILES" = (
+	"board.h",
+	"gshisen.h",
+	"tile.h",
+	"tilepair.h"
+    );
+    IMAGES = (
+	"1-1-h.tiff",
+	"1-1.tiff",
+	"1-2-h.tiff",
+	"1-2.tiff",
+	"1-3-h.tiff",
+	"1-3.tiff",
+	"1-4-h.tiff",
+	"1-4.tiff",
+	"2-1-h.tiff",
+	"2-1.tiff",
+	"2-2-h.tiff",
+	"2-2.tiff",
+	"2-3-h.tiff",
+	"2-3.tiff",
+	"2-4-h.tiff",
+	"2-4.tiff",
+	"3-1-h.tiff",
+	"3-1.tiff",
+	"3-2-h.tiff",
+	"3-2.tiff",
+	"3-3-h.tiff",
+	"3-3.tiff",
+	"3-4-h.tiff",
+	"3-4.tiff",
+	"4-1-h.tiff",
+	"4-1.tiff",
+	"4-2-h.tiff",
+	"4-2.tiff",
+	"4-3-h.tiff",
+	"4-3.tiff",
+	"4-4-h.tiff",
+	"4-4.tiff",
+	"5-1-h.tiff",
+	"5-1.tiff",
+	"5-2-h.tiff",
+	"5-2.tiff",
+	"5-3-h.tiff",
+	"5-3.tiff",
+	"5-4-h.tiff",
+	"5-4.tiff",
+	"6-1-h.tiff",
+	"6-1.tiff",
+	"6-2-h.tiff",
+	"6-2.tiff",
+	"6-3-h.tiff",
+	"6-3.tiff",
+	"6-4-h.tiff",
+	"6-4.tiff",
+	"7-1-h.tiff",
+	"7-1.tiff",
+	"7-2-h.tiff",
+	"7-2.tiff",
+	"7-3-h.tiff",
+	"7-3.tiff",
+	"7-4-h.tiff",
+	"7-4.tiff",
+	"8-1-h.tiff",
+	"8-1.tiff",
+	"8-2-h.tiff",
+	"8-2.tiff",
+	"8-3-h.tiff",
+	"8-3.tiff",
+	"8-4-h.tiff",
+	"8-4.tiff",
+	"9-1-h.tiff",
+	"9-1.tiff",
+	"9-2-h.tiff",
+	"9-2.tiff",
+	"9-3-h.tiff",
+	"9-3.tiff",
+	"9-4-h.tiff",
+	"9-4.tiff",
+	"green.tiff",
+	"x.tiff",
+	"GShisen.tiff"
+    );
+    INSTALLDIR = "$(HOME)/GNUstep";
+    INTERFACES = (
+	"GShisen.gorm"
+    );
+    LANGUAGE = English;
+    LIBRARIES = (
+	"gnustep-base",
+	"gnustep-gui"
+    );
+    LINKEROPTIONS = "";
+    "LOCALIZED_RESOURCES" = (
+    );
+    MAININTERFACE = "GShisen.gorm";
+    MAKEFILEDIR = "$(GNUSTEP_MAKEFILES)";
+    "OBJC_COMPILEROPTIONS" = "";
+    "OTHER_RESOURCES" = (
+    );
+    "OTHER_SOURCES" = (
+	"main.m"
+    );
+    "PRINCIPAL_CLASS" = NSApplication;
+    "PROJECT_AUTHORS" = (
+	"The GAP Team",
+	"James Dessart <james@skwirl.ca>",
+	"Enrico Sersale <enrico@imago.ro>",
+	"Larry Coleman <larryliberty@yahoo.com>",
+	"Riccardo Mottola <rm@gnu.org>"
+    );
+    "PROJECT_COPYRIGHT" = "Copyright (C) 2003-2015";
+    "PROJECT_COPYRIGHT_DESC" = "Released under GPL v2 or later";
+    "PROJECT_CREATOR" = "Riccardo Mottola,,,";
+    "PROJECT_DESCRIPTION" = "The first GNUstep Game!";
+    "PROJECT_DOCUMENTTYPES" = (
+    );
+    "PROJECT_GROUP" = "No group avaliable!";
+    "PROJECT_MAINTAINER" = "Riccardo Mottola,,,";
+    "PROJECT_NAME" = GShisen;
+    "PROJECT_RELEASE" = "1.4.0";
+    "PROJECT_SUMMARY" = "No summary avaliable!";
+    "PROJECT_TYPE" = Application;
+    "PROJECT_URL" = "http://gap.nongnu.org/gshisen/";
+    "SEARCH_HEADER_DIRS" = (
+    );
+    "SEARCH_LIB_DIRS" = (
+    );
+    SUBPROJECTS = (
+    );
+    "SUPPORTING_FILES" = (
+	"GNUmakefile.preamble",
+	GNUmakefile,
+	"GNUmakefile.postamble",
+	"GShisenInfo.plist"
+    );
+    "USER_LANGUAGES" = (
+	English
+    );
+}

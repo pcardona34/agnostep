@@ -1,0 +1,262 @@
+# 
+# TODO
+#
+Copyright (C) 2001-2006
+
+Author: Ludovic Marcotte <ludovic@Sophos.ca>
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+# This document lists the features, the bug fixes or the activities
+# that need to be accomplished (or implemented) for the GNUMail project.
+#
+# Features that needs to be implemented are categorized as follow:
+#
+# FVI : Very Interesting
+# FII : Interesting
+# FPI : Potentially Interesting
+# FNI : Not Interesting (will get removed from the list eventually)
+#
+#
+# Bugs are categirized as follow:
+#
+# BUC : Critical Bug (needs a fix very soon)
+# BUM : Medium Bug
+# BUS : Small Bug
+#
+#
+# Refactorings are categorized as RRR.
+#
+# $Id: TODO,v 1.32 2005/01/22 14:10:24 ludo Exp $
+#
+#
+# ID	TYPE	DESCRIPTION
+ 
+  2	BUM	When receiving new mails, prevent the scrollback in the
+		MailWindow.
+
+  5	BUS	Fix all compilation warnings with gcc 3.3.x
+
+  6 	FPI	Be able to drag mailboxes and messages to the Recycler
+
+  7	FII	Offer the possibility to limit the size of messages we are about
+		to download in POP3. Also verify that the message we are about to
+		download fits on the disk.
+
+  10    FVI	Finish the Filter management code:
+		 - Forward + set message
+		 - Bounce message
+     		Some issues must be resolved like: a) should we modify pantomime to accept
+     		the "text" set for the message? b) which account should we use when sending
+     		a message? (should we add the possibility to set a default account in the
+		Sending preferences panel?) etc.
+
+  12	FPI	Be able to view mails before downloading them. Nisus Email does that.
+		See www.nisus.com for some sshots.
+
+  13	FVI	Offer translations on OS X (at least French and Italian since people offered
+		their help for thoses) and update the GNUstep ones for the final 1.1.0 release.
+
+  14	BUS	Fix HTML mails support under OS X. If pictures attached to the mail are referenced
+		in the HTML code, it won't work (ie., the will be considered as normal attachments
+		instead of being replaced in the HTML's content).
+
+  17	FPI	Offer a switch in EditWindow to specify if we want a MIME message or a 
+		text/plain one (like in the original Mail.app).
+
+  18	FPI	In EditWindow's size label, show the row/column position of the cursor.
+
+  26	RRR	On OS X, modify all nibs so we really respect Aqua Human Interface Guidelines.
+
+  27	FVI	Be able to drag and drop attachments in mails from MailWindow/MessageViewWindow
+		to GWorkspace/Finder.
+
+  31	FII	Implement "smart scrolling" in the message displaying code. For example, it would
+		intelligently scroll to the first "unquoted" line of a message. Offer an user
+		option to activate it or not.
+
+  32	FPI	On OS X, add a toolbar popup button option to be able to select a different
+		signature when composing a message (ie., a signature other than the one
+		associated with the sending account).
+
+  34	FVI	Add selection support in the MailHeaderCell.
+
+  35	BUS	Disable the "Save as Text" menu item when it's not a MailWindow/MessageViewWindow
+		that is on top.
+
+  36	BUS	When sorting in an Outbox/Drafts folder, sort using To: and not From:.
+
+  37	FVI	Be able to import mailboxes from:
+		 - Eudora
+		 - Mail.app
+  
+  38	FVI	On OS X, use sheets for:
+		 - opening the AccoutEditorWindow
+		 - opening the FilterEditorWindow
+		 - opening the MimeTypeEditorWindow
+
+  40	FPI	Be able to combine actions in the filtering code. For example, we could
+		play a sound and transfer the mail to a mailbox.
+
+  41	BUM	Modify the filtering code to NOT match a filter a second time when it
+		failed the first time. This slows things down a lot when using an
+		external program like spamassassin and the mail isn't spam.
+
+  44	FVI	Offer a progress indicator (maybe in a separate window or directly in MailWindow) 
+		when compacting a mailbox.
+
+  47	BUS	On OS X, fix the maximize/zoom issue with all windows.
+
+  48	FVI	In the AccountEditorWindow (tab Receive Options for IMAP), offer a way to subscribe
+		and unsubscribe to all listed mailboxes and/or allow multiple selection (the 2nd
+		option might be preferable).
+
+  49	BUC	When deleting a mailbox, remove it from the list of FOLDERS_TO_OPEN and also modify
+		all the filters that had this mailbox as the "Transfer to" target.
+
+  50	FVI	Use a "strike through font" when displaying deleted message in the MailWindow
+		tableview instead of gray+italic.
+
+  51	BUC	When adding a folder (w/o any sub-mailboxes) and adding a filter to transfer messages
+		to it, all of them will be lost. Potentially modify the filtering code to verify
+		if the target mailbox is not a folder and use INBOXFOLDERNAME for the specific
+		account if it's not a mailbox.
+
+  53	FNI	Offer contextual menus on OS X to:
+		 - open a URL in a browser or with app xyz
+
+  55	FVI	Be able "Send later" a mail in EditWindow.
+
+  56	FVI	Save and restore tasks when quitting / reopening GNUMail. Very important for #55.
+
+  57	FPI	Offer a "Send again" option for message in the outbox. Maybe that could just bounce the
+		mail.
+
+  59	FVI	Be able to hit the "escape key" to automatically cancel an operation that open
+		a panel. For example, when create a new mailbox, one could hit the escape key and
+		it'll do the same thing as clicking on the Cancel button.
+
+  61	FNI	Stat() all local mailboxes for new messages, not only Inbox. In case we
+		use procmail to deliver messages to mailboxes. If those mailboxes are
+		open by GNUMail, messages will be lost. A better approach would be to
+		modify GNUMail's main to accept parameters so the application would
+		deliver the messages to a specific mailbox using DO.
+
+  62	FPI	Finish NSAttributedString+TextEnriched to add a producer.
+
+  63	FNI	Set a timer on message reading. For example, we could
+		have a 5 secs timer that will allow us to verify if the user
+		kept the selection on a message for more than 5 secs, If so, we
+		mark this message as read if not, we leave it as unread.
+
+  64	FPI	When there's a network error (ie., bad connection) while automatically
+     		fetching email - we should offer the user the possiblity to deactivate
+     		the alert panel.
+
+  65	FVI	Better support for multipart/related (RFC2387) when displaying messages.
+
+  66	FNI	For IMAP, allow the users to retreive their emails using IMAP much like they
+		do for POP3.
+
+  67	FVI	For IMAP, apply filters automatically when mails are receivied.
+
+  69	FII	The hide deleted/hide read should be saved on a per folder basis and not globally for
+		all folders. Same with the MailWindow size / position.
+
+  70	FII	Be able to apply the filter before and after the program is executed.
+
+  71	FII	Be able to save the version of the message produced by the program.
+
+  72	BUM	Fix the window/tableview/outlineview sizing / position bugs on OS X
+
+  73	RRR	Review all key binding on OS X and GNUstep.
+
+  74	FVI	Make use of Localizable.strings files on OS X.
+
+  76	FNI	Rotate 'sent-mail' (and maybe for other mailboxes) on a monthly basis.
+		This should be rather accomplished by a script (AppleScript or SmallTalk).
+
+  78	RRR	If an error occurs when appending a mail to a folder (ie., if the folder
+		doesn't exist anymore), we might consider creating this folder. Or, a better
+		approach would be to use the default INBOXFOLDERNAME for the specific account.
+
+  79	FVI	Have a compact mailbox icon in the Mailboxes window. If for example,
+		it is applied on a folder, it'll compact all mailboxes in that folder.
+
+  80	FNI	Allow someone to edit incoming mails.
+
+  81	FPI	Offer an option to the user to change the quoting character from > to | (for example).
+  
+  82 	FVI	Filters need a selection for {header: does-not-exist} and {TO:
+		not = one of my accounts} as the simple use of these two filters 
+		combined with positive filters for things like mailing lists can 
+		be used to manage 95% of spam without needing external products or 
+		services.
+
+  83	FPI	Be able to modify a "bounced" message. We should be able to modify
+		the content and also add other headers. See mail from Paul Williamson for
+		a detailed explanation of the requirements.
+
+  85	RRR	Modify the bundle interface (and all bundles) so that if we have a multiple
+		selection, the bundles get informed about that so they can hide some "icons"
+		for example.
+
+  87	FII	Offer a user option ({GS,NX}AutoLaunch == {YES,NO}) to start the application 
+		as shown or hidden.
+
+  88	FII	In the Filter panel, add a "To or From" condition.
+
+  90	FVI	Better search functionnalities:
+		 - search in selected mailboxes (or all)
+		 - ability to match against any field/header in a message (see mail from Finn Smith)
+
+  92	FNI 	Offer a group on top of the address book that list the 10 most recently
+		used addresses.
+
+  95	FPI	Add the focus/unfocus feature in the Mailbox menu like in the original Mail.app.
+
+  97	RRR	Fix all the "FIXME" in the preferences bundles related to posting notifications
+     		when prefs haven't changed.
+
+  98	FPI	Offer a "text view" source for the signature (not only from a program's output
+     		or a file but simply offer a NSTextView object to 'type' the signature in).
+
+  100	FII	Add two new services:
+		 - Attach file(s) - attach selected files to curently edited mail
+	           (not very interesting as you can use DnD)
+		 - Append text to mail content - append selected string to curently edited email.
+		   (that one is not interesting as you can simply use copy/paste)
+
+  101	BUM	Fix all the issues while deleting messages (mainly, selection issues) from
+		the MessageViewWindow. Test with hide and show deleted messages.
+
+  102	FPI	When "switching" between folders, verify the "Compact on close" pref's value so that
+		we automatically compact the folder that is beeing closed.
+
+  103	FII	Add the "Find Text..." panel back (grab it from 1.0.3) and implement the search code
+		(inside the current textview with find & replace options).
+
+  105	FPI	On OS X, we could offer to the user the possibility to store his passwords in the
+		keychain.
+
+  106	FPI	We should be able to DnD addresses from the OS X's Address Book to the To/Cc/Bcc
+		fields in the Compose window and even in GNUMail's Address Book.
+
+  107	RRR	Modify Utilities: +attributedStringFromContentForPart so that we use the 
+		MimeTypeManager for text/* and message/rfc822 parts. The user could specify to
+		always display text/enriched parts (as inline) even if the part had the
+		attachment disposition.
+
+  108	BUS	Fix the verify mail on startup issue with the status label in the MailWindow
+		and/or the animation that is started before the task is actually running.

@@ -1,0 +1,26 @@
+{
+    GWSCoderFault = {
+	detail = {
+	    GWSCoderOrder = (
+		sendSMSFault,
+		exceptionName
+	    );
+	    exceptionName = com.o2.uk.sag.plugin.sms.wespa._sendSMSFault;
+	    sendSMSFault = {
+		Exception = {
+		    GWSCoderOrder = (
+			resultCode,
+			description
+		    );
+		    description = "No AccessSession found: app:-201949163324752630";
+		    resultCode = 12004;
+		};
+		GWSCoderOrder = (
+		    Exception
+		);
+	    };
+	};
+	faultcode = "soapenv:Server.generalException";
+	faultstring = "";
+    };
+}

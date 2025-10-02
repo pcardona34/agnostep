@@ -1,0 +1,82 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                cancelClicked = id; 
+                imapList = id; 
+                imapSupportedMechanismsButtonClicked = id; 
+                okClicked = id; 
+                personalLocationButtonClicked = id; 
+                receiveRememberPasswordClicked = id; 
+                receiveSetAutomatically = id; 
+                receiveSetManually = id; 
+                receiveUseSecureConnectionHasChanged = id; 
+                selectionInPersonalSignaturePopUpHasChanged = id; 
+                sendAuthenticateUsingButtonClicked = id; 
+                sendRememberPasswordClicked = id; 
+                sendSupportedMechanismsButtonClicked = id; 
+                sendTransportMethodHasChanged = id; 
+                sendUseSecureConnectionHasChanged = id; 
+                setType = id; 
+                unixMailspoolFileButtonClicked = id; 
+            }; 
+            CLASS = AccountEditorWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                imapMatrix = NSMatrix; 
+                imapOutlineView = NSOutlineView; 
+                imapSubscriptionColumn = NSTableColumn; 
+                imapSupportedMechanismsPopUp = NSPopUpButton; 
+                imapView = id; 
+                imapViewMailboxColumn = NSTableColumn; 
+                personalAccountNameField = NSTextField; 
+                personalEMailField = NSTextField; 
+                personalLocationButton = NSButton; 
+                personalLocationLabel = NSTextField; 
+                personalNameField = NSTextField; 
+                personalOrganizationField = NSTextField; 
+                personalReplyToField = NSTextField; 
+                personalSignatureField = NSTextField; 
+                personalSignaturePopUp = NSPopUpButton; 
+                personalView = id; 
+                pop3DaysField = NSTextField; 
+                pop3DefaultInboxPopUpButton = NSPopUpButton; 
+                pop3LeaveOnServer = NSButton; 
+                pop3UseAPOP = NSButton; 
+                pop3View = id; 
+                receiveCheckOnStartup = NSButton; 
+                receiveMatrix = NSMatrix; 
+                receiveMinutesField = NSTextField; 
+                receivePasswordSecureField = NSSecureTextField; 
+                receivePopUp = NSPopUpButton; 
+                receiveRememberPassword = NSButton; 
+                receiveServerNameField = NSTextField; 
+                receiveServerPortField = NSTextField; 
+                receiveUseSecureConnection = NSPopUpButton; 
+                receiveUsernameField = NSTextField; 
+                receiveView = id; 
+                sendAuthenticateUsingButton = NSButton; 
+                sendMailerField = NSTextField; 
+                sendMailerView = id; 
+                sendRememberPassword = NSButton; 
+                sendSMTPHostField = NSTextField; 
+                sendSMTPPasswordSecureField = NSSecureTextField; 
+                sendSMTPPortField = NSTextField; 
+                sendSMTPUsernameField = NSTextField; 
+                sendSMTPView = id; 
+                sendSupportedMechanismsButton = NSButton; 
+                sendSupportedMechanismsPopUp = NSPopUpButton; 
+                sendTransportMethodPopUpButton = NSPopUpButton; 
+                sendUseSecureConnection = NSPopUpButton; 
+                sendView = id; 
+                tabView = NSTabView; 
+                unixDefaultInboxPopUpButton = NSPopUpButton; 
+                unixMailspoolFileField = NSTextField; 
+                unixView = id; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

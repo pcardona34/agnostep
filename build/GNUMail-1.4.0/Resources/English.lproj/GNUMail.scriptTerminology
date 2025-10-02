@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Classes</key>
+	<dict>
+		<key>BccRecipient</key>
+		<dict>
+			<key>Description</key>
+			<string>A "Bcc" recipient</string>
+			<key>Name</key>
+			<string>bcc recipient</string>
+			<key>PluralName</key>
+			<string>bcc recipients</string>
+		</dict>
+		<key>CcRecipient</key>
+		<dict>
+			<key>Description</key>
+			<string>A "Cc" recipient</string>
+			<key>Name</key>
+			<string>cc recipient</string>
+			<key>PluralName</key>
+			<string>cc recipients</string>
+		</dict>
+		<key>InternetAddress</key>
+		<dict>
+			<key>Attributes</key>
+			<dict>
+				<key>address</key>
+				<dict>
+					<key>Description</key>
+					<string>Email address of recipient</string>
+					<key>Name</key>
+					<string>address</string>
+				</dict>
+				<key>personal</key>
+				<dict>
+					<key>Description</key>
+					<string>Real name of recipient</string>
+					<key>Name</key>
+					<string>personal</string>
+				</dict>
+			</dict>
+			<key>Description</key>
+			<string>A message recipient</string>
+			<key>Name</key>
+			<string>recipient</string>
+			<key>PluralName</key>
+			<string>recipients</string>
+		</dict>
+		<key>MessageComposition</key>
+		<dict>
+			<key>Attributes</key>
+			<dict>
+				<key>account</key>
+				<dict>
+					<key>Description</key>
+					<string>Specifies mail account from which to send this message</string>
+					<key>Name</key>
+					<string>account</string>
+				</dict>
+				<key>author</key>
+				<dict>
+					<key>Description</key>
+					<string>Author of message</string>
+					<key>Name</key>
+					<string>author</string>
+				</dict>
+				<key>content</key>
+				<dict>
+					<key>Description</key>
+					<string>Body of message</string>
+					<key>Name</key>
+					<string>content</string>
+				</dict>
+				<key>hasSignature</key>
+				<dict>
+					<key>Description</key>
+					<string>Specifies whether the message has a signature</string>
+					<key>Name</key>
+					<string>has signature</string>
+				</dict>
+				<key>signaturePosition</key>
+				<dict>
+					<key>Description</key>
+					<string>Position of signature (top/bottom)</string>
+					<key>Name</key>
+					<string>signature position</string>
+				</dict>
+				<key>subject</key>
+				<dict>
+					<key>Description</key>
+					<string>Subject of message</string>
+					<key>Name</key>
+					<string>subject</string>
+				</dict>
+			</dict>
+			<key>Description</key>
+			<string>A message composition</string>
+			<key>Name</key>
+			<string>message composition</string>
+			<key>PluralName</key>
+			<string>message compositions</string>
+		</dict>
+		<key>NSApplication</key>
+		<dict>
+			<key>Description</key>
+			<string>Main application class</string>
+			<key>Name</key>
+			<string>application</string>
+			<key>PluralName</key>
+			<string>applications</string>
+		</dict>
+		<key>ToRecipient</key>
+		<dict>
+			<key>Description</key>
+			<string>A "To" recipient</string>
+			<key>Name</key>
+			<string>to recipient</string>
+			<key>PluralName</key>
+			<string>to recipients</string>
+		</dict>
+	</dict>
+	<key>Commands</key>
+	<dict>
+		<key>Attach</key>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>file</key>
+				<dict>
+					<key>Description</key>
+					<string>File name of attachment</string>
+					<key>Name</key>
+					<string>file</string>
+				</dict>
+			</dict>
+			<key>Description</key>
+			<string>Adds an attachment</string>
+			<key>Name</key>
+			<string>attach</string>
+		</dict>
+		<key>GetURL</key>
+		<dict>
+			<key>Description</key>
+			<string>Opens a URL</string>
+			<key>Name</key>
+			<string>get URL</string>
+		</dict>
+		<key>OpenURL</key>
+		<dict>
+			<key>Description</key>
+			<string>Opens a URL</string>
+			<key>Name</key>
+			<string>open URL</string>
+		</dict>
+		<key>SendMessage</key>
+		<dict>
+			<key>Description</key>
+			<string>Sends a message</string>
+			<key>Name</key>
+			<string>send</string>
+		</dict>
+		<key>ShowMessage</key>
+		<dict>
+			<key>Description</key>
+			<string>Shows a message</string>
+			<key>Name</key>
+			<string>show</string>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>Scripting interface for GNUMail</string>
+	<key>Name</key>
+	<string>GNUMail script suite</string>
+</dict>
+</plist>

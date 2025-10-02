@@ -1,0 +1,23 @@
+{
+    /* STScriptingInfoClass = GNUMailScriptingInfo; */
+
+    /* Uncomment following line to iclude GNUMail scripting environment. 
+      (not yet implemented)
+    */
+    
+    /* STSCriptingEnvironment = GNUMail; */
+    
+    STClasses = (
+	AddressBook,
+        BccRecipient,
+        CcRecipient,
+        InternetAddress,
+        MessageComposition,
+        ToRecipient
+     );
+     
+     STObjects = 
+     {
+        
+     };
+}

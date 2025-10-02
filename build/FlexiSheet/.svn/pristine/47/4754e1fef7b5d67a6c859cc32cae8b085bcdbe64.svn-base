@@ -1,0 +1,211 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/FSKeyRange">FSKeyRange</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>NSObject</DD>
+</DL></blockquote>
+
+
+
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSKeyRange.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+No class description.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Variables</H2>
+	<blockquote>
+	
+		<CODE>id&lt;FSItem&gt; <B>_1st</B>;</CODE><BR>
+		<CODE>id&lt;FSItem&gt; <B>_2nd</B>;</CODE><BR>
+		<CODE>NSArray *<B>_keyCache</B>;</CODE><BR>
+	<P><TABLE>
+	
+		<TR><TD>_1st</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_2nd</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_keyCache</TD><TD>No description.</TD></TR>
+	
+	</TABLE>
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#+ keyRangeFromItem:toItem:">+ keyRangeFromItem:toItem:</A></DD>
+		
+			<DD> <A HREF="#+ keyRangeWithRange:inGroup:">+ keyRangeWithRange:inGroup:</A></DD>
+		
+			<DD> <A HREF="#- table">- table</A></DD>
+		
+			<DD> <A HREF="#- header">- header</A></DD>
+		
+			<DD> <A HREF="#- group">- group</A></DD>
+		
+			<DD> <A HREF="#- creatorString">- creatorString</A></DD>
+		
+			<DD> <A HREF="#- indexRange">- indexRange</A></DD>
+		
+			<DD> <A HREF="#- keyIndexRange">- keyIndexRange</A></DD>
+		
+			<DD> <A HREF="#- keysInRange">- keysInRange</A></DD>
+		
+			<DD> <A HREF="#- itemsInRange">- itemsInRange</A></DD>
+		
+			<DD> <A HREF="#- isSingleItem">- isSingleItem</A></DD>
+		
+			<DD> <A HREF="#- singleItem">- singleItem</A></DD>
+		
+			<DD> <A HREF="#- isAtTop">- isAtTop</A></DD>
+		
+			<DD> <A HREF="#- isAtBottom">- isAtBottom</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Class Methods</H2>
+ 
+	
+		
+		<A NAME="+ keyRangeFromItem:toItem:"></A><H3><A NAME="//apple_ref/occ/clm/FSKeyRange/keyRangeFromItem:toItem:">keyRangeFromItem:toItem:</A></H3>
+		<CODE>+ (FSKeyRange*)<B>keyRangeFromItem:</B>(id&lt;FSItem&gt;)<EM>first</EM> <B>toItem:</B>(id&lt;FSItem&gt;)<EM>second</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="+ keyRangeWithRange:inGroup:"></A><H3><A NAME="//apple_ref/occ/clm/FSKeyRange/keyRangeWithRange:inGroup:">keyRangeWithRange:inGroup:</A></H3>
+		<CODE>+ (FSKeyRange*)<B>keyRangeWithRange:</B>(NSRange)<EM>range</EM> <B>inGroup:</B>(FSKeyGroup*)<EM>group</EM>
+			
+		</CODE><P>
+		No method description.
+	
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- creatorString"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyRange/creatorString">creatorString</A></H3><P>
+		<CODE>- (NSString*)<B>creatorString</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- group"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyRange/group">group</A></H3><P>
+		<CODE>- (FSKeyGroup*)<B>group</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- header"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyRange/header">header</A></H3><P>
+		<CODE>- (FSHeader*)<B>header</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- indexRange"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyRange/indexRange">indexRange</A></H3><P>
+		<CODE>- (NSRange)<B>indexRange</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- isAtBottom"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyRange/isAtBottom">isAtBottom</A></H3><P>
+		<CODE>- (BOOL)<B>isAtBottom</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- isAtTop"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyRange/isAtTop">isAtTop</A></H3><P>
+		<CODE>- (BOOL)<B>isAtTop</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- isSingleItem"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyRange/isSingleItem">isSingleItem</A></H3><P>
+		<CODE>- (BOOL)<B>isSingleItem</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- itemsInRange"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyRange/itemsInRange">itemsInRange</A></H3><P>
+		<CODE>- (NSArray*)<B>itemsInRange</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- keyIndexRange"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyRange/keyIndexRange">keyIndexRange</A></H3><P>
+		<CODE>- (NSRange)<B>keyIndexRange</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- keysInRange"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyRange/keysInRange">keysInRange</A></H3><P>
+		<CODE>- (NSArray*)<B>keysInRange</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- singleItem"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyRange/singleItem">singleItem</A></H3><P>
+		<CODE>- (id&lt;FSItem&gt;)<B>singleItem</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- table"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyRange/table">table</A></H3><P>
+		<CODE>- (FSTable*)<B>table</B>
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2002 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

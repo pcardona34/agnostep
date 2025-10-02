@@ -1,0 +1,36 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    EditorWindow = {
+	Actions = (
+	);
+	Outlets = (
+	);
+	Super = NSWindow;
+    };
+    FirstResponder = {
+	Actions = (
+	    "goToLineNumber:"
+	);
+	Super = NSObject;
+    };
+    GemasDocument = {
+	Actions = (
+	    "goToLineNumber:"
+	);
+	Outlets = (
+	    textView,
+	    numberLine,
+	    numberColumn,
+	    documentWindow
+	);
+	Super = NSDocument;
+    };
+    GemasEditorView = {
+	Actions = (
+	);
+	Outlets = (
+	    editorDocument
+	);
+	Super = NSTextView;
+    };
+}

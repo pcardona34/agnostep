@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ####################################################
-###A G N o S t e p  -  Desktop - by Patrick Cardona
+### A G N o S t e p  -  Desktop - by Patrick Cardona
 ### pcardona34 @ Github
 ###
 ### Thanks for the GNUstep Developers Community
@@ -35,7 +35,7 @@ _PWD=`pwd`
 function install_apps()
 {
 . SCRIPTS/inst_apps.sh
-. SCRIPTS/inst_rpi_tools.sh
+#. SCRIPTS/inst_rpi_tools.sh
 }
 ### End of apps
 ####################################################

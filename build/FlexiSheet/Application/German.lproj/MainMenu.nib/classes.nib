@@ -1,0 +1,82 @@
+{
+    IBClasses =     (
+                {
+            ACTIONS =             {
+                showFunctionHelp = id;
+                showInspector = id;
+                showSplash = id;
+            };
+            CLASS = FSController;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                docBrowser = NSPanel;
+                docOutline = SLOutlineView;
+                inspector = FSInspector;
+            };
+            SUPERCLASS = NSDocumentController;
+        },
+                {
+            ACTIONS =             {
+                showInspector = id;
+            };
+            CLASS = FSInspector;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSObject;
+        },
+                {
+            ACTIONS =             {
+                showPreferences = id;
+                toggleSaveCompressed = id;
+                toggleShowBrowser = id;
+            };
+            CLASS = FSPreferences;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                prefPanel = id;
+                saveCompressedSwitch = id;
+                showBrowserSwitch = id;
+                tabView = id;
+            };
+            SUPERCLASS = NSObject;
+        },
+                {
+            ACTIONS =             {
+                addDimension = id;
+                addFormula = id;
+                closeDocument = id;
+                copyAsGraphic = id;
+                copyStyle = id;
+                exportTable = id;
+                groupItems = id;
+                hideItems = id;
+                importTable = id;
+                insertItem = id;
+                moveItemDown = id;
+                moveItemUp = id;
+                newTable = id;
+                newTableView = id;
+                openViewFromTableBrowser = id;
+                orderFrontStylesPanel = id;
+                orderFrontTableBrowser = id;
+                pasteStyle = id;
+                recalculate = id;
+                showFunctionHelp = id;
+                showItems = id;
+                sortItems = id;
+                toggleAutoCalculation = id;
+                toggleFormulaArea = id;
+                transpose = id;
+                ungroupItems = id;
+            };
+            CLASS = FirstResponder;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSObject;
+        },
+                {
+            CLASS = SLOutlineView;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSOutlineView;
+        }
+    );
+    IBVersion = 1;
+}

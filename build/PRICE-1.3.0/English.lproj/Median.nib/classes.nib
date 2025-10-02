@@ -1,0 +1,25 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {changeSize = id; showMedian = id; }; 
+            CLASS = PRCMedian; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                formSelect = NSPopUpButton; 
+                medianWindow = NSWindow; 
+                separableCheck = NSButton; 
+                sizeField = NSTextField; 
+                sizeSlider = NSSlider; 
+            }; 
+            SUPERCLASS = PRFilterController; 
+        }, 
+        {
+            ACTIONS = {filterCancel = id; filterOK = id; parametersChanged = id; showFilter = id; }; 
+            CLASS = PRFilterController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

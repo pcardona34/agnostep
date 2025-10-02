@@ -1,0 +1,34 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    FirstResponder = {
+	Actions = (
+	    "cleanPreview:",
+	    "scaleFromMenu:",
+	    "updatePreview:"
+	);
+	Super = NSObject;
+    };
+    PRImageView = {
+	Actions = (
+	);
+	Outlets = (
+	);
+	Super = NSImageView;
+    };
+    PRPreviewController = {
+	Actions = (
+	    "cleanPreview:",
+	    "updatePreview:",
+	    "scaleFromMenu:"
+	);
+	Outlets = (
+	    previewWindow,
+	    buttContinuous,
+	    view,
+	    scalePopUp,
+	    progressBar,
+	    activityDescription
+	);
+	Super = NSObject;
+    };
+}

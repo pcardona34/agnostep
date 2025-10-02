@@ -1,0 +1,33 @@
+{
+    ApplicationDescription = "Vector drawing";
+    ApplicationIcon = "graphos_appicon_48.tif";
+    ApplicationName = Graphos;
+    ApplicationRelease = "0.7";
+    Authors = (
+	"Riccardo Mottola",
+	"Enrico Sersale",
+	"Rob Burns"
+    );
+    CFBundleIdentifier = "org.gap.Graphos";
+    Copyright = "Copyright (C) 2005-2019";
+    CopyrightDescription = "Released under GPL v2+";
+    FullVersionID = "0.7";
+    NSExecutable = Graphos;
+    NSIcon = "graphos_appicon_48.tif";
+    NSMainNibFile = "MainMenu.gorm";
+    NSPrincipalClass = NSApplication;
+    NSRole = Application;
+    NSTypes = (
+	{
+	    NSDocumentClass = GRDocument;
+	    NSHumanReadableName = "Graphos drawing";
+	    NSIcon = "graphos_doc_icon_48.tif";
+	    NSName = "graphos design";
+	    NSRole = Editor;
+	    NSUnixExtensions = (
+		gdr
+	    );
+	}
+    );
+    URL = "http://gap.nongnu.org/graphos/";
+}

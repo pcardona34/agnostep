@@ -1,0 +1,13 @@
+Copyright (C) 2010 German A. Arias <german@xelalug.org>
+
+Copying and distribution of Gemas.tiff file in this folder, with or without modification,
+are permitted in any medium without royalty. Provided the copyright
+notice and this notice are preserved.
+
+
+The other files in this folder (FileIcon_XXXX.XX.tiff), comes from gnustep-icons package 
+of Andrew Lindesay and James Jordan. And are covered by the same licence that the 
+gnustep-icons package (see NEWS.txt file on that package). Some icons have modifications.
+
+http://ftpmain.gnustep.org/pub/gnustep/contrib/gnustep-icons-1.1.tar.gz
+

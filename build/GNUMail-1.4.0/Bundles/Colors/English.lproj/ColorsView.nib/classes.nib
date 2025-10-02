@@ -1,0 +1,21 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {colorQuoteLevelButtonClicked = id; }; 
+            CLASS = ColorsViewController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                colorQuoteLevelButton = NSButton; 
+                level1ColorWell = NSColorWell; 
+                level2ColorWell = NSColorWell; 
+                level3ColorWell = NSColorWell; 
+                level4ColorWell = NSColorWell; 
+                mailHeaderCellColorWell = NSColorWell; 
+                view = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

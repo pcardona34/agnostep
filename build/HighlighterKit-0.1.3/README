@@ -1,0 +1,49 @@
+
+ HighlighterKit Framework README
+ *******************************
+
+ This package contains the source distribution of the HighlighterKit
+ framework. HighlighterKit is a framework to allow easy incorporation of
+ syntax highlighting features into your application.
+
+
+ INSTALLATION
+ ------------
+
+ You must install the GNUstep framework in order to be able to compile
+ and use HighlighterKit. After that use the following commands:
+
+ $ make
+ $ make install
+
+
+ DOCUMENTATION
+ -------------
+
+ The source code contains Doxygen documentation for all parts of the
+ framework and it's usage. To generate the documentation you need to
+ install Doxygen and then invoke the following command in the
+ framework's directory:
+
+ $ doxygen
+
+ This will generate docs in the Documentation subdirectory in HTML
+ format. To change the way documentation is generated (e.g. add more
+ types of output formats) edit the Doxyfile file.
+
+
+ AUTHORS (names encoded in UTF-8)
+ --------------------------------
+
+ Sašo Kiselkov <skiselkov@gmail.com> (Original Author)
+ Germán A. Arias <german@xelalug.org> (Current Maintainer)
+
+
+ LICENSE
+ -------
+
+ This framework and all it's components are released under the terms of
+ the GNU Lesser General Public License v2.1. The text of the license is
+ included in the file COPYING. Associated documentation is released the
+ terms of the GNU Free Documentation License v1.2 or any later. For the
+ text of GNU Free Documentation License please see the file COPYING.fdl.

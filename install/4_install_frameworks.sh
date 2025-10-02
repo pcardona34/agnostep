@@ -71,7 +71,7 @@ clear
 title "Frameworks"
 echo "Frameworks" > $LOG
 
-LIST="apps" && install_deps
+LIST="apps" && install_deps || exit 1
 
 if ! [ -d ../build ];then
 	mkdir -p ../build

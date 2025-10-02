@@ -1,0 +1,147 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/FSTableView (Selection)">FSTableView (Selection)</A></H1></FONT><BR>
+
+
+
+
+
+	<blockquote><DL><DT><B>Conforms To:</B></DT>
+	<DD>FSVarioMatrixDataSource</DD>
+</DL></blockquote>
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSTableView.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Category Description</H2>
+No category description.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- hasDataSelection">- hasDataSelection</A></DD>
+		
+			<DD> <A HREF="#- selection">- selection</A></DD>
+		
+			<DD> <A HREF="#- setSelection:">- setSelection:</A></DD>
+		
+			<DD> <A HREF="#- hasItemSelection">- hasItemSelection</A></DD>
+		
+			<DD> <A HREF="#- selectedItems">- selectedItems</A></DD>
+		
+			<DD> <A HREF="#- selectedRowItems">- selectedRowItems</A></DD>
+		
+			<DD> <A HREF="#- selectedColumnItems">- selectedColumnItems</A></DD>
+		
+			<DD> <A HREF="#- selectItems:">- selectItems:</A></DD>
+		
+			<DD> <A HREF="#- styleForKeySet:">- styleForKeySet:</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- hasDataSelection"></A><H3><A NAME="//apple_ref/occ/instm/FSTableView (Selection)/hasDataSelection">hasDataSelection</A></H3><P>
+		<CODE>- (BOOL)<B>hasDataSelection</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- hasItemSelection"></A><H3><A NAME="//apple_ref/occ/instm/FSTableView (Selection)/hasItemSelection">hasItemSelection</A></H3><P>
+		<CODE>- (BOOL)<B>hasItemSelection</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- selectItems:"></A><H3><A NAME="//apple_ref/occ/instm/FSTableView (Selection)/selectItems:">selectItems:</A></H3><P>
+		<CODE>- (void)<B>selectItems:</B>(FSKeyRange*)<EM>range</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- selectedColumnItems"></A><H3><A NAME="//apple_ref/occ/instm/FSTableView (Selection)/selectedColumnItems">selectedColumnItems</A></H3><P>
+		<CODE>- (FSKeyRange*)<B>selectedColumnItems</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- selectedItems"></A><H3><A NAME="//apple_ref/occ/instm/FSTableView (Selection)/selectedItems">selectedItems</A></H3><P>
+		<CODE>- (FSKeyRange*)<B>selectedItems</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- selectedRowItems"></A><H3><A NAME="//apple_ref/occ/instm/FSTableView (Selection)/selectedRowItems">selectedRowItems</A></H3><P>
+		<CODE>- (FSKeyRange*)<B>selectedRowItems</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- selection"></A><H3><A NAME="//apple_ref/occ/instm/FSTableView (Selection)/selection">selection</A></H3><P>
+		<CODE>- (FSSelection*)<B>selection</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setSelection:"></A><H3><A NAME="//apple_ref/occ/instm/FSTableView (Selection)/setSelection:">setSelection:</A></H3><P>
+		<CODE>- (void)<B>setSelection:</B>(FSSelection*)<EM>sel</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- styleForKeySet:"></A><H3><A NAME="//apple_ref/occ/instm/FSTableView (Selection)/styleForKeySet:">styleForKeySet:</A></H3><P>
+		<CODE>- (FSCellStyle*)<B>styleForKeySet:</B>(FSKeySet*)<EM>set</EM>
+			
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2002 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

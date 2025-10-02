@@ -1,82 +1,9 @@
-		<section name="Why?">
 
-			<section name="Sound without HDMI">
+<section name="Saving the settings of the Mixer">
 
-		Some computers have a jack, others not. On some computers (like Raspberry Pi's) the system is set by design to use the sound over HDMI. This should work out of the box if you have also a multimedia screen with embedded speakers.
+We must set and save the default volume level at startup.
 
-			<br /><br />In the case you have not such a multimedia screen, but a USB to jack adaptor for external wired speakers, you need to modify the default settings to make the sound work.
-
-
-			</section>
-
-			<section name="Understanding the default settings">
-
-		So the default settings use sound over HDMI. If you have plugged wired speakers over USB to Jack adatator, you should see that your card is listed in the third place, with the ID 2, after the two HDMI ports, respectively with ID 0 and ID 1. Use the command (1) below to verify that assumption:<br />
-
-		<listing>
-		<code> 
-		<br />Command (1):<br />
-		cat&nbsp;proc/asound/cards&nbsp;&nbsp;
-		<br />&nbsp;
-		</code>
-		</listing>
-
-			</section>
-
-		</section>
-
-		
-		<section name="Resolving the issue">
-
-			<section name="STEP 1 &mdash; Disabling the sound over HDMI">
-
-		So we need to disable the sound over HDMI. The relevant instruction will be set via a directive in the <code>'config.txt'</code> file on Raspberry Pi's. We must edit this file as a superuser with the 'sudo' command:<br />
-
-		<listing>
-		<br />Command (2):<br />
-		<code>sudo&nbsp;nano&nbsp;/boot/firmware/config.txt</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<br />&nbsp;&nbsp;
-		</listing>
-
-		<br />You must find this line, which loads a kernel module for the video system:<br />
-
-		<information>
-		<br />
-		<code>dtoverlay=vc4-kms-v3d</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<br />&nbsp;
-		</information>
-
-		<br />And you must add at the end of that line the param: 
-		<br /><code>'noaudio'</code> after a comma like this:<br />
-
-		<note>
-		<br />
-		<code>dtoverlay=vc4-kms-v3d,noaudio</code>&nbsp;&nbsp;&nbsp;&nbsp;
-		<br />&nbsp;
-		</note>
-
-		<br>Save the file using the <b>F3</b>&nbsp; shortcut key and close it with <b>F2</b>&nbsp;. Then, reboot the Pi:<br />
-
-		<listing>
-		<br />Command (3):<br />
-		<code> sudo reboot </code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<br />&nbsp;
-		</listing>
-		
-		<br />And after login, verify the setting has changed with the command&nbsp;(1). You should now see only the active USB card, in my case: <code>'UC02'</code> with the ID zero:
-
-		<information>
-		<br /><code>0 [UC02]: USB-Audio - UC02 </code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<br /><code>UC02 UC02 at usb-0000:01:00.0-1.3.3, full speed</code><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<br />&nbsp;&nbsp;&nbsp;
-		</information>
-
-</section>
-			<section name="STEP 2 &mdash; Saving the settings of the Mixer">
-
-			Now we have the desired default mixer, we must set the default volume level at startup.
-
-			<br>To do this, you must open once the CLI ALSA Mixer in the console (or in the Terminal App) like this:<br>
+<br>To do this, you must open once the CLI ALSA Mixer in the console (or in the Terminal App) like this:<br>
 
 		<listing>
 			alsamixer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -99,7 +26,7 @@
 					sudo&nbsp;alsactl&nbsp;store&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				</listing>
 				</li>
-				<li>Logout the Desktop and then restart the Raspberry Pi:
+				<li>Logout the Desktop and then restart the computer:
 				<br>
 				<listing>
 					sudo&nbsp;reboot&nbsp;&nbsp;&nbsp;&nbsp;
@@ -107,13 +34,10 @@
 				</li>
 			</ol>
 
-			
+</section>
 
-			</section>
-		</section>
-
-		<section name="Testing the sound">
-			<section name="Listening to Music using Cynthiune">
+<section name="Testing the sound">
+<section name="Listening to Music using Cynthiune">
 
 			Open the application 'Cynthiune'. From the the 'Samples' or the 'Music' Folder, drag ans drop a music file onto the playlist window of Cynthiune. Play the sample.
 
@@ -124,9 +48,9 @@
 				</legendfig>
 			</section>
 
-			</section>
+</section>
 
-			<section name="VolumeControl">
+<section name="VolumeControl">
 
 				Open the application: 'VolumeControl'... Set the desired volume with the PCM gauge.
 
@@ -138,7 +62,5 @@
 
 				
 
-			</section>
-
-			
-	</section>
+</section>
+</section>

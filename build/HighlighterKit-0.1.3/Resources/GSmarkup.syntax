@@ -1,0 +1,772 @@
+/*
+ * Highlighting rules for the GSmarkup language of the HighlighterKit
+ * framework.
+ */
+{
+  Contexts = (
+    {
+      Keywords = (
+        {
+          Pattern = ";";
+          ForegroundColor = "0.8 0 0.5";
+          Bold = YES;
+        },
+        {
+          Pattern = "\\*";
+          ForegroundColor = "0.6 0.6 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "#";
+          ForegroundColor = "0.6 0.6 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "/";
+          ForegroundColor = "0.6 0.6 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<gsmarkup>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<box>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<browser>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<button>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<colorWell>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<control>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<form>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<formItem>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<grid>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<gridEmptyCell>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<gridRow>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<hbox>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<hspace>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<image>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<instance>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<label>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<matrix>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<matrixCell>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<matrixRow>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<menu>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<menuItem>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<menuSeparator>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<objectAdditions>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<outlineView>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<panel>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<popUpButton>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<popUpButtonItem>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<scrollView>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<secureTextField>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<space>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        { 
+          Pattern = "<splitView>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<stepper>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<tableColumn>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<tableView>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<tabView>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<tabViewItem>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<textField>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<textView>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<vbox>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<view>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<vspace>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<window>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<outlet>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<objects>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<connectors>";
+          ForegroundColor = "0.6 0.45 0.75";
+          Bold = YES;
+        },
+        {
+          Pattern = "<id>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<action>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<allowsCutCopyPaste>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<allowsEditingTextAttributes>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<allowsTruncatedLabels>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<alternateImage>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<alternateTitle>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<animates>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<autoenablesItems>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<autoresizesSubviews>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<autoresizingMask>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<autosaveName>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<backgroundColor>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<becomeKeyOnlyIfNeeded>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<bordered>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<borderless>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<borderType>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<bottomPadding>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<center>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<closable>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<color>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<columnSpan>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<columnType>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<contentHeight>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<contentWidth>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<continuous>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<drawsBackground>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<editable>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<enabled>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<floating>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<font>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<frameStyle>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<halign>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<hasFrame>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<hPadding>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<height>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<hidden>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<identifier>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<image>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<imageAlignment>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<imagePosition>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<importsGraphics>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<instanceOf>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<isPaneSplitter>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<key>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<keyEquivalent>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<keyEquivalentModifierMask>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<keyWindow>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<label>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<leftPadding>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<mainWindow>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<maxHeight>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<maxWidth>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<minHeight>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<minWidth>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<miniaturizable>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<name>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<padding>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<proportion>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<releasedWhenClosed>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<resizable>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<rightPadding>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<rowSpan>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<rowType>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<scaling>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<selectable>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<sendActionOn>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<sound>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<source>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<state>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<tag>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<target>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<textAlignment>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<textColor>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<title>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<titled>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<titleFont>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<titlePosition>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<toolTip>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<topPadding>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<type>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<valign>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<vertical>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<viewType>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<visible>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<vPadding>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<width>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<worksWhenModal>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<x>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<y>";
+          ForegroundColor = "0.0 0.0 1.0";
+          Bold = YES;
+        }
+      );
+    },
+
+
+    /* string */
+    {
+      Beginning = "\"";
+      Ending = "\"";
+      ContextSkips = (
+        "\\\\\\\\",
+        "\\\\\""
+      );
+      ForegroundColor = "0 0.7 0";
+      Keywords = (
+        {
+          Pattern = "\\\\\\\\";
+          ForegroundColor = "0 1 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "\\\\[0123456789]{3}";
+          ForegroundColor = "0 1 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "\\\\0";
+          ForegroundColor = "0 1 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "\\\\\"";
+          ForegroundColor = "0 1 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "\\\\[ntfb]";
+          ForegroundColor = "0 1 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "%ll[iu]";
+          ForegroundColor = "0 1 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "%[0123456789]*\\.?[0123456789]*l?[%@cdefginosupxX]";
+          ForegroundColor = "0 1 0";
+          Bold = YES;
+        }
+      );
+    },
+
+
+    /* multi-line comment */
+    {
+      Beginning = "\\<!--";
+      Ending = "\\-\\>";
+      ForegroundColor = "0 0.5 0";
+      Italic = YES;
+      Keywords = (
+        {
+          Pattern = "<TODO>";
+          ForegroundColor = "0.8 0.1 0.1";
+          Bold = YES;
+        }
+      );
+    }
+  );
+}

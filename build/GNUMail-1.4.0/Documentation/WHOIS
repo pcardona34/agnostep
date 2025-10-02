@@ -1,0 +1,115 @@
+Ludovic Marcotte <ludovic@Sophos.ca>
+====================================
+Copyright (C) 2001-2006
+
+Author: Ludovic Marcotte <ludovic@Sophos.ca>
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+====================================
+- Main developer
+
+
+Martin Brecher <martin@stupid-design.com>
+=========================================
+- German translation
+- GNUMail / Pantomime User Manual
+
+
+Vincent Ricard <vricard@wanadoo.fr>
+===================================
+- Mailcap parser / import feature 
+  (this code was removed from GNUMail)
+- Parts of the English and French translations
+- Password encryption in user's defaults
+- Bug fixes
+
+
+Stéphane Peron <s.peron@free.fr>
+================================
+- French translation
+
+
+Jonathan B. Leffert <jonathan@leffert.net>
+==========================================
+- Parts of the old Address Book code (has
+  been removed from the application)
+- Refactorings
+
+
+Erik Dalen <dalen@jpl.nu>
+=========================
+- Swedish translation
+- Bug fixes
+
+
+Francis Lachapelle <francis@Sophos.ca>
+======================================
+- Most Mac OS X NIB:s
+- NSRegEx code
+- DnD, Copy & Paste code 
+- Bug fixing, refactorings and new features
+- and more...
+
+
+Luis Garcia Alanis <luis@sogrp.com> & Quique <enrique.matias-eds@eds.com>
+=========================================================================
+- Spanish translation
+
+
+Pierre-Yves Rivaille <pyrivail@ens-lyon.fr>
+===========================================
+- Sorting code
+- ExtendedTableView / ExtendedTableColumn
+- Optimizations
+- and more...
+
+
+Nicolas Roard <nicolas@roard.com>
+=================================
+- MailHeaderCell
+
+
+Ujwal S. Sathyam <ujwal@setlurgroup.com>
+========================================
+- MessageViewWindow.nib and MessageViewWindowController
+- Mac OS X 10.2 Address Book integration code
+- ExtendedTextView (for DnD code with Finder)
+- Other new features and some refactoring
+
+
+Jeff Meininger <jeffm@boxybutgood.com>
+======================================
+- some icons
+
+
+Andrew Lindesay <apl@lindesay.co.nz>
+==================================
+- most icons
+
+
+Jeff Teunissen <deek@d2dc.net>
+==============================
+- rotating GNUstep logo
+
+
+Petr Malat <petris@penguin.cz>
+==============================
+- Czech translation
+
+
+Ken Ferry <kenferry@mac.com>
+============================
+- Auto-completing text field class
+- Bug fixes

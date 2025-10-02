@@ -1,0 +1,91 @@
+2014-02-05 German Arias <germanandre@gmx.es>
+
+	* GNUmakefile: Update version to 0.1.3.
+
+2013-10-27 German Arias <germanandre@gmx.es>
+        
+        * Resources/Plist.syntax: Remove "," since are causing strange
+        problems (slow highlighter).
+
+2013-03-10 German A. Arias <german@xelalug.org>
+
+	* Resources/GSmarkup.syntax: Fix typos.
+
+2013-03-01 German A. Arias <german@xelalug.org>
+
+	* HKSyntaxHighlighter.h:
+	* HKSyntaxHighlighter.m:
+	* HKSyntaxDefinition.h:
+	* HKSyntaxDefinition.m: Fix compiler warnings with clang.
+
+2012-02-04 German Arias <german@xelalug.org>
+        
+        * Resources/Plist.syntax:
+        * Resources/ChangeLog.syntax: Last fix for 0.1.2.
+
+2012-02-03 German Arias <german@xelalug.org>
+
+        * Resources/Generic.syntax:
+        * Resources/Changelog.syntax:
+        * GNUmakefile: New syntax files.
+        * Resources/GNMUmakefile.syntax: Improvements.
+
+2012-01-27 German Arias <german@xelalug.org>
+
+        * Resources/ObjC.syntax: Improvements.
+
+2012-01-27 German Arias <german@xelalug.org>
+
+        * Resources/GNUmakefile.syntax: Improvements.
+
+2012-01-27 German Arias <german@xelalug.org>
+
+        * GNUmakefile: Updated to 0.1.2.
+        * HighlighterKitInfo.plist:
+        * HighlighterKit.h: Updated year.
+        * README: Updated authors.
+        * HSSyntaxDefinition.h:
+        * HKSyntaxDefinition.m: New class method -themeDidChange. And
+        new configuration variable HKTheme. This variable store the
+        path to the desired syntax definition files. And is used in
+        method -findSyntaxFileForType:.
+
+2011-05-18 German Arias <german@xelalug.org>
+
+        * HKSyntaxDefinition.m: Applied patch of Sebastian Reitenbach
+        <sebastia@l00-bugdead-prods.de> to compile with gcc-2.95.
+
+2011-05-16 German Arias <german@xelalug.org>
+
+        * GNUmakefile: Updated to 0.1.1
+
+2011-05-15 German Arias <german@xelalug.org>
+
+        * Repository: Moved to "GNUstep Non-FSF" at GNA.
+
+2007-12-02  Saso Kiselkov <skiselkov@gmail.com>
+
+        * Resources/C-Header.syntax:
+        * Resources/C.syntax:
+        * Resources/C++.syntax:
+        * Resources/ObjC.syntax:
+        * Resources/ObjC++.syntax: Added 'l' conversion qualifier, so that '%lf' and simmilar
+          constructs are highlighted properly.
+
+2007-04-08  Saso Kiselkov <skiselkov@gmail.com>
+
+        * Resources/ObjC.syntax:
+        * Resources/ObjC++.syntax:
+        * Resources/C-Header.syntax: Added Objective-C DO-related type qualifiers.
+
+2006-11-26  Saso Kiselkov <skiselkov@gmail.com>
+
+        * Resources/ObjC.syntax:
+        * Resources/ObjC++.syntax:
+        * Resources/C.syntax:
+        * Resources/C++.syntax:
+        * Resources/C-Header.syntax: Added some keyword highlighting
+          rules for strings.
+        * HKTextPattern.m: Fixed text pattern parsing algorithms.
+        * HKSyntaxHighlighter.m: Added documentation.
+        * ChangeLog: Added a ChangeLog.

@@ -1,0 +1,115 @@
+/*
+ * Highlighting rules for Localizable.strings files of the HighlighterKit
+ * framework.
+ */
+{
+  Contexts = (
+    {
+      Keywords = (
+        {
+          Pattern = ";";
+          ForegroundColor = "1.0 0 0.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "=";
+          ForegroundColor = "1.0 0 0.0";
+          Bold = YES;
+        }
+      );
+    },
+
+    /* string */
+    {
+      Beginning = "\"";
+      Ending = "\"";
+      ContextSkips = (
+        "\\\\\\\\",
+        "\\\\\""
+      );
+      ForegroundColor = "1.0 0.0 1.0";
+      Keywords = (
+        {
+          Pattern = "\\\\\\\\";
+          ForegroundColor = "0 1 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "\\\\[0123456789]{3}";
+          ForegroundColor = "0 1 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "\\\\0";
+          ForegroundColor = "0 1 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "\\\\\"";
+          ForegroundColor = "0 1 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "\\\\[ntfb]";
+          ForegroundColor = "0 1 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "%ll[iu]";
+          ForegroundColor = "0 1 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "%[0123456789]*\\.?[0123456789]*l?[%@cdefginosupxX]";
+          ForegroundColor = "0 1 0";
+          Bold = YES;
+        }
+      );
+    },
+
+    /* first multi-line comment */
+    {
+      Beginning = "/\\*";
+      Ending = "\\*/";
+      ForegroundColor = "0.0 0.0 1.0";
+      Italic = YES;
+      Keywords = (
+        {
+          Pattern = "<TODO>";
+          ForegroundColor = "0.8 0.1 0.1";
+          Bold = YES;
+        }
+      );
+    },
+
+    /* second multi-line comment */
+    {
+      Beginning = "/\\***";
+      Ending = "\\***/";
+      ForegroundColor = "0.0 0.0 1.0";
+      Italic = YES;
+      Keywords = (
+        {
+          Pattern = "<TODO>";
+          ForegroundColor = "0.8 0.1 0.1";
+          Bold = YES;
+        }
+      );
+    },
+    
+    /* inline comment */
+    {
+      Beginning = "//";
+      Ending = "\n";
+      ForegroundColor = "0.0 0.0 1.0";
+      Italic = YES;
+      Keywords = (
+        {
+          Pattern = "<TODO>";
+          ForegroundColor = "0.8 0.1 0.1";
+          Bold = YES;
+        }
+      );
+    }    
+  );
+}

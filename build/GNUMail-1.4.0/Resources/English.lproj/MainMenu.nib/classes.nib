@@ -1,0 +1,229 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {complete = id; }; 
+            CLASS = AutoCompletingTextField; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSTextField; 
+        }, 
+        {
+            ACTIONS = {
+                accountSelectionHasChanged = id; 
+                insertFile = id; 
+                sendMessage = id; 
+                showBcc = id; 
+                showCc = id; 
+            }; 
+            CLASS = EditWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                accountPopUpButton = NSPopUpButton; 
+                addBcc = id; 
+                addCc = id; 
+                addresses = id; 
+                bccLabel = NSTextField; 
+                bccText = AutoCompletingTextField; 
+                ccLabel = NSTextField; 
+                ccText = AutoCompletingTextField; 
+                insert = id; 
+                saveInDrafts = id; 
+                scrollView = NSScrollView; 
+                send = id; 
+                sizeLabel = NSTextField; 
+                subjectLabel = NSTextField; 
+                subjectText = NSTextField; 
+                textView = ExtendedTextView; 
+                toLabel = NSTextField; 
+                toText = AutoCompletingTextField; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = ExtendedOutlineView; LANGUAGE = ObjC; SUPERCLASS = NSOutlineView; }, 
+        {
+            ACTIONS = {pasteAsQuoted = id; }; 
+            CLASS = ExtendedTextView; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSTextView; 
+        }, 
+        {
+            ACTIONS = {
+                deleteMessage = id; 
+                markMessageAsFlaggedOrUnflagged = id; 
+                markMessageAsReadOrUnread = id; 
+                pasteAsQuoted = id; 
+                sendMessage = id; 
+            }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                addSenderToAddressBook = id; 
+                applyManualFilter = id; 
+                changeTextEncoding = id; 
+                checkForUpdates = id; 
+                close = id; 
+                compactMailbox = id; 
+                composeMessage = id; 
+                copy = id; 
+                customizeToolbar = id; 
+                cut = id; 
+                enterSelectionInFindPanel = id; 
+                findNext = id; 
+                findPrevious = id; 
+                forwardMessage = id; 
+                getNewMessages = id; 
+                importMailboxes = id; 
+                makeFilterFromCc = id; 
+                makeFilterFromListId = id; 
+                makeFilterFromSender = id; 
+                makeFilterFromSubject = id; 
+                makeFilterFromTo = id; 
+                newViewerWindow = id; 
+                nextUnreadMessage = id; 
+                paste = id; 
+                previousUnreadMessage = id; 
+                printMessage = id; 
+                redirectMessage = id; 
+                replyToMessage = id; 
+                restoreDraft = id; 
+                saveAllAttachments = id; 
+                saveAttachment = id; 
+                saveInDrafts = id; 
+                saveTextFromMessage = id; 
+                selectAllMessagesInThread = id; 
+                selectionInTextViewHasChanged = id; 
+                showAboutPanel = id; 
+                showAddressBook = id; 
+                showAllHeaders = id; 
+                showConsoleWindow = id; 
+                showFindWindow = id; 
+                showMailboxInspectorPanel = id; 
+                showMailboxManager = id; 
+                showOrHideDeletedMessages = id; 
+                showOrHideReadMessages = id; 
+                showOrHideTableColumns = id; 
+                showOrHideToolbar = id; 
+                showPreferencesWindow = id; 
+                showRawSource = id; 
+                sortByDate = id; 
+                sortByName = id; 
+                sortByNumber = id; 
+                sortBySize = id; 
+                sortBySubject = id; 
+                threadOrUnthreadMessages = id; 
+            }; 
+            CLASS = GNUMail; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                columns = NSMenu; 
+                create = NSMenuItem; 
+                customizeToolbar = NSMenuItem; 
+                delete = NSMenuItem; 
+                dock = NSMenu; 
+                drafts = NSMenu; 
+                edit = NSMenu; 
+                enterSelection = NSMenuItem; 
+                filters = NSMenu; 
+                find = NSMenu; 
+                forward = NSMenu; 
+                incomingMailServers = NSMenu; 
+                info = NSMenu; 
+                mailbox = NSMenu; 
+                menu = NSMenu; 
+                message = NSMenu; 
+                messageFilter = NSMenu; 
+                rename = NSMenuItem; 
+                reply = NSMenu; 
+                save = NSMenu; 
+                selectAllMessagesInThread = NSMenuItem; 
+                services = NSMenu; 
+                showOrHideToolbar = NSMenuItem; 
+                sorting = NSMenu; 
+                textEncodings = NSMenu; 
+                threadOrUnthreadMessages = NSMenuItem; 
+                view = NSMenu; 
+                windows = NSMenu; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                copyOrMoveMessages = id; 
+                deleteMessage = id; 
+                doFind = id; 
+                doubleClickedOnDataView = id; 
+                firstMessage = id; 
+                getNewMessages = id; 
+                lastMessage = id; 
+                markMessageAsFlaggedOrUnflagged = id; 
+                markMessageAsReadOrUnread = id; 
+                nextInThread = id; 
+                nextMessage = id; 
+                nextUnreadMessage = id; 
+                openOrCloseDrawer = id; 
+                pageDownMessage = id; 
+                pageUpMessage = id; 
+                previousInThread = id; 
+                previousMessage = id; 
+                previousUnreadMessage = id; 
+                replyToMessage = id; 
+                viewMessageInWindow = id; 
+            }; 
+            CLASS = MailWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                addresses = NSButton; 
+                compose = NSButton; 
+                dataView = id; 
+                dateColumn = NSTableColumn; 
+                delete = id; 
+                drawer = NSDrawer; 
+                find = NSButton; 
+                flaggedColumn = NSTableColumn; 
+                forward = NSButton; 
+                fromColumn = NSTableColumn; 
+                get = id; 
+                icon = NSButton; 
+                idColumn = NSTableColumn; 
+                label = NSTextField; 
+                mailboxes = NSButton; 
+                markAsFlaggedOrUnflaggedContextMI = NSMenuItem; 
+                markAsReadOrUnreadContextMI = NSMenuItem; 
+                menu = NSMenu; 
+                next = NSButton; 
+                outlineView = ExtendedOutlineView; 
+                previous = NSButton; 
+                progressIndicator = NSProgressIndicator; 
+                reply = NSButton; 
+                searchField = NSSearchField; 
+                sizeColumn = NSTableColumn; 
+                splitView = NSSplitView; 
+                statusColumn = NSTableColumn; 
+                subjectColumn = NSTableColumn; 
+                tableScrollView = NSScrollView; 
+                textScrollView = NSScrollView; 
+                textView = NSTextView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            ACTIONS = {
+                deleteMessage = id; 
+                firstMessage = id; 
+                lastMessage = id; 
+                nextMessage = id; 
+                previousMessage = id; 
+                replyToMessage = id; 
+                showOrHideAllHeaders = id; 
+            }; 
+            CLASS = MessageViewWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {raw = NSButton; showOrHideAllHeaders = NSButton; textView = NSTextView; }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }
+    ); 
+    IBVersion = 1; 
+}

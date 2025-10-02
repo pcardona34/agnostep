@@ -1,0 +1,995 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8526E92510C91A2E0072C369 /* MyDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */; };
+		8526E92610C91A2E0072C369 /* PRImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = F50E085E03A8B3A001317B72 /* PRImageView.h */; };
+		8526E92710C91A2E0072C369 /* PRWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = F50E086203A8B47901317B72 /* PRWindowController.h */; };
+		8526E92810C91A2E0072C369 /* AppController.h in Headers */ = {isa = PBXBuildFile; fileRef = F50E086403A8B47901317B72 /* AppController.h */; };
+		8526E92910C91A2E0072C369 /* PRGrayscaleFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = F568E20703B757F201A80101 /* PRGrayscaleFilter.h */; };
+		8526E92A10C91A2E0072C369 /* PRTransforms.h in Headers */ = {isa = PBXBuildFile; fileRef = F568E20C03B77C9A01A80101 /* PRTransforms.h */; };
+		8526E92B10C91A2E0072C369 /* PRConvolve55.h in Headers */ = {isa = PBXBuildFile; fileRef = F51A79AC03D9642D01A80101 /* PRConvolve55.h */; };
+		8526E92C10C91A2E0072C369 /* PRCConvolve55.h in Headers */ = {isa = PBXBuildFile; fileRef = F52B6E0903DDC6C201A80101 /* PRCConvolve55.h */; };
+		8526E92D10C91A2E0072C369 /* PRFourier.h in Headers */ = {isa = PBXBuildFile; fileRef = F551DF3203E1B5CF01A80101 /* PRFourier.h */; };
+		8526E92E10C91A2E0072C369 /* PRDFTLowPass.h in Headers */ = {isa = PBXBuildFile; fileRef = F58A013E051379F90163C8F7 /* PRDFTLowPass.h */; };
+		8526E92F10C91A2E0072C369 /* PRCDFTLowPass.h in Headers */ = {isa = PBXBuildFile; fileRef = F58A014205137A870163C8F7 /* PRCDFTLowPass.h */; };
+		8526E93010C91A2E0072C369 /* FFT.h in Headers */ = {isa = PBXBuildFile; fileRef = F58A01490513B6E80163C8F7 /* FFT.h */; };
+		8526E93110C91A2E0072C369 /* PRCDFTHighPass.h in Headers */ = {isa = PBXBuildFile; fileRef = F5DD42EB053AAEF901A80103 /* PRCDFTHighPass.h */; };
+		8526E93210C91A2E0072C369 /* PRDFTHighPass.h in Headers */ = {isa = PBXBuildFile; fileRef = F55BF70E054909D501A80103 /* PRDFTHighPass.h */; };
+		8526E93310C91A2E0072C369 /* PRDFTFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = F5DC9E42056A98E601A80101 /* PRDFTFilter.h */; };
+		8526E93410C91A2E0072C369 /* PRCEqualize.h in Headers */ = {isa = PBXBuildFile; fileRef = F5E238A405808FD801A80103 /* PRCEqualize.h */; };
+		8526E93510C91A2E0072C369 /* PREqualize.h in Headers */ = {isa = PBXBuildFile; fileRef = F5E238A8058091EB01A80103 /* PREqualize.h */; };
+		8526E93610C91A2E0072C369 /* PRHistogram.h in Headers */ = {isa = PBXBuildFile; fileRef = F54D8D5C0588ECEB01A80103 /* PRHistogram.h */; };
+		8526E93710C91A2E0072C369 /* PRCHistogram.h in Headers */ = {isa = PBXBuildFile; fileRef = F54D8D660588ED9101A80103 /* PRCHistogram.h */; };
+		8526E93810C91A2E0072C369 /* PRCumHisto.h in Headers */ = {isa = PBXBuildFile; fileRef = F59B4FBB0591D102011CE379 /* PRCumHisto.h */; };
+		8526E93910C91A2E0072C369 /* PRCCumHisto.h in Headers */ = {isa = PBXBuildFile; fileRef = F59B4FBF0591DA41011CE379 /* PRCCumHisto.h */; };
+		8526E93A10C91A2E0072C369 /* PRHisto.h in Headers */ = {isa = PBXBuildFile; fileRef = F59B4FC305921408011CE379 /* PRHisto.h */; };
+		8526E93B10C91A2E0072C369 /* PRCHisto.h in Headers */ = {isa = PBXBuildFile; fileRef = F59B4FC7059214C7011CE379 /* PRCHisto.h */; };
+		8526E93C10C91A2E0072C369 /* PRCTraceEdges.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B3A92205B53FF201A80101 /* PRCTraceEdges.h */; };
+		8526E93D10C91A2E0072C369 /* PRTraceEdges.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B3A92905B5568F01A80101 /* PRTraceEdges.h */; };
+		8526E93E10C91A2E0072C369 /* PRCCustTraceEdges.h in Headers */ = {isa = PBXBuildFile; fileRef = F59300510609F6AE01A80103 /* PRCCustTraceEdges.h */; };
+		8526E93F10C91A2E0072C369 /* PRCustTraceEdges.h in Headers */ = {isa = PBXBuildFile; fileRef = F5930058060B2ED001A80103 /* PRCustTraceEdges.h */; };
+		8526E94010C91A2E0072C369 /* PRCMedian.h in Headers */ = {isa = PBXBuildFile; fileRef = F5D67DAF0612D96501A80103 /* PRCMedian.h */; };
+		8526E94110C91A2E0072C369 /* PRMedian.h in Headers */ = {isa = PBXBuildFile; fileRef = F538441D0612E9BF01A80103 /* PRMedian.h */; };
+		8526E94210C91A2E0072C369 /* PRCProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B0F9640686C3B701A80101 /* PRCProgress.h */; };
+		8526E94310C91A2E0072C369 /* PRProgressAction.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B6257006881DCE01A80101 /* PRProgressAction.h */; };
+		8526E94410C91A2E0072C369 /* PRCScale.h in Headers */ = {isa = PBXBuildFile; fileRef = F59EB61D079F1C9101A80103 /* PRCScale.h */; };
+		8526E94510C91A2E0072C369 /* PRScale.h in Headers */ = {isa = PBXBuildFile; fileRef = F59EB621079F1CA501A80103 /* PRScale.h */; };
+		8526E94610C91A2E0072C369 /* PRCrop.h in Headers */ = {isa = PBXBuildFile; fileRef = F5D9F4B807AD974901A80101 /* PRCrop.h */; };
+		8526E94710C91A2E0072C369 /* PRCCrop.h in Headers */ = {isa = PBXBuildFile; fileRef = F5D9F4BA07AD976001A80101 /* PRCCrop.h */; };
+		8526E94810C91A2E0072C369 /* PRCBriCon.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C8A2A307EED49E01A80101 /* PRCBriCon.h */; };
+		8526E94910C91A2E0072C369 /* PRBriCon.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C8A2A707EED52A01A80101 /* PRBriCon.h */; };
+		8526E94A10C91A2E0072C369 /* PRImage.h in Headers */ = {isa = PBXBuildFile; fileRef = F5D38DD508FDA41801A80101 /* PRImage.h */; };
+		8526E94B10C91A2E0072C369 /* PRCGrayscale.h in Headers */ = {isa = PBXBuildFile; fileRef = 85E2FA3B0B5CE7AA003E7B25 /* PRCGrayscale.h */; };
+		8526E94C10C91A2E0072C369 /* PRInvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 85D196360D0A063900A80101 /* PRInvert.h */; };
+		8526E94D10C91A2E0072C369 /* PRFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 85F3E8020EC5003200B9D568 /* PRFilter.h */; };
+		8526E94E10C91A2E0072C369 /* PRCInvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 85CBE1320ECE08B200A80101 /* PRCInvert.h */; };
+		8526E94F10C91A2E0072C369 /* PRCFourier.h in Headers */ = {isa = PBXBuildFile; fileRef = 85CBE1360ECE113300A80101 /* PRCFourier.h */; };
+		8526E95010C91A2E0072C369 /* PRCTransforms.h in Headers */ = {isa = PBXBuildFile; fileRef = 85CBE13A0ECE328400A80101 /* PRCTransforms.h */; };
+		8526E95210C91A2E0072C369 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
+		8526E95310C91A2E0072C369 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
+		8526E95410C91A2E0072C369 /* PRWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B4FDCFA73011CA2CEA /* PRWindow.nib */; };
+		8526E95510C91A2E0072C369 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
+		8526E95610C91A2E0072C369 /* Convolve55.nib in Resources */ = {isa = PBXBuildFile; fileRef = F51A79A603D95E3101A80101 /* Convolve55.nib */; };
+		8526E95710C91A2E0072C369 /* README in Resources */ = {isa = PBXBuildFile; fileRef = F537CAEE0500A8B801A80103 /* README */; };
+		8526E95810C91A2E0072C369 /* DFTLowPass.nib in Resources */ = {isa = PBXBuildFile; fileRef = F58A014605138B000163C8F7 /* DFTLowPass.nib */; };
+		8526E95910C91A2E0072C369 /* DFTHighPass.nib in Resources */ = {isa = PBXBuildFile; fileRef = F5DD42E8053AAE5201A80103 /* DFTHighPass.nib */; };
+		8526E95A10C91A2E0072C369 /* Equalize.nib in Resources */ = {isa = PBXBuildFile; fileRef = F5A3DD6B058349E601A80103 /* Equalize.nib */; };
+		8526E95B10C91A2E0072C369 /* Histogram.nib in Resources */ = {isa = PBXBuildFile; fileRef = F54D8D6A0588EE6201A80103 /* Histogram.nib */; };
+		8526E95C10C91A2E0072C369 /* CumulHistogram.nib in Resources */ = {isa = PBXBuildFile; fileRef = F59B4FCB05923027011CE379 /* CumulHistogram.nib */; };
+		8526E95D10C91A2E0072C369 /* TraceEdges.nib in Resources */ = {isa = PBXBuildFile; fileRef = F5B3A92605B5469C01A80101 /* TraceEdges.nib */; };
+		8526E95E10C91A2E0072C369 /* CustTraceEdges.nib in Resources */ = {isa = PBXBuildFile; fileRef = F59300550609F83101A80103 /* CustTraceEdges.nib */; };
+		8526E95F10C91A2E0072C369 /* Median.nib in Resources */ = {isa = PBXBuildFile; fileRef = F538441A0612E0D001A80103 /* Median.nib */; };
+		8526E96010C91A2E0072C369 /* ProgressPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = F52855C60689AB0301A80101 /* ProgressPanel.nib */; };
+		8526E96110C91A2E0072C369 /* Scale.nib in Resources */ = {isa = PBXBuildFile; fileRef = F59EB627079F2ED301A80103 /* Scale.nib */; };
+		8526E96210C91A2E0072C369 /* Crop.nib in Resources */ = {isa = PBXBuildFile; fileRef = F5C7F8ED07C75C6901A80101 /* Crop.nib */; };
+		8526E96310C91A2E0072C369 /* BriCon.nib in Resources */ = {isa = PBXBuildFile; fileRef = F5C8A2AB07EED94A01A80101 /* BriCon.nib */; };
+		8526E96410C91A2E0072C369 /* price128.icns in Resources */ = {isa = PBXBuildFile; fileRef = F5C941A908261B5E01A80101 /* price128.icns */; };
+		8526E96510C91A2E0072C369 /* Grayscale.nib in Resources */ = {isa = PBXBuildFile; fileRef = 85E2FA3F0B5CEAF3003E7B25 /* Grayscale.nib */; };
+		8526E96710C91A2E0072C369 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */; settings = {ATTRIBUTES = (); }; };
+		8526E96810C91A2E0072C369 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8526E96910C91A2E0072C369 /* PRImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F50E085F03A8B3A001317B72 /* PRImageView.m */; };
+		8526E96A10C91A2E0072C369 /* PRWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50E086303A8B47901317B72 /* PRWindowController.m */; };
+		8526E96B10C91A2E0072C369 /* PRGrayscaleFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F568E20803B757F201A80101 /* PRGrayscaleFilter.m */; };
+		8526E96C10C91A2E0072C369 /* PRConvolve55.m in Sources */ = {isa = PBXBuildFile; fileRef = F51A79AD03D9642D01A80101 /* PRConvolve55.m */; };
+		8526E96D10C91A2E0072C369 /* PRCConvolve55.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B6E0A03DDC6C201A80101 /* PRCConvolve55.m */; };
+		8526E96E10C91A2E0072C369 /* PRFourier.m in Sources */ = {isa = PBXBuildFile; fileRef = F551DF3303E1B5CF01A80101 /* PRFourier.m */; };
+		8526E96F10C91A2E0072C369 /* PRTransforms.m in Sources */ = {isa = PBXBuildFile; fileRef = F568E20D03B77C9A01A80101 /* PRTransforms.m */; };
+		8526E97010C91A2E0072C369 /* PRDFTLowPass.m in Sources */ = {isa = PBXBuildFile; fileRef = F58A013F051379F90163C8F7 /* PRDFTLowPass.m */; };
+		8526E97110C91A2E0072C369 /* PRCDFTLowPass.m in Sources */ = {isa = PBXBuildFile; fileRef = F58A014305137A870163C8F7 /* PRCDFTLowPass.m */; };
+		8526E97210C91A2E0072C369 /* FFT.c in Sources */ = {isa = PBXBuildFile; fileRef = F58A014A0513B6E80163C8F7 /* FFT.c */; };
+		8526E97310C91A2E0072C369 /* PRCDFTHighPass.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DD42EC053AAEF901A80103 /* PRCDFTHighPass.m */; };
+		8526E97410C91A2E0072C369 /* PRDFTHighPass.m in Sources */ = {isa = PBXBuildFile; fileRef = F55BF70F054909D501A80103 /* PRDFTHighPass.m */; };
+		8526E97510C91A2E0072C369 /* PRDFTFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9E43056A98E601A80101 /* PRDFTFilter.m */; };
+		8526E97610C91A2E0072C369 /* PRCEqualize.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E238A505808FD801A80103 /* PRCEqualize.m */; };
+		8526E97710C91A2E0072C369 /* PREqualize.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E238A9058091EB01A80103 /* PREqualize.m */; };
+		8526E97810C91A2E0072C369 /* PRHistogram.m in Sources */ = {isa = PBXBuildFile; fileRef = F54D8D5D0588ECEB01A80103 /* PRHistogram.m */; };
+		8526E97910C91A2E0072C369 /* PRCHistogram.m in Sources */ = {isa = PBXBuildFile; fileRef = F54D8D670588ED9101A80103 /* PRCHistogram.m */; };
+		8526E97A10C91A2E0072C369 /* PRCumHisto.m in Sources */ = {isa = PBXBuildFile; fileRef = F59B4FBC0591D102011CE379 /* PRCumHisto.m */; };
+		8526E97B10C91A2E0072C369 /* PRCCumHisto.m in Sources */ = {isa = PBXBuildFile; fileRef = F59B4FC00591DA41011CE379 /* PRCCumHisto.m */; };
+		8526E97C10C91A2E0072C369 /* PRHisto.m in Sources */ = {isa = PBXBuildFile; fileRef = F59B4FC405921408011CE379 /* PRHisto.m */; };
+		8526E97D10C91A2E0072C369 /* PRCHisto.m in Sources */ = {isa = PBXBuildFile; fileRef = F59B4FC8059214C7011CE379 /* PRCHisto.m */; };
+		8526E97E10C91A2E0072C369 /* PRCTraceEdges.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B3A92305B53FF201A80101 /* PRCTraceEdges.m */; };
+		8526E97F10C91A2E0072C369 /* PRTraceEdges.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B3A92A05B5568F01A80101 /* PRTraceEdges.m */; };
+		8526E98010C91A2E0072C369 /* PRCCustTraceEdges.m in Sources */ = {isa = PBXBuildFile; fileRef = F59300520609F6AE01A80103 /* PRCCustTraceEdges.m */; };
+		8526E98110C91A2E0072C369 /* PRCustTraceEdges.m in Sources */ = {isa = PBXBuildFile; fileRef = F5930059060B2ED001A80103 /* PRCustTraceEdges.m */; };
+		8526E98210C91A2E0072C369 /* PRCMedian.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D67DB00612D96501A80103 /* PRCMedian.m */; };
+		8526E98310C91A2E0072C369 /* PRMedian.m in Sources */ = {isa = PBXBuildFile; fileRef = F538441E0612E9BF01A80103 /* PRMedian.m */; };
+		8526E98410C91A2E0072C369 /* PRCProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B0F9650686C3B701A80101 /* PRCProgress.m */; };
+		8526E98510C91A2E0072C369 /* PRProgressAction.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B6257106881DCE01A80101 /* PRProgressAction.m */; };
+		8526E98610C91A2E0072C369 /* PRCScale.m in Sources */ = {isa = PBXBuildFile; fileRef = F59EB61E079F1C9101A80103 /* PRCScale.m */; };
+		8526E98710C91A2E0072C369 /* PRScale.m in Sources */ = {isa = PBXBuildFile; fileRef = F59EB622079F1CA501A80103 /* PRScale.m */; };
+		8526E98810C91A2E0072C369 /* PRCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D9F4B607AD972F01A80101 /* PRCrop.m */; };
+		8526E98910C91A2E0072C369 /* PRCCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D9F4BC07AD976F01A80101 /* PRCCrop.m */; };
+		8526E98A10C91A2E0072C369 /* PRCBriCon.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C8A2A407EED49E01A80101 /* PRCBriCon.m */; };
+		8526E98B10C91A2E0072C369 /* PRBriCon.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C8A2A807EED52A01A80101 /* PRBriCon.m */; };
+		8526E98C10C91A2E0072C369 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50E086503A8B47901317B72 /* AppController.m */; };
+		8526E98D10C91A2E0072C369 /* PRImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D38DD608FDA41801A80101 /* PRImage.m */; };
+		8526E98E10C91A2E0072C369 /* PRCGrayscale.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E2FA3C0B5CE7AA003E7B25 /* PRCGrayscale.m */; };
+		8526E98F10C91A2E0072C369 /* PRInvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D196370D0A063900A80101 /* PRInvert.m */; };
+		8526E99010C91A2E0072C369 /* PRFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E8030EC5003200B9D568 /* PRFilter.m */; };
+		8526E99110C91A2E0072C369 /* PRCInvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CBE1330ECE08B200A80101 /* PRCInvert.m */; };
+		8526E99210C91A2E0072C369 /* PRCFourier.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CBE1370ECE113300A80101 /* PRCFourier.m */; };
+		8526E99310C91A2E0072C369 /* PRCTransforms.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CBE13B0ECE328400A80101 /* PRCTransforms.m */; };
+		8526E99510C91A2E0072C369 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		859E918A1132DC4100C75DB0 /* PRFilterController.h in Headers */ = {isa = PBXBuildFile; fileRef = 859E91881132DC4100C75DB0 /* PRFilterController.h */; };
+		859E918B1132DC4100C75DB0 /* PRFilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859E91891132DC4100C75DB0 /* PRFilterController.m */; };
+		859E918E1132DC5500C75DB0 /* PRPreviewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 859E918C1132DC5500C75DB0 /* PRPreviewController.h */; };
+		859E918F1132DC5500C75DB0 /* PRPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859E918D1132DC5500C75DB0 /* PRPreviewController.m */; };
+		859E91921132DC6E00C75DB0 /* Preview.nib in Resources */ = {isa = PBXBuildFile; fileRef = 859E91901132DC6E00C75DB0 /* Preview.nib */; };
+		85A1EA7D13EF0DC6003B0912 /* PRCCurves.h in Headers */ = {isa = PBXBuildFile; fileRef = 85A1EA7B13EF0DC6003B0912 /* PRCCurves.h */; };
+		85A1EA7E13EF0DC6003B0912 /* PRCCurves.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A1EA7C13EF0DC6003B0912 /* PRCCurves.m */; };
+		85A1EA8D13EF0E92003B0912 /* PRCurvesView.h in Headers */ = {isa = PBXBuildFile; fileRef = 85A1EA8B13EF0E92003B0912 /* PRCurvesView.h */; };
+		85A1EA8E13EF0E92003B0912 /* PRCurvesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A1EA8C13EF0E92003B0912 /* PRCurvesView.m */; };
+		85A1EA9613EF1013003B0912 /* Curves.nib in Resources */ = {isa = PBXBuildFile; fileRef = 85A1EA9413EF1013003B0912 /* Curves.nib */; };
+		85A1EA9D13EF1075003B0912 /* PRCurves.h in Headers */ = {isa = PBXBuildFile; fileRef = 85A1EA9B13EF1075003B0912 /* PRCurves.h */; };
+		85A1EA9E13EF1075003B0912 /* PRCurves.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A1EA9C13EF1075003B0912 /* PRCurves.m */; };
+		85B7C77813F45738005EF60D /* PRCurvesPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 85B7C77613F45738005EF60D /* PRCurvesPath.h */; };
+		85B7C77913F45738005EF60D /* PRCurvesPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B7C77713F45738005EF60D /* PRCurvesPath.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MyDocument.m; sourceTree = "<group>"; };
+		2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MyDocument.h; sourceTree = "<group>"; };
+		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A37F4B5FDCFA73011CA2CEA /* PRWindow.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = PRWindow.nib; path = English.lproj/PRWindow.nib; sourceTree = "<group>"; };
+		2A37F4B7FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8526E99A10C91A2E0072C369 /* Info-PRICE.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-PRICE.plist"; sourceTree = "<group>"; };
+		8526E99B10C91A2E0072C369 /* PRICE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PRICE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		859E91881132DC4100C75DB0 /* PRFilterController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRFilterController.h; sourceTree = "<group>"; };
+		859E91891132DC4100C75DB0 /* PRFilterController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRFilterController.m; sourceTree = "<group>"; };
+		859E918C1132DC5500C75DB0 /* PRPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRPreviewController.h; sourceTree = "<group>"; };
+		859E918D1132DC5500C75DB0 /* PRPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRPreviewController.m; sourceTree = "<group>"; };
+		859E91911132DC6E00C75DB0 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Preview.nib; sourceTree = "<group>"; };
+		85A1EA7B13EF0DC6003B0912 /* PRCCurves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRCCurves.h; sourceTree = "<group>"; };
+		85A1EA7C13EF0DC6003B0912 /* PRCCurves.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRCCurves.m; sourceTree = "<group>"; };
+		85A1EA8B13EF0E92003B0912 /* PRCurvesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRCurvesView.h; sourceTree = "<group>"; };
+		85A1EA8C13EF0E92003B0912 /* PRCurvesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRCurvesView.m; sourceTree = "<group>"; };
+		85A1EA9513EF1013003B0912 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Curves.nib; sourceTree = "<group>"; };
+		85A1EA9B13EF1075003B0912 /* PRCurves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRCurves.h; sourceTree = "<group>"; };
+		85A1EA9C13EF1075003B0912 /* PRCurves.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRCurves.m; sourceTree = "<group>"; };
+		85B7C77613F45738005EF60D /* PRCurvesPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRCurvesPath.h; sourceTree = "<group>"; };
+		85B7C77713F45738005EF60D /* PRCurvesPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRCurvesPath.m; sourceTree = "<group>"; };
+		85CBE1320ECE08B200A80101 /* PRCInvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRCInvert.h; sourceTree = "<group>"; };
+		85CBE1330ECE08B200A80101 /* PRCInvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRCInvert.m; sourceTree = "<group>"; };
+		85CBE1360ECE113300A80101 /* PRCFourier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRCFourier.h; sourceTree = "<group>"; };
+		85CBE1370ECE113300A80101 /* PRCFourier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRCFourier.m; sourceTree = "<group>"; };
+		85CBE13A0ECE328400A80101 /* PRCTransforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRCTransforms.h; sourceTree = "<group>"; };
+		85CBE13B0ECE328400A80101 /* PRCTransforms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRCTransforms.m; sourceTree = "<group>"; };
+		85D196360D0A063900A80101 /* PRInvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRInvert.h; sourceTree = "<group>"; };
+		85D196370D0A063900A80101 /* PRInvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRInvert.m; sourceTree = "<group>"; };
+		85E2FA3B0B5CE7AA003E7B25 /* PRCGrayscale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRCGrayscale.h; sourceTree = "<group>"; };
+		85E2FA3C0B5CE7AA003E7B25 /* PRCGrayscale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRCGrayscale.m; sourceTree = "<group>"; };
+		85E2FA400B5CEAF3003E7B25 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Grayscale.nib; sourceTree = "<group>"; };
+		85F3E8020EC5003200B9D568 /* PRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRFilter.h; sourceTree = "<group>"; };
+		85F3E8030EC5003200B9D568 /* PRFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRFilter.m; sourceTree = "<group>"; };
+		F50E085E03A8B3A001317B72 /* PRImageView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRImageView.h; sourceTree = "<group>"; };
+		F50E085F03A8B3A001317B72 /* PRImageView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRImageView.m; sourceTree = "<group>"; };
+		F50E086203A8B47901317B72 /* PRWindowController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRWindowController.h; sourceTree = "<group>"; };
+		F50E086303A8B47901317B72 /* PRWindowController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRWindowController.m; sourceTree = "<group>"; };
+		F50E086403A8B47901317B72 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		F50E086503A8B47901317B72 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		F51A79A703D95E3101A80101 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Convolve55.nib; sourceTree = "<group>"; };
+		F51A79AC03D9642D01A80101 /* PRConvolve55.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRConvolve55.h; sourceTree = "<group>"; };
+		F51A79AD03D9642D01A80101 /* PRConvolve55.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRConvolve55.m; sourceTree = "<group>"; };
+		F52855C70689AB0301A80101 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ProgressPanel.nib; sourceTree = "<group>"; };
+		F52B6E0903DDC6C201A80101 /* PRCConvolve55.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRCConvolve55.h; sourceTree = "<group>"; };
+		F52B6E0A03DDC6C201A80101 /* PRCConvolve55.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRCConvolve55.m; sourceTree = "<group>"; };
+		F537CAEE0500A8B801A80103 /* README */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		F538441B0612E0D001A80103 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Median.nib; sourceTree = "<group>"; };
+		F538441D0612E9BF01A80103 /* PRMedian.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRMedian.h; sourceTree = "<group>"; };
+		F538441E0612E9BF01A80103 /* PRMedian.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRMedian.m; sourceTree = "<group>"; };
+		F54D8D5C0588ECEB01A80103 /* PRHistogram.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRHistogram.h; sourceTree = "<group>"; };
+		F54D8D5D0588ECEB01A80103 /* PRHistogram.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRHistogram.m; sourceTree = "<group>"; };
+		F54D8D660588ED9101A80103 /* PRCHistogram.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRCHistogram.h; sourceTree = "<group>"; };
+		F54D8D670588ED9101A80103 /* PRCHistogram.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRCHistogram.m; sourceTree = "<group>"; };
+		F54D8D6B0588EE6201A80103 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Histogram.nib; sourceTree = "<group>"; };
+		F551DF3203E1B5CF01A80101 /* PRFourier.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRFourier.h; sourceTree = "<group>"; };
+		F551DF3303E1B5CF01A80101 /* PRFourier.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRFourier.m; sourceTree = "<group>"; };
+		F55BF70E054909D501A80103 /* PRDFTHighPass.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRDFTHighPass.h; sourceTree = "<group>"; };
+		F55BF70F054909D501A80103 /* PRDFTHighPass.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRDFTHighPass.m; sourceTree = "<group>"; };
+		F568E20703B757F201A80101 /* PRGrayscaleFilter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRGrayscaleFilter.h; sourceTree = "<group>"; };
+		F568E20803B757F201A80101 /* PRGrayscaleFilter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRGrayscaleFilter.m; sourceTree = "<group>"; };
+		F568E20C03B77C9A01A80101 /* PRTransforms.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRTransforms.h; sourceTree = "<group>"; };
+		F568E20D03B77C9A01A80101 /* PRTransforms.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRTransforms.m; sourceTree = "<group>"; };
+		F58A013E051379F90163C8F7 /* PRDFTLowPass.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRDFTLowPass.h; sourceTree = "<group>"; };
+		F58A013F051379F90163C8F7 /* PRDFTLowPass.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRDFTLowPass.m; sourceTree = "<group>"; };
+		F58A014205137A870163C8F7 /* PRCDFTLowPass.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRCDFTLowPass.h; sourceTree = "<group>"; };
+		F58A014305137A870163C8F7 /* PRCDFTLowPass.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRCDFTLowPass.m; sourceTree = "<group>"; };
+		F58A014705138B000163C8F7 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/DFTLowPass.nib; sourceTree = "<group>"; };
+		F58A01490513B6E80163C8F7 /* FFT.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FFT.h; sourceTree = "<group>"; };
+		F58A014A0513B6E80163C8F7 /* FFT.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = FFT.c; sourceTree = "<group>"; };
+		F59300510609F6AE01A80103 /* PRCCustTraceEdges.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRCCustTraceEdges.h; sourceTree = "<group>"; };
+		F59300520609F6AE01A80103 /* PRCCustTraceEdges.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRCCustTraceEdges.m; sourceTree = "<group>"; };
+		F59300560609F83101A80103 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/CustTraceEdges.nib; sourceTree = "<group>"; };
+		F5930058060B2ED001A80103 /* PRCustTraceEdges.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRCustTraceEdges.h; sourceTree = "<group>"; };
+		F5930059060B2ED001A80103 /* PRCustTraceEdges.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRCustTraceEdges.m; sourceTree = "<group>"; };
+		F59B4FBB0591D102011CE379 /* PRCumHisto.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRCumHisto.h; sourceTree = "<group>"; };
+		F59B4FBC0591D102011CE379 /* PRCumHisto.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRCumHisto.m; sourceTree = "<group>"; };
+		F59B4FBF0591DA41011CE379 /* PRCCumHisto.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRCCumHisto.h; sourceTree = "<group>"; };
+		F59B4FC00591DA41011CE379 /* PRCCumHisto.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRCCumHisto.m; sourceTree = "<group>"; };
+		F59B4FC305921408011CE379 /* PRHisto.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRHisto.h; sourceTree = "<group>"; };
+		F59B4FC405921408011CE379 /* PRHisto.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRHisto.m; sourceTree = "<group>"; };
+		F59B4FC7059214C7011CE379 /* PRCHisto.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRCHisto.h; sourceTree = "<group>"; };
+		F59B4FC8059214C7011CE379 /* PRCHisto.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRCHisto.m; sourceTree = "<group>"; };
+		F59B4FCC05923027011CE379 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/CumulHistogram.nib; sourceTree = "<group>"; };
+		F59EB61D079F1C9101A80103 /* PRCScale.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRCScale.h; sourceTree = "<group>"; };
+		F59EB61E079F1C9101A80103 /* PRCScale.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRCScale.m; sourceTree = "<group>"; };
+		F59EB621079F1CA501A80103 /* PRScale.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRScale.h; sourceTree = "<group>"; };
+		F59EB622079F1CA501A80103 /* PRScale.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRScale.m; sourceTree = "<group>"; };
+		F59EB628079F2ED301A80103 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Scale.nib; sourceTree = "<group>"; };
+		F5A3DD6C058349E601A80103 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Equalize.nib; sourceTree = "<group>"; };
+		F5B0F9640686C3B701A80101 /* PRCProgress.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRCProgress.h; sourceTree = "<group>"; };
+		F5B0F9650686C3B701A80101 /* PRCProgress.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRCProgress.m; sourceTree = "<group>"; };
+		F5B3A92205B53FF201A80101 /* PRCTraceEdges.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRCTraceEdges.h; sourceTree = "<group>"; };
+		F5B3A92305B53FF201A80101 /* PRCTraceEdges.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRCTraceEdges.m; sourceTree = "<group>"; };
+		F5B3A92705B5469C01A80101 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/TraceEdges.nib; sourceTree = "<group>"; };
+		F5B3A92905B5568F01A80101 /* PRTraceEdges.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRTraceEdges.h; sourceTree = "<group>"; };
+		F5B3A92A05B5568F01A80101 /* PRTraceEdges.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRTraceEdges.m; sourceTree = "<group>"; };
+		F5B6257006881DCE01A80101 /* PRProgressAction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRProgressAction.h; sourceTree = "<group>"; };
+		F5B6257106881DCE01A80101 /* PRProgressAction.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRProgressAction.m; sourceTree = "<group>"; };
+		F5C7F8EE07C75C6901A80101 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Crop.nib; sourceTree = "<group>"; };
+		F5C8A2A307EED49E01A80101 /* PRCBriCon.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRCBriCon.h; sourceTree = "<group>"; };
+		F5C8A2A407EED49E01A80101 /* PRCBriCon.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRCBriCon.m; sourceTree = "<group>"; };
+		F5C8A2A707EED52A01A80101 /* PRBriCon.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRBriCon.h; sourceTree = "<group>"; };
+		F5C8A2A807EED52A01A80101 /* PRBriCon.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRBriCon.m; sourceTree = "<group>"; };
+		F5C8A2AC07EED94A01A80101 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/BriCon.nib; sourceTree = "<group>"; };
+		F5C941A908261B5E01A80101 /* price128.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = price128.icns; sourceTree = "<group>"; };
+		F5D38DD508FDA41801A80101 /* PRImage.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRImage.h; sourceTree = "<group>"; };
+		F5D38DD608FDA41801A80101 /* PRImage.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRImage.m; sourceTree = "<group>"; };
+		F5D67DAF0612D96501A80103 /* PRCMedian.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRCMedian.h; sourceTree = "<group>"; };
+		F5D67DB00612D96501A80103 /* PRCMedian.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRCMedian.m; sourceTree = "<group>"; };
+		F5D9F4B607AD972F01A80101 /* PRCrop.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRCrop.m; sourceTree = "<group>"; };
+		F5D9F4B807AD974901A80101 /* PRCrop.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRCrop.h; sourceTree = "<group>"; };
+		F5D9F4BA07AD976001A80101 /* PRCCrop.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRCCrop.h; sourceTree = "<group>"; };
+		F5D9F4BC07AD976F01A80101 /* PRCCrop.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRCCrop.m; sourceTree = "<group>"; };
+		F5DC9E42056A98E601A80101 /* PRDFTFilter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRDFTFilter.h; sourceTree = "<group>"; };
+		F5DC9E43056A98E601A80101 /* PRDFTFilter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRDFTFilter.m; sourceTree = "<group>"; };
+		F5DD42E9053AAE5201A80103 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/DFTHighPass.nib; sourceTree = "<group>"; };
+		F5DD42EB053AAEF901A80103 /* PRCDFTHighPass.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRCDFTHighPass.h; sourceTree = "<group>"; };
+		F5DD42EC053AAEF901A80103 /* PRCDFTHighPass.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRCDFTHighPass.m; sourceTree = "<group>"; };
+		F5E238A405808FD801A80103 /* PRCEqualize.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PRCEqualize.h; sourceTree = "<group>"; };
+		F5E238A505808FD801A80103 /* PRCEqualize.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PRCEqualize.m; sourceTree = "<group>"; };
+		F5E238A8058091EB01A80103 /* PREqualize.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PREqualize.h; sourceTree = "<group>"; };
+		F5E238A9058091EB01A80103 /* PREqualize.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PREqualize.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8526E99410C91A2E0072C369 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8526E99510C91A2E0072C369 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8526E99B10C91A2E0072C369 /* PRICE.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* PRICE */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4ABFDCFA73011CA2CEA /* Classes */,
+				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+				8526E99A10C91A2E0072C369 /* Info-PRICE.plist */,
+			);
+			name = PRICE;
+			sourceTree = "<group>";
+		};
+		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F5D38DD508FDA41801A80101 /* PRImage.h */,
+				F5D38DD608FDA41801A80101 /* PRImage.m */,
+				F54D8D5C0588ECEB01A80103 /* PRHistogram.h */,
+				F54D8D5D0588ECEB01A80103 /* PRHistogram.m */,
+				F54D8D660588ED9101A80103 /* PRCHistogram.h */,
+				F54D8D670588ED9101A80103 /* PRCHistogram.m */,
+				F59B4FC305921408011CE379 /* PRHisto.h */,
+				F59B4FC405921408011CE379 /* PRHisto.m */,
+				F59B4FC7059214C7011CE379 /* PRCHisto.h */,
+				F59B4FC8059214C7011CE379 /* PRCHisto.m */,
+				F59B4FBB0591D102011CE379 /* PRCumHisto.h */,
+				F59B4FBC0591D102011CE379 /* PRCumHisto.m */,
+				F59B4FBF0591DA41011CE379 /* PRCCumHisto.h */,
+				F59B4FC00591DA41011CE379 /* PRCCumHisto.m */,
+				85A1EA8B13EF0E92003B0912 /* PRCurvesView.h */,
+				85A1EA8C13EF0E92003B0912 /* PRCurvesView.m */,
+				85B7C77613F45738005EF60D /* PRCurvesPath.h */,
+				85B7C77713F45738005EF60D /* PRCurvesPath.m */,
+				F52B6E0803DDC36301A80101 /* Controllers */,
+				F568E20B03B7583A01A80101 /* Filters */,
+				F5E238AC058091F001A80103 /* Enhance */,
+				2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */,
+				2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */,
+				F50E085E03A8B3A001317B72 /* PRImageView.h */,
+				F50E085F03A8B3A001317B72 /* PRImageView.m */,
+				F50E086203A8B47901317B72 /* PRWindowController.h */,
+				F50E086303A8B47901317B72 /* PRWindowController.m */,
+				F50E086403A8B47901317B72 /* AppController.h */,
+				F50E086503A8B47901317B72 /* AppController.m */,
+				F5B0F9640686C3B701A80101 /* PRCProgress.h */,
+				F5B0F9650686C3B701A80101 /* PRCProgress.m */,
+				F5B6257006881DCE01A80101 /* PRProgressAction.h */,
+				F5B6257106881DCE01A80101 /* PRProgressAction.m */,
+				F59EB621079F1CA501A80103 /* PRScale.h */,
+				F59EB622079F1CA501A80103 /* PRScale.m */,
+				F5D9F4B807AD974901A80101 /* PRCrop.h */,
+				F5D9F4B607AD972F01A80101 /* PRCrop.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+				F58A01490513B6E80163C8F7 /* FFT.h */,
+				F58A014A0513B6E80163C8F7 /* FFT.c */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5C941A908261B5E01A80101 /* price128.icns */,
+				F537CAEE0500A8B801A80103 /* README */,
+				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
+				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
+				2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */,
+				2A37F4B4FDCFA73011CA2CEA /* PRWindow.nib */,
+				F51A79A603D95E3101A80101 /* Convolve55.nib */,
+				F5C8A2AB07EED94A01A80101 /* BriCon.nib */,
+				F58A014605138B000163C8F7 /* DFTLowPass.nib */,
+				F5DD42E8053AAE5201A80103 /* DFTHighPass.nib */,
+				F5A3DD6B058349E601A80103 /* Equalize.nib */,
+				F54D8D6A0588EE6201A80103 /* Histogram.nib */,
+				F59B4FCB05923027011CE379 /* CumulHistogram.nib */,
+				F5B3A92605B5469C01A80101 /* TraceEdges.nib */,
+				F59300550609F83101A80103 /* CustTraceEdges.nib */,
+				F538441A0612E0D001A80103 /* Median.nib */,
+				F52855C60689AB0301A80101 /* ProgressPanel.nib */,
+				F59EB627079F2ED301A80103 /* Scale.nib */,
+				F5C7F8ED07C75C6901A80101 /* Crop.nib */,
+				85E2FA3F0B5CEAF3003E7B25 /* Grayscale.nib */,
+				859E91901132DC6E00C75DB0 /* Preview.nib */,
+				85A1EA9413EF1013003B0912 /* Curves.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F52B6E0803DDC36301A80101 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				859E918C1132DC5500C75DB0 /* PRPreviewController.h */,
+				859E918D1132DC5500C75DB0 /* PRPreviewController.m */,
+				859E91881132DC4100C75DB0 /* PRFilterController.h */,
+				859E91891132DC4100C75DB0 /* PRFilterController.m */,
+				85A1EA7B13EF0DC6003B0912 /* PRCCurves.h */,
+				85A1EA7C13EF0DC6003B0912 /* PRCCurves.m */,
+				F5C8A2A307EED49E01A80101 /* PRCBriCon.h */,
+				F5C8A2A407EED49E01A80101 /* PRCBriCon.m */,
+				F59EB61D079F1C9101A80103 /* PRCScale.h */,
+				F59EB61E079F1C9101A80103 /* PRCScale.m */,
+				F52B6E0903DDC6C201A80101 /* PRCConvolve55.h */,
+				F52B6E0A03DDC6C201A80101 /* PRCConvolve55.m */,
+				F58A014205137A870163C8F7 /* PRCDFTLowPass.h */,
+				F58A014305137A870163C8F7 /* PRCDFTLowPass.m */,
+				F5DD42EB053AAEF901A80103 /* PRCDFTHighPass.h */,
+				F5DD42EC053AAEF901A80103 /* PRCDFTHighPass.m */,
+				F5E238A405808FD801A80103 /* PRCEqualize.h */,
+				F5E238A505808FD801A80103 /* PRCEqualize.m */,
+				F5B3A92205B53FF201A80101 /* PRCTraceEdges.h */,
+				F5B3A92305B53FF201A80101 /* PRCTraceEdges.m */,
+				F59300510609F6AE01A80103 /* PRCCustTraceEdges.h */,
+				F59300520609F6AE01A80103 /* PRCCustTraceEdges.m */,
+				F5D67DAF0612D96501A80103 /* PRCMedian.h */,
+				F5D67DB00612D96501A80103 /* PRCMedian.m */,
+				F5D9F4BA07AD976001A80101 /* PRCCrop.h */,
+				F5D9F4BC07AD976F01A80101 /* PRCCrop.m */,
+				85E2FA3B0B5CE7AA003E7B25 /* PRCGrayscale.h */,
+				85E2FA3C0B5CE7AA003E7B25 /* PRCGrayscale.m */,
+				85CBE1320ECE08B200A80101 /* PRCInvert.h */,
+				85CBE1330ECE08B200A80101 /* PRCInvert.m */,
+				85CBE1360ECE113300A80101 /* PRCFourier.h */,
+				85CBE1370ECE113300A80101 /* PRCFourier.m */,
+				85CBE13A0ECE328400A80101 /* PRCTransforms.h */,
+				85CBE13B0ECE328400A80101 /* PRCTransforms.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F568E20B03B7583A01A80101 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				85F3E8020EC5003200B9D568 /* PRFilter.h */,
+				85F3E8030EC5003200B9D568 /* PRFilter.m */,
+				F568E20703B757F201A80101 /* PRGrayscaleFilter.h */,
+				F568E20803B757F201A80101 /* PRGrayscaleFilter.m */,
+				F51A79AC03D9642D01A80101 /* PRConvolve55.h */,
+				F51A79AD03D9642D01A80101 /* PRConvolve55.m */,
+				F551DF3203E1B5CF01A80101 /* PRFourier.h */,
+				F551DF3303E1B5CF01A80101 /* PRFourier.m */,
+				F58A013E051379F90163C8F7 /* PRDFTLowPass.h */,
+				F58A013F051379F90163C8F7 /* PRDFTLowPass.m */,
+				F55BF70E054909D501A80103 /* PRDFTHighPass.h */,
+				F55BF70F054909D501A80103 /* PRDFTHighPass.m */,
+				F5DC9E43056A98E601A80101 /* PRDFTFilter.m */,
+				F5DC9E42056A98E601A80101 /* PRDFTFilter.h */,
+				85D196360D0A063900A80101 /* PRInvert.h */,
+				85D196370D0A063900A80101 /* PRInvert.m */,
+				F568E20C03B77C9A01A80101 /* PRTransforms.h */,
+				F568E20D03B77C9A01A80101 /* PRTransforms.m */,
+			);
+			name = Filters;
+			sourceTree = "<group>";
+		};
+		F5E238AC058091F001A80103 /* Enhance */ = {
+			isa = PBXGroup;
+			children = (
+				F5C8A2A707EED52A01A80101 /* PRBriCon.h */,
+				F5C8A2A807EED52A01A80101 /* PRBriCon.m */,
+				F5E238A8058091EB01A80103 /* PREqualize.h */,
+				F5E238A9058091EB01A80103 /* PREqualize.m */,
+				F5B3A92905B5568F01A80101 /* PRTraceEdges.h */,
+				F5B3A92A05B5568F01A80101 /* PRTraceEdges.m */,
+				F5930058060B2ED001A80103 /* PRCustTraceEdges.h */,
+				F5930059060B2ED001A80103 /* PRCustTraceEdges.m */,
+				F538441D0612E9BF01A80103 /* PRMedian.h */,
+				F538441E0612E9BF01A80103 /* PRMedian.m */,
+				85A1EA9B13EF1075003B0912 /* PRCurves.h */,
+				85A1EA9C13EF1075003B0912 /* PRCurves.m */,
+			);
+			name = Enhance;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8526E92410C91A2E0072C369 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8526E92510C91A2E0072C369 /* MyDocument.h in Headers */,
+				8526E92610C91A2E0072C369 /* PRImageView.h in Headers */,
+				8526E92710C91A2E0072C369 /* PRWindowController.h in Headers */,
+				8526E92810C91A2E0072C369 /* AppController.h in Headers */,
+				8526E92910C91A2E0072C369 /* PRGrayscaleFilter.h in Headers */,
+				8526E92A10C91A2E0072C369 /* PRTransforms.h in Headers */,
+				8526E92B10C91A2E0072C369 /* PRConvolve55.h in Headers */,
+				8526E92C10C91A2E0072C369 /* PRCConvolve55.h in Headers */,
+				8526E92D10C91A2E0072C369 /* PRFourier.h in Headers */,
+				8526E92E10C91A2E0072C369 /* PRDFTLowPass.h in Headers */,
+				8526E92F10C91A2E0072C369 /* PRCDFTLowPass.h in Headers */,
+				8526E93010C91A2E0072C369 /* FFT.h in Headers */,
+				8526E93110C91A2E0072C369 /* PRCDFTHighPass.h in Headers */,
+				8526E93210C91A2E0072C369 /* PRDFTHighPass.h in Headers */,
+				8526E93310C91A2E0072C369 /* PRDFTFilter.h in Headers */,
+				8526E93410C91A2E0072C369 /* PRCEqualize.h in Headers */,
+				8526E93510C91A2E0072C369 /* PREqualize.h in Headers */,
+				8526E93610C91A2E0072C369 /* PRHistogram.h in Headers */,
+				8526E93710C91A2E0072C369 /* PRCHistogram.h in Headers */,
+				8526E93810C91A2E0072C369 /* PRCumHisto.h in Headers */,
+				8526E93910C91A2E0072C369 /* PRCCumHisto.h in Headers */,
+				8526E93A10C91A2E0072C369 /* PRHisto.h in Headers */,
+				8526E93B10C91A2E0072C369 /* PRCHisto.h in Headers */,
+				8526E93C10C91A2E0072C369 /* PRCTraceEdges.h in Headers */,
+				8526E93D10C91A2E0072C369 /* PRTraceEdges.h in Headers */,
+				8526E93E10C91A2E0072C369 /* PRCCustTraceEdges.h in Headers */,
+				8526E93F10C91A2E0072C369 /* PRCustTraceEdges.h in Headers */,
+				8526E94010C91A2E0072C369 /* PRCMedian.h in Headers */,
+				8526E94110C91A2E0072C369 /* PRMedian.h in Headers */,
+				8526E94210C91A2E0072C369 /* PRCProgress.h in Headers */,
+				8526E94310C91A2E0072C369 /* PRProgressAction.h in Headers */,
+				8526E94410C91A2E0072C369 /* PRCScale.h in Headers */,
+				8526E94510C91A2E0072C369 /* PRScale.h in Headers */,
+				8526E94610C91A2E0072C369 /* PRCrop.h in Headers */,
+				8526E94710C91A2E0072C369 /* PRCCrop.h in Headers */,
+				8526E94810C91A2E0072C369 /* PRCBriCon.h in Headers */,
+				8526E94910C91A2E0072C369 /* PRBriCon.h in Headers */,
+				8526E94A10C91A2E0072C369 /* PRImage.h in Headers */,
+				8526E94B10C91A2E0072C369 /* PRCGrayscale.h in Headers */,
+				8526E94C10C91A2E0072C369 /* PRInvert.h in Headers */,
+				8526E94D10C91A2E0072C369 /* PRFilter.h in Headers */,
+				8526E94E10C91A2E0072C369 /* PRCInvert.h in Headers */,
+				8526E94F10C91A2E0072C369 /* PRCFourier.h in Headers */,
+				8526E95010C91A2E0072C369 /* PRCTransforms.h in Headers */,
+				859E918A1132DC4100C75DB0 /* PRFilterController.h in Headers */,
+				859E918E1132DC5500C75DB0 /* PRPreviewController.h in Headers */,
+				85A1EA7D13EF0DC6003B0912 /* PRCCurves.h in Headers */,
+				85A1EA8D13EF0E92003B0912 /* PRCurvesView.h in Headers */,
+				85A1EA9D13EF1075003B0912 /* PRCurves.h in Headers */,
+				85B7C77813F45738005EF60D /* PRCurvesPath.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8526E92310C91A2E0072C369 /* PRICE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8526E99610C91A2E0072C369 /* Build configuration list for PBXNativeTarget "PRICE" */;
+			buildPhases = (
+				8526E92410C91A2E0072C369 /* Headers */,
+				8526E95110C91A2E0072C369 /* Resources */,
+				8526E96610C91A2E0072C369 /* Sources */,
+				8526E99410C91A2E0072C369 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PRICE;
+			productInstallPath = "$(HOME)/Applications";
+			productName = PRICE;
+			productReference = 8526E99B10C91A2E0072C369 /* PRICE.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 8526E91910C918950072C369 /* Build configuration list for PBXProject "PRICE" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* PRICE */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8526E92310C91A2E0072C369 /* PRICE */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8526E95110C91A2E0072C369 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8526E95210C91A2E0072C369 /* Credits.rtf in Resources */,
+				8526E95310C91A2E0072C369 /* MainMenu.nib in Resources */,
+				8526E95410C91A2E0072C369 /* PRWindow.nib in Resources */,
+				8526E95510C91A2E0072C369 /* InfoPlist.strings in Resources */,
+				8526E95610C91A2E0072C369 /* Convolve55.nib in Resources */,
+				8526E95710C91A2E0072C369 /* README in Resources */,
+				8526E95810C91A2E0072C369 /* DFTLowPass.nib in Resources */,
+				8526E95910C91A2E0072C369 /* DFTHighPass.nib in Resources */,
+				8526E95A10C91A2E0072C369 /* Equalize.nib in Resources */,
+				8526E95B10C91A2E0072C369 /* Histogram.nib in Resources */,
+				8526E95C10C91A2E0072C369 /* CumulHistogram.nib in Resources */,
+				8526E95D10C91A2E0072C369 /* TraceEdges.nib in Resources */,
+				8526E95E10C91A2E0072C369 /* CustTraceEdges.nib in Resources */,
+				8526E95F10C91A2E0072C369 /* Median.nib in Resources */,
+				8526E96010C91A2E0072C369 /* ProgressPanel.nib in Resources */,
+				8526E96110C91A2E0072C369 /* Scale.nib in Resources */,
+				8526E96210C91A2E0072C369 /* Crop.nib in Resources */,
+				8526E96310C91A2E0072C369 /* BriCon.nib in Resources */,
+				8526E96410C91A2E0072C369 /* price128.icns in Resources */,
+				8526E96510C91A2E0072C369 /* Grayscale.nib in Resources */,
+				859E91921132DC6E00C75DB0 /* Preview.nib in Resources */,
+				85A1EA9613EF1013003B0912 /* Curves.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8526E96610C91A2E0072C369 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8526E96710C91A2E0072C369 /* MyDocument.m in Sources */,
+				8526E96810C91A2E0072C369 /* main.m in Sources */,
+				8526E96910C91A2E0072C369 /* PRImageView.m in Sources */,
+				8526E96A10C91A2E0072C369 /* PRWindowController.m in Sources */,
+				8526E96B10C91A2E0072C369 /* PRGrayscaleFilter.m in Sources */,
+				8526E96C10C91A2E0072C369 /* PRConvolve55.m in Sources */,
+				8526E96D10C91A2E0072C369 /* PRCConvolve55.m in Sources */,
+				8526E96E10C91A2E0072C369 /* PRFourier.m in Sources */,
+				8526E96F10C91A2E0072C369 /* PRTransforms.m in Sources */,
+				8526E97010C91A2E0072C369 /* PRDFTLowPass.m in Sources */,
+				8526E97110C91A2E0072C369 /* PRCDFTLowPass.m in Sources */,
+				8526E97210C91A2E0072C369 /* FFT.c in Sources */,
+				8526E97310C91A2E0072C369 /* PRCDFTHighPass.m in Sources */,
+				8526E97410C91A2E0072C369 /* PRDFTHighPass.m in Sources */,
+				8526E97510C91A2E0072C369 /* PRDFTFilter.m in Sources */,
+				8526E97610C91A2E0072C369 /* PRCEqualize.m in Sources */,
+				8526E97710C91A2E0072C369 /* PREqualize.m in Sources */,
+				8526E97810C91A2E0072C369 /* PRHistogram.m in Sources */,
+				8526E97910C91A2E0072C369 /* PRCHistogram.m in Sources */,
+				8526E97A10C91A2E0072C369 /* PRCumHisto.m in Sources */,
+				8526E97B10C91A2E0072C369 /* PRCCumHisto.m in Sources */,
+				8526E97C10C91A2E0072C369 /* PRHisto.m in Sources */,
+				8526E97D10C91A2E0072C369 /* PRCHisto.m in Sources */,
+				8526E97E10C91A2E0072C369 /* PRCTraceEdges.m in Sources */,
+				8526E97F10C91A2E0072C369 /* PRTraceEdges.m in Sources */,
+				8526E98010C91A2E0072C369 /* PRCCustTraceEdges.m in Sources */,
+				8526E98110C91A2E0072C369 /* PRCustTraceEdges.m in Sources */,
+				8526E98210C91A2E0072C369 /* PRCMedian.m in Sources */,
+				8526E98310C91A2E0072C369 /* PRMedian.m in Sources */,
+				8526E98410C91A2E0072C369 /* PRCProgress.m in Sources */,
+				8526E98510C91A2E0072C369 /* PRProgressAction.m in Sources */,
+				8526E98610C91A2E0072C369 /* PRCScale.m in Sources */,
+				8526E98710C91A2E0072C369 /* PRScale.m in Sources */,
+				8526E98810C91A2E0072C369 /* PRCrop.m in Sources */,
+				8526E98910C91A2E0072C369 /* PRCCrop.m in Sources */,
+				8526E98A10C91A2E0072C369 /* PRCBriCon.m in Sources */,
+				8526E98B10C91A2E0072C369 /* PRBriCon.m in Sources */,
+				8526E98C10C91A2E0072C369 /* AppController.m in Sources */,
+				8526E98D10C91A2E0072C369 /* PRImage.m in Sources */,
+				8526E98E10C91A2E0072C369 /* PRCGrayscale.m in Sources */,
+				8526E98F10C91A2E0072C369 /* PRInvert.m in Sources */,
+				8526E99010C91A2E0072C369 /* PRFilter.m in Sources */,
+				8526E99110C91A2E0072C369 /* PRCInvert.m in Sources */,
+				8526E99210C91A2E0072C369 /* PRCFourier.m in Sources */,
+				8526E99310C91A2E0072C369 /* PRCTransforms.m in Sources */,
+				859E918B1132DC4100C75DB0 /* PRFilterController.m in Sources */,
+				859E918F1132DC5500C75DB0 /* PRPreviewController.m in Sources */,
+				85A1EA7E13EF0DC6003B0912 /* PRCCurves.m in Sources */,
+				85A1EA8E13EF0E92003B0912 /* PRCurvesView.m in Sources */,
+				85A1EA9E13EF1075003B0912 /* PRCurves.m in Sources */,
+				85B7C77913F45738005EF60D /* PRCurvesPath.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165FFE840EACC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1660FE840EACC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A37F4B4FDCFA73011CA2CEA /* PRWindow.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B5FDCFA73011CA2CEA /* PRWindow.nib */,
+			);
+			name = PRWindow.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B7FDCFA73011CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4BAFDCFA73011CA2CEA /* English */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		859E91901132DC6E00C75DB0 /* Preview.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				859E91911132DC6E00C75DB0 /* English */,
+			);
+			name = Preview.nib;
+			sourceTree = "<group>";
+		};
+		85A1EA9413EF1013003B0912 /* Curves.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85A1EA9513EF1013003B0912 /* English */,
+			);
+			name = Curves.nib;
+			sourceTree = "<group>";
+		};
+		85E2FA3F0B5CEAF3003E7B25 /* Grayscale.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85E2FA400B5CEAF3003E7B25 /* English */,
+			);
+			name = Grayscale.nib;
+			sourceTree = "<group>";
+		};
+		F51A79A603D95E3101A80101 /* Convolve55.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F51A79A703D95E3101A80101 /* English */,
+			);
+			name = Convolve55.nib;
+			sourceTree = "<group>";
+		};
+		F52855C60689AB0301A80101 /* ProgressPanel.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F52855C70689AB0301A80101 /* English */,
+			);
+			name = ProgressPanel.nib;
+			sourceTree = "<group>";
+		};
+		F538441A0612E0D001A80103 /* Median.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F538441B0612E0D001A80103 /* English */,
+			);
+			name = Median.nib;
+			sourceTree = "<group>";
+		};
+		F54D8D6A0588EE6201A80103 /* Histogram.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F54D8D6B0588EE6201A80103 /* English */,
+			);
+			name = Histogram.nib;
+			sourceTree = "<group>";
+		};
+		F58A014605138B000163C8F7 /* DFTLowPass.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F58A014705138B000163C8F7 /* English */,
+			);
+			name = DFTLowPass.nib;
+			sourceTree = "<group>";
+		};
+		F59300550609F83101A80103 /* CustTraceEdges.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F59300560609F83101A80103 /* English */,
+			);
+			name = CustTraceEdges.nib;
+			sourceTree = "<group>";
+		};
+		F59B4FCB05923027011CE379 /* CumulHistogram.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F59B4FCC05923027011CE379 /* English */,
+			);
+			name = CumulHistogram.nib;
+			sourceTree = "<group>";
+		};
+		F59EB627079F2ED301A80103 /* Scale.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F59EB628079F2ED301A80103 /* English */,
+			);
+			name = Scale.nib;
+			sourceTree = "<group>";
+		};
+		F5A3DD6B058349E601A80103 /* Equalize.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5A3DD6C058349E601A80103 /* English */,
+			);
+			name = Equalize.nib;
+			sourceTree = "<group>";
+		};
+		F5B3A92605B5469C01A80101 /* TraceEdges.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5B3A92705B5469C01A80101 /* English */,
+			);
+			name = TraceEdges.nib;
+			sourceTree = "<group>";
+		};
+		F5C7F8ED07C75C6901A80101 /* Crop.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5C7F8EE07C75C6901A80101 /* English */,
+			);
+			name = Crop.nib;
+			sourceTree = "<group>";
+		};
+		F5C8A2AB07EED94A01A80101 /* BriCon.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5C8A2AC07EED94A01A80101 /* English */,
+			);
+			name = BriCon.nib;
+			sourceTree = "<group>";
+		};
+		F5DD42E8053AAE5201A80103 /* DFTHighPass.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5DD42E9053AAE5201A80103 /* English */,
+			);
+			name = DFTHighPass.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8526E91A10C918950072C369 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+			};
+			name = Development;
+		};
+		8526E91B10C918950072C369 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		8526E91C10C918950072C369 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		8526E99710C91A2E0072C369 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PFE_FILE_C_DIALECTS = "c objective-c";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-PRICE.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-Wall";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = PRICE;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		8526E99810C91A2E0072C369 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PFE_FILE_C_DIALECTS = "c objective-c";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-PRICE.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-Wall";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = PRICE;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		8526E99910C91A2E0072C369 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PFE_FILE_C_DIALECTS = "c objective-c";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-PRICE.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-Wall";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = PRICE;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8526E91910C918950072C369 /* Build configuration list for PBXProject "PRICE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8526E91A10C918950072C369 /* Development */,
+				8526E91B10C918950072C369 /* Deployment */,
+				8526E91C10C918950072C369 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		8526E99610C91A2E0072C369 /* Build configuration list for PBXNativeTarget "PRICE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8526E99710C91A2E0072C369 /* Development */,
+				8526E99810C91A2E0072C369 /* Deployment */,
+				8526E99910C91A2E0072C369 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}

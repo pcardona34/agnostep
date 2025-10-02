@@ -1,0 +1,218 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/FSValue">FSValue</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>NSObject</DD>
+</DL></blockquote>
+
+
+
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSValue.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+No class description.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Variables</H2>
+	<blockquote>
+	
+		<CODE>FSKeySet *<B>_keys</B>;</CODE><BR>
+		<CODE>NSString *<B>_type</B>;</CODE><BR>
+		<CODE>id <B>_value</B>;</CODE><BR>
+		<CODE>NSArray *<B>_possibleValues</B>;</CODE><BR>
+		<CODE>NSString *<B>_hashcode</B>;</CODE><BR>
+		<CODE>FSTable *<B>_table</B>;</CODE><BR>
+	<P><TABLE>
+	
+		<TR><TD>_keys</TD><TD>The value's key set.</TD></TR>
+	
+		<TR><TD>_type</TD><TD>Type of the value. Usually a class name.</TD></TR>
+	
+		<TR><TD>_value</TD><TD>The actual value; an instance of _type.</TD></TR>
+	
+		<TR><TD>_possibleValues</TD><TD>Value options, e.g. for boolean values.</TD></TR>
+	
+		<TR><TD>_hashcode</TD><TD>A unique identifier for this value.</TD></TR>
+	
+		<TR><TD>_table</TD><TD>Cached reference to the table this value belongs to.</TD></TR>
+	
+	</TABLE>
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- init">- init</A></DD>
+		
+			<DD> <A HREF="#- initWithValue:">- initWithValue:</A></DD>
+		
+			<DD> <A HREF="#- initWithValue:forKeys:">- initWithValue:forKeys:</A></DD>
+		
+			<DD> <A HREF="#- keySet">- keySet</A></DD>
+		
+			<DD> <A HREF="#- setKeys:">- setKeys:</A></DD>
+		
+			<DD> <A HREF="#- addKey:">- addKey:</A></DD>
+		
+			<DD> <A HREF="#- revalidateKeys">- revalidateKeys</A></DD>
+		
+			<DD> <A HREF="#- hashcode">- hashcode</A></DD>
+		
+			<DD> <A HREF="#- hashcodeEqualTo:">- hashcodeEqualTo:</A></DD>
+		
+			<DD> <A HREF="#- type">- type</A></DD>
+		
+			<DD> <A HREF="#- value">- value</A></DD>
+		
+			<DD> <A HREF="#- setValue:">- setValue:</A></DD>
+		
+			<DD> <A HREF="#- doubleValue">- doubleValue</A></DD>
+		
+			<DD> <A HREF="#- stringValue">- stringValue</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- addKey:"></A><H3><A NAME="//apple_ref/occ/instm/FSValue/addKey:">addKey:</A></H3><P>
+		<CODE>- (void)<B>addKey:</B>(FSKey*)<EM>someKey</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- doubleValue"></A><H3><A NAME="//apple_ref/occ/instm/FSValue/doubleValue">doubleValue</A></H3><P>
+		<CODE>- (double)<B>doubleValue</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- hashcode"></A><H3><A NAME="//apple_ref/occ/instm/FSValue/hashcode">hashcode</A></H3><P>
+		<CODE>- (NSString*)<B>hashcode</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- hashcodeEqualTo:"></A><H3><A NAME="//apple_ref/occ/instm/FSValue/hashcodeEqualTo:">hashcodeEqualTo:</A></H3><P>
+		<CODE>- (BOOL)<B>hashcodeEqualTo:</B>(NSString*)<EM>aHashcode</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- init"></A><H3><A NAME="//apple_ref/occ/instm/FSValue/init">init</A></H3><P>
+		<CODE>- (id)<B>init</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- initWithValue:"></A><H3><A NAME="//apple_ref/occ/instm/FSValue/initWithValue:">initWithValue:</A></H3><P>
+		<CODE>- (id)<B>initWithValue:</B>(id)<EM>aValue</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- initWithValue:forKeys:"></A><H3><A NAME="//apple_ref/occ/instm/FSValue/initWithValue:forKeys:">initWithValue:forKeys:</A></H3><P>
+		<CODE>- (id)<B>initWithValue:</B>(id)<EM>aValue</EM> <B>forKeys:</B>(FSKeySet*)<EM>keys</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- keySet"></A><H3><A NAME="//apple_ref/occ/instm/FSValue/keySet">keySet</A></H3><P>
+		<CODE>- (FSKeySet*)<B>keySet</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- revalidateKeys"></A><H3><A NAME="//apple_ref/occ/instm/FSValue/revalidateKeys">revalidateKeys</A></H3><P>
+		<CODE>- (void)<B>revalidateKeys</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setKeys:"></A><H3><A NAME="//apple_ref/occ/instm/FSValue/setKeys:">setKeys:</A></H3><P>
+		<CODE>- (void)<B>setKeys:</B>(FSKeySet*)<EM>newKeys</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setValue:"></A><H3><A NAME="//apple_ref/occ/instm/FSValue/setValue:">setValue:</A></H3><P>
+		<CODE>- (void)<B>setValue:</B>(id)<EM>aValue</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- stringValue"></A><H3><A NAME="//apple_ref/occ/instm/FSValue/stringValue">stringValue</A></H3><P>
+		<CODE>- (NSString*)<B>stringValue</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- type"></A><H3><A NAME="//apple_ref/occ/instm/FSValue/type">type</A></H3><P>
+		<CODE>- (NSString*)<B>type</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- value"></A><H3><A NAME="//apple_ref/occ/instm/FSValue/value">value</A></H3><P>
+		<CODE>- (id)<B>value</B>
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2002 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

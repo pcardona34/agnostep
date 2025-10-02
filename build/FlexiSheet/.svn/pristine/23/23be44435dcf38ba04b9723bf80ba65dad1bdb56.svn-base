@@ -1,0 +1,259 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/FSMatrix">FSMatrix</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>NSControl</DD>
+</DL></blockquote>
+
+
+
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSMatrix.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+FSMatrix can use flexible space for rows and columns.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Variables</H2>
+	<blockquote>
+	
+		<CODE>id&lt;FSMatrixDataSource&gt; <B>_dataSource</B>;</CODE><BR>
+		<CODE>int <B>_numRows</B>;</CODE><BR>
+		<CODE>int <B>_numCols</B>;</CODE><BR>
+		<CODE>float *<B>_colWidths</B>;</CODE><BR>
+		<CODE>float *<B>_rowHeights</B>;</CODE><BR>
+		<CODE>BOOL <B>_isHeader</B>;</CODE><BR>
+		<CODE>BOOL <B>_isEditing</B>;</CODE><BR>
+		<CODE>FSCell <B>_editorCell</B>;</CODE><BR>
+		<CODE>BOOL <B>_vRezAllowed</B>;</CODE><BR>
+		<CODE>BOOL <B>_hRezAllowed</B>;</CODE><BR>
+	<P><TABLE>
+	
+		<TR><TD>_dataSource</TD><TD>where the data comes from</TD></TR>
+	
+		<TR><TD>_numRows</TD><TD>number of rows, cached from DS</TD></TR>
+	
+		<TR><TD>_numCols</TD><TD>number of columns, cached from DS</TD></TR>
+	
+		<TR><TD>_colWidths</TD><TD>column sizes, cached from DS</TD></TR>
+	
+		<TR><TD>_rowHeights</TD><TD>row sizes, cached from DS</TD></TR>
+	
+		<TR><TD>_isHeader</TD><TD>header matrix has different look</TD></TR>
+	
+		<TR><TD>_isEditing</TD><TD>is the field editor active?</TD></TR>
+	
+		<TR><TD>_editorCell</TD><TD>the cell that is being edited</TD></TR>
+	
+		<TR><TD>_vRezAllowed</TD><TD>vertical resizing of cells is allowed</TD></TR>
+	
+		<TR><TD>_hRezAllowed</TD><TD>horizontal resizing of cells is allowed</TD></TR>
+	
+	</TABLE>
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- frameForRow:column:">- frameForRow:column:</A></DD>
+		
+			<DD> <A HREF="#- widthForColumn:">- widthForColumn:</A></DD>
+		
+			<DD> <A HREF="#- heightForRow:">- heightForRow:</A></DD>
+		
+			<DD> <A HREF="#- reloadData">- reloadData</A></DD>
+		
+			<DD> <A HREF="#- reloadColumnWidthsInRange:">- reloadColumnWidthsInRange:</A></DD>
+		
+			<DD> <A HREF="#- reloadRowHeightsInRange:">- reloadRowHeightsInRange:</A></DD>
+		
+			<DD> <A HREF="#- dataSource">- dataSource</A></DD>
+		
+			<DD> <A HREF="#- setDataSource:">- setDataSource:</A></DD>
+		
+			<DD> <A HREF="#- isHeaderMatrix">- isHeaderMatrix</A></DD>
+		
+			<DD> <A HREF="#- setHeaderMatrix:">- setHeaderMatrix:</A></DD>
+		
+			<DD> <A HREF="#- numberOfRows">- numberOfRows</A></DD>
+		
+			<DD> <A HREF="#- numberOfColumns">- numberOfColumns</A></DD>
+		
+			<DD> <A HREF="#- startEditingCell:withEvent:">- startEditingCell:withEvent:</A></DD>
+		
+			<DD> <A HREF="#- _editCell:selectAll:">- _editCell:selectAll:</A></DD>
+		
+			<DD> <A HREF="#- _endEditing">- _endEditing</A></DD>
+		
+			<DD> <A HREF="#- cellAtPoint:">- cellAtPoint:</A></DD>
+		
+			<DD> <A HREF="#- cellAtPoint:origin:">- cellAtPoint:origin:</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- _editCell:selectAll:"></A><H3><A NAME="//apple_ref/occ/instm/FSMatrix/_editCell:selectAll:">_editCell:selectAll:</A></H3><P>
+		<CODE>- (BOOL)<B>_editCell:</B>(FSCell)<EM>cell</EM> <B>selectAll:</B>(BOOL)<EM>select</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- _endEditing"></A><H3><A NAME="//apple_ref/occ/instm/FSMatrix/_endEditing">_endEditing</A></H3><P>
+		<CODE>- (BOOL)<B>_endEditing</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- cellAtPoint:"></A><H3><A NAME="//apple_ref/occ/instm/FSMatrix/cellAtPoint:">cellAtPoint:</A></H3><P>
+		<CODE>- (FSCell)<B>cellAtPoint:</B>(NSPoint)<EM>point</EM>
+			
+		</CODE><P>
+		Selection logic: has been moved to data source.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- cellAtPoint:origin:"></A><H3><A NAME="//apple_ref/occ/instm/FSMatrix/cellAtPoint:origin:">cellAtPoint:origin:</A></H3><P>
+		<CODE>- (FSCell)<B>cellAtPoint:</B>(NSPoint)<EM>point</EM> <B>origin:</B>(NSPoint*)<EM>origin</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- dataSource"></A><H3><A NAME="//apple_ref/occ/instm/FSMatrix/dataSource">dataSource</A></H3><P>
+		<CODE>- (id&lt;FSMatrixDataSource&gt;)<B>dataSource</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- frameForRow:column:"></A><H3><A NAME="//apple_ref/occ/instm/FSMatrix/frameForRow:column:">frameForRow:column:</A></H3><P>
+		<CODE>- (NSRect)<B>frameForRow:</B>(int)<EM>row</EM> <B>column:</B>(int)<EM>col</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- heightForRow:"></A><H3><A NAME="//apple_ref/occ/instm/FSMatrix/heightForRow:">heightForRow:</A></H3><P>
+		<CODE>- (float)<B>heightForRow:</B>(int)<EM>row</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- isHeaderMatrix"></A><H3><A NAME="//apple_ref/occ/instm/FSMatrix/isHeaderMatrix">isHeaderMatrix</A></H3><P>
+		<CODE>- (BOOL)<B>isHeaderMatrix</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- numberOfColumns"></A><H3><A NAME="//apple_ref/occ/instm/FSMatrix/numberOfColumns">numberOfColumns</A></H3><P>
+		<CODE>- (int)<B>numberOfColumns</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- numberOfRows"></A><H3><A NAME="//apple_ref/occ/instm/FSMatrix/numberOfRows">numberOfRows</A></H3><P>
+		<CODE>- (int)<B>numberOfRows</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- reloadColumnWidthsInRange:"></A><H3><A NAME="//apple_ref/occ/instm/FSMatrix/reloadColumnWidthsInRange:">reloadColumnWidthsInRange:</A></H3><P>
+		<CODE>- (void)<B>reloadColumnWidthsInRange:</B>(NSRange)<EM>columns</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- reloadData"></A><H3><A NAME="//apple_ref/occ/instm/FSMatrix/reloadData">reloadData</A></H3><P>
+		<CODE>- (void)<B>reloadData</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- reloadRowHeightsInRange:"></A><H3><A NAME="//apple_ref/occ/instm/FSMatrix/reloadRowHeightsInRange:">reloadRowHeightsInRange:</A></H3><P>
+		<CODE>- (void)<B>reloadRowHeightsInRange:</B>(NSRange)<EM>rows</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setDataSource:"></A><H3><A NAME="//apple_ref/occ/instm/FSMatrix/setDataSource:">setDataSource:</A></H3><P>
+		<CODE>- (void)<B>setDataSource:</B>(id&lt;FSMatrixDataSource&gt;)<EM>dataSource</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setHeaderMatrix:"></A><H3><A NAME="//apple_ref/occ/instm/FSMatrix/setHeaderMatrix:">setHeaderMatrix:</A></H3><P>
+		<CODE>- (void)<B>setHeaderMatrix:</B>(BOOL)<EM>flag</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- startEditingCell:withEvent:"></A><H3><A NAME="//apple_ref/occ/instm/FSMatrix/startEditingCell:withEvent:">startEditingCell:withEvent:</A></H3><P>
+		<CODE>- (void)<B>startEditingCell:</B>(FSCell)<EM>cell</EM> <B>withEvent:</B>(NSEvent*)<EM>event</EM>
+			
+		</CODE><P>
+		Should be called only when a valid selection exists.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- widthForColumn:"></A><H3><A NAME="//apple_ref/occ/instm/FSMatrix/widthForColumn:">widthForColumn:</A></H3><P>
+		<CODE>- (float)<B>widthForColumn:</B>(int)<EM>col</EM>
+			
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2002 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

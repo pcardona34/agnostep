@@ -1,0 +1,51 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    FirstResponder = {
+	Actions = (
+	    "changePassBand:",
+	    "changeStopBand:",
+	    "dftHPAutoRange:",
+	    "dftHPCancel:",
+	    "dftHPOK:",
+	    "dftLPCancel:",
+	    "dftLPOK:",
+	    "filterCancel:",
+	    "filterOK:",
+	    "orderFrontFontPanel:",
+	    "parametersChanged:",
+	    "showDFTHP:",
+	    "showDFTLP:",
+	    "showFilter:"
+	);
+	Super = NSObject;
+    };
+    PRCDFTHighPass = {
+	Actions = (
+	    "dftHPAutoRange:",
+	    "changeStopBand:",
+	    "changePassBand:"
+	);
+	Outlets = (
+	    filterWindow,
+	    autoRangeCheck,
+	    passBandSlider,
+	    stopBandSlider,
+	    passBandVal,
+	    passBandValPi,
+	    stopBandVal,
+	    stopBandValPi
+	);
+	Super = PRFilterController;
+    };
+    PRFilterController = {
+	Actions = (
+	    "showFilter:",
+	    "filterOK:",
+	    "filterCancel:",
+	    "parametersChanged:"
+	);
+	Outlets = (
+	);
+	Super = NSObject;
+    };
+}

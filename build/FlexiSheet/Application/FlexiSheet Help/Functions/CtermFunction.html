@@ -1,0 +1,41 @@
+<HTML><HEAD><META HTTP-EQUIV="content-type" CONTENT="text/html;charset=iso-8859-1"><TITLE>
+
+cterm (compound term) Function
+
+</TITLE><META NAME="Copyright" CONTENT="Copyright Stefan Leuker."></HEAD><BODY BGCOLOR="#ffffff"><DIV ALIGN="left"><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%"><TR HEIGHT="40"><TD WIDTH="6" HEIGHT="40"></TD><TD HEIGHT="40" VALIGN="middle"><FONT FACE="Lucida Grande,Helvetica,Arial" SIZE="4"><B>
+
+cterm&nbsp;(compound term)&nbsp;Function
+
+</B></FONT></TD></TR></TABLE>
+<img src="../av/3PixelRule.tiff">
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+cterm is a Financial function that gives the number of compounding periods required for a single investment to grow to a future value using a fixed interest rate.
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+Use cterm to find how long it will take an investment invested at a fixed compounded interest rate to grow to a specific amount. 
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial"><B>
+
+Syntax:</B>
+<pre>  cterm(interest, future value, present value)</pre>
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+<B>interest:</B> the interest rate in percent.<BR>
+<B>future value:</B> the value that the investment will grow to.<BR>
+<B>present value:</B> the present value of the investment.
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+<B>Example:</B><BR>
+How long will it take you to double $25000 invested at 6% annual rate?
+<BLOCKQUOTE> cterm(6/12,50000,25000)/12 gives 11.5813.<BR>It will take about 11.6 years to double your money at an annual rate of 6%. </BLOCKQUOTE>
+
+</FONT></P>
+</DIV></BODY></HTML>

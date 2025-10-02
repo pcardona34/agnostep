@@ -1,0 +1,15 @@
+
+INTRODUCTION
+------------
+
+Sorry, this was so completely deprecated that I figured out deleting
+it is a better idea. Here's how to understand RSSKit:
+
+Read the RSSArticleProtocol.h, RSSFeedProtocol.h, RSSFactory.h files.
+They will give you a hint on how to use RSSKit. You can write your own
+concrete factory to make use of RSSArticle subclassing easier.
+
+Look at the Grr development version Grrr for an example on how to do
+this. It will be available in the Etoile SVN by the end of February
+2007. Until then, just write me a mail: guenther@unix-ag.uni-kl.de
+

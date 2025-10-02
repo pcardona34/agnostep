@@ -1,0 +1,937 @@
+2021-12-13 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Fix undo for path subdivide.
+
+2019-08-16 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.h
+	* GRDocView.m
+	* GRDocument.m
+	Implement infinite undo levels, adjust save/restore methods
+
+2019-05-14 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Actually fix moving forward/backward
+
+2019-05-12 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Make move forward/backward methods handle group of objects.
+
+2019-05-10 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.h
+	* GRDocView.m
+	make move front/back methods use saveCurrentObjects instead of the deep version.
+	Implement move to absolute back/front and rename existing methods to
+	moveSelectedObjectsBackward and moveSelectedObjectsForward
+
+2018-10-04 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Be more refined when checking printer size and margins.
+
+2018-08-30 Riccardo Mottola <rm@gnu.org>
+
+	* GRTools.m
+        Set Tool panel as floating
+
+2018-04-10 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPath.h
+	* GRBezierPath.m
+	* GRDocView.m
+	Methods to remove points from splines
+
+2018-03-28 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierControlPoint.h
+	* GRBezierControlPoint.m
+	Path setter method.
+
+2018-03-26 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Update view after subdiving the path.
+
+	* GRBezierPath.m (confirmNewCurve:)
+	Fix if called without a currentPoint.
+
+2018-03-14 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPath.m
+	Fix indexOfPoint and improve subdividePathAtPoint
+
+2018-03-14 Riccardo Mottola <rm@gnu.org>
+
+	* GRPathObject.m
+	* GRBezierPath.m
+	Correct initFromData initialization hierarchy.
+
+2018-03-13 Riccardo Mottola <rm@gnu.org>
+
+        * GRPathObject.h
+	* GRPathObject.m
+	* GRBezierPath.m
+	Hold a non-zoomed bezier path in path as well as displayPath and remake both during remakePath. Use the non-zoomed path for printing.
+
+2018-03-12 Riccardo Mottola <rm@gnu.org>
+
+        * GRBezierPath.m
+	* GRBox.m
+	* GRCircle.m
+	* GRDrawableObject.m
+	* GRImage.m
+	* GRPathObject.m
+	* GRText.m
+	Unifiy initWithData by initing up the hierarchy.
+
+2018-03-09 Riccardo Mottola <rm@gnu.org>
+
+        * GRImage.m
+	drawRect: fix printing while in zoomed view
+
+2018-03-08 Riccardo Mottola <rm@gnu.org>
+
+        * GRBox.m
+	* GRCircle.m
+	* GRText.m
+	drawRect: fix printing while in zoomed view
+
+2018-03-03 Riccardo Mottola <rm@gnu.org>
+
+        * GRPropsEditor.h
+	* GRPropsEditor.m
+	* English.lproj/PropertiesEditor.nib
+	Add steppers for line width, flatness and miter values
+
+	* GRPathObject.m
+	Set path default values as NSBezierPath's ones.
+
+2017-11-11 Riccardo Mottola <rm@gnu.org>
+
+        * GRDocView.m
+        Implement missing validates for menus.
+
+2017-11-05 Riccardo Mottola <rm@gnu.org>
+
+	* English.lproj/MainMenu.nib
+	* GRDocView.h
+        * GRDocView.m
+        Add menu for point editing; add validateMenuItem for point operations.
+
+2017-11-05 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.h
+        * GRDocView.m
+        * GRBezierControlPoint.h
+        * GRBezierControlPoint.m
+        Make Bezier control points segment (overlap handles) or split them to round point.
+
+2017-09-03 Riccardo Mottola <rm@gnu.org>
+
+	* GRImage.m
+        Fix memory leak
+        
+2017-04-24 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPathEditor.m
+        Fix uninitialized pp point var.
+
+2017-04-15 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Use setObject and not setValue
+
+2017-04-08 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocument.m
+        * GRDocView.m
+        Re-read objects and clean objects array before reverting.
+
+2017-04-02 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Use proper format type and cast.
+
+2017-03-24 Riccardo Mottola <rm@gnu.org>
+
+	* GRText.m
+	Do not choke when Font is not found, but replace with system one.
+
+2017-02-07 Riccardo Mottola <rm@gnu.org>
+
+	* GRText.m
+	Optimize editor drawing if unselected.
+
+2017-01-08 Riccardo Mottola <rm@gnu.org>
+
+	* GRText.m
+        * GRTextEditorView.m
+        Remove hack and fix editor initialization instead.
+
+2017-01-07 Riccardo Mottola <rm@gnu.org>
+
+	* GRText.m
+        Force paragraph spacing to 0.0 (needed for >= 10.4) and take it in account for lines
+
+2017-01-01 Riccardo Mottola <rm@gnu.org>
+
+	* GRCircle.m
+        decode circleness properly
+
+2015-04-04 Riccardo Mottola <rm@gnu.org>
+
+	* GRText.m
+	Put most attributes in the property list when initializing from Data.
+
+2015-04-04 Riccardo Mottola <rm@gnu.org>
+
+	* GRText.h
+	* GRText.m
+	Use as only ivar the paragraph attributes, remove derived information.
+
+2015-04-04 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPath.m
+	Use the editor inited in super.
+
+2015-04-04 Riccardo Mottola <rm@gnu.org>
+
+	* GRImage.m
+	Correctly initialize position in init, set string and font through setString.
+
+2015-04-02 Riccardo Mottola <rm@gnu.org>
+
+	* GRDrawableObject.h
+	* GRDrawableObject.m
+	Provide allocEditor to get object editor and init using it.
+	That way subclasses can init with super and get the correct editor.
+
+	* GRBox.m
+	* GRImage.m
+	* GRCircle.m
+	Use the editor inited in super.
+
+	* GRText.m
+	init through super class.
+
+2015-03-31 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Save also Image objects by encoding them
+
+2015-03-24 Riccardo Mottola <rm@gnu.org>
+
+	* GRImageEditor.h
+	* GRImageEditor.m
+	Dedicated Image Editor.
+
+	* GRImage.h
+	* GRImage.m
+	Remember original size and aspect ratio, initialilye dedicated editor.
+
+2015-03-21 Riccardo Mottola <rm@gnu.org>
+
+	* GRBoxEditor.h
+	* GRBoxEditor.m
+	* GRCircleEditor.h
+	* GRCircleEditor.m
+	Factor out control point constraints in a separate method.
+
+2015-02-28 Riccardo Mottola <rm@gnu.org>
+
+	* GRImage.m
+	Draw image respecting zoom factor.
+
+2015-02-27 Riccardo Mottola <rm@gnu.org>
+
+	* GRImage.h
+	* GRImage.m
+	Image accessor.
+
+	* GRDocView.m
+	If only a single Image is selected, copy it to the clipboard also as NSTIFFPboardType.
+
+2015-02-27 Riccardo Mottola <rm@gnu.org>
+
+	* GRImage.m
+	Encode (and decode) image representation data in description
+
+	* GRDocView.m
+	Recognize images in paste ops.
+
+2015-01-18 Riccardo Mottola <rm@gnu.org>
+
+	* GRImage.h
+	* GRImage.m
+	Add primtive GRImage implementation
+
+	* GRDocView.m
+	Support for pasting images and generating GRImages
+
+2015-01-03 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPath.m (initFromData)
+	Initialize not only handle points, but also associated rects
+
+2015-01-01 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Remove unused variable.
+
+	* GRText.m
+	init string properties only if string not nil
+
+2014-12-28 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPath.m
+	During remakePath recalculate Start/Middle/End
+
+2014-10-12 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierControlPoint.h
+	* GRBezierControlPoint.m
+	Define Start, Middle, End position and draw handles accordingly
+
+2014-01-19 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPath.m (remakePath)
+	Detect line segments and rebuild path accordingly.
+
+2014-01-17 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierControlPoint.m
+	Initialize all handles to the center point.
+
+2013-12-12 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPath.m (copyWithZone)
+	release copied control point!
+
+2013-11-24 Riccardo Mottola <rm@gnu.org>
+
+	* GRPathObject.m (copyWithZone)
+	Copy all object's properties.
+
+2013-11-15 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierControlPoint.m
+	* GRBezierPath.m
+        Save path description as point series and not psdata (allows saving point type for cusps)
+
+2013-11-14 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPath.m
+	Clean up variable scope.
+
+2013-11-14 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPath.m (remakePath)
+	Simplify to remake path independently of selected control points.
+
+2013-11-13 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierControlPoint.m
+	* GRBezierPath.m
+	* GRBox.m
+	* GRCircle.m
+	* GRDrawableObject.m
+	* GRObjectControlPoint.h
+	* GRObjectControlPoint.m
+	* GRObjectEditor.m
+	* GRText.m
+	* GRTextEditor.m
+	Reimplement copy without NSCopyObject.
+
+2013-11-13 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPathEditor.h
+	* GRBezierPathEditor.m
+	selected control points accessor.
+
+	* GRBezierControlPoint.h
+	* GRBezierControlPoint.m
+	Symmetrical setter.
+
+	* GRDocView.h
+	* GRDocView.m
+	Context-menu for changing control point types.
+
+2013-11-05 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPath.h (unselectOtherControls)
+	* GRBezierPath.m
+	Remove unselectOtherControls, which is an editor method.
+
+2013-11-04 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Use deep copy to save undo for Path editing.
+
+2013-11-04 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierControlPoint.h
+	* GRBezierControlPoint.m
+	Initial support for supporting non-symmetrical handles. Disabled.
+
+2013-10-31 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Set only properties which are really present.
+
+2013-10-24 Riccardo Mottola  <rm@gnu.org>
+
+	* GRDocView.m
+	Fix Page Down scrolling.
+
+2013-10-20 Riccardo Mottola  <rm@gnu.org>
+
+	* GRDocView.m
+	Make page Up/Down keys work again, delete key action registers undo.
+
+2013-10-18 Riccardo Mottola  <rm@gnu.org>
+
+	* GRCircle.h
+	* GRCircle.m
+	* GRDocView.m
+	* Graphos.h
+	Allow to draw ovals, bump file version, treat old files as circles.
+
+2013-10-15 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPath.m
+        Silence warning through initialization.
+
+2013-10-10 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m (selectObjectAtPoint)
+	Vastly improve multiple object selection. Add/remove with shift.
+	If Object is re-selected, don't deselect all to allow group move.
+
+2013-09-18 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPath.m
+	* GRBezierPathEditor.m
+	* GRBoxEditor.m
+	* GRCircleEditor.m
+	Silence some initialization warnings.
+
+2013-08-12 Riccardo Mottola <rm@gnu.org>
+
+	* GRPathObject.h
+	* GRPathObject.m
+	Migrate from int to proper NS enumerated  types.
+
+2013-08-12 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPath.m
+	Scale back zoom factor from path data
+
+2013-07-18 Riccardo Mottola <rm@gnu.org>
+
+	* GRText.m
+	Fix bounds initialization (fixes drawing of editor after editing).
+
+2013-07-18 Riccardo Mottola <rm@gnu.org>
+
+	* GRText.m
+	Do not print editor during printing context.
+
+2013-07-09 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Fix zoom to Width and to Page.
+
+2013-07-08 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Increase density of Zoom steps.
+
+2013-07-07 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m (verifyModifiersOfEvent)
+        Change alternate property to check for alternate and not command
+
+2013-07-05 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m (usedFonts)
+	* GRDocView.h (usedFonts)
+	Remove unused method.
+
+2013-07-05 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierControlPoint.m
+	* GRBezierPathEditor.h
+	* GRBezierPathEditor.m
+	* GRDocView.m
+	* GRObjectEditor.h
+	* GRObjectEditor.m
+	* GRText.m
+	* GRTextEditor.h
+	* GRTextEditor.m
+	Refactor and clean up case of isValid, isSelected, isDone
+
+2013-07-05 Riccardo Mottola <rm@gnu.org>
+
+	* GRObjectEditor.m
+	When selecting for editing, mark the object as not done.
+
+	* GRDocView.m
+	Actually use the object found.
+
+	* GRBezierPathEditor.m (selectForEditing)
+	Just use superclass implementation.
+
+	* GRObjectControlPoint.m
+	Include proper header.
+
+2013-06-28 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Correctly select paths in zommed mode, select bezier handles also if they lie inside a closed shape.
+
+2013-06-28 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPath.m (onPathBorder)
+	Implement onPathBorder ontop of onControlPoint, expose onControlPoint separately.
+
+2013-06-27 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPathEditor.m
+        Fix handling control point handles in zoomed mode.
+
+2013-06-27 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPath.m
+        Draw the control point through its method, properly zoomed.
+
+2013-06-27 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Permit path editing only on selected objects, do not unselect when clicking out of controls.
+
+2013-06-24 Riccardo Mottola <rm@gnu.org>
+
+	* GRText.m
+        Rewrite string drawing, use drawInRect and disregard paragraph space.
+
+2013-06-23 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierControlPoint.m
+	* GRBezierPath.m
+	* GRBezierPathEditor.m
+	* GRBox.h
+	* GRBox.m
+	* GRBoxEditor.m
+	* GRCircle.h
+	* GRCircle.m
+	* GRCircleEditor.m
+	* GRDocView.m
+	* GRDrawableObject.h
+	* GRDrawableObject.m
+	* GRFunctions.h
+	* GRFunctions.m
+	* GRObjectControlPoint.m
+	* GRText.m
+	Keep the zoom factor as a separate property and keep the original size and position, independently of zoom
+
+2013-06-16 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPathEditor.m
+	* GRBezierControlPoint.m
+        Fix drawing of unselected controlpoints.
+
+2013-06-14 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierControlPoint.h
+	* GRBezierControlPoint.m
+	* GRBezierPathEditor.m
+	Simplify and refactor drawing inside the BezierControlPoint.
+
+	* GRText.m
+	Fix zoomed drawing.
+
+	* GRCircle.m
+	Cleanup drawing, make guides slightly stronger.
+
+2013-06-13 Riccardo Mottola <rm@gnu.org>
+
+	* GRBoxEditor.m
+	* GRCircleEditor.m
+	* GRObjectControlPoint.h
+	* GRObjectControlPoint.m
+	Refactor drawing into the Object Control Point
+
+2013-03-01 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Check loop condition better due to unsigned transition.
+
+2013-03-01 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierControlPoint.h
+	* GRBezierControlPoint.m
+	* GRBox.m
+	* GRCircle.m
+	Transitions to CGFLoat missed in the previous commit.
+
+2013-03-01 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPath.h
+	* GRBezierPath.m
+	* GRObjectControlPoint.h
+	* GRObjectControlPoint.m
+	* GRText.h
+	* GRText.m
+	CGFloat transition
+
+2013-02-28 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m (deepCopyObjects)
+	Return an autoreleased array.
+
+2013-02-28 Riccardo Mottola <rm@gnu.org>
+
+	* GRTextEditorView.m
+	Fix warnings.
+
+2013-02-25 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	When selecting with shift, unselect an already selected object.
+
+2013-02-24 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	NSUInteger, CGFloat transitions, cleanup
+
+2013-02-24 Sebastian Reitenbach <sebastia@l00-bugdead-prods.de>
+	* GRTextEditorView.m
+	* shutup clang warning
+
+2013-02-23 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m (startCircleAtPoint, startBoxAtPoint)
+	Remove code for new/old editor, since it is useless for these shapes.
+
+2013-02-23 Riccardo Mottola <rm@gnu.org>
+
+	* GRCircleEditor.m
+	* GRBoxEditor.m
+	Remove unused method moveControlAtPoint :toPoint
+
+2013-02-22 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m (startCircleAtPoint)
+	Call moveControlPointOfEditor directly instead of duplicating code.
+
+2013-02-22 Riccardo Mottola <rm@gnu.org>
+
+	* GRCircle.[h,m]
+	Add position accessor
+
+	* GRCircleEditor.m
+	Add square constrainer
+
+2013-02-22 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m (startBoxAtPoint)
+	Call moveControlPointOfEditor directly instead of duplicating code.
+
+2013-02-22 Riccardo Mottola <rm@gnu.org>
+
+	* GRBox.[h,m] (position)
+	Add position accessor
+
+	* GRBoxEditor.m
+	Add square constrainer.
+
+2013-02-18 Riccardo Mottola <rm@gnu.org>
+
+	* GRText.m
+	* GRDrawableObject.m
+	Fix warnings.
+
+2013-02-17 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m (rectForPage)
+	Match signature to NSInteger
+
+2013-02-17 Riccardo Mottola <rm@gnu.org>
+
+	* GRBox.m
+	* GRCircle.m
+	* GRDocView.h
+	* GRDocView.m
+	* GRDrawableObject.h
+	* GRDrawableObject.m
+	* GRPathObject.h
+	* GRPathObject.m
+	* GRPropsEditor.h
+	float to CGFloat transition
+
+2012-09-24 Riccardo Mottola <rm@gnu.org>
+
+	* GRBox.m
+	* GRCircle.m
+	Generate properties from description and use the
+	properties initializer.
+
+2012-09-23 Riccardo Mottola <rm@gnu.org>
+
+	* GRDrawableObject.m
+	Init also with visible and locked properties.
+
+2012-09-23 Riccardo Mottola <rm@gnu.org>
+
+	* GRTextEditor.m
+	* GRTextEditorView.h
+	* GRTextEditorView.m
+	Use standard NSFontPanel instead of font pick-list.
+
+2012-09-20 Wolfgang Lux
+
+	* GRDocView.m
+	* GRDocView.h
+	Fix cursor and tracking rect.
+
+2012-09-20 Riccardo Mottola <rm@gnu.org>
+
+	* GRText.m
+	If user action is canceled, do not return an object.
+
+2012-09-16 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m:
+	Fix object duplication during drag operation.
+
+2012-09-14 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPath.m
+	* GRBox.m
+	* GRCircle.m
+	* GRDocView.m
+	* GRDrawableObject.h
+	* GRDrawableObject.m
+	* GRObjectEditor.m
+	* GRText.m
+	Unify selection detection to "objectHitForSelection".
+
+2012-09-12 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Improve positioning of 50/100/200 zooming without clicking.
+
+2012-09-12 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	* Resources/MainMenu.gorm
+	Zoom 50/100/200
+
+2012-09-12 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.[h,m]
+	Separate zooming from zoom index search in two methods.
+
+2012-09-10 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Implement delete, implement undo for pasteboard operations.
+
+2012-09-10 Riccardo Mottola <rm@gnu.org>
+
+	* GRBox.h
+	* GRBox.m
+	* GRDrawableObject.h
+	* GRDrawableObject.m
+	* GRPathObject.h
+	* GRPathObject.m
+	Init with properties in each parent class, remove plain init for Box.
+
+	* GRCircle.m
+	* GRCircle.h
+	Init with properties of the parent class.
+
+	* GRBezierPath.h
+	* GRBezierPath.m
+	Init with properties of the parent class.
+
+2012-09-10 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPath.m
+	* GRBox.m
+	* GRCircle.m
+	Take zooming in account for the linewidth only during drawing, without changing the effective linewidth.
+
+2012-09-10 Riccardo Mottola <rm@gnu.org>
+
+	* GRText.m
+	Fix missing retains for foreground and stroke colors.
+
+2012-08-27 Riccardo Mottola <rm@gnu.org>
+
+	* GRText.m
+	Fix drawing of grid lines when zoomed.
+
+2012-08-27 Riccardo Mottola <rm@gnu.org>
+
+	* GRText.m
+	* GRTextEditorView.m
+	Fix memory leaks.
+
+2012-08-19 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Do not leak objects while performing deep copy.
+
+2012-08-18 Riccardo Mottola <rm@gnu.org>
+
+	* GRPathObject.h
+	* GRPathObject.m
+	Fix warning, declare method in superclass.
+
+2012-08-18 Riccardo Mottola <rm@gnu.org>
+
+	* GRText.m
+	* GRBox.m
+	* GRCircle.m
+	* GRBezierPath.m
+	Initialize colors with RGB color space.
+
+2012-08-18 Riccardo Mottola <rm@gnu.org>
+
+	* GRText.m:
+	New file format, colors RGB encoded
+
+2012-08-17 Riccardo Mottola <rm@gnu.org>
+
+	* GRBox.m
+	* GRCircle.m
+	* GRBezierPath.m
+	* Graphos.h
+	New file format, colors RGB encoded/decoded.
+
+2012-08-14 Riccardo Mottola <rm@gnu.org>
+
+	* GRBox.m
+	* GRCircle.m
+	* GRBezierPath.m
+	* GRDocView.m
+	More robust handling of BOOLs.
+
+	* GRText.m
+	More robust handling of BOOLs and fill only if filled.
+
+	* GRPropsEditor.m
+	More robust handling of nil properties.
+
+2012-04-21 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Decode ordering in files (only if version >= 0.3)
+
+2012-04-21 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Encode ordering in files.
+
+2012-04-21 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Add version encoding to files.
+
+2012-03-08 Riccardo Mottola <rm@gnu.org>
+
+	* GRPropsEditor.m:
+	Do not encode nil color.
+
+2011-12-22 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocument.[h,m]:
+	Store the file data and load it ater the nib is initialized.
+
+2011-12-20 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocument.[h,m]:
+	* English.lproj/GRDocument.nib
+	Init view only in the interface file.
+
+2011-12-20 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocument.m:
+	Fix init method.
+
+2011-12-19 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m:
+	Guard against invalid print info values
+
+2011-10-30 Riccardo Mottola <rm@gnu.org>
+
+	* GRDocView.m
+	Update object inspector after object creation.
+
+2011-10-29 Riccardo Mottola <rm@gnu.org>
+
+	* GRText.[h,m]
+	* GRDocView.m
+	Initialize text object with properties.
+
+2011-10-28 Riccardo Mottola <rm@gnu.org>
+
+	* GRBezierPath.h
+	* GRBezierPath.m
+	* GRCircle.h
+	* GRCircle.m
+	* GRPathObject.h
+	* GRPathObject.m
+	Refactor path properties into super-class
+
+	* GRBezierPath.h
+	* GRBezierPath.m
+	* GRDocView.m
+	Initialze Bezier Path with properties.
+
+2011-10-27 Riccardo Mottola <rm@gnu.org>
+
+	* GRBox.[h,m]:
+	* GRCircle.[h,m]:
+	Initializer with property dictionary
+
+	* Graphos.[h,m]:
+	Object Inspector accessor.
+
+	* GRDocView.m
+	Init Box and Circle on add shape.
+
+2011-10-24 Riccardo Mottola <rm@gnu.org>
+
+	* GRPathObject.[h,m]:
+	* GRCircle.m:
+	* GRBezierPath.[h,m]:
+	declare setLineWidth and lineWidth methods in super class
+
+2011-08-25 Riccardo Mottola <rm@gnu.org>
+
+	* GRCircle.m
+	Calculate circle bounds correctly.
+
+Copyright (C) 2011-2017 Riccardo Mottola
+
+This file is part of Graphos
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.

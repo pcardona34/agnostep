@@ -1,0 +1,79 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                autoRange = id; 
+                convMatrix11 = id; 
+                convMatrix12 = id; 
+                convMatrix13 = id; 
+                convMatrix14 = id; 
+                convMatrix15 = id; 
+                convMatrix21 = id; 
+                convMatrix22 = id; 
+                convMatrix23 = id; 
+                convMatrix24 = id; 
+                convMatrix25 = id; 
+                convMatrix31 = id; 
+                convMatrix32 = id; 
+                convMatrix33 = id; 
+                convMatrix34 = id; 
+                convMatrix35 = id; 
+                convMatrix41 = id; 
+                convMatrix42 = id; 
+                convMatrix43 = id; 
+                convMatrix44 = id; 
+                convMatrix45 = id; 
+                convMatrix51 = id; 
+                convMatrix52 = id; 
+                convMatrix53 = id; 
+                convMatrix54 = id; 
+                convMatrix55 = id; 
+                offsetFactor = id; 
+                scaleFactor = id; 
+                showConvolve55 = id; 
+            }; 
+            CLASS = PRCConvolve55; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                autoScaleCheck = NSButton; 
+                filterWindow = NSWindow; 
+                matField11 = NSTextField; 
+                matField12 = NSTextField; 
+                matField13 = NSTextField; 
+                matField14 = NSTextField; 
+                matField15 = NSTextField; 
+                matField21 = NSTextField; 
+                matField22 = NSTextField; 
+                matField23 = NSTextField; 
+                matField24 = NSTextField; 
+                matField25 = NSTextField; 
+                matField31 = NSTextField; 
+                matField32 = NSTextField; 
+                matField33 = NSTextField; 
+                matField34 = NSTextField; 
+                matField35 = NSTextField; 
+                matField41 = NSTextField; 
+                matField42 = NSTextField; 
+                matField43 = NSTextField; 
+                matField44 = NSTextField; 
+                matField45 = NSTextField; 
+                matField51 = NSTextField; 
+                matField52 = NSTextField; 
+                matField53 = NSTextField; 
+                matField54 = NSTextField; 
+                matField55 = NSTextField; 
+                offsetField = NSTextField; 
+                scaleField = NSTextField; 
+            }; 
+            SUPERCLASS = PRFilterController; 
+        }, 
+        {
+            ACTIONS = {filterCancel = id; filterOK = id; parametersChanged = id; showFilter = id; }; 
+            CLASS = PRFilterController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

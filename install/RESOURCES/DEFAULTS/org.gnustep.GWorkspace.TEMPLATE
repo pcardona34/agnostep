@@ -70,7 +70,7 @@
 	<key>iconsize</key>
 	<integer>48</integer>
 	<key>imagepath</key>
-	<string>/usr/share/wallpapers/fond_pi_step_initiative.png</string>
+	<string>/usr/share/wallpapers/fond_agnostep.png</string>
 	<key>imagestyle</key>
 	<integer>1</integer>
 	<key>indexes</key>
@@ -291,28 +291,12 @@
 			    <integer>3</integer>
 			    <key>paths</key>
 			    <array>
-				<string>/Local/Applications/GSMarkupBrowser.app</string>
-			    </array>
-			</dict>
-			<dict>
-			    <key>index</key>
-			    <integer>4</integer>
-			    <key>paths</key>
-			    <array>
-				<string>/Local/Applications/GSMarkupLocalizableStrings.app</string>
-			    </array>
-			</dict>
-			<dict>
-			    <key>index</key>
-			    <integer>5</integer>
-			    <key>paths</key>
-			    <array>
 				<string>/Local/Applications/ProjectCenter.app</string>
 			    </array>
 			</dict>
 			<dict>
 			    <key>index</key>
-			    <integer>6</integer>
+			    <integer>4</integer>
 			    <key>paths</key>
 			    <array>
 				<string>/Local/Applications/Thematic.app</string>

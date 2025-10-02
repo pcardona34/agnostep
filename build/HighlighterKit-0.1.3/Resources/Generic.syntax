@@ -1,0 +1,26 @@
+/*
+ * Highlighting rules for text files of the HighlighterKit framework.
+ */
+{
+  Contexts = (
+    {
+      Keywords = (
+        {
+          Pattern = "GNUstep";
+          ForegroundColor = "0 0 1";
+          Bold = YES;
+        },
+        {
+          Pattern = "GNU";
+          ForegroundColor = "0 0 1";
+          Bold = YES;
+        },
+        {
+          Pattern = "FSF";
+          ForegroundColor = "0 0 1";
+          Bold = YES;
+        }
+      );
+    },
+  );
+}

@@ -1,0 +1,32 @@
+2009-03-21 Riccardo Mottola <rmottola@users.sf.net>
+	* removed URLComponent. Standard NSWorkspace will be used
+
+Feb-16-2007  Guenther Noack
+	* Added Searching component
+
+Feb-01-2007  Guenther Noack
+	* ArticleDatabase, FeedTable: Moved to /Development/Deprecated
+	* Renamed FeedOperations component into DatabaseOperations
+	* 'Add Category' entry
+
+Jan-29-2007  Guenther Noack
+	* Database Tree View component
+	* created TreeDatabase component as copy of ArticleDatabase
+
+Jan-23-2007  Guenther Noack
+	* Fonts component
+
+Jan-17-2007  Guenther Noack
+	* Feed Operations component
+
+Jan-17-2007  Guenther Noack
+	* Article database component added
+	* Removed the 'Component' suffix from all component directories' names
+
+Jan-16-2007  Guenther Noack
+	* URL opening component for GNUstep, where NSWorkspace's
+	  -openURL: doesn't work yet.
+
+Jan-16-2007  Guenther Noack
+	* created ChangeLog file
+

@@ -1,0 +1,62 @@
+#!/bin/bash
+
+### OS query ##
+OS_ID=`cat /etc/os-release | grep -E ^ID | awk -F= '{print $2}'`
+
+###################################"
+### Dependencies
+function deps()
+{
+# Dependencies
+if [ ${OS_ID} == "debian" ];then
+	PMGR="apt"
+else
+	printf "\nSorry: Your Operating System is not yet supported.\n"
+	exit 1
+fi
+
+sudo ${PMGR} -y install cups cups-client cups-filters \
+	hplip printer-driver-hpijs libsane-hpaio
+if [ $? -ne 0 ];then
+	printf "A dependency error happened. Please check it. Aborting."
+	exit 1
+fi
+}
+
+##############################################################
+### the user must be a member of lpadmin
+function set_privileges
+{
+groups | grep -e "lpadmin"
+if [ $? -ne 0 ];then
+	sudo usermod -aG lpadmin $USER
+	printf "\nYou must log out and log in again to apply the necessary privileges. Than you will execute again $0\n"
+	exit 1
+fi
+}
+
+##############################################################
+### Discover a network printer
+function info
+{
+printf "Note the URI below. You will need it to configure Common Unix Printing System (CUPS) later.\n"
+sudo lpinfo --include-schemes dnssd -v
+read -p "Type <Enter> to follow..." R
+}
+
+##############################################################
+### web admin method to Set CUPS
+function web
+{
+WEBB=`xdg-settings get default-web-browser`
+
+if [ ! $? -eq 0 ];then
+	printf "\nYou must install and set your default Web Browser.\n"
+	exit 1
+fi
+
+xdg-open "http://localhost:631/printers/"
+}
+
+############################"
+deps && set_privileges && web

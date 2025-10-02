@@ -1,0 +1,23 @@
+{
+    IBClasses =     (
+                {
+            ACTIONS =             {
+                showInspector = id;
+            };
+            CLASS = FSInspector;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                infoPanel = NSPanel;
+                paneContainer = NSBox;
+                selection = id;
+            };
+            SUPERCLASS = NSObject;
+        },
+                {
+            CLASS = FirstResponder;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSObject;
+        }
+    );
+    IBVersion = 1;
+}

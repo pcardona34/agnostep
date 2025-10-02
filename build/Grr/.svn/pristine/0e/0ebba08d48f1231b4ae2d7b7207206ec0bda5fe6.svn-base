@@ -1,0 +1,27 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    ArticleTextViewPlugin = {
+	Actions = (
+	);
+	Outlets = (
+	    headlineView,
+	    scrollView
+	);
+	Super = ViewProvidingComponent;
+    };
+    UKNibOwner = {
+	Actions = (
+	);
+	Outlets = (
+	);
+	Super = NSObject;
+    };
+    ViewProvidingComponent = {
+	Actions = (
+	);
+	Outlets = (
+	    _view
+	);
+	Super = UKNibOwner;
+    };
+}

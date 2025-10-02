@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://www.o2.com/uk/schema/north/services/SMSService" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://www.o2.com/uk/schema/north/services/SMSService" xmlns:intf="http://www.o2.com/uk/schema/north/services/SMSService" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns1="http://www.o2.com/uk/schema/north/common" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><wsdl:types><schema targetNamespace="http://www.o2.com/uk/schema/north/common" xmlns="http://www.w3.org/2001/XMLSchema"><complexType name="ServiceException"><sequence><element name="resultCode" nillable="true" type="xsd:string"/><element name="description" nillable="true" type="xsd:string"/></sequence></complexType><complexType name="MapEntry"><sequence><element name="key" nillable="true" type="xsd:string"/><element name="value" nillable="true" type="xsd:string"/></sequence></complexType><complexType name="Map"><sequence><element maxOccurs="unbounded" name="item" nillable="true" type="tns1:MapEntry"/></sequence></complexType><complexType name="ServiceResult"><sequence><element name="resultCode" nillable="true" type="xsd:string"/><element name="resultDescription" nillable="true" type="xsd:string"/><element name="sagTransactionId" nillable="true" type="xsd:string"/><element name="applicationReference" nillable="true" type="xsd:string"/><element maxOccurs="1" minOccurs="0" name="resultData" nillable="true" type="tns1:Map"/></sequence></complexType></schema><schema targetNamespace="http://www.o2.com/uk/schema/north/services/SMSService" xmlns="http://www.w3.org/2001/XMLSchema"><complexType name="queryReceiptStatusFault"><sequence><element name="Exception" nillable="true" type="tns1:ServiceException"/></sequence></complexType><complexType name="queryReceiptStatusResponse"><sequence><element name="result" nillable="true" type="tns1:ServiceResult"/></sequence></complexType><complexType name="queryReceiptStatus"><sequence><element name="queryTransactionId" nillable="true" type="xsd:string"/><element name="applicationReference" nillable="true" type="xsd:string"/><element name="subMerchantId" nillable="true" type="xsd:string"/></sequence></complexType><complexType name="sendSMSmsisdns"><sequence><element maxOccurs="unbounded" name="msisdn" nillable="true" type="xsd:string"/></sequence></complexType><complexType name="sendSMSResponse"><sequence><element name="result" nillable="true" type="tns1:ServiceResult"/></sequence></complexType><complexType name="sendSMSFault"><sequence><element name="Exception" nillable="true" type="tns1:ServiceException"/></sequence></complexType><element name="sendSMS"><complexType><sequence><element name="mtprofile" type="xsd:string"/><element name="msisdns" type="impl:sendSMSmsisdns"/><element name="receiptURL" type="xsd:string"/><element name="message" type="xsd:anyType"/><element name="messageType" type="xsd:string"/><element name="ttl" type="xsd:int"/><element name="applicationReference" type="xsd:string"/><element name="subMerchantId" type="xsd:string"/></sequence></complexType></element><element name="sendSMSResponse"><complexType><sequence><element name="result" type="tns1:ServiceResult"/></sequence></complexType></element><element name="sendSMSFault" type="impl:sendSMSFault"/><element name="queryReceiptStatus"><complexType><sequence><element name="queryTransactionId" type="xsd:string"/><element name="applicationReference" type="xsd:string"/><element name="subMerchantId" type="xsd:string"/></sequence></complexType></element><element name="queryReceiptStatusResponse"><complexType><sequence><element name="result" type="tns1:ServiceResult"/></sequence></complexType></element><element name="queryReceiptStatusFault" type="impl:queryReceiptStatusFault"/></schema></wsdl:types>
+  <wsdl:message name="queryReceiptStatusRequest">
+    <wsdl:part element="impl:queryReceiptStatus" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="sendSMSResponse">
+    <wsdl:part element="impl:sendSMSResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="sendSMSRequest">
+    <wsdl:part element="impl:sendSMS" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="queryReceiptStatusResponse">
+    <wsdl:part element="impl:queryReceiptStatusResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="_sendSMSFault">
+    <wsdl:part element="impl:sendSMSFault" name="sendSMSFault"/>
+  </wsdl:message>
+  <wsdl:message name="_queryReceiptStatusFault">
+    <wsdl:part element="impl:queryReceiptStatusFault" name="queryReceiptStatusFault"/>
+  </wsdl:message>
+  <wsdl:portType name="SMSServicePort">
+    <wsdl:operation name="sendSMS" parameterOrder="">
+      <wsdl:input message="impl:sendSMSRequest" name="sendSMSRequest"/>
+      <wsdl:output message="impl:sendSMSResponse" name="sendSMSResponse"/>
+      <wsdl:fault message="impl:_sendSMSFault" name="_sendSMSFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="queryReceiptStatus" parameterOrder="">
+      <wsdl:input message="impl:queryReceiptStatusRequest" name="queryReceiptStatusRequest"/>
+      <wsdl:output message="impl:queryReceiptStatusResponse" name="queryReceiptStatusResponse"/>
+      <wsdl:fault message="impl:_queryReceiptStatusFault" name="_queryReceiptStatusFault"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SMSServicePortSoapBinding" type="impl:SMSServicePort">
+    <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="sendSMS">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="sendSMSRequest">
+        <wsdlsoap:body namespace="http://www.o2.com/uk/schema/north/services/SMSService" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="sendSMSResponse">
+        <wsdlsoap:body namespace="http://www.o2.com/uk/schema/north/services/SMSService" use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="_sendSMSFault">
+        <wsdlsoap:fault use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryReceiptStatus">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="queryReceiptStatusRequest">
+        <wsdlsoap:body namespace="http://www.o2.com/uk/schema/north/services/SMSService" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="queryReceiptStatusResponse">
+        <wsdlsoap:body namespace="http://www.o2.com/uk/schema/north/services/SMSService" use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="_queryReceiptStatusFault">
+        <wsdlsoap:fault use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SMSService">
+    <wsdl:port binding="impl:SMSServicePortSoapBinding" name="SMSServicePort">
+      <wsdlsoap:address location="http://sag.ref.o2.co.uk/sms_enabler/services/SMSServicePort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

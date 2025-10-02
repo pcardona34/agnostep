@@ -1,0 +1,279 @@
+﻿/***
+English.lproj/Localizable.strings
+updated by make_strings 2010-01-15 20:24:14 +0100
+add comments above this one
+***/
+
+
+/*** Keys found in multiple places ***/
+
+/* File: ServicesParameterWindowController.m:98 */
+/* File: ServicesPrefs.m:654 */
+"Command line:" = "コマンドライン:";
+
+/* File: TerminalView.m:1130 */
+/* File: TerminalView.m:1857 */
+"Unexpected error while writing."
+= "書き込みに失敗しました。";
+
+/* File: main.m:324 */
+/* File: main.m:345 */
+"Quit?" = "終了しますか?";
+
+
+/*** Unmatched/untranslated keys ***/
+
+/* File: TerminalView.m:1992 */
+/* Flag: untranslated */
+"Unable to set non-blocking mode: %m."
+= "ノンブロッキングモードにセットできません: %m.";
+
+/* File: TerminalViewPrefs.m:289 */
+/* Flag: unmatched */
+"Line" = "行";
+
+/* File: TerminalViewPrefs.m:290 */
+/* Flag: unmatched */
+"Stroked block" = "線";
+
+/* File: TerminalViewPrefs.m:291 */
+/* Flag: unmatched */
+"Filled block" = "塗り";
+
+/* File: TerminalViewPrefs.m:292 */
+/* Flag: unmatched */
+"Inverted block" = "反転";
+
+/* File: TerminalViewPrefs.m:397 */
+/* Flag: untranslated */
+"Display black on white text" = "白地に黒文字";
+
+/* File: main.m:189 */
+/* Flag: untranslated */
+"Miniaturize all" = "すべてを最小化";
+
+/* File: main.m:275 */
+/* Flag: untranslated */
+"Quit anyway" = "終了";
+
+/* File: main.m:283 */
+/* Flag: untranslated */
+"Don't quit" = "終了しない";
+
+/* File: main.m:300 */
+/* Flag: untranslated */
+"There are active windows. Quitting will close them."
+= "実行中のウィンドウあります。終了するとそれらが閉じられます。";
+
+
+/*** Strings from PreferencesWindowController.m ***/
+/* File: PreferencesWindowController.m:95 */
+"Apply and save" = "設定を保存";
+/* File: PreferencesWindowController.m:140 */
+"Preferences" = "設定";
+/* File: PreferencesWindowController.m:87 */
+"Revert" = "元に戻す";
+
+
+/*** Strings from Services.m ***/
+/* File: Services.m:151 */
+"Service aborted by user." = "Service aborted by user.";
+/* File: Services.m:59 */
+"There is no terminal service called '%@'.\nYour services list is probably out-of-date.\nRun 'make_services' to update it."
+= "サービス '%@' が存在しません。\nおそらくサービスリストが古くなっています。\n'make_services'を実行してリストを更新してください。";
+
+
+/*** Strings from ServicesParameterWindowController.m ***/
+/* File: ServicesParameterWindowController.m:66 */
+"Cancel" = "キャンセル";
+/* File: ServicesParameterWindowController.m:74 */
+"OK" = "OK";
+/* File: ServicesParameterWindowController.m:118 */
+"Parameter for service %@" = "%@ サービスのパラメータ";
+
+
+/*** Strings from ServicesPrefs.m ***/
+/* File: ServicesPrefs.m:586 */
+"Accept types" = "Accept types";
+/* File: ServicesPrefs.m:500 */
+"Add" = "追加";
+/* File: ServicesPrefs.m:348 */
+"Error importing services" = "サービスのインポートに失敗しました。";
+/* File: ServicesPrefs.m:401 */
+"Export services" = "サービスのエクスポート";
+/* File: ServicesPrefs.m:524 */
+"Export..." = "エクスポート...";
+/* File: ServicesPrefs.m:595 */
+"Filenames" = "ファイル名";
+/* File: ServicesPrefs.m:550 */
+"Ignore output" = "出力を無視";
+/* File: ServicesPrefs.m:254 */
+"Import services" = "サービスのインポート";
+/* File: ServicesPrefs.m:516 */
+"Import..." = "インポート...";
+/* File: ServicesPrefs.m:560 */
+"Input in stdin" = "標準入力";
+/* File: ServicesPrefs.m:561 */
+"Input on command line" = "コマンドライン入力";
+/* File: ServicesPrefs.m:641 */
+"Key:" = "キー:";
+/* File: ServicesPrefs.m:628 */
+"Name:" = "名前:";
+/* File: ServicesPrefs.m:559 */
+"No input" = "入力無し";
+/* File: ServicesPrefs.m:603 */
+"Plain text" = "プレーンテキスト";
+/* File: ServicesPrefs.m:508 */
+"Remove" = "削除";
+/* File: ServicesPrefs.m:551 */
+"Return output" = "出力を返す";
+/* File: ServicesPrefs.m:569 */
+"Run in background" = "バックグラウンドで実行";
+/* File: ServicesPrefs.m:571 */
+"Run in idle window" = "アイドル状態のウィンドウで実行";
+/* File: ServicesPrefs.m:570 */
+"Run in new window" = "新しいウィンドウで実行";
+/* File: ServicesPrefs.m:469 */
+"Terminal services" = "ターミナル サービス";
+/* File: ServicesPrefs.m:474 */
+"Terminal\nservices" = "ターミナル\nサービス";
+/* File: ServicesPrefs.m:349 */
+"The file '%@' doesn't contain valid terminal services."
+= "The file '%@' doesn't contain valid terminal services.";
+/* File: ServicesPrefs.m:235 */
+"Unnamed service" = "無名サービス";
+
+
+/*** Strings from TerminalParser_LinuxPrefs.m ***/
+/* File: TerminalParser_LinuxPrefs.m:104 */
+"'linux' terminal parser" = "'linux' ターミナルパーサ";
+/* File: TerminalParser_LinuxPrefs.m:109 */
+"'linux'\nparser" = "'linux'\nパーサ";
+/* File: TerminalParser_LinuxPrefs.m:152 */
+"Character set:" = "文字セット:";
+/* File: TerminalParser_LinuxPrefs.m:44 */
+"Chinese" = "中国語";
+/* File: TerminalParser_LinuxPrefs.m:45 */
+"Custom, leave unchanged" = "Custom, leave unchanged";
+/* File: TerminalParser_LinuxPrefs.m:43 */
+"East Europe, latin2" = "東ヨーロッパ, latin2";
+/* File: TerminalParser_LinuxPrefs.m:41 */
+"UTF-8" = "UTF-8";
+/* File: TerminalParser_LinuxPrefs.m:42 */
+"West Europe, latin1" = "西ヨーロッパ, latin1";
+
+
+/*** Strings from TerminalView.m ***/
+/* File: TerminalView.m:1965 */
+"Unable to fork." = "フォークできません。";
+/* File: TerminalView.m:1953 */
+"Unable to open pipe for input." = "入力パイプが開けません。";
+/* File: TerminalView.m:1765 */
+"[Process exited]" = "[Process exited]";
+
+
+/*** Strings from TerminalViewPrefs.m ***/
+/* File: TerminalViewPrefs.m:408 */
+"Bold font:" = "太字フォント:";
+/* File: TerminalViewPrefs.m:367 */
+"Color:" = "色:";
+/* File: TerminalViewPrefs.m:322 */
+"Cursor" = "カーソル";
+/* File: TerminalViewPrefs.m:273 */
+/* File: TerminalViewPrefs.m:268 */
+"Display" = "表示";
+/* File: TerminalViewPrefs.m:390 */
+"Handle wide (multi-cell) glyphs" = "全角文字（マルチバイト）を処理";
+/* File: TerminalViewPrefs.m:690 */
+/* File: TerminalViewPrefs.m:685 */
+"Keyboard" = "キーボード";
+/* File: TerminalViewPrefs.m:435 */
+"Normal font:" = "標準フォント:";
+/* File: TerminalViewPrefs.m:447 */
+/* File: TerminalViewPrefs.m:420 */
+"Pick font..." = "フォントを選ぶ...";
+/* File: TerminalViewPrefs.m:299 */
+"Scroll-back length in lines:" = "バッファ行数:";
+/* File: TerminalViewPrefs.m:730 */
+"Send a double escape for the escape key.\n\nThis means that the escape key will be\nrecognized faster by many programs, but\nyou can't use it as a substitute for meta."
+= "エスケープキーで2回エスケープを送る。\n\nThis means that the escape key will be\nrecognized faster by many programs, but\nyou can't use it as a substitute for meta.";
+/* File: TerminalViewPrefs.m:577 */
+/* File: TerminalViewPrefs.m:572 */
+"Shell" = "シェル";
+/* File: TerminalViewPrefs.m:610 */
+"Shell:" = "シェル:";
+/* File: TerminalViewPrefs.m:598 */
+"Start as login-shell" = "ログインシェルを開始";
+/* File: TerminalViewPrefs.m:327 */
+"Style:" = "スタイル:";
+/* File: TerminalViewPrefs.m:715 */
+"Treat the command key as meta.\n\nNote that with this enabled, you won't be\nable to access menu entries with the\nkeyboard."
+= "コマンドキーをメタとして扱う。\n\nNote that with this enabled, you won't be\nable to access menu entries with the\nkeyboard.";
+/* File: TerminalViewPrefs.m:747 */
+"Treat the Alt key as Alt and not Meta.\nUseful if command is used as Meta\nAnd the keyboard has AltGr and not right Alt\n"
+  = "AltキーをMetaではなくAltとして扱う\n\nUseful if command is used as Meta\nAnd the keyboard has AltGr and not right Alt\n";
+
+
+/*** Strings from TerminalWindow.m ***/
+/* File: TerminalWindow.m:203 */
+/* File: TerminalWindow.m:199 */
+" (idle)" = " (idle)";
+
+
+/*** Strings from TerminalWindowPrefs.m ***/
+/* File: TerminalWindowPrefs.m:212 */
+"Add top and bottom border" = "上端と下端に境界を入れる";
+/* File: TerminalWindowPrefs.m:152 */
+"Close new windows when idle" = "終了時にウィンドウを閉じる";
+/* File: TerminalWindowPrefs.m:176 */
+"Default size" = "初期サイズ";
+/* File: TerminalWindowPrefs.m:153 */
+"Don't close new windows" = "終了時にウィンドウを閉じない";
+/* File: TerminalWindowPrefs.m:189 */
+"Height:" = "高さ:";
+/* File: TerminalWindowPrefs.m:114 */
+"Terminal Window" = "ターミナル ウィンドウ";
+/* File: TerminalWindowPrefs.m:119 */
+"Terminal\nWindow" = "ターミナル\nウィンドウ";
+/* File: TerminalWindowPrefs.m:180 */
+"Width:" = "幅:";
+
+
+/*** Strings from main.m ***/
+/* File: main.m:152 */
+"Benchmark" = "ベンチマーク";
+/* File: main.m:186 */
+"Close" = "閉じる";
+/* File: main.m:175 */
+"Copy" = "コピー";
+/* File: main.m:172 */
+"Cut" = "切り取り";
+/* File: main.m:181 */
+"Edit" = "編集";
+"View"="表示";
+"Hide" = "隠す";
+/* File: main.m:154 */
+"Info" = "情報";
+/* File: main.m:148 */
+"Info..." = "情報...";
+/* File: main.m:166 */
+"New window" = "新規ウィンドウ";
+"New tab" = "新規タブ";
+/* File: main.m:178 */
+"Paste" = "貼り付け";
+/* File: main.m:150 */
+"Preferences..." = "設定...";
+/* File: main.m:205 */
+"Quit" = "終了";
+/* File: main.m:197 */
+"Services" = "サービス";
+/* File: main.m:192 */
+"Windows" = "ウィンドウ";
+
+"Show tab bar"="タブバーを常に表示";
+"Close window"="ウインドウを閉じる";
+"Close tab"="タブを閉じる";
+"Show previous tab"="前のタブを表示";
+"Show next tab"="次のタブを表示";
+"Move tab left"="タブを左に移動";
+"Move tab right"="タブを右に移動";

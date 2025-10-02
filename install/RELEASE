@@ -1,35 +1,41 @@
 AGNOSTEP - agnostic GNUstep Desktop
 ===================================
 
-We start from the release 0.8.3 of PiSiN to make it agnostic.
-- **Release**: 0.8.3
-- **Status**: Alpha
+INFO: We started from the release 0.8.3 of PiSiN to make it agnostic. Many changes in the meanwhile.
 
-### Tests: (date)
+- **Release**: 0.8.4
+- **Status**: Beta
 
-Passed: 0 / 13
+### Tests protocol
 
-- Window manager / Theming: todo
-- Workspace / Dock / Wallpaper: todo
-- Home customized folder: todo
-- Applications Folder / TabbedShelf: todo
-- Autostart: todo
-- Sysinfo Panel: todo
-- Notify: todo
-- Open/save: todo
-- Web Browser: todo
-- Printing / set default printer: todo
-- Scanning: todo
-- Screensaver: todo
-- Display Manager: todo
-- Mount/Unmount a removable device: todo
-- Listening to music, watching video: todo
+See HCL file to know already tested hardware.
+To report a successfull test, please report to us the foolowing steps:
+
+Passed: 16 / 17
+
+- Installation: 1 prep: done | 2 wmaker: done | 3 GNUstep: done | 4 frameworks: done | 5 apps/extra/devel/games: done | 6 user settings: done | 7 Display manager: done | ok
+- Installation (BIS): enjoy script: successfully executed. Duration: 00:18:03 with a Core i5 and a fiber connection: ok
+- Window manager / Theming: ok
+- Workspace / Dock / Wallpaper: ok
+- Home customized folders: ok
+- Applications Folder / TabbedShelf: ok
+- Autostart: ok
+- Sysinfo Panel (on laptop: see also battery monitoring): ok 
+- Notify: ok
+- Open/save: ok
+- Web Browser: ok
+- Printing / set default printer using 'Setup_Printer' script: ok
+- Scanning (ScanImage): ok
+- Screensaver (InnerSpace): ok
+- Display Manager: ok
+- Mount/Unmount a removable device: ok
+- Listening to music, watching video: sound ko
 
 ### The Desktop Components
 
-- Operating System: Debian Bookworm 12.12. Not yet tested on Trixie.
-- Window Manager: this is Window Maker 0.95.9 (debian default package version) with AGNOSTEP.themed and options: --no-dock  --no-clip --static. Some apps and tools are launched with the 'autostart' script of Window Maker.
-	 (MEMO: 0.96.0 was broken: "symbol lookup error: wuserdatapath": unresolved until now, so we reverted to previous stable version)
+- Operating System: Debian Trixie 13.1.
+- Window Manager: this is Window Maker 0.96.0 (debian default package version) with AGNOSTEP.themed and options: --no-dock  --no-clip --static. 
+	Some apps and tools are launched with the 'autostart' script of Window Maker.
 - Notifyer: dunst - SimpleAgenda won't use it because libDBUSKit is not installed.
 - Compositing: compton.
 - Sys Infos: conky. Weather data is fetched from Wttr.in. The system monitoring is upon: date, time, uptime, CPU, Memory, Storage and Networking.

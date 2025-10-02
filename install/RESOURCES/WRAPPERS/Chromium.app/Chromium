@@ -1,6 +1,6 @@
 #!/bin/sh
 
-APP=chromium-browser
+APP=$(which chromium)
 
 if [ $# -eq 2 ] ; then
   $APP "$2" &

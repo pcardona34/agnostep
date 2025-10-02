@@ -1,0 +1,28 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                cancelClicked = id; 
+                chooseDataHandlerCommand = id; 
+                chooseIcon = id; 
+                okClicked = id; 
+                selectionHasChanged = id; 
+            }; 
+            CLASS = MimeTypeEditorWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                actionMatrix = NSMatrix; 
+                dataHandlerCommandButton = NSButton; 
+                dataHandlerCommandField = NSTextField; 
+                descriptionField = NSTextField; 
+                fileExtensionsField = NSTextField; 
+                iconButton = NSButton; 
+                mimeTypeField = NSTextField; 
+                viewMatrix = NSMatrix; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

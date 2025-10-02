@@ -1,0 +1,6 @@
+You need to have gnustep-base (or the base additions library) and the
+GNUstep WebServer library installed in order to build the server example.
+
+The server process listens on port 12345 and responds to simple requests.
+The client process makes simple requests to the server.
+

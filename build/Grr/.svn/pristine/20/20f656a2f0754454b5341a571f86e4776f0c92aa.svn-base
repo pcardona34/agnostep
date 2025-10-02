@@ -1,0 +1,36 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {fontSelectionChanged = id; sizeSelectionChanged = id; }; 
+            CLASS = FontBox; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {fontSelector = NSPopUpButton; sizeSelector = NSPopUpButton; }; 
+            SUPERCLASS = NSBox; 
+        }, 
+        {
+            CLASS = FontsComponent; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                articleFixedFontBox = FontBox; 
+                articleFontBox = FontBox; 
+                articleTableFontBox = FontBox; 
+                feedTableFontBox = FontBox; 
+            }; 
+            SUPERCLASS = PreferencesComponent; 
+        }, 
+        {
+            CLASS = PreferencesComponent; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = ViewProvidingComponent; 
+        }, 
+        {CLASS = UKNibOwner; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = ViewProvidingComponent; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {"_view" = NSView; }; 
+            SUPERCLASS = UKNibOwner; 
+        }
+    ); 
+    IBVersion = 1; 
+}

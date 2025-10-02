@@ -1,0 +1,3192 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		850F63D3108A300D0035D594 /* SubscriptionPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = 850F63D1108A300D0035D594 /* SubscriptionPanel.nib */; };
+		850F63ED108A33320035D594 /* FontsComponent.nib in Resources */ = {isa = PBXBuildFile; fileRef = 850F63EB108A33320035D594 /* FontsComponent.nib */; };
+		850F63FC108A37E50035D594 /* ArticleTablePlugin.nib in Resources */ = {isa = PBXBuildFile; fileRef = 850F63FA108A37E50035D594 /* ArticleTablePlugin.nib */; };
+		850F642B108BBA480035D594 /* TreeDatabaseComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687DD4107BFA2600B55A9A /* TreeDatabaseComponent.m */; };
+		850F6483108BC0A20035D594 /* NSSet+ArticleFiltering.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687DC1107BF99B00B55A9A /* NSSet+ArticleFiltering.m */; };
+		850F6484108BC0A20035D594 /* Searching.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687DC3107BF99B00B55A9A /* Searching.m */; };
+		851B402E109E14920036C28D /* Fonts.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 851B402D109E14920036C28D /* Fonts.tiff */; };
+		8540B03F10B69963008281E2 /* Grr-Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8540B03E10B69963008281E2 /* Grr-Icon.icns */; };
+		85687D5D107BF7D000B55A9A /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D36107BF7D000B55A9A /* AppController.m */; };
+		85687D61107BF7D000B55A9A /* ArticleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D3A107BF7D000B55A9A /* ArticleFactory.m */; };
+		85687D63107BF7D000B55A9A /* ArticleGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D3C107BF7D000B55A9A /* ArticleGroup.m */; };
+		85687D6F107BF7D000B55A9A /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D48107BF7D000B55A9A /* Feed.m */; };
+		85687D75107BF7D000B55A9A /* NSBundle+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D4E107BF7D000B55A9A /* NSBundle+Extensions.m */; };
+		85687D77107BF7D000B55A9A /* NSURL+Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D50107BF7D000B55A9A /* NSURL+Proxy.m */; };
+		85687D7F107BF7D000B55A9A /* PreferencesPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D58107BF7D000B55A9A /* PreferencesPanel.m */; };
+		85687D91107BF8A900B55A9A /* Grr_main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D90107BF8A900B55A9A /* Grr_main.m */; };
+		85687E14107BFBEA00B55A9A /* HTML-Entities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85687DF0107BFBEA00B55A9A /* HTML-Entities.plist */; };
+		85687E15107BFBEA00B55A9A /* AddCategory.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687DF2107BFBEA00B55A9A /* AddCategory.tiff */; };
+		85687E16107BFBEA00B55A9A /* AddFeed.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687DF3107BFBEA00B55A9A /* AddFeed.tiff */; };
+		85687E17107BFBEA00B55A9A /* Grr-Icon-Anim1.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687DF5107BFBEA00B55A9A /* Grr-Icon-Anim1.tiff */; };
+		85687E18107BFBEA00B55A9A /* Grr-Icon-Anim2.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687DF6107BFBEA00B55A9A /* Grr-Icon-Anim2.tiff */; };
+		85687E19107BFBEA00B55A9A /* Grr-Icon-Anim3.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687DF7107BFBEA00B55A9A /* Grr-Icon-Anim3.tiff */; };
+		85687E1A107BFBEA00B55A9A /* Grr-Icon-NoConnection.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687DF8107BFBEA00B55A9A /* Grr-Icon-NoConnection.tiff */; };
+		85687E1B107BFBEA00B55A9A /* Grr-Icon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687DF9107BFBEA00B55A9A /* Grr-Icon.tiff */; };
+		85687E1C107BFBEA00B55A9A /* ArticleLink.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687DFA107BFBEA00B55A9A /* ArticleLink.tiff */; };
+		85687E1D107BFBEA00B55A9A /* Category.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687DFB107BFBEA00B55A9A /* Category.tiff */; };
+		85687E1E107BFBEA00B55A9A /* Database.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687DFC107BFBEA00B55A9A /* Database.tiff */; };
+		85687E1F107BFBEA00B55A9A /* DeleteArticle.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687DFD107BFBEA00B55A9A /* DeleteArticle.tiff */; };
+		85687E20107BFBEA00B55A9A /* DeleteCategory.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687DFE107BFBEA00B55A9A /* DeleteCategory.tiff */; };
+		85687E21107BFBEA00B55A9A /* DeleteFeed.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687DFF107BFBEA00B55A9A /* DeleteFeed.tiff */; };
+		85687E22107BFBEA00B55A9A /* Feed.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687E00107BFBEA00B55A9A /* Feed.tiff */; };
+		85687E23107BFBEA00B55A9A /* FeedFetching.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687E01107BFBEA00B55A9A /* FeedFetching.tiff */; };
+		85687E24107BFBEA00B55A9A /* FetchFeed.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687E02107BFBEA00B55A9A /* FetchFeed.tiff */; };
+		85687E25107BFBEA00B55A9A /* FetchFeeds.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687E03107BFBEA00B55A9A /* FetchFeeds.tiff */; };
+		85687E26107BFBEA00B55A9A /* ArticleFile.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687E05107BFBEA00B55A9A /* ArticleFile.tiff */; };
+		85687E27107BFBEA00B55A9A /* FeedFile.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687E06107BFBEA00B55A9A /* FeedFile.tiff */; };
+		85687E28107BFBEA00B55A9A /* Filter.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687E07107BFBEA00B55A9A /* Filter.tiff */; };
+		85687E29107BFBEA00B55A9A /* Link.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687E08107BFBEA00B55A9A /* Link.tiff */; };
+		85687E2A107BFBEA00B55A9A /* PlainArticle.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687E09107BFBEA00B55A9A /* PlainArticle.tiff */; };
+		85687E2B107BFBEA00B55A9A /* Star.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687E0A107BFBEA00B55A9A /* Star.tiff */; };
+		85687E2C107BFBEA00B55A9A /* WebProxy.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687E0B107BFBEA00B55A9A /* WebProxy.tiff */; };
+		85687E2D107BFBEA00B55A9A /* arrowDown.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687E0D107BFBEA00B55A9A /* arrowDown.tiff */; };
+		85687E2E107BFBEA00B55A9A /* arrowLeft.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687E0E107BFBEA00B55A9A /* arrowLeft.tiff */; };
+		85687E2F107BFBEA00B55A9A /* arrowRight.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687E0F107BFBEA00B55A9A /* arrowRight.tiff */; };
+		85687E30107BFBEA00B55A9A /* arrowUp.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687E10107BFBEA00B55A9A /* arrowUp.tiff */; };
+		85687E31107BFBEA00B55A9A /* blue-badge-left.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687E11107BFBEA00B55A9A /* blue-badge-left.tiff */; };
+		85687E32107BFBEA00B55A9A /* blue-badge-mid.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687E12107BFBEA00B55A9A /* blue-badge-mid.tiff */; };
+		85687E33107BFBEA00B55A9A /* blue-badge-right.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 85687E13107BFBEA00B55A9A /* blue-badge-right.tiff */; };
+		85687E3E107BFEE600B55A9A /* Grr.nib in Resources */ = {isa = PBXBuildFile; fileRef = 85687E3A107BFEE600B55A9A /* Grr.nib */; };
+		85687E3F107BFEE600B55A9A /* PreferencesPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = 85687E3C107BFEE600B55A9A /* PreferencesPanel.nib */; };
+		85687E4D107C001500B55A9A /* GNUstep.h in Resources */ = {isa = PBXBuildFile; fileRef = 85687E4C107C001500B55A9A /* GNUstep.h */; };
+		85792FC7108E7307001B900E /* ProxyComponent.nib in Resources */ = {isa = PBXBuildFile; fileRef = 857AA8991082A4CB00829DD6 /* ProxyComponent.nib */; };
+		85792FC8108E730F001B900E /* SubscriptionPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = 850F63D1108A300D0035D594 /* SubscriptionPanel.nib */; };
+		85792FCC108E7317001B900E /* ArticleTablePlugin.nib in Resources */ = {isa = PBXBuildFile; fileRef = 850F63FA108A37E50035D594 /* ArticleTablePlugin.nib */; };
+		85792FD5108E74B9001B900E /* FontsComponent.nib in Resources */ = {isa = PBXBuildFile; fileRef = 850F63EB108A33320035D594 /* FontsComponent.nib */; };
+		85792FD6108E74BA001B900E /* FontBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687DAF107BF94E00B55A9A /* FontBox.m */; };
+		85792FD7108E74BC001B900E /* FontsComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687DB1107BF94E00B55A9A /* FontsComponent.m */; };
+		85792FD8108E74CE001B900E /* ProxyComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687DBB107BF98200B55A9A /* ProxyComponent.m */; };
+		85792FD9108E750F001B900E /* SubscriptionPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687DCC107BF9B800B55A9A /* SubscriptionPanel.m */; };
+		85792FE0108E765A001B900E /* DatabaseTreeViewController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 857AA8BA1082AC8700829DD6 /* DatabaseTreeViewController.nib */; };
+		85792FE1108E765D001B900E /* DatabaseTreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687DA4107BF90A00B55A9A /* DatabaseTreeViewController.m */; };
+		85793008108E7DE4001B900E /* DatabaseOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D9D107BF8EA00B55A9A /* DatabaseOperations.m */; };
+		8579300F108E7E43001B900E /* ArticleOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D86107BF83C00B55A9A /* ArticleOperations.m */; };
+		85793081108E8594001B900E /* ArticleTablePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D8B107BF85200B55A9A /* ArticleTablePlugin.m */; };
+		857AA89B1082A4CB00829DD6 /* ProxyComponent.nib in Resources */ = {isa = PBXBuildFile; fileRef = 857AA8991082A4CB00829DD6 /* ProxyComponent.nib */; };
+		857AA8B71082AC6800829DD6 /* ArticleTextViewPlugin.nib in Resources */ = {isa = PBXBuildFile; fileRef = 857AA8B51082AC6800829DD6 /* ArticleTextViewPlugin.nib */; };
+		857AA8BC1082AC8700829DD6 /* DatabaseTreeViewController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 857AA8BA1082AC8700829DD6 /* DatabaseTreeViewController.nib */; };
+		857BF870125013040085BF64 /* Fonts.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 851B402D109E14920036C28D /* Fonts.tiff */; };
+		85A5FDD0108D22CC00AC6AA4 /* ArticleTextViewPlugin.nib in Resources */ = {isa = PBXBuildFile; fileRef = 857AA8B51082AC6800829DD6 /* ArticleTextViewPlugin.nib */; };
+		85A5FDD1108D22D100AC6AA4 /* ArticleTextViewPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D94107BF8CB00B55A9A /* ArticleTextViewPlugin.m */; };
+		85A5FDD2108D22D600AC6AA4 /* NSString+TolerantHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D96107BF8CB00B55A9A /* NSString+TolerantHTML.m */; };
+		85B292151A486BEE00D05E34 /* RSSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B292141A486BEE00D05E34 /* RSSKit.framework */; };
+		85B292331A48E51200D05E34 /* RSSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B292141A486BEE00D05E34 /* RSSKit.framework */; };
+		85B292361A48E53F00D05E34 /* RSSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B292141A486BEE00D05E34 /* RSSKit.framework */; };
+		85B2923A1A48E57100D05E34 /* RSSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B292141A486BEE00D05E34 /* RSSKit.framework */; };
+		85B2923B1A48E58200D05E34 /* RSSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B292141A486BEE00D05E34 /* RSSKit.framework */; };
+		85B2923E1A48E5D000D05E34 /* RSSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B292141A486BEE00D05E34 /* RSSKit.framework */; };
+		85B2924B1A48E62E00D05E34 /* RSSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B292141A486BEE00D05E34 /* RSSKit.framework */; };
+		85B2924E1A48E65200D05E34 /* RSSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B292141A486BEE00D05E34 /* RSSKit.framework */; };
+		85B292511A48E66200D05E34 /* RSSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B292141A486BEE00D05E34 /* RSSKit.framework */; };
+		85B292551A48E6E300D05E34 /* RSSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B292141A486BEE00D05E34 /* RSSKit.framework */; };
+		85C0D2FD1093BB810095C185 /* bluebg.png in Resources */ = {isa = PBXBuildFile; fileRef = 85C0D2FC1093BB810095C185 /* bluebg.png */; };
+		85C0D2FE1093BB810095C185 /* bluebg.png in Resources */ = {isa = PBXBuildFile; fileRef = 85C0D2FC1093BB810095C185 /* bluebg.png */; };
+		85D6413D13BFF14F0099F868 /* ArticleView.grrc in Resources */ = {isa = PBXBuildFile; fileRef = 85A5FDCD108D229D00AC6AA4 /* ArticleView.grrc */; };
+		85D641C513BFF2B30099F868 /* TreeDatabase.grrdb in Resources */ = {isa = PBXBuildFile; fileRef = 850F6427108BB9A80035D594 /* TreeDatabase.grrdb */; };
+		85D641F413BFF3410099F868 /* Searching.grrc in Resources */ = {isa = PBXBuildFile; fileRef = 850F6480108BC0650035D594 /* Searching.grrc */; };
+		85D641F513BFF3410099F868 /* ArticleTable.grrc in Resources */ = {isa = PBXBuildFile; fileRef = 85792F33108E6CC0001B900E /* ArticleTable.grrc */; };
+		85D641F613BFF3410099F868 /* SubscriptionPanel.grrc in Resources */ = {isa = PBXBuildFile; fileRef = 85792FB1108E712D001B900E /* SubscriptionPanel.grrc */; };
+		85D641F713BFF3410099F868 /* Proxy.grrc in Resources */ = {isa = PBXBuildFile; fileRef = 85792FBB108E71F3001B900E /* Proxy.grrc */; };
+		85D641F813BFF3410099F868 /* Fonts.grrc in Resources */ = {isa = PBXBuildFile; fileRef = 85792FD1108E7347001B900E /* Fonts.grrc */; };
+		85D641F913BFF3410099F868 /* DatabaseTreeView.grrc in Resources */ = {isa = PBXBuildFile; fileRef = 85792FDE108E75BF001B900E /* DatabaseTreeView.grrc */; };
+		85D641FA13BFF3410099F868 /* DatabaseOperations.grrc in Resources */ = {isa = PBXBuildFile; fileRef = 85793006108E7D6E001B900E /* DatabaseOperations.grrc */; };
+		85D641FB13BFF3410099F868 /* ArticleOperations.grrc in Resources */ = {isa = PBXBuildFile; fileRef = 8579300D108E7E0A001B900E /* ArticleOperations.grrc */; };
+		85D6432813C079490099F868 /* PipeType.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D54107BF7D000B55A9A /* PipeType.m */; };
+		85D6432913C079490099F868 /* Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D40107BF7D000B55A9A /* Components.m */; };
+		85D6432A13C079490099F868 /* ExtendedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D46107BF7D000B55A9A /* ExtendedWindow.m */; };
+		85D6432B13C079490099F868 /* DatabaseElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D44107BF7D000B55A9A /* DatabaseElement.m */; };
+		85D6432C13C079490099F868 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D42107BF7D000B55A9A /* Database.m */; };
+		85D6432D13C079490099F868 /* GNRatingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D4A107BF7D000B55A9A /* GNRatingCell.m */; };
+		85D6432E13C079490099F868 /* PreferencesComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D56107BF7D000B55A9A /* PreferencesComponent.m */; };
+		85D6432F13C079490099F868 /* NumberedImageTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D52107BF7D000B55A9A /* NumberedImageTextCell.m */; };
+		85D6433013C079490099F868 /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D38107BF7D000B55A9A /* Article.m */; };
+		85D6433113C079490099F868 /* ImageTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D4C107BF7D000B55A9A /* ImageTextCell.m */; };
+		85D6433213C079490099F868 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 85687D3E107BF7D000B55A9A /* Category.m */; };
+		85D6433B13C079750099F868 /* GrrFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D6430C13C0773D0099F868 /* GrrFramework.framework */; };
+		85D6436113C0798C0099F868 /* GrrFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D6430C13C0773D0099F868 /* GrrFramework.framework */; };
+		85D6436713C07F2A0099F868 /* GrrFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D6430C13C0773D0099F868 /* GrrFramework.framework */; };
+		85D6436B13C07F390099F868 /* GrrFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D6430C13C0773D0099F868 /* GrrFramework.framework */; };
+		85D6437B13C080D50099F868 /* GrrFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D6430C13C0773D0099F868 /* GrrFramework.framework */; };
+		85D6438413C081010099F868 /* GrrFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D6430C13C0773D0099F868 /* GrrFramework.framework */; };
+		85D6438A13C0811A0099F868 /* GrrFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D6430C13C0773D0099F868 /* GrrFramework.framework */; };
+		85D6438F13C0813C0099F868 /* GrrFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D6430C13C0773D0099F868 /* GrrFramework.framework */; };
+		85D6439413C081480099F868 /* GrrFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D6430C13C0773D0099F868 /* GrrFramework.framework */; };
+		85D6439A13C081690099F868 /* GrrFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D6430C13C0773D0099F868 /* GrrFramework.framework */; };
+		85D643FE13C0823C0099F868 /* GrrFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D6430C13C0773D0099F868 /* GrrFramework.framework */; };
+		85D6459613C085F10099F868 /* GrrFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 85D6430C13C0773D0099F868 /* GrrFramework.framework */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85D642A313BFF6850099F868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85792FBA108E71F3001B900E;
+			remoteInfo = Proxy;
+		};
+		85D642A913BFF68C0099F868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8579300C108E7E0A001B900E;
+			remoteInfo = ArticleOperations;
+		};
+		85D642AB13BFF68C0099F868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85793005108E7D6E001B900E;
+			remoteInfo = DatabaseOperations;
+		};
+		85D642AD13BFF68C0099F868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85792FDD108E75BF001B900E;
+			remoteInfo = DatabaseTreeView;
+		};
+		85D642AF13BFF68C0099F868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85792FD0108E7347001B900E;
+			remoteInfo = Fonts;
+		};
+		85D642B113BFF68C0099F868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85792FB0108E712D001B900E;
+			remoteInfo = SubscriptionPanel;
+		};
+		85D642B313BFF68C0099F868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85792F32108E6CC0001B900E;
+			remoteInfo = ArticleTable;
+		};
+		85D642B513BFF68C0099F868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85A5FDCC108D229D00AC6AA4;
+			remoteInfo = ArticleView;
+		};
+		85D642B713BFF68C0099F868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 850F6426108BB9A80035D594;
+			remoteInfo = TreeDatabase;
+		};
+		85D642B913BFF68C0099F868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 850F647F108BC0650035D594;
+			remoteInfo = Searching;
+		};
+		85D6433413C0795C0099F868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85D6430B13C0773D0099F868;
+			remoteInfo = GrrFramework;
+		};
+		85D6436213C07F130099F868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85D6430B13C0773D0099F868;
+			remoteInfo = GrrFramework;
+		};
+		85D6436513C07F260099F868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85D6430B13C0773D0099F868;
+			remoteInfo = GrrFramework;
+		};
+		85D6436913C07F360099F868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85D6430B13C0773D0099F868;
+			remoteInfo = GrrFramework;
+		};
+		85D6437E13C080DB0099F868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85D6430B13C0773D0099F868;
+			remoteInfo = GrrFramework;
+		};
+		85D6438213C080E80099F868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85D6430B13C0773D0099F868;
+			remoteInfo = GrrFramework;
+		};
+		85D6438713C0810D0099F868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85D6430B13C0773D0099F868;
+			remoteInfo = GrrFramework;
+		};
+		85D6438D13C0812F0099F868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85D6430B13C0773D0099F868;
+			remoteInfo = GrrFramework;
+		};
+		85D6439213C081450099F868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85D6430B13C0773D0099F868;
+			remoteInfo = GrrFramework;
+		};
+		85D6439813C0815F0099F868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85D6430B13C0773D0099F868;
+			remoteInfo = GrrFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		85D6405D13BFE7170099F868 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				85D6459613C085F10099F868 /* GrrFramework.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85D6409513BFE8720099F868 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* Grr_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grr_Prefix.pch; sourceTree = "<group>"; };
+		850F63D2108A300D0035D594 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = Components/SubscriptionPanel/English.lproj/SubscriptionPanel.nib; sourceTree = "<group>"; };
+		850F63EC108A33320035D594 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = Components/Fonts/English.lproj/FontsComponent.nib; sourceTree = "<group>"; };
+		850F63FB108A37E50035D594 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = Components/ArticleTable/English.lproj/ArticleTablePlugin.nib; sourceTree = "<group>"; };
+		850F6427108BB9A80035D594 /* TreeDatabase.grrdb */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreeDatabase.grrdb; sourceTree = BUILT_PRODUCTS_DIR; };
+		850F6428108BB9A80035D594 /* TreeDatabase-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TreeDatabase-Info.plist"; path = "/Users/multix/Documents/code/gap/user-apps/Grr/TreeDatabase-Info.plist"; sourceTree = "<absolute>"; };
+		850F6480108BC0650035D594 /* Searching.grrc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Searching.grrc; sourceTree = BUILT_PRODUCTS_DIR; };
+		850F6481108BC0650035D594 /* Searching-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Searching-Info.plist"; path = "/Users/multix/Documents/code/gap/user-apps/Grr/Searching-Info.plist"; sourceTree = "<absolute>"; };
+		851B402D109E14920036C28D /* Fonts.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = Fonts.tiff; path = Components/Fonts/Resources/Fonts.tiff; sourceTree = "<group>"; };
+		8540B03E10B69963008281E2 /* Grr-Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Grr-Icon.icns"; sourceTree = "<group>"; };
+		85687D35107BF7D000B55A9A /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		85687D36107BF7D000B55A9A /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		85687D37107BF7D000B55A9A /* Article.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
+		85687D38107BF7D000B55A9A /* Article.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
+		85687D39107BF7D000B55A9A /* ArticleFactory.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ArticleFactory.h; sourceTree = "<group>"; };
+		85687D3A107BF7D000B55A9A /* ArticleFactory.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ArticleFactory.m; sourceTree = "<group>"; };
+		85687D3B107BF7D000B55A9A /* ArticleGroup.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ArticleGroup.h; sourceTree = "<group>"; };
+		85687D3C107BF7D000B55A9A /* ArticleGroup.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ArticleGroup.m; sourceTree = "<group>"; };
+		85687D3D107BF7D000B55A9A /* Category.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
+		85687D3E107BF7D000B55A9A /* Category.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
+		85687D3F107BF7D000B55A9A /* Components.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Components.h; sourceTree = "<group>"; };
+		85687D40107BF7D000B55A9A /* Components.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Components.m; sourceTree = "<group>"; };
+		85687D41107BF7D000B55A9A /* Database.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		85687D42107BF7D000B55A9A /* Database.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
+		85687D43107BF7D000B55A9A /* DatabaseElement.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DatabaseElement.h; sourceTree = "<group>"; };
+		85687D44107BF7D000B55A9A /* DatabaseElement.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DatabaseElement.m; sourceTree = "<group>"; };
+		85687D45107BF7D000B55A9A /* ExtendedWindow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ExtendedWindow.h; sourceTree = "<group>"; };
+		85687D46107BF7D000B55A9A /* ExtendedWindow.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ExtendedWindow.m; sourceTree = "<group>"; };
+		85687D47107BF7D000B55A9A /* Feed.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
+		85687D48107BF7D000B55A9A /* Feed.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Feed.m; sourceTree = "<group>"; };
+		85687D49107BF7D000B55A9A /* GNRatingCell.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GNRatingCell.h; sourceTree = "<group>"; };
+		85687D4A107BF7D000B55A9A /* GNRatingCell.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GNRatingCell.m; sourceTree = "<group>"; };
+		85687D4B107BF7D000B55A9A /* ImageTextCell.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ImageTextCell.h; sourceTree = "<group>"; };
+		85687D4C107BF7D000B55A9A /* ImageTextCell.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ImageTextCell.m; sourceTree = "<group>"; };
+		85687D4D107BF7D000B55A9A /* NSBundle+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Extensions.h"; sourceTree = "<group>"; };
+		85687D4E107BF7D000B55A9A /* NSBundle+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Extensions.m"; sourceTree = "<group>"; };
+		85687D4F107BF7D000B55A9A /* NSURL+Proxy.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSURL+Proxy.h"; sourceTree = "<group>"; };
+		85687D50107BF7D000B55A9A /* NSURL+Proxy.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Proxy.m"; sourceTree = "<group>"; };
+		85687D51107BF7D000B55A9A /* NumberedImageTextCell.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NumberedImageTextCell.h; sourceTree = "<group>"; };
+		85687D52107BF7D000B55A9A /* NumberedImageTextCell.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NumberedImageTextCell.m; sourceTree = "<group>"; };
+		85687D53107BF7D000B55A9A /* PipeType.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PipeType.h; sourceTree = "<group>"; };
+		85687D54107BF7D000B55A9A /* PipeType.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PipeType.m; sourceTree = "<group>"; };
+		85687D55107BF7D000B55A9A /* PreferencesComponent.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PreferencesComponent.h; sourceTree = "<group>"; };
+		85687D56107BF7D000B55A9A /* PreferencesComponent.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PreferencesComponent.m; sourceTree = "<group>"; };
+		85687D57107BF7D000B55A9A /* PreferencesPanel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PreferencesPanel.h; sourceTree = "<group>"; };
+		85687D58107BF7D000B55A9A /* PreferencesPanel.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PreferencesPanel.m; sourceTree = "<group>"; };
+		85687D59107BF7D000B55A9A /* ToolbarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ToolbarDelegate.h; sourceTree = "<group>"; };
+		85687D85107BF83C00B55A9A /* ArticleOperations.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ArticleOperations.h; path = Components/ArticleOperations/ArticleOperations.h; sourceTree = "<group>"; };
+		85687D86107BF83C00B55A9A /* ArticleOperations.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ArticleOperations.m; path = Components/ArticleOperations/ArticleOperations.m; sourceTree = "<group>"; };
+		85687D8A107BF85200B55A9A /* ArticleTablePlugin.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ArticleTablePlugin.h; path = Components/ArticleTable/ArticleTablePlugin.h; sourceTree = "<group>"; };
+		85687D8B107BF85200B55A9A /* ArticleTablePlugin.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ArticleTablePlugin.m; path = Components/ArticleTable/ArticleTablePlugin.m; sourceTree = "<group>"; };
+		85687D90107BF8A900B55A9A /* Grr_main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Grr_main.m; sourceTree = "<group>"; };
+		85687D93107BF8CB00B55A9A /* ArticleTextViewPlugin.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ArticleTextViewPlugin.h; path = Components/ArticleView/ArticleTextViewPlugin.h; sourceTree = "<group>"; };
+		85687D94107BF8CB00B55A9A /* ArticleTextViewPlugin.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ArticleTextViewPlugin.m; path = Components/ArticleView/ArticleTextViewPlugin.m; sourceTree = "<group>"; };
+		85687D95107BF8CB00B55A9A /* NSString+TolerantHTML.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "NSString+TolerantHTML.h"; path = "Components/ArticleView/NSString+TolerantHTML.h"; sourceTree = "<group>"; };
+		85687D96107BF8CB00B55A9A /* NSString+TolerantHTML.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSString+TolerantHTML.m"; path = "Components/ArticleView/NSString+TolerantHTML.m"; sourceTree = "<group>"; };
+		85687D9C107BF8EA00B55A9A /* DatabaseOperations.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = DatabaseOperations.h; path = Components/DatabaseOperations/DatabaseOperations.h; sourceTree = "<group>"; };
+		85687D9D107BF8EA00B55A9A /* DatabaseOperations.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = DatabaseOperations.m; path = Components/DatabaseOperations/DatabaseOperations.m; sourceTree = "<group>"; };
+		85687D9E107BF8EA00B55A9A /* SubscriptionPanelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SubscriptionPanelProtocol.h; path = Components/DatabaseOperations/SubscriptionPanelProtocol.h; sourceTree = "<group>"; };
+		85687DA3107BF90A00B55A9A /* DatabaseTreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = DatabaseTreeViewController.h; path = Components/DatabaseTreeView/DatabaseTreeViewController.h; sourceTree = "<group>"; };
+		85687DA4107BF90A00B55A9A /* DatabaseTreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = DatabaseTreeViewController.m; path = Components/DatabaseTreeView/DatabaseTreeViewController.m; sourceTree = "<group>"; };
+		85687DAE107BF94E00B55A9A /* FontBox.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = FontBox.h; path = Components/Fonts/FontBox.h; sourceTree = "<group>"; };
+		85687DAF107BF94E00B55A9A /* FontBox.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = FontBox.m; path = Components/Fonts/FontBox.m; sourceTree = "<group>"; };
+		85687DB0107BF94E00B55A9A /* FontsComponent.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = FontsComponent.h; path = Components/Fonts/FontsComponent.h; sourceTree = "<group>"; };
+		85687DB1107BF94E00B55A9A /* FontsComponent.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = FontsComponent.m; path = Components/Fonts/FontsComponent.m; sourceTree = "<group>"; };
+		85687DBA107BF98200B55A9A /* ProxyComponent.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ProxyComponent.h; path = Components/Proxy/ProxyComponent.h; sourceTree = "<group>"; };
+		85687DBB107BF98200B55A9A /* ProxyComponent.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ProxyComponent.m; path = Components/Proxy/ProxyComponent.m; sourceTree = "<group>"; };
+		85687DC0107BF99B00B55A9A /* NSSet+ArticleFiltering.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "NSSet+ArticleFiltering.h"; path = "Components/Searching/NSSet+ArticleFiltering.h"; sourceTree = "<group>"; };
+		85687DC1107BF99B00B55A9A /* NSSet+ArticleFiltering.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSSet+ArticleFiltering.m"; path = "Components/Searching/NSSet+ArticleFiltering.m"; sourceTree = "<group>"; };
+		85687DC2107BF99B00B55A9A /* Searching.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Searching.h; path = Components/Searching/Searching.h; sourceTree = "<group>"; };
+		85687DC3107BF99B00B55A9A /* Searching.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = Searching.m; path = Components/Searching/Searching.m; sourceTree = "<group>"; };
+		85687DCB107BF9B800B55A9A /* SubscriptionPanel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SubscriptionPanel.h; path = Components/SubscriptionPanel/SubscriptionPanel.h; sourceTree = "<group>"; };
+		85687DCC107BF9B800B55A9A /* SubscriptionPanel.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SubscriptionPanel.m; path = Components/SubscriptionPanel/SubscriptionPanel.m; sourceTree = "<group>"; };
+		85687DD3107BFA2600B55A9A /* TreeDatabaseComponent.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = TreeDatabaseComponent.h; path = Components/TreeDatabase/TreeDatabaseComponent.h; sourceTree = "<group>"; };
+		85687DD4107BFA2600B55A9A /* TreeDatabaseComponent.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TreeDatabaseComponent.m; path = Components/TreeDatabase/TreeDatabaseComponent.m; sourceTree = "<group>"; };
+		85687DF0107BFBEA00B55A9A /* HTML-Entities.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist; path = "HTML-Entities.plist"; sourceTree = "<group>"; };
+		85687DF2107BFBEA00B55A9A /* AddCategory.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = AddCategory.tiff; sourceTree = "<group>"; };
+		85687DF3107BFBEA00B55A9A /* AddFeed.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = AddFeed.tiff; sourceTree = "<group>"; };
+		85687DF5107BFBEA00B55A9A /* Grr-Icon-Anim1.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Grr-Icon-Anim1.tiff"; sourceTree = "<group>"; };
+		85687DF6107BFBEA00B55A9A /* Grr-Icon-Anim2.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Grr-Icon-Anim2.tiff"; sourceTree = "<group>"; };
+		85687DF7107BFBEA00B55A9A /* Grr-Icon-Anim3.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Grr-Icon-Anim3.tiff"; sourceTree = "<group>"; };
+		85687DF8107BFBEA00B55A9A /* Grr-Icon-NoConnection.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Grr-Icon-NoConnection.tiff"; sourceTree = "<group>"; };
+		85687DF9107BFBEA00B55A9A /* Grr-Icon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Grr-Icon.tiff"; sourceTree = "<group>"; };
+		85687DFA107BFBEA00B55A9A /* ArticleLink.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ArticleLink.tiff; sourceTree = "<group>"; };
+		85687DFB107BFBEA00B55A9A /* Category.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Category.tiff; sourceTree = "<group>"; };
+		85687DFC107BFBEA00B55A9A /* Database.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Database.tiff; sourceTree = "<group>"; };
+		85687DFD107BFBEA00B55A9A /* DeleteArticle.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = DeleteArticle.tiff; sourceTree = "<group>"; };
+		85687DFE107BFBEA00B55A9A /* DeleteCategory.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = DeleteCategory.tiff; sourceTree = "<group>"; };
+		85687DFF107BFBEA00B55A9A /* DeleteFeed.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = DeleteFeed.tiff; sourceTree = "<group>"; };
+		85687E00107BFBEA00B55A9A /* Feed.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Feed.tiff; sourceTree = "<group>"; };
+		85687E01107BFBEA00B55A9A /* FeedFetching.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = FeedFetching.tiff; sourceTree = "<group>"; };
+		85687E02107BFBEA00B55A9A /* FetchFeed.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = FetchFeed.tiff; sourceTree = "<group>"; };
+		85687E03107BFBEA00B55A9A /* FetchFeeds.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = FetchFeeds.tiff; sourceTree = "<group>"; };
+		85687E05107BFBEA00B55A9A /* ArticleFile.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ArticleFile.tiff; sourceTree = "<group>"; };
+		85687E06107BFBEA00B55A9A /* FeedFile.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = FeedFile.tiff; sourceTree = "<group>"; };
+		85687E07107BFBEA00B55A9A /* Filter.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Filter.tiff; sourceTree = "<group>"; };
+		85687E08107BFBEA00B55A9A /* Link.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Link.tiff; sourceTree = "<group>"; };
+		85687E09107BFBEA00B55A9A /* PlainArticle.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = PlainArticle.tiff; sourceTree = "<group>"; };
+		85687E0A107BFBEA00B55A9A /* Star.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Star.tiff; sourceTree = "<group>"; };
+		85687E0B107BFBEA00B55A9A /* WebProxy.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = WebProxy.tiff; sourceTree = "<group>"; };
+		85687E0D107BFBEA00B55A9A /* arrowDown.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = arrowDown.tiff; sourceTree = "<group>"; };
+		85687E0E107BFBEA00B55A9A /* arrowLeft.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = arrowLeft.tiff; sourceTree = "<group>"; };
+		85687E0F107BFBEA00B55A9A /* arrowRight.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = arrowRight.tiff; sourceTree = "<group>"; };
+		85687E10107BFBEA00B55A9A /* arrowUp.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = arrowUp.tiff; sourceTree = "<group>"; };
+		85687E11107BFBEA00B55A9A /* blue-badge-left.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "blue-badge-left.tiff"; sourceTree = "<group>"; };
+		85687E12107BFBEA00B55A9A /* blue-badge-mid.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "blue-badge-mid.tiff"; sourceTree = "<group>"; };
+		85687E13107BFBEA00B55A9A /* blue-badge-right.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "blue-badge-right.tiff"; sourceTree = "<group>"; };
+		85687E3B107BFEE600B55A9A /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Grr.nib; sourceTree = "<group>"; };
+		85687E3D107BFEE600B55A9A /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/PreferencesPanel.nib; sourceTree = "<group>"; };
+		85687E4C107C001500B55A9A /* GNUstep.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GNUstep.h; sourceTree = "<group>"; };
+		85792F33108E6CC0001B900E /* ArticleTable.grrc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArticleTable.grrc; sourceTree = BUILT_PRODUCTS_DIR; };
+		85792F34108E6CC0001B900E /* ArticleTable-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ArticleTable-Info.plist"; path = "/Users/multix/Documents/code/gap/user-apps/Grr/ArticleTable-Info.plist"; sourceTree = "<absolute>"; };
+		85792FB1108E712D001B900E /* SubscriptionPanel.grrc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubscriptionPanel.grrc; sourceTree = BUILT_PRODUCTS_DIR; };
+		85792FB2108E712D001B900E /* SubscriptionPanel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SubscriptionPanel-Info.plist"; path = "/Users/multix/Documents/code/gap/user-apps/Grr/SubscriptionPanel-Info.plist"; sourceTree = "<absolute>"; };
+		85792FBB108E71F3001B900E /* Proxy.grrc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Proxy.grrc; sourceTree = BUILT_PRODUCTS_DIR; };
+		85792FBC108E71F3001B900E /* Proxy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Proxy-Info.plist"; path = "/Users/multix/Documents/code/gap/user-apps/Grr/Proxy-Info.plist"; sourceTree = "<absolute>"; };
+		85792FD1108E7347001B900E /* Fonts.grrc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fonts.grrc; sourceTree = BUILT_PRODUCTS_DIR; };
+		85792FD2108E7347001B900E /* Fonts-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Fonts-Info.plist"; path = "/Users/multix/Documents/code/gap/user-apps/Grr/Fonts-Info.plist"; sourceTree = "<absolute>"; };
+		85792FDE108E75BF001B900E /* DatabaseTreeView.grrc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatabaseTreeView.grrc; sourceTree = BUILT_PRODUCTS_DIR; };
+		85792FDF108E75BF001B900E /* DatabaseTreeView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DatabaseTreeView-Info.plist"; path = "/Users/multix/Documents/code/gap/user-apps/Grr/DatabaseTreeView-Info.plist"; sourceTree = "<absolute>"; };
+		85793006108E7D6E001B900E /* DatabaseOperations.grrc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatabaseOperations.grrc; sourceTree = BUILT_PRODUCTS_DIR; };
+		85793007108E7D6F001B900E /* DatabaseOperations-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DatabaseOperations-Info.plist"; path = "/Users/multix/Documents/code/gap/user-apps/Grr/DatabaseOperations-Info.plist"; sourceTree = "<absolute>"; };
+		8579300D108E7E0A001B900E /* ArticleOperations.grrc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArticleOperations.grrc; sourceTree = BUILT_PRODUCTS_DIR; };
+		8579300E108E7E0A001B900E /* ArticleOperations-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ArticleOperations-Info.plist"; path = "/Users/multix/Documents/code/gap/user-apps/Grr/ArticleOperations-Info.plist"; sourceTree = "<absolute>"; };
+		857AA89A1082A4CB00829DD6 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = Components/Proxy/English.lproj/ProxyComponent.nib; sourceTree = "<group>"; };
+		857AA8B61082AC6800829DD6 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = Components/ArticleView/English.lproj/ArticleTextViewPlugin.nib; sourceTree = "<group>"; };
+		857AA8BB1082AC8700829DD6 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = Components/DatabaseTreeView/English.lproj/DatabaseTreeViewController.nib; sourceTree = "<group>"; };
+		85A5FDCD108D229D00AC6AA4 /* ArticleView.grrc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArticleView.grrc; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A5FDCE108D229D00AC6AA4 /* ArticleView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ArticleView-Info.plist"; path = "/Users/multix/Documents/code/gap/user-apps/Grr/ArticleView-Info.plist"; sourceTree = "<absolute>"; };
+		85B292141A486BEE00D05E34 /* RSSKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RSSKit.framework; path = /Library/Frameworks/RSSKit.framework; sourceTree = "<absolute>"; };
+		85C0D2FC1093BB810095C185 /* bluebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bluebg.png; path = Components/ArticleView/English.lproj/ArticleTextViewPlugin.gorm/bluebg.png; sourceTree = "<group>"; };
+		85D6430C13C0773D0099F868 /* GrrFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GrrFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D6430D13C0773D0099F868 /* GrrFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GrrFramework-Info.plist"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Grr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		850F6425108BB9A80035D594 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85B292361A48E53F00D05E34 /* RSSKit.framework in Frameworks */,
+				85D6436113C0798C0099F868 /* GrrFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		850F647E108BC0650035D594 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D6433B13C079750099F868 /* GrrFramework.framework in Frameworks */,
+				85B292331A48E51200D05E34 /* RSSKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85792F31108E6CC0001B900E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85B2923B1A48E58200D05E34 /* RSSKit.framework in Frameworks */,
+				85D6436B13C07F390099F868 /* GrrFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85792FAF108E712D001B900E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85B2923E1A48E5D000D05E34 /* RSSKit.framework in Frameworks */,
+				85D6439A13C081690099F868 /* GrrFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85792FB9108E71F3001B900E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D6439413C081480099F868 /* GrrFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85792FCF108E7347001B900E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D6438F13C0813C0099F868 /* GrrFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85792FDC108E75BF001B900E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85B2924B1A48E62E00D05E34 /* RSSKit.framework in Frameworks */,
+				85D6438A13C0811A0099F868 /* GrrFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85793004108E7D6E001B900E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85B292511A48E66200D05E34 /* RSSKit.framework in Frameworks */,
+				85D6438413C081010099F868 /* GrrFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8579300B108E7E0A001B900E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85B2924E1A48E65200D05E34 /* RSSKit.framework in Frameworks */,
+				85D6437B13C080D50099F868 /* GrrFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85A5FDCB108D229D00AC6AA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85B2923A1A48E57100D05E34 /* RSSKit.framework in Frameworks */,
+				85D6436713C07F2A0099F868 /* GrrFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85D6430A13C0773D0099F868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85B292151A486BEE00D05E34 /* RSSKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85B292551A48E6E300D05E34 /* RSSKit.framework in Frameworks */,
+				85D643FE13C0823C0099F868 /* GrrFramework.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				85687D35107BF7D000B55A9A /* AppController.h */,
+				85687D36107BF7D000B55A9A /* AppController.m */,
+				85687D37107BF7D000B55A9A /* Article.h */,
+				85687D38107BF7D000B55A9A /* Article.m */,
+				85687D39107BF7D000B55A9A /* ArticleFactory.h */,
+				85687D3A107BF7D000B55A9A /* ArticleFactory.m */,
+				85687D3B107BF7D000B55A9A /* ArticleGroup.h */,
+				85687D3C107BF7D000B55A9A /* ArticleGroup.m */,
+				85687D3D107BF7D000B55A9A /* Category.h */,
+				85687D3E107BF7D000B55A9A /* Category.m */,
+				85687D3F107BF7D000B55A9A /* Components.h */,
+				85687D40107BF7D000B55A9A /* Components.m */,
+				85687D41107BF7D000B55A9A /* Database.h */,
+				85687D42107BF7D000B55A9A /* Database.m */,
+				85687D43107BF7D000B55A9A /* DatabaseElement.h */,
+				85687D44107BF7D000B55A9A /* DatabaseElement.m */,
+				85687D45107BF7D000B55A9A /* ExtendedWindow.h */,
+				85687D46107BF7D000B55A9A /* ExtendedWindow.m */,
+				85687D47107BF7D000B55A9A /* Feed.h */,
+				85687D48107BF7D000B55A9A /* Feed.m */,
+				85687D49107BF7D000B55A9A /* GNRatingCell.h */,
+				85687D4A107BF7D000B55A9A /* GNRatingCell.m */,
+				85687D4B107BF7D000B55A9A /* ImageTextCell.h */,
+				85687D4C107BF7D000B55A9A /* ImageTextCell.m */,
+				85687D4D107BF7D000B55A9A /* NSBundle+Extensions.h */,
+				85687D4E107BF7D000B55A9A /* NSBundle+Extensions.m */,
+				85687D4F107BF7D000B55A9A /* NSURL+Proxy.h */,
+				85687D50107BF7D000B55A9A /* NSURL+Proxy.m */,
+				85687D51107BF7D000B55A9A /* NumberedImageTextCell.h */,
+				85687D52107BF7D000B55A9A /* NumberedImageTextCell.m */,
+				85687D53107BF7D000B55A9A /* PipeType.h */,
+				85687D54107BF7D000B55A9A /* PipeType.m */,
+				85687D55107BF7D000B55A9A /* PreferencesComponent.h */,
+				85687D56107BF7D000B55A9A /* PreferencesComponent.m */,
+				85687D57107BF7D000B55A9A /* PreferencesPanel.h */,
+				85687D58107BF7D000B55A9A /* PreferencesPanel.m */,
+				85687D59107BF7D000B55A9A /* ToolbarDelegate.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				85B292141A486BEE00D05E34 /* RSSKit.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Grr.app */,
+				850F6427108BB9A80035D594 /* TreeDatabase.grrdb */,
+				850F6480108BC0650035D594 /* Searching.grrc */,
+				85A5FDCD108D229D00AC6AA4 /* ArticleView.grrc */,
+				85792F33108E6CC0001B900E /* ArticleTable.grrc */,
+				85792FB1108E712D001B900E /* SubscriptionPanel.grrc */,
+				85792FBB108E71F3001B900E /* Proxy.grrc */,
+				85792FD1108E7347001B900E /* Fonts.grrc */,
+				85792FDE108E75BF001B900E /* DatabaseTreeView.grrc */,
+				85793006108E7D6E001B900E /* DatabaseOperations.grrc */,
+				8579300D108E7E0A001B900E /* ArticleOperations.grrc */,
+				85D6430C13C0773D0099F868 /* GrrFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Grr */ = {
+			isa = PBXGroup;
+			children = (
+				85687D83107BF7D700B55A9A /* Components */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				85D6430D13C0773D0099F868 /* GrrFramework-Info.plist */,
+			);
+			name = Grr;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				85687E4C107C001500B55A9A /* GNUstep.h */,
+				85687D90107BF8A900B55A9A /* Grr_main.m */,
+				32CA4F630368D1EE00C91783 /* Grr_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				85687DEF107BFBEA00B55A9A /* Data */,
+				85687DF1107BFBEA00B55A9A /* Icons */,
+				85687E0C107BFBEA00B55A9A /* UI */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				85687E3A107BFEE600B55A9A /* Grr.nib */,
+				85687E3C107BFEE600B55A9A /* PreferencesPanel.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85687D83107BF7D700B55A9A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				85687DD0107BFA1000B55A9A /* TreeDatabase */,
+				85687DC9107BF9A600B55A9A /* SubscriptionPanel */,
+				85687DBE107BF98800B55A9A /* Searching */,
+				85687DB8107BF97200B55A9A /* Proxy */,
+				85687DAC107BF93C00B55A9A /* Fonts */,
+				85687DA2107BF8FB00B55A9A /* DatabaseTreeView */,
+				85687D9B107BF8D600B55A9A /* DatabaseOperations */,
+				85687D92107BF8BB00B55A9A /* ArticleView */,
+				85687D89107BF84600B55A9A /* ArticleTable */,
+				85687D84107BF82D00B55A9A /* ArticleOperations */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		85687D84107BF82D00B55A9A /* ArticleOperations */ = {
+			isa = PBXGroup;
+			children = (
+				8579300E108E7E0A001B900E /* ArticleOperations-Info.plist */,
+				85687D85107BF83C00B55A9A /* ArticleOperations.h */,
+				85687D86107BF83C00B55A9A /* ArticleOperations.m */,
+			);
+			name = ArticleOperations;
+			sourceTree = "<group>";
+		};
+		85687D89107BF84600B55A9A /* ArticleTable */ = {
+			isa = PBXGroup;
+			children = (
+				85792F34108E6CC0001B900E /* ArticleTable-Info.plist */,
+				850F63FA108A37E50035D594 /* ArticleTablePlugin.nib */,
+				85687D8A107BF85200B55A9A /* ArticleTablePlugin.h */,
+				85687D8B107BF85200B55A9A /* ArticleTablePlugin.m */,
+			);
+			name = ArticleTable;
+			sourceTree = "<group>";
+		};
+		85687D92107BF8BB00B55A9A /* ArticleView */ = {
+			isa = PBXGroup;
+			children = (
+				85A5FDCE108D229D00AC6AA4 /* ArticleView-Info.plist */,
+				857AA8B51082AC6800829DD6 /* ArticleTextViewPlugin.nib */,
+				85687D93107BF8CB00B55A9A /* ArticleTextViewPlugin.h */,
+				85687D94107BF8CB00B55A9A /* ArticleTextViewPlugin.m */,
+				85687D95107BF8CB00B55A9A /* NSString+TolerantHTML.h */,
+				85687D96107BF8CB00B55A9A /* NSString+TolerantHTML.m */,
+				85C0D2FC1093BB810095C185 /* bluebg.png */,
+			);
+			name = ArticleView;
+			sourceTree = "<group>";
+		};
+		85687D9B107BF8D600B55A9A /* DatabaseOperations */ = {
+			isa = PBXGroup;
+			children = (
+				85793007108E7D6F001B900E /* DatabaseOperations-Info.plist */,
+				85687D9C107BF8EA00B55A9A /* DatabaseOperations.h */,
+				85687D9D107BF8EA00B55A9A /* DatabaseOperations.m */,
+				85687D9E107BF8EA00B55A9A /* SubscriptionPanelProtocol.h */,
+			);
+			name = DatabaseOperations;
+			sourceTree = "<group>";
+		};
+		85687DA2107BF8FB00B55A9A /* DatabaseTreeView */ = {
+			isa = PBXGroup;
+			children = (
+				85792FDF108E75BF001B900E /* DatabaseTreeView-Info.plist */,
+				857AA8BA1082AC8700829DD6 /* DatabaseTreeViewController.nib */,
+				85687DA3107BF90A00B55A9A /* DatabaseTreeViewController.h */,
+				85687DA4107BF90A00B55A9A /* DatabaseTreeViewController.m */,
+			);
+			name = DatabaseTreeView;
+			sourceTree = "<group>";
+		};
+		85687DAC107BF93C00B55A9A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				851B402D109E14920036C28D /* Fonts.tiff */,
+				85792FD2108E7347001B900E /* Fonts-Info.plist */,
+				850F63EB108A33320035D594 /* FontsComponent.nib */,
+				85687DAE107BF94E00B55A9A /* FontBox.h */,
+				85687DAF107BF94E00B55A9A /* FontBox.m */,
+				85687DB0107BF94E00B55A9A /* FontsComponent.h */,
+				85687DB1107BF94E00B55A9A /* FontsComponent.m */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		85687DB8107BF97200B55A9A /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				85792FBC108E71F3001B900E /* Proxy-Info.plist */,
+				857AA8991082A4CB00829DD6 /* ProxyComponent.nib */,
+				85687DBA107BF98200B55A9A /* ProxyComponent.h */,
+				85687DBB107BF98200B55A9A /* ProxyComponent.m */,
+			);
+			name = Proxy;
+			sourceTree = "<group>";
+		};
+		85687DBE107BF98800B55A9A /* Searching */ = {
+			isa = PBXGroup;
+			children = (
+				850F6481108BC0650035D594 /* Searching-Info.plist */,
+				85687DC0107BF99B00B55A9A /* NSSet+ArticleFiltering.h */,
+				85687DC1107BF99B00B55A9A /* NSSet+ArticleFiltering.m */,
+				85687DC2107BF99B00B55A9A /* Searching.h */,
+				85687DC3107BF99B00B55A9A /* Searching.m */,
+			);
+			name = Searching;
+			sourceTree = "<group>";
+		};
+		85687DC9107BF9A600B55A9A /* SubscriptionPanel */ = {
+			isa = PBXGroup;
+			children = (
+				85792FB2108E712D001B900E /* SubscriptionPanel-Info.plist */,
+				850F63D1108A300D0035D594 /* SubscriptionPanel.nib */,
+				85687DCB107BF9B800B55A9A /* SubscriptionPanel.h */,
+				85687DCC107BF9B800B55A9A /* SubscriptionPanel.m */,
+			);
+			name = SubscriptionPanel;
+			sourceTree = "<group>";
+		};
+		85687DD0107BFA1000B55A9A /* TreeDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				850F6428108BB9A80035D594 /* TreeDatabase-Info.plist */,
+				85687DD3107BFA2600B55A9A /* TreeDatabaseComponent.h */,
+				85687DD4107BFA2600B55A9A /* TreeDatabaseComponent.m */,
+			);
+			name = TreeDatabase;
+			sourceTree = "<group>";
+		};
+		85687DEF107BFBEA00B55A9A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				85687DF0107BFBEA00B55A9A /* HTML-Entities.plist */,
+			);
+			name = Data;
+			path = Resources/Data;
+			sourceTree = "<group>";
+		};
+		85687DF1107BFBEA00B55A9A /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				85687DF2107BFBEA00B55A9A /* AddCategory.tiff */,
+				85687DF3107BFBEA00B55A9A /* AddFeed.tiff */,
+				85687DF4107BFBEA00B55A9A /* Application */,
+				85687DFA107BFBEA00B55A9A /* ArticleLink.tiff */,
+				85687DFB107BFBEA00B55A9A /* Category.tiff */,
+				85687DFC107BFBEA00B55A9A /* Database.tiff */,
+				85687DFD107BFBEA00B55A9A /* DeleteArticle.tiff */,
+				85687DFE107BFBEA00B55A9A /* DeleteCategory.tiff */,
+				85687DFF107BFBEA00B55A9A /* DeleteFeed.tiff */,
+				85687E00107BFBEA00B55A9A /* Feed.tiff */,
+				85687E01107BFBEA00B55A9A /* FeedFetching.tiff */,
+				85687E02107BFBEA00B55A9A /* FetchFeed.tiff */,
+				85687E03107BFBEA00B55A9A /* FetchFeeds.tiff */,
+				85687E04107BFBEA00B55A9A /* Files */,
+				85687E07107BFBEA00B55A9A /* Filter.tiff */,
+				85687E08107BFBEA00B55A9A /* Link.tiff */,
+				85687E09107BFBEA00B55A9A /* PlainArticle.tiff */,
+				85687E0A107BFBEA00B55A9A /* Star.tiff */,
+				85687E0B107BFBEA00B55A9A /* WebProxy.tiff */,
+			);
+			name = Icons;
+			path = Resources/Icons;
+			sourceTree = "<group>";
+		};
+		85687DF4107BFBEA00B55A9A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8540B03E10B69963008281E2 /* Grr-Icon.icns */,
+				85687DF5107BFBEA00B55A9A /* Grr-Icon-Anim1.tiff */,
+				85687DF6107BFBEA00B55A9A /* Grr-Icon-Anim2.tiff */,
+				85687DF7107BFBEA00B55A9A /* Grr-Icon-Anim3.tiff */,
+				85687DF8107BFBEA00B55A9A /* Grr-Icon-NoConnection.tiff */,
+				85687DF9107BFBEA00B55A9A /* Grr-Icon.tiff */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		85687E04107BFBEA00B55A9A /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				85687E05107BFBEA00B55A9A /* ArticleFile.tiff */,
+				85687E06107BFBEA00B55A9A /* FeedFile.tiff */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		85687E0C107BFBEA00B55A9A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				85687E0D107BFBEA00B55A9A /* arrowDown.tiff */,
+				85687E0E107BFBEA00B55A9A /* arrowLeft.tiff */,
+				85687E0F107BFBEA00B55A9A /* arrowRight.tiff */,
+				85687E10107BFBEA00B55A9A /* arrowUp.tiff */,
+				85687E11107BFBEA00B55A9A /* blue-badge-left.tiff */,
+				85687E12107BFBEA00B55A9A /* blue-badge-mid.tiff */,
+				85687E13107BFBEA00B55A9A /* blue-badge-right.tiff */,
+			);
+			name = UI;
+			path = Resources/UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		85D6430713C0773D0099F868 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		850F6426108BB9A80035D594 /* TreeDatabase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85E5412D10ACBF5C00BCF79D /* Build configuration list for PBXNativeTarget "TreeDatabase" */;
+			buildPhases = (
+				850F6423108BB9A80035D594 /* Resources */,
+				850F6424108BB9A80035D594 /* Sources */,
+				850F6425108BB9A80035D594 /* Frameworks */,
+				85D6409513BFE8720099F868 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85D6436313C07F130099F868 /* PBXTargetDependency */,
+			);
+			name = TreeDatabase;
+			productName = TreeDatabase;
+			productReference = 850F6427108BB9A80035D594 /* TreeDatabase.grrdb */;
+			productType = "com.apple.product-type.bundle";
+		};
+		850F647F108BC0650035D594 /* Searching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85E5412910ACBF5C00BCF79D /* Build configuration list for PBXNativeTarget "Searching" */;
+			buildPhases = (
+				850F647C108BC0650035D594 /* Resources */,
+				850F647D108BC0650035D594 /* Sources */,
+				850F647E108BC0650035D594 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85D6433513C0795C0099F868 /* PBXTargetDependency */,
+			);
+			name = Searching;
+			productName = Searching;
+			productReference = 850F6480108BC0650035D594 /* Searching.grrc */;
+			productType = "com.apple.product-type.bundle";
+		};
+		85792F32108E6CC0001B900E /* ArticleTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85E5413510ACBF5C00BCF79D /* Build configuration list for PBXNativeTarget "ArticleTable" */;
+			buildPhases = (
+				85792F2F108E6CC0001B900E /* Resources */,
+				85792F30108E6CC0001B900E /* Sources */,
+				85792F31108E6CC0001B900E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85D6436A13C07F360099F868 /* PBXTargetDependency */,
+			);
+			name = ArticleTable;
+			productName = ArticleTable;
+			productReference = 85792F33108E6CC0001B900E /* ArticleTable.grrc */;
+			productType = "com.apple.product-type.bundle";
+		};
+		85792FB0108E712D001B900E /* SubscriptionPanel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85E5413910ACBF5C00BCF79D /* Build configuration list for PBXNativeTarget "SubscriptionPanel" */;
+			buildPhases = (
+				85792FAD108E712D001B900E /* Resources */,
+				85792FAE108E712D001B900E /* Sources */,
+				85792FAF108E712D001B900E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85D6439913C0815F0099F868 /* PBXTargetDependency */,
+			);
+			name = SubscriptionPanel;
+			productName = SubscriptionPanel;
+			productReference = 85792FB1108E712D001B900E /* SubscriptionPanel.grrc */;
+			productType = "com.apple.product-type.bundle";
+		};
+		85792FBA108E71F3001B900E /* Proxy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85E5413D10ACBF5C00BCF79D /* Build configuration list for PBXNativeTarget "Proxy" */;
+			buildPhases = (
+				85792FB7108E71F3001B900E /* Resources */,
+				85792FB8108E71F3001B900E /* Sources */,
+				85792FB9108E71F3001B900E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85D6439313C081450099F868 /* PBXTargetDependency */,
+			);
+			name = Proxy;
+			productName = Proxy;
+			productReference = 85792FBB108E71F3001B900E /* Proxy.grrc */;
+			productType = "com.apple.product-type.bundle";
+		};
+		85792FD0108E7347001B900E /* Fonts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85E5414110ACBF5C00BCF79D /* Build configuration list for PBXNativeTarget "Fonts" */;
+			buildPhases = (
+				85792FCD108E7347001B900E /* Resources */,
+				85792FCE108E7347001B900E /* Sources */,
+				85792FCF108E7347001B900E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85D6438E13C0812F0099F868 /* PBXTargetDependency */,
+			);
+			name = Fonts;
+			productName = Fonts;
+			productReference = 85792FD1108E7347001B900E /* Fonts.grrc */;
+			productType = "com.apple.product-type.bundle";
+		};
+		85792FDD108E75BF001B900E /* DatabaseTreeView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85E5414510ACBF5C00BCF79D /* Build configuration list for PBXNativeTarget "DatabaseTreeView" */;
+			buildPhases = (
+				85792FDA108E75BF001B900E /* Resources */,
+				85792FDB108E75BF001B900E /* Sources */,
+				85792FDC108E75BF001B900E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85D6438813C0810D0099F868 /* PBXTargetDependency */,
+			);
+			name = DatabaseTreeView;
+			productName = DatabaseTreeView;
+			productReference = 85792FDE108E75BF001B900E /* DatabaseTreeView.grrc */;
+			productType = "com.apple.product-type.bundle";
+		};
+		85793005108E7D6E001B900E /* DatabaseOperations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85E5414910ACBF5C00BCF79D /* Build configuration list for PBXNativeTarget "DatabaseOperations" */;
+			buildPhases = (
+				85793002108E7D6E001B900E /* Resources */,
+				85793003108E7D6E001B900E /* Sources */,
+				85793004108E7D6E001B900E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85D6438313C080E80099F868 /* PBXTargetDependency */,
+			);
+			name = DatabaseOperations;
+			productName = DatabaseOperations;
+			productReference = 85793006108E7D6E001B900E /* DatabaseOperations.grrc */;
+			productType = "com.apple.product-type.bundle";
+		};
+		8579300C108E7E0A001B900E /* ArticleOperations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85E5414D10ACBF5C00BCF79D /* Build configuration list for PBXNativeTarget "ArticleOperations" */;
+			buildPhases = (
+				85793009108E7E0A001B900E /* Resources */,
+				8579300A108E7E0A001B900E /* Sources */,
+				8579300B108E7E0A001B900E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85D6437F13C080DB0099F868 /* PBXTargetDependency */,
+			);
+			name = ArticleOperations;
+			productName = ArticleOperations;
+			productReference = 8579300D108E7E0A001B900E /* ArticleOperations.grrc */;
+			productType = "com.apple.product-type.bundle";
+		};
+		85A5FDCC108D229D00AC6AA4 /* ArticleView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85E5413110ACBF5C00BCF79D /* Build configuration list for PBXNativeTarget "ArticleView" */;
+			buildPhases = (
+				85A5FDC9108D229D00AC6AA4 /* Resources */,
+				85A5FDCA108D229D00AC6AA4 /* Sources */,
+				85A5FDCB108D229D00AC6AA4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85D6436613C07F260099F868 /* PBXTargetDependency */,
+			);
+			name = ArticleView;
+			productName = ArticleView;
+			productReference = 85A5FDCD108D229D00AC6AA4 /* ArticleView.grrc */;
+			productType = "com.apple.product-type.bundle";
+		};
+		85D6430B13C0773D0099F868 /* GrrFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85D6430E13C0773D0099F868 /* Build configuration list for PBXNativeTarget "GrrFramework" */;
+			buildPhases = (
+				85D6430713C0773D0099F868 /* Headers */,
+				85D6430813C0773D0099F868 /* Resources */,
+				85D6430913C0773D0099F868 /* Sources */,
+				85D6430A13C0773D0099F868 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrrFramework;
+			productName = GrrFramework;
+			productReference = 85D6430C13C0773D0099F868 /* GrrFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8D1107260486CEB800E47090 /* Grr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85E5415110ACBF5C00BCF79D /* Build configuration list for PBXNativeTarget "Grr" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				85D6405D13BFE7170099F868 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85D642A413BFF6850099F868 /* PBXTargetDependency */,
+				85D642BA13BFF68C0099F868 /* PBXTargetDependency */,
+				85D642B813BFF68C0099F868 /* PBXTargetDependency */,
+				85D642B613BFF68C0099F868 /* PBXTargetDependency */,
+				85D642B413BFF68C0099F868 /* PBXTargetDependency */,
+				85D642B213BFF68C0099F868 /* PBXTargetDependency */,
+				85D642B013BFF68C0099F868 /* PBXTargetDependency */,
+				85D642AE13BFF68C0099F868 /* PBXTargetDependency */,
+				85D642AC13BFF68C0099F868 /* PBXTargetDependency */,
+				85D642AA13BFF68C0099F868 /* PBXTargetDependency */,
+			);
+			name = Grr;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Grr;
+			productReference = 8D1107320486CEB800E47090 /* Grr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 85E5415510ACBF5C00BCF79D /* Build configuration list for PBXProject "Grr" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Grr */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85D6430B13C0773D0099F868 /* GrrFramework */,
+				850F647F108BC0650035D594 /* Searching */,
+				850F6426108BB9A80035D594 /* TreeDatabase */,
+				85A5FDCC108D229D00AC6AA4 /* ArticleView */,
+				85792F32108E6CC0001B900E /* ArticleTable */,
+				85792FB0108E712D001B900E /* SubscriptionPanel */,
+				85792FBA108E71F3001B900E /* Proxy */,
+				85792FD0108E7347001B900E /* Fonts */,
+				85792FDD108E75BF001B900E /* DatabaseTreeView */,
+				85793005108E7D6E001B900E /* DatabaseOperations */,
+				8579300C108E7E0A001B900E /* ArticleOperations */,
+				8D1107260486CEB800E47090 /* Grr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		850F6423108BB9A80035D594 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		850F647C108BC0650035D594 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85792F2F108E6CC0001B900E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85792FCC108E7317001B900E /* ArticleTablePlugin.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85792FAD108E712D001B900E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85792FC8108E730F001B900E /* SubscriptionPanel.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85792FB7108E71F3001B900E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85792FC7108E7307001B900E /* ProxyComponent.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85792FCD108E7347001B900E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85792FD5108E74B9001B900E /* FontsComponent.nib in Resources */,
+				851B402E109E14920036C28D /* Fonts.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85792FDA108E75BF001B900E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85792FE0108E765A001B900E /* DatabaseTreeViewController.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85793002108E7D6E001B900E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85793009108E7E0A001B900E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85A5FDC9108D229D00AC6AA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85A5FDD0108D22CC00AC6AA4 /* ArticleTextViewPlugin.nib in Resources */,
+				85C0D2FE1093BB810095C185 /* bluebg.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85D6430813C0773D0099F868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D641C513BFF2B30099F868 /* TreeDatabase.grrdb in Resources */,
+				85D641F413BFF3410099F868 /* Searching.grrc in Resources */,
+				85D6413D13BFF14F0099F868 /* ArticleView.grrc in Resources */,
+				85D641F513BFF3410099F868 /* ArticleTable.grrc in Resources */,
+				85D641F613BFF3410099F868 /* SubscriptionPanel.grrc in Resources */,
+				85D641F713BFF3410099F868 /* Proxy.grrc in Resources */,
+				85D641F813BFF3410099F868 /* Fonts.grrc in Resources */,
+				85D641F913BFF3410099F868 /* DatabaseTreeView.grrc in Resources */,
+				85D641FA13BFF3410099F868 /* DatabaseOperations.grrc in Resources */,
+				85D641FB13BFF3410099F868 /* ArticleOperations.grrc in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				85687E14107BFBEA00B55A9A /* HTML-Entities.plist in Resources */,
+				85687E15107BFBEA00B55A9A /* AddCategory.tiff in Resources */,
+				85687E16107BFBEA00B55A9A /* AddFeed.tiff in Resources */,
+				85687E17107BFBEA00B55A9A /* Grr-Icon-Anim1.tiff in Resources */,
+				85687E18107BFBEA00B55A9A /* Grr-Icon-Anim2.tiff in Resources */,
+				85687E19107BFBEA00B55A9A /* Grr-Icon-Anim3.tiff in Resources */,
+				85687E1A107BFBEA00B55A9A /* Grr-Icon-NoConnection.tiff in Resources */,
+				85687E1B107BFBEA00B55A9A /* Grr-Icon.tiff in Resources */,
+				85687E1C107BFBEA00B55A9A /* ArticleLink.tiff in Resources */,
+				85687E1D107BFBEA00B55A9A /* Category.tiff in Resources */,
+				85687E1E107BFBEA00B55A9A /* Database.tiff in Resources */,
+				85687E1F107BFBEA00B55A9A /* DeleteArticle.tiff in Resources */,
+				85687E20107BFBEA00B55A9A /* DeleteCategory.tiff in Resources */,
+				85687E21107BFBEA00B55A9A /* DeleteFeed.tiff in Resources */,
+				85687E22107BFBEA00B55A9A /* Feed.tiff in Resources */,
+				85687E23107BFBEA00B55A9A /* FeedFetching.tiff in Resources */,
+				85687E24107BFBEA00B55A9A /* FetchFeed.tiff in Resources */,
+				85687E25107BFBEA00B55A9A /* FetchFeeds.tiff in Resources */,
+				85687E26107BFBEA00B55A9A /* ArticleFile.tiff in Resources */,
+				85687E27107BFBEA00B55A9A /* FeedFile.tiff in Resources */,
+				85687E28107BFBEA00B55A9A /* Filter.tiff in Resources */,
+				85687E29107BFBEA00B55A9A /* Link.tiff in Resources */,
+				85687E2A107BFBEA00B55A9A /* PlainArticle.tiff in Resources */,
+				85687E2B107BFBEA00B55A9A /* Star.tiff in Resources */,
+				85687E2C107BFBEA00B55A9A /* WebProxy.tiff in Resources */,
+				85687E2D107BFBEA00B55A9A /* arrowDown.tiff in Resources */,
+				85687E2E107BFBEA00B55A9A /* arrowLeft.tiff in Resources */,
+				85687E2F107BFBEA00B55A9A /* arrowRight.tiff in Resources */,
+				85687E30107BFBEA00B55A9A /* arrowUp.tiff in Resources */,
+				85687E31107BFBEA00B55A9A /* blue-badge-left.tiff in Resources */,
+				85687E32107BFBEA00B55A9A /* blue-badge-mid.tiff in Resources */,
+				85687E33107BFBEA00B55A9A /* blue-badge-right.tiff in Resources */,
+				85687E3E107BFEE600B55A9A /* Grr.nib in Resources */,
+				85687E3F107BFEE600B55A9A /* PreferencesPanel.nib in Resources */,
+				85687E4D107C001500B55A9A /* GNUstep.h in Resources */,
+				857AA89B1082A4CB00829DD6 /* ProxyComponent.nib in Resources */,
+				857AA8B71082AC6800829DD6 /* ArticleTextViewPlugin.nib in Resources */,
+				857AA8BC1082AC8700829DD6 /* DatabaseTreeViewController.nib in Resources */,
+				850F63D3108A300D0035D594 /* SubscriptionPanel.nib in Resources */,
+				850F63ED108A33320035D594 /* FontsComponent.nib in Resources */,
+				850F63FC108A37E50035D594 /* ArticleTablePlugin.nib in Resources */,
+				85C0D2FD1093BB810095C185 /* bluebg.png in Resources */,
+				8540B03F10B69963008281E2 /* Grr-Icon.icns in Resources */,
+				857BF870125013040085BF64 /* Fonts.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		850F6424108BB9A80035D594 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				850F642B108BBA480035D594 /* TreeDatabaseComponent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		850F647D108BC0650035D594 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				850F6483108BC0A20035D594 /* NSSet+ArticleFiltering.m in Sources */,
+				850F6484108BC0A20035D594 /* Searching.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85792F30108E6CC0001B900E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85793081108E8594001B900E /* ArticleTablePlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85792FAE108E712D001B900E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85792FD9108E750F001B900E /* SubscriptionPanel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85792FB8108E71F3001B900E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85792FD8108E74CE001B900E /* ProxyComponent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85792FCE108E7347001B900E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85792FD6108E74BA001B900E /* FontBox.m in Sources */,
+				85792FD7108E74BC001B900E /* FontsComponent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85792FDB108E75BF001B900E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85792FE1108E765D001B900E /* DatabaseTreeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85793003108E7D6E001B900E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85793008108E7DE4001B900E /* DatabaseOperations.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8579300A108E7E0A001B900E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8579300F108E7E43001B900E /* ArticleOperations.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85A5FDCA108D229D00AC6AA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85A5FDD1108D22D100AC6AA4 /* ArticleTextViewPlugin.m in Sources */,
+				85A5FDD2108D22D600AC6AA4 /* NSString+TolerantHTML.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85D6430913C0773D0099F868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D6432813C079490099F868 /* PipeType.m in Sources */,
+				85D6432913C079490099F868 /* Components.m in Sources */,
+				85D6432A13C079490099F868 /* ExtendedWindow.m in Sources */,
+				85D6432B13C079490099F868 /* DatabaseElement.m in Sources */,
+				85D6432C13C079490099F868 /* Database.m in Sources */,
+				85D6432D13C079490099F868 /* GNRatingCell.m in Sources */,
+				85D6432E13C079490099F868 /* PreferencesComponent.m in Sources */,
+				85D6432F13C079490099F868 /* NumberedImageTextCell.m in Sources */,
+				85D6433013C079490099F868 /* Article.m in Sources */,
+				85D6433113C079490099F868 /* ImageTextCell.m in Sources */,
+				85D6433213C079490099F868 /* Category.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85687D5D107BF7D000B55A9A /* AppController.m in Sources */,
+				85687D61107BF7D000B55A9A /* ArticleFactory.m in Sources */,
+				85687D63107BF7D000B55A9A /* ArticleGroup.m in Sources */,
+				85687D6F107BF7D000B55A9A /* Feed.m in Sources */,
+				85687D75107BF7D000B55A9A /* NSBundle+Extensions.m in Sources */,
+				85687D77107BF7D000B55A9A /* NSURL+Proxy.m in Sources */,
+				85687D7F107BF7D000B55A9A /* PreferencesPanel.m in Sources */,
+				85687D91107BF8A900B55A9A /* Grr_main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85D642A413BFF6850099F868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85792FBA108E71F3001B900E /* Proxy */;
+			targetProxy = 85D642A313BFF6850099F868 /* PBXContainerItemProxy */;
+		};
+		85D642AA13BFF68C0099F868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8579300C108E7E0A001B900E /* ArticleOperations */;
+			targetProxy = 85D642A913BFF68C0099F868 /* PBXContainerItemProxy */;
+		};
+		85D642AC13BFF68C0099F868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85793005108E7D6E001B900E /* DatabaseOperations */;
+			targetProxy = 85D642AB13BFF68C0099F868 /* PBXContainerItemProxy */;
+		};
+		85D642AE13BFF68C0099F868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85792FDD108E75BF001B900E /* DatabaseTreeView */;
+			targetProxy = 85D642AD13BFF68C0099F868 /* PBXContainerItemProxy */;
+		};
+		85D642B013BFF68C0099F868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85792FD0108E7347001B900E /* Fonts */;
+			targetProxy = 85D642AF13BFF68C0099F868 /* PBXContainerItemProxy */;
+		};
+		85D642B213BFF68C0099F868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85792FB0108E712D001B900E /* SubscriptionPanel */;
+			targetProxy = 85D642B113BFF68C0099F868 /* PBXContainerItemProxy */;
+		};
+		85D642B413BFF68C0099F868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85792F32108E6CC0001B900E /* ArticleTable */;
+			targetProxy = 85D642B313BFF68C0099F868 /* PBXContainerItemProxy */;
+		};
+		85D642B613BFF68C0099F868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85A5FDCC108D229D00AC6AA4 /* ArticleView */;
+			targetProxy = 85D642B513BFF68C0099F868 /* PBXContainerItemProxy */;
+		};
+		85D642B813BFF68C0099F868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 850F6426108BB9A80035D594 /* TreeDatabase */;
+			targetProxy = 85D642B713BFF68C0099F868 /* PBXContainerItemProxy */;
+		};
+		85D642BA13BFF68C0099F868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 850F647F108BC0650035D594 /* Searching */;
+			targetProxy = 85D642B913BFF68C0099F868 /* PBXContainerItemProxy */;
+		};
+		85D6433513C0795C0099F868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85D6430B13C0773D0099F868 /* GrrFramework */;
+			targetProxy = 85D6433413C0795C0099F868 /* PBXContainerItemProxy */;
+		};
+		85D6436313C07F130099F868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85D6430B13C0773D0099F868 /* GrrFramework */;
+			targetProxy = 85D6436213C07F130099F868 /* PBXContainerItemProxy */;
+		};
+		85D6436613C07F260099F868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85D6430B13C0773D0099F868 /* GrrFramework */;
+			targetProxy = 85D6436513C07F260099F868 /* PBXContainerItemProxy */;
+		};
+		85D6436A13C07F360099F868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85D6430B13C0773D0099F868 /* GrrFramework */;
+			targetProxy = 85D6436913C07F360099F868 /* PBXContainerItemProxy */;
+		};
+		85D6437F13C080DB0099F868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85D6430B13C0773D0099F868 /* GrrFramework */;
+			targetProxy = 85D6437E13C080DB0099F868 /* PBXContainerItemProxy */;
+		};
+		85D6438313C080E80099F868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85D6430B13C0773D0099F868 /* GrrFramework */;
+			targetProxy = 85D6438213C080E80099F868 /* PBXContainerItemProxy */;
+		};
+		85D6438813C0810D0099F868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85D6430B13C0773D0099F868 /* GrrFramework */;
+			targetProxy = 85D6438713C0810D0099F868 /* PBXContainerItemProxy */;
+		};
+		85D6438E13C0812F0099F868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85D6430B13C0773D0099F868 /* GrrFramework */;
+			targetProxy = 85D6438D13C0812F0099F868 /* PBXContainerItemProxy */;
+		};
+		85D6439313C081450099F868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85D6430B13C0773D0099F868 /* GrrFramework */;
+			targetProxy = 85D6439213C081450099F868 /* PBXContainerItemProxy */;
+		};
+		85D6439913C0815F0099F868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85D6430B13C0773D0099F868 /* GrrFramework */;
+			targetProxy = 85D6439813C0815F0099F868 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = SOURCE_ROOT;
+		};
+		850F63D1108A300D0035D594 /* SubscriptionPanel.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				850F63D2108A300D0035D594 /* English */,
+			);
+			name = SubscriptionPanel.nib;
+			sourceTree = "<group>";
+		};
+		850F63EB108A33320035D594 /* FontsComponent.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				850F63EC108A33320035D594 /* English */,
+			);
+			name = FontsComponent.nib;
+			sourceTree = "<group>";
+		};
+		850F63FA108A37E50035D594 /* ArticleTablePlugin.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				850F63FB108A37E50035D594 /* English */,
+			);
+			name = ArticleTablePlugin.nib;
+			sourceTree = "<group>";
+		};
+		85687E3A107BFEE600B55A9A /* Grr.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85687E3B107BFEE600B55A9A /* English */,
+			);
+			name = Grr.nib;
+			sourceTree = "<group>";
+		};
+		85687E3C107BFEE600B55A9A /* PreferencesPanel.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85687E3D107BFEE600B55A9A /* English */,
+			);
+			name = PreferencesPanel.nib;
+			sourceTree = "<group>";
+		};
+		857AA8991082A4CB00829DD6 /* ProxyComponent.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				857AA89A1082A4CB00829DD6 /* English */,
+			);
+			name = ProxyComponent.nib;
+			sourceTree = "<group>";
+		};
+		857AA8B51082AC6800829DD6 /* ArticleTextViewPlugin.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				857AA8B61082AC6800829DD6 /* English */,
+			);
+			name = ArticleTextViewPlugin.nib;
+			sourceTree = "<group>";
+		};
+		857AA8BA1082AC8700829DD6 /* DatabaseTreeViewController.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				857AA8BB1082AC8700829DD6 /* English */,
+			);
+			name = DatabaseTreeViewController.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85D6430F13C0773D0099F868 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "GrrFramework-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = GrrFramework;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SYMROOT = "$(PROJECT_DIR)/build";
+			};
+			name = Development;
+		};
+		85D6431013C0773D0099F868 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "GrrFramework-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = GrrFramework;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SYMROOT = "$(PROJECT_DIR)/build";
+			};
+			name = Deployment;
+		};
+		85D6431113C0773D0099F868 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "GrrFramework-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = GrrFramework;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SYMROOT = "$(PROJECT_DIR)/build";
+			};
+			name = Default;
+		};
+		85E5412A10ACBF5C00BCF79D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G3;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "Searching-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = Searching;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Development;
+		};
+		85E5412B10ACBF5C00BCF79D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_MODEL_TUNING = G3;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "Searching-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = Searching;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Deployment;
+		};
+		85E5412C10ACBF5C00BCF79D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_MODEL_TUNING = G3;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "Searching-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = Searching;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Default;
+		};
+		85E5412E10ACBF5C00BCF79D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G3;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "TreeDatabase-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = TreeDatabase;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrdb;
+			};
+			name = Development;
+		};
+		85E5412F10ACBF5C00BCF79D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_MODEL_TUNING = G3;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "TreeDatabase-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = TreeDatabase;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrdb;
+			};
+			name = Deployment;
+		};
+		85E5413010ACBF5C00BCF79D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_MODEL_TUNING = G3;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "TreeDatabase-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = TreeDatabase;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrdb;
+			};
+			name = Default;
+		};
+		85E5413210ACBF5C00BCF79D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G3;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "ArticleView-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ArticleView;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Development;
+		};
+		85E5413310ACBF5C00BCF79D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_MODEL_TUNING = G3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "ArticleView-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ArticleView;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Deployment;
+		};
+		85E5413410ACBF5C00BCF79D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_MODEL_TUNING = G3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "ArticleView-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ArticleView;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Default;
+		};
+		85E5413610ACBF5C00BCF79D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G3;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "ArticleTable-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = ArticleTable;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Development;
+		};
+		85E5413710ACBF5C00BCF79D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_MODEL_TUNING = G3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "ArticleTable-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = ArticleTable;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Deployment;
+		};
+		85E5413810ACBF5C00BCF79D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_MODEL_TUNING = G3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "ArticleTable-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = ArticleTable;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Default;
+		};
+		85E5413A10ACBF5C00BCF79D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G3;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "SubscriptionPanel-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = SubscriptionPanel;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Development;
+		};
+		85E5413B10ACBF5C00BCF79D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_MODEL_TUNING = G3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "SubscriptionPanel-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = SubscriptionPanel;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Deployment;
+		};
+		85E5413C10ACBF5C00BCF79D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_MODEL_TUNING = G3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "SubscriptionPanel-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = SubscriptionPanel;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Default;
+		};
+		85E5413E10ACBF5C00BCF79D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = NO;
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G3;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "Proxy-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = Proxy;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Development;
+		};
+		85E5413F10ACBF5C00BCF79D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = YES;
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_MODEL_TUNING = G3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "Proxy-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = Proxy;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Deployment;
+		};
+		85E5414010ACBF5C00BCF79D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_MODEL_TUNING = G3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "Proxy-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = Proxy;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Default;
+		};
+		85E5414210ACBF5C00BCF79D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = NO;
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G3;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "Fonts-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = Fonts;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Development;
+		};
+		85E5414310ACBF5C00BCF79D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = YES;
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_MODEL_TUNING = G3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "Fonts-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = Fonts;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Deployment;
+		};
+		85E5414410ACBF5C00BCF79D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_MODEL_TUNING = G3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "Fonts-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = Fonts;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Default;
+		};
+		85E5414610ACBF5C00BCF79D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G3;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "DatabaseTreeView-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = DatabaseTreeView;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Development;
+		};
+		85E5414710ACBF5C00BCF79D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_MODEL_TUNING = G3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "DatabaseTreeView-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = DatabaseTreeView;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Deployment;
+		};
+		85E5414810ACBF5C00BCF79D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_MODEL_TUNING = G3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "DatabaseTreeView-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = DatabaseTreeView;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Default;
+		};
+		85E5414A10ACBF5C00BCF79D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G3;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "DatabaseOperations-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = DatabaseOperations;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Development;
+		};
+		85E5414B10ACBF5C00BCF79D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_MODEL_TUNING = G3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "DatabaseOperations-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = DatabaseOperations;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Deployment;
+		};
+		85E5414C10ACBF5C00BCF79D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_MODEL_TUNING = G3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "DatabaseOperations-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = DatabaseOperations;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Default;
+		};
+		85E5414E10ACBF5C00BCF79D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "ArticleOperations-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = ArticleOperations;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Development;
+		};
+		85E5414F10ACBF5C00BCF79D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "ArticleOperations-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = ArticleOperations;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Deployment;
+		};
+		85E5415010ACBF5C00BCF79D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "ArticleOperations-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = ArticleOperations;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = grrc;
+			};
+			name = Default;
+		};
+		85E5415210ACBF5C00BCF79D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G3;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Grr_Prefix.pch;
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Grr;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Development;
+		};
+		85E5415310ACBF5C00BCF79D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Grr_Prefix.pch;
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Grr;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Deployment;
+		};
+		85E5415410ACBF5C00BCF79D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../libs/RSSKit/build/Deployment\"";
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Grr_Prefix.pch;
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Grr;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SYMROOT = "$(PROJECT_DIR)/build";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		85E5415610ACBF5C00BCF79D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		85E5415710ACBF5C00BCF79D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		85E5415810ACBF5C00BCF79D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85D6430E13C0773D0099F868 /* Build configuration list for PBXNativeTarget "GrrFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85D6430F13C0773D0099F868 /* Development */,
+				85D6431013C0773D0099F868 /* Deployment */,
+				85D6431113C0773D0099F868 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		85E5412910ACBF5C00BCF79D /* Build configuration list for PBXNativeTarget "Searching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85E5412A10ACBF5C00BCF79D /* Development */,
+				85E5412B10ACBF5C00BCF79D /* Deployment */,
+				85E5412C10ACBF5C00BCF79D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		85E5412D10ACBF5C00BCF79D /* Build configuration list for PBXNativeTarget "TreeDatabase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85E5412E10ACBF5C00BCF79D /* Development */,
+				85E5412F10ACBF5C00BCF79D /* Deployment */,
+				85E5413010ACBF5C00BCF79D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		85E5413110ACBF5C00BCF79D /* Build configuration list for PBXNativeTarget "ArticleView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85E5413210ACBF5C00BCF79D /* Development */,
+				85E5413310ACBF5C00BCF79D /* Deployment */,
+				85E5413410ACBF5C00BCF79D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		85E5413510ACBF5C00BCF79D /* Build configuration list for PBXNativeTarget "ArticleTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85E5413610ACBF5C00BCF79D /* Development */,
+				85E5413710ACBF5C00BCF79D /* Deployment */,
+				85E5413810ACBF5C00BCF79D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		85E5413910ACBF5C00BCF79D /* Build configuration list for PBXNativeTarget "SubscriptionPanel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85E5413A10ACBF5C00BCF79D /* Development */,
+				85E5413B10ACBF5C00BCF79D /* Deployment */,
+				85E5413C10ACBF5C00BCF79D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		85E5413D10ACBF5C00BCF79D /* Build configuration list for PBXNativeTarget "Proxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85E5413E10ACBF5C00BCF79D /* Development */,
+				85E5413F10ACBF5C00BCF79D /* Deployment */,
+				85E5414010ACBF5C00BCF79D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		85E5414110ACBF5C00BCF79D /* Build configuration list for PBXNativeTarget "Fonts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85E5414210ACBF5C00BCF79D /* Development */,
+				85E5414310ACBF5C00BCF79D /* Deployment */,
+				85E5414410ACBF5C00BCF79D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		85E5414510ACBF5C00BCF79D /* Build configuration list for PBXNativeTarget "DatabaseTreeView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85E5414610ACBF5C00BCF79D /* Development */,
+				85E5414710ACBF5C00BCF79D /* Deployment */,
+				85E5414810ACBF5C00BCF79D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		85E5414910ACBF5C00BCF79D /* Build configuration list for PBXNativeTarget "DatabaseOperations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85E5414A10ACBF5C00BCF79D /* Development */,
+				85E5414B10ACBF5C00BCF79D /* Deployment */,
+				85E5414C10ACBF5C00BCF79D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		85E5414D10ACBF5C00BCF79D /* Build configuration list for PBXNativeTarget "ArticleOperations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85E5414E10ACBF5C00BCF79D /* Development */,
+				85E5414F10ACBF5C00BCF79D /* Deployment */,
+				85E5415010ACBF5C00BCF79D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		85E5415110ACBF5C00BCF79D /* Build configuration list for PBXNativeTarget "Grr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85E5415210ACBF5C00BCF79D /* Development */,
+				85E5415310ACBF5C00BCF79D /* Deployment */,
+				85E5415410ACBF5C00BCF79D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		85E5415510ACBF5C00BCF79D /* Build configuration list for PBXProject "Grr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85E5415610ACBF5C00BCF79D /* Development */,
+				85E5415710ACBF5C00BCF79D /* Deployment */,
+				85E5415810ACBF5C00BCF79D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

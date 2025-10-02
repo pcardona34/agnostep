@@ -1,0 +1,14 @@
+Hardware Compatibility List
+===========================
+
+Because I cannot test on every hardware, I put here a list of well tested hardware:
+
+---
+
+CAUTION! Do no test AGNoStep on Raspberry Pi's: use instead the ad hoc 'pi-step-initiative' repository.
+
+---
+
+=== HCL ===
+
+- Apple MacBookPro 6.2 Core i5 (2010), amd64, Trixie 13.1: passed 16/17. Issue with sound. Tested: Oct. 2 2025

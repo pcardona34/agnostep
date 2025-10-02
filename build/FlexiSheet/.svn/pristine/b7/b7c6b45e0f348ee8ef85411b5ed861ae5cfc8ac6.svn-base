@@ -1,0 +1,116 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/intf/FSInspectable">FSInspectable</A></H1></FONT><BR>
+
+
+
+
+
+	<blockquote><DL><DT><B>Conforms To:</B></DT>
+	<DD>NSObject</DD>
+</DL></blockquote>
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSInspection.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Protocol Description</H2>
+No protocol description.
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Defined Types</H2>
+	<blockquote>
+	
+		
+		<H4>Synopsis:</H4>
+		
+			<CODE><A NAME="//apple_ref/c/tdef/FSLineStyle">
+			typedef enum _FSLineStyle {&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;FSSolidLine = 0,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;FSDashedLine,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;FSDoubleLine,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;FSBoldLine<BR>
+} <B>FSLineStyle</B>;</A></CODE><BR>
+		
+		
+	
+	</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Global Variables</H2>
+	<blockquote>
+	
+		
+		<H4>Synopsis:</H4>
+		
+			<CODE>NSString* <B><A NAME="//apple_ref/c/data/FSSelectionDidChangeNotification">FSSelectionDidChangeNotification</A></B>;</CODE><BR>
+		
+			<CODE>NSString* <B><A NAME="//apple_ref/c/data/FSSelectionInfo">FSSelectionInfo</A></B>;</CODE><BR>
+		
+			<CODE>NSString* <B><A NAME="//apple_ref/c/data/FSInspectorNeedsUpdateNotification">FSInspectorNeedsUpdateNotification</A></B>;</CODE><BR>
+		
+		
+	
+	</blockquote>
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- paneIdentifier">- paneIdentifier</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- paneIdentifier"></A><H3><A NAME="//apple_ref/occ/intfm/FSInspectable/paneIdentifier">paneIdentifier</A></H3><P>
+		<CODE>- (NSString*)<B>paneIdentifier</B>
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2002 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

@@ -1,0 +1,3 @@
+# Preamble Definitions
+
+ADDITIONAL_OBJCFLAGS += -W -Wall -Wno-unused

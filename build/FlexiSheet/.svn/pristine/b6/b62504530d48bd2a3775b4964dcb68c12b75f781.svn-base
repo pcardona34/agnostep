@@ -1,0 +1,173 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/FSVariable">FSVariable</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>FSExpression</DD>
+</DL></blockquote>
+
+
+
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSVariable.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+FSVariable is a reference to values of a table, 
+specified by FSKey objects.<P>
+
+After initializing, a FSVariable is pretty immutable.
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Symbolic Constants</H2>
+	<blockquote>
+	
+		
+		<H4>Synopsis:</H4>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/FS_PREV">FS_PREV</A></B>&nbsp;&nbsp;-1</CODE><BR>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/FS_THIS">FS_THIS</A></B>&nbsp;&nbsp;0</CODE><BR>
+		
+			<CODE><B><A NAME="//apple_ref/c/econst/FS_NEXT">FS_NEXT</A></B>&nbsp;&nbsp;1</CODE><BR>
+		
+		
+	
+	</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Variables</H2>
+	<blockquote>
+	
+		<CODE>FSTable *<B>_table</B>;</CODE><BR>
+		<CODE>FSKeyGroup *<B>_rGroup</B>;</CODE><BR>
+		<CODE>int <B>_recSpc</B>;</CODE><BR>
+		<CODE>NSArray *<B>_one</B>;</CODE><BR>
+		<CODE>NSArray *<B>_two</B>;</CODE><BR>
+	<P><TABLE>
+	
+		<TR><TD>_table</TD><TD>Only set on cross-table selection</TD></TR>
+	
+		<TR><TD>_rGroup</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_recSpc</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_one</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_two</TD><TD>No description.</TD></TR>
+	
+	</TABLE>
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#+ variableWithCreator:inTable:">+ variableWithCreator:inTable:</A></DD>
+		
+			<DD> <A HREF="#- selectionInFormulaSpace:">- selectionInFormulaSpace:</A></DD>
+		
+			<DD> <A HREF="#- isFromDifferentTable">- isFromDifferentTable</A></DD>
+		
+			<DD> <A HREF="#- isRange">- isRange</A></DD>
+		
+			<DD> <A HREF="#- isRecurrence">- isRecurrence</A></DD>
+		
+			<DD> <A HREF="#- recurrenceGroup">- recurrenceGroup</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Class Methods</H2>
+ 
+	
+		
+		<A NAME="+ variableWithCreator:inTable:"></A><H3><A NAME="//apple_ref/occ/clm/FSVariable/variableWithCreator:inTable:">variableWithCreator:inTable:</A></H3>
+		<CODE>+ (FSExpression*)<B>variableWithCreator:</B>(NSString*)<EM>creator</EM> <B>inTable:</B>(FSTable*)<EM>table</EM>
+			
+		</CODE><P>
+		No method description.
+	
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- isFromDifferentTable"></A><H3><A NAME="//apple_ref/occ/instm/FSVariable/isFromDifferentTable">isFromDifferentTable</A></H3><P>
+		<CODE>- (BOOL)<B>isFromDifferentTable</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- isRange"></A><H3><A NAME="//apple_ref/occ/instm/FSVariable/isRange">isRange</A></H3><P>
+		<CODE>- (BOOL)<B>isRange</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- isRecurrence"></A><H3><A NAME="//apple_ref/occ/instm/FSVariable/isRecurrence">isRecurrence</A></H3><P>
+		<CODE>- (BOOL)<B>isRecurrence</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- recurrenceGroup"></A><H3><A NAME="//apple_ref/occ/instm/FSVariable/recurrenceGroup">recurrenceGroup</A></H3><P>
+		<CODE>- (FSKeyGroup*)<B>recurrenceGroup</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- selectionInFormulaSpace:"></A><H3><A NAME="//apple_ref/occ/instm/FSVariable/selectionInFormulaSpace:">selectionInFormulaSpace:</A></H3><P>
+		<CODE>- (FSSelection*)<B>selectionInFormulaSpace:</B>(FSFormulaSpace*)<EM>fs</EM>
+			
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2001 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

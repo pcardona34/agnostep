@@ -1,0 +1,136 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/FSFunction">FSFunction</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>FSExpression</DD>
+</DL></blockquote>
+
+
+
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSFunction.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+FSFunction is an abstract superclass for all FSExpression elements 
+that represent a function, ie a name with arguments in parenthesis.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#+ registerFunction:">+ registerFunction:</A></DD>
+		
+			<DD> <A HREF="#+ allFunctionNames">+ allFunctionNames</A></DD>
+		
+			<DD> <A HREF="#+ functionClassForName:">+ functionClassForName:</A></DD>
+		
+			<DD> <A HREF="#+ rtfdHelpData">+ rtfdHelpData</A></DD>
+		
+			<DD> <A HREF="#+ functionName">+ functionName</A></DD>
+		
+			<DD> <A HREF="#+ numberOfOperands">+ numberOfOperands</A></DD>
+		
+			<DD> <A HREF="#+ functionWithArguments:">+ functionWithArguments:</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Class Methods</H2>
+ 
+	
+		
+		<A NAME="+ allFunctionNames"></A><H3><A NAME="//apple_ref/occ/clm/FSFunction/allFunctionNames">allFunctionNames</A></H3>
+		<CODE>+ (NSArray*)<B>allFunctionNames</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="+ functionClassForName:"></A><H3><A NAME="//apple_ref/occ/clm/FSFunction/functionClassForName:">functionClassForName:</A></H3>
+		<CODE>+ (Class)<B>functionClassForName:</B>(NSString*)<EM>name</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="+ functionName"></A><H3><A NAME="//apple_ref/occ/clm/FSFunction/functionName">functionName</A></H3>
+		<CODE>+ (NSString*)<B>functionName</B>
+		</CODE><P>
+		Must be overwritten in subclasses. FSOperator's implementation raises, 
+so don't call it in the subclass implementation!
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="+ functionWithArguments:"></A><H3><A NAME="//apple_ref/occ/clm/FSFunction/functionWithArguments:">functionWithArguments:</A></H3>
+		<CODE>+ (FSFunction*)<B>functionWithArguments:</B>(NSArray*)<EM>arguments</EM>
+			
+		</CODE><P>
+		Must be overwritten in subclasses. FSOperator's implementation raises, 
+so don't call it in the subclass implementation!
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="+ numberOfOperands"></A><H3><A NAME="//apple_ref/occ/clm/FSFunction/numberOfOperands">numberOfOperands</A></H3>
+		<CODE>+ (int)<B>numberOfOperands</B>
+		</CODE><P>
+		Must be overwritten in subclasses. FSOperator's implementation raises, 
+so don't call it in the subclass implementation!
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="+ registerFunction:"></A><H3><A NAME="//apple_ref/occ/clm/FSFunction/registerFunction:">registerFunction:</A></H3>
+		<CODE>+ (void)<B>registerFunction:</B>(Class)<EM>functionClass</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="+ rtfdHelpData"></A><H3><A NAME="//apple_ref/occ/clm/FSFunction/rtfdHelpData">rtfdHelpData</A></H3>
+		<CODE>+ (NSData*)<B>rtfdHelpData</B>
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2001 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

@@ -1,0 +1,8 @@
+{
+  Type = "Editor";
+  Name = "Gemas";
+  PrincipalClassName = "GemasEditor";
+  Description = "Gemas code editor (C, ObjectiveC, C++, Plist, Strings, GSMarkup files)";
+  FileTypes = (C, c, m, M, h, H, strings, plist, gsmarkup, *);
+  ProvidesBrowserItems = YES;
+}

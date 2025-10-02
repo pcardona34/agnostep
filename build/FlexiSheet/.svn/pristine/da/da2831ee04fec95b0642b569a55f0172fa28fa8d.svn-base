@@ -1,0 +1,321 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/FSWindowController">FSWindowController</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>NSWindowController</DD>
+</DL></blockquote>
+
+
+
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSWindowController.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+No class description.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Variables</H2>
+	<blockquote>
+	
+		<CODE>IBOutlet FSHeaderDock *<B>pageDock</B>;</CODE><BR>
+		<CODE>IBOutlet FSHeaderDock *<B>rightDock</B>;</CODE><BR>
+		<CODE>IBOutlet FSHeaderDock *<B>headDock</B>;</CODE><BR>
+		<CODE>IBOutlet FSHeaderDock *<B>leftDock</B>;</CODE><BR>
+		<CODE>IBOutlet FSTableView *<B>tableView</B>;</CODE><BR>
+		<CODE>FSTable *<B>_table</B>;</CODE><BR>
+		<CODE>NSMutableArray *<B>_pageHeaders</B>;</CODE><BR>
+		<CODE>NSArray *<B>_pageKeySets</B>;</CODE><BR>
+		<CODE>NSMutableArray *<B>_rightHeaders</B>;</CODE><BR>
+		<CODE>NSArray *<B>_rightKeySets</B>;</CODE><BR>
+		<CODE>NSMutableArray *<B>_topHeaders</B>;</CODE><BR>
+		<CODE>NSArray *<B>_topKeySets</B>;</CODE><BR>
+		<CODE>NSMutableArray *<B>_sideHeaders</B>;</CODE><BR>
+		<CODE>NSArray *<B>_sideKeySets</B>;</CODE><BR>
+		<CODE>NSString *<B>_name</B>;</CODE><BR>
+		<CODE>NSData *<B>_comment</B>;</CODE><BR>
+		<CODE>NSMutableDictionary *<B>_headerColors</B>;</CODE><BR>
+		<CODE>FSCellStyle *<B>_defaultCellStyle</B>;</CODE><BR>
+	<P><TABLE>
+	
+		<TR><TD>pageDock</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>rightDock</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>headDock</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>leftDock</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>tableView</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_table</TD><TD>The table this view displays.</TD></TR>
+	
+		<TR><TD>_pageHeaders</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_pageKeySets</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_rightHeaders</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_rightKeySets</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_topHeaders</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_topKeySets</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_sideHeaders</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_sideKeySets</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_name</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_comment</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_headerColors</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_defaultCellStyle</TD><TD>No description.</TD></TR>
+	
+	</TABLE>
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- table">- table</A></DD>
+		
+			<DD> <A HREF="#- setTable:">- setTable:</A></DD>
+		
+			<DD> <A HREF="#- syncWithDocument">- syncWithDocument</A></DD>
+		
+			<DD> <A HREF="#- setPageHeaders:">- setPageHeaders:</A></DD>
+		
+			<DD> <A HREF="#- setRightHeaders:">- setRightHeaders:</A></DD>
+		
+			<DD> <A HREF="#- setTopHeaders:">- setTopHeaders:</A></DD>
+		
+			<DD> <A HREF="#- setSideHeaders:">- setSideHeaders:</A></DD>
+		
+			<DD> <A HREF="#- createHeaderSets">- createHeaderSets</A></DD>
+		
+			<DD> <A HREF="#- updateDisplay">- updateDisplay</A></DD>
+		
+			<DD> <A HREF="#- layoutDictionary">- layoutDictionary</A></DD>
+		
+			<DD> <A HREF="#- applyLayoutDictionary:">- applyLayoutDictionary:</A></DD>
+		
+			<DD> <A HREF="#- name">- name</A></DD>
+		
+			<DD> <A HREF="#- setName:">- setName:</A></DD>
+		
+			<DD> <A HREF="#- comment">- comment</A></DD>
+		
+			<DD> <A HREF="#- setComment:">- setComment:</A></DD>
+		
+			<DD> <A HREF="#- _cacheLayout">- _cacheLayout</A></DD>
+		
+			<DD> <A HREF="#- _storeLayout">- _storeLayout</A></DD>
+		
+			<DD> <A HREF="#- tableWillChange:">- tableWillChange:</A></DD>
+		
+			<DD> <A HREF="#- tableDidChange:">- tableDidChange:</A></DD>
+		
+			<DD> <A HREF="#- valueDidChange:">- valueDidChange:</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- _cacheLayout"></A><H3><A NAME="//apple_ref/occ/instm/FSWindowController/_cacheLayout">_cacheLayout</A></H3><P>
+		<CODE>- (void)<B>_cacheLayout</B>
+		</CODE><P>
+		This implementation does nothing. 
+Subclasses can implement this method to cache layout information. 
+FSWindowController calls this method whenever the document structure changed.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- _storeLayout"></A><H3><A NAME="//apple_ref/occ/instm/FSWindowController/_storeLayout">_storeLayout</A></H3><P>
+		<CODE>- (void)<B>_storeLayout</B>
+		</CODE><P>
+		This implementation does nothing. 
+Subclasses can implement this method to write back cached layout information. 
+FSWindowController calls this method before the document structure changes.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- applyLayoutDictionary:"></A><H3><A NAME="//apple_ref/occ/instm/FSWindowController/applyLayoutDictionary:">applyLayoutDictionary:</A></H3><P>
+		<CODE>- (void)<B>applyLayoutDictionary:</B>(NSDictionary*)<EM>dict</EM>
+			
+		</CODE><P>
+		Subclasses should implement this method 
+so layout information can be restored from a file or pasteboard. 
+This <B>super</B> implementation should be called.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- comment"></A><H3><A NAME="//apple_ref/occ/instm/FSWindowController/comment">comment</A></H3><P>
+		<CODE>- (NSData*)<B>comment</B>
+		</CODE><P>
+		Returns the comment.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- createHeaderSets"></A><H3><A NAME="//apple_ref/occ/instm/FSWindowController/createHeaderSets">createHeaderSets</A></H3><P>
+		<CODE>- (void)<B>createHeaderSets</B>
+		</CODE><P>
+		Recreates the header docks and internal information to support it. 
+Must be called after the top/left association of headers changes.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- layoutDictionary"></A><H3><A NAME="//apple_ref/occ/instm/FSWindowController/layoutDictionary">layoutDictionary</A></H3><P>
+		<CODE>- (NSDictionary*)<B>layoutDictionary</B>
+		</CODE><P>
+		Subclasses should implement this method 
+so layout information can be saved to a file or pasteboard. 
+This <B>super</B> implementation should be called.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- name"></A><H3><A NAME="//apple_ref/occ/instm/FSWindowController/name">name</A></H3><P>
+		<CODE>- (NSString *)<B>name</B>
+		</CODE><P>
+		Returns the name for this window.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setComment:"></A><H3><A NAME="//apple_ref/occ/instm/FSWindowController/setComment:">setComment:</A></H3><P>
+		<CODE>- (void)<B>setComment:</B>(NSData*)<EM>comment</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setName:"></A><H3><A NAME="//apple_ref/occ/instm/FSWindowController/setName:">setName:</A></H3><P>
+		<CODE>- (void)<B>setName:</B>(NSString*)<EM>name</EM>
+			
+		</CODE><P>
+		Sets a <I>name</I> for this window. 
+Users can give each view on the data a different <I>name</I>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setPageHeaders:"></A><H3><A NAME="//apple_ref/occ/instm/FSWindowController/setPageHeaders:">setPageHeaders:</A></H3><P>
+		<CODE>- (void)<B>setPageHeaders:</B>(NSArray*)<EM>headers</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setRightHeaders:"></A><H3><A NAME="//apple_ref/occ/instm/FSWindowController/setRightHeaders:">setRightHeaders:</A></H3><P>
+		<CODE>- (void)<B>setRightHeaders:</B>(NSArray*)<EM>headers</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setSideHeaders:"></A><H3><A NAME="//apple_ref/occ/instm/FSWindowController/setSideHeaders:">setSideHeaders:</A></H3><P>
+		<CODE>- (void)<B>setSideHeaders:</B>(NSArray*)<EM>headers</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setTable:"></A><H3><A NAME="//apple_ref/occ/instm/FSWindowController/setTable:">setTable:</A></H3><P>
+		<CODE>- (void)<B>setTable:</B>(FSTable*)<EM>table</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setTopHeaders:"></A><H3><A NAME="//apple_ref/occ/instm/FSWindowController/setTopHeaders:">setTopHeaders:</A></H3><P>
+		<CODE>- (void)<B>setTopHeaders:</B>(NSArray*)<EM>headers</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- syncWithDocument"></A><H3><A NAME="//apple_ref/occ/instm/FSWindowController/syncWithDocument">syncWithDocument</A></H3><P>
+		<CODE>- (void)<B>syncWithDocument</B>
+		</CODE><P>
+		This method is called from FSDocument. 
+It makes sure all headers in the page, top, left and right docks 
+still exist in the table. Additional headers are added 
+to the page dock after making sure that the top and 
+side docks are not empty.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- table"></A><H3><A NAME="//apple_ref/occ/instm/FSWindowController/table">table</A></H3><P>
+		<CODE>- (FSTable*)<B>table</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- tableDidChange:"></A><H3><A NAME="//apple_ref/occ/instm/FSWindowController/tableDidChange:">tableDidChange:</A></H3><P>
+		<CODE>- (void)<B>tableDidChange:</B>(NSNotification*)<EM>notification</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- tableWillChange:"></A><H3><A NAME="//apple_ref/occ/instm/FSWindowController/tableWillChange:">tableWillChange:</A></H3><P>
+		<CODE>- (void)<B>tableWillChange:</B>(NSNotification*)<EM>notification</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- updateDisplay"></A><H3><A NAME="//apple_ref/occ/instm/FSWindowController/updateDisplay">updateDisplay</A></H3><P>
+		<CODE>- (void)<B>updateDisplay</B>
+		</CODE><P>
+		Marks views as dirty. Subclasses should overwrite and call <B>super</B>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- valueDidChange:"></A><H3><A NAME="//apple_ref/occ/instm/FSWindowController/valueDidChange:">valueDidChange:</A></H3><P>
+		<CODE>- (void)<B>valueDidChange:</B>(NSNotification*)<EM>notification</EM>
+			
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2002 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

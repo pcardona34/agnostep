@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<title> Structure of Formulas </title>
+</head>
+<body marginwidth=4 marginheight=8>
+<h2 align=left> Structure of Formulas </h2>
+<img src="../av/3PixelRule.tiff">
+<p>
+FlexiSheet formulas have a consistent structure. Each formula has two sides, right and left, which are connected by an equal (=) sign. 
+</p>
+<p>
+In this example, the averaged value of the data in items Quarter1 through Quarter4 is shown in the Average Sales item:
+</p>
+<p>
+&nbsp;&nbsp;&nbsp;Average&nbsp;Sales = avg(Quarter1 .. Quarter4)
+</p>
+<h4>Selection</h4>
+<p>
+The left side of a formula specifies a range of categories, items or cells to which a formula will apply. In the example, the left side, Average Sales, is the name of an item.
+</p>
+<h4>Definition</h4>
+<p>
+The right side of a formula defines how the selection is to be calculated. In the example, the right side includes a function, avg, which calculates the average of the contents of items Quarter1, Quarter2, Quarter3 and Quarter4. 
+</p>
+<img src="../av/1PixelRule.tiff">
+<p><b>Related topics</b></p>
+</body>
+</html>

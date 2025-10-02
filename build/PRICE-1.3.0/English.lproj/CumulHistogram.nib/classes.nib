@@ -1,0 +1,20 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {showHistogram = id; }; 
+            CLASS = PRCHistogram; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {histoView = PRHistogram; histoWindow = NSWindow; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = PRCumHisto; LANGUAGE = ObjC; SUPERCLASS = PRHistogram; }, 
+        {
+            CLASS = PRHistogram; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {theController = PRCHistogram; }; 
+            SUPERCLASS = NSView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

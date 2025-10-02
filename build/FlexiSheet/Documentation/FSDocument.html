@@ -1,0 +1,202 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/FSDocument">FSDocument</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>NSDocument</DD>
+</DL></blockquote>
+
+
+
+	<blockquote><DL><DT><B>Conforms To:</B></DT>
+	<DD>FSDocument</DD>
+</DL></blockquote>
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSDocument.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+No class description.
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Macro Definitions</H2>
+	<blockquote>
+	
+		
+		<H4>Synopsis:</H4>
+		
+			<CODE><B><A NAME="//apple_ref/c/func/FS_LOCALIZE">FS_LOCALIZE</A></B>(__STRG__)</CODE><BR>
+		
+		
+	
+	</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Variables</H2>
+	<blockquote>
+	
+		<CODE>NSMutableArray *<B>_tables</B>;</CODE><BR>
+		<CODE>NSMutableArray *<B>_globalCategories</B>;</CODE><BR>
+		<CODE>NSMutableArray *<B>_closedViews</B>;</CODE><BR>
+		<CODE>BOOL <B>_autoRecalc</B>;</CODE><BR>
+		<CODE>BOOL <B>_needsRecalc</B>;</CODE><BR>
+	<P><TABLE>
+	
+		<TR><TD>_tables</TD><TD>Contains FSTable instances.</TD></TR>
+	
+		<TR><TD>_globalCategories</TD><TD>Contains linked header information.</TD></TR>
+	
+		<TR><TD>_closedViews</TD><TD>Contains dictionaries for closed views.</TD></TR>
+	
+		<TR><TD>_autoRecalc</TD><TD>Flag: Automatically recalculate formulas.</TD></TR>
+	
+		<TR><TD>_needsRecalc</TD><TD>Flag: Need recalculate of formulas.</TD></TR>
+	
+	</TABLE>
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- newTableView:">- newTableView:</A></DD>
+		
+			<DD> <A HREF="#- newTable:">- newTable:</A></DD>
+		
+			<DD> <A HREF="#- deleteTable:">- deleteTable:</A></DD>
+		
+			<DD> <A HREF="#- newTableView:">- newTableView:</A></DD>
+		
+			<DD> <A HREF="#- newChartView:">- newChartView:</A></DD>
+		
+			<DD> <A HREF="#- deleteView:">- deleteView:</A></DD>
+		
+			<DD> <A HREF="#- tables">- tables</A></DD>
+		
+			<DD> <A HREF="#- tableWithName:">- tableWithName:</A></DD>
+		
+			<DD> <A HREF="#- windowControllersForTable:">- windowControllersForTable:</A></DD>
+		
+			<DD> <A HREF="#- displayView:forTable:">- displayView:forTable:</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- deleteTable:"></A><H3><A NAME="//apple_ref/occ/instm/FSDocument/deleteTable:">deleteTable:</A></H3><P>
+		<CODE>- (void)<B>deleteTable:</B>(FSTable*)<EM>aTable</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- deleteView:"></A><H3><A NAME="//apple_ref/occ/instm/FSDocument/deleteView:">deleteView:</A></H3><P>
+		<CODE>- (void)<B>deleteView:</B>(id)<EM>view</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- displayView:forTable:"></A><H3><A NAME="//apple_ref/occ/instm/FSDocument/displayView:forTable:">displayView:forTable:</A></H3><P>
+		<CODE>- (void)<B>displayView:</B>(NSString*)<EM>name</EM> <B>forTable:</B>(FSTable*)<EM>table</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- newChartView:"></A><H3><A NAME="//apple_ref/occ/instm/FSDocument/newChartView:">newChartView:</A></H3><P>
+		<CODE>- (IBAction)<B>newChartView:</B>(id)<EM>sender</EM>
+			
+		</CODE><P>
+		Wrong name here. Creates a new table view, not a new table!
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- newTable:"></A><H3><A NAME="//apple_ref/occ/instm/FSDocument/newTable:">newTable:</A></H3><P>
+		<CODE>- (IBAction)<B>newTable:</B>(id)<EM>sender</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- newTableView:"></A><H3><A NAME="//apple_ref/occ/instm/FSDocument/newTableView:">newTableView:</A></H3><P>
+		<CODE>- (IBAction)<B>newTableView:</B>(id)<EM>sender</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- newTableView:"></A><H3><A NAME="//apple_ref/occ/instm/FSDocument/newTableView:">newTableView:</A></H3><P>
+		<CODE>- (IBAction)<B>newTableView:</B>(id)<EM>sender</EM>
+			
+		</CODE><P>
+		Wrong name here. Creates a new table view, not a new table!
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- tableWithName:"></A><H3><A NAME="//apple_ref/occ/instm/FSDocument/tableWithName:">tableWithName:</A></H3><P>
+		<CODE>- (FSTable*)<B>tableWithName:</B>(NSString*)<EM>name</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- tables"></A><H3><A NAME="//apple_ref/occ/instm/FSDocument/tables">tables</A></H3><P>
+		<CODE>- (NSArray*)<B>tables</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- windowControllersForTable:"></A><H3><A NAME="//apple_ref/occ/instm/FSDocument/windowControllersForTable:">windowControllersForTable:</A></H3><P>
+		<CODE>- (NSArray*)<B>windowControllersForTable:</B>(FSTable*)<EM>table</EM>
+			
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2002 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

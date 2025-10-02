@@ -1,0 +1,20 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    FirstResponder = {
+	Actions = (
+	    "cancelClicked:",
+	    "okClicked:"
+	);
+	Super = NSObject;
+    };
+    PasswordPanelController = {
+	Actions = (
+	    "okClicked:",
+	    "cancelClicked:"
+	);
+	Outlets = (
+	    passwordSecureField
+	);
+	Super = NSWindowController;
+    };
+}

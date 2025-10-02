@@ -1,0 +1,290 @@
+COPYRIGHT AND LICENSE INFORMATION FOR IMAGE FILES
+-------------------------------------------------
+
+===============================================================================
+
+Copyright (C) 2011-2017 Riccardo Mottola
+
+Author: Riccardo Mottola <rm@gnu.org>
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+===============================================================================
+
+
+The following images are part of GNUMail:
+
+Copyright (C) 2001-2006 Ludovic Marcotte
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+Interface icons:
+Bundles/Account/account.tiff
+Bundles/Advanced/advanced.tiff
+Bundles/Colors/colors.tiff
+Bundles/Compose/MailIcon_create.tiff
+Bundles/Filtering/Filtering.tiff
+Bundles/Fonts/fonts.tiff
+Bundles/MIME/mime.tiff
+Bundles/PGP/clear_20.tiff
+Bundles/PGP/clear_48.tiff
+Bundles/PGP/encrypted_20.tiff
+Bundles/PGP/encrypted_48.tiff
+Bundles/PGP/encrypted_80.tiff
+Bundles/PGP/pgp-mail.tiff
+Bundles/PGP/signed_20.tiff
+Bundles/PGP/signed_48.tiff
+Bundles/PGP/signed_80.tiff
+Bundles/PGP/signed+encrypted_80.tiff
+Bundles/PGP/unsigned_20.tiff
+Bundles/PGP/unsigned_48.tiff
+Bundles/Receiving/MailIcon_retrieve.tiff
+Bundles/Receiving/MailIcon_send.tiff
+Bundles/Sending/MailIcon_send.tiff
+Bundles/Viewing/3-pane_96x96.tiff
+Bundles/Viewing/drawer_96x96.tiff
+Bundles/Viewing/floating_96x96.tiff
+Bundles/Viewing/viewing.tiff
+Bundles/Viewing/widescreen_96x96.tiff
+
+Resources/Icons/AddressBook_32.tiff
+Resources/Icons/AddressManager_32.tiff
+Resources/Icons/Address_bcc.tiff
+Resources/Icons/Address_cc.tiff
+Resources/Icons/Address_to.tiff
+Resources/Icons/add.tiff
+Resources/Icons/add_bcc_32.tiff
+Resources/Icons/add_bcc_48.tiff
+Resources/Icons/add_cc_32.tiff
+Resources/Icons/add_cc_48.tiff
+Resources/Icons/addresses_32.tiff
+Resources/Icons/addresses_48.tiff
+Resources/Icons/anim-logo-1.tiff
+Resources/Icons/anim-logo-2.tiff
+Resources/Icons/anim-logo-3.tiff
+Resources/Icons/anim-logo-4.tiff
+Resources/Icons/anim-logo-5.tiff
+Resources/Icons/anim-logo-6.tiff
+Resources/Icons/anim-logo-7.tiff
+Resources/Icons/anim-logo-8.tiff
+Resources/Icons/answered-flag.tiff
+Resources/Icons/attach_32.tiff
+Resources/Icons/attach_48.tiff
+Resources/Icons/common_Unknown.tiff
+Resources/Icons/create_12.tiff
+Resources/Icons/create_16.tiff
+Resources/Icons/create_20.tiff
+Resources/Icons/create_32.tiff
+Resources/Icons/create_48.tiff
+Resources/Icons/delete_20.tiff
+Resources/Icons/delete_32.tiff
+Resources/Icons/delete_48.tiff
+Resources/Icons/down_15.tiff
+Resources/Icons/drafts_32.tiff
+Resources/Icons/drafts_48.tiff
+Resources/Icons/drag_mail.tiff
+Resources/Icons/drag_mails.tiff
+Resources/Icons/duplicate.tiff
+Resources/Icons/edit.tiff
+Resources/Icons/find_32.tiff
+Resources/Icons/find_48.tiff
+Resources/Icons/flagged-flag.tiff
+Resources/Icons/folder_12.tiff
+Resources/Icons/folder_16.tiff
+Resources/Icons/folder_20.tiff
+Resources/Icons/forward_32.tiff
+Resources/Icons/forward_48.tiff
+Resources/Icons/hand.tiff
+Resources/Icons/headers_32.tiff
+Resources/Icons/headers_48.tiff
+Resources/Icons/mailbox_add_32.tiff
+Resources/Icons/mailbox_rename_32.tiff
+Resources/Icons/mailboxes_32.tiff
+Resources/Icons/mailboxes_48.tiff
+Resources/Icons/pgp-mail-small.tiff
+Resources/Icons/pgp-mail.tiff
+Resources/Icons/print_32.tiff
+Resources/Icons/print_48.tiff
+Resources/Icons/raw_32.tiff
+Resources/Icons/raw_48.tiff
+Resources/Icons/recent-flag.tiff
+Resources/Icons/remove_bcc_32.tiff
+Resources/Icons/remove_bcc_48.tiff
+Resources/Icons/remove_cc_32.tiff
+Resources/Icons/remove_cc_48.tiff
+Resources/Icons/reply_32.tiff
+Resources/Icons/reply_48.tiff
+Resources/Icons/restart_32.tiff
+Resources/Icons/retrieve_12.tiff
+Resources/Icons/retrieve_16.tiff
+Resources/Icons/retrieve_20.tiff
+Resources/Icons/retrieve_32.tiff
+Resources/Icons/retrieve_48.tiff
+Resources/Icons/send_12.tiff
+Resources/Icons/send_16.tiff
+Resources/Icons/send_20.tiff
+Resources/Icons/send_32.tiff
+Resources/Icons/send_48.tiff
+Resources/Icons/show_all_headers_32.tiff
+Resources/Icons/show_all_headers_48.tiff
+Resources/Icons/sort_down.tiff
+Resources/Icons/sort_left.tiff
+Resources/Icons/sort_right.tiff
+Resources/Icons/sort_up.tiff
+Resources/Icons/stop_32.tiff
+Resources/Icons/trash_12.tiff
+Resources/Icons/trash_16.tiff
+Resources/Icons/trash_20.tiff
+Resources/Icons/up_15.tiff
+
+Bundles/Sending/English.lproj/SendingView.nib/delete_20.tiff
+
+---
+
+Application Icons, Derived from Andrew Lindsay GNUstep Icon set.
+
+
+Copyright (C) 2000 Andrew Lindsay
+
+This library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation; either
+version 2.1 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+Lesser General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+GNUMail.xpm
+Resources/Icons/GNUMail.tiff
+Resources/Icons/GNUMail.icns
+Resources/Icons/GNUMail_128.tiff
+Resources/Icons/GNUMail_Full.tiff
+Resources/Icons/GNUMail_big.tiff
+
+
+---
+
+The clock Images come from GWorkspace:
+
+Copyright (C) 2001 Enrico Sersale
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+Bundles/Clock/Date-0.tiff
+Bundles/Clock/Date-1.tiff
+Bundles/Clock/Date-2.tiff
+Bundles/Clock/Date-3.tiff
+Bundles/Clock/Date-4.tiff
+Bundles/Clock/Date-5.tiff
+Bundles/Clock/Date-6.tiff
+Bundles/Clock/Date-7.tiff
+Bundles/Clock/Date-8.tiff
+Bundles/Clock/Date-9.tiff
+Bundles/Clock/LED-0.tiff
+Bundles/Clock/LED-1.tiff
+Bundles/Clock/LED-10.tiff
+Bundles/Clock/LED-11.tiff
+Bundles/Clock/LED-12.tiff
+Bundles/Clock/LED-2.tiff
+Bundles/Clock/LED-3.tiff
+Bundles/Clock/LED-4.tiff
+Bundles/Clock/LED-5.tiff
+Bundles/Clock/LED-6.tiff
+Bundles/Clock/LED-7.tiff
+Bundles/Clock/LED-8.tiff
+Bundles/Clock/LED-9.tiff
+Bundles/Clock/Mask.tiff
+Bundles/Clock/Month-1.tiff
+Bundles/Clock/Month-10.tiff
+Bundles/Clock/Month-11.tiff
+Bundles/Clock/Month-12.tiff
+Bundles/Clock/Month-2.tiff
+Bundles/Clock/Month-3.tiff
+Bundles/Clock/Month-4.tiff
+Bundles/Clock/Month-5.tiff
+Bundles/Clock/Month-6.tiff
+Bundles/Clock/Month-7.tiff
+Bundles/Clock/Month-8.tiff
+Bundles/Clock/Month-9.tiff
+Bundles/Clock/Weekday-0.tiff
+Bundles/Clock/Weekday-1.tiff
+Bundles/Clock/Weekday-2.tiff
+Bundles/Clock/Weekday-3.tiff
+Bundles/Clock/Weekday-4.tiff
+Bundles/Clock/Weekday-5.tiff
+Bundles/Clock/Weekday-6.tiff
+Bundles/Clock/Weekday.tiff
+
+---
+
+These images come from gnomemeeting:
+
+Copyright (C) 2003 Jimmac Jakub Steiner
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+Bundles/Emoticon/emoticon-face1.tiff
+Bundles/Emoticon/emoticon-face10.tiff
+Bundles/Emoticon/emoticon-face11.tiff
+Bundles/Emoticon/emoticon-face13.tiff
+Bundles/Emoticon/emoticon-face14.tiff
+Bundles/Emoticon/emoticon-face15.tiff
+Bundles/Emoticon/emoticon-face19.tiff
+Bundles/Emoticon/emoticon-face2.tiff
+Bundles/Emoticon/emoticon-face3.tiff
+Bundles/Emoticon/emoticon-face4.tiff
+Bundles/Emoticon/emoticon-face5.tiff
+Bundles/Emoticon/emoticon-face6.tiff
+Bundles/Emoticon/emoticon-face8.tiff
+Bundles/Emoticon/emoticon-face9.tiff
+

@@ -1,0 +1,21 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {addHeader = id; removeHeader = id; }; 
+            CLASS = SendingViewController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                headerKeyColumn = NSTableColumn; 
+                headerKeyField = NSTextField; 
+                headerTableView = NSTableView; 
+                headerValueColumn = NSTableColumn; 
+                headerValueField = NSTextField; 
+                view = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = StripeTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }
+    ); 
+    IBVersion = 1; 
+}

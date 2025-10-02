@@ -1,0 +1,171 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/FSOperator">FSOperator</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>FSExpression</DD>
+</DL></blockquote>
+
+
+
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSOperator.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+FSOperator is an abstract superclass for all FSExpression elements 
+that are operators. An operator is a function that does 
+not require parenthesis but stands between it's operands.
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Defined Types</H2>
+	<blockquote>
+	
+		
+		<H4>Synopsis:</H4>
+		
+			<CODE><A NAME="//apple_ref/c/tdef/FSOperatorTier">
+			typedef enum _FSOperatorTier {&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;FSFirstOperatorTier = 0,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;FSDefaultOperatorTier = FSFirstOperatorTier,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;FSAddOperatorTier,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;FSMultOperatorTier,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;FSRangeOperatorTier,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;FSMaxOperatorTier = FSRangeOperatorTier<BR>
+} <B>FSOperatorTier</B>;</A></CODE><BR>
+		
+		
+	
+	</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Variables</H2>
+	<blockquote>
+	
+		<CODE>FSExpression *<B>_firstArgument</B>;</CODE><BR>
+		<CODE>FSExpression *<B>_secondArgument</B>;</CODE><BR>
+	<P><TABLE>
+	
+		<TR><TD>_firstArgument</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_secondArgument</TD><TD>No description.</TD></TR>
+	
+	</TABLE>
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#+ registerOperator:">+ registerOperator:</A></DD>
+		
+			<DD> <A HREF="#+ allOperatorSymbols">+ allOperatorSymbols</A></DD>
+		
+			<DD> <A HREF="#+ operatorClassForSymbol:">+ operatorClassForSymbol:</A></DD>
+		
+			<DD> <A HREF="#+ operatorTier">+ operatorTier</A></DD>
+		
+			<DD> <A HREF="#+ rtfdHelpData">+ rtfdHelpData</A></DD>
+		
+			<DD> <A HREF="#+ operatorSymbol">+ operatorSymbol</A></DD>
+		
+			<DD> <A HREF="#+ operatorWithArguments:">+ operatorWithArguments:</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Class Methods</H2>
+ 
+	
+		
+		<A NAME="+ allOperatorSymbols"></A><H3><A NAME="//apple_ref/occ/clm/FSOperator/allOperatorSymbols">allOperatorSymbols</A></H3>
+		<CODE>+ (NSArray*)<B>allOperatorSymbols</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="+ operatorClassForSymbol:"></A><H3><A NAME="//apple_ref/occ/clm/FSOperator/operatorClassForSymbol:">operatorClassForSymbol:</A></H3>
+		<CODE>+ (Class)<B>operatorClassForSymbol:</B>(NSString*)<EM>symbol</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="+ operatorSymbol"></A><H3><A NAME="//apple_ref/occ/clm/FSOperator/operatorSymbol">operatorSymbol</A></H3>
+		<CODE>+ (NSString*)<B>operatorSymbol</B>
+		</CODE><P>
+		Must be overwritten in subclasses. FSOperator's implementation raises, 
+so don't call it in the subclass implementation!
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="+ operatorTier"></A><H3><A NAME="//apple_ref/occ/clm/FSOperator/operatorTier">operatorTier</A></H3>
+		<CODE>+ (FSOperatorTier)<B>operatorTier</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="+ operatorWithArguments:"></A><H3><A NAME="//apple_ref/occ/clm/FSOperator/operatorWithArguments:">operatorWithArguments:</A></H3>
+		<CODE>+ (FSOperator*)<B>operatorWithArguments:</B>(NSArray*)<EM>arguments</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="+ registerOperator:"></A><H3><A NAME="//apple_ref/occ/clm/FSOperator/registerOperator:">registerOperator:</A></H3>
+		<CODE>+ (void)<B>registerOperator:</B>(Class)<EM>operatorClass</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="+ rtfdHelpData"></A><H3><A NAME="//apple_ref/occ/clm/FSOperator/rtfdHelpData">rtfdHelpData</A></H3>
+		<CODE>+ (NSData*)<B>rtfdHelpData</B>
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2001 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

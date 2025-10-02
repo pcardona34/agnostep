@@ -1,0 +1,124 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/FSTableInspectorPane">FSTableInspectorPane</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>FSInspectorPane</DD>
+</DL></blockquote>
+
+
+
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSTableInspectorPane.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+No class description.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Variables</H2>
+	<blockquote>
+	
+		<CODE>IBOutlet NSTextView *<B>comments</B>;</CODE><BR>
+		<CODE>IBOutlet NSTextField *<B>nameField</B>;</CODE><BR>
+		<CODE>IBOutlet NSTextField *<B>documentField</B>;</CODE><BR>
+		<CODE>IBOutlet NSTableView *<B>categories</B>;</CODE><BR>
+		<CODE>FSTable *<B>table</B>;</CODE><BR>
+	<P><TABLE>
+	
+		<TR><TD>comments</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>nameField</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>documentField</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>categories</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>table</TD><TD>No description.</TD></TR>
+	
+	</TABLE>
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- setTableName:">- setTableName:</A></DD>
+		
+			<DD> <A HREF="#- inspectDocument:">- inspectDocument:</A></DD>
+		
+			<DD> <A HREF="#- inspectCategory:">- inspectCategory:</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- inspectCategory:"></A><H3><A NAME="//apple_ref/occ/instm/FSTableInspectorPane/inspectCategory:">inspectCategory:</A></H3><P>
+		<CODE>- (IBAction)<B>inspectCategory:</B><EM>sender</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- inspectDocument:"></A><H3><A NAME="//apple_ref/occ/instm/FSTableInspectorPane/inspectDocument:">inspectDocument:</A></H3><P>
+		<CODE>- (IBAction)<B>inspectDocument:</B><EM>sender</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setTableName:"></A><H3><A NAME="//apple_ref/occ/instm/FSTableInspectorPane/setTableName:">setTableName:</A></H3><P>
+		<CODE>- (IBAction)<B>setTableName:</B><EM>sender</EM>
+			
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2002 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

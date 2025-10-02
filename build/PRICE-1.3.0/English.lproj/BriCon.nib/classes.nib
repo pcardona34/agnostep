@@ -1,0 +1,27 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {briconReset = id; changeBri = id; changeCon = id; showBriCon = id; }; 
+            CLASS = PRCBriCon; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                briSlider = NSSlider; 
+                briStep = NSStepper; 
+                briVal = NSTextField; 
+                briconWindow = NSWindow; 
+                conSlider = NSSlider; 
+                conStep = NSStepper; 
+                conVal = NSTextField; 
+            }; 
+            SUPERCLASS = PRFilterController; 
+        }, 
+        {
+            ACTIONS = {filterCancel = id; filterOK = id; parametersChanged = id; showFilter = id; }; 
+            CLASS = PRFilterController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

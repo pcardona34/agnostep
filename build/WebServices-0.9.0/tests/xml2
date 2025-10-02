@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <soapenv:Body>
+  <applicationLoginResponse xmlns="http://www.incomit.com/wsdl/parlayx/access/v1_0/service">
+   <ns1:applicationLoginReturn xmlns:ns1="http://www.bea.com/wlcp/wlng/wespa/enabler/access">app:8638397129625756426</ns1:applicationLoginReturn>
+  </applicationLoginResponse>
+ </soapenv:Body>
+</soapenv:Envelope>

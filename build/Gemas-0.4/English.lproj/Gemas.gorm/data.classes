@@ -1,0 +1,46 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    FirstResponder = {
+	Actions = (
+	    "applicationShouldOpenUntitledFile:",
+	    "goToLineNumber:",
+	    "insertTab:",
+	    "nextParameter:",
+	    "newProject:",
+	    "newSourceFile:",
+	    "openGoToLinePanel:",
+	    "openPreferences:",
+	    "orderFrontCharacterPalette:"
+	);
+	Super = NSObject;
+    };
+    GemasController = {
+	Actions = (
+	    "newSourceFile:",
+	    "applicationShouldOpenUntitledFile:",
+	    "openPreferences:",
+	    "openGoToLinePanel:",
+	    "newProject:"
+	);
+	Outlets = (
+	);
+	Super = NSObject;
+    };
+    GemasDocument = {
+	Actions = (
+	    "goToLineNumber:"
+	);
+	Outlets = (
+	    textView,
+	    numberLine,
+	    numberColumn
+	);
+	Super = NSDocument;
+    };
+    NSApplication = {
+	Actions = (
+	    "orderFrontCharacterPalette:"
+	);
+	Super = NSResponder;
+    };
+}

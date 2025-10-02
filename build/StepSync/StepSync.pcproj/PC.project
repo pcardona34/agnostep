@@ -1,0 +1,90 @@
+{
+    APPLICATIONICON = "";
+    "APP_DOCUMENT_BASED" = NO;
+    "APP_TYPE" = GORM;
+    "BUILDER_TARGETS" = (
+	all,
+	install,
+	uninstall,
+	clean,
+	distclean,
+	dist
+    );
+    "BUNDLE_IDENTIFIER" = "org.gap.StepSync";
+    "CLASS_FILES" = (
+	"AppController.m",
+	"FileMap.m",
+	"FileObject.m",
+	"Engine.m",
+	"FileArray.m"
+    );
+    COMPILEROPTIONS = "";
+    CPPOPTIONS = "";
+    "CREATION_DATE" = "2017-02-03 11:28:57 +0100";
+    "DOCU_FILES" = (
+    );
+    FRAMEWORKS = (
+    );
+    "HEADER_FILES" = (
+	"AppController.h",
+	"FileMap.h",
+	"FileObject.h",
+	"Engine.h",
+	"FileArray.h"
+    );
+    IMAGES = (
+    );
+    INSTALLDIR = "$(HOME)/GNUstep";
+    INTERFACES = (
+	"MainMenu.gorm"
+    );
+    LANGUAGE = English;
+    LIBRARIES = (
+	"gnustep-base",
+	"gnustep-gui"
+    );
+    LINKEROPTIONS = "";
+    "LOCALIZED_RESOURCES" = (
+    );
+    MAININTERFACE = "MainMenu.gorm";
+    MAKEFILEDIR = "$(GNUSTEP_MAKEFILES)";
+    "OBJC_COMPILEROPTIONS" = "";
+    "OTHER_RESOURCES" = (
+    );
+    "OTHER_SOURCES" = (
+	"main.m"
+    );
+    "PRINCIPAL_CLASS" = NSApplication;
+    "PROJECT_AUTHORS" = (
+	"Riccardo Mottola"
+    );
+    "PROJECT_COPYRIGHT" = "Copyright (C) 2017-2021";
+    "PROJECT_COPYRIGHT_DESC" = "Released under GPL v2+";
+    "PROJECT_CREATOR" = multix;
+    "PROJECT_DESCRIPTION" = "File Synchronizer";
+    "PROJECT_DOCUMENTTYPES" = (
+    );
+    "PROJECT_GROUP" = "No group avaliable!";
+    "PROJECT_MAINTAINER" = multix;
+    "PROJECT_NAME" = StepSync;
+    "PROJECT_RELEASE" = "1.1";
+    "PROJECT_SUMMARY" = "No summary avaliable!";
+    "PROJECT_TYPE" = Application;
+    "PROJECT_URL" = "http://gap.nongnu.org/stepsync/";
+    "SEARCH_HEADER_DIRS" = (
+    );
+    "SEARCH_LIB_DIRS" = (
+    );
+    SUBPROJECTS = (
+    );
+    "SUPPORTING_FILES" = (
+	"GNUmakefile.preamble",
+	GNUmakefile,
+	"GNUmakefile.postamble",
+	"StepSyncInfo.plist"
+    );
+    "USER_LANGUAGES" = (
+	Italian,
+	English
+    );
+}

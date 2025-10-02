@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<title>Open/Save TOC</title>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=iso-8859-1"><META NAME="Copyright" CONTENT="Copyright 2001 Stefan Leuker."><META NAME="AppleFont" CONTENT="Lucida Grande,Helvetica">
+<META NAME="AppleSearchResultsFont" CONTENT="Lucida Grande,Helvetica">
+<META NAME="ROBOTS" CONTENT="anchors">
+</head>
+<body marginwidth=4 marginheight=8>
+<h1 align=left><br>FlexiSheet Help</h1>
+<p><font face="Lucida Grande" size=-1>
+<b>Opening, Saving, and Printing Documents</b>
+</font></p>
+<p><font face="Lucida Grande" size=-1>
+<a href="Topics/OpenImport.html" target=_top>Opening and Importing Documents</a>
+</font></p>
+<p><font face="Lucida Grande" size=-1>
+<a href="Topics/SaveExport.html" target=_top>Saving and Exporting Documents</a>
+</font></p>
+<p><font face="Lucida Grande" size=-1>
+<a href="Topics/BuildPalettes.html" target=_top>Building Custom Palettes</a>
+</font></p>
+<br>
+</body>
+</html>

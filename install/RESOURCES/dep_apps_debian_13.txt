@@ -1,0 +1,114 @@
+####################################################
+### A G N o S t e p  -  Desktop - by Patrick Cardona
+### pcardona34 @ Github
+###
+### Thanks for the GNUstep Developers Community
+### This is Free and Open Source software.
+### Read License in the root directory.
+####################################################
+
+##################################
+### Frameworks 			##
+### and apps dependencies 	##
+### on Debian 13 (Trixie)    	##
+##################################
+
+### Desktop tools
+alsa-utils
+dunst
+compton
+conky-all
+
+### Printer & scanner: see also Setup_Printer script
+### cups already done
+sane-utils
+
+inkscape
+python3-willow
+chromium
+#rpi-chromium-mods
+dict
+dict-freedict-eng-fra
+dict-jargon
+dict-wn
+fbreader
+focuswriter
+
+#### Audio and Video - Player & Cynthiune
+ffmpeg
+libao4
+libao-dev
+libasound2t64
+libasound2-dev
+libid3tag0
+libid3tag0-dev
+#libtagc0
+libtagc0-dev
+libmad0
+libmad0-dev
+libmusicbrainz5-2
+libmusicbrainz5-dev
+libogg0
+libogg-dev
+libsndfile1
+libsndfile1-dev
+libvorbis0a
+libvorbis-dev
+vlc-bin
+vlc-data
+vlc-plugin-base
+vlc-plugin-video-output
+
+##########################################
+### Games
+# Chess
+gnuchess
+# NeXTGo ?
+# gnugo
+###########################################
+
+### Desktop utilities
+#### PS & PDF - GSPdf
+fonts-freefont-ttf
+ghostscript 
+gsfonts
+poppler-utils
+sqlite3
+libsqlite3-dev
+tzdata
+
+###########################################
+#### Cryptography - GNUMail
+gnutls-bin
+
+###########################################
+### Freedesktop
+libavahi-client-dev
+libavahi-compat-libdnssd-dev
+#libcurl4-gnutls-dev ### breaks libs-gnustep-base
+#libcurl4-openssl-dev ### idem
+libdbus-1-dev
+dbus-x11
+
+
+
+############################################
+### Image manipulation & view
+libexif-dev
+webp
+
+############################################
+### Calendar
+libical3t64
+libical-dev
+
+###########################################
+### Other Tools
+htop
+
+#### Librarian
+recollcmd
+
+#### SceenShot
+scrot
+#libsqlclient-dev

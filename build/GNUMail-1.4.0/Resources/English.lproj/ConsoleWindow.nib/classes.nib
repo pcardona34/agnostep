@@ -1,0 +1,20 @@
+{
+    IBClasses = (
+        {CLASS = ConsoleMessage; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {deleteClicked = id; saveClicked = id; }; 
+            CLASS = ConsoleWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                currentTaskBox = NSBox; 
+                menu = NSMenu; 
+                messagesTableView = NSTableView; 
+                tasksTableView = NSTableView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = ExtendedTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

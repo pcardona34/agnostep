@@ -1,0 +1,32 @@
+¡Bienvenido a Gemas 0.3!
+
+
+Que es
+======
+
+Gemas.app es un simple pero poderoso editor de código para GNUstep.
+Tiene autoindentado y resaltado de sintaxis para lenguages C, C++, 
+Objective-C, Objective-C++, GSmarkup. Así como para la edición de 
+archivos Strings, Plist, GNUmakefile y ChangeLog. Así como archivos
+de texto (README, INSTALL, etc.). Gemas.app hace uso del framework 
+HighlighterKit desarrollado por Saso kiselkov.
+
+
+LICENCIA
+========
+
+Esta aplicación es software libre, liberada bajo licencia GPLv3
+o (a su opción) cualquier versión posterior.
+
+
+AUTOR
+=====
+
+German A. Arias <german@xelalug.org>
+
+
+INSTALACION
+===========
+
+Ver el archivo 'INSTALACION'.
+

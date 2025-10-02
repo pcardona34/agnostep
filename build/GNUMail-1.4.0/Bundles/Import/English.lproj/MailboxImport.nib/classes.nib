@@ -1,0 +1,27 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                chooseClicked = id; 
+                doneClicked = id; 
+                nextClicked = id; 
+                previousClicked = id; 
+                selectionInMatrixHasChanged = id; 
+            }; 
+            CLASS = MailboxImportController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                chooseButton = NSButton; 
+                chooseMailboxView = id; 
+                chooseTypeView = id; 
+                explanationLabel = NSTextField; 
+                explanationView = id; 
+                matrix = NSMatrix; 
+                tableView = NSTableView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

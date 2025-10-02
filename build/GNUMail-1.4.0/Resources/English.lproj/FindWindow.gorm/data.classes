@@ -1,0 +1,30 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    FindWindowController = {
+	Actions = (
+	    "findAll:",
+	    "nextMessage:",
+	    "previousMessage:"
+	);
+	Outlets = (
+	    findField,
+	    foundLabel,
+	    ignoreCaseButton,
+	    regularExpressionButton,
+	    findAllButton,
+	    previousButton,
+	    nextButton,
+	    matrix
+	);
+	Super = NSWindowController;
+    };
+    FirstResponder = {
+	Actions = (
+	    "findAll :",
+	    "findAll:",
+	    "nextMessage:",
+	    "previousMessage:"
+	);
+	Super = NSObject;
+    };
+}

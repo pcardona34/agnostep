@@ -1,0 +1,19 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {showEqualize = id; }; 
+            CLASS = PRCEqualize; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {colorSpaceChoice = NSPopUpButton; equalWindow = NSWindow; }; 
+            SUPERCLASS = PRFilterController; 
+        }, 
+        {
+            ACTIONS = {filterCancel = id; filterOK = id; parametersChanged = id; showFilter = id; }; 
+            CLASS = PRFilterController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

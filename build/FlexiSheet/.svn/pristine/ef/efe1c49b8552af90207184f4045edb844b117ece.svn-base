@@ -1,0 +1,86 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/FSTable (Archiving)">FSTable (Archiving)</A></H1></FONT><BR>
+
+
+
+
+
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSTable.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Category Description</H2>
+No category description.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- dictionaryForArchiving">- dictionaryForArchiving</A></DD>
+		
+			<DD> <A HREF="#- loadFromDictionary:">- loadFromDictionary:</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- dictionaryForArchiving"></A><H3><A NAME="//apple_ref/occ/instm/FSTable (Archiving)/dictionaryForArchiving">dictionaryForArchiving</A></H3><P>
+		<CODE>- (NSDictionary*)<B>dictionaryForArchiving</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- loadFromDictionary:"></A><H3><A NAME="//apple_ref/occ/instm/FSTable (Archiving)/loadFromDictionary:">loadFromDictionary:</A></H3><P>
+		<CODE>- (BOOL)<B>loadFromDictionary:</B>(NSDictionary*)<EM>dictionary</EM>
+			
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2002 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

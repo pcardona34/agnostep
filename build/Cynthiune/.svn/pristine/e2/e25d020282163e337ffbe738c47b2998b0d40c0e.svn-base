@@ -1,0 +1,33 @@
+{
+    IBClasses = (
+        {CLASS = CynthiunePopUpButton; LANGUAGE = ObjC; SUPERCLASS = NSPopUpButton; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                outputBundleChanged = id; 
+                playlistFormatChanged = id; 
+                playlistReferenceTypeChanged = id; 
+                saveWindowsInformationChanged = id; 
+                stickyWindowsChanged = id; 
+                texturedWindowsChanged = id; 
+            }; 
+            CLASS = GeneralPreference; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                outputBundleSelector = id; 
+                outputModuleBox = id; 
+                playlistFormatSelector = id; 
+                playlistReferenceTypeToggle = id; 
+                playlistsBox = id; 
+                playlistsFormatLabel = id; 
+                prefsWindow = id; 
+                saveWindowsInformationToggle = id; 
+                stickyWinToggle = id; 
+                texturedWindowsToggle = id; 
+                windowsBox = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

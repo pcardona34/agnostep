@@ -1,0 +1,49 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    FirstResponder = {
+	Actions = (
+	    "curvesReset:",
+	    "filterCancel:",
+	    "filterOK:",
+	    "parametersChanged:",
+	    "setBlackPoint:",
+	    "setWhitePoint:",
+	    "showFilter:"
+	);
+	Super = NSObject;
+    };
+    PRCCurves = {
+	Actions = (
+	    "curvesReset:",
+	    "setBlackPoint:",
+	    "setWhitePoint:"
+	);
+	Outlets = (
+	    curvesWindow,
+	    curvesView,
+	    blackPointField,
+	    whitePointField,
+	    blackPointStepper,
+	    whitePointStepper
+	);
+	Super = PRFilterController;
+    };
+    PRCurvesView = {
+	Actions = (
+	);
+	Outlets = (
+	);
+	Super = NSView;
+    };
+    PRFilterController = {
+	Actions = (
+	    "showFilter:",
+	    "filterOK:",
+	    "filterCancel:",
+	    "parametersChanged:"
+	);
+	Outlets = (
+	);
+	Super = NSObject;
+    };
+}

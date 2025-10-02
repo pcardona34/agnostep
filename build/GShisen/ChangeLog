@@ -1,0 +1,46 @@
+2015-02-02 Riccardo Mottola <rm@gnu.org>
+
+	* gshisen.m
+	Get username from environment.
+
+2015-01-31 Riccardo Mottola <rm@gnu.org>
+
+	* board.m
+	* gshisen.m
+	Memory fixes, cleanup.
+
+2015-01-31 Riccardo Mottola <rm@gnu.org>
+
+	* board.m
+	Check for a remaining move after each move, not just when a hint is requested, detect thus game end automatically.
+
+2015-01-29 Riccardo Mottola <rm@gnu.org>
+
+	* board.m
+	* board.h
+	Separate hint search from getHint, so that it is reusable.
+
+2015-01-29 Riccardo Mottola <rm@gnu.org>
+
+	* board.m (findPathBetweenTiles)
+	Change to use stsart and end tile as parameters, not board tiles.
+
+2015-01-29 Riccardo Mottola <rm@gnu.org>
+
+	* board.m (getHint)
+	Use local instead of class ivars
+
+2015-01-28 Riccardo Mottola <rm@gnu.org>
+
+	* tile.m
+	Draw tiles with SourceOver to have transparency on deck.
+
+	* board.m
+	Cleanup arrays from preferences, fix leak
+
+2009-06-05 Riccardo Mottola
+	* GShisen.gorm: created
+
+2009-05-27 Riccardo Mottola
+
+	* ProjectCenter project created and initial import into GAP

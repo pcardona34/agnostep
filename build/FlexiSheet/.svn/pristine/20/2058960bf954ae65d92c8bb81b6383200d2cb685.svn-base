@@ -1,0 +1,125 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/NSString (FoundationExtentions)">NSString (FoundationExtentions)</A></H1></FONT><BR>
+
+
+
+
+
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FoundationExtentions.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Category Description</H2>
+No category description.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- followingString">- followingString</A></DD>
+		
+			<DD> <A HREF="#- stringByTrimmingWhitespace">- stringByTrimmingWhitespace</A></DD>
+		
+			<DD> <A HREF="#- stringByTrimmingQuotes">- stringByTrimmingQuotes</A></DD>
+		
+			<DD> <A HREF="#- stringByTrimmingParenthesis">- stringByTrimmingParenthesis</A></DD>
+		
+			<DD> <A HREF="#- isSingleQuotedString">- isSingleQuotedString</A></DD>
+		
+			<DD> <A HREF="#- isDoubleQuotedString">- isDoubleQuotedString</A></DD>
+		
+			<DD> <A HREF="#- needsQuoting">- needsQuoting</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- followingString"></A><H3><A NAME="//apple_ref/occ/instm/NSString (FoundationExtentions)/followingString">followingString</A></H3><P>
+		<CODE>- (NSString*)<B>followingString</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- isDoubleQuotedString"></A><H3><A NAME="//apple_ref/occ/instm/NSString (FoundationExtentions)/isDoubleQuotedString">isDoubleQuotedString</A></H3><P>
+		<CODE>- (BOOL)<B>isDoubleQuotedString</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- isSingleQuotedString"></A><H3><A NAME="//apple_ref/occ/instm/NSString (FoundationExtentions)/isSingleQuotedString">isSingleQuotedString</A></H3><P>
+		<CODE>- (BOOL)<B>isSingleQuotedString</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- needsQuoting"></A><H3><A NAME="//apple_ref/occ/instm/NSString (FoundationExtentions)/needsQuoting">needsQuoting</A></H3><P>
+		<CODE>- (BOOL)<B>needsQuoting</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- stringByTrimmingParenthesis"></A><H3><A NAME="//apple_ref/occ/instm/NSString (FoundationExtentions)/stringByTrimmingParenthesis">stringByTrimmingParenthesis</A></H3><P>
+		<CODE>- (NSString*)<B>stringByTrimmingParenthesis</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- stringByTrimmingQuotes"></A><H3><A NAME="//apple_ref/occ/instm/NSString (FoundationExtentions)/stringByTrimmingQuotes">stringByTrimmingQuotes</A></H3><P>
+		<CODE>- (NSString*)<B>stringByTrimmingQuotes</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- stringByTrimmingWhitespace"></A><H3><A NAME="//apple_ref/occ/instm/NSString (FoundationExtentions)/stringByTrimmingWhitespace">stringByTrimmingWhitespace</A></H3><P>
+		<CODE>- (NSString*)<B>stringByTrimmingWhitespace</B>
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2002 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

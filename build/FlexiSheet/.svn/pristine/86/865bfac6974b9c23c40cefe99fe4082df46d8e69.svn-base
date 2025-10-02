@@ -1,0 +1,59 @@
+<HTML><HEAD><META HTTP-EQUIV="content-type" CONTENT="text/html;charset=iso-8859-1"><TITLE>
+
+select Function
+
+</TITLE><META NAME="Copyright" CONTENT="Copyright Stefan Leuker."></HEAD><BODY BGCOLOR="#ffffff"><DIV ALIGN="left"><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%"><TR HEIGHT="40"><TD WIDTH="6" HEIGHT="40"></TD><TD HEIGHT="40" VALIGN="middle"><FONT FACE="Lucida Grande,Helvetica,Arial" SIZE="4"><B>
+
+select&nbsp;Function
+
+</B></FONT></TD></TR></TABLE>
+<img src="../av/3PixelRule.tiff">
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+select is a function that searches a range of values for a range of values or stings that meets the criteria specified by one or more search keys.
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+Include the table name as part of the valueRange and keyRange parameters.  If no other function applied to it, the select function returns a list.  If another function is applied, then that function is applied to the list to return a single value.
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+Use select to find values from among a range of values.  The value retrieved must meet criteria specified in the keys, such as employee social security numbers.  It finds values matching any of the keys.
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+Syntax:
+<pre>  select(valueRange, keyRange, key1, ...)</pre>
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+<b>valueRange:</b> the range from which values are returned.
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+<b>keyRange:</b> the range or group in the table you want to search.
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+<b>key1:</b> the value or string you are searching for.
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+<b>keyn:</b> an alternative value or string to key1.
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+<B>Example:</B><BR>
+You want to select the social security numbers and salaries for your employees for a new table you are creating.  The table you are selecting from is called Staff List.
+<BLOCKQUOTE>Salary = select(Staff List::Salary:Employee, Staff List::SSN:Employee, Social Security)</BLOCKQUOTE>
+
+</FONT></P>
+</DIV></BODY></HTML>

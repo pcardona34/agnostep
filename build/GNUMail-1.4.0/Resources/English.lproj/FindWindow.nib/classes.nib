@@ -1,0 +1,22 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {findAll = id; nextMessage = id; previousMessage = id; }; 
+            CLASS = FindWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                findAllButton = NSButton; 
+                findField = NSTextField; 
+                foundLabel = NSTextField; 
+                ignoreCaseButton = NSButton; 
+                matrix = NSMatrix; 
+                nextButton = NSButton; 
+                previousButton = NSButton; 
+                regularExpressionButton = NSButton; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

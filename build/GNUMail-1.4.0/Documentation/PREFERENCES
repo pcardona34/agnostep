@@ -1,0 +1,187 @@
+Copyright (C) 2001-2006 Ludovic Marcotte
+
+Author: Ludovic Marcotte <ludovic@Sophos.ca>
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+----------------------------------
+DEFAULT_MULTIPART_ALTERNATIVE_TYPE
+----------------------------------
+
+This allows you to change the default preferred version of a multipart/alternative content.
+
+To favor text/plain parts, use "1". To favor text/html parts, use "2". You can change it
+by doing:
+
+GNUstep:  defaults write GNUMail DEFAULT_MULTIPART_ALTERNATIVE_TYPE 2
+Mac OS X: defaults write com.collaboration-world.GNUMail DEFAULT_MULTIPART_ALTERNATIVE_TYPE 2
+
+That would change the defaults to favor text/html parts.
+
+
+----------------------------
+MAILBOXMANAGER_OUTLINE_COLOR
+----------------------------
+
+This allows you to change the background color of the outline view
+shown in the mailbox manager window.
+
+You can change it by doing:
+
+GNUstep:  defaults write GNUMail MAILBOXMANAGER_OUTLINE_COLOR "0.850980 0.737255 0.576471"
+Mac OS X: defaults write com.collaboration-world.GNUMail MAILBOXMANAGER_OUTLINE_COLOR "0.850980 0.737255 0.576471"
+
+Colors are specified using RGB values and "0.850980 0.737255 0.576471" gives a nice
+"salmon" color.
+
+
+---------------------------------
+The Date Format in the MailWindow
+---------------------------------
+
+This allows you to change the format of the date values shown
+in the Date column of the MailWindow.
+
+Three values are used:
+
+NSTimeFormatString  (for today's mails)
+NSPriorDayDesignations + NSTimeFormatString (yesterday's mails)
+NSShortDateFormatString for other mails.
+
+These keys are documented in the "NSString Representations for NSDates"
+section of the following web page:
+
+http://developer.apple.com/techpubs/macosx/Cocoa/TasksAndConcepts/ProgrammingTopics/DatesAndTimes/Tasks/DatesToStrings.html 
+
+You can change them on a per application basis or for all application (NSGlobalDomain).
+
+
+--------------------
+MAILHEADERCELL_COLOR
+--------------------
+
+This allows you to change the background color of the mail headers cell shown
+in the MailWindow.
+
+You can change it by doing:
+
+GNUstep:  defaults write GNUMail MAILHEADERCELL_COLOR "0.9 0.9 1.0"
+Mac OS X: defaults write com.collaboration-world.GNUMail MAILHEADERCELL_COLOR "0.9 0.9 1.0"
+
+Colors are specified using RGB float values. "0.9 0.9 1.0" gives a very light blue.
+
+
+-------------------------
+MAILWINDOW_DATA_VIEW_TYPE
+-------------------------
+
+This allows you to activate or not message threading by setting the default view used
+in the MailWindow.
+
+To activate message threading, do:
+
+GNUstep:  defaults write GNUMail MAILWINDOW_DATA_VIEW_TYPE 2
+Mac OS X: defaults write com.collaboration-world.GNUMail MAILWINDOW_DATA_VIEW_TYPE 2
+
+and to deactivate it, simply do:
+
+GNUstep:  defaults write GNUMail MAILWINDOW_DATA_VIEW_TYPE 1
+Mac OS X: defaults write com.collaboration-world.GNUMail MAILWINDOW_DATA_VIEW_TYPE 1
+
+
+-------------------------
+MAILWINDOW_REPEAT_SUBJECT
+-------------------------
+
+This allows you to specify if you want or not to repeat the subject when using
+message threading in the NSOutlineView of the MailWindow. If you don't want to
+repeat the subject for children of thread, do:
+
+GNUstep:  defaults write GNUMail MAILWINDOW_REPEAT_SUBJECT NO
+Mac OS X: defaults write com.collaboration-world.GNUMail MAILWINDOW_REPEAT_SUBJECT NO
+
+If you want to repeat them, just specify YES instead of NO.
+
+By default, the subject is repeated.
+
+
+----------------------
+MAILWINDOW_TABLE_COLOR
+----------------------
+
+This allows you to change the background color of the table view shown in the MailWindow.
+
+You can change it by doing:
+
+GNUstep:  defaults write GNUMail MAILWINDOW_TABLE_COLOR "0.850980 0.737255 0.576471"
+Mac OS X: defaults write com.collaboration-world.GNUMail MAILWINDOW_TABLE_COLOR "0.850980 0.737255 0.576471"
+
+Colors are specified using RGB float values. For example, the RGB values "0.850980 0.737255 0.576471"
+gives a nice "salmon" color.
+
+
+-----------------------
+OPEN_CONSOLE_ON_STARTUP
+-----------------------
+
+This allows you to specify if you want the Console's window to automatically open
+upon GNUMail's startup. To activate it, simply do:
+
+GNUstep:  defaults write GNUMail OPEN_CONSOLE_ON_STARTUP YES
+Mac OS X: defaults write com.collaboration-world.GNUMail OPEN_CONSOLE_ON_STARTUP YES
+
+
+------------------------------
+OPEN_MAILBOXMANAGER_ON_STARTUP
+------------------------------
+
+This allows you to specify if you want the MailboxManager's window to automatically
+open upon GNUMail's startup. To activate it, simply do:
+
+GNUstep:  defaults write GNUMail OPEN_MAILBOXMANAGER_ON_STARTUP YES
+Mac OS X: defaults write com.collaboration-world.GNUMail OPEN_MAILBOXMANAGER_ON_STARTUP YES
+
+
+-------------------
+QUOTE_COLOR_LEVEL_1
+-------------------
+
+This allows you to specify which color you want to use for the first level of quoting.
+To change the color, simply do:
+
+GNUstep:  defaults write GNUMail QUOTE_COLOR_LEVEL_1 "1.0 0.0 0.0"
+Mac OS X: defaults write com.collaboration-world.GNUMail QUOTE_COLOR_LEVEL_1 "1.0 0.0 0.0"
+
+There is support for 4 levels of coloration. Other preference keys are:
+
+QUOTE_COLOR_LEVEL_2 for the 2nd level,
+QUOTE_COLOR_LEVEL_3 for the 3rd level,
+QUOTE_COLOR_LEVEL_4 for the 4th level.
+
+
+-------------
+SCROLLER_SIZE
+-------------
+
+This allows you set the scroller size for the table and text views in the
+MailWindow to either regular or small. Simply use:
+on OS X:
+defaults write com.collaboration-world.GNUMail SCROLLER_SIZE 0 (or 1)
+on GNUstep:
+defaults write GNUMail SCROLLER_SIZE 0 (or 1)
+
+0 is regular size, 1 is small size.
+
+
+

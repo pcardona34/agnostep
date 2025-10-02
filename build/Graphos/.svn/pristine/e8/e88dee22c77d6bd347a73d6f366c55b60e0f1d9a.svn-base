@@ -1,0 +1,32 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    FirstResponder = {
+	Actions = (
+	    "inspectObject:",
+	    "moveSelectedObjectsToBack:",
+	    "moveSelectedObjectsToFront:",
+	    "unselectOtherObjects:"
+	);
+	Super = NSObject;
+    };
+    GRDocView = {
+	Actions = (
+	    "moveSelectedObjectsToFront:",
+	    "moveSelectedObjectsToBack:",
+	    "cut:",
+	    "copy:",
+	    "paste:"
+	);
+	Outlets = (
+	);
+	Super = NSView;
+    };
+    GRDocument = {
+	Actions = (
+	);
+	Outlets = (
+	    docView
+	);
+	Super = NSDocument;
+    };
+}

@@ -1,0 +1,45 @@
+/*
+ * Highlighting rules for the ChangeLog files of the HighlighterKit
+ * framework.
+ */
+{
+  Contexts = (
+    {
+      Keywords = (
+        {
+          Pattern = "-[abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ:]*>";
+          ForegroundColor = "0 0.5 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<[-0123456789]{10}>";
+          ForegroundColor = "0.5 0.5 0";
+          Bold = YES;
+        }
+      );
+    },
+
+    /* Email */
+    {
+      Beginning = "\\<";
+      Ending = "\\>";
+      ContextSkips = (
+        "\\\\\n"
+      );
+      ForegroundColor = "0 0 1";
+      Bold = YES;
+    },
+
+    /* Change */
+    {
+      Beginning = "\\*";
+      Ending = ":";
+      ContextSkips = (
+        ":)"
+      );
+      ForegroundColor = "0.8 0 0";
+      Bold = YES;
+    }
+
+  );
+}

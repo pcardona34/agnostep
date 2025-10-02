@@ -1,0 +1,244 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/intf/FSMatrixDataSource">FSMatrixDataSource</A></H1></FONT><BR>
+
+
+
+
+
+	<blockquote><DL><DT><B>Conforms To:</B></DT>
+	<DD>NSObject</DD>
+</DL></blockquote>
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSMatrixDataSource.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Protocol Description</H2>
+No protocol description.
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Defined Types</H2>
+	<blockquote>
+	
+		
+		<H4>Synopsis:</H4>
+		
+			<CODE><A NAME="//apple_ref/c/tdef/FSCell">
+			typedef struct _FSCell {&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;int row;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;int column;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;float dx;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;float dy;<BR>
+} <B>FSCell</B>;</A></CODE><BR>
+		
+		
+	
+	</blockquote>
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Static Inline Functions</H2>
+	<blockquote>
+	
+		
+		<H4>Synopsis:</H4>
+		
+			<CODE>FSCell <B><A NAME="//apple_ref/c/func/FSMakeCell">FSMakeCell</A></B>(int row, int col)</CODE><BR>
+		
+		
+	
+	</blockquote>
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- numberOfRowsInMatrix:">- numberOfRowsInMatrix:</A></DD>
+		
+		</DL>
+	
+		
+			Must return the number of rows.
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- numberOfColumnsInMatrix:">- numberOfColumnsInMatrix:</A></DD>
+		
+		</DL>
+	
+		
+			Must return the number of columns.
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- matrix:objectValueForCell:">- matrix:objectValueForCell:</A></DD>
+		
+			<DD> <A HREF="#- matrix:styleForCell:">- matrix:styleForCell:</A></DD>
+		
+			<DD> <A HREF="#- matrix:setObjectValue:forCell:">- matrix:setObjectValue:forCell:</A></DD>
+		
+			<DD> <A HREF="#- matrix:sizeForCell:">- matrix:sizeForCell:</A></DD>
+		
+			<DD> <A HREF="#- matrix:setSize:forCell:">- matrix:setSize:forCell:</A></DD>
+		
+			<DD> <A HREF="#- matrix:selectCell:">- matrix:selectCell:</A></DD>
+		
+			<DD> <A HREF="#- matrix:selectFromCell:toCell:">- matrix:selectFromCell:toCell:</A></DD>
+		
+			<DD> <A HREF="#- matrix:cellIsSelected:">- matrix:cellIsSelected:</A></DD>
+		
+			<DD> <A HREF="#- matrix:shouldEditCell:">- matrix:shouldEditCell:</A></DD>
+		
+			<DD> <A HREF="#- matrix:willChangeWidthOfCell:">- matrix:willChangeWidthOfCell:</A></DD>
+		
+			<DD> <A HREF="#- matrix:willChangeHeightOfCell:">- matrix:willChangeHeightOfCell:</A></DD>
+		
+			<DD> <A HREF="#- matrixShouldBecomeFirstResponder:">- matrixShouldBecomeFirstResponder:</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- matrix:cellIsSelected:"></A><H3><A NAME="//apple_ref/occ/intfm/FSMatrixDataSource/matrix:cellIsSelected:">matrix:cellIsSelected:</A></H3><P>
+		<CODE>- (BOOL)<B>matrix:</B>(FSMatrix*)<EM>mx</EM> <B>cellIsSelected:</B>(FSCell)<EM>cell</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- matrix:objectValueForCell:"></A><H3><A NAME="//apple_ref/occ/intfm/FSMatrixDataSource/matrix:objectValueForCell:">matrix:objectValueForCell:</A></H3><P>
+		<CODE>- (id)<B>matrix:</B>(FSMatrix*)<EM>mx</EM> <B>objectValueForCell:</B>(FSCell)<EM>cell</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- matrix:selectCell:"></A><H3><A NAME="//apple_ref/occ/intfm/FSMatrixDataSource/matrix:selectCell:">matrix:selectCell:</A></H3><P>
+		<CODE>- (void)<B>matrix:</B>(FSMatrix*)<EM>mx</EM> <B>selectCell:</B>(FSCell)<EM>cell</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- matrix:selectFromCell:toCell:"></A><H3><A NAME="//apple_ref/occ/intfm/FSMatrixDataSource/matrix:selectFromCell:toCell:">matrix:selectFromCell:toCell:</A></H3><P>
+		<CODE>- (void)<B>matrix:</B>(FSMatrix*)<EM>mx</EM> <B>selectFromCell:</B>(FSCell)<EM>c1</EM> <B>toCell:</B>(FSCell)<EM>c2</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- matrix:setObjectValue:forCell:"></A><H3><A NAME="//apple_ref/occ/intfm/FSMatrixDataSource/matrix:setObjectValue:forCell:">matrix:setObjectValue:forCell:</A></H3><P>
+		<CODE>- (void)<B>matrix:</B>(FSMatrix*)<EM>mx</EM> <B>setObjectValue:</B>(id)<EM>object</EM> <B>forCell:</B>(FSCell)<EM>cell</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- matrix:setSize:forCell:"></A><H3><A NAME="//apple_ref/occ/intfm/FSMatrixDataSource/matrix:setSize:forCell:">matrix:setSize:forCell:</A></H3><P>
+		<CODE>- (NSSize)<B>matrix:</B>(FSMatrix*)<EM>mx</EM> <B>setSize:</B>(NSSize)<EM>size</EM> <B>forCell:</B>(FSCell)<EM>cell</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- matrix:shouldEditCell:"></A><H3><A NAME="//apple_ref/occ/intfm/FSMatrixDataSource/matrix:shouldEditCell:">matrix:shouldEditCell:</A></H3><P>
+		<CODE>- (BOOL)<B>matrix:</B>(FSMatrix*)<EM>mx</EM> <B>shouldEditCell:</B>(FSCell)<EM>cell</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- matrix:sizeForCell:"></A><H3><A NAME="//apple_ref/occ/intfm/FSMatrixDataSource/matrix:sizeForCell:">matrix:sizeForCell:</A></H3><P>
+		<CODE>- (NSSize)<B>matrix:</B>(FSMatrix*)<EM>mx</EM> <B>sizeForCell:</B>(FSCell)<EM>cell</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- matrix:styleForCell:"></A><H3><A NAME="//apple_ref/occ/intfm/FSMatrixDataSource/matrix:styleForCell:">matrix:styleForCell:</A></H3><P>
+		<CODE>- (FSCellStyle*)<B>matrix:</B>(FSMatrix*)<EM>mx</EM> <B>styleForCell:</B>(FSCell)<EM>cell</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- matrix:willChangeHeightOfCell:"></A><H3><A NAME="//apple_ref/occ/intfm/FSMatrixDataSource/matrix:willChangeHeightOfCell:">matrix:willChangeHeightOfCell:</A></H3><P>
+		<CODE>- (void)<B>matrix:</B>(FSMatrix*)<EM>mx</EM> <B>willChangeHeightOfCell:</B>(FSCell)<EM>cell</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- matrix:willChangeWidthOfCell:"></A><H3><A NAME="//apple_ref/occ/intfm/FSMatrixDataSource/matrix:willChangeWidthOfCell:">matrix:willChangeWidthOfCell:</A></H3><P>
+		<CODE>- (void)<B>matrix:</B>(FSMatrix*)<EM>mx</EM> <B>willChangeWidthOfCell:</B>(FSCell)<EM>cell</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- matrixShouldBecomeFirstResponder:"></A><H3><A NAME="//apple_ref/occ/intfm/FSMatrixDataSource/matrixShouldBecomeFirstResponder:">matrixShouldBecomeFirstResponder:</A></H3><P>
+		<CODE>- (BOOL)<B>matrixShouldBecomeFirstResponder:</B>(FSMatrix*)<EM>mx</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- numberOfColumnsInMatrix:"></A><H3><A NAME="//apple_ref/occ/intfm/FSMatrixDataSource/numberOfColumnsInMatrix:">numberOfColumnsInMatrix:</A></H3><P>
+		<CODE>- (int)<B>numberOfColumnsInMatrix:</B>(FSMatrix*)<EM>mx</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- numberOfRowsInMatrix:"></A><H3><A NAME="//apple_ref/occ/intfm/FSMatrixDataSource/numberOfRowsInMatrix:">numberOfRowsInMatrix:</A></H3><P>
+		<CODE>- (int)<B>numberOfRowsInMatrix:</B>(FSMatrix*)<EM>mx</EM>
+			
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2002 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

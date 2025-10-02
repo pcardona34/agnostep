@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+	<key>Classes</key>
+	<dict>
+		<key>FSValue</key>
+		<dict>
+			<key>Description</key>
+			<string>A value.</string>
+			<key>Name</key>
+			<string>value</string>
+			<key>PluralName</key>
+			<string>values</string>
+			<key>Attributes</key>
+			<dict>
+				<key>value</key>
+				<dict>
+					<key>Description</key>
+					<string>The value</string>
+					<key>Name</key>
+					<string>value</string>
+				</dict>
+				<key>table</key>
+				<dict>
+					<key>Description</key>
+					<string>The item's table</string>
+					<key>Name</key>
+					<string>table</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>FSKeySet</key>
+		<dict>
+			<key>Description</key>
+			<string>A value specifier.</string>
+			<key>Name</key>
+			<string>key set</string>
+			<key>PluralName</key>
+			<string>key sets</string>
+			<key>Attributes</key>
+			<dict>
+				<key>theValue</key>
+				<dict>
+					<key>Description</key>
+					<string>The value for this key set.</string>
+					<key>Name</key>
+					<string>objectval</string>
+				</dict>
+				<key>table</key>
+				<dict>
+					<key>Description</key>
+					<string>The item's table</string>
+					<key>Name</key>
+					<string>table</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>FSKey</key>
+		<dict>
+			<key>Description</key>
+			<string>A key.</string>
+			<key>Name</key>
+			<string>item</string>
+			<key>PluralName</key>
+			<string>items</string>
+			<key>Attributes</key>
+			<dict>
+				<key>label</key>
+				<dict>
+					<key>Description</key>
+					<string>The label</string>
+					<key>Name</key>
+					<string>label</string>
+				</dict>
+				<key>header</key>
+				<dict>
+					<key>Description</key>
+					<string>The item's category</string>
+					<key>Name</key>
+					<string>category</string>
+				</dict>
+				<key>group</key>
+				<dict>
+					<key>Description</key>
+					<string>The item's category</string>
+					<key>Name</key>
+					<string>group</string>
+				</dict>
+				<key>table</key>
+				<dict>
+					<key>Description</key>
+					<string>The item's table</string>
+					<key>Name</key>
+					<string>table</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>FSKeyGroup</key>
+		<dict>
+			<key>Description</key>
+			<string>A group.</string>
+			<key>Name</key>
+			<string>group</string>
+			<key>PluralName</key>
+			<string>groups</string>
+			<key>Attributes</key>
+			<dict>
+				<key>label</key>
+				<dict>
+					<key>Description</key>
+					<string>The label</string>
+					<key>Name</key>
+					<string>label</string>
+				</dict>
+				<key>table</key>
+				<dict>
+					<key>Description</key>
+					<string>The category's table</string>
+					<key>Name</key>
+					<string>table</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>FSHeader</key>
+		<dict>
+			<key>Description</key>
+			<string>A category.</string>
+			<key>Name</key>
+			<string>category</string>
+			<key>PluralName</key>
+			<string>categories</string>
+		</dict>
+		<key>FSWorksheet</key>
+		<dict>
+			<key>Description</key>
+			<string>A Worksheet.</string>
+			<key>Name</key>
+			<string>worksheet</string>
+			<key>PluralName</key>
+			<string>worksheets</string>
+			<key>Attributes</key>
+			<dict>
+				<key>label</key>
+				<dict>
+					<key>Description</key>
+					<string>The worksheet's name</string>
+					<key>Name</key>
+					<string>label</string>
+				</dict>
+				<key>table</key>
+				<dict>
+					<key>Description</key>
+					<string>The worksheet's table</string>
+					<key>Name</key>
+					<string>table</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>FSTable</key>
+		<dict>
+			<key>Description</key>
+			<string>A data table.</string>
+			<key>Name</key>
+			<string>table</string>
+			<key>PluralName</key>
+			<string>tables</string>
+			<key>Attributes</key>
+			<dict>
+				<key>label</key>
+				<dict>
+					<key>Description</key>
+					<string>The table's name</string>
+					<key>Name</key>
+					<string>label</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>FSDocument</key>
+		<dict>
+			<key>Description</key>
+			<string>A FlexiSheet model</string>
+			<key>Name</key>
+			<string>model</string>
+			<key>PluralName</key>
+			<string>models</string>
+		</dict>
+		<key>NSApplication</key>
+		<dict>
+			<key>Description</key>
+			<string>FlexiSheet's top level scripting object</string>
+			<key>Name</key>
+			<string>application</string>
+			<key>PluralName</key>
+			<string>applications</string>
+		</dict>
+	</dict>
+	<key>Commands</key>
+	<dict>
+		<key>SetValue</key>
+		<dict>
+			<key>Description</key>
+			<string>This command sets a value.</string>
+			<key>Arguments</key>
+			<dict>
+				<key>Value</key>
+				<dict>
+					<key>Description</key>
+					<string>the value</string>
+					<key>Name</key>
+					<string>value</string>
+				</dict>
+			</dict>
+			<key>IsVerb</key>
+			<string>YES</string>
+			<key>Name</key>
+			<string>set</string>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>FlexiSheet specific classes.</string>
+	<key>Name</key>
+	<string>FlexiSheet suite</string>
+</dict>
+</plist>

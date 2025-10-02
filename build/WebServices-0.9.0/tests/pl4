@@ -1,0 +1,7 @@
+{
+  "view:getDevice" = {
+    misisdn = "447799999999";
+    GWSSOAPNamespaceNameKey = view;
+    GWSSOAPNamespaceURIKey = "http://some.company.co.uk/device/viewdevicedata";
+  };
+}

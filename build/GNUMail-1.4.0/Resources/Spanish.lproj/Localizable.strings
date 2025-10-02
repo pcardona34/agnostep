@@ -1,0 +1,864 @@
+/* Traducci\U00F3n: Quique - http://sindominio.net/quique */
+
+/** Clock.m */
+
+/** ClockController.m */
+
+/** ComposeView.m */
+"When replying to an E-Mail, add the signature to the" = "Al responder un mensaje de correo, poner la firma al";
+"beginning" = "principio";
+"end" = "final";
+"of the message." = "del mensaje.";
+"When forwarding an E-Mail, add the signature to the" = "Al reenviar un correo, poner la firma al";
+"Wrap lines at" = "Cortar las l\U00EDneas a";
+"characters when sending plain/text messages." = "caracteres cuando se env\U00EDan mensajes de texto/plano.";
+"Default charset used when sending a message:" = "Juego de caracteres a usar por defecto al enviar mensajes:";
+"Automatic" = "Autom\U00E1tico";
+
+/** ComposeViewController.m */
+"Compose" = "Redactar";
+/* "Automatic" =  "Automatic"; */
+
+/** ExtendedFilteringTableView.m */
+
+/** ExtendedTableColumn.m */
+
+/** FilterEditorWindow.m */
+"Description:" = "Descripci\U00F3n:";
+"Active" = "Activo";
+"Filter type:" = "Tipo de filtro:";
+"Incoming" = "Entrantes";
+"Outgoing" = "Salientes";
+"External Program" = "Programa externo";
+"Process with external program:" = "Procesar con un programa externo:";
+"and apply criteria(s)" = "y aplicar criterio(s)";
+"after" = "despu\U00E9s";
+"before" = "antes";
+"program execution." = "de ejecutar el programa.";
+"Criteria" = "Criterios";
+"To" = "Para";
+"Cc" = "Cc";
+"To or Cc" = "Para o Cc";
+"Subject" = "Asunto";
+"From" = "De";
+"Expert..." = "Experto...";
+"Contains" = "Contiene";
+"Is Equal" = "Es igual";
+"Has Prefix" = "Tiene el prefijo";
+"Has Suffix" = "Tiene el sufijo";
+"Match Expression" = "Encuentra la expresi\U00F3n";
+"and" = "y";
+"or" = "o";
+"(none)" = "(ninguno)";
+"Action" = "Acci\U00F3n";
+"Set the color to:" = "Poner de color:";
+"Transfer to mailbox:" = "Transferir al buz\U00F3n:";
+"Do..." = "Hacer...";
+"Delete the message" = "Borrar el mensaje";
+"Blue" = "Azul";
+"Brown" = "Marr\U00F3n";
+"Cyan" = "Azul celeste";
+"Dark Gray" = "Gris oscuro";
+"Green" = "Verde";
+"Magenta" = "Fucsia";
+"Orange" = "Naranja";
+"Purple" = "Morado";
+"Red" = "Rojo";
+"White" = "Blanco";
+"Yellow" = "Amarillo";
+"Bounce to:" = "Redirigir a:";
+"Forward to:" = "Reenviar a:";
+"Reply to:" = "Responder a:";
+"Set message" = "Fijar mensaje";
+"Cancel" = "Cancelar";
+"OK" = "Aceptar";
+
+/** FilterEditorWindowController.m */
+"Add a filter" = "A\U00F1adir un filtro";
+"Error!" = "\U00A1Error!";
+"The selected target folder (%@) holds folders, not messages." = "La carpeta de destino seleccionada (%@) contiene carpetas, no mensajes).";
+/* "OK" =  "Aceptar"; */
+"Warning!" = "\U00A1Adevertencia!";
+"Defining a Coloring filter that uses an external program is a BAD idea.\nThis will slow down drastically the application." = "Definir un filtro de coloreado que usa un programa externo es una MALA idea.\nEsto ralentizar\U00E1 dr\U00E1sticamente la aplicaci\U00F3n.";
+/* "To" =  "Para"; */
+/* "Cc" =  "Cc"; */
+/* "To or Cc" =  "Para o Cc"; */
+/* "From" =  "De"; */
+"Is in Address Book" = "Est\U00E1 en la Libreta de direcciones";
+
+/** FilterHeaderEditorWindow.m */
+"Header" = "Cabecera";
+"Header:" = "Cabecera:";
+"Remove" = "Eliminar";
+"Add" = "A\U00F1adir";
+/* "Cancel" =  "Cancelar"; */
+/* "OK" =  "Aceptar"; */
+
+/** FilterHeaderEditorWindowController.m */
+"Add a header" = "A\U00F1adir una cabecera";
+
+/** FilterMessageWindow.m */
+"Text to include before original message:" = "Texto a incluir antes del mensaje original:";
+/* "Cancel" =  "Cancelar"; */
+/* "OK" =  "Aceptar"; */
+
+/** FilterMessageWindowController.m */
+
+/** FilteringView.m */
+"Rules" = "Reglas";
+/* "Active" =  "Activo"; */
+"Add..." = "A\U00F1adir...";
+"Delete" = "Borrar";
+"Edit..." = "Editar...";
+"Duplicate" = "Duplicar";
+
+/** FilteringViewController.m */
+"Yes" = "S\U00ED";
+"No" = "No";
+"Delete..." = "Borrar...";
+"Are you sure you want to delete this filter?" = "\U00BFEst\U00E1 seguro de que quiere borrar este filtro?";
+/* "Cancel" =  "Cancelar"; */
+"Edit a filter" = "Editar un filtro";
+"Filtering" = "Filtrando";
+
+/** FontsView.m */
+"Font used when displaying a message for:" = "Tipo de letra a usar al mostrar un mensaje para:";
+"Header name:" = "Nombre de la cabecera:";
+"Size:" = "Tama\U00F1o:";
+"Header value:" = "Valor de la cabecera:";
+"Content of message:" = "Contenido del mensaje:";
+"Use fixed-width font for plain text messages" = "Usa un tipo de letra monoespaciada para los mensajes de texto puro";
+"Plain text font:" = "Tipo de letra para el texto puro:";
+
+/** FontsViewController.m */
+"Fonts" = "Tipos de letra";
+
+/** MIMEView.m */
+"Mime-Type" = "Tipo-Mime";
+"File extension(s)" = "Extensi\U00F3n(es) de ficheros";
+/* "Add..." =  "\U00F1adir..."; */
+/* "Delete" =  "Borrar"; */
+/* "Edit..." =  "Editar..."; */
+"Import from mailcap" = "Importar de mailcap";
+
+/** MIMEViewController.m */
+/* "Delete..." =  "Borrar..."; */
+"Are you sure you want to delete this Mime-Type entry?" = "\U00BFEst\U00E1 seguro de que quiere borrar este Tipo-Mime?";
+/* "Cancel" =  "Cancelar"; */
+/* "Yes" =  "S\U00ED"; */
+"MIME" = "MIME";
+
+/** MailcapParser.m */
+
+/** MailcapWindow.m */
+/* "Mime-Type" =  "Tipo-Mime"; */
+"Command" = "Orden";
+/* "Cancel" =  "Cancelar"; */
+"Import" = "Importar";
+
+/** MailcapWindowController.m */
+"Import from mailcap file" = "Importar de un archivo mailcap";
+"Mailcap Import Error!" = "\U00A1Error al importar de mailcap!";
+"You must select at least one mailcap item to import!" = "\U00A1Debe seleccionar al menos un elemento de mailcap que importar!";
+/* "OK" =  "Aceptar"; */
+
+/** MimeTypeEditorWindow.m */
+"Mime-Type (ex: image/jpeg):" = "Tipo-Mime (ej: image/jpeg):";
+"File extensions (ex: jpeg,jpg,jpe):" = "Extensiones de ficheros (ej: jpeg,jpg,jpe):";
+/* "Description:" =  "Descripci\U00F3n:"; */
+"View:" = "Ver:";
+"Display if possible (as icon if it is not possible)" = "Mostrar si es posible (como icono si no es posible)";
+"Always display as icon" = "Mostrar siempre como icono";
+"Action:" = "Acci\U00F3n:";
+"Prompt save panel" = "Abrir el panel de guardar";
+"Open with external program:" = "Abrir con un programa externo:";
+"Choose" = "Escoger";
+"Needs a terminal for the external program" = "Necesita una terminal para el programa externo";
+"Please choose an icon to represent this Mime-Type (tiff file only):" = "Por favor, escoja un icono para representar este Tipo-MIME (s\U00F3lo ficheros tiff):";
+/* "Cancel" =  "Cancelar"; */
+/* "OK" =  "Aceptar"; */
+
+/** MimeTypeEditorWindowController.m */
+"Add a Mime-Type" = "A\U00F1adir un Tipo-MIME";
+"Edit a Mime-Type" = "Editar un Tipo-MIME";
+
+/** MailboxesView.m */
+"Default mailbox used for:" = "Buz\U00F3n por defecto a usar para:";
+"Inbox:" = "Entrada:";
+"Outbox:" = "Salida:";
+"Drafts:" = "Borradores:";
+"Trash:" = "Basura:";
+"(If you don't see all your IMAP mailboxes, first open the connection to this IMAP server.)" = "(Si no ve todos sus buzones IMAP, abra antes la conexi\U00F3n a este servidor IMAP.)";
+"Compact mailbox when closing (not recommended)" = "Compactar buz\U00F3n al cerrar (no recomendado)";
+"Reuse the mail window when selecting a folder" = "Reusar la ventana de correo al seleccionar una carpeta";
+
+/** MailboxesViewController.m */
+"Mailboxes" = "Buzones";
+
+/** PGPController.m */
+"Encrypt" = "Cifrar";
+"Sign" = "Firmar";
+"\nThe supplied passphrase was wrong or not given" = "\nLa frase de paso era incorrecta o no se ha proporcionado";
+"\nWrong passphrase (or something else)" = "\nFrase de paso incorrecta (o alguna otra cosa)";
+"\nYour key is expired. You must generate a new one\nbefore trying to send again any signed or encrypted messages." = "\nSu clave ha expirado. Debe generar una nueva\nantes de intentar enviar de nuevo alg\U00FAn mensaje firmado o cifrado.";
+"Decryption failed due the following reason(s):\n" = "El descifrado ha fallado debido a la(s) siguiente(s) raz\U00F3n(es):\n";
+/* "Error!" =  "\U00A1Error!"; */
+/* "OK" =  "Aceptar"; */
+"Encryption failed due the following reason(s):\n" = "El cifrado ha fallado debido a la(s) siguiente(s) raz\U00F3n(es):\n";
+"Passphrase for %@" = "Frase de paso para %@";
+
+/** PGPView.m */
+"GPG/PGP executable path:" = "ruta del ejecutable GPG/PG:";
+"User E-Mail address:" = "Direcci\U00F3n de correo electr\U00F3nico del usuario:";
+"Use FROM E-Mail address for signing" = "Usar la direcci\U00F3n de correo electr\U00F3nico del campo DE para firmar";
+
+/** PGPViewController.m */
+"Version: %@" = "Versi\U00F3n: %@";
+"PGP" = "PGP";
+
+/** NewPersonalProfilePanel.m */
+"Please enter the name of the new profile:" = "Por favor, introduzca el nombre del nuevo perfil:";
+/* "Cancel" =  "Cancelar"; */
+/* "OK" =  "Aceptar"; */
+
+/** NewPersonalProfilePanelController.m */
+"New Personal Profile" = "Nuevo perfil personal";
+
+/** PersonalView.m */
+"Available personal profiles:" = "Perfiles personales disponibles:";
+/* "Add" =  "A\U00F1adir"; */
+/* "Delete" =  "Borrar"; */
+"Account name:" = "Cuenta:";
+"Set this profile as default" = "Establecer este perfil como predeterminado";
+"Your name:" = "Nombre:";
+"Your E-Mail address:" = "Direcci\U00F3n de correo electr\U00F3nico:";
+"Reply-To address:" = "Responder a:";
+"Organization:" = "Organizaci\U00F3n:";
+"Signature" = "Firma";
+"Obtain signature from:" = "Obtener la firma de:";
+"File location:" = "Archivo:";
+"content of file" = "contenido de fichero";
+"program's output" = "salida de programa";
+/* "Choose" =  "Escoger"; */
+
+/** PersonalViewController.m */
+/* "Error!" =  "\U00A1Error!"; */
+"This profile name already exists. Please choose another name." = "Este nombre de perfil ya existe. Por favor, elija otro.";
+/* "OK" =  "Aceptar"; */
+"You must have at least one defined personal profile at any time." = "Debe tener al menos un perfil personal definido en cualquier momento.";
+/* "Delete..." =  "Borrar..."; */
+"Are you sure you want to delete the %@ personal profile?" = "\U00BFEst\U00E1 seguro de que quiere borrar el perfil personal %@?";
+/* "Cancel" =  "Cancelar"; */
+/* "Yes" =  "S\U00ED"; */
+"Personal" = "Personal";
+
+/** IMAPView.m */
+"Check for mail every" = "Bajar mensajes cada";
+"minutes" = "minutos";
+"Folders" = "Carpetas";
+"Subscribed" = "Suscritas";
+"List" = "Lista";
+"Subscribe" = "Suscribir";
+"Unsubscribe" = "Cancelar suscripci\U00F3n";
+
+/** IMAPViewController.m */
+"All Folders" = "Todas las carpetas";
+"Y" = "S";
+/* "Error!" =  "\U00A1Error!"; */
+"Authentication error with the IMAP server." = "Error de autenticaci\U00F3n con el servidor IMAP.";
+/* "OK" =  "Aceptar"; */
+"An error occured while listing the folders on this IMAP server." = "Se ha producido un error mientras se listaban las carpetas en este servidor IMAP.";
+"You are already subscribed to this IMAP folder." = "Ya est\U00E1 suscrito a esta carpeta IMAP.";
+"You cannot subscribe to this folder." = "No puede suscribirse a esta carpeta.";
+"An error occured while subscribing to folder:\n%@." = "Se ha producido un error mientras se le suscrib\U00EDa a la carpeta:\n%@.";
+"You are already unsubscribed from this IMAP folder." = "Ya ha cancelado su suscripci\U00F3n a esta carpeta IMAP.";
+"An error occured while unsubscribing to folder:\n%@." = "Se ha producido un error mientras se cancelaba su suscripci\U00F3n a la carpeta:\n%@.";
+
+/** POP3View.m */
+"Leave messages on server for" = "Dejar los mensajes en el servidor durante";
+"days" = "d\U00EDas";
+"Use APOP (if possible)" = "Usar APOP (si es posible)";
+"Download messages from this server into mailbox:" = "Descargar los mensajes de este servidor en el buz\U00F3n:";
+"(If you don't see all your IMAP mailboxes, first open the connection\nto this IMAP server.)" = "(Si no ve todos sus buzones IMAP, abra antes la conexi\U00F3n\na este servidor IMAP.)";
+
+/** POP3ViewController.m */
+
+/** ReceivingView.m */
+"Retrieve mail (for POP3 accounts and local mail spool file)" = "Descargar el correo (de las cuentas POP3 y el fichero de cola de correo local)";
+"Manually" = "Manualmente";
+"Automatically every" = "Autom\U00E1ticamente cada";
+/* "minutes" =  "minutos"; */
+"Incoming mail servers" = "Servidores de correo entrante";
+"Incoming Servers" = "Servidores de recepci\U00F3n";
+/* "Add" =  "A\U00F1adir"; */
+"Edit" = "Editar";
+/* "Delete" =  "Borrar"; */
+"Show alert panel for received and transferred messages" = "Mostrar panel de alerta para mensajes recibidos y transferidos";
+"Show No New Messages panel" = "MOstrar el panel de No hay mensajes nuevos";
+
+/** ReceivingViewController.m */
+"POP3" = "POP3";
+"IMAP" = "IMAP";
+"%@ [UNIX]" = "%@ [UNIX]";
+/* "Error!" =  "\U00A1Error!"; */
+"To edit this account, you must first close the connection with the server." = "Para editar esta cuenta, antes debe cerrar la conexi\U00F3n con el servidor.";
+/* "OK" =  "Aceptar"; */
+"To delete this account, you must first close the connection with the server." = "Para borrar esta cuenta, antes debe cerrar la conexi\U00F3n con el servidor.";
+/* "Delete..." =  "Borrar..."; */
+"Are you sure you want to delete this receiving server entry?" = "\U00BFEst\U00E1 seguro de que que quiere borrar la entrada de este servidor de recepci\U00F3n?";
+/* "Cancel" =  "Cancelar"; */
+/* "Yes" =  "S\U00ED"; */
+"Receiving" = "Recepci\U00F3n";
+
+/** ReceivingWindow.m */
+"Server type:" = "Tipo:";
+/* "POP3" =  "POP3"; */
+/* "IMAP" =  "IMAP"; */
+"UNIX" = "UNIX";
+"Server name:" = "Servidor:";
+"Port:" = "Puerto:";
+"Username:" = "Usuario:";
+"Password:" = "Contrase\U00F1a:";
+"Remember password" = "Recordar la contrase\U00F1a";
+"Verify for new mail on startup" = "Comprobar si hay correo nuevo al arrancar";
+"Use secure connection (SSL)" = "Usar conexi\U00F3n segura (SSL)";
+"General" = "General";
+/* "Cancel" =  "Cancelar"; */
+/* "OK" =  "Aceptar"; */
+
+/** ReceivingWindowController.m */
+"Receiving preferences" = "Preferencias de recepci\U00F3n";
+/* "IMAP" =  "IMAP"; */
+/* "POP3" =  "POP3"; */
+/* "UNIX" =  "UNIX"; */
+
+/** UNIXView.m */
+"Mail spool file:" = "Fichero de cola de correo:";
+/* "Choose" =  "Escoger"; */
+"Download messages from this spool file into mailbox:" = "Descargar los mensajes de esta fichero de cola en el buz\U00F3n:";
+/* "(If you don't see all your IMAP mailboxes, first open the connection\nto this IMAP server.)" =  "(Si no ve todos sus buzones IMAP, abra antes la conexi\U00F3n\na este servidor IMAP.)"; */
+
+/** UNIXViewController.m */
+
+/** SendingView.m */
+"Delivery methods" = "M\U00E9todos de entrega";
+"Method" = "M\U00E9todo";
+"Value" = "Valor";
+/* "Add" =  "A\U00F1adir"; */
+/* "Edit" =  "Editar"; */
+/* "Remove" =  "Eliminar"; */
+"Additional Outgoing Headers" = "Cabeceras adicionales de salida";
+"Key" = "Clave";
+"Key:" = "Clave:";
+"Value:" = "Valor:";
+
+/** SendingViewController.m */
+"SMTP" = "SMTP";
+"Mailer" = "Mailer";
+/* "Delete..." =  "Borrar..."; */
+"Are you sure you want to delete this transport method?" = "\U00BFEst\U00E1 seguro de que quiere borrar este m\U00E9todo de transporte?";
+/* "Cancel" =  "Cancelar"; */
+/* "Yes" =  "S\U00ED"; */
+"Sending" = "Env\U00EDo";
+
+/** TransportMethodEditorWindow.m */
+"Transport method:" = "M\U00E9todo:";
+/* "Mailer" =  "Mailer"; */
+/* "SMTP" =  "SMTP"; */
+"Mailer:" = "Mailer:";
+"Host:" = "Host:";
+/* "Port:" =  "Puerto:"; */
+"Authenticate using" = "Autenticar usando";
+"Most secure" = "El m\U00E1s seguro";
+"Supported mechanisms" = "Mecanismos admitidos";
+/* "Username:" =  "Nombre de usuario:"; */
+/* "Password:" =  "Contrase\U00F1a:"; */
+/* "Remember password" =  "Recordar la contrase\U00F1a"; */
+"Associated personal profile:" = "Perfil personal asociado:";
+/* "Cancel" =  "Cancelar"; */
+/* "OK" =  "Aceptar"; */
+
+/** TransportMethodEditorWindowController.m */
+"Add a transport method" = "A\U00F1adir m\U00E9todo de trasporte";
+"Edit a transport method" = "Editar m\U00E9todo de trasporte";
+
+/** ViewingView.m */
+"Messages" = "Mensajes";
+"Hide deleted messages on startup" = "Ocultar los mensajes borrados al arrancar";
+"Hide read messages on startup" = "Ocultar los mensajes le\U00EDdos al arrancar";
+"Highlight URLs in message content" = "Resaltar los URL en el contenido del mensaje";
+"Table columns" = "Columnas de tabla";
+"Status" = "Estado";
+"Id" = "Identificaci\U00F3n";
+"Date" = "Fecha";
+/* "From" =  "De"; */
+/* "Subject" =  "Asunto"; */
+"Size" = "Tama\U00F1o";
+"Shown headers while viewing a mail" = "Cabeceras a mostrar al ver el correo";
+"Show all headers" = "Mostrar todas las cabeceras";
+/* "Remove" =  "Eliminar"; */
+/* "Add" =  "A\U00F1adir"; */
+"Defaults" = "Predeterminados";
+/* "Key:" =  "Clave:"; */
+"Shown Headers" = "Mostrar cabeceras";
+"Double-clicking in message list:" = "Hacer doble-click en la lista de mensajes:";
+"Opens reply editor" = "Abre el editor de respuestas";
+"Opens message in new window" = "Abre el mensaje en una ventana nueva";
+
+/** ViewingViewController.m */
+"Viewing" = "Ver";
+
+/** Address.m */
+
+/** AddressBook.m */
+/* "General" =  "General"; */
+
+/** AddressBookController.m */
+"Address Book" = "Libreta de direcciones";
+"Add Group" = "A\U00F1adir grupo";
+"Delete Group" = "Borrar grupo";
+/* "General" =  "General"; */
+/* "Error!" =  "\U00A1Error!"; */
+"This group already exist! Please choose an other name." = "\U00A1Este grupo ya existe! Por favor, escoja otro nombre.";
+/* "OK" =  "Aceptar"; */
+/* "Delete..." =  "Borrar..."; */
+"Are you sure you want to delete this address?" = "\U00BFEst\U00E1 seguro de que quiere borrar esta direcci\U00F3n?";
+/* "No" =  "No"; */
+/* "Yes" =  "S\U00ED"; */
+"Are you sure you want to delete this group?" = "\U00BFEst\U00E1 seguro de que quiere borrar este grupo?";
+"You must select a group to import the addresses in." = "Debe seleccionar un grupo al que importar las direcciones.";
+"< no address >" = "< sin direcci\U00F3n >";
+"Add Address" = "A\U00F1adir direcci\U00F3n";
+"Delete Address" = "Borrar direcci\U00F3n";
+"Enter the contact's E-Mail address here" = "Introduzca la direcci\U00F3n de correo electr\U00F3nico del contacto aqu\U00ED";
+"Groups" = "Grupos";
+"Move to:" = "Mover a:";
+
+/** AddressBookWindow.m */
+/* "Groups" =  "Grupos"; */
+"Name:" = "Nombre:";
+"Modify" = "Modificar";
+"Import from:" = "Importar de:";
+"OPENSTEP Mail.app" = "OPENSTEP Mail.app";
+"LDIF" = "LDIF";
+"Close" = "Cerrar";
+
+/** BounceWindow.m */
+"Send" = "Enviar";
+"Addresses" = "Direcciones";
+"From:" = "De:";
+"Using:" = "Usando:";
+"To:" = "Para:";
+"Cc:" = "Cc:";
+"Bcc:" = "Bcc:";
+
+/** BounceWindowController.m */
+"Bounce a message" = "Redirigir un mensaje";
+/* "Error!" =  "\U00A1Error!"; */
+"Unable to create a valid bounced message.\nPlease, report this as a bug." = "No se ha podido crear un mensaje redirigido v\U00E1lido.\nPor favor, informe de este error..";
+/* "OK" =  "Aceptar"; */
+"Please, verify that the To/Cc/Bcc fields are correct. Also, you MUST have at least one\nvalid E-Mail address in the To field." = "Por favor, verifique que los campos Para/Cc/Bcc sean correctos, \nas\U00ED como que haya al menos una direcci\U00F3n de correo electr\U00F3nico v\U00E1lida en al campo \"Para\".";
+"Stop" = "Detener";
+"Starting the thread for bouncing the E-Mail..." = "Comenzando el hilo para redirigir el correo electr\U00F3nico...";
+"Closing..." = "Cerrando...";
+"A mail is currently being sent. Please wait." = "Se est\U00E1 enviando un correo en este momento. Por favor, espere.";
+"An error occured during the authentication with the SMTP server (%@)." = "Se ha producido un error durante la autenticaci\U00F3n con el servidor SMTP (%@).";
+"An error occured while sending the E-Mail. It might be a network\nproblem or an error in your sending preferences." = "Se ha producido un error al enviar el correo electr\U00F3nico. \n Puede ser un problema de red o un error en sus preferencias de env\U00EDo.";
+/* "Send" =  "Enviar"; */
+"Manual stop of bouncing thread." = "Detenci\U00F3n manual del hilo de redirecci\U00F3n.";
+"Exiting the thread used to bounce the E-Mail..." = "Saliendo del hilo usado para redirigir el correo electr\U00F3nico...";
+
+/** BounceWindowToolbar.m */
+
+/** ConsoleWindow.m */
+/* "Date" =  "Fecha"; */
+"Message" = "Mensaje";
+
+/** ConsoleWindowController.m */
+/* "Date" =  "Fecha"; */
+"%H:%M:%S.%F" = "%H:%M:%S.%F";
+
+/** EditWindow.m */
+/* "Send" =  "Enviar"; */
+"Attach" = "Adjuntar";
+"Add Cc" = "A\U00F1adir Cc";
+"Add Bcc" = "A\U00F1adir Bcc";
+/* "Addresses" =  "Direcciones"; */
+/* "From:" =  "De:"; */
+/* "Using:" =  "Usando:"; */
+"Charset:" = "Juego de caracteres:";
+/* "Automatic" =  "Autom\U00E1tico"; */
+/* "To:" =  "Para:"; */
+/* "Cc:" =  "Cc:"; */
+/* "Bcc:" =  "Bcc:"; */
+"Subject:" = "Asunto:";
+
+/** EditWindowController.m */
+/* "Error!" =  "\U00A1Error!"; */
+"You must have at least one transport agent defined.\nSee Preferences -> Sending." = "Debe tener al menos un agente de transporte definido en sus preferencias. \nVea Preferencias -> Env\U00EDo";
+/* "OK" =  "Aceptar"; */
+/* "Stop" =  "Detener"; */
+"Starting the thread for sending the E-Mail..." = "Empezando el hilo para enviar el correo electr\U00F3nico...";
+"(no subject)" = "(sin asunto)";
+/* "Closing..." =  "Cerrando..."; */
+/* "A mail is currently being sent. Please wait." =  "Se est\U00E1 enviando un correo en este momento. Por favor, espere."; */
+"Would you like to save this message in the Drafts folder?" = "\U00BFDesea guardar este mensaje en la carpeta de Borradores?";
+/* "Cancel" =  "Cancelar"; */
+/* "Yes" =  "S\U00ED"; */
+/* "No" =  "No"; */
+"An error occured while attempting to obtain the message store for the Drafts folder." = "Se ha producido un error mientrar se intentaba almacenar el mensaje en la carpeta de Borradores.";
+"Remove Cc" = "Quitar Cc";
+/* "Add Cc" =  "A\U00F1adir Cc"; */
+"Remove Bcc" = "Quitar Bcc";
+/* "Add Bcc" =  "A\U00F1adir Bcc"; */
+/* "An error occured during the authentication with the SMTP server (%@)." =  "Se ha producido un error durante la autenticaci\U00F3n con el servidor SMTP (%@)."; */
+/* "An error occured while sending the E-Mail. It might be a network\nproblem or an error in your sending preferences." =  "Se ha producido un error al enviar el correo electr\U00F3nico. \n Puede ser un problema de red o un error en sus preferencias de env\U00EDo."; */
+/* "Send" =  "Enviar"; */
+"An error occured while attempting to obtain the message store for the Outbox folder.\nThe message nonetheless successfully sent." = "Se ha producido un error mientras se intentaba almacenar el mensaje en la carpeta de Salida.\nNo obstante el mensaje se ha enviado con \U00E9xito.";
+"You must define a recipient in the field \"To\"." = "Debe definir un destinatario en el campo \"Para\".";
+/* "Automatic" =  "Autom\U00E1tico"; */
+"Manual stop of sending thread." = "Detenci\U00F3n manual del hilo de env\U00EDo.";
+"Exiting the thread used to send the E-Mail..." = "Saliendo del hio usando para enviar el corro electr\U00F3nico...";
+"An error occured while decoding %@. Please fix this address." = "Se ha producido un error mientras se decodificaba %@. Por favor, compruebe esta direcci\U00F3n.";
+"%0.1fKB (%d characters)" = "%0.1fKB (%d caracteres)";
+
+/** EditWindowToolbar.m */
+
+/** ExtendedAttachmentCell.m */
+"%@ (%d bytes)" = "%@ (%d bytes)";
+"%@ (%d KB)" = "%@ (%d KB)";
+
+/** ExtendedCell.m */
+
+/** ExtendedOutlineView.m */
+
+/** ExtendedTableView.m */
+
+/** ExtendedWindow.m */
+
+/** Filter.m */
+
+/** FilterManager.m */
+
+/** FindWindow.m */
+"Find:" = "Buscar:";
+"Replace with:" = "Reemplazar con:";
+"Find Scope" = "Alcance de la b\U00FAsqueda";
+"Summaries" = "Res\U00FAmenes";
+/* "Messages" =  "Mensajes"; */
+"Find Options" = "Opciones de b\U00FAsqueda";
+"Ignore Case" = "No diferenciar entre may\U00FAsculas y min\U00FAsculas";
+"Regular Expression" = "Expresi\U00F3n regular";
+"Find All" = "Encontrar todos";
+"Replace" = "Reemplazar";
+"Replace & Find" = "Buscar y reemplazar";
+"Previous" = "Anterior";
+"Next" = "Siguiente";
+
+/** FindWindowController.m */
+"Find" = "Buscar";
+"Searching..." = "Buscando...";
+"Done searching. %d results found." = "B\U00FAsqueda finalizada. Se han encontrado %d resultados.";
+
+/** FolderNode.m */
+
+/** FolderNodePopUpItem.m */
+
+/** GNUMail.m */
+/* "Error!" =  "\U00A1Error!"; */
+"An error occured while attempting to obtain the message store for target filter." = "Se ha producido un error mientras se intentaba almacena el mensaje para el filtro objetivo.";
+/* "OK" =  "Aceptar"; */
+/* "You must have at least one transport agent defined.\nSee Preferences -> Sending." =  "Debe tener al menos un agente de transporte definido en sus preferencias. \nVea Preferencias -> Env\U00EDo"; */
+"Your Software is up-to-date" = "Su programa est\U00E1 al d\U00EDa";
+"You have the most recent version of GNUMail." = "Tiene la versi\U00F3n m\U00E1s reciente de GNUMail.";
+"A New Version is Available" = "Est\U00E1 disponible una nueva versi\U00F3n";
+"A new version of GNUMail is available (version %@). Would you like to download the new version now?" = "Est\U00E1 disponible una nueva versi\U00F3n de GNUMail (versi\U00F3n %@). \U00BFLe gustar\U00EDa descargar la nueva versi\U00F3n ahora?";
+/* "Cancel" =  "Cancelar"; */
+"Feature not implemented!" = "\U00A1Funcionalidad no implementada!";
+"Sorry, this feature is only available under Mac OS X." = "Disculpe, esta funcionalidad s\U00F3lo est\U00E1 disponible sobre Mac OS X.";
+"Compact..." = "Compactar...";
+"Compacting a mailbox will permanently remove deleted messages.\nDo you want to continue?" = "Al compactar un buz\U00F3n se eliminar\U00E1n definitivamente los mensajes borrados.\n\U00BFQuiere continuar?";
+/* "No" =  "No"; */
+/* "Yes" =  "S\U00ED"; */
+"Compacting mailbox, please wait..." = "Compactando buz\U00F3n. Por favor, espere...";
+"Done compacting mailbox %@." = "El buz\U00F3n %@ ha sido compactado.";
+"New message..." = "Nuevo mensaje...";
+"Undelete" = "Recuperar borrado";
+/* "Delete" =  "Borrar"; */
+"Mark as Unread" = "Marcar como No le\U00EDdo";
+"Mark as Read" = "Marcar como Le\U00EDdo";
+"Mailbox error!" = "\U00A1Error en en buz\U00F3n!";
+"You must select a valid mailbox to open!" = "\U00A1Debe seleccionar un buzon v\U00E1lido a abrir!";
+"Local" = "Local";
+"Information" = "Informaci\U00F3n";
+"Use the same directory (%@) to save all other attachments? (override the files with the same name)." = "\U00BFUsar el mismo directorio (%@) para guardar todos los dem\U00E1s ficheros adjuntos? (ignorar los ficheros con el mismo nombre).";
+"Show Filtered Headers" = "Mostrar cabeceras filtradas";
+"Show All Headers" = "Mostrar todas las cabeceras";
+"Hide Status Bar" = "Ocultar la barra de estado";
+"Show Status Bar" = "Mostrar la barra de estado";
+"Show Normal Display" = "Mostrar la presentaci\U00F3n normal";
+"Show RAW Source" = "Mostrar la fuente completa";
+"Info" = "Informaci\U00F3n";
+"Mailbox" = "Buz\U00F3n";
+/* "Message" =  "Mensaje"; */
+/* "Compose" =  "Redactar"; */
+/* "Edit" =  "Editar"; */
+"Windows" = "Ventanas";
+"Print" = "Imprimir";
+"Services" = "Servicios";
+"Hide" = "Ocultar";
+"Quit" = "Salir";
+"Info Panel..." = "Panel de Informaci\U00F3n...";
+"Check For Updates" = "Comprobar si hay actualizaciones";
+"Preferences..." = "Preferencias...";
+"Help..." = "Ayuda...";
+"Mailboxes..." = "Buzones...";
+"Get New Mail" = "Recibir correo nuevo";
+"Sorting" = "Ordenar";
+"Sort by Date" = "Ordenar por Fecha";
+"Sort by Name" = "Ordenar por Nombre";
+"Sort by Number" = "Ordenar por N\U00FAmero";
+"Sort by Size" = "Ordenar por Tama\U00F1o";
+"Sort by Subject" = "Ordenar por Asunto";
+"Hide Deleted" = "Ocultar Borrados";
+"Hide Read" = "Ocultar Le\U00EDdos";
+"Compact" = "Compactar";
+"Select All Messages" = "Seleccionar todos los mensajes";
+"Send to Address Book" = "Enviar a la Libreta de direcciones";
+"Save Attachment" = "Guardar el documento adjunto";
+"Save Text from Message" = "Guardar el texto del mensaje";
+"Text Encodings" = "Codificaciones del texto";
+"Bounce..." = "Redirigir...";
+"Apply Manual Filters" = "Aplicar filtros manuales";
+"New" = "Nuevo";
+"Reply" = "Responder";
+"Reply All" = "Responder a todos";
+"Forward" = "Reenviar";
+"Addresses..." = "Direcciones...";
+"Drafts" = "Borradores";
+"Save in Drafts" = "Guardar en Borradores";
+"Restore Draft" = "Recuperar borrador";
+"Cut" = "Cortar";
+"Copy" = "Copiar";
+"Paste" = "Pegar";
+"Undo" = "Deshacer";
+/* "Find" =  "Buscar"; */
+"Spelling..." = "Ortograf\U00EDa...";
+"Check Spelling" = "Comprobar ortograf\U00EDa";
+"Select All" = "Seleccionar todo";
+"Find Panel..." = "Panel de b\U00FAsqueda...";
+"Find Next" = "Buscar siguiente";
+"Find Previous" = "Buscar anterior";
+"Enter Selection" = "Introducir selecci\U00F3n";
+"Console" = "Consola";
+"Arrange" = "Ordenar";
+"Miniaturize" = "Minimizar";
+/* "Close" =  "Cerrar"; */
+"Setup Printer" = "Configurar impresora";
+"Important!" = "\U00A1Importante!";
+"No configuration found for GNUMail" = "No se encontr\U00F3 la configuraci\U00F3n de GNUMail";
+"Configure" = "Configurar";
+"Loaded bundle at path %@" = "Cargado el conjunto en la ruta %@";
+"Failed to initialize bundle at path %@" = "No se ha podido inicalizar el conjunto en la ruta %@";
+"Error loading bundle at path %@" = "Error al cargar el conjunto en la ruta %@";
+"All" = "Todos";
+"Show Deleted" = "Mostrar Borrados";
+"Show Read" = "Mostrar Le\U00EDdos";
+"Default" = "Predeterminado";
+
+/** GNUMailConstants.m */
+
+/** Group.m */
+
+/** LabelWidget.m */
+
+/** LocalMailDelivery.m */
+
+/** MailHeaderCell.m */
+
+/** MailWindow.m */
+/* "Delete" =  "Borrar"; */
+"Get" = "Obtener";
+/* "Mailboxes" =  "Buzones"; */
+/* "Compose" =  "Redactar"; */
+/* "Reply" =  "Responder"; */
+/* "Forward" =  "Reenviar"; */
+/* "Addresses" =  "Direcciones"; */
+/* "Find" =  "Buscar"; */
+/* "Status" =  "Estado"; */
+/* "Id" =  "Identificaci\U00F3n"; */
+/* "Date" =  "Fecha"; */
+/* "From" =  "De"; */
+/* "Subject" =  "Asunto"; */
+/* "Size" =  "Tama\U00F1o"; */
+
+/** MailWindowController.m */
+/* "New message..." =  "Nuevo mensaje..."; */
+"Local - %@" = "Local - %@";
+"IMAP on %@ - %@" = "IMAP en %@ - %@";
+"No Messages!" = "\U00A1No hay mensajes!";
+"There are no messages in this Mailbox!" = "\U00A1No hay mensajes en este buz\U00F3n!";
+/* "OK" =  "Aceptar"; */
+"< unknown >" = "< desconocido >";
+/* "Closing..." =  "Cerrando..."; */
+"GNUMail is currently receiving E-Mails. Please wait." = "GNUMail est\U00E1 recibiendo correos en este momento. Por favor, espere.";
+"Would you like to close the connection with the IMAP server?" = "\U00BFLe gustar\U00EDa cerrar la conexi\U00F3n con el servidor IMAP?";
+/* "Cancel" =  "Cancelar"; */
+/* "Yes" =  "S\U00ED"; */
+/* "No" =  "No"; */
+"Closed local folder %@." = "Carpeta local %@ cerrada.";
+"Closed IMAP folder %@ on %@." = "Carptea IMAP %@ en %@ cerrada.";
+"Closing IMAP connection on %@." = "Cerrado la conexi\U00F3n IMAP a %@.";
+/* "Stop" =  "Detener"; */
+"Starting the fetching thread for %@.." = "Iniciando el hilo de recepci\U00F3n para %@..";
+/* "Error!" =  "\U00A1Error!"; */
+"Unable to communicate with the POP3 server (%@)." = "No se pudo establecer la comunicaci\U00F3n con el servidor POP3 (%@).";
+"Invalid password %@ @ %@." = "Contrase\U00F1a incorrecta %@ @ %@.";
+"An error occured while obtaining the IMAP Store to save the received message.\n%@" = "An error occured while obtaining the IMAP Store to save the received message.\n%@";
+"The received message was saved in your local Inbox folder." = "El mensaje recibido se ha guardado en su carpeta de Entrada local.";
+"No New Messages..." = "No hay mensajes nuevos...";
+"There are no new messages on %@ @ %@." = "No hay mensajes nuevos en %@ @ %@.";
+/* "Get" =  "Obtener"; */
+"Filtered messages..." = "Mensajes filtrados...";
+"%d messages have been transferred to the following folders:\n%@" = "%d mensajes se han transferido a las siguientes carpetas:\n%@";
+"%d messages (%dKB) - %d unread (%dKB) - %d selected (%0.1fKB) - %d deleted" = "%d mensajes (%dKB) - %d no le\U00EDdos (%dKB) - %d seleccionados (%0.1fKB) - %d borrados";
+"IMAP %@ @ %@ - %@" = "IMAP %@ @ %@ - %@";
+"No new messages on server %@" = "No hay mensajes nuevos en el servidor %@";
+"Got a %@ while estabilishing (or closing) the POP3 connection to server %@." = "Se ha recibido un %@ mientras se establec\U00EDa (o cerraba) la conexi\U00F3n POP al servidor %@.";
+"Exiting the fetching thread for %@..." = "Saliendo del hilo de recepci\U00F3n de %@...";
+"Got a %@ while transferring mails from %@." = "Se ha recibido un %@ mientras se transfer\U00EDan mensajes de %@.";
+
+/** MailWindowToolbar.m */
+
+/** MailboxManager.m */
+"Open this folder on startup" = "Abrir esta carpeta al arrrancar";
+/* "Mailbox" =  "Buz\U00F3n"; */
+/* "Size" =  "Tama\U00F1o"; */
+/* "Messages" =  "Mensajes"; */
+/* "Close" =  "Cerrar"; */
+
+/** MailboxManagerCache.m */
+
+/** MailboxManagerController.m */
+/* "Mailboxes" =  "Buzones"; */
+/* "Mailbox" =  "Buz\U00F3n"; */
+"All Mailboxes" = "Todos los buzones";
+/* "Size" =  "Tama\U00F1o"; */
+"%d KB" = "%d KB";
+/* "Messages" =  "Mensajes"; */
+"%d (%d unread)" = "%d (%d no le\U00EDdos)";
+/* "Local" =  "Local"; */
+/* "Closing..." =  "Cerrando..."; */
+"Would you like to close the connection with this IMAP server?" = "\U00BFDesea cerrar la conexi\U00F3n con este servidor IMAP";
+/* "No" =  "No"; */
+/* "Yes" =  "S\U00ED"; */
+/* "Closing IMAP connection on %@." =  "Cerrando la conexi\U00F3n IMAP a %@."; */
+"Transfer error!" = "\U00A1Error de transferencia!";
+"You cannot transfer a message inside the same mailbox!" = "\U00A1No puede transferir un mensaje dentro del mismo buz\U00F3n!";
+/* "OK" =  "Aceptar"; */
+/* "Mailbox error!" =  "\U00A1Error en en buz\U00F3n!"; */
+/* "You must select a valid mailbox to open!" =  "\U00A1Debe seleccionar un buzon v\U00E1lido a abrir!"; */
+"You must select a valid mailbox\nto transfer this E-Mail to!" = "\U00A1Debe seleccionar un buz\U00F3n v\U00E1lido\nal que transferir este correo electr\U00F3nico!";
+"You cannot transfer E-Mails to this folder!" = "\U00A1No puede tranferir correos a esta carpeta!";
+"You must select a valid root where to create this new mailbox." = "Debe seleccionar una ra\U00EDz v\U00E1lida donde crear el nuevo buz\U00F3n.";
+"Please select the mailbox you would like to delete." = "Por favor, seleccione el buz\U00F3n que quiere borrar.";
+/* "Delete..." =  "Borrar..."; */
+"Are you sure you want to delete this mailbox?" = "\U00BFEst\U00E1 seguro de que quiere borrar este buz\U00F3n?";
+/* "Cancel" =  "Cancelar"; */
+"Error while deleting!" = "\U00A1Error al borrar!";
+"You can't delete an opened mailbox! Close it first." = "\U00A1No se puede borrar un buz\U00F3n abierto! Hay que cerrarlo primero.";
+/* "Error!" =  "\U00A1Error!"; */
+"The mailbox delete operation failed." = "No se ha podido borrar el buz\U00F3n.";
+"You must select a valid mailbox to rename!" = "\U00A1Debe seleccionar un buz\U00F3n v\U00E1lido a renombrar!";
+"You can't rename an opened mailbox! Close it first." = "\U00A1No se puede renombrar un buz\U00F3n abierto! Hay que cerrarlo primero.";
+"Edit Mailbox" = "Editar Buz\U00F3n";
+"Please enter the new name of the Mailbox:" = "Por favor, introduzca el nuevo nombre del Buz\U00F3n:";
+"The local mailbox %@ does not exist!" = "\U00A1El buz\U00F3n local %@ no existe!";
+"This folder (%@) holds folders, not messages!" = "Este buz\U00F3n (%@) contiene carpetas, no mensajes!";
+"Local folder %@ opened." = "Abierta carpeta local %@.";
+"A folder (%@) is already open. Please close it first." = "Ya hay una carpeta abierta (%@). Por favor, ci\U00E9rrela primero.";
+"Opening IMAP folder %@ on %@..." = "Abriendo carpeta IMAP %@ en %@...";
+"IMAP folder %@ on %@ opened." = "Abierta carpeta IMAP %@ en %@.";
+"Connecting to IMAP server %@ using SSL" = "Conectando al servidor IMAP %@ usando SSL";
+"Connecting to IMAP server %@" = "Conectando al servidor IMAP %@";
+"Unable to communicate with the IMAP server (%@:%i)." = "No se ha podido establecer la comunicaci\U00F3n con el servidor IMAP (%@:%i).";
+"Authenticating using %@..." = "Autenticando usando %@...";
+"Connected to %@!" = "\U00A1Conectado a %@!";
+/* "Invalid password %@ @ %@." =  "Contrase\U00F1a incorrecta %@ @ %@."; */
+"A fatal error occured when appending the message to the %@ folder." = "Se ha producido un error fatal cuando se agregaba el mensaje a la carpeta %@.";
+
+/** MailboxManagerToolbar.m */
+
+/** MessageViewWindow.m */
+/* "Delete" =  "Borrar"; */
+/* "Reply" =  "Responder"; */
+/* "Forward" =  "Reenviar"; */
+/* "Show All Headers" =  "Mostrar todas las cabeceras"; */
+
+/** MessageViewWindowController.m */
+
+/** MessageViewWindowToolbar.m */
+
+/** MimeType.m */
+
+/** MimeTypeManager.m */
+
+/** NSRegEx.m */
+
+/** NSStringExtensions.m */
+
+/** NSUserDefaultsExtensions.m */
+
+/** NewMailboxPanel.m */
+"Please enter the name of the new Mailbox:" = "Introduzca el nombre del nuevo buz\U00F3n:";
+/* "Cancel" =  "Cancelar"; */
+/* "OK" =  "Aceptar"; */
+
+/** NewMailboxPanelController.m */
+"New Mailbox" = "Nuevo buz\U00F3n";
+/* "Local" =  "Local"; */
+/* "Error!" =  "\U00A1Error!"; */
+"The mailbox rename operation failed." = "No se ha podido cambiar el nombre del buz\U00F3n.";
+/* "OK" =  "Aceptar"; */
+"The mailbox create operation failed." = "No se ha podido crear el buz\U00F3n.";
+
+/** PasswordPanel.m */
+"Please enter your password:" = "Introduzca su contrase\U00F1a:";
+/* "Cancel" =  "Cancelar"; */
+/* "OK" =  "Aceptar"; */
+
+/** PasswordPanelController.m */
+
+/** PreferencesWindow.m */
+"Apply" = "Aplicar";
+/* "Cancel" =  "Cancelar"; */
+/* "OK" =  "Aceptar"; */
+
+/** PreferencesWindowController.m */
+"Preferences Panel" = "Panel de preferencias";
+"Loading preferences bundle at path %@." = "Cargando el conjunto de preferencias en la ruta %@.";
+
+/** TextEnrichedConsumer.m */
+
+/** Utilities.m */
+/* "Error!" =  "\U00A1Error!"; */
+"A part of this E-Mail can't be represented. Please report this as a bug." = "No se puede presentar una parte de este correo electr\U00F3nico. Por favor, informe de este error del programa.";
+/* "OK" =  "Aceptar"; */
+"No text/plain part found. Please report this bug since GNUMail doesn't support this other kind of parts." = "No se ha encontrado ninguna parte text/plain. Por favor informe de este error del programa, pues GNUMail no admite esta clase de partes.";
+"Local Mailboxes" = "Buzones locales";
+"Reply..." = "Responder...";
+"Would you like to reply to all recipients?" = "\U00BFDesea responder a todos los destinatarios?";
+/* "No" =  "No"; */
+/* "Yes" =  "S\U00ED"; */
+"Reply to a message..." = "Responder un mensaje...";
+"Forward a message..." = "Reenviar un mensaje...";
+"Save all" = "Guardar todo";
+"The external program (%@) for opening this MIME-Type (%@) can't be found." = "No se encontr\U00F3 el programa externo (%@) para abrir el Tipo-MIME (%@).";
+
+/** WelcomePanel.m */
+"Welcome to GNUMail!" = "\U00A1Bienvenido a GNUMail!";
+"You need to configure GNUMail before using it." = "Configurando GNUMail.";
+"Please choose your preferred local storage format:\n(if unsure, choose the UNIX mbox format)" = "Seleccione el formato de almacenamiento:\n(Si no sabe, seleccione UNIX)";
+"Standard UNIX mbox format" = "Formato estandar UNIX mbox";
+"Maildir mailbox format" = "Formato Maildir mailbox";
+"Continue" = "Continuar";

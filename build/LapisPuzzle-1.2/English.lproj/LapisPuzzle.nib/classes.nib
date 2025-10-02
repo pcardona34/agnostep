@@ -1,0 +1,31 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {restart = id; }; 
+            CLASS = LPController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                attackList = id; 
+                lpview1 = LapisPuzzleView; 
+                lpview2 = LapisPuzzleView; 
+                next1 = id; 
+                next2 = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = LPGroupUnit; LANGUAGE = ObjC; SUPERCLASS = LPUnit; }, 
+        {CLASS = LPJewelUnit; LANGUAGE = ObjC; SUPERCLASS = LPUnit; }, 
+        {CLASS = LPSparkerUnit; LANGUAGE = ObjC; SUPERCLASS = LPJewelUnit; }, 
+        {CLASS = LPStoneUnit; LANGUAGE = ObjC; SUPERCLASS = LPJewelUnit; }, 
+        {CLASS = LPUnit; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = LapisNextView; LANGUAGE = ObjC; SUPERCLASS = LapisPuzzleView; }, 
+        {
+            CLASS = LapisPuzzleView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {"__owner" = id; }; 
+            SUPERCLASS = NSView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

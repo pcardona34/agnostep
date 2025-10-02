@@ -1,0 +1,8 @@
+{
+    Authors = (
+	"Saso Kiselkov"
+    );
+    Copyright = "Copyright (C) 2006, 2012 by Saso Kiselkov";
+    CopyrightDescription = "Released under the terms of the GNU Lesser General Public License v2.1";
+    FrameworkName = HighlighterKit;
+}

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ApplicationDescription</key>
+	<string>A GNUstep mail client.</string>
+	<key>ApplicationName</key>
+	<string>GNUMail</string>
+	<key>ApplicationRelease</key>
+	<string>1.4.0</string>
+	<key>ApplicationURL</key>
+	<string>http://gnustep-nonfsf.nongnu.org/gnumail</string>
+	<key>Authors</key>
+	<array>
+		<string>See docs/WHOIS for the complete list of contributors.</string>
+		<string>Ludovic Marcotte &lt;ludovic@Sophos.ca&gt; and contributors</string>
+	</array>
+	<key>Copyright</key>
+	<string>Copyright (C) 1998 ... 2023 Ludovic Marcotte and contributors.</string>
+	<key>CopyrightDescription</key>
+	<string>Released under the GNU General Public License 2.0</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.gnustep.GNUMail</string>
+	<key>FullVersionID</key>
+	<string>1.4.0</string>
+	<key>NSIcon</key>
+	<string>GNUMail.tiff</string>
+	<key>NSServices</key>
+	<array>
+		<dict>
+			<key>NSKeyEquivalent</key>
+			<dict>
+				<key>default</key>
+				<string>n</string>
+			</dict>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>Czech</key>
+				<string>GNUMail/Novu00fd mail s obsahem</string>
+				<key>German</key>
+				<string>GNUMail/Neue Mail mit Inhalt</string>
+				<key>Italian</key>
+				<string>GNUMail/Nuova Mail con contenuto</string>
+				<key>Swedish</key>
+				<string>GNUMail/Nytt brev med innehu00e5ll</string>
+				<key>default</key>
+				<string>GNUMail/New Mail with content</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>newMessageWithContent</string>
+			<key>NSPortName</key>
+			<string>GNUMail</string>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSKeyEquivalent</key>
+			<dict>
+				<key>default</key>
+				<string>m</string>
+			</dict>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>Czech</key>
+				<string>GNUMail/Novu00fd mail s pu00f8u00edjemcem</string>
+				<key>German</key>
+				<string>GNUMail/Neue Mail mit Empfu00e4nger</string>
+				<key>Italian</key>
+				<string>GNUMail/Nuova Mail con destinatario</string>
+				<key>Swedish</key>
+				<string>GNUMail/Nytt brev med mottagare</string>
+				<key>default</key>
+				<string>GNUMail/New Mail with recipient</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>newMessageWithRecipient</string>
+			<key>NSPortName</key>
+			<string>GNUMail</string>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>Czech</key>
+				<string>GNUMail/Novu00fd mail s pu00f8u00edlohou</string>
+				<key>Italian</key>
+				<string>GNUMail/Nuova mail con allegato</string>
+				<key>default</key>
+				<string>GNUMail/New Mail with attachment(s)</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>newMessageWithAttachments</string>
+			<key>NSPortName</key>
+			<string>GNUMail</string>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSFilenamesPboardType</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,6 +1,6 @@
 {
     "fsn_info_type" = <*I0>;
-    geometry = "1399 529 450 500 0 0  1920 1080 ";
+    geometry = "913 310 450 500 0 0  1440 900 ";
     "hligh_table_col" = <*I0>;
     lastselection = (
 	"/home/patrick/SOURCES/agnostep/install/RESOURCES/HELP/AGNOSTEP_UG.help"

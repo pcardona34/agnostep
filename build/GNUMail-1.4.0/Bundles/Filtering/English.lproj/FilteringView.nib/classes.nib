@@ -1,0 +1,34 @@
+{
+    IBClasses = (
+        {CLASS = ExtendedTableColumn; LANGUAGE = ObjC; SUPERCLASS = NSTableColumn; }, 
+        {
+            ACTIONS = {
+                add = id; 
+                delete = id; 
+                duplicate = id; 
+                edit = id; 
+                moveDown = id; 
+                moveUp = id; 
+            }; 
+            CLASS = FilteringViewController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                activeColumn = id; 
+                add = id; 
+                delete = id; 
+                duplicate = id; 
+                edit = id; 
+                rulesColumn = id; 
+                tableView = id; 
+                view = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }, 
+        {CLASS = NSTableColumn; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = StripeTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {CLASS = SwitchTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }
+    ); 
+    IBVersion = 1; 
+}

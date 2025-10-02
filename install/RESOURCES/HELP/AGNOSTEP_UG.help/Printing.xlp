@@ -1,0 +1,24 @@
+<section name="Set the Default printer">
+
+<ul>
+<li>Open a new Shell in the Terminal app. Then execute:
+				<listing>
+					Setup_Printer&nbsp;&nbsp;&nbsp;&nbsp;
+				</listing>
+</li>
+<li>Inside the CUPS Web interface, if the 'Printers' list is empty, select the 'Admininstration' tab. </li>
+<li>Then click on [Find New Printers]... Add the new found printer.</li>
+<li>When your new printer has been added, in the 'Printers' list, select the desired printer.</li>
+<li>Then, in the [Administration] list, select item 'Set As Server Default'.</li>
+</ul>
+</section>
+
+<section name="Testing">
+
+<ul>
+<li>Open a new document in TextEdit or Ink. Type some text and save the document as rtf.</li>
+<li>select 'Print...' action in the menu. The 'Print' panel will show up with the new default printer selected.</li>
+<li>Click on the [Print] button to print the document.
+</ul>
+  
+</section>

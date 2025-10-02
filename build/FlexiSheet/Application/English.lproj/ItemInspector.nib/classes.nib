@@ -1,0 +1,36 @@
+{
+    IBClasses =     (
+                {
+            CLASS = FSInspectorPane;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                paneView = NSView;
+            };
+            SUPERCLASS = NSObject;
+        },
+                {
+            ACTIONS =             {
+                inspectGroup = id;
+                inspectTable = id;
+                setItemLabel = id;
+            };
+            CLASS = FSItemInspectorPane;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                groupButton = NSButton;
+                groupText = NSTextField;
+                item = id;
+                labelField = NSTextField;
+                tableButton = NSButton;
+                tableText = NSTextField;
+            };
+            SUPERCLASS = FSInspectorPane;
+        },
+                {
+            CLASS = FirstResponder;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSObject;
+        }
+    );
+    IBVersion = 1;
+}

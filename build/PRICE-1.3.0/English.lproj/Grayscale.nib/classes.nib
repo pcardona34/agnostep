@@ -1,0 +1,19 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {showGrayscale = id; }; 
+            CLASS = PRCGrayscale; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {grayWindow = NSWindow; methodChoice = NSPopUpButton; }; 
+            SUPERCLASS = PRFilterController; 
+        }, 
+        {
+            ACTIONS = {filterCancel = id; filterOK = id; parametersChanged = id; showFilter = id; }; 
+            CLASS = PRFilterController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

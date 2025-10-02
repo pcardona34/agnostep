@@ -1,0 +1,92 @@
+{
+    IBClasses = (
+        {CLASS = AddressComboBox; LANGUAGE = ObjC; SUPERCLASS = NSComboBox; }, 
+        {
+            ACTIONS = {complete = id; }; 
+            CLASS = AutoCompletingTextField; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSTextField; 
+        }, 
+        {
+            ACTIONS = {
+                accountSelectionHasChanged = id; 
+                insertFile = id; 
+                sendMessage = id; 
+                showBcc = id; 
+                showCc = id; 
+            }; 
+            CLASS = EditWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                accountPopUpButton = NSPopUpButton; 
+                addBcc = id; 
+                addCc = id; 
+                addresses = id; 
+                bccLabel = NSTextField; 
+                bccText = AutoCompletingTextField; 
+                ccLabel = NSTextField; 
+                ccText = AutoCompletingTextField; 
+                insert = id; 
+                scrollView = NSScrollView; 
+                send = id; 
+                sizeLabel = NSTextField; 
+                subjectLabel = NSTextField; 
+                subjectText = NSTextField; 
+                textView = ExtendedTextView; 
+                toLabel = NSTextField; 
+                toText = AutoCompletingTextField; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = ExtendedTextView; LANGUAGE = ObjC; SUPERCLASS = NSTextView; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                addToAddressBook = id; 
+                bounceMessage = id; 
+                composeMessage = id; 
+                composeMessageFromDeadLetter = id; 
+                deleteOrUndeleteMessage = id; 
+                findNext = id; 
+                findPrevious = id; 
+                forwardMessage = id; 
+                getNewMessages = id; 
+                markMessageAsReadOrUnread = id; 
+                print = id; 
+                replyAllMessage = id; 
+                replyMessage = id; 
+                saveTextFromMessage = id; 
+                selectAllMessages = id; 
+                selectionOfMessageHasChanged = id; 
+                showAddressBook = id; 
+                showAllHeaders = id; 
+                showFindWindow = id; 
+                showMailboxManager = id; 
+                showPrefWindow = id; 
+                showRAWSource = id; 
+            }; 
+            CLASS = GNUMail; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                compose = NSMenu; 
+                deleteOrUndelete = NSMenuItem; 
+                edit = NSMenu; 
+                find = NSMenu; 
+                format = NSMenu; 
+                info = NSMenu; 
+                mailbox = NSMenu; 
+                markAsReadOrUnread = NSMenuItem; 
+                menu = NSMenu; 
+                message = NSMenu; 
+                print = NSMenu; 
+                sendToAddressBook = NSMenu; 
+                services = NSMenu; 
+                showAllHeaders = NSMenuItem; 
+                windows = NSMenu; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }
+    ); 
+    IBVersion = 1; 
+}

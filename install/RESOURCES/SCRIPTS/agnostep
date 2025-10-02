@@ -1,0 +1,82 @@
+#!/bin/bash
+
+####################################################
+### A G N o S t e p  -  Desktop - by Patrick Cardona
+### pcardona34 @ Github
+###
+### Thanks for the GNUstep Developers Community
+### This is Free and Open Source software.
+### Read License in the root directory.
+####################################################
+
+################################
+### AGNOSTEP actions...
+################################
+
+ARG="$1"
+if [ "$ARG" == "" ];then
+	ARG="--help"
+fi
+
+echo $PATH | grep -e "/System/Tools" &>/dev/null
+if [ $? -ne 0 ];then
+	export PATH=/System/Tools:$PATH
+fi
+LIB_DIR=$(gnustep-config --variable=GNUSTEP_LOCAL_LIBRARY)
+
+. /usr/local/bin/colors.sh
+. $HOME/.local/etc/release.info
+
+#######################################################""
+### System Infos
+function info()
+{
+OS=$(cat /etc/os-release | grep -e "^ID" | awk -F= '{print $2}')
+RELEASE=$(cat /etc/debian_version)
+KERNEL=$(uname -s -r -m)
+WM=$(wmaker --version)
+WS=$(defaults read org.gnustep.GWorkspace GSWorkspaceApplication | awk '{print $3}')
+GSBASE=$(ls ${LIB_DIR}/Libraries/gnustep-base/Versions)
+GSGUI=$(ls ${LIB_DIR}/Libraries/gnustep-gui/Versions)
+THEME=$(defaults read NSGlobalDomain GSTheme | awk '{print $3}')
+
+TRANS=`echo ${LANG%.UTF-8} | awk -F_ '{print $1}'`
+
+title "${DESKTOP}: ${REL} - ${STATUS}"
+
+case "$TRANS" in
+	"fr")
+                KER="Noyau"
+                WIN="Gestionnaire de fenêtre"
+                WOR="Espace de travail"
+                THE="Thème";;
+	"en"|*)
+		KER="Kernel"
+		WIN="Window Manager"
+		WOR="Workspace"
+		THE="Theme";;
+esac
+
+printf "\tOS: $OS $RELEASE\n"
+printf "\t${KER}: ${KERNEL}\n"
+printf "\t${WIN}: $WM\n"
+printf "\t${WOR}: $WS\n"
+printf "\tGNUstep: Base: $GSBASE - Gui: $GSGUI\n"
+printf "\t${THE}: $THEME\n\n"
+}
+
+##################################################
+### Help
+function myhelp()
+{
+clear
+printf "Syntax:\n"
+cli "$0 <OPTION>\n\nOptions:\n\t--help\n\t--info"
+}
+
+##################################################
+
+case "$ARG" in
+	"--info" | "--Info" | "--INFO" | "info") info;;
+	*) myhelp;;
+esac

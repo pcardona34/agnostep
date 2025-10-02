@@ -1,0 +1,229 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/FSTableView">FSTableView</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>NSControl</DD>
+</DL></blockquote>
+
+
+
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSTableView.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+No class description.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Variables</H2>
+	<blockquote>
+	
+		<CODE>FSMatrix *<B>_dataMatrix</B>;</CODE><BR>
+		<CODE>FSTableTabs *<B>_pageTabs</B>;</CODE><BR>
+		<CODE>FSTableTabs *<B>_rightTabs</B>;</CODE><BR>
+		<CODE>FSVarioMatrix *<B>_topMatrix</B>;</CODE><BR>
+		<CODE>FSVarioMatrix *<B>_sideMatrix</B>;</CODE><BR>
+		<CODE>NSScrollView *<B>_dataSV</B>;</CODE><BR>
+		<CODE>NSClipView *<B>_topClip</B>;</CODE><BR>
+		<CODE>NSClipView *<B>_sideClip</B>;</CODE><BR>
+		<CODE>IBOutlet id <B>dataSource</B>;</CODE><BR>
+		<CODE>FSSelection *<B>_selection</B>;</CODE><BR>
+		<CODE>NSArray *<B>_selRange</B>;</CODE><BR>
+		<CODE>BOOL <B>_dataSelected</B>;</CODE><BR>
+		<CODE>NSRange <B>_dataRows</B>;</CODE><BR>
+		<CODE>NSRange <B>_dataCols</B>;</CODE><BR>
+		<CODE>FSCellStyle *<B>_defaultStyle</B>;</CODE><BR>
+		<CODE>FSCellStyle *<B>_headerStyle</B>;</CODE><BR>
+		<CODE>float <B>_defaultHeight</B>;</CODE><BR>
+		<CODE>id *<B>_cachedValues</B>;</CODE><BR>
+		<CODE>NSMutableDictionary *<B>_styles</B>;</CODE><BR>
+		<CODE>NSMutableDictionary *<B>_hlObjects</B>;</CODE><BR>
+		<CODE>int <B>_pageTabCount</B>;</CODE><BR>
+		<CODE>int <B>_rightTabCount</B>;</CODE><BR>
+		<CODE>int <B>_numberOfCols</B>;</CODE><BR>
+		<CODE>int <B>_uniqueCols</B>;</CODE><BR>
+		<CODE>int <B>_nHTop</B>;</CODE><BR>
+		<CODE>CellArea **<B>_topCA</B>;</CODE><BR>
+		<CODE>int *<B>_topNCA</B>;</CODE><BR>
+		<CODE>int <B>_numberOfRows</B>;</CODE><BR>
+		<CODE>int <B>_uniqueRows</B>;</CODE><BR>
+		<CODE>int <B>_nHSide</B>;</CODE><BR>
+		<CODE>CellArea **<B>_sideCA</B>;</CODE><BR>
+		<CODE>int *<B>_sideNCA</B>;</CODE><BR>
+	<P><TABLE>
+	
+		<TR><TD>_dataMatrix</TD><TD>containing value cells</TD></TR>
+	
+		<TR><TD>_pageTabs</TD><TD>containing tabs at bottom</TD></TR>
+	
+		<TR><TD>_rightTabs</TD><TD>containing tabs at right</TD></TR>
+	
+		<TR><TD>_topMatrix</TD><TD>containing header cells</TD></TR>
+	
+		<TR><TD>_sideMatrix</TD><TD>containing header cells</TD></TR>
+	
+		<TR><TD>_dataSV</TD><TD>containing the data matrix</TD></TR>
+	
+		<TR><TD>_topClip</TD><TD>containing the top matrix</TD></TR>
+	
+		<TR><TD>_sideClip</TD><TD>containing the side matrix</TD></TR>
+	
+		<TR><TD>dataSource</TD><TD>Has to be an FSTableController!</TD></TR>
+	
+		<TR><TD>_selection</TD><TD>Selection</TD></TR>
+	
+		<TR><TD>_selRange</TD><TD>Selection</TD></TR>
+	
+		<TR><TD>_dataSelected</TD><TD>Selection is in data matrix (no items)</TD></TR>
+	
+		<TR><TD>_dataRows</TD><TD>Set with every new data selection</TD></TR>
+	
+		<TR><TD>_dataCols</TD><TD>Set with every new data selection</TD></TR>
+	
+		<TR><TD>_defaultStyle</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_headerStyle</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_defaultHeight</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_cachedValues</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_styles</TD><TD>actual storage cell name-&gt;FSCellStyle</TD></TR>
+	
+		<TR><TD>_hlObjects</TD><TD>HeaderLayout objects for headers</TD></TR>
+	
+		<TR><TD>_pageTabCount</TD><TD>count of objects in pageHeaders</TD></TR>
+	
+		<TR><TD>_rightTabCount</TD><TD>count of objects in page2Headers</TD></TR>
+	
+		<TR><TD>_numberOfCols</TD><TD>number of columns in the data matrix</TD></TR>
+	
+		<TR><TD>_uniqueCols</TD><TD>number of unique columns in topMatrix</TD></TR>
+	
+		<TR><TD>_nHTop</TD><TD>number of headers in topMatrix</TD></TR>
+	
+		<TR><TD>_topCA</TD><TD>cached cell areas in topMatrix</TD></TR>
+	
+		<TR><TD>_topNCA</TD><TD>number of cached cell areas per row</TD></TR>
+	
+		<TR><TD>_numberOfRows</TD><TD>number of rows in the data matrix</TD></TR>
+	
+		<TR><TD>_uniqueRows</TD><TD>number of uniqe rows in sideMatrix</TD></TR>
+	
+		<TR><TD>_nHSide</TD><TD>number of headers in sideMatrix</TD></TR>
+	
+		<TR><TD>_sideCA</TD><TD>cached cell areas in sideMatrix</TD></TR>
+	
+		<TR><TD>_sideNCA</TD><TD>number of cached cell areas per col</TD></TR>
+	
+	</TABLE>
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- initWithFrame:">- initWithFrame:</A></DD>
+		
+			<DD> <A HREF="#- dataSource">- dataSource</A></DD>
+		
+			<DD> <A HREF="#- setDataSource:">- setDataSource:</A></DD>
+		
+			<DD> <A HREF="#- reloadData">- reloadData</A></DD>
+		
+			<DD> <A HREF="#- _internalReload">- _internalReload</A></DD>
+		
+			<DD> <A HREF="#- reflectPageTabChange">- reflectPageTabChange</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- _internalReload"></A><H3><A NAME="//apple_ref/occ/instm/FSTableView/_internalReload">_internalReload</A></H3><P>
+		<CODE>- (void)<B>_internalReload</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- dataSource"></A><H3><A NAME="//apple_ref/occ/instm/FSTableView/dataSource">dataSource</A></H3><P>
+		<CODE>- (id)<B>dataSource</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- initWithFrame:"></A><H3><A NAME="//apple_ref/occ/instm/FSTableView/initWithFrame:">initWithFrame:</A></H3><P>
+		<CODE>- (id)<B>initWithFrame:</B>(NSRect)<EM>frameRect</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- reflectPageTabChange"></A><H3><A NAME="//apple_ref/occ/instm/FSTableView/reflectPageTabChange">reflectPageTabChange</A></H3><P>
+		<CODE>- (void)<B>reflectPageTabChange</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- reloadData"></A><H3><A NAME="//apple_ref/occ/instm/FSTableView/reloadData">reloadData</A></H3><P>
+		<CODE>- (void)<B>reloadData</B>
+		</CODE><P>
+		Called when data outside of the table view changes. 
+Addition of a key, creation of a group, etc.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setDataSource:"></A><H3><A NAME="//apple_ref/occ/instm/FSTableView/setDataSource:">setDataSource:</A></H3><P>
+		<CODE>- (void)<B>setDataSource:</B>(id)<EM>aDataSource</EM>
+			
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2002 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

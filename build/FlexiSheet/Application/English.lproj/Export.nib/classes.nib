@@ -1,0 +1,28 @@
+{
+    IBClasses =     (
+                {
+            ACTIONS =             {
+                changeEncoder = id;
+            };
+            CLASS = FSExporter;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                accessory = NSBox;
+                encoder = NSPopUpButton;
+                encoding = NSPopUpButton;
+                exportColumnItems = NSButton;
+                exportRowHeaders = NSButton;
+                lineSeparator = NSPopUpButton;
+                sheet = NSWindow;
+                valueSeparator = NSPopUpButton;
+            };
+            SUPERCLASS = NSObject;
+        },
+                {
+            CLASS = FirstResponder;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSObject;
+        }
+    );
+    IBVersion = 1;
+}

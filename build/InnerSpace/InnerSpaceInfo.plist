@@ -1,0 +1,14 @@
+{
+    ApplicationDescription = "A BackSpace clone for GNUstep/Mac OS X.";
+    ApplicationName = InnerSpace;
+    ApplicationRelease = 1;
+    Copyright = "Gregory John Casamento";
+    CopyrightDescription = "Released under LGPLv2.1 or later";
+    FullVersionID = 1;
+    CFBundleIdentifier = "org.gap.InnerSpace";
+    NOTE = "Automatically generated!";
+    NSExecutable = InnerSpace;
+    NSMainNibFile = InnerSpace.gorm;
+    NSPrincipalClass = NSApplication;
+    NSRole = Application;
+}

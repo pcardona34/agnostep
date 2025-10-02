@@ -1,0 +1,124 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/FSPreferences">FSPreferences</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>NSObject</DD>
+</DL></blockquote>
+
+
+
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSPreferences.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+No class description.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Variables</H2>
+	<blockquote>
+	
+		<CODE>NSUserDefaults *<B>_defaults</B>;</CODE><BR>
+		<CODE>IBOutlet NSPanel *<B>prefPanel</B>;</CODE><BR>
+		<CODE>IBOutlet NSTabView *<B>tabView</B>;</CODE><BR>
+		<CODE>IBOutlet NSButton *<B>showInspectorSwitch</B>;</CODE><BR>
+		<CODE>IBOutlet NSButton *<B>saveCompressedSwitch</B>;</CODE><BR>
+	<P><TABLE>
+	
+		<TR><TD>_defaults</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>prefPanel</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>tabView</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>showInspectorSwitch</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>saveCompressedSwitch</TD><TD>No description.</TD></TR>
+	
+	</TABLE>
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- showPreferences:">- showPreferences:</A></DD>
+		
+			<DD> <A HREF="#- toggleShowInspector:">- toggleShowInspector:</A></DD>
+		
+			<DD> <A HREF="#- toggleSaveCompressed:">- toggleSaveCompressed:</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- showPreferences:"></A><H3><A NAME="//apple_ref/occ/instm/FSPreferences/showPreferences:">showPreferences:</A></H3><P>
+		<CODE>- (void)<B>showPreferences:</B>(id)<EM>sender</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- toggleSaveCompressed:"></A><H3><A NAME="//apple_ref/occ/instm/FSPreferences/toggleSaveCompressed:">toggleSaveCompressed:</A></H3><P>
+		<CODE>- (void)<B>toggleSaveCompressed:</B>(id)<EM>sender</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- toggleShowInspector:"></A><H3><A NAME="//apple_ref/occ/instm/FSPreferences/toggleShowInspector:">toggleShowInspector:</A></H3><P>
+		<CODE>- (void)<B>toggleShowInspector:</B>(id)<EM>sender</EM>
+			
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2001 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

@@ -1,0 +1,24 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                cancelClicked = id; 
+                expertClicked = id; 
+                handleCellAction = id; 
+                saveAndClose = id; 
+                savePreferences = id; 
+            }; 
+            CLASS = PreferencesWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                box = NSBox; 
+                expert = NSButton; 
+                matrix = NSMatrix; 
+                scrollView = NSScrollView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

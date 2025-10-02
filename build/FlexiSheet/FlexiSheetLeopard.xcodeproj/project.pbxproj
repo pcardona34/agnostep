@@ -1,0 +1,2464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		851969311FE9D72900463D91 /* FSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8545757A1FE922A500860811 /* FSCore.framework */; };
+		854575381FE922A500860811 /* FSTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 66F7138A0280557900A8010B /* FSTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		854575391FE922A500860811 /* FSLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 6643069201946433009460CF /* FSLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8545753A1FE922A500860811 /* FSHashMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 6648FDFA027F118A00A8010B /* FSHashMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8545753B1FE922A500860811 /* FoundationExtentions.h in Headers */ = {isa = PBXBuildFile; fileRef = F6253CE5014DFA93017BFD99 /* FoundationExtentions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8545753C1FE922A500860811 /* FSParserFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = F6830B8F0171B6A6015FC74F /* FSParserFunctions.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8545753D1FE922A500860811 /* FSFormulaSpace.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D38FAD0168C3CE0111295A /* FSFormulaSpace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8545753E1FE922A500860811 /* FSDocumentProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 665361660181E556004AAD35 /* FSDocumentProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8545753F1FE922A500860811 /* FSTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 66A162EB014CF95F00A8000B /* FSTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		854575401FE922A500860811 /* FSGlobalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F69F2A4601805CF701600E1B /* FSGlobalHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		854575411FE922A500860811 /* FSKeyGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = F6155E2701622919010D2662 /* FSKeyGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		854575421FE922A500860811 /* FSHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 038F9E4F0024DEEC7F000001 /* FSHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		854575431FE922A500860811 /* FSKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 015D38580025863E7F000001 /* FSKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		854575441FE922A500860811 /* FSKeyRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 66749D45016E536B0061F406 /* FSKeyRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		854575451FE922A500860811 /* FSKeySet.h in Headers */ = {isa = PBXBuildFile; fileRef = 668964F50144ACA300B9BC23 /* FSKeySet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		854575461FE922A500860811 /* FSUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E8A7A10134C5BA00A82C0B /* FSUnit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		854575471FE922A500860811 /* FSSelection.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E40DB9016A491E00447B50 /* FSSelection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		854575481FE922A500860811 /* FSFormula.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C9F2740166FBD000D9DECA /* FSFormula.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		854575491FE922A500860811 /* FSFormulaSelection.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C9F2780166FDF700D9DECA /* FSFormulaSelection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8545754A1FE922A500860811 /* FSFormulaDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C9F27A0166FDF700D9DECA /* FSFormulaDefinition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8545754B1FE922A500860811 /* FSExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = F648352D013B8DA001A80099 /* FSExpression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8545754C1FE922A500860811 /* FSExpressionError.h in Headers */ = {isa = PBXBuildFile; fileRef = F668DB170168A86901487148 /* FSExpressionError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8545754D1FE922A500860811 /* FSExpressionParenthesis.h in Headers */ = {isa = PBXBuildFile; fileRef = F63CF75D0169B82301D560A0 /* FSExpressionParenthesis.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8545754E1FE922A500860811 /* FSExpressionNegator.h in Headers */ = {isa = PBXBuildFile; fileRef = 668066760170C930000BD935 /* FSExpressionNegator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8545754F1FE922A500860811 /* FSVariable.h in Headers */ = {isa = PBXBuildFile; fileRef = 669D6EE90167AF2300052BA8 /* FSVariable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		854575501FE922A500860811 /* FSConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = 669D6EED0167AF4E00052BA8 /* FSConstant.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		854575511FE922A500860811 /* FSOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = 669D6EF10167AFEB00052BA8 /* FSOperator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		854575521FE922A500860811 /* FSFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 669D6EF50167B05200052BA8 /* FSFunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		854575531FE922A500860811 /* FSValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 039200960024E3C57F000001 /* FSValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		854575541FE922A500860811 /* FSCore.h in Headers */ = {isa = PBXBuildFile; fileRef = F64C0ED801464DE4017B8FD0 /* FSCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		854575561FE922A500860811 /* FoundationExtentions.m in Sources */ = {isa = PBXBuildFile; fileRef = F6253CE6014DFA93017BFD99 /* FoundationExtentions.m */; };
+		854575571FE922A500860811 /* FSParserFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = F6830B900171B6A6015FC74F /* FSParserFunctions.m */; };
+		854575581FE922A500860811 /* FSFormulaSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D38FAE0168C3CE0111295A /* FSFormulaSpace.m */; };
+		854575591FE922A500860811 /* FSTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A162EC014CF95F00A8000B /* FSTable.m */; };
+		8545755A1FE922A500860811 /* FSTable+Find.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DF64CB03581B8700A8010F /* FSTable+Find.m */; };
+		8545755B1FE922A500860811 /* FSTable+Formula.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DF64CD03581BDA00A8010F /* FSTable+Formula.m */; };
+		8545755C1FE922A500860811 /* FSGlobalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F2A4701805CF701600E1B /* FSGlobalHeader.m */; };
+		8545755D1FE922A500860811 /* FSKeyGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F6155E2801622919010D2662 /* FSKeyGroup.m */; };
+		8545755E1FE922A500860811 /* FSHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FA6A120025A2F57F000001 /* FSHeader.m */; };
+		8545755F1FE922A500860811 /* FSKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D385A002589217F000001 /* FSKey.m */; };
+		854575601FE922A500860811 /* FSKeyRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 66749D46016E536B0061F406 /* FSKeyRange.m */; };
+		854575611FE922A500860811 /* FSKeySet.m in Sources */ = {isa = PBXBuildFile; fileRef = 014914520026D3807F000001 /* FSKeySet.m */; };
+		854575621FE922A500860811 /* FSUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E8A7A20134C5BA00A82C0B /* FSUnit.m */; };
+		854575631FE922A500860811 /* FSSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E40DBA016A491E00447B50 /* FSSelection.m */; };
+		854575641FE922A500860811 /* FSFormula.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C9F2750166FBD000D9DECA /* FSFormula.m */; };
+		854575651FE922A500860811 /* FSFormulaSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C9F2790166FDF700D9DECA /* FSFormulaSelection.m */; };
+		854575661FE922A500860811 /* FSFormulaDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C9F27B0166FDF700D9DECA /* FSFormulaDefinition.m */; };
+		854575671FE922A500860811 /* FSExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = F648352E013B8DA001A80099 /* FSExpression.m */; };
+		854575681FE922A500860811 /* FSExpressionError.m in Sources */ = {isa = PBXBuildFile; fileRef = F668DB180168A86901487148 /* FSExpressionError.m */; };
+		854575691FE922A500860811 /* FSExpressionParenthesis.m in Sources */ = {isa = PBXBuildFile; fileRef = F63CF75E0169B82301D560A0 /* FSExpressionParenthesis.m */; };
+		8545756A1FE922A500860811 /* FSExpressionNegator.m in Sources */ = {isa = PBXBuildFile; fileRef = 668066770170C930000BD935 /* FSExpressionNegator.m */; };
+		8545756B1FE922A500860811 /* FSVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 669D6EEA0167AF2300052BA8 /* FSVariable.m */; };
+		8545756C1FE922A500860811 /* FSConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 669D6EEE0167AF4E00052BA8 /* FSConstant.m */; };
+		8545756D1FE922A500860811 /* FSOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 669D6EF20167AFEB00052BA8 /* FSOperator.m */; };
+		8545756E1FE922A500860811 /* FSFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 669D6EF60167B05200052BA8 /* FSFunction.m */; };
+		8545756F1FE922A500860811 /* FSValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D385600257A857F000001 /* FSValue.m */; };
+		854575701FE922A500860811 /* FSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6643069301946433009460CF /* FSLog.m */; };
+		854575711FE922A500860811 /* FSHashMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6648FDFB027F118A00A8010B /* FSHashMap.m */; };
+		854575741FE922A500860811 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */; };
+		8545757F1FE922A500860811 /* FSCatOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = 66883CF9017156670098DB14 /* FSCatOperator.h */; };
+		854575801FE922A500860811 /* FSDivideOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D38FB50168CB590111295A /* FSDivideOperator.h */; };
+		854575811FE922A500860811 /* FSEqualOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = F61E22B9016D99C401473B13 /* FSEqualOperator.h */; };
+		854575821FE922A500860811 /* FSMinusOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = F668DB100168A51E01487148 /* FSMinusOperator.h */; };
+		854575831FE922A500860811 /* FSMultiplyOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = F62B76B701688F7201A89AF4 /* FSMultiplyOperator.h */; };
+		854575841FE922A500860811 /* FSPlusOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = F62B76AE01685D8001A89AF4 /* FSPlusOperator.h */; };
+		854575851FE922A500860811 /* FSPowOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = 664AA7CE01708F5900D0577F /* FSPowOperator.h */; };
+		854575861FE922A500860811 /* FSAbsFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 667AEA54016F5548001309E8 /* FSAbsFunction.h */; };
+		854575871FE922A500860811 /* FSCosFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 667AEA56016F5548001309E8 /* FSCosFunction.h */; };
+		854575881FE922A500860811 /* FSLnFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 667AEA58016F5548001309E8 /* FSLnFunction.h */; };
+		854575891FE922A500860811 /* FSMaxFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 66883CF0017151D50098DB14 /* FSMaxFunction.h */; };
+		8545758A1FE922A500860811 /* FSMinFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 66883CF40171520F0098DB14 /* FSMinFunction.h */; };
+		8545758B1FE922A500860811 /* FSPIFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 662C39B5016B448D00BEF36A /* FSPIFunction.h */; };
+		8545758C1FE922A500860811 /* FSProdFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 667AEA50016F552E001309E8 /* FSProdFunction.h */; };
+		8545758D1FE922A500860811 /* FSSignFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E222B0016FC09A00C6915F /* FSSignFunction.h */; };
+		8545758E1FE922A500860811 /* FSSinFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 66BDF549016F484C004FCF9B /* FSSinFunction.h */; };
+		8545758F1FE922A500860811 /* FSSqrtFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E222B4016FC1A900C6915F /* FSSqrtFunction.h */; };
+		854575901FE922A500860811 /* FSSumFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E40DBD016A4FAE00447B50 /* FSSumFunction.h */; };
+		854575911FE922A500860811 /* FSTanFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E222A7016FBE2400C6915F /* FSTanFunction.h */; };
+		854575921FE922A500860811 /* FSCellnameFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 6618ADA90168F9C6009313B6 /* FSCellnameFunction.h */; };
+		854575931FE922A500860811 /* FSFinancialFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6653615F0181A124004AAD35 /* FSFinancialFunctions.h */; };
+		854575941FE922A500860811 /* FSIfFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = F6EF9402016C76A90180E7A9 /* FSIfFunction.h */; };
+		854575951FE922A500860811 /* FSRandFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = F62B76B30168649901A89AF4 /* FSRandFunction.h */; };
+		854575961FE922A500860811 /* FSStringFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 66883CE901714E960098DB14 /* FSStringFunction.h */; };
+		854575971FE922A500860811 /* FSTodayFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 662C39BE016B4A5E00BEF36A /* FSTodayFunction.h */; };
+		854575981FE922A500860811 /* FSCorrelFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = F6C0141802911C3201A8010B /* FSCorrelFunction.h */; };
+		8545759B1FE922A500860811 /* FSCatOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 66883CFA017156670098DB14 /* FSCatOperator.m */; };
+		8545759C1FE922A500860811 /* FSDivideOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D38FB60168CB590111295A /* FSDivideOperator.m */; };
+		8545759D1FE922A500860811 /* FSEqualOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = F61E22BA016D99C401473B13 /* FSEqualOperator.m */; };
+		8545759E1FE922A500860811 /* FSMinusOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = F668DB110168A51E01487148 /* FSMinusOperator.m */; };
+		8545759F1FE922A500860811 /* FSMultiplyOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = F62B76B801688F7201A89AF4 /* FSMultiplyOperator.m */; };
+		854575A01FE922A500860811 /* FSPlusOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = F62B76AF01685D8001A89AF4 /* FSPlusOperator.m */; };
+		854575A11FE922A500860811 /* FSPowOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 664AA7CF01708F5900D0577F /* FSPowOperator.m */; };
+		854575A21FE922A500860811 /* FSAbsFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 667AEA55016F5548001309E8 /* FSAbsFunction.m */; };
+		854575A31FE922A500860811 /* FSCosFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 667AEA57016F5548001309E8 /* FSCosFunction.m */; };
+		854575A41FE922A500860811 /* FSLnFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 667AEA59016F5548001309E8 /* FSLnFunction.m */; };
+		854575A51FE922A500860811 /* FSMaxFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 66883CF1017151D50098DB14 /* FSMaxFunction.m */; };
+		854575A61FE922A500860811 /* FSMinFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 66883CF50171520F0098DB14 /* FSMinFunction.m */; };
+		854575A71FE922A500860811 /* FSPIFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 662C39B6016B448D00BEF36A /* FSPIFunction.m */; };
+		854575A81FE922A500860811 /* FSProdFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 667AEA51016F552E001309E8 /* FSProdFunction.m */; };
+		854575A91FE922A500860811 /* FSSignFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E222B1016FC09A00C6915F /* FSSignFunction.m */; };
+		854575AA1FE922A500860811 /* FSSinFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BDF54A016F484C004FCF9B /* FSSinFunction.m */; };
+		854575AB1FE922A500860811 /* FSSqrtFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E222B5016FC1A900C6915F /* FSSqrtFunction.m */; };
+		854575AC1FE922A500860811 /* FSSumFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E40DBE016A4FAE00447B50 /* FSSumFunction.m */; };
+		854575AD1FE922A500860811 /* FSTanFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E222A8016FBE2400C6915F /* FSTanFunction.m */; };
+		854575AE1FE922A500860811 /* FSCellnameFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 6618ADAA0168F9C6009313B6 /* FSCellnameFunction.m */; };
+		854575AF1FE922A500860811 /* FSFinancialFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 665361600181A124004AAD35 /* FSFinancialFunctions.m */; };
+		854575B01FE922A500860811 /* FSIfFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EF9403016C76A90180E7A9 /* FSIfFunction.m */; };
+		854575B11FE922A500860811 /* FSRandFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = F62B76B40168649901A89AF4 /* FSRandFunction.m */; };
+		854575B21FE922A500860811 /* FSStringFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 66883CEA01714E960098DB14 /* FSStringFunction.m */; };
+		854575B31FE922A500860811 /* FSTodayFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 662C39BF016B4A5E00BEF36A /* FSTodayFunction.m */; };
+		854575B41FE922A500860811 /* FSCorrelFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C0141702911C3201A8010B /* FSCorrelFunction.m */; };
+		854575B71FE922A500860811 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */; };
+		854575C51FE922A500860811 /* FSTestDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 66A5F75F01C09D5C00A8010A /* FSTestDocument.h */; };
+		854575C61FE922A500860811 /* AllTests.h in Headers */ = {isa = PBXBuildFile; fileRef = 66A2D8A202205A6300A8010B /* AllTests.h */; };
+		854575C71FE922A500860811 /* FSTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B036BC0226C3BD00A8010B /* FSTestCase.h */; };
+		854575C81FE922A500860811 /* CellTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B036B80226C14700A8010B /* CellTest.h */; };
+		854575C91FE922A500860811 /* CompareOpTests.h in Headers */ = {isa = PBXBuildFile; fileRef = 6659ED2702241F9500A8010B /* CompareOpTests.h */; };
+		854575CA1FE922A500860811 /* CrossTableFormulaTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 66D9C12C0220C5A900A8010B /* CrossTableFormulaTest.h */; };
+		854575CB1FE922A500860811 /* UndoTests.h in Headers */ = {isa = PBXBuildFile; fileRef = 66F508740199D8EA00A8010A /* UndoTests.h */; };
+		854575CC1FE922A500860811 /* ItemGroupTest.h in Headers */ = {isa = PBXBuildFile; fileRef = F6A31311019C1B9301A8010B /* ItemGroupTest.h */; };
+		854575CD1FE922A500860811 /* KeysetCreationTest.h in Headers */ = {isa = PBXBuildFile; fileRef = F6A977520226594A01A8010A /* KeysetCreationTest.h */; };
+		854575CE1FE922A500860811 /* SortingTests.h in Headers */ = {isa = PBXBuildFile; fileRef = 66F07EAB027A881600A8010B /* SortingTests.h */; };
+		854575CF1FE922A500860811 /* HashMapTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6648FDFE027F129300A8010B /* HashMapTest.h */; };
+		854575D01FE922A500860811 /* FSNumberTests.h in Headers */ = {isa = PBXBuildFile; fileRef = 66A59582028A6E9E00A8010A /* FSNumberTests.h */; };
+		854575D11FE922A500860811 /* OperatorTests.h in Headers */ = {isa = PBXBuildFile; fileRef = F6275D06028C545A01A8010B /* OperatorTests.h */; };
+		854575D21FE922A500860811 /* FinancialFunctionsTests.h in Headers */ = {isa = PBXBuildFile; fileRef = F6275D0D028C58B901A8010B /* FinancialFunctionsTests.h */; };
+		854575D31FE922A500860811 /* GroupFunctionsTests.h in Headers */ = {isa = PBXBuildFile; fileRef = F6275D33028C5A5301A8010B /* GroupFunctionsTests.h */; };
+		854575D41FE922A500860811 /* NameArchiveTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 661AC81202C47FB800A8010A /* NameArchiveTest.h */; };
+		854575D51FE922A500860811 /* StringQuotingTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6646559002D0A0F700A8010A /* StringQuotingTest.h */; };
+		854575D61FE922A500860811 /* LinkedCategoriesTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 73745C410422330100A8010F /* LinkedCategoriesTest.h */; };
+		854575D81FE922A500860811 /* FSUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 668C02B301BA039900A8010B /* FSUnitTest.m */; };
+		854575D91FE922A500860811 /* FSTestDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A5F76001C09D5C00A8010A /* FSTestDocument.m */; };
+		854575DA1FE922A500860811 /* AllTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A2D8A302205A6300A8010B /* AllTests.m */; };
+		854575DB1FE922A500860811 /* FSTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B036BD0226C3BD00A8010B /* FSTestCase.m */; };
+		854575DC1FE922A500860811 /* CellTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B036B90226C14700A8010B /* CellTest.m */; };
+		854575DD1FE922A500860811 /* CompareOpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6659ED2802241F9500A8010B /* CompareOpTests.m */; };
+		854575DE1FE922A500860811 /* CrossTableFormulaTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D9C12D0220C5A900A8010B /* CrossTableFormulaTest.m */; };
+		854575DF1FE922A500860811 /* UndoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F508750199D8EA00A8010A /* UndoTests.m */; };
+		854575E01FE922A500860811 /* ItemGroupTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A31312019C1B9301A8010B /* ItemGroupTest.m */; };
+		854575E11FE922A500860811 /* KeysetCreationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A977530226594A01A8010A /* KeysetCreationTest.m */; };
+		854575E21FE922A500860811 /* SortingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F07EAC027A881600A8010B /* SortingTests.m */; };
+		854575E31FE922A500860811 /* HashMapTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6648FDFF027F129300A8010B /* HashMapTest.m */; };
+		854575E41FE922A500860811 /* FSNumberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A59581028A6E9E00A8010A /* FSNumberTests.m */; };
+		854575E51FE922A500860811 /* OperatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6275D05028C545A01A8010B /* OperatorTests.m */; };
+		854575E61FE922A500860811 /* FinancialFunctionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6275D0C028C58B901A8010B /* FinancialFunctionsTests.m */; };
+		854575E71FE922A500860811 /* GroupFunctionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6275D32028C5A5301A8010B /* GroupFunctionsTests.m */; };
+		854575E81FE922A500860811 /* NameArchiveTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 661AC81102C47FB800A8010A /* NameArchiveTest.m */; };
+		854575E91FE922A500860811 /* StringQuotingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6646558F02D0A0F700A8010A /* StringQuotingTest.m */; };
+		854575EA1FE922A500860811 /* LinkedCategoriesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 73745C420422330100A8010F /* LinkedCategoriesTest.m */; };
+		854575EC1FE922A500860811 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */; };
+		854575EF1FE922A500860811 /* ObjcUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A2D8A00220595C00A8010B /* ObjcUnit.framework */; };
+		854575FD1FE922A500860811 /* FSDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A37F4AEFDCFA73011CA2CEA /* FSDocument.h */; };
+		854575FE1FE922A500860811 /* FSController.h in Headers */ = {isa = PBXBuildFile; fileRef = 015D3852002579607F000001 /* FSController.h */; };
+		854575FF1FE922A500860811 /* FSFunctionHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = F699ACB5017DAC190112F87E /* FSFunctionHelp.h */; };
+		854576001FE922A500860811 /* FSArchiving.h in Headers */ = {isa = PBXBuildFile; fileRef = 0559A45B00272A277F000001 /* FSArchiving.h */; };
+		854576011FE922A500860811 /* FSWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0148150900286D227F000001 /* FSWindowController.h */; };
+		854576021FE922A500860811 /* FSTableController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0148150B00286F677F000001 /* FSTableController.h */; };
+		854576031FE922A500860811 /* FSChartController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0148150D00286FA27F000001 /* FSChartController.h */; };
+		854576041FE922A500860811 /* FSTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 66A79AFC0136980A00A82C0B /* FSTableView.h */; };
+		854576051FE922A500860811 /* FSMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 664E514F013A249900A82C0B /* FSMatrix.h */; };
+		854576061FE922A500860811 /* FSHeaderDock.h in Headers */ = {isa = PBXBuildFile; fileRef = F62F767F0144C10101BF5C2B /* FSHeaderDock.h */; };
+		854576071FE922A500860811 /* FSVarioMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = F64C0EBC014633A7017B8FD0 /* FSVarioMatrix.h */; };
+		854576081FE922A500860811 /* FSFirstResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = F6C4B4480147C79C01A80099 /* FSFirstResponder.h */; };
+		854576091FE922A500860811 /* SLSplashScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = F697A831014909B801839DEC /* SLSplashScreen.h */; };
+		8545760A1FE922A500860811 /* SLFloatingMark.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B894E4014B7ABC00BC3A04 /* SLFloatingMark.h */; };
+		8545760B1FE922A500860811 /* FSMatrixDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 665EF96F014C10B9009902E8 /* FSMatrixDataSource.h */; };
+		8545760C1FE922A500860811 /* ImageAndTextCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 660F68C7014DB0D100A8000B /* ImageAndTextCell.h */; };
+		8545760D1FE922A500860811 /* FSImporter.h in Headers */ = {isa = PBXBuildFile; fileRef = F62CBB23014F93C2011DAD80 /* FSImporter.h */; };
+		8545760E1FE922A500860811 /* FSPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = F6EE64EA015A078B0163AE3D /* FSPreferences.h */; };
+		8545760F1FE922A500860811 /* FSTableTabs.h in Headers */ = {isa = PBXBuildFile; fileRef = 6655F5100165D15100FF4B52 /* FSTableTabs.h */; };
+		854576101FE922A500860811 /* FSHeaderLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 665D752F017228EA00C5E943 /* FSHeaderLayout.h */; };
+		854576111FE922A500860811 /* FSCellStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 66DA074D018323140033FEED /* FSCellStyle.h */; };
+		854576121FE922A500860811 /* FSPasteboardHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = 66F18F0801B941E100A8010B /* FSPasteboardHandling.h */; };
+		854576131FE922A500860811 /* FSInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 6616B64201CA833400A8010B /* FSInspector.h */; };
+		854576141FE922A500860811 /* FSInspection.h in Headers */ = {isa = PBXBuildFile; fileRef = 01484B2E00277E407F000001 /* FSInspection.h */; };
+		854576151FE922A500860811 /* FSInspectorPane.h in Headers */ = {isa = PBXBuildFile; fileRef = 6634FAF101CB317500A8010B /* FSInspectorPane.h */; };
+		854576161FE922A500860811 /* FSNoSelectionInspectorPane.h in Headers */ = {isa = PBXBuildFile; fileRef = 6634FAF501CB4EDC00A8010B /* FSNoSelectionInspectorPane.h */; };
+		854576171FE922A500860811 /* FSMultipleSelectionInspectorPane.h in Headers */ = {isa = PBXBuildFile; fileRef = 6686762C01CB699F00A8010B /* FSMultipleSelectionInspectorPane.h */; };
+		854576181FE922A500860811 /* FSItemInspectorPane.h in Headers */ = {isa = PBXBuildFile; fileRef = 669ECC4F01CB97A100A8010B /* FSItemInspectorPane.h */; };
+		854576191FE922A500860811 /* SLCornerMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 6677F2A301DBB69C00A8010B /* SLCornerMenu.h */; };
+		8545761A1FE922A500860811 /* FSCellInspectorPane.h in Headers */ = {isa = PBXBuildFile; fileRef = 66BF623C01DE153B00A8010B /* FSCellInspectorPane.h */; };
+		8545761B1FE922A500860811 /* FSFormulaTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 66A8033202185E3800A8010B /* FSFormulaTable.h */; };
+		8545761C1FE922A500860811 /* FSExporter.h in Headers */ = {isa = PBXBuildFile; fileRef = F629712B026EE6A401A800CF /* FSExporter.h */; };
+		8545761D1FE922A500860811 /* FSSortPanelController.h in Headers */ = {isa = PBXBuildFile; fileRef = 66F07EB2027A987200A8010B /* FSSortPanelController.h */; };
+		8545761E1FE922A500860811 /* FlexiSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 669EE878028A516F00A8010A /* FlexiSheet.h */; };
+		8545761F1FE922A500860811 /* FSGraffleExport.h in Headers */ = {isa = PBXBuildFile; fileRef = F627FD52028AC40A01A8010B /* FSGraffleExport.h */; };
+		854576201FE922A500860811 /* FSWorksheet.h in Headers */ = {isa = PBXBuildFile; fileRef = F6C3BCB402923B5A01A8010B /* FSWorksheet.h */; };
+		854576211FE922A500860811 /* SLOutlineView.h in Headers */ = {isa = PBXBuildFile; fileRef = F6FBC34201562A2201C493A5 /* SLOutlineView.h */; };
+		854576231FE922A500860811 /* FSTable.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B4FDCFA73011CA2CEA /* FSTable.nib */; };
+		854576241FE922A500860811 /* Inspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 01484B280027789A7F000001 /* Inspector.nib */; };
+		854576251FE922A500860811 /* Styles.nib in Resources */ = {isa = PBXBuildFile; fileRef = 669E4DAC014724C700D990C6 /* Styles.nib */; };
+		854576261FE922A500860811 /* Import.nib in Resources */ = {isa = PBXBuildFile; fileRef = F62CBB20014F917D011DAD80 /* Import.nib */; };
+		854576271FE922A500860811 /* Preferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = 66290535016F245100316001 /* Preferences.nib */; };
+		854576281FE922A500860811 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
+		854576291FE922A500860811 /* Application.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0818360600288B917F000001 /* Application.icns */; };
+		8545762A1FE922A500860811 /* version.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66104768013B75EB00A82C0B /* version.plist */; };
+		8545762B1FE922A500860811 /* fingerCursor.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 662F988401447E0A002DB454 /* fingerCursor.tiff */; };
+		8545762C1FE922A500860811 /* ClosedGrabHandCursor.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 662F988601447E1F002DB454 /* ClosedGrabHandCursor.tiff */; };
+		8545762D1FE922A500860811 /* OpenGrabHandCursor.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 662F988801447E33002DB454 /* OpenGrabHandCursor.tiff */; };
+		8545762E1FE922A500860811 /* HorzResizeCursor.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 662F988A01448044002DB454 /* HorzResizeCursor.tiff */; };
+		8545762F1FE922A500860811 /* VertResizeCursor.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F62F76870144EA6401BF5C2B /* VertResizeCursor.tiff */; };
+		854576301FE922A500860811 /* rdock-6.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F61C23B40144F8E801CA306A /* rdock-6.tiff */; };
+		854576311FE922A500860811 /* ldock-6.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F61C23B70144F92501CA306A /* ldock-6.tiff */; };
+		854576321FE922A500860811 /* mdock-6.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F61C23B60144F90901CA306A /* mdock-6.tiff */; };
+		854576331FE922A500860811 /* mempty-6.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F61C23BD0145084201CA306A /* mempty-6.tiff */; };
+		854576341FE922A500860811 /* lempty-6.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F61C23BF0145086601CA306A /* lempty-6.tiff */; };
+		854576351FE922A500860811 /* rempty-6.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F61C23C10145087901CA306A /* rempty-6.tiff */; };
+		854576361FE922A500860811 /* FlexiSheet Help in Resources */ = {isa = PBXBuildFile; fileRef = F664C45201465FAC01F4745D /* FlexiSheet Help */; };
+		854576371FE922A500860811 /* naturalalign_nib.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 66B80AE801472C6B00FC60CC /* naturalalign_nib.tiff */; };
+		854576381FE922A500860811 /* rightalign_nib.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 66B80AE901472C6B00FC60CC /* rightalign_nib.tiff */; };
+		854576391FE922A500860811 /* justifyalign_nib.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 66B80AEA01472C6B00FC60CC /* justifyalign_nib.tiff */; };
+		8545763A1FE922A500860811 /* centeralign_nib.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 66B80AEB01472C6B00FC60CC /* centeralign_nib.tiff */; };
+		8545763B1FE922A500860811 /* leftalign_nib.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 66B80AEC01472C6B00FC60CC /* leftalign_nib.tiff */; };
+		8545763C1FE922A500860811 /* splimg.png in Resources */ = {isa = PBXBuildFile; fileRef = F63B4A8E0147800201A80099 /* splimg.png */; };
+		8545763D1FE922A500860811 /* Sheet.icns in Resources */ = {isa = PBXBuildFile; fileRef = F639CCAB0148E93B011DFDF4 /* Sheet.icns */; };
+		8545763E1FE922A500860811 /* TBSaveDocument.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 667D47C3014AE96800F77DCB /* TBSaveDocument.tiff */; };
+		8545763F1FE922A500860811 /* TBDelete.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 667D47CE014AFF6500F77DCB /* TBDelete.tiff */; };
+		854576401FE922A500860811 /* TBEdit.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 667D47D3014B006400F77DCB /* TBEdit.tiff */; };
+		854576411FE922A500860811 /* TBRecalc.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 667D47D6014B00DB00F77DCB /* TBRecalc.tiff */; };
+		854576421FE922A500860811 /* AlertIcon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 662F988C014480AB002DB454 /* AlertIcon.tiff */; };
+		854576431FE922A500860811 /* TableSmIcon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 660F68CB014DB32B00A8000B /* TableSmIcon.tiff */; };
+		854576441FE922A500860811 /* TViewSmIcon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 660F68CD014DB34700A8000B /* TViewSmIcon.tiff */; };
+		854576451FE922A500860811 /* ChartSmIcon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 664539790152AD99005D9C30 /* ChartSmIcon.tiff */; };
+		854576461FE922A500860811 /* Quantrix.icns in Resources */ = {isa = PBXBuildFile; fileRef = 66C887DF0147354B0072105B /* Quantrix.icns */; };
+		854576471FE922A500860811 /* BlackLeftArrow.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 6655F5140165EEEF00FF4B52 /* BlackLeftArrow.tiff */; };
+		854576481FE922A500860811 /* BlackRightArrow.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 6655F5160165EEF700FF4B52 /* BlackRightArrow.tiff */; };
+		854576491FE922A500860811 /* TBFormula.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 662C39C2016B4FAB00BEF36A /* TBFormula.tiff */; };
+		8545764A1FE922A500860811 /* TBRedo.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 66EED24F016BA47B00E9CE53 /* TBRedo.tiff */; };
+		8545764B1FE922A500860811 /* TBUndo.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 66EED250016BA47B00E9CE53 /* TBUndo.tiff */; };
+		8545764C1FE922A500860811 /* FormulaError.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 66418148016E33F6004624C4 /* FormulaError.tiff */; };
+		8545764D1FE922A500860811 /* FormulaWarning.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 6641814A016E3400004624C4 /* FormulaWarning.tiff */; };
+		8545764E1FE922A500860811 /* FormulaOK.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 66418151016E3A91004624C4 /* FormulaOK.tiff */; };
+		8545764F1FE922A500860811 /* Functions.nib in Resources */ = {isa = PBXBuildFile; fileRef = 66290532016F243500316001 /* Functions.nib */; };
+		854576501FE922A500860811 /* NoSelectionInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 6634FAF901CB501700A8010B /* NoSelectionInspector.nib */; };
+		854576511FE922A500860811 /* DocumentInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 6634FAFC01CB547E00A8010B /* DocumentInspector.nib */; };
+		854576521FE922A500860811 /* MultipleSelectionInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 6686763001CB6A2C00A8010B /* MultipleSelectionInspector.nib */; };
+		854576531FE922A500860811 /* TableInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 669ECC4C01CB812300A8010B /* TableInspector.nib */; };
+		854576541FE922A500860811 /* ItemInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 669ECC5401CB994900A8010B /* ItemInspector.nib */; };
+		854576551FE922A500860811 /* ViewInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 666975E001CCA27100A8010B /* ViewInspector.nib */; };
+		854576561FE922A500860811 /* TBInspect.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 666DB4D701DC8B0300A8010B /* TBInspect.tiff */; };
+		854576571FE922A500860811 /* CornerMenu.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 66B4ECD101DF0E2E00A8010B /* CornerMenu.tiff */; };
+		854576581FE922A500860811 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
+		854576591FE922A500860811 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6AE5C7A021FC6E701A81303 /* Localizable.strings */; };
+		8545765A1FE922A500860811 /* FTEqualSign.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 669CA424022774DD00A8010B /* FTEqualSign.tiff */; };
+		8545765B1FE922A500860811 /* FTIfBlock.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 669CA425022774DD00A8010B /* FTIfBlock.tiff */; };
+		8545765C1FE922A500860811 /* FlexiSheet.scriptSuite in Resources */ = {isa = PBXBuildFile; fileRef = 66E5BF64022A9FA200A8010B /* FlexiSheet.scriptSuite */; };
+		8545765D1FE922A500860811 /* FlexiSheet.scriptTerminology in Resources */ = {isa = PBXBuildFile; fileRef = 66E5BF6A022AA0B400A8010B /* FlexiSheet.scriptTerminology */; };
+		8545765E1FE922A500860811 /* Export.nib in Resources */ = {isa = PBXBuildFile; fileRef = 66F2D4C1026F226D00A8010B /* Export.nib */; };
+		8545765F1FE922A500860811 /* SortingItems.nib in Resources */ = {isa = PBXBuildFile; fileRef = 66F07EAF027A8EF900A8010B /* SortingItems.nib */; };
+		854576601FE922A500860811 /* FSDocument+Scripting.m in Resources */ = {isa = PBXBuildFile; fileRef = 66040E040298CE6E00A8010A /* FSDocument+Scripting.m */; };
+		854576621FE922A500860811 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		854576631FE922A500860811 /* FSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D3854002579AD7F000001 /* FSController.m */; settings = {ATTRIBUTES = (); }; };
+		854576641FE922A500860811 /* FSPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EE64EB015A078B0163AE3D /* FSPreferences.m */; };
+		854576651FE922A500860811 /* FSFunctionHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = F699ACB6017DAC190112F87E /* FSFunctionHelp.m */; };
+		854576661FE922A500860811 /* FSDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* FSDocument.m */; settings = {ATTRIBUTES = (); }; };
+		854576671FE922A500860811 /* FSDocument+Quantrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 666E91E80164DCB8006A3AD6 /* FSDocument+Quantrix.m */; };
+		854576681FE922A500860811 /* FSWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0148150F0028703A7F000001 /* FSWindowController.m */; settings = {ATTRIBUTES = (); }; };
+		854576691FE922A500860811 /* FSTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 014815100028703A7F000001 /* FSTableController.m */; settings = {ATTRIBUTES = (); }; };
+		8545766A1FE922A500860811 /* FSTableController+Formula.m in Sources */ = {isa = PBXBuildFile; fileRef = 6641814C016E354C004624C4 /* FSTableController+Formula.m */; };
+		8545766B1FE922A500860811 /* FSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A79AFD0136980A00A82C0B /* FSTableView.m */; };
+		8545766C1FE922A500860811 /* FSTableView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 665EF96D014BFAED009902E8 /* FSTableView+Layout.m */; };
+		8545766D1FE922A500860811 /* FSTableView+Scrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 66656DD50166355E0066F0D1 /* FSTableView+Scrolling.m */; };
+		8545766E1FE922A500860811 /* FSTableView+Selection.m in Sources */ = {isa = PBXBuildFile; fileRef = F62AE142017495FC01BE888B /* FSTableView+Selection.m */; };
+		8545766F1FE922A500860811 /* FSArchiving.m in Sources */ = {isa = PBXBuildFile; fileRef = 0559A45D00272A9E7F000001 /* FSArchiving.m */; settings = {ATTRIBUTES = (); }; };
+		854576701FE922A500860811 /* SLSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F697A832014909B801839DEC /* SLSplashScreen.m */; };
+		854576711FE922A500860811 /* SLFloatingMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B894E5014B7ABC00BC3A04 /* SLFloatingMark.m */; };
+		854576721FE922A500860811 /* ImageAndTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 660F68C8014DB0D100A8000B /* ImageAndTextCell.m */; };
+		854576731FE922A600860811 /* FSMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 664E5150013A249900A82C0B /* FSMatrix.m */; };
+		854576741FE922A600860811 /* FSVarioMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = F64C0EBD014633A7017B8FD0 /* FSVarioMatrix.m */; };
+		854576751FE922A600860811 /* FSTableTabs.m in Sources */ = {isa = PBXBuildFile; fileRef = 6655F5110165D15100FF4B52 /* FSTableTabs.m */; };
+		854576761FE922A600860811 /* FSHeaderDock.m in Sources */ = {isa = PBXBuildFile; fileRef = F62F76800144C10101BF5C2B /* FSHeaderDock.m */; };
+		854576771FE922A600860811 /* FSImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = F62CBB24014F93C2011DAD80 /* FSImporter.m */; };
+		854576781FE922A600860811 /* FSHeaderLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 665D7530017228EA00C5E943 /* FSHeaderLayout.m */; };
+		854576791FE922A600860811 /* FSCellStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DA074E018323140033FEED /* FSCellStyle.m */; };
+		8545767A1FE922A600860811 /* FSPasteboardHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F18F0901B941E100A8010B /* FSPasteboardHandling.m */; };
+		8545767B1FE922A600860811 /* FSInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 6616B64301CA833400A8010B /* FSInspector.m */; };
+		8545767C1FE922A600860811 /* FSInspection.m in Sources */ = {isa = PBXBuildFile; fileRef = 01484B2B00277B997F000001 /* FSInspection.m */; };
+		8545767D1FE922A600860811 /* FSInspectorPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 6634FAF201CB317500A8010B /* FSInspectorPane.m */; };
+		8545767E1FE922A600860811 /* FSNoSelectionInspectorPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 6634FAF601CB4EDC00A8010B /* FSNoSelectionInspectorPane.m */; };
+		8545767F1FE922A600860811 /* FSMultipleSelectionInspectorPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 6686762D01CB699F00A8010B /* FSMultipleSelectionInspectorPane.m */; };
+		854576801FE922A600860811 /* FSItemInspectorPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 669ECC5001CB97A100A8010B /* FSItemInspectorPane.m */; };
+		854576811FE922A600860811 /* SLCornerMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677F2A401DBB69C00A8010B /* SLCornerMenu.m */; };
+		854576821FE922A600860811 /* FSCellInspectorPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BF623D01DE153B00A8010B /* FSCellInspectorPane.m */; };
+		854576831FE922A600860811 /* FSFormulaTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A8033302185E3800A8010B /* FSFormulaTable.m */; };
+		854576841FE922A600860811 /* FSTableController+Toolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A977560226844101A8010A /* FSTableController+Toolbar.m */; };
+		854576851FE922A600860811 /* FSExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = F629712C026EE6A401A800CF /* FSExporter.m */; };
+		854576861FE922A600860811 /* FSSortPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F07EB3027A987200A8010B /* FSSortPanelController.m */; };
+		854576871FE922A600860811 /* FSGraffleExport.m in Sources */ = {isa = PBXBuildFile; fileRef = F627FD53028AC40A01A8010B /* FSGraffleExport.m */; };
+		854576881FE922A600860811 /* FSWorksheet.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C3BCB302923B5A01A8010B /* FSWorksheet.m */; };
+		854576891FE922A600860811 /* SLOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FBC34301562A2201C493A5 /* SLOutlineView.m */; };
+		8545768A1FE922A600860811 /* FSTableView+Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B82DDB0293A08D01A8010B /* FSTableView+Keyboard.m */; };
+		8545768B1FE922A600860811 /* FSTable+Scripting.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BBC7D30298E94800A8010A /* FSTable+Scripting.m */; };
+		8545768C1FE922A600860811 /* FSWorksheet+Scripting.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BBC7D50298E97D00A8010A /* FSWorksheet+Scripting.m */; };
+		8545768D1FE922A600860811 /* FSHeader+Scripting.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BBC80A0298FDFB00A8010A /* FSHeader+Scripting.m */; };
+		8545768E1FE922A600860811 /* FSKey+Scripting.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BBC8250299048A00A8010A /* FSKey+Scripting.m */; };
+		8545768F1FE922A600860811 /* FSValue+Scripting.m in Sources */ = {isa = PBXBuildFile; fileRef = F6769350029A430D01A8010B /* FSValue+Scripting.m */; };
+		854576901FE922A600860811 /* FSKeySet+Scripting.m in Sources */ = {isa = PBXBuildFile; fileRef = F6769352029A453A01A8010B /* FSKeySet+Scripting.m */; };
+		854576911FE922A600860811 /* FSDocument+Printing.m in Sources */ = {isa = PBXBuildFile; fileRef = 6689575C03506F6600A8010F /* FSDocument+Printing.m */; };
+		854576951FE922A600860811 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		854576961FE922A600860811 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E2BC0A0506742300A8010F /* WebKit.framework */; };
+		854576AC1FE922A600860811 /* FSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8545757A1FE922A500860811 /* FSCore.framework */; };
+		854576AD1FE922A600860811 /* FSFunctions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 854575BE1FE922A500860811 /* FSFunctions.framework */; };
+		854576AE1FE922A600860811 /* FSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8545757A1FE922A500860811 /* FSCore.framework */; };
+		854576AF1FE922A600860811 /* FSFunctions.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 854575BE1FE922A500860811 /* FSFunctions.framework */; };
+		854576B01FE922A600860811 /* FSCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8545757A1FE922A500860811 /* FSCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		854576A21FE922A600860811 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 854575361FE922A500860811;
+			remoteInfo = "FSCore (Upgraded)";
+		};
+		854576A41FE922A600860811 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 854575361FE922A500860811;
+			remoteInfo = "FSCore (Upgraded)";
+		};
+		854576A61FE922A600860811 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8545757B1FE922A500860811;
+			remoteInfo = "FSFunctions (Upgraded)";
+		};
+		854576AA1FE922A600860811 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8545757B1FE922A500860811;
+			remoteInfo = "FSFunctions (Upgraded)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		854576981FE922A600860811 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				854576B01FE922A600860811 /* FSCore.framework in CopyFiles */,
+				854576AF1FE922A600860811 /* FSFunctions.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0148150900286D227F000001 /* FSWindowController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSWindowController.h; sourceTree = "<group>"; };
+		0148150B00286F677F000001 /* FSTableController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSTableController.h; sourceTree = "<group>"; };
+		0148150D00286FA27F000001 /* FSChartController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSChartController.h; sourceTree = "<group>"; };
+		0148150F0028703A7F000001 /* FSWindowController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSWindowController.m; sourceTree = "<group>"; };
+		014815100028703A7F000001 /* FSTableController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSTableController.m; sourceTree = "<group>"; };
+		014815110028703A7F000001 /* FSChartController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSChartController.m; sourceTree = "<group>"; };
+		01484B290027789A7F000001 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Inspector.nib; sourceTree = "<group>"; };
+		01484B2B00277B997F000001 /* FSInspection.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSInspection.m; sourceTree = "<group>"; };
+		01484B2E00277E407F000001 /* FSInspection.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSInspection.h; sourceTree = "<group>"; };
+		014914520026D3807F000001 /* FSKeySet.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSKeySet.m; sourceTree = "<group>"; };
+		015D3852002579607F000001 /* FSController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSController.h; sourceTree = "<group>"; };
+		015D3854002579AD7F000001 /* FSController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSController.m; sourceTree = "<group>"; };
+		015D385600257A857F000001 /* FSValue.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSValue.m; sourceTree = "<group>"; };
+		015D38580025863E7F000001 /* FSKey.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSKey.h; sourceTree = "<group>"; };
+		015D385A002589217F000001 /* FSKey.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSKey.m; sourceTree = "<group>"; };
+		038F9E4F0024DEEC7F000001 /* FSHeader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSHeader.h; sourceTree = "<group>"; };
+		038F9E540024DF357F000001 /* FSDataStore.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSDataStore.h; sourceTree = "<group>"; };
+		039200940024E38F7F000001 /* FSMultiArray.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSMultiArray.h; sourceTree = "<group>"; };
+		039200960024E3C57F000001 /* FSValue.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSValue.h; sourceTree = "<group>"; };
+		04FA6A120025A2F57F000001 /* FSHeader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSHeader.m; sourceTree = "<group>"; };
+		0553A0A300278C557F000001 /* Layouts.graffle */ = {isa = PBXFileReference; lastKnownFileType = text; name = Layouts.graffle; path = Images/Layouts.graffle; sourceTree = SOURCE_ROOT; };
+		0559A45B00272A277F000001 /* FSArchiving.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSArchiving.h; sourceTree = "<group>"; };
+		0559A45D00272A9E7F000001 /* FSArchiving.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSArchiving.m; sourceTree = "<group>"; };
+		0818360600288B917F000001 /* Application.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Application.icns; sourceTree = "<group>"; };
+		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		2A37F4ACFDCFA73011CA2CEA /* FSDocument.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSDocument.m; sourceTree = "<group>"; };
+		2A37F4AEFDCFA73011CA2CEA /* FSDocument.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSDocument.h; sourceTree = "<group>"; };
+		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A37F4B5FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/FSTable.nib; sourceTree = "<group>"; };
+		2A37F4B7FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		66040E040298CE6E00A8010A /* FSDocument+Scripting.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "FSDocument+Scripting.m"; path = "Application/FSDocument+Scripting.m"; sourceTree = SOURCE_ROOT; };
+		660697780147467500BC954A /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/FSChart.nib; sourceTree = "<group>"; };
+		660F68C7014DB0D100A8000B /* ImageAndTextCell.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ImageAndTextCell.h; sourceTree = "<group>"; };
+		660F68C8014DB0D100A8000B /* ImageAndTextCell.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ImageAndTextCell.m; sourceTree = "<group>"; };
+		660F68CB014DB32B00A8000B /* TableSmIcon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TableSmIcon.tiff; sourceTree = "<group>"; };
+		660F68CD014DB34700A8000B /* TViewSmIcon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TViewSmIcon.tiff; sourceTree = "<group>"; };
+		66104768013B75EB00A82C0B /* version.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist; path = version.plist; sourceTree = "<group>"; };
+		6616B64201CA833400A8010B /* FSInspector.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSInspector.h; sourceTree = "<group>"; };
+		6616B64301CA833400A8010B /* FSInspector.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSInspector.m; sourceTree = "<group>"; };
+		6618ADA90168F9C6009313B6 /* FSCellnameFunction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSCellnameFunction.h; sourceTree = "<group>"; };
+		6618ADAA0168F9C6009313B6 /* FSCellnameFunction.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSCellnameFunction.m; sourceTree = "<group>"; };
+		661AC81102C47FB800A8010A /* NameArchiveTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NameArchiveTest.m; sourceTree = "<group>"; };
+		661AC81202C47FB800A8010A /* NameArchiveTest.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NameArchiveTest.h; sourceTree = "<group>"; };
+		661D72A30147436900EBCC50 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = TODO; sourceTree = "<group>"; };
+		66290533016F243500316001 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Functions.nib; sourceTree = "<group>"; };
+		662C39B5016B448D00BEF36A /* FSPIFunction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSPIFunction.h; sourceTree = "<group>"; };
+		662C39B6016B448D00BEF36A /* FSPIFunction.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSPIFunction.m; sourceTree = "<group>"; };
+		662C39BE016B4A5E00BEF36A /* FSTodayFunction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSTodayFunction.h; sourceTree = "<group>"; };
+		662C39BF016B4A5E00BEF36A /* FSTodayFunction.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSTodayFunction.m; sourceTree = "<group>"; };
+		662C39C2016B4FAB00BEF36A /* TBFormula.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TBFormula.tiff; sourceTree = "<group>"; };
+		662F988401447E0A002DB454 /* fingerCursor.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = fingerCursor.tiff; sourceTree = "<group>"; };
+		662F988601447E1F002DB454 /* ClosedGrabHandCursor.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ClosedGrabHandCursor.tiff; sourceTree = "<group>"; };
+		662F988801447E33002DB454 /* OpenGrabHandCursor.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = OpenGrabHandCursor.tiff; sourceTree = "<group>"; };
+		662F988A01448044002DB454 /* HorzResizeCursor.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = HorzResizeCursor.tiff; sourceTree = "<group>"; };
+		662F988C014480AB002DB454 /* AlertIcon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = AlertIcon.tiff; sourceTree = "<group>"; };
+		6634FAF101CB317500A8010B /* FSInspectorPane.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSInspectorPane.h; sourceTree = "<group>"; };
+		6634FAF201CB317500A8010B /* FSInspectorPane.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSInspectorPane.m; sourceTree = "<group>"; };
+		6634FAF501CB4EDC00A8010B /* FSNoSelectionInspectorPane.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSNoSelectionInspectorPane.h; sourceTree = "<group>"; };
+		6634FAF601CB4EDC00A8010B /* FSNoSelectionInspectorPane.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSNoSelectionInspectorPane.m; sourceTree = "<group>"; };
+		6634FAFA01CB501700A8010B /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/NoSelectionInspector.nib; sourceTree = "<group>"; };
+		6634FAFD01CB547E00A8010B /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/DocumentInspector.nib; sourceTree = "<group>"; };
+		6634FAFF01CB54D200A8010B /* FSDocumentInspectorPane.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSDocumentInspectorPane.h; sourceTree = "<group>"; };
+		6634FB0001CB54D200A8010B /* FSDocumentInspectorPane.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSDocumentInspectorPane.m; sourceTree = "<group>"; };
+		663C9B04015493D900AA2794 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/CoreGraphics.framework; sourceTree = "<absolute>"; };
+		66418148016E33F6004624C4 /* FormulaError.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = FormulaError.tiff; sourceTree = "<group>"; };
+		6641814A016E3400004624C4 /* FormulaWarning.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = FormulaWarning.tiff; sourceTree = "<group>"; };
+		6641814C016E354C004624C4 /* FSTableController+Formula.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "FSTableController+Formula.m"; sourceTree = "<group>"; };
+		66418151016E3A91004624C4 /* FormulaOK.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = FormulaOK.tiff; sourceTree = "<group>"; };
+		6643069201946433009460CF /* FSLog.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSLog.h; sourceTree = "<group>"; };
+		6643069301946433009460CF /* FSLog.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSLog.m; sourceTree = "<group>"; };
+		664539790152AD99005D9C30 /* ChartSmIcon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ChartSmIcon.tiff; sourceTree = "<group>"; };
+		6646558F02D0A0F700A8010A /* StringQuotingTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = StringQuotingTest.m; sourceTree = "<group>"; };
+		6646559002D0A0F700A8010A /* StringQuotingTest.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = StringQuotingTest.h; sourceTree = "<group>"; };
+		6648FDFA027F118A00A8010B /* FSHashMap.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSHashMap.h; sourceTree = "<group>"; };
+		6648FDFB027F118A00A8010B /* FSHashMap.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSHashMap.m; sourceTree = "<group>"; };
+		6648FDFE027F129300A8010B /* HashMapTest.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = HashMapTest.h; sourceTree = "<group>"; };
+		6648FDFF027F129300A8010B /* HashMapTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = HashMapTest.m; sourceTree = "<group>"; };
+		664AA7CE01708F5900D0577F /* FSPowOperator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSPowOperator.h; sourceTree = "<group>"; };
+		664AA7CF01708F5900D0577F /* FSPowOperator.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSPowOperator.m; sourceTree = "<group>"; };
+		664E514F013A249900A82C0B /* FSMatrix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSMatrix.h; sourceTree = "<group>"; };
+		664E5150013A249900A82C0B /* FSMatrix.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSMatrix.m; sourceTree = "<group>"; };
+		6653615F0181A124004AAD35 /* FSFinancialFunctions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSFinancialFunctions.h; sourceTree = "<group>"; };
+		665361600181A124004AAD35 /* FSFinancialFunctions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSFinancialFunctions.m; sourceTree = "<group>"; };
+		665361660181E556004AAD35 /* FSDocumentProtocol.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSDocumentProtocol.h; sourceTree = "<group>"; };
+		6655F5100165D15100FF4B52 /* FSTableTabs.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = FSTableTabs.h; path = Application/FSTableTabs.h; sourceTree = SOURCE_ROOT; };
+		6655F5110165D15100FF4B52 /* FSTableTabs.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = FSTableTabs.m; path = Application/FSTableTabs.m; sourceTree = SOURCE_ROOT; };
+		6655F5140165EEEF00FF4B52 /* BlackLeftArrow.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = BlackLeftArrow.tiff; sourceTree = "<group>"; };
+		6655F5160165EEF700FF4B52 /* BlackRightArrow.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = BlackRightArrow.tiff; sourceTree = "<group>"; };
+		6659ED2702241F9500A8010B /* CompareOpTests.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CompareOpTests.h; sourceTree = "<group>"; };
+		6659ED2802241F9500A8010B /* CompareOpTests.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CompareOpTests.m; sourceTree = "<group>"; };
+		665D752F017228EA00C5E943 /* FSHeaderLayout.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSHeaderLayout.h; sourceTree = "<group>"; };
+		665D7530017228EA00C5E943 /* FSHeaderLayout.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSHeaderLayout.m; sourceTree = "<group>"; };
+		665EF96D014BFAED009902E8 /* FSTableView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "FSTableView+Layout.m"; sourceTree = "<group>"; };
+		665EF96F014C10B9009902E8 /* FSMatrixDataSource.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSMatrixDataSource.h; sourceTree = "<group>"; };
+		66656DD50166355E0066F0D1 /* FSTableView+Scrolling.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "FSTableView+Scrolling.m"; sourceTree = "<group>"; };
+		666975DC01CCA18500A8010B /* FSViewInspectorPane.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSViewInspectorPane.h; sourceTree = "<group>"; };
+		666975DD01CCA18500A8010B /* FSViewInspectorPane.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSViewInspectorPane.m; sourceTree = "<group>"; };
+		666975E101CCA27100A8010B /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ViewInspector.nib; sourceTree = "<group>"; };
+		666DB4D701DC8B0300A8010B /* TBInspect.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TBInspect.tiff; sourceTree = "<group>"; };
+		666E91E80164DCB8006A3AD6 /* FSDocument+Quantrix.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "FSDocument+Quantrix.m"; sourceTree = "<group>"; };
+		66749D45016E536B0061F406 /* FSKeyRange.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSKeyRange.h; sourceTree = "<group>"; };
+		66749D46016E536B0061F406 /* FSKeyRange.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSKeyRange.m; sourceTree = "<group>"; };
+		6677F2A301DBB69C00A8010B /* SLCornerMenu.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SLCornerMenu.h; sourceTree = "<group>"; };
+		6677F2A401DBB69C00A8010B /* SLCornerMenu.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SLCornerMenu.m; sourceTree = "<group>"; };
+		667AEA50016F552E001309E8 /* FSProdFunction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSProdFunction.h; sourceTree = "<group>"; };
+		667AEA51016F552E001309E8 /* FSProdFunction.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSProdFunction.m; sourceTree = "<group>"; };
+		667AEA54016F5548001309E8 /* FSAbsFunction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSAbsFunction.h; sourceTree = "<group>"; };
+		667AEA55016F5548001309E8 /* FSAbsFunction.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSAbsFunction.m; sourceTree = "<group>"; };
+		667AEA56016F5548001309E8 /* FSCosFunction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSCosFunction.h; sourceTree = "<group>"; };
+		667AEA57016F5548001309E8 /* FSCosFunction.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSCosFunction.m; sourceTree = "<group>"; };
+		667AEA58016F5548001309E8 /* FSLnFunction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSLnFunction.h; sourceTree = "<group>"; };
+		667AEA59016F5548001309E8 /* FSLnFunction.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSLnFunction.m; sourceTree = "<group>"; };
+		667D47C3014AE96800F77DCB /* TBSaveDocument.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TBSaveDocument.tiff; sourceTree = "<group>"; };
+		667D47CE014AFF6500F77DCB /* TBDelete.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TBDelete.tiff; sourceTree = "<group>"; };
+		667D47D0014AFFF500F77DCB /* TBAttach.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = TBAttach.tiff; path = Images/TBAttach.tiff; sourceTree = SOURCE_ROOT; };
+		667D47D3014B006400F77DCB /* TBEdit.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TBEdit.tiff; sourceTree = "<group>"; };
+		667D47D6014B00DB00F77DCB /* TBRecalc.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TBRecalc.tiff; sourceTree = "<group>"; };
+		667D47D8014B015D00F77DCB /* TBFind.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = TBFind.tiff; path = Images/TBFind.tiff; sourceTree = SOURCE_ROOT; };
+		668066760170C930000BD935 /* FSExpressionNegator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSExpressionNegator.h; sourceTree = "<group>"; };
+		668066770170C930000BD935 /* FSExpressionNegator.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSExpressionNegator.m; sourceTree = "<group>"; };
+		6686762C01CB699F00A8010B /* FSMultipleSelectionInspectorPane.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSMultipleSelectionInspectorPane.h; sourceTree = "<group>"; };
+		6686762D01CB699F00A8010B /* FSMultipleSelectionInspectorPane.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSMultipleSelectionInspectorPane.m; sourceTree = "<group>"; };
+		6686763101CB6A2C00A8010B /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MultipleSelectionInspector.nib; sourceTree = "<group>"; };
+		6686C85901818B3C004B9D20 /* FSChartView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSChartView.h; sourceTree = "<group>"; };
+		6686C85A01818B3C004B9D20 /* FSChartView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSChartView.m; sourceTree = "<group>"; };
+		66883CE901714E960098DB14 /* FSStringFunction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSStringFunction.h; sourceTree = "<group>"; };
+		66883CEA01714E960098DB14 /* FSStringFunction.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSStringFunction.m; sourceTree = "<group>"; };
+		66883CF0017151D50098DB14 /* FSMaxFunction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSMaxFunction.h; sourceTree = "<group>"; };
+		66883CF1017151D50098DB14 /* FSMaxFunction.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSMaxFunction.m; sourceTree = "<group>"; };
+		66883CF40171520F0098DB14 /* FSMinFunction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSMinFunction.h; sourceTree = "<group>"; };
+		66883CF50171520F0098DB14 /* FSMinFunction.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSMinFunction.m; sourceTree = "<group>"; };
+		66883CF9017156670098DB14 /* FSCatOperator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSCatOperator.h; sourceTree = "<group>"; };
+		66883CFA017156670098DB14 /* FSCatOperator.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSCatOperator.m; sourceTree = "<group>"; };
+		6689575C03506F6600A8010F /* FSDocument+Printing.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "FSDocument+Printing.m"; sourceTree = "<group>"; };
+		668964F50144ACA300B9BC23 /* FSKeySet.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSKeySet.h; sourceTree = "<group>"; };
+		668C02B301BA039900A8010B /* FSUnitTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSUnitTest.m; sourceTree = "<group>"; };
+		669CA424022774DD00A8010B /* FTEqualSign.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = FTEqualSign.tiff; sourceTree = "<group>"; };
+		669CA425022774DD00A8010B /* FTIfBlock.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = FTIfBlock.tiff; sourceTree = "<group>"; };
+		669D6EE90167AF2300052BA8 /* FSVariable.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSVariable.h; sourceTree = "<group>"; };
+		669D6EEA0167AF2300052BA8 /* FSVariable.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSVariable.m; sourceTree = "<group>"; };
+		669D6EED0167AF4E00052BA8 /* FSConstant.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSConstant.h; sourceTree = "<group>"; };
+		669D6EEE0167AF4E00052BA8 /* FSConstant.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSConstant.m; sourceTree = "<group>"; };
+		669D6EF10167AFEB00052BA8 /* FSOperator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSOperator.h; sourceTree = "<group>"; };
+		669D6EF20167AFEB00052BA8 /* FSOperator.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSOperator.m; sourceTree = "<group>"; };
+		669D6EF50167B05200052BA8 /* FSFunction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSFunction.h; sourceTree = "<group>"; };
+		669D6EF60167B05200052BA8 /* FSFunction.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSFunction.m; sourceTree = "<group>"; };
+		669E4DAD014724C700D990C6 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Styles.nib; sourceTree = "<group>"; };
+		669ECC4801CB7AC400A8010B /* FSTableInspectorPane.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSTableInspectorPane.h; sourceTree = "<group>"; };
+		669ECC4901CB7AC400A8010B /* FSTableInspectorPane.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSTableInspectorPane.m; sourceTree = "<group>"; };
+		669ECC4D01CB812300A8010B /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/TableInspector.nib; sourceTree = "<group>"; };
+		669ECC4F01CB97A100A8010B /* FSItemInspectorPane.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSItemInspectorPane.h; sourceTree = "<group>"; };
+		669ECC5001CB97A100A8010B /* FSItemInspectorPane.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSItemInspectorPane.m; sourceTree = "<group>"; };
+		669ECC5501CB994900A8010B /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ItemInspector.nib; sourceTree = "<group>"; };
+		669EE878028A516F00A8010A /* FlexiSheet.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FlexiSheet.h; sourceTree = "<group>"; };
+		66A162EB014CF95F00A8000B /* FSTable.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSTable.h; sourceTree = "<group>"; };
+		66A162EC014CF95F00A8000B /* FSTable.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSTable.m; sourceTree = "<group>"; };
+		66A2D8A00220595C00A8010B /* ObjcUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjcUnit.framework; path = /Library/Frameworks/ObjcUnit.framework; sourceTree = "<absolute>"; };
+		66A2D8A202205A6300A8010B /* AllTests.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AllTests.h; sourceTree = "<group>"; };
+		66A2D8A302205A6300A8010B /* AllTests.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AllTests.m; sourceTree = "<group>"; };
+		66A59581028A6E9E00A8010A /* FSNumberTests.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSNumberTests.m; sourceTree = "<group>"; };
+		66A59582028A6E9E00A8010A /* FSNumberTests.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSNumberTests.h; sourceTree = "<group>"; };
+		66A5F75F01C09D5C00A8010A /* FSTestDocument.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSTestDocument.h; sourceTree = "<group>"; };
+		66A5F76001C09D5C00A8010A /* FSTestDocument.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSTestDocument.m; sourceTree = "<group>"; };
+		66A79AFC0136980A00A82C0B /* FSTableView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSTableView.h; sourceTree = "<group>"; };
+		66A79AFD0136980A00A82C0B /* FSTableView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSTableView.m; sourceTree = "<group>"; };
+		66A8033202185E3800A8010B /* FSFormulaTable.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSFormulaTable.h; sourceTree = "<group>"; };
+		66A8033302185E3800A8010B /* FSFormulaTable.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSFormulaTable.m; sourceTree = "<group>"; };
+		66B036B80226C14700A8010B /* CellTest.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CellTest.h; sourceTree = "<group>"; };
+		66B036B90226C14700A8010B /* CellTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CellTest.m; sourceTree = "<group>"; };
+		66B036BC0226C3BD00A8010B /* FSTestCase.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSTestCase.h; sourceTree = "<group>"; };
+		66B036BD0226C3BD00A8010B /* FSTestCase.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSTestCase.m; sourceTree = "<group>"; };
+		66B4ECD101DF0E2E00A8010B /* CornerMenu.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = CornerMenu.tiff; sourceTree = "<group>"; };
+		66B80AE801472C6B00FC60CC /* naturalalign_nib.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = naturalalign_nib.tiff; sourceTree = "<group>"; };
+		66B80AE901472C6B00FC60CC /* rightalign_nib.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = rightalign_nib.tiff; sourceTree = "<group>"; };
+		66B80AEA01472C6B00FC60CC /* justifyalign_nib.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = justifyalign_nib.tiff; sourceTree = "<group>"; };
+		66B80AEB01472C6B00FC60CC /* centeralign_nib.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = centeralign_nib.tiff; sourceTree = "<group>"; };
+		66B80AEC01472C6B00FC60CC /* leftalign_nib.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = leftalign_nib.tiff; sourceTree = "<group>"; };
+		66B894E4014B7ABC00BC3A04 /* SLFloatingMark.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SLFloatingMark.h; sourceTree = "<group>"; };
+		66B894E5014B7ABC00BC3A04 /* SLFloatingMark.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SLFloatingMark.m; sourceTree = "<group>"; };
+		66BBC7D30298E94800A8010A /* FSTable+Scripting.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "FSTable+Scripting.m"; sourceTree = "<group>"; };
+		66BBC7D50298E97D00A8010A /* FSWorksheet+Scripting.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "FSWorksheet+Scripting.m"; sourceTree = "<group>"; };
+		66BBC80A0298FDFB00A8010A /* FSHeader+Scripting.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "FSHeader+Scripting.m"; sourceTree = "<group>"; };
+		66BBC8250299048A00A8010A /* FSKey+Scripting.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "FSKey+Scripting.m"; sourceTree = "<group>"; };
+		66BDF549016F484C004FCF9B /* FSSinFunction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSSinFunction.h; sourceTree = "<group>"; };
+		66BDF54A016F484C004FCF9B /* FSSinFunction.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSSinFunction.m; sourceTree = "<group>"; };
+		66BF623C01DE153B00A8010B /* FSCellInspectorPane.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSCellInspectorPane.h; sourceTree = "<group>"; };
+		66BF623D01DE153B00A8010B /* FSCellInspectorPane.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSCellInspectorPane.m; sourceTree = "<group>"; };
+		66C887DF0147354B0072105B /* Quantrix.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Quantrix.icns; sourceTree = "<group>"; };
+		66C9F2740166FBD000D9DECA /* FSFormula.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSFormula.h; sourceTree = "<group>"; };
+		66C9F2750166FBD000D9DECA /* FSFormula.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSFormula.m; sourceTree = "<group>"; };
+		66C9F2780166FDF700D9DECA /* FSFormulaSelection.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSFormulaSelection.h; sourceTree = "<group>"; };
+		66C9F2790166FDF700D9DECA /* FSFormulaSelection.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSFormulaSelection.m; sourceTree = "<group>"; };
+		66C9F27A0166FDF700D9DECA /* FSFormulaDefinition.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSFormulaDefinition.h; sourceTree = "<group>"; };
+		66C9F27B0166FDF700D9DECA /* FSFormulaDefinition.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSFormulaDefinition.m; sourceTree = "<group>"; };
+		66D9C12C0220C5A900A8010B /* CrossTableFormulaTest.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CrossTableFormulaTest.h; sourceTree = "<group>"; };
+		66D9C12D0220C5A900A8010B /* CrossTableFormulaTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CrossTableFormulaTest.m; sourceTree = "<group>"; };
+		66DA074D018323140033FEED /* FSCellStyle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSCellStyle.h; sourceTree = "<group>"; };
+		66DA074E018323140033FEED /* FSCellStyle.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSCellStyle.m; sourceTree = "<group>"; };
+		66DF64CB03581B8700A8010F /* FSTable+Find.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "FSTable+Find.m"; sourceTree = "<group>"; };
+		66DF64CD03581BDA00A8010F /* FSTable+Formula.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "FSTable+Formula.m"; sourceTree = "<group>"; };
+		66E222A7016FBE2400C6915F /* FSTanFunction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSTanFunction.h; sourceTree = "<group>"; };
+		66E222A8016FBE2400C6915F /* FSTanFunction.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSTanFunction.m; sourceTree = "<group>"; };
+		66E222B0016FC09A00C6915F /* FSSignFunction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSSignFunction.h; sourceTree = "<group>"; };
+		66E222B1016FC09A00C6915F /* FSSignFunction.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSSignFunction.m; sourceTree = "<group>"; };
+		66E222B4016FC1A900C6915F /* FSSqrtFunction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSSqrtFunction.h; sourceTree = "<group>"; };
+		66E222B5016FC1A900C6915F /* FSSqrtFunction.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSSqrtFunction.m; sourceTree = "<group>"; };
+		66E40DB9016A491E00447B50 /* FSSelection.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSSelection.h; sourceTree = "<group>"; };
+		66E40DBA016A491E00447B50 /* FSSelection.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSSelection.m; sourceTree = "<group>"; };
+		66E40DBD016A4FAE00447B50 /* FSSumFunction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSSumFunction.h; sourceTree = "<group>"; };
+		66E40DBE016A4FAE00447B50 /* FSSumFunction.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSSumFunction.m; sourceTree = "<group>"; };
+		66E5BF64022A9FA200A8010B /* FlexiSheet.scriptSuite */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FlexiSheet.scriptSuite; sourceTree = "<group>"; };
+		66E5BF66022A9FFB00A8010B /* FlexiSheet.scriptTerminology */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = FlexiSheet.scriptTerminology; path = English.lproj/FlexiSheet.scriptTerminology; sourceTree = "<group>"; };
+		66E8A7A10134C5BA00A82C0B /* FSUnit.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSUnit.h; sourceTree = "<group>"; };
+		66E8A7A20134C5BA00A82C0B /* FSUnit.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSUnit.m; sourceTree = "<group>"; };
+		66EED24F016BA47B00E9CE53 /* TBRedo.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TBRedo.tiff; sourceTree = "<group>"; };
+		66EED250016BA47B00E9CE53 /* TBUndo.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TBUndo.tiff; sourceTree = "<group>"; };
+		66F07EAB027A881600A8010B /* SortingTests.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SortingTests.h; sourceTree = "<group>"; };
+		66F07EAC027A881600A8010B /* SortingTests.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SortingTests.m; sourceTree = "<group>"; };
+		66F07EB0027A8EF900A8010B /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/SortingItems.nib; sourceTree = "<group>"; };
+		66F07EB2027A987200A8010B /* FSSortPanelController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSSortPanelController.h; sourceTree = "<group>"; };
+		66F07EB3027A987200A8010B /* FSSortPanelController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSSortPanelController.m; sourceTree = "<group>"; };
+		66F18F0801B941E100A8010B /* FSPasteboardHandling.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSPasteboardHandling.h; sourceTree = "<group>"; };
+		66F18F0901B941E100A8010B /* FSPasteboardHandling.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSPasteboardHandling.m; sourceTree = "<group>"; };
+		66F2D4C2026F226D00A8010B /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Export.nib; sourceTree = "<group>"; };
+		66F508740199D8EA00A8010A /* UndoTests.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = UndoTests.h; sourceTree = "<group>"; };
+		66F508750199D8EA00A8010A /* UndoTests.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = UndoTests.m; sourceTree = "<group>"; };
+		66F7138A0280557900A8010B /* FSTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSTypes.h; sourceTree = "<group>"; };
+		731982FC0500CF4000A8010F /* CHANGELOG */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG; sourceTree = "<group>"; };
+		73745C410422330100A8010F /* LinkedCategoriesTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedCategoriesTest.h; sourceTree = "<group>"; };
+		73745C420422330100A8010F /* LinkedCategoriesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedCategoriesTest.m; sourceTree = "<group>"; };
+		73E2BC0A0506742300A8010F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		854575791FE922A500860811 /* Info-FSCore.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-FSCore.plist"; sourceTree = "<group>"; };
+		8545757A1FE922A500860811 /* FSCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		854575BD1FE922A500860811 /* Info-FSFunctions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-FSFunctions.plist"; sourceTree = "<group>"; };
+		854575BE1FE922A500860811 /* FSFunctions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSFunctions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		854575F51FE922A500860811 /* FSUnitTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FSUnitTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8545769F1FE922A600860811 /* Info-FlexiSheet.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-FlexiSheet.plist"; sourceTree = "<group>"; };
+		854576A01FE922A600860811 /* FlexiSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlexiSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6155E2701622919010D2662 /* FSKeyGroup.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSKeyGroup.h; sourceTree = "<group>"; };
+		F6155E2801622919010D2662 /* FSKeyGroup.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSKeyGroup.m; sourceTree = "<group>"; };
+		F61C23B40144F8E801CA306A /* rdock-6.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "rdock-6.tiff"; sourceTree = "<group>"; };
+		F61C23B60144F90901CA306A /* mdock-6.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "mdock-6.tiff"; sourceTree = "<group>"; };
+		F61C23B70144F92501CA306A /* ldock-6.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "ldock-6.tiff"; sourceTree = "<group>"; };
+		F61C23BD0145084201CA306A /* mempty-6.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "mempty-6.tiff"; sourceTree = "<group>"; };
+		F61C23BF0145086601CA306A /* lempty-6.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "lempty-6.tiff"; sourceTree = "<group>"; };
+		F61C23C10145087901CA306A /* rempty-6.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "rempty-6.tiff"; sourceTree = "<group>"; };
+		F61E22B9016D99C401473B13 /* FSEqualOperator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSEqualOperator.h; sourceTree = "<group>"; };
+		F61E22BA016D99C401473B13 /* FSEqualOperator.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSEqualOperator.m; sourceTree = "<group>"; };
+		F6253CE5014DFA93017BFD99 /* FoundationExtentions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FoundationExtentions.h; sourceTree = "<group>"; };
+		F6253CE6014DFA93017BFD99 /* FoundationExtentions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FoundationExtentions.m; sourceTree = "<group>"; };
+		F6275D05028C545A01A8010B /* OperatorTests.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = OperatorTests.m; sourceTree = "<group>"; };
+		F6275D06028C545A01A8010B /* OperatorTests.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = OperatorTests.h; sourceTree = "<group>"; };
+		F6275D0C028C58B901A8010B /* FinancialFunctionsTests.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FinancialFunctionsTests.m; sourceTree = "<group>"; };
+		F6275D0D028C58B901A8010B /* FinancialFunctionsTests.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FinancialFunctionsTests.h; sourceTree = "<group>"; };
+		F6275D32028C5A5301A8010B /* GroupFunctionsTests.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GroupFunctionsTests.m; sourceTree = "<group>"; };
+		F6275D33028C5A5301A8010B /* GroupFunctionsTests.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GroupFunctionsTests.h; sourceTree = "<group>"; };
+		F627FD52028AC40A01A8010B /* FSGraffleExport.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSGraffleExport.h; sourceTree = "<group>"; };
+		F627FD53028AC40A01A8010B /* FSGraffleExport.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSGraffleExport.m; sourceTree = "<group>"; };
+		F629712B026EE6A401A800CF /* FSExporter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSExporter.h; sourceTree = "<group>"; };
+		F629712C026EE6A401A800CF /* FSExporter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSExporter.m; sourceTree = "<group>"; };
+		F62AE142017495FC01BE888B /* FSTableView+Selection.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "FSTableView+Selection.m"; sourceTree = "<group>"; };
+		F62B76AE01685D8001A89AF4 /* FSPlusOperator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSPlusOperator.h; sourceTree = "<group>"; };
+		F62B76AF01685D8001A89AF4 /* FSPlusOperator.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSPlusOperator.m; sourceTree = "<group>"; };
+		F62B76B30168649901A89AF4 /* FSRandFunction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSRandFunction.h; sourceTree = "<group>"; };
+		F62B76B40168649901A89AF4 /* FSRandFunction.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSRandFunction.m; sourceTree = "<group>"; };
+		F62B76B701688F7201A89AF4 /* FSMultiplyOperator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSMultiplyOperator.h; sourceTree = "<group>"; };
+		F62B76B801688F7201A89AF4 /* FSMultiplyOperator.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSMultiplyOperator.m; sourceTree = "<group>"; };
+		F62CBB21014F917D011DAD80 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Import.nib; sourceTree = "<group>"; };
+		F62CBB23014F93C2011DAD80 /* FSImporter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSImporter.h; sourceTree = "<group>"; };
+		F62CBB24014F93C2011DAD80 /* FSImporter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSImporter.m; sourceTree = "<group>"; };
+		F62F767F0144C10101BF5C2B /* FSHeaderDock.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = FSHeaderDock.h; path = Application/UI/FSHeaderDock.h; sourceTree = SOURCE_ROOT; };
+		F62F76800144C10101BF5C2B /* FSHeaderDock.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = FSHeaderDock.m; path = Application/UI/FSHeaderDock.m; sourceTree = SOURCE_ROOT; };
+		F62F76870144EA6401BF5C2B /* VertResizeCursor.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = VertResizeCursor.tiff; sourceTree = "<group>"; };
+		F639CCA90148E8AA011DFDF4 /* Sheet.graffle */ = {isa = PBXFileReference; lastKnownFileType = file; name = Sheet.graffle; path = Images/Sheet.graffle; sourceTree = SOURCE_ROOT; };
+		F639CCAA0148E8E2011DFDF4 /* Splash.graffle */ = {isa = PBXFileReference; lastKnownFileType = file; name = Splash.graffle; path = Images/Splash.graffle; sourceTree = "<group>"; };
+		F639CCAB0148E93B011DFDF4 /* Sheet.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Sheet.icns; sourceTree = "<group>"; };
+		F63B4A8E0147800201A80099 /* splimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splimg.png; sourceTree = "<group>"; };
+		F63CF75D0169B82301D560A0 /* FSExpressionParenthesis.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSExpressionParenthesis.h; sourceTree = "<group>"; };
+		F63CF75E0169B82301D560A0 /* FSExpressionParenthesis.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSExpressionParenthesis.m; sourceTree = "<group>"; };
+		F648352D013B8DA001A80099 /* FSExpression.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSExpression.h; sourceTree = "<group>"; };
+		F648352E013B8DA001A80099 /* FSExpression.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSExpression.m; sourceTree = "<group>"; };
+		F64C0EBC014633A7017B8FD0 /* FSVarioMatrix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSVarioMatrix.h; sourceTree = "<group>"; };
+		F64C0EBD014633A7017B8FD0 /* FSVarioMatrix.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSVarioMatrix.m; sourceTree = "<group>"; };
+		F64C0ED801464DE4017B8FD0 /* FSCore.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSCore.h; sourceTree = "<group>"; };
+		F664C45201465FAC01F4745D /* FlexiSheet Help */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = folder; path = "FlexiSheet Help"; sourceTree = "<group>"; };
+		F668DB100168A51E01487148 /* FSMinusOperator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSMinusOperator.h; sourceTree = "<group>"; };
+		F668DB110168A51E01487148 /* FSMinusOperator.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSMinusOperator.m; sourceTree = "<group>"; };
+		F668DB170168A86901487148 /* FSExpressionError.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSExpressionError.h; sourceTree = "<group>"; };
+		F668DB180168A86901487148 /* FSExpressionError.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSExpressionError.m; sourceTree = "<group>"; };
+		F6769350029A430D01A8010B /* FSValue+Scripting.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "FSValue+Scripting.m"; sourceTree = "<group>"; };
+		F6769352029A453A01A8010B /* FSKeySet+Scripting.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "FSKeySet+Scripting.m"; sourceTree = "<group>"; };
+		F6830B8F0171B6A6015FC74F /* FSParserFunctions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSParserFunctions.h; sourceTree = "<group>"; };
+		F6830B900171B6A6015FC74F /* FSParserFunctions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSParserFunctions.m; sourceTree = "<group>"; };
+		F697A831014909B801839DEC /* SLSplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SLSplashScreen.h; sourceTree = "<group>"; };
+		F697A832014909B801839DEC /* SLSplashScreen.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SLSplashScreen.m; sourceTree = "<group>"; };
+		F699ACB5017DAC190112F87E /* FSFunctionHelp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSFunctionHelp.h; sourceTree = "<group>"; };
+		F699ACB6017DAC190112F87E /* FSFunctionHelp.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSFunctionHelp.m; sourceTree = "<group>"; };
+		F69F2A4601805CF701600E1B /* FSGlobalHeader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSGlobalHeader.h; sourceTree = "<group>"; };
+		F69F2A4701805CF701600E1B /* FSGlobalHeader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSGlobalHeader.m; sourceTree = "<group>"; };
+		F6A31311019C1B9301A8010B /* ItemGroupTest.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ItemGroupTest.h; sourceTree = "<group>"; };
+		F6A31312019C1B9301A8010B /* ItemGroupTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ItemGroupTest.m; sourceTree = "<group>"; };
+		F6A977520226594A01A8010A /* KeysetCreationTest.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KeysetCreationTest.h; sourceTree = "<group>"; };
+		F6A977530226594A01A8010A /* KeysetCreationTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = KeysetCreationTest.m; sourceTree = "<group>"; };
+		F6A977560226844101A8010A /* FSTableController+Toolbar.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "FSTableController+Toolbar.m"; sourceTree = "<group>"; };
+		F6AE5C7B021FC6E701A81303 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F6B82DDB0293A08D01A8010B /* FSTableView+Keyboard.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "FSTableView+Keyboard.m"; sourceTree = "<group>"; };
+		F6C0141702911C3201A8010B /* FSCorrelFunction.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSCorrelFunction.m; sourceTree = "<group>"; };
+		F6C0141802911C3201A8010B /* FSCorrelFunction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSCorrelFunction.h; sourceTree = "<group>"; };
+		F6C3BCB302923B5A01A8010B /* FSWorksheet.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSWorksheet.m; sourceTree = "<group>"; };
+		F6C3BCB402923B5A01A8010B /* FSWorksheet.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSWorksheet.h; sourceTree = "<group>"; };
+		F6C4B4480147C79C01A80099 /* FSFirstResponder.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSFirstResponder.h; sourceTree = "<group>"; };
+		F6D38FAD0168C3CE0111295A /* FSFormulaSpace.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSFormulaSpace.h; sourceTree = "<group>"; };
+		F6D38FAE0168C3CE0111295A /* FSFormulaSpace.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSFormulaSpace.m; sourceTree = "<group>"; };
+		F6D38FB50168CB590111295A /* FSDivideOperator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSDivideOperator.h; sourceTree = "<group>"; };
+		F6D38FB60168CB590111295A /* FSDivideOperator.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSDivideOperator.m; sourceTree = "<group>"; };
+		F6EE64EA015A078B0163AE3D /* FSPreferences.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSPreferences.h; sourceTree = "<group>"; };
+		F6EE64EB015A078B0163AE3D /* FSPreferences.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSPreferences.m; sourceTree = "<group>"; };
+		F6EE64EE015A08160163AE3D /* Preferences.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Preferences.nib; path = English.lproj/Preferences.nib; sourceTree = "<group>"; };
+		F6EF9402016C76A90180E7A9 /* FSIfFunction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSIfFunction.h; sourceTree = "<group>"; };
+		F6EF9403016C76A90180E7A9 /* FSIfFunction.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSIfFunction.m; sourceTree = "<group>"; };
+		F6FBC33A0156004401C493A5 /* German */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6FBC34201562A2201C493A5 /* SLOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SLOutlineView.h; sourceTree = "<group>"; };
+		F6FBC34301562A2201C493A5 /* SLOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SLOutlineView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		854575731FE922A500860811 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854575741FE922A500860811 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		854575B51FE922A500860811 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854576AC1FE922A600860811 /* FSCore.framework in Frameworks */,
+				854575B71FE922A500860811 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		854575EB1FE922A500860811 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854575EC1FE922A500860811 /* Foundation.framework in Frameworks */,
+				854576AE1FE922A600860811 /* FSCore.framework in Frameworks */,
+				854576AD1FE922A600860811 /* FSFunctions.framework in Frameworks */,
+				854575EF1FE922A500860811 /* ObjcUnit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		854576921FE922A600860811 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851969311FE9D72900463D91 /* FSCore.framework in Frameworks */,
+				854576951FE922A600860811 /* Cocoa.framework in Frameworks */,
+				854576961FE922A600860811 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01484B250027781F7F000001 /* FSCore */ = {
+			isa = PBXGroup;
+			children = (
+				F6B82DDA0293851E01A8010B /* Utilities */,
+				F64C0ED801464DE4017B8FD0 /* FSCore.h */,
+				F6D38FAD0168C3CE0111295A /* FSFormulaSpace.h */,
+				F6D38FAE0168C3CE0111295A /* FSFormulaSpace.m */,
+				F69F2A4601805CF701600E1B /* FSGlobalHeader.h */,
+				F69F2A4701805CF701600E1B /* FSGlobalHeader.m */,
+				038F9E4F0024DEEC7F000001 /* FSHeader.h */,
+				04FA6A120025A2F57F000001 /* FSHeader.m */,
+				015D38580025863E7F000001 /* FSKey.h */,
+				015D385A002589217F000001 /* FSKey.m */,
+				F6155E2701622919010D2662 /* FSKeyGroup.h */,
+				F6155E2801622919010D2662 /* FSKeyGroup.m */,
+				66749D45016E536B0061F406 /* FSKeyRange.h */,
+				66749D46016E536B0061F406 /* FSKeyRange.m */,
+				668964F50144ACA300B9BC23 /* FSKeySet.h */,
+				014914520026D3807F000001 /* FSKeySet.m */,
+				66E40DB9016A491E00447B50 /* FSSelection.h */,
+				66E40DBA016A491E00447B50 /* FSSelection.m */,
+				66A162EB014CF95F00A8000B /* FSTable.h */,
+				66A162EC014CF95F00A8000B /* FSTable.m */,
+				66DF64CB03581B8700A8010F /* FSTable+Find.m */,
+				66DF64CD03581BDA00A8010F /* FSTable+Formula.m */,
+				039200960024E3C57F000001 /* FSValue.h */,
+				015D385600257A857F000001 /* FSValue.m */,
+				669D6EED0167AF4E00052BA8 /* FSConstant.h */,
+				669D6EEE0167AF4E00052BA8 /* FSConstant.m */,
+				F648352D013B8DA001A80099 /* FSExpression.h */,
+				F648352E013B8DA001A80099 /* FSExpression.m */,
+				F668DB170168A86901487148 /* FSExpressionError.h */,
+				F668DB180168A86901487148 /* FSExpressionError.m */,
+				668066760170C930000BD935 /* FSExpressionNegator.h */,
+				668066770170C930000BD935 /* FSExpressionNegator.m */,
+				F63CF75D0169B82301D560A0 /* FSExpressionParenthesis.h */,
+				F63CF75E0169B82301D560A0 /* FSExpressionParenthesis.m */,
+				66C9F2740166FBD000D9DECA /* FSFormula.h */,
+				66C9F2750166FBD000D9DECA /* FSFormula.m */,
+				66C9F27A0166FDF700D9DECA /* FSFormulaDefinition.h */,
+				66C9F27B0166FDF700D9DECA /* FSFormulaDefinition.m */,
+				66C9F2780166FDF700D9DECA /* FSFormulaSelection.h */,
+				66C9F2790166FDF700D9DECA /* FSFormulaSelection.m */,
+				669D6EF50167B05200052BA8 /* FSFunction.h */,
+				669D6EF60167B05200052BA8 /* FSFunction.m */,
+				669D6EF10167AFEB00052BA8 /* FSOperator.h */,
+				669D6EF20167AFEB00052BA8 /* FSOperator.m */,
+				669D6EE90167AF2300052BA8 /* FSVariable.h */,
+				669D6EEA0167AF2300052BA8 /* FSVariable.m */,
+			);
+			path = FSCore;
+			sourceTree = "<group>";
+		};
+		01484B260027781F7F000001 /* GUI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				660F68C7014DB0D100A8000B /* ImageAndTextCell.h */,
+				660F68C8014DB0D100A8000B /* ImageAndTextCell.m */,
+				F697A831014909B801839DEC /* SLSplashScreen.h */,
+				F697A832014909B801839DEC /* SLSplashScreen.m */,
+				F6FBC34201562A2201C493A5 /* SLOutlineView.h */,
+				F6FBC34301562A2201C493A5 /* SLOutlineView.m */,
+				6677F2A301DBB69C00A8010B /* SLCornerMenu.h */,
+				6677F2A401DBB69C00A8010B /* SLCornerMenu.m */,
+				66B894E4014B7ABC00BC3A04 /* SLFloatingMark.h */,
+				66B894E5014B7ABC00BC3A04 /* SLFloatingMark.m */,
+				F62F767F0144C10101BF5C2B /* FSHeaderDock.h */,
+				F62F76800144C10101BF5C2B /* FSHeaderDock.m */,
+				665EF96F014C10B9009902E8 /* FSMatrixDataSource.h */,
+				664E514F013A249900A82C0B /* FSMatrix.h */,
+				664E5150013A249900A82C0B /* FSMatrix.m */,
+				F64C0EBC014633A7017B8FD0 /* FSVarioMatrix.h */,
+				F64C0EBD014633A7017B8FD0 /* FSVarioMatrix.m */,
+				6655F5100165D15100FF4B52 /* FSTableTabs.h */,
+				6655F5110165D15100FF4B52 /* FSTableTabs.m */,
+				66A79AFC0136980A00A82C0B /* FSTableView.h */,
+				66A79AFD0136980A00A82C0B /* FSTableView.m */,
+				F6B82DDB0293A08D01A8010B /* FSTableView+Keyboard.m */,
+				665EF96D014BFAED009902E8 /* FSTableView+Layout.m */,
+				66656DD50166355E0066F0D1 /* FSTableView+Scrolling.m */,
+				F62AE142017495FC01BE888B /* FSTableView+Selection.m */,
+				66A8033202185E3800A8010B /* FSFormulaTable.h */,
+				66A8033302185E3800A8010B /* FSFormulaTable.m */,
+			);
+			name = "GUI Elements";
+			path = UI;
+			sourceTree = "<group>";
+		};
+		01484B270027781F7F000001 /* Application Source */ = {
+			isa = PBXGroup;
+			children = (
+				669EE878028A516F00A8010A /* FlexiSheet.h */,
+				01484B260027781F7F000001 /* GUI Elements */,
+				F67D580301801B09019AFA80 /* Application */,
+				F6C3BCB202923AFA01A8010B /* Document */,
+				F67D580401801B58019AFA80 /* Table */,
+				F63D7E900185AF330109C908 /* Chart */,
+				6616B64601CA868500A8010B /* Inspection */,
+				01484B2D00277C1A7F000001 /* Categories */,
+				66BBC7D20298E8FD00A8010A /* Scripting */,
+				669ECC5301CB97DF00A8010B /* Interface */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+			);
+			name = "Application Source";
+			path = Application;
+			sourceTree = "<group>";
+		};
+		01484B2D00277C1A7F000001 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0559A45B00272A277F000001 /* FSArchiving.h */,
+				0559A45D00272A9E7F000001 /* FSArchiving.m */,
+				66F18F0801B941E100A8010B /* FSPasteboardHandling.h */,
+				66F18F0901B941E100A8010B /* FSPasteboardHandling.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		038F9E4E0024DEEC7F000001 /* Unused Files */ = {
+			isa = PBXGroup;
+			children = (
+				038F9E540024DF357F000001 /* FSDataStore.h */,
+				039200940024E38F7F000001 /* FSMultiArray.h */,
+				0553A0A300278C557F000001 /* Layouts.graffle */,
+			);
+			name = "Unused Files";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8545757A1FE922A500860811 /* FSCore.framework */,
+				854575BE1FE922A500860811 /* FSFunctions.framework */,
+				854575F51FE922A500860811 /* FSUnitTest */,
+				854576A01FE922A600860811 /* FlexiSheet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* FlexiSheet */ = {
+			isa = PBXGroup;
+			children = (
+				01484B250027781F7F000001 /* FSCore */,
+				F648352C013B8D5001A80099 /* Math */,
+				66F508630199D84800A8010A /* Unit Test */,
+				01484B270027781F7F000001 /* Application Source */,
+				66BDF54D016F4DC6004FCF9B /* Images */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				038F9E4E0024DEEC7F000001 /* Unused Files */,
+				F639CCA80148E879011DFDF4 /* Design */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+				661D72A30147436900EBCC50 /* TODO */,
+				731982FC0500CF4000A8010F /* CHANGELOG */,
+				854575791FE922A500860811 /* Info-FSCore.plist */,
+				854575BD1FE922A500860811 /* Info-FSFunctions.plist */,
+				8545769F1FE922A600860811 /* Info-FlexiSheet.plist */,
+			);
+			name = FlexiSheet;
+			sourceTree = "<group>";
+		};
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
+				66104768013B75EB00A82C0B /* version.plist */,
+				F664C45201465FAC01F4745D /* FlexiSheet Help */,
+				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
+				F6AE5C7A021FC6E701A81303 /* Localizable.strings */,
+				66E5BF64022A9FA200A8010B /* FlexiSheet.scriptSuite */,
+				66E5BF6A022AA0B400A8010B /* FlexiSheet.scriptTerminology */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+				663C9B04015493D900AA2794 /* CoreGraphics.framework */,
+				66A2D8A00220595C00A8010B /* ObjcUnit.framework */,
+				73E2BC0A0506742300A8010F /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6616B64601CA868500A8010B /* Inspection */ = {
+			isa = PBXGroup;
+			children = (
+				01484B2E00277E407F000001 /* FSInspection.h */,
+				01484B2B00277B997F000001 /* FSInspection.m */,
+				6616B64201CA833400A8010B /* FSInspector.h */,
+				6616B64301CA833400A8010B /* FSInspector.m */,
+				6634FAF101CB317500A8010B /* FSInspectorPane.h */,
+				6634FAF201CB317500A8010B /* FSInspectorPane.m */,
+				6634FAF501CB4EDC00A8010B /* FSNoSelectionInspectorPane.h */,
+				6634FAF601CB4EDC00A8010B /* FSNoSelectionInspectorPane.m */,
+				6686762C01CB699F00A8010B /* FSMultipleSelectionInspectorPane.h */,
+				6686762D01CB699F00A8010B /* FSMultipleSelectionInspectorPane.m */,
+				6634FAFF01CB54D200A8010B /* FSDocumentInspectorPane.h */,
+				6634FB0001CB54D200A8010B /* FSDocumentInspectorPane.m */,
+				666975DC01CCA18500A8010B /* FSViewInspectorPane.h */,
+				666975DD01CCA18500A8010B /* FSViewInspectorPane.m */,
+				669ECC4801CB7AC400A8010B /* FSTableInspectorPane.h */,
+				669ECC4901CB7AC400A8010B /* FSTableInspectorPane.m */,
+				669ECC4F01CB97A100A8010B /* FSItemInspectorPane.h */,
+				669ECC5001CB97A100A8010B /* FSItemInspectorPane.m */,
+				66BF623C01DE153B00A8010B /* FSCellInspectorPane.h */,
+				66BF623D01DE153B00A8010B /* FSCellInspectorPane.m */,
+			);
+			path = Inspection;
+			sourceTree = "<group>";
+		};
+		662C39B4016B448D00BEF36A /* Mathematical */ = {
+			isa = PBXGroup;
+			children = (
+				667AEA54016F5548001309E8 /* FSAbsFunction.h */,
+				667AEA55016F5548001309E8 /* FSAbsFunction.m */,
+				667AEA56016F5548001309E8 /* FSCosFunction.h */,
+				667AEA57016F5548001309E8 /* FSCosFunction.m */,
+				667AEA58016F5548001309E8 /* FSLnFunction.h */,
+				667AEA59016F5548001309E8 /* FSLnFunction.m */,
+				662C39B5016B448D00BEF36A /* FSPIFunction.h */,
+				662C39B6016B448D00BEF36A /* FSPIFunction.m */,
+				66E222B0016FC09A00C6915F /* FSSignFunction.h */,
+				66E222B1016FC09A00C6915F /* FSSignFunction.m */,
+				66BDF549016F484C004FCF9B /* FSSinFunction.h */,
+				66BDF54A016F484C004FCF9B /* FSSinFunction.m */,
+				66E222B4016FC1A900C6915F /* FSSqrtFunction.h */,
+				66E222B5016FC1A900C6915F /* FSSqrtFunction.m */,
+				66E222A7016FBE2400C6915F /* FSTanFunction.h */,
+				66E222A8016FBE2400C6915F /* FSTanFunction.m */,
+			);
+			name = Mathematical;
+			sourceTree = "<group>";
+		};
+		662C39B7016B448D00BEF36A /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				6618ADA90168F9C6009313B6 /* FSCellnameFunction.h */,
+				6618ADAA0168F9C6009313B6 /* FSCellnameFunction.m */,
+				6653615F0181A124004AAD35 /* FSFinancialFunctions.h */,
+				665361600181A124004AAD35 /* FSFinancialFunctions.m */,
+				F6EF9402016C76A90180E7A9 /* FSIfFunction.h */,
+				F6EF9403016C76A90180E7A9 /* FSIfFunction.m */,
+				F62B76B30168649901A89AF4 /* FSRandFunction.h */,
+				F62B76B40168649901A89AF4 /* FSRandFunction.m */,
+				66883CE901714E960098DB14 /* FSStringFunction.h */,
+				66883CEA01714E960098DB14 /* FSStringFunction.m */,
+				662C39BE016B4A5E00BEF36A /* FSTodayFunction.h */,
+				662C39BF016B4A5E00BEF36A /* FSTodayFunction.m */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		667D47C8014AFF3000F77DCB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F63B4A8E0147800201A80099 /* splimg.png */,
+				0818360600288B917F000001 /* Application.icns */,
+				F639CCAB0148E93B011DFDF4 /* Sheet.icns */,
+				66C887DF0147354B0072105B /* Quantrix.icns */,
+				660F68CB014DB32B00A8000B /* TableSmIcon.tiff */,
+				660F68CD014DB34700A8000B /* TViewSmIcon.tiff */,
+				664539790152AD99005D9C30 /* ChartSmIcon.tiff */,
+				662F988C014480AB002DB454 /* AlertIcon.tiff */,
+				66418151016E3A91004624C4 /* FormulaOK.tiff */,
+				6641814A016E3400004624C4 /* FormulaWarning.tiff */,
+				66418148016E33F6004624C4 /* FormulaError.tiff */,
+				66B4ECD101DF0E2E00A8010B /* CornerMenu.tiff */,
+				662F988801447E33002DB454 /* OpenGrabHandCursor.tiff */,
+				662F988601447E1F002DB454 /* ClosedGrabHandCursor.tiff */,
+				662F988401447E0A002DB454 /* fingerCursor.tiff */,
+				662F988A01448044002DB454 /* HorzResizeCursor.tiff */,
+				F62F76870144EA6401BF5C2B /* VertResizeCursor.tiff */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		667D47C9014AFF3000F77DCB /* Toolbar Images */ = {
+			isa = PBXGroup;
+			children = (
+				667D47D0014AFFF500F77DCB /* TBAttach.tiff */,
+				667D47CE014AFF6500F77DCB /* TBDelete.tiff */,
+				667D47D3014B006400F77DCB /* TBEdit.tiff */,
+				667D47D8014B015D00F77DCB /* TBFind.tiff */,
+				662C39C2016B4FAB00BEF36A /* TBFormula.tiff */,
+				666DB4D701DC8B0300A8010B /* TBInspect.tiff */,
+				667D47D6014B00DB00F77DCB /* TBRecalc.tiff */,
+				66EED24F016BA47B00E9CE53 /* TBRedo.tiff */,
+				667D47C3014AE96800F77DCB /* TBSaveDocument.tiff */,
+				66EED250016BA47B00E9CE53 /* TBUndo.tiff */,
+				669CA424022774DD00A8010B /* FTEqualSign.tiff */,
+				669CA425022774DD00A8010B /* FTIfBlock.tiff */,
+			);
+			name = "Toolbar Images";
+			sourceTree = "<group>";
+		};
+		667D47CA014AFF3000F77DCB /* Composites */ = {
+			isa = PBXGroup;
+			children = (
+				6655F5140165EEEF00FF4B52 /* BlackLeftArrow.tiff */,
+				6655F5160165EEF700FF4B52 /* BlackRightArrow.tiff */,
+				F61C23B70144F92501CA306A /* ldock-6.tiff */,
+				F61C23B60144F90901CA306A /* mdock-6.tiff */,
+				F61C23B40144F8E801CA306A /* rdock-6.tiff */,
+				F61C23BF0145086601CA306A /* lempty-6.tiff */,
+				F61C23BD0145084201CA306A /* mempty-6.tiff */,
+				F61C23C10145087901CA306A /* rempty-6.tiff */,
+			);
+			name = Composites;
+			sourceTree = "<group>";
+		};
+		667D47CB014AFF3000F77DCB /* Style Images */ = {
+			isa = PBXGroup;
+			children = (
+				66B80AE901472C6B00FC60CC /* rightalign_nib.tiff */,
+				66B80AEB01472C6B00FC60CC /* centeralign_nib.tiff */,
+				66B80AEC01472C6B00FC60CC /* leftalign_nib.tiff */,
+				66B80AE801472C6B00FC60CC /* naturalalign_nib.tiff */,
+				66B80AEA01472C6B00FC60CC /* justifyalign_nib.tiff */,
+			);
+			name = "Style Images";
+			sourceTree = "<group>";
+		};
+		669ECC5301CB97DF00A8010B /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */,
+				66290535016F245100316001 /* Preferences.nib */,
+				F62CBB20014F917D011DAD80 /* Import.nib */,
+				66F2D4C1026F226D00A8010B /* Export.nib */,
+				66F07EAF027A8EF900A8010B /* SortingItems.nib */,
+				66290532016F243500316001 /* Functions.nib */,
+				01484B280027789A7F000001 /* Inspector.nib */,
+				6634FAF901CB501700A8010B /* NoSelectionInspector.nib */,
+				6686763001CB6A2C00A8010B /* MultipleSelectionInspector.nib */,
+				6634FAFC01CB547E00A8010B /* DocumentInspector.nib */,
+				666975E001CCA27100A8010B /* ViewInspector.nib */,
+				669ECC4C01CB812300A8010B /* TableInspector.nib */,
+				669ECC5401CB994900A8010B /* ItemInspector.nib */,
+				669E4DAC014724C700D990C6 /* Styles.nib */,
+				2A37F4B4FDCFA73011CA2CEA /* FSTable.nib */,
+				660697770147467500BC954A /* FSChart.nib */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		66BBC7D20298E8FD00A8010A /* Scripting */ = {
+			isa = PBXGroup;
+			children = (
+				66040E040298CE6E00A8010A /* FSDocument+Scripting.m */,
+				66BBC80A0298FDFB00A8010A /* FSHeader+Scripting.m */,
+				66BBC8250299048A00A8010A /* FSKey+Scripting.m */,
+				F6769352029A453A01A8010B /* FSKeySet+Scripting.m */,
+				66BBC7D30298E94800A8010A /* FSTable+Scripting.m */,
+				F6769350029A430D01A8010B /* FSValue+Scripting.m */,
+				66BBC7D50298E97D00A8010A /* FSWorksheet+Scripting.m */,
+			);
+			path = Scripting;
+			sourceTree = "<group>";
+		};
+		66BDF54D016F4DC6004FCF9B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				667D47C8014AFF3000F77DCB /* Images */,
+				667D47CB014AFF3000F77DCB /* Style Images */,
+				667D47C9014AFF3000F77DCB /* Toolbar Images */,
+				667D47CA014AFF3000F77DCB /* Composites */,
+			);
+			path = Images;
+			sourceTree = SOURCE_ROOT;
+		};
+		66F508630199D84800A8010A /* Unit Test */ = {
+			isa = PBXGroup;
+			children = (
+				F6275D36028C5D4001A8010B /* Basic */,
+				F6275D37028C5D5F01A8010B /* FSCore */,
+				F6275D38028C5D8A01A8010B /* Formula */,
+			);
+			name = "Unit Test";
+			path = Test;
+			sourceTree = "<group>";
+		};
+		F6275D36028C5D4001A8010B /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				668C02B301BA039900A8010B /* FSUnitTest.m */,
+				66A2D8A202205A6300A8010B /* AllTests.h */,
+				66A2D8A302205A6300A8010B /* AllTests.m */,
+				6648FDFE027F129300A8010B /* HashMapTest.h */,
+				6648FDFF027F129300A8010B /* HashMapTest.m */,
+				66A59582028A6E9E00A8010A /* FSNumberTests.h */,
+				66A59581028A6E9E00A8010A /* FSNumberTests.m */,
+				6646559002D0A0F700A8010A /* StringQuotingTest.h */,
+				6646558F02D0A0F700A8010A /* StringQuotingTest.m */,
+				66A5F75F01C09D5C00A8010A /* FSTestDocument.h */,
+				66A5F76001C09D5C00A8010A /* FSTestDocument.m */,
+				66B036BC0226C3BD00A8010B /* FSTestCase.h */,
+				66B036BD0226C3BD00A8010B /* FSTestCase.m */,
+			);
+			name = Basic;
+			sourceTree = "<group>";
+		};
+		F6275D37028C5D5F01A8010B /* FSCore */ = {
+			isa = PBXGroup;
+			children = (
+				66B036B80226C14700A8010B /* CellTest.h */,
+				66B036B90226C14700A8010B /* CellTest.m */,
+				661AC81202C47FB800A8010A /* NameArchiveTest.h */,
+				661AC81102C47FB800A8010A /* NameArchiveTest.m */,
+				F6A977520226594A01A8010A /* KeysetCreationTest.h */,
+				F6A977530226594A01A8010A /* KeysetCreationTest.m */,
+				F6A31311019C1B9301A8010B /* ItemGroupTest.h */,
+				F6A31312019C1B9301A8010B /* ItemGroupTest.m */,
+				66F07EAB027A881600A8010B /* SortingTests.h */,
+				66F07EAC027A881600A8010B /* SortingTests.m */,
+				66F508740199D8EA00A8010A /* UndoTests.h */,
+				66F508750199D8EA00A8010A /* UndoTests.m */,
+				73745C410422330100A8010F /* LinkedCategoriesTest.h */,
+				73745C420422330100A8010F /* LinkedCategoriesTest.m */,
+			);
+			name = FSCore;
+			sourceTree = "<group>";
+		};
+		F6275D38028C5D8A01A8010B /* Formula */ = {
+			isa = PBXGroup;
+			children = (
+				66D9C12C0220C5A900A8010B /* CrossTableFormulaTest.h */,
+				66D9C12D0220C5A900A8010B /* CrossTableFormulaTest.m */,
+				6659ED2702241F9500A8010B /* CompareOpTests.h */,
+				6659ED2802241F9500A8010B /* CompareOpTests.m */,
+				F6275D0D028C58B901A8010B /* FinancialFunctionsTests.h */,
+				F6275D0C028C58B901A8010B /* FinancialFunctionsTests.m */,
+				F6275D33028C5A5301A8010B /* GroupFunctionsTests.h */,
+				F6275D32028C5A5301A8010B /* GroupFunctionsTests.m */,
+				F6275D06028C545A01A8010B /* OperatorTests.h */,
+				F6275D05028C545A01A8010B /* OperatorTests.m */,
+			);
+			name = Formula;
+			sourceTree = "<group>";
+		};
+		F62B76AD01685D8001A89AF4 /* Operators */ = {
+			isa = PBXGroup;
+			children = (
+				66883CF9017156670098DB14 /* FSCatOperator.h */,
+				66883CFA017156670098DB14 /* FSCatOperator.m */,
+				F6D38FB50168CB590111295A /* FSDivideOperator.h */,
+				F6D38FB60168CB590111295A /* FSDivideOperator.m */,
+				F61E22B9016D99C401473B13 /* FSEqualOperator.h */,
+				F61E22BA016D99C401473B13 /* FSEqualOperator.m */,
+				F668DB100168A51E01487148 /* FSMinusOperator.h */,
+				F668DB110168A51E01487148 /* FSMinusOperator.m */,
+				F62B76B701688F7201A89AF4 /* FSMultiplyOperator.h */,
+				F62B76B801688F7201A89AF4 /* FSMultiplyOperator.m */,
+				F62B76AE01685D8001A89AF4 /* FSPlusOperator.h */,
+				F62B76AF01685D8001A89AF4 /* FSPlusOperator.m */,
+				664AA7CE01708F5900D0577F /* FSPowOperator.h */,
+				664AA7CF01708F5900D0577F /* FSPowOperator.m */,
+			);
+			path = Operators;
+			sourceTree = SOURCE_ROOT;
+		};
+		F62B76B001685D8001A89AF4 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				662C39B4016B448D00BEF36A /* Mathematical */,
+				662C39B7016B448D00BEF36A /* Misc */,
+				F6C0141602911B9501A8010B /* Statistics */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		F639CCA80148E879011DFDF4 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				F639CCA90148E8AA011DFDF4 /* Sheet.graffle */,
+				F639CCAA0148E8E2011DFDF4 /* Splash.graffle */,
+			);
+			name = Design;
+			sourceTree = "<group>";
+		};
+		F63D7E900185AF330109C908 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				0148150D00286FA27F000001 /* FSChartController.h */,
+				014815110028703A7F000001 /* FSChartController.m */,
+				6686C85901818B3C004B9D20 /* FSChartView.h */,
+				6686C85A01818B3C004B9D20 /* FSChartView.m */,
+			);
+			name = Chart;
+			path = ChartView;
+			sourceTree = "<group>";
+		};
+		F648352C013B8D5001A80099 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				F62B76AD01685D8001A89AF4 /* Operators */,
+				F62B76B001685D8001A89AF4 /* Functions */,
+			);
+			name = Math;
+			sourceTree = "<group>";
+		};
+		F67D580301801B09019AFA80 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F6C4B4480147C79C01A80099 /* FSFirstResponder.h */,
+				015D3852002579607F000001 /* FSController.h */,
+				015D3854002579AD7F000001 /* FSController.m */,
+				F6EE64EA015A078B0163AE3D /* FSPreferences.h */,
+				F6EE64EB015A078B0163AE3D /* FSPreferences.m */,
+				F699ACB5017DAC190112F87E /* FSFunctionHelp.h */,
+				F699ACB6017DAC190112F87E /* FSFunctionHelp.m */,
+				66F07EB2027A987200A8010B /* FSSortPanelController.h */,
+				66F07EB3027A987200A8010B /* FSSortPanelController.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		F67D580401801B58019AFA80 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				0148150900286D227F000001 /* FSWindowController.h */,
+				0148150F0028703A7F000001 /* FSWindowController.m */,
+				0148150B00286F677F000001 /* FSTableController.h */,
+				014815100028703A7F000001 /* FSTableController.m */,
+				6641814C016E354C004624C4 /* FSTableController+Formula.m */,
+				F6A977560226844101A8010A /* FSTableController+Toolbar.m */,
+				665D752F017228EA00C5E943 /* FSHeaderLayout.h */,
+				665D7530017228EA00C5E943 /* FSHeaderLayout.m */,
+				66DA074D018323140033FEED /* FSCellStyle.h */,
+				66DA074E018323140033FEED /* FSCellStyle.m */,
+			);
+			name = Table;
+			sourceTree = "<group>";
+		};
+		F6B82DDA0293851E01A8010B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				66F7138A0280557900A8010B /* FSTypes.h */,
+				6648FDFA027F118A00A8010B /* FSHashMap.h */,
+				6648FDFB027F118A00A8010B /* FSHashMap.m */,
+				F6253CE5014DFA93017BFD99 /* FoundationExtentions.h */,
+				F6253CE6014DFA93017BFD99 /* FoundationExtentions.m */,
+				6643069201946433009460CF /* FSLog.h */,
+				6643069301946433009460CF /* FSLog.m */,
+				F6830B8F0171B6A6015FC74F /* FSParserFunctions.h */,
+				F6830B900171B6A6015FC74F /* FSParserFunctions.m */,
+				665361660181E556004AAD35 /* FSDocumentProtocol.h */,
+				66E8A7A10134C5BA00A82C0B /* FSUnit.h */,
+				66E8A7A20134C5BA00A82C0B /* FSUnit.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		F6C0141602911B9501A8010B /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				66883CF0017151D50098DB14 /* FSMaxFunction.h */,
+				66883CF1017151D50098DB14 /* FSMaxFunction.m */,
+				66883CF40171520F0098DB14 /* FSMinFunction.h */,
+				66883CF50171520F0098DB14 /* FSMinFunction.m */,
+				667AEA50016F552E001309E8 /* FSProdFunction.h */,
+				667AEA51016F552E001309E8 /* FSProdFunction.m */,
+				66E40DBD016A4FAE00447B50 /* FSSumFunction.h */,
+				66E40DBE016A4FAE00447B50 /* FSSumFunction.m */,
+				F6C0141802911C3201A8010B /* FSCorrelFunction.h */,
+				F6C0141702911C3201A8010B /* FSCorrelFunction.m */,
+			);
+			name = Statistics;
+			sourceTree = "<group>";
+		};
+		F6C3BCB202923AFA01A8010B /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4AEFDCFA73011CA2CEA /* FSDocument.h */,
+				2A37F4ACFDCFA73011CA2CEA /* FSDocument.m */,
+				666E91E80164DCB8006A3AD6 /* FSDocument+Quantrix.m */,
+				6689575C03506F6600A8010F /* FSDocument+Printing.m */,
+				F6C3BCB402923B5A01A8010B /* FSWorksheet.h */,
+				F6C3BCB302923B5A01A8010B /* FSWorksheet.m */,
+				F62CBB23014F93C2011DAD80 /* FSImporter.h */,
+				F62CBB24014F93C2011DAD80 /* FSImporter.m */,
+				F629712B026EE6A401A800CF /* FSExporter.h */,
+				F629712C026EE6A401A800CF /* FSExporter.m */,
+				F627FD52028AC40A01A8010B /* FSGraffleExport.h */,
+				F627FD53028AC40A01A8010B /* FSGraffleExport.m */,
+			);
+			name = Document;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		854575371FE922A500860811 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854575381FE922A500860811 /* FSTypes.h in Headers */,
+				854575391FE922A500860811 /* FSLog.h in Headers */,
+				8545753A1FE922A500860811 /* FSHashMap.h in Headers */,
+				8545753B1FE922A500860811 /* FoundationExtentions.h in Headers */,
+				8545753C1FE922A500860811 /* FSParserFunctions.h in Headers */,
+				8545753D1FE922A500860811 /* FSFormulaSpace.h in Headers */,
+				8545753E1FE922A500860811 /* FSDocumentProtocol.h in Headers */,
+				8545753F1FE922A500860811 /* FSTable.h in Headers */,
+				854575401FE922A500860811 /* FSGlobalHeader.h in Headers */,
+				854575411FE922A500860811 /* FSKeyGroup.h in Headers */,
+				854575421FE922A500860811 /* FSHeader.h in Headers */,
+				854575431FE922A500860811 /* FSKey.h in Headers */,
+				854575441FE922A500860811 /* FSKeyRange.h in Headers */,
+				854575451FE922A500860811 /* FSKeySet.h in Headers */,
+				854575461FE922A500860811 /* FSUnit.h in Headers */,
+				854575471FE922A500860811 /* FSSelection.h in Headers */,
+				854575481FE922A500860811 /* FSFormula.h in Headers */,
+				854575491FE922A500860811 /* FSFormulaSelection.h in Headers */,
+				8545754A1FE922A500860811 /* FSFormulaDefinition.h in Headers */,
+				8545754B1FE922A500860811 /* FSExpression.h in Headers */,
+				8545754C1FE922A500860811 /* FSExpressionError.h in Headers */,
+				8545754D1FE922A500860811 /* FSExpressionParenthesis.h in Headers */,
+				8545754E1FE922A500860811 /* FSExpressionNegator.h in Headers */,
+				8545754F1FE922A500860811 /* FSVariable.h in Headers */,
+				854575501FE922A500860811 /* FSConstant.h in Headers */,
+				854575511FE922A500860811 /* FSOperator.h in Headers */,
+				854575521FE922A500860811 /* FSFunction.h in Headers */,
+				854575531FE922A500860811 /* FSValue.h in Headers */,
+				854575541FE922A500860811 /* FSCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8545757E1FE922A500860811 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8545757F1FE922A500860811 /* FSCatOperator.h in Headers */,
+				854575801FE922A500860811 /* FSDivideOperator.h in Headers */,
+				854575811FE922A500860811 /* FSEqualOperator.h in Headers */,
+				854575821FE922A500860811 /* FSMinusOperator.h in Headers */,
+				854575831FE922A500860811 /* FSMultiplyOperator.h in Headers */,
+				854575841FE922A500860811 /* FSPlusOperator.h in Headers */,
+				854575851FE922A500860811 /* FSPowOperator.h in Headers */,
+				854575861FE922A500860811 /* FSAbsFunction.h in Headers */,
+				854575871FE922A500860811 /* FSCosFunction.h in Headers */,
+				854575881FE922A500860811 /* FSLnFunction.h in Headers */,
+				854575891FE922A500860811 /* FSMaxFunction.h in Headers */,
+				8545758A1FE922A500860811 /* FSMinFunction.h in Headers */,
+				8545758B1FE922A500860811 /* FSPIFunction.h in Headers */,
+				8545758C1FE922A500860811 /* FSProdFunction.h in Headers */,
+				8545758D1FE922A500860811 /* FSSignFunction.h in Headers */,
+				8545758E1FE922A500860811 /* FSSinFunction.h in Headers */,
+				8545758F1FE922A500860811 /* FSSqrtFunction.h in Headers */,
+				854575901FE922A500860811 /* FSSumFunction.h in Headers */,
+				854575911FE922A500860811 /* FSTanFunction.h in Headers */,
+				854575921FE922A500860811 /* FSCellnameFunction.h in Headers */,
+				854575931FE922A500860811 /* FSFinancialFunctions.h in Headers */,
+				854575941FE922A500860811 /* FSIfFunction.h in Headers */,
+				854575951FE922A500860811 /* FSRandFunction.h in Headers */,
+				854575961FE922A500860811 /* FSStringFunction.h in Headers */,
+				854575971FE922A500860811 /* FSTodayFunction.h in Headers */,
+				854575981FE922A500860811 /* FSCorrelFunction.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		854575C41FE922A500860811 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854575C51FE922A500860811 /* FSTestDocument.h in Headers */,
+				854575C61FE922A500860811 /* AllTests.h in Headers */,
+				854575C71FE922A500860811 /* FSTestCase.h in Headers */,
+				854575C81FE922A500860811 /* CellTest.h in Headers */,
+				854575C91FE922A500860811 /* CompareOpTests.h in Headers */,
+				854575CA1FE922A500860811 /* CrossTableFormulaTest.h in Headers */,
+				854575CB1FE922A500860811 /* UndoTests.h in Headers */,
+				854575CC1FE922A500860811 /* ItemGroupTest.h in Headers */,
+				854575CD1FE922A500860811 /* KeysetCreationTest.h in Headers */,
+				854575CE1FE922A500860811 /* SortingTests.h in Headers */,
+				854575CF1FE922A500860811 /* HashMapTest.h in Headers */,
+				854575D01FE922A500860811 /* FSNumberTests.h in Headers */,
+				854575D11FE922A500860811 /* OperatorTests.h in Headers */,
+				854575D21FE922A500860811 /* FinancialFunctionsTests.h in Headers */,
+				854575D31FE922A500860811 /* GroupFunctionsTests.h in Headers */,
+				854575D41FE922A500860811 /* NameArchiveTest.h in Headers */,
+				854575D51FE922A500860811 /* StringQuotingTest.h in Headers */,
+				854575D61FE922A500860811 /* LinkedCategoriesTest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		854575FC1FE922A500860811 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854575FD1FE922A500860811 /* FSDocument.h in Headers */,
+				854575FE1FE922A500860811 /* FSController.h in Headers */,
+				854575FF1FE922A500860811 /* FSFunctionHelp.h in Headers */,
+				854576001FE922A500860811 /* FSArchiving.h in Headers */,
+				854576011FE922A500860811 /* FSWindowController.h in Headers */,
+				854576021FE922A500860811 /* FSTableController.h in Headers */,
+				854576031FE922A500860811 /* FSChartController.h in Headers */,
+				854576041FE922A500860811 /* FSTableView.h in Headers */,
+				854576051FE922A500860811 /* FSMatrix.h in Headers */,
+				854576061FE922A500860811 /* FSHeaderDock.h in Headers */,
+				854576071FE922A500860811 /* FSVarioMatrix.h in Headers */,
+				854576081FE922A500860811 /* FSFirstResponder.h in Headers */,
+				854576091FE922A500860811 /* SLSplashScreen.h in Headers */,
+				8545760A1FE922A500860811 /* SLFloatingMark.h in Headers */,
+				8545760B1FE922A500860811 /* FSMatrixDataSource.h in Headers */,
+				8545760C1FE922A500860811 /* ImageAndTextCell.h in Headers */,
+				8545760D1FE922A500860811 /* FSImporter.h in Headers */,
+				8545760E1FE922A500860811 /* FSPreferences.h in Headers */,
+				8545760F1FE922A500860811 /* FSTableTabs.h in Headers */,
+				854576101FE922A500860811 /* FSHeaderLayout.h in Headers */,
+				854576111FE922A500860811 /* FSCellStyle.h in Headers */,
+				854576121FE922A500860811 /* FSPasteboardHandling.h in Headers */,
+				854576131FE922A500860811 /* FSInspector.h in Headers */,
+				854576141FE922A500860811 /* FSInspection.h in Headers */,
+				854576151FE922A500860811 /* FSInspectorPane.h in Headers */,
+				854576161FE922A500860811 /* FSNoSelectionInspectorPane.h in Headers */,
+				854576171FE922A500860811 /* FSMultipleSelectionInspectorPane.h in Headers */,
+				854576181FE922A500860811 /* FSItemInspectorPane.h in Headers */,
+				854576191FE922A500860811 /* SLCornerMenu.h in Headers */,
+				8545761A1FE922A500860811 /* FSCellInspectorPane.h in Headers */,
+				8545761B1FE922A500860811 /* FSFormulaTable.h in Headers */,
+				8545761C1FE922A500860811 /* FSExporter.h in Headers */,
+				8545761D1FE922A500860811 /* FSSortPanelController.h in Headers */,
+				8545761E1FE922A500860811 /* FlexiSheet.h in Headers */,
+				8545761F1FE922A500860811 /* FSGraffleExport.h in Headers */,
+				854576201FE922A500860811 /* FSWorksheet.h in Headers */,
+				854576211FE922A500860811 /* SLOutlineView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		854575361FE922A500860811 /* FSCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 854575751FE922A500860811 /* Build configuration list for PBXNativeTarget "FSCore" */;
+			buildPhases = (
+				854575371FE922A500860811 /* Headers */,
+				854575551FE922A500860811 /* Sources */,
+				854575721FE922A500860811 /* Resources */,
+				854575731FE922A500860811 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSCore;
+			productInstallPath = "@executable_path/../Frameworks";
+			productName = FSCore;
+			productReference = 8545757A1FE922A500860811 /* FSCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8545757B1FE922A500860811 /* FSFunctions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 854575B91FE922A500860811 /* Build configuration list for PBXNativeTarget "FSFunctions" */;
+			buildPhases = (
+				8545757E1FE922A500860811 /* Headers */,
+				854575991FE922A500860811 /* Resources */,
+				8545759A1FE922A500860811 /* Sources */,
+				854575B51FE922A500860811 /* Frameworks */,
+				854575B81FE922A500860811 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				854576A31FE922A600860811 /* PBXTargetDependency */,
+			);
+			name = FSFunctions;
+			productInstallPath = "@executable_path/../Frameworks";
+			productName = FSFunctions;
+			productReference = 854575BE1FE922A500860811 /* FSFunctions.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		854575BF1FE922A500860811 /* FSUnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 854575F11FE922A500860811 /* Build configuration list for PBXNativeTarget "FSUnitTest" */;
+			buildPhases = (
+				854575C41FE922A500860811 /* Headers */,
+				854575D71FE922A500860811 /* Sources */,
+				854575EB1FE922A500860811 /* Frameworks */,
+				854575F01FE922A500860811 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				854576A51FE922A600860811 /* PBXTargetDependency */,
+				854576A71FE922A600860811 /* PBXTargetDependency */,
+			);
+			name = FSUnitTest;
+			productInstallPath = /usr/local/bin;
+			productName = FSUnitTest;
+			productReference = 854575F51FE922A500860811 /* FSUnitTest */;
+			productType = "com.apple.product-type.tool";
+		};
+		854575F71FE922A500860811 /* FlexiSheet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8545769B1FE922A600860811 /* Build configuration list for PBXNativeTarget "FlexiSheet" */;
+			buildPhases = (
+				854575FC1FE922A500860811 /* Headers */,
+				854576221FE922A500860811 /* Resources */,
+				854576611FE922A500860811 /* Sources */,
+				854576921FE922A600860811 /* Frameworks */,
+				854576971FE922A600860811 /* Rez */,
+				854576981FE922A600860811 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				854576AB1FE922A600860811 /* PBXTargetDependency */,
+			);
+			name = FlexiSheet;
+			productInstallPath = "$(HOME)/Applications";
+			productName = FlexiSheet;
+			productReference = 854576A01FE922A600860811 /* FlexiSheet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 85D7BCCE124A845700AB2F13 /* Build configuration list for PBXProject "FlexiSheetLeopard" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* FlexiSheet */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				854575361FE922A500860811 /* FSCore */,
+				8545757B1FE922A500860811 /* FSFunctions */,
+				854575BF1FE922A500860811 /* FSUnitTest */,
+				854575F71FE922A500860811 /* FlexiSheet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		854575721FE922A500860811 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		854575991FE922A500860811 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		854576221FE922A500860811 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854576231FE922A500860811 /* FSTable.nib in Resources */,
+				854576241FE922A500860811 /* Inspector.nib in Resources */,
+				854576251FE922A500860811 /* Styles.nib in Resources */,
+				854576261FE922A500860811 /* Import.nib in Resources */,
+				854576271FE922A500860811 /* Preferences.nib in Resources */,
+				854576281FE922A500860811 /* InfoPlist.strings in Resources */,
+				854576291FE922A500860811 /* Application.icns in Resources */,
+				8545762A1FE922A500860811 /* version.plist in Resources */,
+				8545762B1FE922A500860811 /* fingerCursor.tiff in Resources */,
+				8545762C1FE922A500860811 /* ClosedGrabHandCursor.tiff in Resources */,
+				8545762D1FE922A500860811 /* OpenGrabHandCursor.tiff in Resources */,
+				8545762E1FE922A500860811 /* HorzResizeCursor.tiff in Resources */,
+				8545762F1FE922A500860811 /* VertResizeCursor.tiff in Resources */,
+				854576301FE922A500860811 /* rdock-6.tiff in Resources */,
+				854576311FE922A500860811 /* ldock-6.tiff in Resources */,
+				854576321FE922A500860811 /* mdock-6.tiff in Resources */,
+				854576331FE922A500860811 /* mempty-6.tiff in Resources */,
+				854576341FE922A500860811 /* lempty-6.tiff in Resources */,
+				854576351FE922A500860811 /* rempty-6.tiff in Resources */,
+				854576361FE922A500860811 /* FlexiSheet Help in Resources */,
+				854576371FE922A500860811 /* naturalalign_nib.tiff in Resources */,
+				854576381FE922A500860811 /* rightalign_nib.tiff in Resources */,
+				854576391FE922A500860811 /* justifyalign_nib.tiff in Resources */,
+				8545763A1FE922A500860811 /* centeralign_nib.tiff in Resources */,
+				8545763B1FE922A500860811 /* leftalign_nib.tiff in Resources */,
+				8545763C1FE922A500860811 /* splimg.png in Resources */,
+				8545763D1FE922A500860811 /* Sheet.icns in Resources */,
+				8545763E1FE922A500860811 /* TBSaveDocument.tiff in Resources */,
+				8545763F1FE922A500860811 /* TBDelete.tiff in Resources */,
+				854576401FE922A500860811 /* TBEdit.tiff in Resources */,
+				854576411FE922A500860811 /* TBRecalc.tiff in Resources */,
+				854576421FE922A500860811 /* AlertIcon.tiff in Resources */,
+				854576431FE922A500860811 /* TableSmIcon.tiff in Resources */,
+				854576441FE922A500860811 /* TViewSmIcon.tiff in Resources */,
+				854576451FE922A500860811 /* ChartSmIcon.tiff in Resources */,
+				854576461FE922A500860811 /* Quantrix.icns in Resources */,
+				854576471FE922A500860811 /* BlackLeftArrow.tiff in Resources */,
+				854576481FE922A500860811 /* BlackRightArrow.tiff in Resources */,
+				854576491FE922A500860811 /* TBFormula.tiff in Resources */,
+				8545764A1FE922A500860811 /* TBRedo.tiff in Resources */,
+				8545764B1FE922A500860811 /* TBUndo.tiff in Resources */,
+				8545764C1FE922A500860811 /* FormulaError.tiff in Resources */,
+				8545764D1FE922A500860811 /* FormulaWarning.tiff in Resources */,
+				8545764E1FE922A500860811 /* FormulaOK.tiff in Resources */,
+				8545764F1FE922A500860811 /* Functions.nib in Resources */,
+				854576501FE922A500860811 /* NoSelectionInspector.nib in Resources */,
+				854576511FE922A500860811 /* DocumentInspector.nib in Resources */,
+				854576521FE922A500860811 /* MultipleSelectionInspector.nib in Resources */,
+				854576531FE922A500860811 /* TableInspector.nib in Resources */,
+				854576541FE922A500860811 /* ItemInspector.nib in Resources */,
+				854576551FE922A500860811 /* ViewInspector.nib in Resources */,
+				854576561FE922A500860811 /* TBInspect.tiff in Resources */,
+				854576571FE922A500860811 /* CornerMenu.tiff in Resources */,
+				854576581FE922A500860811 /* MainMenu.nib in Resources */,
+				854576591FE922A500860811 /* Localizable.strings in Resources */,
+				8545765A1FE922A500860811 /* FTEqualSign.tiff in Resources */,
+				8545765B1FE922A500860811 /* FTIfBlock.tiff in Resources */,
+				8545765C1FE922A500860811 /* FlexiSheet.scriptSuite in Resources */,
+				8545765D1FE922A500860811 /* FlexiSheet.scriptTerminology in Resources */,
+				8545765E1FE922A500860811 /* Export.nib in Resources */,
+				8545765F1FE922A500860811 /* SortingItems.nib in Resources */,
+				854576601FE922A500860811 /* FSDocument+Scripting.m in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		854575B81FE922A500860811 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		854575F01FE922A500860811 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		854576971FE922A600860811 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		854575551FE922A500860811 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854575561FE922A500860811 /* FoundationExtentions.m in Sources */,
+				854575571FE922A500860811 /* FSParserFunctions.m in Sources */,
+				854575581FE922A500860811 /* FSFormulaSpace.m in Sources */,
+				854575591FE922A500860811 /* FSTable.m in Sources */,
+				8545755A1FE922A500860811 /* FSTable+Find.m in Sources */,
+				8545755B1FE922A500860811 /* FSTable+Formula.m in Sources */,
+				8545755C1FE922A500860811 /* FSGlobalHeader.m in Sources */,
+				8545755D1FE922A500860811 /* FSKeyGroup.m in Sources */,
+				8545755E1FE922A500860811 /* FSHeader.m in Sources */,
+				8545755F1FE922A500860811 /* FSKey.m in Sources */,
+				854575601FE922A500860811 /* FSKeyRange.m in Sources */,
+				854575611FE922A500860811 /* FSKeySet.m in Sources */,
+				854575621FE922A500860811 /* FSUnit.m in Sources */,
+				854575631FE922A500860811 /* FSSelection.m in Sources */,
+				854575641FE922A500860811 /* FSFormula.m in Sources */,
+				854575651FE922A500860811 /* FSFormulaSelection.m in Sources */,
+				854575661FE922A500860811 /* FSFormulaDefinition.m in Sources */,
+				854575671FE922A500860811 /* FSExpression.m in Sources */,
+				854575681FE922A500860811 /* FSExpressionError.m in Sources */,
+				854575691FE922A500860811 /* FSExpressionParenthesis.m in Sources */,
+				8545756A1FE922A500860811 /* FSExpressionNegator.m in Sources */,
+				8545756B1FE922A500860811 /* FSVariable.m in Sources */,
+				8545756C1FE922A500860811 /* FSConstant.m in Sources */,
+				8545756D1FE922A500860811 /* FSOperator.m in Sources */,
+				8545756E1FE922A500860811 /* FSFunction.m in Sources */,
+				8545756F1FE922A500860811 /* FSValue.m in Sources */,
+				854575701FE922A500860811 /* FSLog.m in Sources */,
+				854575711FE922A500860811 /* FSHashMap.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8545759A1FE922A500860811 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8545759B1FE922A500860811 /* FSCatOperator.m in Sources */,
+				8545759C1FE922A500860811 /* FSDivideOperator.m in Sources */,
+				8545759D1FE922A500860811 /* FSEqualOperator.m in Sources */,
+				8545759E1FE922A500860811 /* FSMinusOperator.m in Sources */,
+				8545759F1FE922A500860811 /* FSMultiplyOperator.m in Sources */,
+				854575A01FE922A500860811 /* FSPlusOperator.m in Sources */,
+				854575A11FE922A500860811 /* FSPowOperator.m in Sources */,
+				854575A21FE922A500860811 /* FSAbsFunction.m in Sources */,
+				854575A31FE922A500860811 /* FSCosFunction.m in Sources */,
+				854575A41FE922A500860811 /* FSLnFunction.m in Sources */,
+				854575A51FE922A500860811 /* FSMaxFunction.m in Sources */,
+				854575A61FE922A500860811 /* FSMinFunction.m in Sources */,
+				854575A71FE922A500860811 /* FSPIFunction.m in Sources */,
+				854575A81FE922A500860811 /* FSProdFunction.m in Sources */,
+				854575A91FE922A500860811 /* FSSignFunction.m in Sources */,
+				854575AA1FE922A500860811 /* FSSinFunction.m in Sources */,
+				854575AB1FE922A500860811 /* FSSqrtFunction.m in Sources */,
+				854575AC1FE922A500860811 /* FSSumFunction.m in Sources */,
+				854575AD1FE922A500860811 /* FSTanFunction.m in Sources */,
+				854575AE1FE922A500860811 /* FSCellnameFunction.m in Sources */,
+				854575AF1FE922A500860811 /* FSFinancialFunctions.m in Sources */,
+				854575B01FE922A500860811 /* FSIfFunction.m in Sources */,
+				854575B11FE922A500860811 /* FSRandFunction.m in Sources */,
+				854575B21FE922A500860811 /* FSStringFunction.m in Sources */,
+				854575B31FE922A500860811 /* FSTodayFunction.m in Sources */,
+				854575B41FE922A500860811 /* FSCorrelFunction.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		854575D71FE922A500860811 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854575D81FE922A500860811 /* FSUnitTest.m in Sources */,
+				854575D91FE922A500860811 /* FSTestDocument.m in Sources */,
+				854575DA1FE922A500860811 /* AllTests.m in Sources */,
+				854575DB1FE922A500860811 /* FSTestCase.m in Sources */,
+				854575DC1FE922A500860811 /* CellTest.m in Sources */,
+				854575DD1FE922A500860811 /* CompareOpTests.m in Sources */,
+				854575DE1FE922A500860811 /* CrossTableFormulaTest.m in Sources */,
+				854575DF1FE922A500860811 /* UndoTests.m in Sources */,
+				854575E01FE922A500860811 /* ItemGroupTest.m in Sources */,
+				854575E11FE922A500860811 /* KeysetCreationTest.m in Sources */,
+				854575E21FE922A500860811 /* SortingTests.m in Sources */,
+				854575E31FE922A500860811 /* HashMapTest.m in Sources */,
+				854575E41FE922A500860811 /* FSNumberTests.m in Sources */,
+				854575E51FE922A500860811 /* OperatorTests.m in Sources */,
+				854575E61FE922A500860811 /* FinancialFunctionsTests.m in Sources */,
+				854575E71FE922A500860811 /* GroupFunctionsTests.m in Sources */,
+				854575E81FE922A500860811 /* NameArchiveTest.m in Sources */,
+				854575E91FE922A500860811 /* StringQuotingTest.m in Sources */,
+				854575EA1FE922A500860811 /* LinkedCategoriesTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		854576611FE922A500860811 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854576621FE922A500860811 /* main.m in Sources */,
+				854576631FE922A500860811 /* FSController.m in Sources */,
+				854576641FE922A500860811 /* FSPreferences.m in Sources */,
+				854576651FE922A500860811 /* FSFunctionHelp.m in Sources */,
+				854576661FE922A500860811 /* FSDocument.m in Sources */,
+				854576671FE922A500860811 /* FSDocument+Quantrix.m in Sources */,
+				854576681FE922A500860811 /* FSWindowController.m in Sources */,
+				854576691FE922A500860811 /* FSTableController.m in Sources */,
+				8545766A1FE922A500860811 /* FSTableController+Formula.m in Sources */,
+				8545766B1FE922A500860811 /* FSTableView.m in Sources */,
+				8545766C1FE922A500860811 /* FSTableView+Layout.m in Sources */,
+				8545766D1FE922A500860811 /* FSTableView+Scrolling.m in Sources */,
+				8545766E1FE922A500860811 /* FSTableView+Selection.m in Sources */,
+				8545766F1FE922A500860811 /* FSArchiving.m in Sources */,
+				854576701FE922A500860811 /* SLSplashScreen.m in Sources */,
+				854576711FE922A500860811 /* SLFloatingMark.m in Sources */,
+				854576721FE922A500860811 /* ImageAndTextCell.m in Sources */,
+				854576731FE922A600860811 /* FSMatrix.m in Sources */,
+				854576741FE922A600860811 /* FSVarioMatrix.m in Sources */,
+				854576751FE922A600860811 /* FSTableTabs.m in Sources */,
+				854576761FE922A600860811 /* FSHeaderDock.m in Sources */,
+				854576771FE922A600860811 /* FSImporter.m in Sources */,
+				854576781FE922A600860811 /* FSHeaderLayout.m in Sources */,
+				854576791FE922A600860811 /* FSCellStyle.m in Sources */,
+				8545767A1FE922A600860811 /* FSPasteboardHandling.m in Sources */,
+				8545767B1FE922A600860811 /* FSInspector.m in Sources */,
+				8545767C1FE922A600860811 /* FSInspection.m in Sources */,
+				8545767D1FE922A600860811 /* FSInspectorPane.m in Sources */,
+				8545767E1FE922A600860811 /* FSNoSelectionInspectorPane.m in Sources */,
+				8545767F1FE922A600860811 /* FSMultipleSelectionInspectorPane.m in Sources */,
+				854576801FE922A600860811 /* FSItemInspectorPane.m in Sources */,
+				854576811FE922A600860811 /* SLCornerMenu.m in Sources */,
+				854576821FE922A600860811 /* FSCellInspectorPane.m in Sources */,
+				854576831FE922A600860811 /* FSFormulaTable.m in Sources */,
+				854576841FE922A600860811 /* FSTableController+Toolbar.m in Sources */,
+				854576851FE922A600860811 /* FSExporter.m in Sources */,
+				854576861FE922A600860811 /* FSSortPanelController.m in Sources */,
+				854576871FE922A600860811 /* FSGraffleExport.m in Sources */,
+				854576881FE922A600860811 /* FSWorksheet.m in Sources */,
+				854576891FE922A600860811 /* SLOutlineView.m in Sources */,
+				8545768A1FE922A600860811 /* FSTableView+Keyboard.m in Sources */,
+				8545768B1FE922A600860811 /* FSTable+Scripting.m in Sources */,
+				8545768C1FE922A600860811 /* FSWorksheet+Scripting.m in Sources */,
+				8545768D1FE922A600860811 /* FSHeader+Scripting.m in Sources */,
+				8545768E1FE922A600860811 /* FSKey+Scripting.m in Sources */,
+				8545768F1FE922A600860811 /* FSValue+Scripting.m in Sources */,
+				854576901FE922A600860811 /* FSKeySet+Scripting.m in Sources */,
+				854576911FE922A600860811 /* FSDocument+Printing.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		854576A31FE922A600860811 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 854575361FE922A500860811 /* FSCore */;
+			targetProxy = 854576A21FE922A600860811 /* PBXContainerItemProxy */;
+		};
+		854576A51FE922A600860811 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 854575361FE922A500860811 /* FSCore */;
+			targetProxy = 854576A41FE922A600860811 /* PBXContainerItemProxy */;
+		};
+		854576A71FE922A600860811 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8545757B1FE922A500860811 /* FSFunctions */;
+			targetProxy = 854576A61FE922A600860811 /* PBXContainerItemProxy */;
+		};
+		854576AB1FE922A600860811 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8545757B1FE922A500860811 /* FSFunctions */;
+			targetProxy = 854576AA1FE922A600860811 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01484B280027789A7F000001 /* Inspector.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01484B290027789A7F000001 /* English */,
+			);
+			name = Inspector.nib;
+			sourceTree = "<group>";
+		};
+		089C165FFE840EACC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1660FE840EACC02AAC07 /* English */,
+				F6FBC33A0156004401C493A5 /* German */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A37F4B4FDCFA73011CA2CEA /* FSTable.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B5FDCFA73011CA2CEA /* English */,
+			);
+			name = FSTable.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B7FDCFA73011CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4BAFDCFA73011CA2CEA /* English */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		660697770147467500BC954A /* FSChart.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				660697780147467500BC954A /* English */,
+			);
+			name = FSChart.nib;
+			sourceTree = "<group>";
+		};
+		66290532016F243500316001 /* Functions.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66290533016F243500316001 /* English */,
+			);
+			name = Functions.nib;
+			sourceTree = "<group>";
+		};
+		66290535016F245100316001 /* Preferences.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6EE64EE015A08160163AE3D /* Preferences.nib */,
+			);
+			name = Preferences.nib;
+			sourceTree = "<group>";
+		};
+		6634FAF901CB501700A8010B /* NoSelectionInspector.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6634FAFA01CB501700A8010B /* English */,
+			);
+			name = NoSelectionInspector.nib;
+			sourceTree = "<group>";
+		};
+		6634FAFC01CB547E00A8010B /* DocumentInspector.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6634FAFD01CB547E00A8010B /* English */,
+			);
+			name = DocumentInspector.nib;
+			sourceTree = "<group>";
+		};
+		666975E001CCA27100A8010B /* ViewInspector.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				666975E101CCA27100A8010B /* English */,
+			);
+			name = ViewInspector.nib;
+			sourceTree = "<group>";
+		};
+		6686763001CB6A2C00A8010B /* MultipleSelectionInspector.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6686763101CB6A2C00A8010B /* English */,
+			);
+			name = MultipleSelectionInspector.nib;
+			sourceTree = "<group>";
+		};
+		669E4DAC014724C700D990C6 /* Styles.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				669E4DAD014724C700D990C6 /* English */,
+			);
+			name = Styles.nib;
+			sourceTree = "<group>";
+		};
+		669ECC4C01CB812300A8010B /* TableInspector.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				669ECC4D01CB812300A8010B /* English */,
+			);
+			name = TableInspector.nib;
+			sourceTree = "<group>";
+		};
+		669ECC5401CB994900A8010B /* ItemInspector.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				669ECC5501CB994900A8010B /* English */,
+			);
+			name = ItemInspector.nib;
+			sourceTree = "<group>";
+		};
+		66E5BF6A022AA0B400A8010B /* FlexiSheet.scriptTerminology */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66E5BF66022A9FFB00A8010B /* FlexiSheet.scriptTerminology */,
+			);
+			name = FlexiSheet.scriptTerminology;
+			sourceTree = "<group>";
+		};
+		66F07EAF027A8EF900A8010B /* SortingItems.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66F07EB0027A8EF900A8010B /* English */,
+			);
+			name = SortingItems.nib;
+			sourceTree = "<group>";
+		};
+		66F2D4C1026F226D00A8010B /* Export.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66F2D4C2026F226D00A8010B /* English */,
+			);
+			name = Export.nib;
+			sourceTree = "<group>";
+		};
+		F62CBB20014F917D011DAD80 /* Import.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F62CBB21014F917D011DAD80 /* English */,
+			);
+			name = Import.nib;
+			sourceTree = "<group>";
+		};
+		F6AE5C7A021FC6E701A81303 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6AE5C7B021FC6E701A81303 /* Localizable.strings */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		854575761FE922A500860811 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 1;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = 4.2;
+				INFOPLIST_FILE = "Info-FSCore.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x400000,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = FSCore;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		854575771FE922A500860811 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = "Info-FSCore.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x400000,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = FSCore;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		854575781FE922A500860811 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_OPTIMIZATION_LEVEL = bjC;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = "Info-FSCore__Upgraded_.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x400000,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = FSCore;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Default;
+		};
+		854575BA1FE922A500860811 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/build/Development\"";
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = "Info-FSFunctions__Upgraded_.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x300000,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = FSFunctions;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		854575BB1FE922A500860811 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/build/Development\"";
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = "Info-FSFunctions.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x300000,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = FSFunctions;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		854575BC1FE922A500860811 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/build/Development\"";
+				FRAMEWORK_VERSION = A;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = "Info-FSFunctions__Upgraded_.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x300000,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = FSFunctions;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Default;
+		};
+		854575F21FE922A500860811 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(LOCAL_LIBRARY_DIR)/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/build/Development\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = FSUnitTest;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		854575F31FE922A500860811 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(LOCAL_LIBRARY_DIR)/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/build/Development\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = FSUnitTest;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		854575F41FE922A500860811 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(LOCAL_LIBRARY_DIR)/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/build/Development\"";
+				GCC_OPTIMIZATION_LEVEL = bjC;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = FSUnitTest;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		8545769C1FE922A600860811 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-FlexiSheet.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = Application/CompressedSaving;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = FlexiSheet;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		8545769D1FE922A600860811 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-FlexiSheet.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = Application/CompressedSaving;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = FlexiSheet;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		8545769E1FE922A600860811 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_OPTIMIZATION_LEVEL = bjC;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-FlexiSheet.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = Application/CompressedSaving;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = FlexiSheet;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		85D7BCCF124A845700AB2F13 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		85D7BCD0124A845700AB2F13 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		85D7BCD1124A845700AB2F13 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		854575751FE922A500860811 /* Build configuration list for PBXNativeTarget "FSCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				854575761FE922A500860811 /* Development */,
+				854575771FE922A500860811 /* Deployment */,
+				854575781FE922A500860811 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		854575B91FE922A500860811 /* Build configuration list for PBXNativeTarget "FSFunctions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				854575BA1FE922A500860811 /* Development */,
+				854575BB1FE922A500860811 /* Deployment */,
+				854575BC1FE922A500860811 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		854575F11FE922A500860811 /* Build configuration list for PBXNativeTarget "FSUnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				854575F21FE922A500860811 /* Development */,
+				854575F31FE922A500860811 /* Deployment */,
+				854575F41FE922A500860811 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		8545769B1FE922A600860811 /* Build configuration list for PBXNativeTarget "FlexiSheet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8545769C1FE922A600860811 /* Development */,
+				8545769D1FE922A600860811 /* Deployment */,
+				8545769E1FE922A600860811 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		85D7BCCE124A845700AB2F13 /* Build configuration list for PBXProject "FlexiSheetLeopard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85D7BCCF124A845700AB2F13 /* Development */,
+				85D7BCD0124A845700AB2F13 /* Deployment */,
+				85D7BCD1124A845700AB2F13 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}

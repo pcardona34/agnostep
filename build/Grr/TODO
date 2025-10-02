@@ -1,0 +1,118 @@
+
+                          ,-----.-----.----. ,-----.
+                          `-. ,-| ,-. | ,-. `| ,-. |
+                            | | | `-' | `-' ,| `-' |
+                            `-' `-----'----' `-----'
+        +-------------------------------------------------------------+
+        | Tasks with one star (*----) are easy, tasks with five stars |
+        | (*****) are hard to do. Please submit your tasks in the     |
+        | appropriate category and delete tasks that you did. Don't   |
+        | forget to write it down in ChangeLog and commit comments!   |
+        +-------------------------------------------------------------+
+
+
+HTML Parsing
+	- (*----) Tags to be implemented:
+	      img, pre (needs extra parsing code), code, font, em, ul, ol, li
+	
+	- (**---) Figure out how to use fonts properly
+
+HTML Display
+	- (***--) Images
+
+Looks
+	- (***--) Icons:
+		* Logo icon:
+			* Dog's nose is too big. (Compare with dog photos!)
+			* Remove antenna?
+		* Missing:
+			* Podcast icon
+			* 'Add category' toolbar icon, 32x32
+			* Generic 'delete' icons for toolbar, 32x32
+				* Delete feed : OK
+				* Delete category
+				* Delete article group
+
+GUI
+
+	- (***--) Check if it's possible to drop articles *on* a database element
+	      instead of in between
+
+	- (***--) Attach icons to the cursor when using drag&drop
+
+	- (***--) Make outline view remember the expansion state
+
+	- (****-) Rebuild Fonts preference panel
+
+General
+	- (*----) Make databases non-components
+
+	- (****-) Clean up Database code!!!
+	      - _One_ method to insert DatabaseElements somewhere
+	      - A method to get the best (category, index) tuple for insertion
+		
+	- (**---) OPML support
+	
+	- (**---) Find out how the language descriptions on GNUstep work,
+	      where the weekday names are read from in the NSCalendarDate
+	      initializer method. Make date parsing run with different
+	      language settings than just english!
+	      [Note: Solved in RSSKit now. When RSSKit is migrated to RSSKit2,
+	      this will then have to be done in Grr.]
+		
+	- (**---) Podcasting support
+
+	- (***--) Enhance component architecture
+	      Enhance component architecture so that components can tell
+	      the application how important they think they are at the moment,
+	      so that the application can switch between Podcast/HTML view
+	      itself. (Make this a weak component feature.)
+
+		- (****-) Write ComponentManager class
+	
+	- (**---) View providing components: Add a method that's called after
+	      the view has been placed in a window, so that the components
+	      can adjust to the new size. Call this -enableComponent and also
+	      add -disableComponent (or similar). Let the table components
+	      adjust their tables using NSTableView's -sizeLastColumnToFit
+	      method. [NOTE: Is this task really needed or is it overhead?]
+	
+	- (***--) Podcast Download progress window
+	
+	- (*----) Improve search component in toolbar
+	      Subtask:
+		* Find out how to let this search field notify you whenever
+		  a letter is entered. (Incremental search)
+	      Idea:
+		When a letter is entered, a timer is started with a delay of
+		a second. If another letter is enteres before the timer rang,
+		the timer is reset to a delay of 1 sec. So the timer always
+		rings about 1 sec after the last keystroke.
+		
+		When the timer rings, start a search. If the current search
+		string is a refinement of the search string in the last
+		search, do a incremental search, otherwise fal√l back to
+		basic search.
+		
+		When the articles to be searched change (by clicking a
+		category in the category outline view), try to do an
+		incremental search on the added articles when the new
+		set is a superset of the original set.
+	
+	
+	- (****-) Proxy class for articles
+	      Implement a proxy class for articles that loads the articles
+	      only on demand, so that the application startup is faster.
+	      This requires modifications in RSSKit. You will have to
+	      generalize the code to load feeds from property lists, so
+	      that the RSSFactory handles the article loading from the
+	      article dictionaries contained in the feed property list
+	      structure. The storing code will also have to be adjusted.
+	      The resulting code is likely to be incompatible with former
+	      versions.
+
+Management
+	- (**---) Draw a workflow which TODOs depend on what
+
+	- (***--) Complete Manual Testing documentation
+

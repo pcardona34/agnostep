@@ -1,0 +1,36 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    ConsoleWindowController = {
+	Actions = (
+	    "deleteClicked:",
+	    "saveClicked:"
+	);
+	Outlets = (
+	    tasksTableView,
+	    messagesTableView,
+	    currentTaskBox
+	);
+	Super = NSWindowController;
+    };
+    ExtendedOutlineView = {
+	Actions = (
+	);
+	Outlets = (
+	);
+	Super = NSOutlineView;
+    };
+    ExtendedTableView = {
+	Actions = (
+	);
+	Outlets = (
+	);
+	Super = NSTableView;
+    };
+    FirstResponder = {
+	Actions = (
+	    "deleteClicked:",
+	    "saveClicked:"
+	);
+	Super = NSObject;
+    };
+}

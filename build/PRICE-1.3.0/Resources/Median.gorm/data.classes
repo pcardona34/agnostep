@@ -1,0 +1,40 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    FirstResponder = {
+	Actions = (
+	    "changeSize:",
+	    "filterCancel:",
+	    "filterOK:",
+	    "medianCancel:",
+	    "medianOK:",
+	    "parametersChanged:",
+	    "showFilter:",
+	    "showMedian:"
+	);
+	Super = NSObject;
+    };
+    PRCMedian = {
+	Actions = (
+	    "changeSize:"
+	);
+	Outlets = (
+	    medianWindow,
+	    separableCheck,
+	    formSelect,
+	    sizeField,
+	    sizeSlider
+	);
+	Super = PRFilterController;
+    };
+    PRFilterController = {
+	Actions = (
+	    "showFilter:",
+	    "filterOK:",
+	    "filterCancel:",
+	    "parametersChanged:"
+	);
+	Outlets = (
+	);
+	Super = NSObject;
+    };
+}

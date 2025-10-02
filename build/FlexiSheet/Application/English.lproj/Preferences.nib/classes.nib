@@ -1,0 +1,26 @@
+{
+    IBClasses =     (
+                {
+            ACTIONS =             {
+                showPreferences = id;
+                toggleSaveCompressed = id;
+                toggleShowInspector = id;
+            };
+            CLASS = FSPreferences;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                prefPanel = NSPanel;
+                saveCompressedSwitch = NSButton;
+                showInspectorSwitch = NSButton;
+                tabView = NSTabView;
+            };
+            SUPERCLASS = NSObject;
+        },
+                {
+            CLASS = FirstResponder;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSObject;
+        }
+    );
+    IBVersion = 1;
+}

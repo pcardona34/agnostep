@@ -1,0 +1,3983 @@
+2007-04-23      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Fixed a small issue in the item validation code
+	  for the Mailboxes window / drawer.
+	* Removed completed items from Documentation/TODO
+
+
+2007-04-22      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Changed the BUNDLE_INSTALL_DIR from
+	  GNUSTEP_INSTALLATION_DIR to 
+	  GNUSTEP_APPLICATION_SUPPORT 
+	  for GNUstep make v2. Bundles are now placed
+	  in $(GNUSTEP_INSTALLATION_DOMAIN)/Library/ApplicationSupport/GNUMail
+	  If you want to install bundles such as the
+	  Emoticon or Face bundles in your user domain, simply
+	  use:
+	  make install GNUSTEP_INSTALLATION_DOMAIN=USER 
+	* Removed the capabilities of loading
+	  bundles from ".". Since we now have
+	  a GNUMail Framework, it's not an important
+	  nor very useful feature anymore.
+	* Fixed the bug where we weren't reusing a local
+	  cache file for locally-cached mailbox.
+	* The "Take Account Offline" menu item now flips
+	  to "Take Account Online" on a closed store.
+	* We now remove all "pending tasks" just before
+	  reconnecting to an IMAP server.
+
+ 
+2007-04-08      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Fixed the look of mailboxes icons holding
+	  other mailboxes or not wrt the expand arrows.
+	* We now properly order front the MailWindow
+ 	  instance when selecting a local mailbox.
+	* We now respect the user's preference of
+	  mailbox backend format (mbox / maildir) when
+	  initially launching the application.
+
+
+2007-04-07      Ludovic Marcotte <ludovic@Sophos.ca>
+	
+	* Updates wrt changes in Pantomime. You MUST
+	  update Pantomime!
+	* Now possible to set custom color for filters.
+	* Updated the Mac OS X nib file in order to be
+	  able to set custom color for filters.
+
+
+2007-03-25      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Removed 1.1.0 and 1.1.1 "compatibility".
+	* Moved the "Hide deleted messages on startup",
+	  "Hide read messages on startup" and
+	  "Highlight URLs in message content" options
+	  from the Viewing bundle to the Advanced bundle.
+	* Reworked the Viewing bundle so it's now possible
+	  to select the preferred view style. Only the
+	  first two are implemented right now. Also added
+	  iconds from Jesse Ross. The OS X nib NEEDS
+	  to be modified. 
+	* Updates on OS X wrt previous commits.
+	* Lots of small cleanups to avoid compiler warnings.
+
+
+2007-03-24      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Added Jesse Ross to the About panel.
+	* Modified TaskManager and MailboxManagerController
+	  so that we really mark messages as deleted on
+	  the POP3 server once we are sure it has been
+	  successfully written on disk.
+	* Started to rework the way we display task's
+	  title and subtitle.
+	* Fixed the "occured" -> "occurred" typo everywhere.
+	* We don't add the additionnal headers again in the
+	  message if they are already present.
+	* We now correctly use the To: header values when
+	  live searching in the Drafts / Sent folders.
+
+
+2007-03-11      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Added GNUMail+MenuValidation files in order
+	  to centralize all menu validation code.
+	* Removed the "if possible" words when configuring
+	  APOP (for POP3). That means the auth will fail
+	  if APOP support isn't available. The OP might
+	  prefer that as otherwise, we would try to
+	  authenticate using unsecured mechanisms.
+	* Added and impleted View > Hide/Show Toolbar
+	  and also View > Customize Toolbar...
+	* Updated the Xcode project file and MainMenu.nib
+	* We now transfer messages from local mailboxes
+	  to the local Trash mailbox (if any) when
+	  deleting messages and IIF we are hiding
+	  deleted messages.
+	* We now dynamically add/remove Cc/Bcc
+	  fields on Mac OS X during message composition.
+	
+
+2007-03-05      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed the "New email with content" service.
+
+
+2007-03-04      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * We no longer use -maximumAdvancement in
+	  MailWindowController.m
+	* We no longer use NSCriticalRequest in
+	  ApplicationIconController.m
+ 
+
+2007-02-26      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Reworked the code when our connections
+	  to the POP3, SMTP or IMAP server time out.
+	* Minor bug fixes.
+
+
+2007-02-05      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Message selection fixes.
+	* Converted Localizable.string files back
+	  to UTF-16.
+	* Small cleanups.
+	* Tagged the source tree with revision
+	  fe29b44d13141dd3839c9285995a4f23933518a9 and
+          tag name v1.2.0pre3.
+
+
+2007-02-04      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* We try to use the already supplied password
+	  when modifying the preferences of an IMAP
+	  account (when checking supported mechanisms
+	  or listing mailboxes)
+	* Modified TaskManager: -stopTask: to make sure
+	  we don't use theTask past -cancelRequest.
+	* We don't wrap the mailbox names in the mailboxes
+	  drawer on OS X.
+	* We now draw tooltips over the console window messages.
+	* Improved the look & feel of the console window
+	  on OS X.
+
+
+2007-02-03      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Improved the welcome message.
+	* Updated the Xcode project file. We now build
+	  a universal binary and we include the Welcome
+	  message in our copy phases.
+	* If we click on the dock icon and no window
+	  is open on OS X, we display a new viewer window.
+	* We now correctly update our app icon when the
+	  underlying store has been closed.
+	
+
+2007-01-31      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Updated all Localizable.string files to
+	  use UTF-8. Updates from Wolfgang Sourdeau.
+	* Make sure we don't add the User-Agent
+	  headers more than once.
+
+
+2007-01-30      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added a patch from Matt Rice which improves
+	  editing in the mailboxes list.
+	* Finally commited the nibs for unified
+	  titlebar/toolbar.
+	* We use the identifier instead of the label
+	  when trying to identify the columns in
+	  ConsoleWindowController.
+	* Menu updates on OS X.
+
+
+2007-01-29      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Fix in the previous task handling code when
+	  loading message body (when multiple controllers
+	  were involved).
+	* Added checks when verifying for supported
+	  SMTP auth mecanisms over a non-SSL socket.
+
+
+2007-01-28      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Cleanups in the Task handling code and
+	  minor additions wrt changes in Pantomime.
+	* Fixes to the Xcode project file.
+	* Updated the menu on OS X to reflect previous
+	  changes in the Reply / Forward menus.
+	* The MailWindow, EditWindow and MailViewWindow
+	  toolbars are now unified within the window.
+	* We now copy correctly the ImageTextCell and
+	  ProgressIndicatorCell in -copyWithZone:.
+
+
+2007-01-24      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Fixed the PGP bundle wrt changes
+	  in Pantomime.
+	* Modified MimeTypeManager so it skips over
+	  commented lines in /etc/mime.types
+	* Modified EditWindow.m to make To/Cc/Bcc
+	  text fields scrollable (wrt new changes
+	  in GNUstep GUI).
+
+
+2007-01-21      Ludovic Marcotte <ludovic@Sophos.ca>
+	
+	* Modifications due to changes in Pantomime.
+	* We now warn if a local mailbox couldn't be
+	  opened successfully.
+
+
+2007-01-20      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* We now correctly warn the user in case
+	  an IMAP mailbox compact failed.
+	* Adjustments to the new mailbox caching
+	  code from Pantomime.
+	* Fixed the behavior of the search field in
+	  the message list window.
+	* Fixed a crashing wrt the search field. 
+	  The previous selection could be 'expunged'
+	  and it would lead to a segfault.
+
+
+2006-10-12      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Reorganized the Message menu.
+	* Changes based on modifications made
+	  in Pantomime.
+	* We now also consider parts w/o a Content-Type
+	  defined as text/plain parts, as stated
+	  in the RFC.
+
+	
+2006-10-06      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Fixed (NSFileWrapper *) cast in Utilities.
+	* Removed the EnableContextMenus pref and we
+	  now always enable the context menus, whatever
+	  platforms we are on.
+	* Many updates due to changes in Pantomime. The
+	  changes correspond to the new message decoding
+	  engine in Pantomime. GNUMail has now as new
+	  message displaying engine. If you use the
+	  PGP bundle, YOU NEED TO UPDATE IT.
+	* It's now possible to forward a mail inline
+	  or as an attachment.
+
+
+2006-09-25      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Tagged the source tree with revision
+          eb88766b1fddde13a333c1c112263c0cb06199d0 and
+          tag name v1.2.0pre2.
+
+
+2006-09-25      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Improved some more the selection
+          the newly renamed mailbox
+        * Modified MailWindowController: -doFind:
+          to make sure we don't go out of bounds.
+	* Modified the code which saves attachments
+	  so that we avoid a file-locking issue
+	  under OS X with NSFileWrapper.
+	* Added all new icons from Jesse Ross
+	* Updated the Xcode project file
+	* RELEASED v1.2.0pre2.
+
+
+2006-09-24      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* UI adjusments in the WelcomePanel
+	* Updated the Welcome message
+	* Updated the version number.
+	* Improved the selection of the newly
+	  renamed mailbox.
+	* Modified MailWindowController: -doFind:
+	  to make sure we don't go out of bounds.
+	
+
+2006-09-21      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Modified ApplicationIconController:
+ 	  number_of_unread_messages() to consider the
+	  store's path separator.
+
+
+2006-09-19      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* We now include the mailbox name of the
+	  mailbox that is about the be deleted in the
+	  alert panel.
+	* Fixed bugs in the previous "fast find" patch.
+	* Added a patch from Adam Fedor that implements
+	  IMAP filtering on headers. Disabled for now
+	  until all issues are resolved (even if commited).
+	* Added a patch from Hubert Chan <hubert@uhoreg.ca>
+	  that fixed path inclusion when compiling bundles. 
+
+
+2006-09-16      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Again, small fix in TaskManager wrt changes
+	  in Pantomime.
+	* We now warn properly the user if the Drafts,
+	  Sent or Trash mailbox isn't set for the account.
+	* Fixed a CWService instances leak in TaskManager:
+	  -requestCancelled.
+	* We now use User-Agent instead of X-Mailer.
+	* Added missing List-Id item from the create
+	  filter menu in the MailWindow contextual menu.	
+	* Minor changes in TaskManager to reflect the
+	  changes in Pantomime on the POP3 code.
+	* Applied a patch from Lorenz Mösenlechner that
+	  add "fast find" capabilities in the messages list.
+
+
+2006-09-02      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Small fix in TaskManager wrt recent changes
+	  in Pantomime.
+
+	
+2006-09-02      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Fixed a crashing issue when the message
+	  couldn't be sent using 'sendmail'.
+	* Fixed a small issue in EditWindowController:
+	  -_recipientsFromString where we weren't
+	  considering unichars properly and stripping
+	  everything over 8 bits. Bug found and reported
+	  by Sergey Golovin <svg@rbest.ru>
+
+
+2006-06-11      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Code cleanups.
+	* We now create the IMAP task when connecting
+	  to the server before we actually try to
+	  connect to it.
+	* Applied patches from Lorenz Mösenlechner
+	  <moesenle@in.tum.de>:	
+	  - we make the icon on the dock jump when
+	    new mails arrive
+	  - we fix the drawing issues in the Console
+	  - we fix the "Add to Address Book" feature
+	    on OS X and we correctly update the view.
+
+
+2006-06-04      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Fixed the "Add to Address Book" code on OS X
+	  and fixed mem leaks in it.
+	* Fixed the code when we add append or copy a message
+	  to a mailbox. We now display the correct
+	  mailbox name and we also stop the associated task.
+
+
+2006-05-28      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Fixed a bug in the message display code for badly
+	  encoded MIME parts.
+	* We now set the default INBOX when creating
+	  IMAP accounts.
+	* Added a small cache in AddressBookController that
+	  expires every minute. This cache is used to speed-up
+	  the filtering code when a criteria is set to
+	  verify in the address book. The cache is NOT used
+	  right now to cache searches for address book groups.
+
+
+2006-05-15      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Fixed some gcc 4.x warnings.
+	* Removed the old Xcode project file and
+	  added the new one.
+	* Updated some nibs.
+
+
+2006-05-07      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* We now suppord read-only mailboxes in the MailWindow.
+	* Implemented "TLS if available"
+	* We now create a task for the progress indicator when
+	  compacting an IMAP mailbox.
+	* Fixed the issue where it wouldn't be possible to
+	  reopen an IMAP connection to a server on which we
+	  failed to authenticate at first.
+
+
+2006-04-30      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Some MingW fixes.
+
+
+2006-04-28      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Some cleanups.
+	* We now handle correctly dropped POP3 connections.
+	  This happens relatively often for GMail accounts.
+
+
+2006-04-25      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Fixed a crashing bug in the Face bundle when the
+	  X-Face can't be properly decoded.
+	* Fixed the code in TaskManager: -folderPrefetchCompleted
+	  to get the right MailWindow instead of using the
+	  last one on top.
+
+
+2006-04-12      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * We no longer update the status label of
+	  the MailWindow:s if we are opening a mailbox.
+
+
+2006-04-10      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * We correctly stop the running task if we
+	  can't open the IMAP folder.
+	* Updated the code wrt Pantomime changes.
+
+
+2006-04-08      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Improved the internal tasks management code.
+	  It's now possible to stop more IMAP async operations.
+	* Added a new Welcome panel that lets you choose between
+	  mbox or maildir as the local storage format when
+	  GNUMail is first launched. This code is not yet finished.
+	
+
+2006-03-31      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Added support for creating filters automatically
+	  based on the List-Id. See RFC2919 for details.
+	* Improved the IMAP disconnection code and fixed a
+	  memory leak. 
+
+
+2006-03-28      Ludovic Marcotte <ludovic@Sophos.ca>
+
+       	* Replaced all calls from [NSApp abortModal] to
+	  [NSApp stopModalWithCode: NSRunAbortedResponse]; 
+	  This fixes very annoying focus/menu validation
+ 	  issues under GNUstep.
+	* We now properly handle TLS support for SMTP
+	  in the Account editing window and we also
+	  properly released the used objects.
+	* Also fixed an issue with GMail accounts using
+	  SMTP. An other fix will soon be committed to
+	  Pantomime to fully fix the issue. The fix
+	  needs more testing.
+
+
+2006-03-26      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Removed Bundles/Account/MailboxesView.{h,m}
+	* Implemented a much cleaner approach for 
+	  setting special mailboxes. The Mac OS X
+	  port WILL NEED to be updated.
+
+
+2006-03-25      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added initial TLS support for IMAP, POP3
+          and SMTP services.
+
+
+2005-12-16      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed the issue with the icon badge on OS X
+	  where it had always a value of 1 even if the
+	  unread count was 0. Pretty much all the investigation
+	  for this issue was done by Amelia A Lewis <amyzing@talsever.com>. 
+
+
+2005-12-15      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Added a patch from Adam Fedor to offer the
+	  possibility of showing the unread count in
+	  the app icon badge for INBOX mailboxes.
+
+
+2005-11-17      Ludovic Marcotte <ludovic@Sophos.ca>
+
+ 	* Fixed a crashing bug in the account selection
+	  code when forwarding a message.       
+
+
+2005-11-13      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Patch from Matt Rice to fix some app icon
+	  issues on GNUstep.
+
+
+2005-09-26  Adam Fedor  <fedor@gnu.org>
+
+        * EditWindowController.m (-controlTextDidEndEditing:aNotification):
+        When expanding a group, don't add names without valid email addresses.
+        -_recipientSplitEmail:fromArray: New method.
+        -_recipientsFromString: Use it.
+	* We now strip () in URLs
+	* Modified TaskManager to prevent a potential crash.
+
+
+2005-06-25      Ludovic Marcotte <ludovic@Sophos.ca>
+	
+	* Fixed a small issue in the Emoticon bundle.
+
+
+2005-04-16	Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed the recipient type in GNUMail: -newMessageWithRecipient:
+	  Was PantomimeTo instead of PantomimeToRecipient.
+
+
+2005-03-20	Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* It's now possible to take an IMAP connection
+	  "offline". No caching is done, we simply disconnect
+	  from the server.
+	* Made sure all GNUMail categories have the
+	  GNUMail{class}Extensions name.
+	* We now expand the tilde in the signature path.
+	* Removed completed items from the TODO
+	* Prevent a crash when clicking on "hidden" messages
+	  in thread thread arcs view.
+	* Added create_48.tiff, delete_48.tiff, send_48.tiff
+	  and retrieve_48.tiff to the PB project file. The
+	  same needs to be done to the Xcode project file. 
+
+
+2005-03-13      Ludovic Marcotte <ludovic@Sophos.ca>      
+
+	* We can now stop IMAP tasks (when loading messages)
+       	* Cleanups (removed the prompt for disconnection when
+	  closing a MailWindow which was showing an IMAP mailbox)
+       	* Now possible to choose small/standard/large icons
+	  for the Mailboxes window / drawer from its context menu.
+       	* Removed the limitation wrt not being able to close
+	  the MailWindow:s when some activity (like receiving
+ 	  emails using POP3) was going on.
+
+
+2005-03-06      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* We now save/restore the drawer position on OS X.
+
+
+2005-03-02      Ludovic Marcotte <ludovic@Sophos.ca>
+
+       * Modified TaskManager to check for nil folders
+	 when trying to add the answered flag.
+ 
+
+2005-02-27      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified MailboxManagerController: _accountsHaveChanged:
+	  to close any opened stores for which accounts have
+	  been disabled.
+
+
+2005-02-24      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Small improvements on the way receiving
+	  UNIX tasks are handled.
+
+
+2005-02-23	Francis Lachapelle <francis@Sophos.ca>
+
+	* Updated the XCode project file; added
+	  NSBundle+Extensions.{h,m}
+
+
+2005-02-23      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added the necessary IMAP reconnection handlers.
+
+
+2005-02-15      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Improved the cases when we couldn't connect
+	  to an IMAP server. After a few try, it would crash.
+
+
+2005-02-06      Ludovic Marcotte <ludovic@Sophos.ca>
+	
+	* Removed the mailbox's type selection
+	  popup from the NewMailboxPanel classes.
+	  The default mailbox type can now be
+	  selected from the Advanced preferences panel.
+	* Updated NewMailboxPanel.nib.
+
+
+2005-02-05      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Updated the Russian translation. Patch
+          from Konstantin B. Bukharov <bkb@sw.ru>
+	* Modified MessageViewWindowToolbar to
+	  show, by default, the Print toolbar item.
+
+
+2005-01-30      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified GNUMail: -saveTextFromMessage: so that
+	  we don't use the string that went through bundles.
+
+
+2005-01-23      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Reworked the copy/paste code in ExtendedTextView
+	  so whenever we paste an image in the textview,
+	  we a suitable name.
+	* Some cleanups to avoid compiler warnings on OS X.
+	* Added but heavily modified a patch from
+	  Frederik Harwath <fnord@binarydigit.de> to be able
+	  to create filters based on the sender / subject.
+	* Added the NSBundle+Extensions.{h,m} files.
+	* Updated the OS X port wrt the last changes. The
+	  Xcode file NEEDS to be updated.
+
+
+2005-01-22	Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Modified TaskManager.m so that we respect the
+	  user's preferences wrt the time interval
+	  between mail checks by doing the right modulo.
+	* Removed completed TODO items.
+	* When saving text from a message, we now
+	  use the message's subject as the filename.
+	* Small check-for-nil fix.
+
+
+2005-01-16      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* We don't use the same window frame if we
+	  already have a {Edit,Mail,MessageView}
+	  window on top.
+	* We now warn before renaming special mailboxes.
+	* Updated the PGP bundle so it is now possible
+	  to always automatically encryp and/or
+	  sign messages.
+	* Updated PGPView.nib
+
+
+2005-01-15      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Modified FindWindowController to catch
+	  the notification posted by Pantomime when
+	  we close a folder in order to do some cleanups.
+
+
+2005-01-11      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Enabled window's frame autosave / restore for
+	  the Preferences and Account Editor windows.
+	* Some cleanups in the PreferencesWindowController class.
+
+
+2005-01-09      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * We now use images in the Status / Flags column.
+	  GNUstep users WILL have to update -gui in order
+	  to get properly displayed images.
+	* Added {previous, next} in thread using cmd-{left,right}.
+	* General cleanups.
+
+
+2005-01-08	Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Added some dummy implementations of MailWindowController's
+	  methods in MessageViewController to avoid exceptions.
+	* Defined the FolderExpireDate and MessageExpireDate constants
+	  and refactored some code to use them.
+	* Implemented clicking support on the stop/restart icons
+	  in the Console window.
+	* Updated the Console's code so it works under OS X.
+	* We now correctly restore the app icon when quitting
+	  the application under OS X.
+	* The Console window is now a utility panel on OS X.
+	* Reduced the min size of the EditWindow under OS X.
+	* Removed the horizontal scroller in the Messages
+	  tab from the Console window.
+	* Did the same with the Console window on OS X.
+	* We now use the small system font in the Messages's
+	  Console tab.
+
+
+2005-01-06      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified a little bit the Console window.
+	* Added more progress indicators (using the Console window).
+	  We now have them when loading messages (to view them or
+ 	  their rawsource) or when redirecting them.
+
+
+2005-01-02      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Removed Icons/stop_{32,48}.tiff
+	* New console window.        
+	* Added Icons/stop_32.tiff and Icons/restart_32.tiff.
+	  Contribution from Wolfgang Sourdeau <wolfgang@contre.com>
+	* Updated the ConsoleWindow's nib. The progress indicator
+	  is still not displayed properly under OS X. This
+	  issue will soon be resolved.
+
+
+2005-01-02      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed the "Change Text Encoding" feature and
+	  integrated with the new async / progress
+	  indicator code.
+	* Updated the About panel on GNUstep and the
+	  property list for the upcoming prerelease.
+	* Also updated the About panel on OS X.
+	* Modified EditWindowController: -windowDidBecomeMain:
+	  to also set the keyEquivalent of the "Deliver"
+	  menu item.
+	* Modified ImageAndTextCell so it returns YES
+	  for isEditable/isSelectable. This allows
+	  mailbox renaming to work on OS X.
+	* Modified EditWindowController: -setAccountName
+	  to always load the accounts and try to select
+	  one, even if we receive nil.
+        * Set the tag to v1_2_0pre1
+        * Released 1.2.0pre1.
+
+
+2005-01-01      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Modified ConsoleWindowController:  -tableView:
+	  objectValueForTableColumn: row: so that when we
+	  SEND_SMTP / SAVE_ASYNC / LOAD_ASYNC, we use
+	  the total size if the current size is bigger
+	  than the former.
+	* Added NSPasteboard+Extensions.{h,m}.
+	* Replaced nil by @"" in Utilities for the keyEquivalent
+	  parameters of ExtendedMenuItem.
+	* Finished the message Copy/Cut/Paste code and improved
+	  globally the code related to showing progress
+	  indicators during lengthy operations.
+	* Updated Project Builder's project file to include
+	  NSPasteboard+Extensions.{h,m}
+	* If we are under GNUstep and closing the last MailWindow,
+	  we deselect all items in the Mailboxes window.	
+	* Added MailboxManagerController: -folderForURLName: and
+	  refactored some code to use it. It's now possible
+	  to have a Trash folder on a different store and benefit
+	  from all the progress indicator stuff.
+	* Removed MailboxManagerController: -folderNameExists: forStore: 
+	* Rewrote GNUMail: -applyManualFilter so it works correctly	
+	  with the new async and progress indicator code.
+
+
+2004-12-29      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Removed -storeWithURLNameIsOpen: from
+	  MailboxManagerController since we now always
+	  keep IMAP stores open.
+	* Refactored some of the code in the MailboxManagerController	
+	  class for the upcoming rewrite of the item "loading" code.
+	* Reactivated the Copy/Cut/Paste code (adapted with the
+	  new async code in Pantomime) and remove the code
+	  related to the old GNUMail address book format. THIS CODE
+	  IS NOT FINISHED. It was commited due to the urgent fix
+	  described below.
+	* Reworked the account selection code by extending
+	  ExtendedMenuItem (to include the account's key) and by
+	  removing all the fluff in Utilities.
+	* Improved the message copying/cutting code. It should
+	  now work very well.
+
+
+2004-12-28	Francis Lachapelle <francis@Sophos.ca>
+
+	* Updated Xcode project file.
+
+
+2004-12-27      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * On OS X, when you drag mails near the window
+	  border and the drawer is hidden, the drawer
+	  is now automatically shown.
+
+
+2004-12-26      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * We always show an empty viewer window under
+	  OS X whenever we haven't had any mailboxes
+	  to open upon GNUMail's startup.
+
+
+2004-12-26      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added menu items for creating, deleting and
+	  renaming mailboxes on OS X and implemented
+	  the menu validation protocol to correctly
+	  enable/disable items.
+	* We now show a progress indicator (in the
+	  Console window) when saving a big message
+	  to an IMAP mailbox (either after a message
+	  is being sent or when saving a message to
+	  the Drafts mailbox).
+	* Fix and optimization in the Emoticon bundle.
+	* We now start tasks immediately when the
+	  "Start" button is click from the Console window.
+	* We now save text from messages using UTF-8
+	  and we also replace attachments with
+	  a corresponding asterisk.
+	* Small cosmetic change in the Personal tab
+	  from the Account editing window.
+	* Fixed the issue where when showing the raw
+	  source of a message, after resizing the
+	  window the normal display would be shown.
+	* Fixed the annoying bug that caused the text
+	  to "jump" when composing an email. Modified
+	  EditWindowController: -textDidChange: to
+	  keep the selected range and restore it when
+	  we are done.
+	* We no longer show the "no new messages" panel
+	  when the POP3 authentication has failed.
+	* Renamed "Inspector" to "Inspector..."
+
+
+2004-12-24      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Removed LocalMailDelivery from the PB OS X
+	  project file. The same modification must be
+	  done for Xcode.
+
+
+2004-12-23      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Remove LocalMailDelivery (moved the code
+	  to Pantomime).
+	* Small fixes so things compile well under Solaris
+
+
+2004-12-22      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Updated the Russian translation. Patch
+	  from Konstantin B. Bukharov <bkb@sw.ru>
+	* Updated the XCode project file to add the
+	  missing GNUMail_128.tiff file. Updated file
+	  from Kenny Grant <kenny@mecanisme.net>
+	
+
+2004-12-19      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Fixed the issue wrt restoring messages from the
+	  drafts mailbox that had > 1 To recipients.
+	  Only the last one was "restored".
+	* We now correctly thread messages after having
+	  received them in POP3, if we need to.
+
+
+2004-12-13      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Fixed the viewing of the message's raw source
+	  in the MessageViewWindow when it's being
+	  loaded asynchronously.
+	* "Rewrote" the Emoticon bundle so it's now
+	  way faster and corrects "weird" behaviors
+	  like ":pebkac".
+
+
+2004-12-06      Ludovic Marcotte <ludovic@Sophos.ca>	
+
+	* Modified the MailboxManagerController class
+	  to use the returned number of messages
+	  imported (if any) when creating a mailbox.
+	* Refactored the MailboxManagerCache class.
+	* Refactored the PGP bundle so it works using
+	  async I/O in IMAP.
+	
+
+2004-12-01      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * We don't add additional headers with no
+	  associated value.
+	* Made the Import Mailboxes window a little
+	  bit bigger to ease translations.
+	* Small modifications in the Import bundle
+	  wrt refactorings done in Pantomime.
+
+
+2004-11-30      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Updated the PGP bundle wrt refactorings done
+	  in Pantomime.
+
+
+2004-11-28      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Updated the sources wrt refactorings
+          in Pantomime.
+	* Rewrote NSAttributedString+Extensions: -format
+	  so it fixes the bug on OS X and greatly
+	  optimized this method.
+	* Fixed a bug in the rewrite of -format...
+
+
+2004-11-27      Ludovic Marcotte <ludovic@Sophos.ca>
+	
+	* Updated the sources wrt major refactorings
+	  in Pantomime.
+	* Small OS X updates wrt the changes in Pantomime.
+
+
+2004-11-22      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * We now allow the user to set the scroller
+	  size from the Advanced Preferences panel.
+	  We also use this scroller size in the
+	  Mailboxes drawer.
+	* Did some cleanups and refactorings to
+	  avoid compiler warnings.
+
+
+2004-11-21      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Removed the Utilities (Private):
+	  -_lauchExternalProgram: method (that was
+	  thread based) by making use of the
+	  NSTaskDidTerminateNotification notification
+	  instead, which makes things way more efficient.
+	* Reworked the "Messages" column in the
+	  mailboxes window / drawer.
+	* Removed some NSLog() calls in Bundles/Clock.
+	  This bundle works fine under OS X but not under
+	  GNUstep due to some breakage in NSToolbar.
+	* Added NSUserDefaults+Extensions: -integerForKey: default:
+	  and refactored the code to use this new method (which
+	  simplifies things a lot.
+	* We now color quoted text by default.
+	* We now append the signature at the end of a mail
+	  when replying to it (default behavior).
+	* Adjusted the default width of the columns in
+	  the Mailboxes window and made it work nicely
+	  when the window is being resized.
+	* Added a patch from Matt Rice to reflect recent
+	  changes in -back wrt Window Maker app icons.
+	* Modified GNUMail: -applicationShouldTerminate:
+	  to match Cocoa's return code (instead of OpenStep's)
+	* Optimized the refreshing of the table view after
+	  expunging deleted messages (in IMAP).
+	* Lots of refactorings.
+	
+	
+2004-11-17      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Updated docs/TODO from completed items.
+ 
+
+2004-11-07      Ludovic Marcotte <ludovic@Sophos.ca>
+	
+	* Updated docs/README.
+	* Corrected some bugs related to toolbar items
+	  validation and range exceptions when changing
+	  the account preferences.
+
+
+2004-10-31      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * We now respect the GSUseWindowmakerIconBackground
+	  default on GNUstep.
+
+
+2004-10-30      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* When we reply to a message, forward or redirect
+	  it, we scroll to (0,0).
+	* Added a way to save and restore the unsent
+	  messages, not based on the Drafts folders
+	  at all. This is safe way of now losing any
+	  unsent messages in case something very bad
+	  happens during mail composition.
+	* Added Russian translation from
+	  Dmitriy Kostiuk <d.k@softhome.net>
+
+
+2004-10-04      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added an option in the advanced pref panel to
+	  be able to not automatically select the first
+	  unread message after a mailbox is opened.
+
+
+2004-10-01      Ujwal S. Setlur <ujwal@setlur.org>
+
+	* Updated Xcode project.
+
+
+2004-09-29      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Don't use the background color in the
+	  filtering panel on selected rows.
+
+
+2004-09-26      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added an "Automatically thread messages"
+	  advanced pref and removed the unused ones.
+	* We now use a sheet when asking the user
+	  to close the IMAP connection when closing
+	  a MailWindow on OS X.
+	* Cleanups wrt changes in Pantomime.
+	* Added a "Add Sender to Address Book" item
+	  in the MailWindow context menu. Work based
+	  on a patch sent by Bjorn Giesler months ago.
+
+
+2004-09-25      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Removed PreferencesPanelController: -_adjustWindowSize.
+	* Fixed some frame issues.
+	* Modified AccountEditorWindowController to add checkboxes
+	  in the outline view (IMAP view) to subscribe / unsubscribe
+	  IMAP mailboxes.
+	* OS X updates wrt previous commit.
+	* Updated EditWindow.nib (fixed the frame issue of the textview).
+	* Baseline fix for the label in MailWindow.m
+	* Removed the ExtendedTableColumn and SwitchTableView classes
+	  as GNUstep now supports switch buttons in NSTableView:s.
+	* Added an implementation of -copyWithZone: in
+	  FilteringViewController (for ExtendedButtonCell) to avoid
+	  a segfault on OS X.
+	* Updated the nibs wrt to the previous changes.
+	
+
+2004-09-24      Ujwal S. Setlur <ujwal@setlur.org>
+
+	* Updated Xcode project.
+
+
+2004-09-20      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed the issue wrt the "Normal Display" /
+	  "Raw Source" menu item.
+	* Updated GNUMail.tiff
+
+
+2004-09-18      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* #ifdef'ed out the -cellSize and -width/-height
+	  methods in ThreadArcsCell.m on GNUstep.
+	* Fixed the "jumping" issue in the Thread Arcs
+	  panel from the Mailbox Inspector window.
+	* Added ApplicationIconController.{h,m}.
+	* We no longer show the nb. of unread
+	  messages in the dock menu since we now
+	  show it in the app icon.
+	* Removed some NSLog() calls.
+	* Added GNUMail_128.tiff
+	* Updated the OS X project file and the
+	  ApplicationIconController code so it works
+	  under OS X.
+	* We now correctly initialize the app icon
+	  on OS X.
+	
+
+2004-09-13      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Added a "Save in Drafts" toolbar item in the
+	  message composition window.
+        
+
+2004-09-12      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Updated AboutPanel.m wrt previous commit.
+	* Cleaned up the ExtendedTextView code.
+	* Updated MailWindow.nib (set the delegate
+	  of the textview to the controller)
+	* Fixed ThreadArcsCell on OS X.
+	* Updated MailboxInspectorPanel.nib.
+	* Updated EditWindow.nib
+
+
+2004-09-11      Ujwal S. Setlur <ujwal@setlur.org>
+
+	* Updated Xcode project.
+	* Update AboutPanel.nib to reflect my new last name :-).
+	* Resaved MainMenu.nib since it reported inconsistencies.
+
+
+2004-09-11      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* We now correctly open the mailboxes drawer
+	  on OS X, on startup, if needed.
+	* We now use "mailbox" instead of "folder" in
+	  an information panel.
+	* Updated the ComposeView.nib file.
+ 	* Improved EditWindow.nib      
+
+
+2004-09-10	Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Update MainMenu.nib. The "Save in Drafts" outlet
+	  was not connected and Find Text / Find Messages
+	  were inverted.
+	* Added the "Select All Messages in Thread" menu
+	  item (and connected the outlet/action) in
+	  MainMenu.nib. Also defined the stub in the
+	  controller file (empty for now).
+        * Increased the default width of the thread
+          arcs cell.
+	* Implemented the "Select All Messages in Thread"
+	  method in the controller.
+	* Modified the code in the previous commit to not
+	  use NSIndexSet since it's not available on OS X 10.2.
+	* We now set the answered flag to the message when
+	  the reply was really sent.
+	* Added a patch from Andreas Heppel to fix the
+	  scrolling issues in the ThreadArcsCell:s.
+
+
+2004-08-31      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added a patch from Andreas Heppel to draw
+	  black dots for unread messages when using
+	  thread arcs.
+	* Added a patch from Andreas Heppel to keep
+	  the scrolling position in thread arcs
+	  when changing messages.
+ 
+
+2004-08-29      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Various small fixes on OS X.
+
+
+2004-08-27      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * We now force the user to specify a valid name
+	  and E-Mail address when creating or modifying
+	  an account.
+	* When replying to mail, we now focus the text
+	  view instead of the To: field.
+	* We now stop the animation if opening the
+	  mailbox failed.
+	* Removed useless extra checks.
+
+
+2004-08-25      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed a small issue if all local mailboxes were
+	  removed and only one IMAP account was enabled.
+	* Don't append an extra \n when not using
+	  message threading.
+
+
+2004-08-22      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified NSAttributedString+Extensions to support
+	  localization of mail headers.
+	* Corrected the "Save" menu on OS X.
+	* Fixed the thread arcs cell support in the
+	  MessageViewWindowController class.
+	* Temporarily disabled virtual folders support.
+	* We now thread new messages in IMAP if the current
+	  folder is threaded. POP3 needs to be done. 
+
+
+2004-08-15      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Updated the OS X project file.
+	* Updated AboutPanel.nib
+	* Added MailboxInspectorPanel.nib
+	* Updated ViewingView.nib and MainMenu.nib
+
+
+2004-08-14      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added a range check in MailWindowController:
+	  _messageStoreCompleted: when getting the rect
+	  of the row.
+
+
+2004-08-12      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Some code cleanups.
+	* We now listen to the notification posted by
+	  Pantomime (on STORE's completion) to correctly
+	  refresh the relevant tableview rows.
+
+
+2004-08-11      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added a patch from Andreas Heppel to draw
+	  narrow thread arcs.
+	* Added a mailbox inspector. Currently, it only
+	  displays the normal thread arcs. The other
+	  panels are currently empty.
+	* Replaced all occurences of "GNUMail.app"
+	  by "GNUMail".
+
+
+2004-08-05      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Finally fixed the code to handle the saving of
+	  the splitview's divider in the MailWindow:s.
+
+
+2004-08-01	Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * We now quote the personal part if there is a comma
+	  and if the user clicks on the To/Cc/Bcc buttons
+	  in the AddressBook's window.
+
+
+2004-07-25      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified Utilities: +showMessageRawSource: target:
+	  so that if the message's encoding is 8bit or binary,
+	  we try to use its encoding.
+	* Improved the FindWindow with a progress indicator
+	  and more stuff. The button outlets need to be
+	  connected in the OS X nib.
+	
+
+2004-07-24      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Minor improvements in ConsoleWindowController.m
+	* Made the Console window's progress indicators
+	  more NeXTish under GNUstep.
+	* We now re-estimate the message size when it's being
+	  sent using SMTP.
+
+
+2004-07-18      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Added an auto-scroll feature when the last row is
+	  selected in the message list and new mails arrive.
+	* Refactored A LOT of code. Cleaned up things and
+	  made some faster.
+	* Before appending the signature at the beginning
+	  of the mail, be sure it got decoded properly.
+
+
+2004-07-16      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Reverted the patch sent by Ovi <oldkerosen@spymac.com>
+	  It was a diff from an Xcode project, not PB.
+
+
+2004-07-14      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Corrected a minor issue in MailboxManagerController.
+	  We were invoking -editingDraftMessage which no
+ 	  longer exists.
+
+        
+2004-07-12      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Modified MailWindowController: -deleteMessage:
+	  so it copies mails in the Trash mailbox if the
+	  it is an IMAP folder and messages marked as deleted
+	  are currently hidden.
+	* Fixed the automatic STATUS'ing code in TaskManager
+	  so that if the MailWindow has no associated folder,
+	  we don't raise an exception.
+	* Improved A LOT the code to deal with creating,
+	  renaming and deleting mailboxes.
+	* We now show a spinning icon in the MailWindow when
+	  opening an IMAP mailbox.
+	* Fixed a small index issue in MailboxWindowToolbar.
+	* Fixed (all?) issues wrt restoring messages from
+	  the Drafts folder (when using IMAP) and also
+	  when redirecting messages.
+	
+
+2004-07-07      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Updated the OS X project file. Patch from
+	  Ovi <oldkerosen@spymac.com>.
+
+
+2004-07-05      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Removed Icons/mime-flag.tiff
+	* Updated the code wrt changes in Pantomime
+	  when opening mailboxes.
+	* Improved the account 'guessing' code in Utilities:
+	  +accountNameForTransportMethodItemTitle: proposedName:
+	* Added the initial code to hande fatal errors while
+	  trying to save mail in mailboxes.
+
+
+2004-06-29      Ludovic Marcotte <ludovic@Sophos.ca>
+	
+	* Updated the icons (removed the TIFF junk
+	  PhotoShop added to those files). Patch
+	  from Frederico S. Munoz.
+	* Slightly modified the toolbar code in
+	  EditWindowController. In order to work properly,
+	  the CVS version of GNUstep -gui is needed.
+	* Modified the code creating Service subclasses
+	  to add additional runloop modes.
+
+
+2004-06-21      Ludovic Marcotte <ludovic@Sophos.ca>	
+
+	* We now autoresize all columns to fit in the
+	  MailWindow's table view.
+	* Cleaned up and refactored some code.
+	* Modified TaskManager so we really do respect
+	  the 1 min tick interval. Before, it could get
+	  messed up if lots of concurrent tasks were running.
+
+
+2004-06-09      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Small modification to Bundle/Accounts/GNUmakefile
+	  to not overwrite the ADDITIONAL_OBJCFLAGS.
+
+
+2004-06-05      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Cleaned up the Filter class. 
+	* Removed some unused #include directives
+	  and refactored some code.
+	* Fixed the bug where the popup selections were
+	  wrong in the filter editor's window after
+	  adding a new filter w/o changing any selection
+	  of popups.
+	* Reactived the "Apply Manual Filters" feature.
+	  It's now fully async but it currently does NOT
+	  support transferring to the "Trash" folder
+	  ("Delete" action).
+
+
+2004-06-04      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Cleaned up the Task class and some includes
+	  in various header / source files.
+
+
+2004-06-02      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Removed completed items from docs/TODO
+
+
+2004-06-01      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Removed an unused #include directive.
+	* Disabled the cache for now in Utilities:
+	  +completePathForFolderNode: separator:
+	* Modified TaskManager: -_tick to handle
+	  potential nil date for folder's expiration.
+
+
+2004-05-31      Ludovic Marcotte <ludovic@Sophos.ca>
+	
+	* Modified MailWindowController: -startAnimation
+	  to add the timer in NSDefaultRunLoopMode AND
+	  NSEventTrackingRunLoopMode so we get the spinning
+	  GNUstep logo also when we are in the 
+ 	  NSEventTrackingRunLoopMode.
+	* Same thing with TaskManager: -run.
+	* Lots of small changes wrt refactorings in Pantomime.
+
+
+2004-05-29      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Implemented the "Stop" functionality in the
+	  Console window on OS X (in the tableview).
+        * Modified MailWindowController to set max
+	  widths for the drawer's column. This issue
+	  is really annoying me and that's a
+	  temporary solution.
+	* Added an alpha channel to GNUMail_big.tiff
+	  and changed the white bg color to a
+	  transparent bg.
+
+
+2004-05-24      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Modified the image resizing code to respect
+	  the insets of the textview.
+	* Updates wrt previous commits in Pantomime.
+
+
+2004-05-23      Ludovic Marcotte <ludovic@Sophos.ca>	
+
+	* Updates wrt previous commits in Pantomime.
+
+
+2004-05-18      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified MailWindowController: -_restoreImage
+	  to use the new Pantomime's -isSSL method from
+	  the TCPConnection class.
+
+
+2004-05-11      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Updated the OS X project file and removed the
+	  unused navigation view in MailWindow.nib and
+	  MessageViewWindow.nib.
+
+
+2004-05-08      Ludovic Marcotte <ludovic@Sophos.ca>
+	
+	* Fixed a bug in the DnD code if we were hiding
+	  deleted or read messages.
+	* Fixed a bug in the copy/move messages code
+	  (code being used from the context menu).
+	* Added NavigationToolbarItem and heavily refactored
+	  MailWindowToolbar and MessageViewWindowToolbar to
+	  make use of this new class.
+	* Modified the loading of accessory views in
+	  MailWindowController and modified the Clock
+	  bundle so it displays in the toolbar. It does NOT
+	  displays right now under GNUstep likely due to a bug
+	  in its NSToolbar implementation.
+
+
+2004-05-04      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Fixed bugs in the PGP bundle on GNUstep wrt
+	  the NSToolbar changes.
+	* Modified TaskManager: -folderPrefetchCompleted:
+	  to clsoe the connection to the POP3 server when
+	  no message is on the server.
+        
+
+2004-05-03      Ludovic Marcotte <ludovic@Sophos.ca> 
+	
+	* Updates wrt refactorings done in Pantomime.
+	* Added a patch from Wolfgang Sourdeau that
+	  adds -acceptableDragTypes in ExtendedTextView
+	  so DnD to the message composition window works
+	  again under GNUstep.
+	* We now automatically open all enabled IMAP
+	  accounts when the application starts.
+	* Modified EditWindow{Controller} so it also
+	  uses a NSToolbar under GNUstep.
+	* Same thing for MailWindow{Controller},
+	  MessageViewWindow{Controller} and
+	  brought back MailboxManagerToolbar.{h,m}
+	  for MailboxManager{Controller}.
+	* Added MailboxManagerController:
+	  -updateOutlineViewForFolder: store: username: in order
+	  to refresh only the outline view's item that corresponds
+	  to a Store/Folder. This should speeds up A LOT some
+	  things in GNUMail (like STATUS's mailboxes in IMAP and
+	  displaying messages).
+	* Removed the expand/collapse stuff from ExtendedWindow.
+	* Added Arabic translation (fixed some bugs in it and
+	  converted the file from UTF-8 to UTF-16). The translation
+	  was done by Ossama Khayat <okhayat@yahoo.com>.
+	* Removed all the old IMAP disconnection code.
+	* Removed lots of unnecessary calls to NSTableView:
+	  -setNeedsDisplay: in MailWindowController.
+	* Modified TaskManager so we now ensure that messages
+	  in POP3 were correctly saved on disk before deleting
+	  them on the server (all of this is wrt filters).
+
+
+2004-04-23      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Applied a small fix to MailboxManagerController: -open
+	  to use the right folder separator when using IMAP.
+	* Updated the PGP bundle wrt the refactorings in
+	  Pantomime.
+       
+
+2004-04-21      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified the calls from +charsetFromString to
+          -charset to reflect the changes done in
+	  Pantomime last night.
+	* Disabled for now what we did in GNUMail:
+	  -applyManualFilter:, -copy:, -cut: and -paste:
+
+
+2004-04-20      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Minor updates wrt refactorings in Pantomime.
+        
+
+2004-04-18      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Minor updates wrt small changes in Pantomime.
+	* Modified MailboxManagerController:
+	  -transferMessageFromRawSource: ... to call
+	  -parse on a _local_ folder in order to initialize
+	  all ivars correctly in LocalFolder.
+
+
+2004-04-16      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Simplified the code in ExtendedTableView:
+	  -dragImageForRows: event: dragImageOffset:.
+	* Also simplified the ExtendedOutlineView class
+	  by also removing the code for type-ahead support
+	  since that won't be used anymore in
+	  MailWindowController (that class, for message threading).
+	* Simple check added in ConsoleWindowController:
+	  -updateToggle. A small bug seems to have been added
+	  to NSTableView (GNUstep) recently. This extra
+	  check is harmless and "fixes" any potential issues.
+
+
+2004-04-15      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Refactorings in the Accounts Preference Panel
+	  wrt the SSL changes in Pantomime.
+	* Removed some dead code in MailboxManagerController.
+
+
+2004-04-14      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Refactorings due to changes in Pantomime's way
+	  of handling SSL connections.
+
+
+2004-04-13      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * We now correctly save the colors on OS X in RGB.
+	  Bug reported (and small fix provided) by
+	  Uli Kusterer <Witness.of.TeachText@gmx.net>. 
+
+2004-04-10      Ludovic Marcotte <ludovic@Sophos.ca>
+
+ 	* Changed MailWindowController/MessageViewWindowController
+	  to redisplay the selected message after the window has
+	  been resized. Removed the old notification based on
+	  the MailHeaderCell (that was _not_ resizing the images
+	  in a mail, not it does).
+      
+
+2004-04-09      Ludovic Marcotte <ludovic@Sophos.ca>
+
+       * Some more cleanups. Many optimizations after
+	 profiling GNUMail. For example, a small cache
+	 was added in FolderNode (-path/-setPath) to
+	 avoid recalculating the full path in Utilities:
+	 -completePathForFolderNode: separator: all
+	 the time (was eating ~30% of all CPU for
+	 _GNUMail_ alone).
+	* Updated all .cvsignore files.
+
+
+2004-04-08      Ludovic Marcotte <ludovic@Sophos.ca>
+
+       * Updated the OS X port, finally!
+
+
+2004-04-02      Ludovic Marcotte <ludovic@Sophos.ca>
+
+       * Fixed a typo in GNUMail.m. Reported by
+	 Jim Tittsler <jim@OnJapan.net>.
+
+
+2004-04-01      Ludovic Marcotte <ludovic@Sophos.ca>
+
+       * Fixed a small issue in previous commit.
+ 
+
+2004-03-31      Ludovic Marcotte <ludovic@Sophos.ca>
+	
+	* Modified GNUMail: -loadBundles to remove any
+	  potential duplicate paths in allPaths. Bug
+	  reported by Frederik Harwath <fhack@gmx.de>
+	  and work based on his submitted patch.
+        
+
+2004-03-29      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Use -scrollPoint: instead of -scrollRangeToVisible:
+	  so it works the same way on OS X and GNUstep (since
+	  OS X shows the indent, but GNUstep doesn't).
+	* Updated German translation. Patch from
+	  Frederik Harwath <fhack@gmx.de>.
+ 	* Removed most of the NSOutlineView code from
+	  MailWindowController and modified the sources
+	  to reflect that change.
+	* Fixed a tiny mem leak in Utilities: 
+	  +completePathForFolderNode: separator:
+       
+
+2004-03-26      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Reduced the minimum size of the Mailboxes window
+	  under GNUstep.
+	* Removed some completed TODO items.
+        
+
+2004-03-25      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified the code wrt the changes made in Pantomime.
+
+
+2004-03-24      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Renabled the support for saving the column's width
+	  in MailWindowController. A new user default has
+	  been created for it and the old one is automatically
+	  removed when starting up the application.
+	* Modified the code wrt the changes made in Pantomime.
+
+
+2004-03-23      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Changes wrt cleanups done in Pantomime.
+
+
+2004-03-21      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Optimized MailHeaderCell by removed some code.
+	  Added NSAttributedString+Extensions: -sizeInRect
+	  with a dummy implementation. A full implementation
+	  will be later used in the MailHeaderCell
+	  drawing code. Also fixed a small bug in the latter
+	  so we don't draw over the bundles (Face, for example).
+	* We no longer allow forwarding/reply/redirecting messages
+	  if the content isn't loaded.
+	* Small changes wrt the cleanups in Pantomime. YOU MUST
+	  UPDATE PANTOMIME.
+
+
+2004-03-19      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Did some cleanups in the ExtendedMenuItem class.
+	* Renamed ExtendedAttachmentCell to
+	  ExtendedTextAttachmentCell to be more standard
+	  and cleanup the code.
+	* Cleaned up the main GNUmakefile.
+	* Combined the "Save Attachment" and "Save Text from Message"
+	  menu / items to improve the usability.
+	* Refactored A LOT the message displaying code. Moved
+	  everything from Utilities to NSAttributedString+Extensions.
+	  Also created NSColor+Extensions so things are well
+	  separated and organized now.
+	* Moved the URL highlighting and activation code from
+	  Utilities to NSAttributedString+Extensions.
+
+
+2004-03-18      Ludovic Marcotte <ludovic@Sophos.ca>
+	
+	* Removed TODO #111 as it has been fixed in a
+	  recent commit.
+	* Removed the table columns selection from the
+	  Viewing Preferences panel and moved everything
+	  to the View->Columns menu. The OS X port (the
+	  MainMenu.nib file) hasn't yet been updated
+	  and the columns size preferences WILL NOT
+	  be restored. That will soon be reactivated.
+	* Added a fix in MailWindowController: -clickedOnDataView:
+	  so it works well if the Status column has moved from
+	  it's initial position.
+	* Moved Utilities: +appendAddress: toTextField: to
+	  EditWindowController (Private).
+	* Improved the code (and the resulting usability) of
+	  Utilities: +showMessageRawSource:  target:
+	* Removed MailWindowController: -_initializeFonts and
+	  moved the ivars and caching stuff to NSFont+Extensions.
+
+
+2004-03-16      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added a Turkish translation made by
+	  Ismail Aslan <ismail@iaslan.com>. Patch sent
+	  by Gurkan Sengun <gurkan@linuks.mine.nu>.
+	* Updated the code to enforce secure mode on
+	  files after writing them on disk.
+
+
+2004-03-15      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Enhanced the usability of the message threading
+	  activation / deactivation. More work needs
+	  to be done especially wrt efficiently handling
+	  the notification for MessageViewWindowController
+	  and when the notification comes from a folder
+ 	  different than the shown folder.
+	* Refactored the MailHeaderCell class and optimized
+	  it a little bit (to avoid method calls).
+
+
+2004-03-14      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added NSBezierPath+Extensions and ThreadArcsCell.
+	* Added an initial implementation of Thread Arcs.
+	  A LOT more to come today!
+	* Bunch of fixes / refactorings wrt previous commits.
+	* Added the new classes to the OS X project file.
+	  Thread Arcs do work under OS X bug clicking
+	  on the cell does nothing for now (investigating
+	  this issue...)
+
+
+2004-03-13      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Updated flagged-flag.tiff - new image from
+	  Stefan Urbanek.
+
+
+2004-03-12      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified MailWindowController: -clickedOnDataView:
+	  to refresh the view rect of the modified row
+	  (just to be safe...).
+
+
+2004-03-11      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Modified TaskManager to reset the _counter ivar
+	  to 0 when checking mail for all accounts have
+	  been invoked.
+        
+
+2004-03-10      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Updated the OS X project file and added MailWindowController:
+	  -clickedOnDataView: in order to be able to set directly
+	  the flags instead of going through the menu.
+
+
+2004-03-09      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Reworked the ExtendedCell class.
+	* Added the possiblity to "flag" messages. Added
+	  Icons/flagged-flag.tiff and renamed "new-flag.tiff"
+	  to "recent-flag.tiff". This is initial support, more
+	  work needs to be done and the OS X port NEEDS to
+	  be updated.
+	* Removed some unused code in GNUMail.{h,m}. The method
+	  -openInNewWindow was no longer being used after we
+	  switched to single-click support to open mailboxes.
+
+
+2004-03-08      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Removed old, unused code in GNUMail+Extensions.m
+	* Updated the OS X project file (added NSFont+Extensions
+	  and bumped up the OS X version number).
+	* Updated the AboutPanel.nib file to match the one
+	  used under GNUstep (added missing contributors).
+        
+
+2004-03-07      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added a small cache for fonts used when displaying
+	  messages. This speed up greatly the message 
+	  displaying code.
+
+
+2004-03-05      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Small change in MailWindowController wrt previous
+	  commits in Pantomime.
+	* Added NSFont+Extensions.{h,m} and refactored some
+	  code. The OS X project file NEEDS to be modified
+	  to include those new files.
+	* Removed completed items from docs/TODO
+
+
+2004-03-04      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Reactivated the animation in the MailWindow:s
+	  when tasks are active.
+	* Updated the code to use the notification sent
+	  by Pantomime when the raw source of a message
+	  in IMAP has been fully received.
+	* Small optimization in MailWindowController.
+	* Did some refactorings in MailWindowController.
+	* Added back support for VirtualFolder:s (local
+	  mailboxes only, no search/expunge support for now)
+
+
+2004-03-01      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Updated the code wrt recent changes in Pantomime.
+	  You MUST get the LATEST version of Pantomime.
+
+
+2004-02-27      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * We now listen to notifications when the message's data
+ 	  was fully prefetched instead of using the delegate
+	  method. This fixed LOTS of small annoyance in the
+	  new IMAP code. YOU MUST UPDATE PANTOMIME.
+
+
+2004-02-24      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed a crash bug in the AccountEditorWindowController
+	  if the password was wrong when connecting to the IMAP
+	  server for list mailboxes (for example).
+	* Bumped up the version number to 1.2.0.
+	* Fixed a bug in EditWindowController when accounts where
+	  changed during the composition of a message. The transport
+	  popup wasn't updated correctly.
+	* Removed some unused code in MailWindowController.m
+
+
+2004-02-23      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Removed the limitation of needing to close the IMAP
+	  account before modifying it. Still more work needs
+	  to be done especially wrt changing the port for
+	  example. Also fixed a memory leak and we now correctly
+	  close the IMAP connection if it was opened to
+	  subscribe/unsubscribe to mailboxes (for example).
+ 
+
+2004-02-22      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Updated the code to bring back support for creating,
+	  deleting and renaming mailboxes. Work needs to be
+	  done in order to support well errors that
+ 	  could occur.
+	* Refactored and cleaned up quite a good amount of code.
+	* Updated NewMailboxPanel.nib
+	* Updted ConsoleWindow.nib
+	* Fixed a small issue in MailboxManagerController wrt
+	  reloading the folders list.
+	* Small fix when displaying the account name in case
+	  the auth failed when sending a message using SMTP.
+
+
+2004-02-20      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Disabled the delegate method in MailboxManagerController
+	  invoked when collapsing nodes. A better way to close
+	  the IMAPStore will have to be found (if we, of course
+	  want to offer such functionnality).
+	* Modified TaskManager: -addTask to prevent adding
+	  tasks that are already in the runqueue (for POP3
+	  and IMAP STATUS).
+	* Modified MailWindowController: -updateDataView
+	  to NOT change the selection if a row is already selected.
+	* We now correctly enable/disable the buttons in the
+	  Console window when a task terminates.
+	
+
+2004-02-17      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Applied a couple of patches from Andreas Heppel
+	  to fix some small issues and support submenus in
+	  the Copy To/Move To context menu.
+	* Refactored some code to use the macro in order to
+ 	  add messages in the Console window and optimized
+	  things a little bit.
+	* We now draw a progress indicator when STATUS'ing
+	  IMAP mailboxes. The progress indicator is based
+	  on the number of mailbox on which to do the
+	  STATUS operation. Also fixed a drawing bug in
+	  the console.
+
+
+2004-02-16      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed a small POP3 crash issue if we can't obtain
+	  the lock to the mailbox.
+	* Modified MailWindowController: -_restoreImage to
+	  correctly restore the "lock" image when using
+	  IMAP over SSL.
+	* Updated the code to fully work when connecting to
+	  services in background.
+
+
+2004-02-15      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Disabled for now the code to automatically reopen
+	  the IMAP mailboxes that were open when the user
+	  did quit the application.
+	* Small modifications over some constant changes
+	  in Pantomime.
+        
+
+2004-02-14      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Lots of improvements wrt the new Pantomime code.
+
+
+2004-02-13      Ludovic Marcotte <ludovic@Sophos.ca>
+	
+	* Fixed the authentication problems wrt the
+	  new IMAP code.
+	* Small optimizations.
+        
+
+2004-02-12      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* More fixes wrt the new I/O code in Pantomime.
+        
+
+2004-02-11      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Same as yesterday :)
+	* Removed BounceWindow.nib from the repository.
+	* Updated MainMenu.nib
+	* Updated ConsoleWindow.nib
+
+
+2004-02-10      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Again, LOTS of improvements on top of the 
+          previous commit.
+
+
+2004-02-09      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Removed some TODO entries.
+	* Removed the spinning GNUstep logo in the Console
+	  window. The OS X nib needs to be modified to remove
+	  the progress indicator from that same window.
+	* Enhanced greatly the Console window, still more to come.
+	* Massively modified the code wrt IMAP. THE CODE WILL NOT
+	  FULLY WORK RIGHT NOW SO DON'T USE IT.
+        * LOTS of improvements on top of the previous commit.
+
+
+2004-02-08      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Removed BounceWindow* from the OS X project file.
+	  the nib NEEDS to be wiped out from the repository.
+	* Removed GNUMail+TaskManager from the OS X project file.
+        * Updated the OS X port wrt all changes made in the     
+          last weeks. It does NOT work right now, it just compiles.
+
+
+2004-02-07      Ludovic Marcotte <ludovic@Sophos.ca>
+
+ 	* Added a couple of minor fixes to the Console window.
+	* Moved all the message redirection code from BounceWindowController
+	  to EditWindowController and removed all BounceWindow* files.
+	* Small UI glitch fix in Console window
+	* We don't set the window's document as edited in EditWindowController
+	  when we are redirecting a message.
+       
+
+2004-02-06      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Modified the Face bundle so it loads faces in background.
+	  That allows GNUMail to not block when loading faces
+	  from slow web servers. 
+        
+
+2004-02-05      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * We now draw the progress indicator in the console
+	  window the way it should look under GNUstep.
+	* Added initial support for stopping activities
+	  from the Console window.
+	* Minor drawing enhancements to the progress indicator
+	  drawing code in the Console window.
+	* Fixed a couple of small issues.
+	* Renamed "Bounce" to "Redirect" in the GNUstep menu.
+	* Added an initial implementation of the progress
+	  indicator for POP3 activities...
+
+
+2004-02-04      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Created a custom cell for the progress manager in the
+	  new Console window. It will have to be moved to its
+	  own file eventually.
+
+
+2004-02-03      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Removed GNUMail+TaskManager.h and GNUMail+TaskManager.m
+	  Moved most of the code in TaskManager and started to clean
+	  up things.
+	* We now correctly remove the POP3 tasks from the queue
+	  if the authentication failed.
+	* Started to reimplement the Console window.
+	* We now fire the tasks right away when they are added
+	  in the _tasks array and improved some more the
+	  Console window.
+	* Fixed lots of compiler warnings.
+	* Minor refactorings
+	* Fixed the bouncing code.
+	* Added an initial progress indicator for the SMTP code.
+
+
+2004-02-02      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Updated the code wrt the CC/BCC/TO/... #defines changes
+	  in Pantomime.
+	* Added a patch from Dirk Olmes so it's now possible
+	  to not automatically reopen the last folder that
+	  was open when the user quitted the app.
+	* Updated the UI of ComposeView to be able to chose the
+	  default encoding when sending mails. The code to actually
+	  use that isn't there yet. Nothing on OS X has been to done
+	  either.
+	* Massively updated the code wrt the changes in Pantomime
+	  for non-blocking I/O. Mainly modified GNUMail+TaskManager
+	  and TaskManager. Left a lot of old code right now in it
+	  to be sure we get the same feature set once I'm done.
+	  IT WILL NOT WORK RIGHT NOW UNDER OS X.
+
+
+2004-01-19      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Simplified and optimized MailboxManagerController:
+	  -outlineView: acceptDrop: ... to support server-side
+	  copy/move operations for IMAP.
+	* Small changes wrt the NSRegEx -> CWRegEx class renaming
+	  in Pantomime.
+
+
+2004-01-18      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Added support for the image/pnm MIME type in
+	  MimeTypeManager: -_loadStandardMimeTypes.
+	* Cleaned the previous code wrt images displaying
+	  since GNUstep has now native support for jpg, png, etc.
+	  If you no longer see images in your mails (inline),
+	  please update GNUstep.
+	* Added support for renaming mailboxes directly in
+	  the mailboxes drawer / window. Cleaned up a lot
+	  of code. 
+	* Updated the OS X project file (and the code) so the
+	  last commits do work well under OS X.
+
+
+2004-01-17      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added a new class: ExtendedFileWrapper. This class
+	  overwrites some of the normal behavior of NSFileWrapper
+	  to automatically create zip/tar archives when initializing
+	  it using a directory. Modified the GNUMail code to use it.
+
+
+2004-01-14      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added a small check in MailWindowController:
+	  -tableView: didReceiveTyping: so we do nothing
+	  if the user has typed only whitespace characters.
+	* Added a patch from Ken Ferry <kenferry@mac.com>
+	  to add support for type-ahead when using
+	  message threading.
+	* Modified docs/TODO to remove completed items.
+
+
+2004-01-13      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Applied a patch from Ken Ferry <kenferry@mac.com>
+	  to support type-ahead in the message list (when
+	  NOT using message threading). That could would
+	  need to be ultimately retouched to also support
+	  the ExtendedOutlineView. 
+        
+
+2004-01-11      Ludovic Marcotte <ludovic@Sophos.ca>
+	
+	* More wort wrt context menus, especially the one in
+	  the message list. Also refactored some code in
+	  MailboxManagerController.
+	* Updated the code wrt the flags changes in Pantomime.
+	* We no longer change the selection on right-click if the
+	  number of selected rows > 1.
+	* We no longer check for the EnableContextMenus default
+	  on OS X since we always show the context menus.
+	* Updated PGPController.m wrt changes in Pantomime.
+
+
+2004-01-05      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added an option in the Advanced Preferences panel
+	  to be able to enable or not context menus under GNUstep.
+	  By default, they are disabled.
+	* Updated the German translation. File provided by
+	  Hermann Gundel <Hermann.Gundel@nussberg.de>
+	* Fixed an issue wrt the previous commit and added an initial context
+	  menu for the message list. Also cleaned up lots of code.
+
+
+2004-01-04      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Removed the copy/move buttons in the Mailboxes window.
+       	 
+
+2004-01-03      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Lot of refactorings wrt Mac OS X compatibiliy and related
+	  to all the bugs I've fixed in the GNUstep's NSOutlineView class.
+	  With those modifications and my GNUstep patch, DnD is now supported
+	  from the MailWindow:s to the Mailboxes window under GNUstep, woo!!!
+	  More work is coming wrt to this soon...
+	* Cleared a small FIXME in MailboxManagerController: -open: that would	
+	  likely cause mailbox selection problems on OS X (and also under GNUstep,
+	  just more rarely).
+
+
+2004-01-02      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Bumped up the version number to 1.1.3.
+	* We no longer draw those silly "open/closed" folder
+	  icons in the Mailboxes drawer on OS X. Also removed
+	  those icons from the OS X project file.
+	* We now use openFolder and openFolder_osx as the
+	  mailbox icon.
+	* Removed closedFolder.tiff and mailboxes_16.tiff from
+	  the repository.
+	* Updated the OS X project file wrt the previous commit.
+	* Updated sort_down.tiff and sort_right.tiff and re-enabled
+	  the ExtendedOutlineView use in the GNUstep Mailboxes window.
+	* Removed the Copy/Move Messages from the Mailboxes's drawer
+	  contextual menu since that doesn't make any more sense to
+	  use it. This feature will be reactivated soon, in a contextual
+	  menu in the MailWindow's dataView.
+	* Removed ExtendedOutlineView: -isExpandable: since it's pretty
+	  much useless (and was only used on OS X).
+
+
+2004-01-01      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Started the work on single-click support in the Mailboxes
+	  window / drawer. It also supports creating vfolder for
+	  local mailboxes.
+          THIS STUFF IS RATHER EXPERIMENTAL. IT WORKS BUT USE
+          IT AT YOUR OWN RISK!
+	* We now automatically select the "current" mailbox in the
+	  Mailboxes drawer / window when its associated MailWindow
+	  becomes the key window. It doesn't work yet for VirtualFolder:s.
+
+
+2003-12-30      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Reworked the message replying code to use
+	  the new code in Pantomime and to also offer
+	  a "Reply Simple" option that won't put any content
+	  in the replied message.
+	* Added basic support for the new VirtualFolder class
+	  of Pantomime. You can now open a folder that holds
+	  mailboxes to see all the messages in those mailboxes
+	  in the same MailWindow.
+	* Updated the OS X port wrt the previous changes.
+        * Fixed a _very_ lame bug in the mbox importing code
+          (paths related).
+	* We now correctly "toggle" the Find window, the Console
+	  window, the About panel and the Address Book panel.
+	  Also cleaned some code wrt this (defined a macro).
+
+
+2003-12-29      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* We now use the row's color (from the filters) to
+	  in the MailHeaderCell.
+	* Modified ConsoleWindowController so that we use
+	  the information from the sending key if there's
+	  one defined.
+	* Removed unused variables.
+	* Did some cleanups in EditWindowController.
+	* Modified MailWindowController: -windowShouldClose:
+	  to use a sheet under OS X when warning the user a task
+	  is running.
+        
+
+2003-12-26      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Set the CVS tag to v1_1_2
+        * RELEASED VERSION 1.1.2
+
+
+2003-12-25      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Updated the OS X version of the Filtering bundle.
+	* Added Matt, Ken and Bjorn in the About panel.
+	* Simplified and optimized the Filtering bundle
+	  initialization code under GNUstep.
+	* Removed some NSLog() calls in the Import bundle
+	* We don't save an "empty MailWindow" in the prefs
+
+
+2003-12-23      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * We now disable the "Use secure connection" buttons
+	  in the AccountEditorWindow if the SSL bundle is not
+	  installed under GNUstep (it's always installed with
+	  our dmg on the OS X version).
+	* Updated the German translation. Work done by
+	  Hermann Gundel <Hermann.Gundel@nussberg.de>
+
+
+2003-12-21      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified AdvancedViewController to no longer
+	  statically allocate everything.
+	* Modified MailWindowController: -deleteMessage
+	  to use the new Folder's method (-setFlags: messages:)
+	  in order to accelerate IMAP messages deletion.
+
+
+2003-12-09      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * We no longer check all IMAP accounts
+	  but only opened ones.
+	* We no longer remove the DELTED message flag when
+	  deleting from the keyboard.
+
+
+2003-12-07      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Removed the "Open on startup" feature in the Mailboxes
+	  window / drawer. GNUMail.app will now automatically
+	  reopen the mailboxes that were opened when the app
+	  was closed.
+
+
+2003-12-06      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added an extra check in MailboxManagerController: -outlineView:
+	  acceptDrop: .. since the GNUstep's NSOutlineView code is
+	  broken wrt DnD. Savannah is still down so I can't fix the
+	  real bug :(
+
+
+2003-11-29      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * We now STATUS all IMAP folders for an opened IMAP connection
+	  in a separate thread when clicking on the "Get" button. We no
+	  longer only NOOP the IMAP store.
+
+
+2003-11-27      Ujwal S. Sathyam <ujwal@setlurgroup.com>
+
+	* Added AddressBook framework to the Filtering target based on the 
+	  previous change.
+	* Fixed crash on quitting on OS X. Setting MailWindowController dataSource to 
+	  nil in MailWindowController: -dealloc was triggering a updateStatusLabel (via 
+	  tableViewSelectionDidiChange) which tried to contact the already dealloced 
+	  MailboxManagerController instance.
+
+
+2003-11-22      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified MailboxManagerController: -_reloadFoldersForIMAPStoreWithName: ...
+	  to also use -reloadItem: under GNUstep since that method has been
+	  fixed lately.
+	* Reverted the change. -reloadItem is still plain broken.
+	* Added a patch from Bjorn Giesler to enhance the filtering code
+	  to support address book groups. The OS X nib NEEDs to be modified.
+	* Added Bjorn in the AboutPanel's list of contributors.
+	* Fixed a warning in MailWindowController: -windowWillClose.
+
+
+2003-11-18      Ujwal S. Sathyam <ujwal@setlurgroup.com>
+
+	* Added Constants.m to the OS X project file.
+
+
+2003-11-09      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added Constants.m and cleaned the header. That
+	  new file _must_ be added to the OS X project file.
+
+
+2003-11-08      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added Matt Ackeret and Ken Ferry to the About panel.
+	* We now properly call -controlTextDidChange: in the
+	  -takeTo* methods (in EditWindowController) in order
+	  to correctly enable the Send button.
+	* Updated ViewingView.nib
+	* Updated AboutPanel.nib
+	* Updated InfoPlist.strings
+
+
+2003-11-07      Ujwal S. Sathyam <ujwal@setlurgroup.com>
+
+	* Fixed typo in AddressBookController.m
+
+
+2003-11-07      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Fixed a compiler warning in GNUMail.m
+	* Added patches from Bjorn Giesler to:
+	   - improve address completion
+	   - implement the "preferred label" in AddressBookPanel
+	   - convert the Mailboxes window and Console window to
+	     panels. This is a quick hack since the classes NEED
+	     to be renamed eventually. 
+	* We no longer force the ADScreenNameFirstNameFirst since
+	  we'll use the user's default in AddressManager.
+	* Removed the "Mailbox" string the in Mailboxes's drawer
+	  for the contextual menu.
+	* Renamed Id -> Number in the Viewing pref panel under GNUstep.
+	  The OS X nib needs to be modified.
+	* We now save correctly the order of MailWindow's dataView columns.
+	* Added a simple patch from David Ayers for key comparisons
+	  in AccountViewController.m.
+
+
+2003-11-05	Francis Lachapelle <francis@Sophos.ca>
+
+	* Improved AddressBookPanel.nib.
+
+2003-10-30      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * We now correctly synchronize our popups in the FilterEditorWindow.
+	* We now correctly reload the table columns when changing the
+	  dataview type in MailWindowController.
+
+
+2003-10-29      Francis Lachapelle <francis@Sophos.ca>
+
+	* Added modal sheet to "Save message as text" action in GNUMail.
+	* An address (to|cc|bcc) must be defined for the send button to
+	  be active in EditWindowController.
+	* Fixed color space in ColorsViewController (Colors bundle).
+
+	
+2003-10-27      Francis Lachapelle <francis@Sophos.ca>
+
+	* Improved behavior of modal sheet in EditWindowController when
+	  closing an unsaved message.
+	
+
+2003-10-26      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Removed two more observers in GNUMail: -applicationShouldTerminate:
+	  and reorganized all the calls in MailWindowController: -dealloc.
+	* Defined ReloadMessageList in Constants.h so it's cleaner.
+
+
+2003-10-20      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * We no longer require the user to specify a To: recipient.
+	* Also fixed a bug in the filtering code wrt trailing ">"
+	  when the criteria operation is "has suffix". Issues reported
+	  by Alistair Windsor <awindsor@onetel.com>. 
+
+
+2003-10-19      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Simplified the code a little bit in AddressBookController.
+	* Simplified it some more and reactivated AddressBookController:
+	  -addressesWithSubstring: so it's now possible to filter incoming
+	  mails based on the recipients / Apple's Address Book (or
+	  GNUstep's implementation). This fixes TODO #33.
+	* Renamed a local variable to not conflict with an ivar on OS X.
+	* Added AddressBook_32.tiff and modified the AddressBookPanel.nib
+	  to use it.
+	* Enhanced MailboxImport.nib.
+	* Lots of very minor improvements wrt the Vera font.
+	* Modified MailboxImportController: -dealloc to set the datasource
+	  of our table view to nil.
+	* Did the same thing for the outline view shown in MailWindow's drawer
+	  under OS X.
+
+
+2003-10-18      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified MailboxManagerController: -transfer: so that
+	  we use a local autorelease pool when transferring messages
+	  between two differnent stores in order to not overload
+	  the mail pool.
+	* We now correctly close all open Store:s when quitting the
+	  application (so we don't leave open IMAP connections to
+	  servers that will eventually timeout). That code was
+	  in MailboxManagerController: -dealloc but it has been
+	  moved to GNUMail: -applicationShouldTerminate.
+	* Added a "Quit Anyway" button when the user is quitting
+	  the application with running tasks.
+	* Modified MailWindowController: -windowDidLoad to remove
+	  the broken window autosaving calls and rather add the
+	  same thing for our outline view inside our drawer.
+	* Updated the OS X project file to remove deleted files
+	  from the CVS (wrt the old address book code).
+	* Removed AddressBookWindow.nib and added AddressBookPanel.nib
+	* Removed Address_add.tiff and Address_delete.tiff
+	* Finally updated the address book code under OS X so it's
+	  now fully usable. Some things need to be implemented but
+	  most of the work has been done.
+	* Modified the mailbox import bundle to close the window
+	  when the import is completed.
+	* Modifed the mailbox import bundle loading code so it's
+	  simpler and should work on OS X.	
+	* Done the MailboxImport.nib (for OS X), used by the
+	  mailbox import bundle.
+	* Cleaned some old code that was useless wrt bundle
+	  loading under OS X.
+
+
+2003-10-17      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified EditWindowController:  _openPanelDidEnd:
+	  returnCode: contextInfo: to verify if the file
+	  is readable before attempting to add it as
+	  an attachment.
+
+
+2003-10-15      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Modified AddressBookController so that when you double-click
+	  on an address in the AddressBookPanel but no composion window
+	  is open, we open a new one.
+	* Added an "open" button in the AddressBookPanel to start
+	  "Address Book" or "AddressManager"
+
+
+2003-10-14      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Added GNUMail+Extensions: -update_111_to_112 to remove
+	  the "ADDRESSBOOK_TYPE". Also removed the -update_1099_to_110
+	  and -removeDeprecatedDefaults methods.
+	* Rewrote entirely the Address Book code to use only the
+	  Addresses.framework or Apple's implementation. Removed:
+	  Group.h, Group.m, Address.h, Address.m, AddressBook.h,
+	  AddressBook.m, AddressBookWindow.h, AddressBookWindow.m.
+	  Added: AddressBookPanel.h and AddressBookPanel.m.
+
+
+2003-10-13      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Set the About panel on OS X as a floating panel.
+
+
+2003-10-11      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Lots of minor UI fixes wrt Vera font (reported by
+	  Christopher Culver).
+
+
+2003-10-10      Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Updated the code wrt the refactorings made in Pantomime.
+	* Modified the Account bundle to add IMAP SASL mechanisms
+	  support for authentication.
+	* Updated some nibs wrt the previous commits made in the past days.
+	* Updated the OS X project file to set the version number to 1.1.2.
+
+
+2003-10-08      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified the code to no longer use TCPConnection's isConnected
+	  but rather use the Store's implementation.
+	* Removed the "Show " for menu items / buttons for both
+	  Raw Source / Normal Display and All Headers / Filtered Headers.	
+
+
+2003-10-06      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified AutoCompletingTextField: -tableView: objectValue...
+	  to ensure the index lies inbound in the completion array.
+	* Added an option in the "Receive" tab of the Account Editor Window
+	  to never check mail for a specified account. This is useful
+	  for "send only accounts".
+	* Enhanced the UI for the POP3 "Receive options" tab.
+ 
+
+2003-10-05      Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added the initial version of the "Import" bundle.
+	  This bundle is accessible from the "Mailbox > Import Mailboxes..."
+	  menu item and works only under GNUstep right now (the
+	  OS X nib will soon be done and also the bundle loading code will
+	  be adapted).
+	* Bumped version number to 1.1.2 in the GNUstep plist.
+	* Improved the message when the send operation failed so the
+	  user is aware that he can save the message in the Drafts folder
+	  using the Console window.
+
+
+2003-09-02     Ludovic Marcotte <ludovic@Sophos.ca>
+
+ 	* Fixed a small bug that happened when closing an IMAP
+	  store using the Mailboxes's window and having a sort
+	  order different then by #.
+       
+
+2003-09-30     Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Added an advanced pref option to enable/disable
+	  continous spell checking during email composition
+	  (disabled by default).
+	* Add the first parts of the code for IMAP multithreading.
+	  The STATUS operations are now done in the worker thread.
+	* When closing the IMAP store, instead of closing the 
+	  associated MailWindow (if any), we set its folder to nil.
+
+
+2003-09-28     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Removed docs/NIBS from the OS X project file.
+	* Minor improvements in the Account bundle.
+	* Improvements when first starting GNUMail.app
+	  (first time user).
+	* Minor improvements in the Fonts bundle for OS X.
+	* Removed inexistant headers in the OS X project file.
+	* Improved the message on OS X when the user removed
+	  all its mailboxes but left the preferences file around.
+        * Set the CVS tag to v1_1_1
+        * RELEASED VERSION 1.1.1
+
+
+2003-09-27     Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Minor cleanups in AccountEditorWindowController.m
+        
+
+2003-09-26     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added a warning when adding a new IMAP account showing
+	  all mailboxes (instead of only subscribed mailboxes).
+	  Suggestion from Matt Ackeret <mattack@apple.com>.
+	* Removed the NSPopUpButtonCell category as the
+	  enabled / disabled cell bug was fixed in GNUstep.
+
+
+2003-09-25     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified MailboxManagerController: -outlineView: willDisplayCell: ...
+	  to actually NOT show our Drafts/Inbox/Sent/Trash icon if the item
+	  has children to avoid UI glitches when using IMAP.
+	* Removed docs/NIBS
+	* Updated docs/README and docs/WHOIS
+
+
+2003-09-23     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified MailWindowController: -windowDidBecomeKey:
+	  to correctly update the Thread / Unthread Messages
+	  menu item.
+	* Modified AutoCompletingTextField: -tableViewSelectionDidChange:
+	  to ensure our selected row is valid.
+	* Modified AutoCompletingTextField: -moveDown: / -moveUp:
+	  to use [_sharedDropDownTableView numberOfRows] instead of
+	  [_cachedCompletions count] to ensure that our selected row
+	  stays inbound.
+	* Removed the "Charset" option in EditWindow/EditWindowController
+	  and changed the Message > Text Encodings code to be able to
+	  set the encoding of a message being composed.
+	* Updated EditWindow.nib wrt the previous commit.
+
+
+2003-09-22     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * We now use the right separator when accepting drops
+	  in MailboxManagerController.
+	* Set the "Find:" field to the findAll: target
+	  in FindWindow.m (GNUstep).
+
+
+2003-09-21     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed the "Enter Selection" feature.
+	* Linked the "Enter Selection" menu item to the
+	  right outlet on OS X.
+	* Modified Utilities (Private): +_attributedStringFromTextForPart:
+	  to use Pantomime's new html stripping method (instead of doing
+	  it again ourself in GNUMail.app). YOU MUST UPDATE PANTOMIME.
+	* Fixed all (hopefully) issues wrt DnD of TIFF images directly
+	  in the message composition window.
+
+
+2003-09-20     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed all issues wrt the EditWindowToolbar under
+	  OS X (crashes after toolbar customization).
+	* Reconnected the "Delete" menu item to the right action.
+	* Fixed a mem leak wrt the previous commit for
+	  EditWindowToolbar.
+	* Did the same fixes wrt toolbars customization in
+	  MailWindowController/Toolbar and BouceWindowController/Toolbar.
+
+
+2003-09-19     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Removed some completed TODO items.
+	* Modified GNUMail: -showMailboxManager: so that
+	  under GNUstep, if the Mailboxes window is shown and
+	  this method is invoked again (either by clicking on the
+	  "Mailboxes menu item / MailWindow's button), we hide it.
+	* Modified MailboxManagerController: -delete: to fix the
+	  IMAP cache deleting code. It was removing the wrong caches
+	  (the cache files of all children of its parent mailbox!)
+	* Modifed the width of the "Delete Address / Group" and
+	  "Modify" buttons in AddressBookWindow so they look
+	  better when using the Vera font.
+
+
+2003-09-18     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Set a key-equivalent for the "Preferences..." menu
+	  item under GNUstep (same as OS X).
+	* When closing the EditWindow, we correctly close the
+	  AutoCompletingTextField drop down (added an observer).
+
+
+2003-09-17     Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Modifed GNUMail: -applicationDidFinishLaunching so that
+	  we show the Mailboxes's window _before_ any MailWindow:s
+	  under GNUstep.
+	* Modified GNUMail: -applicationShouldTerminate: to properly
+	  close the Mailboxes's window (under GNUstep) and the
+	  Console's window (OS X and GNUstep) before releasing
+	  the singletons.
+	* Set the next key views (under GNUstep and partly under OS X
+	  for the Send and Receive views in the Account editor window.
+	* Updated MailWindow.nib (to remove the matrix), the PB project
+	  file (Face/PGP targets) and generalized the Face.m code to use
+	  the same code under OS X and GNUstep.
+	* Modified the Face bundle to scale its image proportionally to
+	  the max of the width or height of the original image in order
+	  to keep the aspect ratio.
+        
+
+2003-09-16     Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Added Nicolas Roard's art work for the Face and
+	  PGP bundles. Added parts of his patch to enhance both
+	  bundles.
+	* Majorly reworked the Face and PGP bundles. Removed
+	  the the "status bar" type of bundles. The OS X nib
+	  (MailWindow.nib) _needs_ to be modified as well as
+	  the OS X project file for the Face and PGP bundles.
+ 	*****************************************************
+	* YOU MUST RECOMPILE AND RE-INSTALL THE FACE AND    *
+	* THE PGP BUNDLES AFTER UPDATING TO TODAY'S VERSION *      
+ 	*****************************************************
+
+
+2003-09-15     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Removed the tiff compression in all the images
+	  from the Emoticon bundle. It should now work well
+	  under OS X as well (untested).
+	* Modified AutoCompletingTextFied: -complete: to be sure
+	  the table index we select is valid.
+	* Added a patch from Stefan Urbanek to add more emoticons.
+	* Added a patch to the Face bundle from Nicolas Roard <nicolas@roard.com>
+	  to fix the drawing of X-Face under GNUstep. 
+
+
+2003-09-14     Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Added a patch from Ken Ferry <kenferry@mac.com>
+	  to entirely redo the address completion code in
+	  EditWindow. Added the AutoCompletingTextField class and
+	  removed the old AddressComboBox class. Cleaned some
+	  of the code so it works under GNUstep. Some bugs are
+	  still in there but we'll start from there and progress.
+	  The OS X project file/nib need to be modified.
+	* Updated the OS X project file and EditWindow.nib to use
+	  the AutoCompletingTextField.
+	* Modified 99% of the UI under GNUstep so that UI elements
+	  fit rather well when the Vera font is used.
+	* Updated the OS X project file to add an "Emoticon" target
+	  (for our new bundle). Cocoa has problems with the tiff files
+	  and they will have to be fixed before the bundle fully work
+	  under OS X.
+ 
+
+2003-09-13     Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Added the "Emoticon" bundle to the repository. This
+	  bundle replaces emoticons with images in the text view
+	  displaying the current selected message. It serves as a
+	  good example on how to develop GNUMail.app bundles.
+        
+
+2003-09-12     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified the key equivalent of Mailbox > Mailboxes
+	  under OS X to be shift-M (since M is used for 
+	  minimizing the window).
+	* Updated AccountEditorWindow.nib wrt the new UI
+	  of the Send tab.
+	* Modified MailWindowToolbar.m to set the label
+	  of the mailbox button to "Mailboxes" instead of
+	  "Mailbox".
+	* Bumped up the version number to 1.1.1.
+	* Same thing for the OS X project file.
+	* Fixed invalide message count when receiving and transferring
+	  messages to a different folder than the one (if any) currently
+	  shown.
+	* Modified MailboxManagerController: _openLocalFolderWithName: sender:
+	  so that if we double-click on an item that holds mailboxes (ie., a
+	  directory at the file system level), we expand/collapse that item.
+
+
+2003-09-11     Ludovic Marcotte <ludovic@Sophos.ca>
+	
+	* Redone the UI (under GNUstep for now) in the "Send" tab
+	  of the Account editing window.
+
+
+2003-09-07     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified MailboxManagerController and ExtendedOutlineView to
+	  add a contextual menu on OS X for managing mailboxes. The
+	  "Open on Startup" feature needs to be fixed.
+	* Some fixes wrt the previous commit to avoid compiler warnings.
+	* Fixed the "Open on Startup" feature.
+	* Modified GNUMail: -applicationShouldTerminate: to reorder the
+	  deallocation calls in order to prevent a crash when quitting the
+	  app in the Console.
+
+
+2003-09-06     Ujwal S. Sathyam <ujwal@setlurgroup.com>
+
+	* Handling encoded URLS in GetURLScriptCommand.m
+	* On startup, maibox manager is opened after opening 
+	  folders so that the NSDrawer can be opened.
+	* toText is initialFirstResponder in EditWindow.
+
+
+2003-09-06     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Inverted the key bindings/positions for the next/previous
+	  unread messags in MainMenu.nib.
+	* We correctly handle exceptions being generated (only under GNUstep)
+	  when deleting the cache of an IMAP folder (unsubscribe) for which its name
+	  can't be converted in the default C-string encoding.
+	* Added a "New Message" item to the dock menu on OS X.
+
+
+2003-09-04     Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Added a patch from Ken Ferry <kenferry@mac.com> to no
+	  longer use the "NO_MESSAGE_RENDER_IN_MAIL_WINDOW" default.
+	  We rather don't render the message in the MailWindow's textview
+	  if its frame's height is 0. Modified docs/PREFERENCES to remove
+	  the reference to this default and added an -update_110_to_111
+	  method to GNUMail+Extensions to remove that default. 
+        
+
+2003-09-01     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified GNUMail: -restoreDraft: to NOT release the message
+	  at the end of the method. This prevents an ugly segfault. Bug
+	  reported by Ken Ferry <kenferry@mac.com>
+	* Modified MailboxManagerController wrt the new IMAP code for
+	  opening a folder in Pantomime.
+
+
+2003-08-31     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Reactivated the DnD on OS X to the "Mailboxes drawer"
+	  and also the autosaving of columns's width.
+
+
+2003-08-30     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified IMAPView (and the related code) to offer a new option
+	  for showing all mailboxes (default) or only the subscribed ones.
+	  The OS X nib _needs_ to be modified.
+	* Modified the PGP bundle to add an "expiry" feature for passphrases.
+	  The OS X nib _needs_ to be modified.
+	* Updated the nibs wrt the previous commit
+	* Removed the MailboxManagerToolbar category (.h/.m files)
+	* Removed MailboxManager.nib
+	* Added initial implementation of NSDrawer. Right now, the
+	  Add/Delete/Rename/Move/Copy/Open at startup "buttons" are gone
+	  but will be replaced by a contextual menu soon.
+	* Added a new option "New Viewer Window" in the File menu to actually
+	  be able to reopen an empty MailWindow when all of them are closed.
+
+
+2003-08-26     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added a patch from MJ Ray <markj@cloaked.freeserve.co.uk>
+	  (with minor modifications) to support the List-Post header
+	  when replying to a mailing list.
+	* Now also handle "List-Post: NO" by not prompting the
+	  "Reply to list" alert panel.
+
+
+2003-08-25     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified AccountViewController.m to implement -hasChangesPending:
+	  and use it in -saveChanges so we don't fire up notifications that
+	  accounts have changed if they haven't. This speeds up the closing
+	  of the pref panel a lot.
+
+
+2003-08-24     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Connected the "From" NSPopUpButton action in EditWindow.nib
+	* Fixed the "status bar" size and position in MailWindow.nib
+	  so the "deleted" info is shown properly.
+	* The "Repeat the message's subject (message threading)" is now
+	  activated by default.
+	* Optimized MailWindowController: -updateStatusLabel and added
+	  the size of deleted messages.
+
+
+2003-08-19     Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Set the version number of the PGP bundle to 0.6.0 in PGPController.m
+        * Set the CVS tag to v1_1_0 
+        * RELEASED VERSION 1.1.0
+
+
+2003-08-18    Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Removed redundant code in EditWindowController:
+	  -windowDidLoad.
+	* Fixed a bug in Utilities: stringValueOfURLNameFromFolderNode.
+	  If the IMAP account was being created, it wouldn't get the username
+	  and the servername from the defaults (since they weren't saved yet).
+	  Added those two parameters to the class method.
+	* Modified AccountEditorWindow.nib to set the initial item for the
+	  transport method popup button to be "Mailer" instead of "SMTP".
+        * Modified TaskManager: -_sendUsingSendmailForTask: so that if the
+          path is invalid, we set the current task as non-running in order
+          to not block the task queue.
+	* We now also warn the user about the invalid path.
+	* Fixed SendingView.nib. Set the next key view on the fields
+	  and connected the buttons to the right actions.
+
+
+2003-08-17    Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * We now use UTF-8 as the string encoding when reading
+	  the program's output for a signature.
+
+
+2003-08-17    Francis Lachapelle <francis@Sophos.ca>
+
+	* Minor improvements to various nibs related to the
+	  preferences bundles.
+
+
+2003-08-12    Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Set the line wrap limit (for format=flowed) to
+	  72 when not defined by the user (instead of 998). 
+	* Cleaned a couple of FIXME:s in MailWindowController.m
+
+
+2003-08-10    Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified StripeTableView.h so we don't include it
+	  under GNUstep and we guard it against multiple
+	  inclusion.
+	* Modified MailHeaderCell: -init to first try to obtain the color
+	  for the cell from the MAILHEADERCELL_COLOR default key.
+
+
+2003-08-10    Francis Lachapelle <francis@Sophos.ca>
+
+	* Modified HeadersWindow.nib of the Viewing preference
+	  bundle so it uses the StripeTableView.
+
+
+2003-08-09    Francis Lachapelle <francis@Sophos.ca>
+
+	* Added class StripeViewTable which extends NSTableView
+	  and adds blue stripes to get the iTunes look.
+	* Modified SwitchTableView class and the nibs related
+	  to the Mime and Sending preferences modules to use 
+	  the new class.
+
+
+2003-08-09    Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed the last Mime-Type -> MIME type typos
+	  in the MIME bundle, mainly on OS X.
+	* Modified AccountEditorWindowController.m in order to
+	  not allow (by adding a delegate method) the editing
+	  of IMAPView's NSOutlineView.
+
+
+2003-08-08    Ludovic Marcotte <ludovic@Sophos.ca>
+
+       	* Added a NSPopUpButton category in GNUMail.m (at the
+	  beginning of the file) to fix a lame bug in GNUstep -gui
+	  wrt NSPopUpButton and non-enabled items. This is a temporary
+	  fix to at least allow the users to use the application
+	  properly until the GNUstep bug is fixed.
+ 
+
+2003-08-07    Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Fixed the last two cases of IMAP disconnection
+	  handling code. Woo.
+        
+
+2003-08-05    Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Removed the code for the NSTableView GNUMail
+	  category that was fixing a bug in -deselectAll. It should
+	  now be fixed in -gui (being for a long time IIRC).
+	* Modified MailWindowController: -_reloadTableColumns: so we
+	  don't remove the outlineTableColumn from the NSOutlineView
+	  (when using message threading) since it causes a number of
+	  issues on OS X.
+
+
+2003-08-04    Francis Lachapelle <francis@Sophos.ca>
+
+	* Modified code of previous commit so that the modifier key under
+	  Mac OS X is the option/alt key instead of the control key which
+	  is reserved for contextual menus (not yet implemented in GNUMail).
+
+
+2003-08-04    Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Done TODO #60. You can now Control-double-click on a mailbox
+	  to open it in a separate window.
+	* Added raw_32.tiff to the OS X project file.
+	* Reduced the minimum width of MailWindow.nib's window.
+        
+
+2003-08-03    Ludovic Marcotte <ludovic@Sophos.ca>
+	
+	* Now handle two more cases of IMAP disconnection.
+	  Only two are left.
+        
+
+2003-08-01    Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Now handle correctly IMAP disconnection when
+	  replying to a mail or forwarding a mail.
+	* Done TODO #45 (when viewing a message in a MessageViewWindow
+	  and we're at the bottom of the message and hit the spacebar
+	  select the next message (same with previous message).
+	* Done TODO #96 (now showing a "Raw Source" button in MessageViewWindow
+	  under GNUstep and OS X). The OS X project NEEDS to be modified to
+	  include raw_32.tiff. Enhancements will soon be commited wrt this
+	  feature (like changing the label depending on what is shown)
+	* Improvements wrt the previous commit.
+
+
+2003-07-31    Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added the "NO_MESSAGE_RENDER_IN_MAIL_WINDOW" default in the
+	  Advanced preference panel.
+	* Added the "review unsent mails" when quitting the app with
+	  unsent Compose windows.
+
+
+2003-07-30    Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Fixed FilteringViewController.m wrt enabling or disabling
+	  filters using the checkboxes.  It was causing problems
+	  under GNUstep.
+	* Modified PreferencesWindowController: -savePreferences:
+	  to verify if changes are pending in each bundle before
+	  calling -saveChanges on them.
+	* Rewrote the Advanced pref panel so it uses a SwitchTableView.
+	  It's now way easier to add "advanced" options to GNUMail.app.
+	  The OS X nib _needs_ to be updated.
+	* Added new option in the Advanced pref panel to automatically
+	  expand the threads when switching in message threading mode.
+	  Modified MailWindowController to do that if the pref is set.
+	* Updated AdvancedView.nib and its controller for OS X.
+        
+
+2003-07-29    Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed a minor bug in the previous commit. The EditWindow
+	  was never being closed on GNUstep when saving or not
+	  in the drafts folder.
+	* Partially reformatted the code in MessageComposition.
+
+
+2003-07-28    Francis Lachapelle <francis@Sophos.ca>
+
+	* Modified EditWindowController: changed alert box when closing
+	  edited message so it is attached to the window.
+
+
+2003-07-24    Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Modified the code from the previous commit so it is
+	  also used under GNUstep.
+
+
+2003-07-24    Francis Lachapelle <francis@Sophos.ca>
+
+	* Modified MailHeaderCell: added category to NSBezierPath to
+	  easily draw rectangles with rounded corners; changed the
+	  background under Mac OS X.
+
+
+2003-07-23    Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified ExtendedTextView: -updateCursorForLinks so we don't
+	  pass an empty range as the selected range on GNUstep. The
+	  text system doesn't like that. We pass the normal range instead.
+	* Modified Utilities: +loadTransportMethodsInPopUpButton to use
+	  -insertItemWithTitle: atIndex: instead of -addItemWithTitle:
+	  since the NSPopUpButton class has recently been borked again
+	  in GNUstep.
+
+
+2003-07-22    Ludovic Marcotte <ludovic@Sophos.ca> 
+
+        * Slightly modified the code from the previous commit so
+	  it works under GNUstep.
+	* Fixed very small mem leaks.
+
+
+2003-07-21     Francis Lachapelle <francis@Sophos.ca>
+
+	* Modified ExtendedTextView: -updateCursorForLinks so the 
+	  cursor change to an hand when moving the mouse over a link.
+	  Not tested nor activated under GNUstep yet. 
+
+
+2003-07-15     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified EditWindowController: -comboBoxWillDismiss: to be
+	  sure we always select a valid index from the 
+	  addressCompletionCandidates array.
+
+
+2003-07-14     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added left/right arrow support for collapsing/expanding
+	  threads when using message threading. Suggestion received
+	  from Matt Ackeret <mattack@apple.com>.
+
+
+2003-07-13     Ludovic Marcotte <ludovic@Sophos.ca>
+
+ 	* Added "auto scroll" support when approaching the first or last
+	  visible row in the MailWindow's dataView.
+       
+
+2003-07-10     Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Updated the code to support the new mailboxes flags/name attributes
+	  (mostly used for IMAP mailboxes).
+
+
+2003-07-07     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Removed the "Send to Address Book" menu item in MainMenu.nib.
+	* Modified MailWindowController: -deleteMessage: so that we "reverse"
+	  the select if we are in reverse-sorting order. Suggestion from
+	  Ian Jones <ian@digital-bushido.org>.
+
+
+2003-07-06     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified GNUMail+TaskManager: -nextTask: to verify if the
+          task is also running when immediately returning if we have
+          a currentTask defined. This prevents blocking the task queue
+          if we have a non-running task in it (ie., a stopped mail being
+          sent using SMTP).
+        * Modified Utilities: +showMessageRawSource: target: to remove
+          any previous selection and also to scroll to the (0,0) range.
+	* Modified AccountViewController to fix the sorting issues (in the
+	  tableView) and also to fix the way we get the accounts keys.
+	  The new way should work way better and fix all issues that
+	  were present before if one had the same username@popservername
+	  account defined.
+	* Changed the minimum size of the "Mailbox" column in the
+	  MailboxManager window.
+
+
+2003-07-04     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * We now force some cleanups in TaskManager: -_receiveUsingPOP3ForTask:
+	  if an exception occurs when either opening or closing the connection
+	  with the POP3 folder.
+
+
+2003-07-03     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Changed the button's labels when quitting the app with a
+	  Compose window opened.
+ 	* Removed some unused code in GNUMail+TaskManager: -checkForNewMail: ...
+	* Increased the length of a label in ComposeView.m
+
+
+2003-07-02     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified GNUMail+TaskManager: -addTask to not assign the
+	  currentTask and modified -nextTask to immediately return
+	  if there's already a currentTask. This should fix the
+	  never ending POP3 tasks (and that could happen to other
+	  kind of tasks) and should help not getting the NSRecursiveLock
+	  exception.
+
+
+2003-07-01     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified the TaskManager to use -performSelectorOnMainThread: ...
+	  instead of the NSConnection object to inform the NSApp's delegate
+	  that the task has completed. This should fix (it's a workaround)
+	  the GNUstep -base recursive lock bug.
+	* Modified AccountEditorWindowController to verify (basic verification)
+	  if the informations provided in the Send tab are valid.
+	* Linked the Next/Previous Unread actions in MainMenu.nib.
+	* Changed "Mime-Type" for "MIME type" in the MIME bundle. The OS X nibs
+	  need to be updated.
+	
+
+2003-06-27     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Minor refactorings in GNUMail.m
+	* Added -nextUnreadMessage and -previousUnreadMessage actions
+	  to GNUMail.h/.m. The MainMenu nib _needs_ to be updated.
+	* Added some notes in GNUMail: -applicationWillFinishLaunching:
+	  about key modifiers.
+
+
+2003-06-26     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed a bug un my previous commit wrt the new
+	  method in NSString+Extensions.
+	* Modified EditWindowController: -_replaceSignature
+	  to fix the nasty UI bug when the signature was at the
+	  beginning of the message. We now prevent attribute shifts
+	  by not inserting the attributed string at index 0.
+	* Added an "Unthread" option. It is supposed to work but
+	  GNUstep's implementation of NSOutlineView seems to be broken
+	  (since it doesn't accept a nil dataSource - I'll verify on
+	  OS X later and fix it if it should accept one).
+	* Modified MailWindowController to set the dataView row size
+	  also in -setDataViewType:.
+
+
+2003-06-25     Francis Lachapelle <francis@Sophos.ca>
+
+	* Updated MainMenu OS X nib.
+
+
+2003-06-25     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed all -sort* methods in GNUMail.m
+	* Improved the title of the alert panel when closing
+	  the connection to an IMAP store.
+	* Cleaned up the code to use the new Pantomime method:
+	  stringByReplacingOccurrencesOfString: withString: in
+	  NSString+Extensions.
+	* Renamed RAW -> Raw (or raw) in the code.
+
+
+2003-06-24     Francis Lachapelle <francis@Sophos.ca>
+
+	* Renamed "RAW" to "Raw" in the View menu.
+	* Mapped the backspace key to the Delete item of the Message
+	  menu (under OS X only).
+
+2003-06-24     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified ExtendedTextView to use the same DnD code on
+	  both OS X and GNUstep since GWorkspace was fixed.
+	* Modified most of the code to handle gracefully being
+	  disconnected from the IMAP server.  
+	* Modified a couple of nibs wrt previous commits.
+	* Added an extra \n to separate the MailHeaderCell from the
+	  body of the message under OS X.
+	* Modified BounceWindowController to use pathForResource: ...
+	  instead of pathForGNUstepResource: ...
+
+
+2003-06-22     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added Console information while sending messages using SMTP.
+	* Cleaned up TaskManager by using cpp macros.
+
+
+2003-06-21     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added GNUMailTemporaryDirectory() to Utilities and modified
+	  the code to NOT use NSTemporaryDirectory() but rather that new
+	  function.
+
+
+2003-06-19     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified Utilities: +folderNodeForPath: using: to add a
+	  separator: parameter. Modified all the code to use this
+	  new method and pass @"/" if the folder separator cannot
+	  be ".". Pass the IMAPStore's folderSeparator if it can
+	  (like in AccountEditorWindowController.m).
+	* Removed the word "automatically" from MailboxesView.m
+	  wrt the Trash popup. The nib needs to be modified.
+	* Removed the "Memory Panel..." menu item and added the support
+	  to show it when clicking on the GNUMail "logo" in the AboutPanel.
+	  Suggestion from Christopher Culver <crculver@users.sourceforge.net>.
+	* Modified SendView and ReceiveView to move the "remember password"
+	  checkbox over the password field and set action methods to enable/disable
+	  those fields depending on the button state (in the controller). The
+	  OS X nibs _need_ to be modified.
+	* Added the new GNUMail.app menu hierarchy for GNUstep. Cleaned up some
+	  ivar names and removed unused code.
+	* Set the key equivalent to the Cancel buttons to the escape key.
+	* Modified NSAttributedString+TextEnriched: +_removeCommandsFromAttributedString:
+	  to correctly strips everything contained between <param></param>
+ 
+
+2003-06-18     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified Utilities to NOT prependa \n before displaying
+	  a message/rfc822 part.
+	* Fixed a bug in the commit of yesterday to fix issue with cache
+	  updates for IMAP. It wasn't working if the folder separator was
+	  different from "/" (like when using Courier).
+	* Fixed some "folder" > "mailbox" UI artifacts. In the _UI_ of
+	  GNUMail.app, we should always use the "mailbox" word (and NOT
+	  the "folder" word). In the code, we use "folder" to match
+	  Pantomime's definition of a folder.
+
+
+2003-06-17     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified MailboxManagerController to fix all (hopefully) issues
+	  related to cache updates when using IMAP.
+	  This fixes TODO #28.
+	* We now use one \n instead of two to separate the message body
+	  from the headers. Also fixed a typo.
+	* Modified the PGP bundle (PGPController) to use Pantomime's new
+	  method in NSData+Extensions (-replaceCRLFWithLF).
+	* Did the same thing byt for NSData+Extensions (-replaceLFWithCRLF).
+
+
+2003-06-15     Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Modified MailWindowController to implement IMAPFolder's delegate
+          methods.
+
+
+2003-06-14     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Set a minimum size for the Console's window under GNUstep.
+	* Modified MailWindowController to clear up the text view when
+	  no message is selected.
+
+
+2003-06-13     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Renamed "Outbox" to "Sent" in the UI and everywhere in the code. Also
+          added a method to migrate to the new prefs (SENTFOLDERNAME instead of
+          OUTBOXFOLDERNAME for all accounts) in GNUMail+Extensions.
+        * Updated the nib connection wrt the previous commit.
+        * Updated FontsView.nib to add the size "13" in all popup buttons.
+        * Updated some nibs to replace "informations" by "information".
+
+
+2003-06-12     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added a patch from Dirk Olmes <dirk@xanthippe.ping.de> to correctly
+	  guess the account name when restoring a message from the Drafts folder.
+
+
+2003-06-10     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Removed MailWindowController: -composeMessage and modified MailWindow
+          to set the compose button target to the app's delegate. Did the
+          same in MailWindowToolbar.
+	* Applied a patch from Dirk Olmes <dirk@xanthippe.ping.de> to correctly
+	  guess the account name when composing a message (with minor modifications)
+
+
+2003-06-09     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed all issues wrt the RECENT/SEEN flags. You MUST update
+	  Pantomime.
+	* Applied a patch from Dirk Olmes <dirk@xanthippe.ping.de>
+	  (with minor modifications) to use the IMAP's store information
+	  (if it can) to guess the account name when forwarding/replying
+	  to a message.
+
+
+2003-06-08     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed a bug in the commit of 2003-06-03. We now correctly
+	  handle a "nil" separator.
+	* Renamed MailboxManagerController: -connectionWasLostToIMAPStore...
+	  to -connectionWasLost: (id) sender. This method will be used
+	  by the IMAPStore's object (since the MM is their delegate) to notify
+	  the MUA in case the server has dropped the connection. This
+	  method is NOT FINISHED.
+	* Removed all the IMAP connection lost handling code and replaced it
+	  (temporarely) with #warning:s.
+
+
+2003-06-06     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed a bug in Utilities: +URLWithString: matchFolder:.
+	  We now use isKindOfClass since 1) GNUstep was unb0rken (call frame)
+	  and 2) -setLocalFolderCacheManager no longer exists.
+	* Modified GNUMail+TaskManager to only NOOP the IMAP store. We no
+	  longer NOOP the IMAP folder. You MUST update Pantomime from CVS.
+
+
+2003-06-05     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed a small memory leak in the previous commit.
+	* Improved the "Save in Drafts" alert panel buttons in
+	  EditWindowController.
+	* Removed a dumb NSLog()
+
+
+2003-06-04     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Updated the sources of GNUMail.app wrt the last Pantomime's commit
+	  (related to all cache managers used in the app).
+	* Applied a patch from Christopher Culver <crculver@users.sourceforge.net> 
+	  to change "informations" to "information" everywhere. The nibs need to be
+	  updated.
+	* Done TODO #112 - rewrote and optimized Utilities:
+	  +_quoteMessageContentFromAttributedString:
+	* Added a new Colors pref panel icon, maybe by myself from a sshot :)
+
+
+2003-06-03     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified MailboxManagerController: -outlineView:
+	  objectValueForTableColumn: byItem: so that we display 
+	  the folder status information for _all_ IMAP folders.
+	* Modified MailboxManagerController: _reloadFoldersForIMAPStoreWithName:
+	  username: account: to correctly replace the folder separator for
+	  all subscribed folders of the store we just obtained the list from
+	  with "/" in all folder names before storing the values in our folder status
+	  information cache (since it deals only with "/" as a separator).
+	* Small improvement over the previous commit. We now don't show the folder 
+	  message count if it's 0 _and_ if it's an IMAP folder.
+	* Fixed the separtor issue in MailWindowController: -updateStatusLabel.
+	* Done TODO #99 (Put GNUMail.app's services in a separate Service's submenu)
+	
+
+2003-06-02     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added the size 13 in the Fonts panel. Suggestion from
+	  Christopher Culver <crculver@users.sourceforge.net>.
+	  The OS X nib _needs_ to be updated.
+        * We now correctly protect our shared ivar (mustStopTransfer) with
+          a NSLock.
+        * Cleared a FIXME in ExtendedTextView. "5" is NSDragOperationCopy|NSDragOperationGeneric.
+
+
+2003-06-01     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Refactored the SMTP's sending code in TaskManager to use
+	  the new code in Pantomime to report code/messages received from
+	  the server in case of an error occurred. You MUST update Pantomime.
+
+
+2003-05-31     Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Make use of floor() instead of floorf() in EditWindowController
+	  so the code links under Solaris.
+	* Modified the GNUmakefile so we link with libucb under Solaris.
+	* Applied a patch from Dirk Olmes <dirk@xanthippe.ping.de> (with
+	  modifications) to add a "Deliver - D" menu item in the Message
+	  menu.
+	* Updated MainMenu.nib wrt the previous commit.
+        
+
+2003-05-30     Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Removed NSLog calls in EditWindowController: -_replaceSignature.
+	* Removed TODO #3 (Correct the matrix autoresizing mask in MailWindow 
+	  to prevent overlapping when resizing the window.). This can no longer
+	  happens since we set a reasonable minimum size to the MailWindow:s.
+        
+
+2003-05-27     Ujwal S. Sathyam <ujwal@setlurgroup.com>
+
+	* Added support to specify account name to scriptable MessageComposition class.
+	* Fixed bug in "showing" message composition via AppleScript.
+
+
+2003-05-26     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added complete X-Face support in the Face bundle. This completes
+	  TODO #9.
+ 
+
+2003-05-25     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Set a minimum size for EditWindow and MessageViewWindow under GNUstep.
+	* Removed the "Hide/Show Status Bar" menu item in MainMenu.nib
+	* Set the minimum size for MailWindow.nib, EditWindow.nib and MessageViewWindow.nib.
+	  This completes TODO #4.
+	* Modified ExtendedCell to also draw the interior of the frame under OS X.
+ 
+
+2003-05-24     Ludovic Marcotte <ludovic@Sophos.ca>
+	
+	* Modified TaskManager: -_messageFromExternalProgramUsingFilter: message:
+	  to write a message to the GNUMail.app Console (instead of using NSDebugLog)
+	  if something goes wrong when writing the raw source of the message to
+	  a temporary directory.
+	* Removed the "Show/Hide Status Bar" option (and related code).
+	* Cleaned the popup menu items in NewMailboxPanel.
+	* Added Next/Previous Unread message scrolling using the Control-Up/Down
+	  key bindings.
+	* Modified TaskManager (Private): _receiveUsingUNIXForTask: to move the
+	  -taskCompleted call at the end of the method.
+	* Fixed all issues with the "Supported SMTP AUTH mechanisms" popup button.
+	  This fixes TODO #52.
+	* Modified the TaskManager to use -performSelectorOnMainThread: ... when
+	  the authentication failed with a SMTP or POP3 server.
+	* Did the same for runAlertPanel: ...
+
+
+2003-05-23     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Set the right intercell spacing for tableviews that draw
+	  a different background color for some rows.
+
+
+2003-05-16     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed MailboxManagerController: -outlineView: shouldCollapseItem:
+	  to correctly get the MailWindow associated to the IMAPStore we are
+	  closing and not assume it's the last one on top.
+
+
+2003-05-15     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Moved the [super drawInteriorWithFrame:... call in ExtendedCell
+	  before compositing the message's flag images.
+	* Modified EditWindowController: to move the initializations of some
+	  ivars inside the -initWithWindowNibName: method.
+	  This prevent a segfault on Solaris (since we can't send messages to nil).
+	
+
+2003-05-12     Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Modified most of the GNUMail+TaskManager/TaskManager code to
+	  use -performSelectorOnMainThread: ... instead of the NSConnection
+	  object - this makes things way faster.
+	* Set a minimum size for the MailWindow on GNUstep
+	* Modified the labels on the buttons for the alert panel used
+	  to confirm if the user wants to close the IMAP connection (when collapsing
+	  a node) to be more intuitive.
+	* Modified MailboxManagerController: -saveMessageInDraftsFolderForController: to
+	  mark the window's document as non-edited just after saving the message in the
+	  Drafts folder.
+	* Refactored some code in MailboxManagerController and GNUMail+TaskManager/TaskManager
+	  to remove some code.
+
+
+2003-05-08     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added an extra boundary check in 
+	  Utilities: +_quoteMessageContentFromAttributedString:
+	  
+
+2003-05-07     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified Utilities: +_guessAccountNameFromMessage: to first guess
+	  the complete address before guessing only for the domain part.
+	* Modified MailboxManagerController: -transfer: to make server-side
+	  copy/move operations when moving or copying messages on the same
+	  IMAPStore.
+
+
+2003-05-05     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed a small bug in the previous commit.
+	* Updated the TODO. LOOK AT IT!!!
+	* Added a patch from Rob Burns to fix the strings/encodings
+	  in Localizable.strings files.
+	
+
+2003-05-02     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified MailboxManagerController: -_initializeIMAPStoreWithAccountName
+	  to correctly remove the wrong password from the cache if the auth failed.
+	  We now use GNUMail+TaskManager: -authenticationFailedForServer: ...
+	  to do so.
+	* Permuted the Delete/Cancel buttton in the alert panel when deleting a mailbox.
+	* Permuted the Compact/Cancel button in the alert panel when compacting a mailbox.
+
+
+2003-05-01     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added a new options in the Viewing panel. We now allow to do "nothing"
+	  (except displaying the message) when double-clicking on a message in
+	  MailWindow.
+	* Updated ViewingView.nib for the previous commit
+
+ 
+2003-04-30     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified MailWindowController: -{start/stop}Animation to
+ 	  return immediately when the toolbar customization sheet is shown. 
+	* Added MailWindowController: -toolbarDidRemoveItem (on OS X only)
+	  to correctly set our get ivar to nil if the button gets removed.
+
+
+2003-04-28     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modifed GNUMail: -deleteOrUndeleteMessage to set the right
+	  key equivalent value when changing the label.
+	* Fixed the autoresizing mask of the sizeLabel in EditWindow.nib.
+	* Added a new option in the Advanced pref panel:
+	  "Prompt before compacting a mailbox" (PROMPT_BEFORE_COMPACT) so
+	  it's possible to tell GNUMail.app to not ask the user to confirm
+	  the compact operation everything he/she executes it.
+	* Updated AdvancedView.nib to reflect the changes in the
+	  previous commit.
+
+
+2003-04-27     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified MailboxManagerController to hide the "Local" folder node if
+	  we have no local mailboxes. Same thing in Utilities (for the folder node
+	  popup buttons)
+	* Fixed a bug in Utilities: +folderNodesFromFolders: separator: to be sure
+	  that the child doesn't exist before adding it to its parent.
+	* Fixed a bug in PGPController: - _decryptPart: ... We no longer use a pipe
+	  when decrypting signed messages but rather read everything from a file
+	  like it's the case for encrypted messages. This prevents from filling up
+	  the pipe with big messages - thus blocking the whole GNUMail process.
+
+
+2003-04-26     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified AccountEditorWindowController to ease the selection of the
+	  SMTP AUTH mechanism.
+	* Set the initial first responder in NewMailboxPanel, set the next key views
+	  (and corrected the ones in PasswordPanel) and added the "Enter" key support
+	  under GNUstep.
+	* Set the OS X's version number to 1.1.0.
+	* Added GNUMail+Extensions: -removeTemporaryFiles to clean up all temporary
+	  files created by GNUMail during its execution.
+	* Permuted the releases of the AddressBook/AddressBookController singletons
+	  in applicationShouldTerminate to prevent a segfault on exit on OS X.
+	* Refactored TextEnrichedConsumer - made a NSAttributedString category instead
+	  of its own class.
+	* Modified EditWindowController: -_updateViewWithMessage: ... to set the attributed
+	  string to the text storage instead of adding it. This prevents from having a
+	  signature when restoring a message from the drafts folder.
+	* Modified the OS X project file for the changes in the previous commit
+	* Set the activeButton to NSOnState in FilterEditorWindowController: -setFilter:
+	  when adding a new filter.
+	* Improvements over the first commit
+
+
+2003-04-24     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified MailWindowController: -newMessagesWereReceived to set the
+	  app icon when we receive new mails using IMAP. That will be changed later
+	  when we finish the IMAP rewrite.
+	* Modified AccountEditorWindowController: -sendSupportedMechanismsButtonClicked to
+	  use SSL if it needs to!
+
+
+2003-04-23     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified AccountEditorWindow.nib to cleanup some things in it.
+	* Modified Utilities: +folderNodePopUpItemForURLNameAsString: ...
+	  to add an "account" parameter since we can't guess an account if
+	  we are currently adding it or if we changed its type (from POP3 to
+	  IMAP). Also fixed the code in AccountEditorWindowController to correctly
+	  behaves when adding a new IMAP account.
+	* Set the version number to 1.1.0 under GNUstep (GNUMailInfo.plist)
+	* Modified AddressBook to define +singleInstance like all other singletons
+	  and modified all the code to use that.
+	* Added the AddressBook class to ScriptingInfo.plist
+
+
+2003-04-21     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified FilterManager: -_messageFromExternalProgramUsingFilter: message:
+	  to gradually read the data from the pipe - it seems to cause problems under
+	  OS X if we do not do so.
+        * Set the CVS tag to v1_1_0pre2
+        * RELEASED VERSION 1.1.0pre2
+
+ 
+2003-04-20      Ujwal S. Sathyam <ujwal@setlurgroup.com>
+
+	* Reduced the indentation width in the MailboxManager view 
+	  on OS X.
+
+
+2003-04-20     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified MailboxManagerController: -transfer: to properly copy
+	  the Message's flags when moving mails to an other mailbox.
+	* We now offer a "Refresh" button in the Mailboxes panel to
+	  immediately refresh the list of subscribed mailboxes and also
+	  subscribed (if needed) the the INBOX folder (when using IMAP).
+	  The nib needs to be updated under OS X.
+	* Updated the OS X nib.
+	* Fixed FilterHeaderEditorWindow.nib
+	* Modified FilterEditorWindowController: -okClicked: to trim the
+	  trailing whitespaces of the external program text field.
+
+
+2003-04-18     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * We are now sure that we properly send the flags to the IMAP
+	  server when we have to. Also fixed two small memory leaks.
+	* Modified Task/EditWindowController/BounceWindowController/Utilities
+	  so that we now consider properly the selection of the transport
+	  method when sending a mail.
+	* Updated the README
+	* Enhanced IMAPView under GNUstep
+	* We now show the "right" label for the Inbox folder (when using IMAP)
+	* Updated the OS X files wrt the previous commit.
+
+
+2003-04-17     Ludovic Marcotte <ludovic@Sophos.ca>
+
+ 	* We don't include the trailing > in URL:s highlighting.
+	* We beep if the user has specified an empty find string
+	  and clicked on the Find All button.
+	* Modified MailWindow.nib to use Apple's NSProgressIndicator.
+	  It's now way nicer.
+	* Did the same thing for ConsoleWindow.
+       
+
+2003-04-14     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added the "Enter" key support in the Password Panel.
+	  (TODO #270)
+
+
+2003-04-13     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed a typo in the previous commit.
+	* Set the next key views under GNUstep for all 
+	  Account's window tab views.
+
+
+2003-04-12     Ujwal S. Sathyam <ujwal@setlurgroup.com>
+
+	* Implemented TODO #266: When sending a message from 
+	  the drafts folder, we mark the message deleted after we send it. 
+	  Also, when we edit a message in the drafts folder and save 
+	  it back in the drafts, the original message is marked deleted.
+
+
+2003-04-11     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified NewMailboxPanelController so that we correctly
+	  verify the exception name before assuming we lost our
+	  connection to the IMAP server.
+
+
+2003-04-10     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Disabled ExtendedTextView: -updateCursorLinks since
+	  this method needs to be optimized or entirely rewritten.
+	* Enabled the spinning icon when _sending_ mail in the MailWindow:s
+	  and removed/refactored some code.
+ 
+
+2003-04-08     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified AccountEditorWindowController: -dealloc
+	  to be sure that the store's TCP connection is valid
+	  before attempting to issue a store operation.
+
+
+2003-04-07     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Removed Foundation/NSDistributedNotificationCenter.h from
+	  TaskManager's include list.
+
+
+2003-04-06     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed a bug in ReceivingViewController: -saveChanges.
+	  We were using showNoNewMessagesPanelButton instead of
+	  showFilterPanelButton for SHOW_FILTER_PANEL.
+	* We now verify the termination status in FilterManager:
+	  -_messageFromExternalProgramUsingFilter: message: to correctly
+	  handle errors.
+	* Fixed the ReceivingView.m UI so it looks like the one on OS X.
+	* Removed MailboxManagerController: -passwordForKey (we are now
+	  only using the method defined in Utilities).
+	* Removed Utilites: +replyToAll: folder: and merged the logic	
+	  in +replyToSender: folder: replyToAll: Modified the code to use
+	  this modified method.
+	* Simplified the code in Utilities: +loadAccountsInPopUpButton: select:
+	* Minor refactorings in Utilities.
+	* Removed everything released to the messageWasSent ivar in 
+	  EditWindowController and did some minor refactorings.
+
+
+2003-04-05     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added a patch from Stefan Urbanek to improve the 
+	  labels used in the information/alert panels.
+	* We now correctly close the IMAP store that we might
+	  have opened when listing subscribed folders in
+	  AccountEditorWindowController.
+	* Modified the message display code and the URL highlighting
+	  code. The baby is now _FAST_. It's currently not entirely
+	  optimized on GNUstep since the text network is borken.
+	* Modified MailWindowController: -_selectionDidChange to
+	  verify the exception name before assuming we lost the
+	  connection to the IMAP store.
+	* Moved the code from MailWindowController: -tableViewColumnDidResize
+	  to -windowWillClose since this code isn't working under GNUstep because 
+	  the NSTableViewColumnDidResizeNotification is posted when 
+	  initializing the instance and we automatically overwrite the values
+	  previous saved in the defaults. We now save the values only when
+	  closing the window. 
+	* Updated BounceWindow.nib - it was broken.
+
+
+2003-04-02     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Removed the NSString+Extensions category. We now
+	  use the one in Pantomime instead. Modified all the files
+	  depending on that removed category.
+	* Removed all the code depending on the distributed notification
+	  center.
+	* Updated the OS X project file
+	* Fixed an include bug in PGPController.m
+
+
+2003-03-30     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Set GNUMail+TaskManager: -messageWas{Received/Sent}: forURLName:
+          as oneway methods.
+	* Modified MailboxManagerController: -_openIMAPFolderWithName: store: sender:
+	  so that if we are trying to reopen the opened IMAP folder, we simply make
+	  its 'associated window' the key one and we order it front.
+	* Optimized things so we don't synchronize the MailboxManagerCache each time
+	  we display a message. This seems to noticeably reduce the message's display
+	  delay.
+ 
+
+2003-03-29     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed a bug in my previous commit (FontsViewController)
+	* Modified GNUMail: -updateGetNewMailMenuItem: to only use
+	  enabled accounts. 
+	* We now correctly reload the font in the message list if 
+	  those values have changed.
+
+
+2003-03-28     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed MailWindowToolbar to return nil if the navigation toolbar
+	  item is 'found'. That would prevent a segfault for users moving
+	  from 1.1.0pre1 to 1.1.0pre2 that had customized their MailWindow
+	  toolbar.
+	* Added a new preference value: MESSAGE_LIST_FONT_{NAME, SIZE}. It's now
+	  possible to set this pref value in order to use a 'custom' font in the
+	  MailWindow message list. I'll modify the Font nib right now.
+	* Updated FontsView.nib for the previous commit. You must restart the app
+	  right now if you want the font changes in the message list to take
+	  effect.
+
+
+2003-03-24     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Modified all GNUmakefile:s to add -Wno-import
+	* Added scripting support using StepTalk. Patch from
+	  Stefan Urbanek <urbanek@host.sk>.
+
+
+2003-03-23     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Added a patch from Tomio Arisaka <tomio-a@max.hi-ho.ne.jp> to
+	  fix some issues in the PGP bundle. It's now also possible to
+	  always use the Multipart PGP style when sending messages.
+	* Modified PGPView.nib for the previous commit.
+	* Fixed a bug in MailboxManagerController: -_openIMAPFolderWithName: store: sender:.
+
+
+2003-03-23  Mirko Viviani  <mirko@objectlab.org>
+
+	* GNUMail+TaskManager.m ([GNUMail -nextTask]): discard already running
+	tasks.
+
+
+2003-03-22     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed the printing code under OS X.
+	* We now _really_ prevent more than one folder to be opened on the
+	  same IMAP store.
+	* Modified the GNUmakefile so we can easily test GNUMail.app with
+ 	  Electric Fence.
+	* Modified Utilties and GNUMail+TaskManager (-tick) so that we now release
+	  the content of the message that have 'expired'. Currently set to 300 seconds,
+	  it can be changed in Constants. This prevents GNUMail from using and using
+	  memory even if some messages haven't been re-read (after beeing first
+	  initialized) over the same session.
+
+
+2003-03-21     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Removing the generation of debug symbols for the Receiving,
+	  Face and Advanced targets on OS X.
+	* Fixed some nib issues regarding the icons.
+	* Made some UI improvements to the PreferencesWindow.nib
+	* Added a "Save in Drafts" option in the Console to save a message
+	  in the queue to the Drafts folder of the proper account.
+	* Modified ConsoleWindow.nib
+ 
+
+2003-03-20     Ludovic Marcotte <ludovic@Sophos.ca>
+	
+	* Made use of the localization macro for all toolbar labels
+	  (or title and tooltips). The localization files haven't been
+	  yet created.
+	* Fixed the OS X version number (set to 1.0.99)
+        
+
+2003-03-20  Mirko Viviani  <mirko@objectlab.org>
+
+	* NSUserDefaults+Extensions.m ([NSUserDefaults -colorForKey:theKey]):
+	check for assigned values.
+
+
+2003-03-19     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed (but not yet tested) in Utilities: +passwordForKey: type: prompt:
+	  related to SMTP auth support.
+
+
+2003-03-17     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed a bug in Utilites: +loadTransportMethodsInPopUpButton where
+	  we were wrongly adding items to our popup buttons.
+	* Refactored some code to use the +allEnabledAccounts method from
+	  Utilities.
+ 
+
+2003-03-16     Ujwal S. Sathyam <ujwal@setlurgroup.com>
+
+	* Added support for attachment in scripting. Syntax is:
+	    tell mymail
+		attach file "filename"
+	    end tell
+	    
+	    or 
+	    
+	    attach mymail file "filename"
+	    
+	    where mymail is a reference to a message composition 
+	    and filename is the file to be attached.
+
+
+2003-03-16     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed a small issue in the previous commit (-restoreDraft)
+	  that would prevent the code to be compiled on gcc < 3.x
+	* Fixed the OS X project file since the framework installation path
+	  was fixed in the Pantomime project file.
+	* Fixed missing action connections in ReceivingView.nib
+	* Modified EditWindowController/BounceWindowController to use the
+	  new method in Utilities (allEnabledAccounts) to verify if we can
+	  use these controllers.
+	* Fixed an outlet connection problem in AccountEditorWindow regarding
+	  the Send tab.
+	* Modified the Compose pref bundle to correctly load the default charsets.
+	* Modified EditWindowController: -_replaceSignature to correctly verify
+	  if the textView's font isn't nil before adding it to a dictionary. That
+	  would fail under OS X.
+	* Enhanced the UI of most preferences bundles.
+	* Fixed a bug in AccountEditorWindowController that was involving a
+	  non-mutable dictionary.
+
+
+2003-03-15     Ujwal S. Sathyam <ujwal@setlurgroup.com>
+
+	* Fixed bug in Utilities: +loadAccountsInPopUpButton: select:.
+	
+	* Fixed bug in GNUMail: -restoreDraft. Message was not 
+	  being initialized.
+
+
+2003-03-15     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed the code that was replacing the signature in EditWindowController.
+	  The previous code wasn't working if the source was a program's output.
+	* Refactored all the code in Utilities (and EditWindowController) so that
+	  we now select the right account when replying/forwarding a mail. Also
+	  fixed some bugs in the previous code that would prevent the right account
+	  (or before, profile) to be selected.
+
+
+2003-03-14     Ujwal S. Sathyam <ujwal@setlurgroup.com>
+	
+	* Foundation/NSScriptObjectSpecifiers.h is not needed 
+	  in EditWindowController anymore since it will not be 
+	  directly scripted.
+	  
+	* Implemented "send" script command handler in MessageComposer. 
+	  We can now script GNUMail!!
+	  
+
+2003-03-14     Ludovic Marcotte <ludovic@Sophos.ca>
+
+	* Small change in the previous commit to NOT import
+	  Foundation/NSScriptObjectSpecifiers.h under GNUstep.
+
+
+2003-03-14     Ujwal S. Sathyam <ujwal@setlurgroup.com>
+
+	* Created MessageComposition class that can be scripted.
+
+
+2003-03-12     Ujwal S. Sathyam <ujwal@setlurgroup.com>
+	
+	* One step closer to scripting nirvana...
+	
+
+2003-03-10     Ujwal S. Sathyam <ujwal@setlurgroup.com>
+
+	* Experimental code for expanding Applescript support. 
+	  Still incomplete.
+	  
+	* Fixed a confounding bug in the Account Editor NIB file 
+	  where the sendUsingSecureConnection was wired to the 
+	  wrong object. Had completely incapacitated sending mail.
+
+
+2003-03-09     Ludovic Marcotte <ludovic@Sophos.ca>
+	
+	* Fixed a bug in the Face bundle. We now correctly release the
+	  Face views used in MailWindow objects.
+	* Corrected some window reordering in most bundles (Account,
+	  MIME and Filtering) ie., where the issues were.
+	* Fixed some bugs with account names handling in MailboxManagerController.
+	  We weren't getting correctly the 'root' node for an account when using
+	  IMAP stores.
+	* Added a new constant (OTHER) and cleaned some code to use it.
+	* Added MailHeaderCell.h to the OS X project file and made consistency changes
+	  to the project file regarding public headers for the GNUMail framework.
+
+
+2003-03-06     Ujwal S. Sathyam <ujwal@setlurgroup.com>
+
+	* Updated PB project file to reflect latest file changes.
+
+
+2003-03-06     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed a bug in EditWindowController so that we correctly replace
+	  the signature if the account changes. Also refactored a little
+	  bit _replaceSignature so that we set the insertion pointer at the
+	  beginning of the textview and removed some unneccesary code to
+	  get the proper font.
+
+
+2003-03-05     Ujwal S. Sathyam <ujwal@setlurgroup.com>
+
+	* Updated PB project file to reflect latest file changes.
+	
+
+2003-03-05     Ludovic Marcotte <ludovic@Sophos.ca>
+
+        * Fixed two small issues so the source would cleanly compile
+	  with gcc < 3.x.
+	* Moved ChangeLog to ChangeLog.1 and created a new file.
+	* Removed GNUMailConstants.m
+	* Renamed GNUMailConstants.h to Constants.h and modified all files
+	  to use it. Also cleaned the file since it was a pure mess before.
+	  The OS X project file needs to be modified to reflect those changes.
+	* Added sort_right.tiff. The OS X project file must be modified to be 
+	  sure it contains sort_right and sort_down.
+	* Modified MailWindowController (and ExtendedOutlineView) to use the
+	  sort_right and sort_down tiff files when using messages threading.
+
+Copyright (C) 2003-2007 Ludovic Marcotte, Ujwal S. Sathyam 
+
+This file is part of GNUMail
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+ 
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.

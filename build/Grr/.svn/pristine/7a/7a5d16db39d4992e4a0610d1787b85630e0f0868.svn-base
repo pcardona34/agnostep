@@ -1,0 +1,31 @@
+/***
+German.lproj/Localizable.strings
+updated by make_strings 2007-02-17 10:47:11 +0000
+add comments above this one
+***/
+
+
+/*** Unmatched/untranslated keys ***/
+
+/* File: SubscriptionPanel.m:108 */
+/* Comment: failure reason in alert dialog */
+/* Flag: untranslated */
+"The string you provided is not in URL format."
+= "Die Adresse ist nicht im URL-Format.";
+
+/* File: SubscriptionPanel.m:126 */
+/* Comment: failure reason in alert dialog */
+/* Flag: untranslated */
+"Your subscription failed. Possible reasons include:\n\t- There's not a RSS or Atom document stored at this URL\n\t- Incorrect Web Proxy settings\n"
+= "Mögliche Fehler sind:\n\t- Es gibt keine RSS- oder Atom-Daten bei dieser URL\n\t- Fehlerhafte Web-Proxy-Einstellungen";
+
+
+/*** Strings from SubscriptionPanel.m ***/
+/* File: SubscriptionPanel.m:127 */
+/* File: SubscriptionPanel.m:109 */
+"Ok" = "Ok";
+/* File: SubscriptionPanel.m:120 */
+/* Comment: alert message title */
+/* File: SubscriptionPanel.m:104 */
+/* Comment: title of an alert dialog */
+"Subscription failed" = "Abonnement fehlgeschlagen";

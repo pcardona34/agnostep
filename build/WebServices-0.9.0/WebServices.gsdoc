@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.3//EN" "http://www.gnustep.org/gsdoc-1_0_3.xml">
+<gsdoc base="WebServices">
+  <head>
+    <title>The WebServices Project</title>
+  </head>
+  <body>
+    <chapter>
+      <heading>WebServices documentation</heading>
+      <section>
+        <heading>What are the WebServices classes?</heading>
+        <p>
+          The WebServer library contains a collection of classes to be used
+          for creating client and server 'web service' applications.
+        </p>
+        <p>
+          The GWSService class is used to make RPCs as a client.
+          This class makes use of GWSCoder classes to serialize
+          the request before sending it to the remote system,
+          and to deserialize the response received.<br />
+          Different GWSCoder sublasses handle different encoding mechanisms,
+          and this library provides one for XMLRPC (because it's a nice,
+          simple mechanism good for most normal applicatiions), and one for
+          SOAP (because, while it's a horrible, bloated, designed-by-comittee
+          mechanism, it's also the most common one by far and the standard
+          one for web services).<br />
+	  The GWSCoder base class provides support for decoding an
+	  XML document to a tree of GWSElement objects, and encoding a
+	  tree of GWSElement objects to form an XML document.<br />
+	  The GWSElement class represents an element in an XML document
+	  and provides a concise set of methods for locating and
+	  manipulating the elements within a tree representing the
+	  entire document.<br />
+	  The remaining classes in the library provide support for WSDL,
+	  allowing a WSDL document to be parsed, and SOAP calls to be
+	  made to a service described in the WSDL, with binding
+	  information from the WSDL used to build the calls from a minimal
+	  set of parameters.
+        </p>
+      </section>
+    </chapter>
+    <back>
+      <chapter>
+        <heading>API Documentation</heading>
+        <p>The index below lists the major components of the WebServices 
+         documentation.</p>
+        <index type="title" scope="project" target="mainFrame" />
+      </chapter>
+    </back>
+  </body>
+</gsdoc>

@@ -1,0 +1,362 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/FSKeyGroup">FSKeyGroup</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>NSObject</DD>
+</DL></blockquote>
+
+
+
+	<blockquote><DL><DT><B>Conforms To:</B></DT>
+	<DD>FSItem</DD>
+</DL></blockquote>
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSKeyGroup.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+No class description.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Variables</H2>
+	<blockquote>
+	
+		<CODE>FSKeyGroup *<B>_group</B>;</CODE><BR>
+		<CODE>NSString *<B>_label</B>;</CODE><BR>
+		<CODE>NSMutableArray *<B>_items</B>;</CODE><BR>
+		<CODE>NSString *<B>_fullPath</B>;</CODE><BR>
+		<CODE>NSArray *<B>_cachedKeys</B>;</CODE><BR>
+		<CODE>NSArray *<B>_cachedGroups</B>;</CODE><BR>
+	<P><TABLE>
+	
+		<TR><TD>_group</TD><TD>The parent group. Not retained.</TD></TR>
+	
+		<TR><TD>_label</TD><TD>The name this group goes by.</TD></TR>
+	
+		<TR><TD>_items</TD><TD>All keys and subgroups in this group.</TD></TR>
+	
+		<TR><TD>_fullPath</TD><TD>the full path [groupname.]label</TD></TR>
+	
+		<TR><TD>_cachedKeys</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_cachedGroups</TD><TD>No description.</TD></TR>
+	
+	</TABLE>
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#+ groupWithLabel:">+ groupWithLabel:</A></DD>
+		
+			<DD> <A HREF="#+ groupWithKeys:">+ groupWithKeys:</A></DD>
+		
+			<DD> <A HREF="#- document">- document</A></DD>
+		
+			<DD> <A HREF="#- table">- table</A></DD>
+		
+			<DD> <A HREF="#- header">- header</A></DD>
+		
+			<DD> <A HREF="#- group">- group</A></DD>
+		
+			<DD> <A HREF="#- setGroup:">- setGroup:</A></DD>
+		
+			<DD> <A HREF="#- label">- label</A></DD>
+		
+			<DD> <A HREF="#- setLabel:">- setLabel:</A></DD>
+		
+			<DD> <A HREF="#- items">- items</A></DD>
+		
+			<DD> <A HREF="#- setItems:">- setItems:</A></DD>
+		
+			<DD> <A HREF="#- keys">- keys</A></DD>
+		
+			<DD> <A HREF="#- subgroups">- subgroups</A></DD>
+		
+			<DD> <A HREF="#- pboardDataFromRange:">- pboardDataFromRange:</A></DD>
+		
+			<DD> <A HREF="#- pasteData:atIndex:">- pasteData:atIndex:</A></DD>
+		
+			<DD> <A HREF="#- fillFromArray:">- fillFromArray:</A></DD>
+		
+			<DD> <A HREF="#- deleteItemsInRange:">- deleteItemsInRange:</A></DD>
+		
+			<DD> <A HREF="#- appendKeyWithLabel:">- appendKeyWithLabel:</A></DD>
+		
+			<DD> <A HREF="#- insertKeyWithLabel:atIndex:">- insertKeyWithLabel:atIndex:</A></DD>
+		
+			<DD> <A HREF="#- removeItemWithLabel:">- removeItemWithLabel:</A></DD>
+		
+			<DD> <A HREF="#- moveItemFromIndex:toIndex:">- moveItemFromIndex:toIndex:</A></DD>
+		
+			<DD> <A HREF="#- groupItemsInRange:withLabel:">- groupItemsInRange:withLabel:</A></DD>
+		
+			<DD> <A HREF="#- ungroupAtIndex:">- ungroupAtIndex:</A></DD>
+		
+			<DD> <A HREF="#- ungroupItemsInGroup:">- ungroupItemsInGroup:</A></DD>
+		
+			<DD> <A HREF="#- containsKey:">- containsKey:</A></DD>
+		
+			<DD> <A HREF="#- itemWithLabel:">- itemWithLabel:</A></DD>
+		
+			<DD> <A HREF="#- groupWithLabel:">- groupWithLabel:</A></DD>
+		
+			<DD> <A HREF="#- keyWithLabel:">- keyWithLabel:</A></DD>
+		
+			<DD> <A HREF="#- keyWithPath:">- keyWithPath:</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Class Methods</H2>
+ 
+	
+		
+		<A NAME="+ groupWithKeys:"></A><H3><A NAME="//apple_ref/occ/clm/FSKeyGroup/groupWithKeys:">groupWithKeys:</A></H3>
+		<CODE>+ (FSKeyGroup*)<B>groupWithKeys:</B>(NSArray*)<EM>keys</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="+ groupWithLabel:"></A><H3><A NAME="//apple_ref/occ/clm/FSKeyGroup/groupWithLabel:">groupWithLabel:</A></H3>
+		<CODE>+ (FSKeyGroup*)<B>groupWithLabel:</B>(NSString*)<EM>label</EM>
+			
+		</CODE><P>
+		No method description.
+	
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- appendKeyWithLabel:"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/appendKeyWithLabel:">appendKeyWithLabel:</A></H3><P>
+		<CODE>- (FSKey*)<B>appendKeyWithLabel:</B>(NSString*)<EM>label</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- containsKey:"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/containsKey:">containsKey:</A></H3><P>
+		<CODE>- (BOOL)<B>containsKey:</B>(FSKey*)<EM>key</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- deleteItemsInRange:"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/deleteItemsInRange:">deleteItemsInRange:</A></H3><P>
+		<CODE>- (void)<B>deleteItemsInRange:</B>(NSRange)<EM>range</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- document"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/document">document</A></H3><P>
+		<CODE>- (id&lt;FSDocument&gt;)<B>document</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- fillFromArray:"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/fillFromArray:">fillFromArray:</A></H3><P>
+		<CODE>- (void)<B>fillFromArray:</B>(NSArray*)<EM>items</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- group"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/group">group</A></H3><P>
+		<CODE>- (FSKeyGroup*)<B>group</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- groupItemsInRange:withLabel:"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/groupItemsInRange:withLabel:">groupItemsInRange:withLabel:</A></H3><P>
+		<CODE>- (FSKeyGroup*)<B>groupItemsInRange:</B>(NSRange)<EM>keyRange</EM> <B>withLabel:</B>(NSString*)<EM>label</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- groupWithLabel:"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/groupWithLabel:">groupWithLabel:</A></H3><P>
+		<CODE>- (FSKeyGroup*)<B>groupWithLabel:</B>(NSString*)<EM>aLabel</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- header"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/header">header</A></H3><P>
+		<CODE>- (FSHeader*)<B>header</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- insertKeyWithLabel:atIndex:"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/insertKeyWithLabel:atIndex:">insertKeyWithLabel:atIndex:</A></H3><P>
+		<CODE>- (FSKey*)<B>insertKeyWithLabel:</B>(NSString*)<EM>label</EM> <B>atIndex:</B>(int)<EM>index</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- itemWithLabel:"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/itemWithLabel:">itemWithLabel:</A></H3><P>
+		<CODE>- (id)<B>itemWithLabel:</B>(NSString*)<EM>label</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- items"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/items">items</A></H3><P>
+		<CODE>- (NSArray*)<B>items</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- keyWithLabel:"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/keyWithLabel:">keyWithLabel:</A></H3><P>
+		<CODE>- (FSKey*)<B>keyWithLabel:</B>(NSString*)<EM>aLabel</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- keyWithPath:"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/keyWithPath:">keyWithPath:</A></H3><P>
+		<CODE>- (FSKey*)<B>keyWithPath:</B>(NSString*)<EM>path</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- keys"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/keys">keys</A></H3><P>
+		<CODE>- (NSArray*)<B>keys</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- label"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/label">label</A></H3><P>
+		<CODE>- (NSString*)<B>label</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- moveItemFromIndex:toIndex:"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/moveItemFromIndex:toIndex:">moveItemFromIndex:toIndex:</A></H3><P>
+		<CODE>- (void)<B>moveItemFromIndex:</B>(unsigned)<EM>idx1</EM> <B>toIndex:</B>(unsigned)<EM>idx2</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- pasteData:atIndex:"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/pasteData:atIndex:">pasteData:atIndex:</A></H3><P>
+		<CODE>- (int)<B>pasteData:</B>(NSDictionary*)<EM>pbData</EM> <B>atIndex:</B>(int)<EM>index</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- pboardDataFromRange:"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/pboardDataFromRange:">pboardDataFromRange:</A></H3><P>
+		<CODE>- (NSDictionary*)<B>pboardDataFromRange:</B>(NSRange)<EM>range</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- removeItemWithLabel:"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/removeItemWithLabel:">removeItemWithLabel:</A></H3><P>
+		<CODE>- (int)<B>removeItemWithLabel:</B>(NSString*)<EM>label</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setGroup:"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/setGroup:">setGroup:</A></H3><P>
+		<CODE>- (void)<B>setGroup:</B>(FSKeyGroup*)<EM>group</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setItems:"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/setItems:">setItems:</A></H3><P>
+		<CODE>- (void)<B>setItems:</B>(NSArray*)<EM>items</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setLabel:"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/setLabel:">setLabel:</A></H3><P>
+		<CODE>- (void)<B>setLabel:</B>(NSString*)<EM>label</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- subgroups"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/subgroups">subgroups</A></H3><P>
+		<CODE>- (NSArray*)<B>subgroups</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- table"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/table">table</A></H3><P>
+		<CODE>- (FSTable*)<B>table</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- ungroupAtIndex:"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/ungroupAtIndex:">ungroupAtIndex:</A></H3><P>
+		<CODE>- (void)<B>ungroupAtIndex:</B>(unsigned)<EM>index</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- ungroupItemsInGroup:"></A><H3><A NAME="//apple_ref/occ/instm/FSKeyGroup/ungroupItemsInGroup:">ungroupItemsInGroup:</A></H3><P>
+		<CODE>- (void)<B>ungroupItemsInGroup:</B>(FSKeyGroup*)<EM>group</EM>
+			
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2002 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

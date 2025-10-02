@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		790D8DC30ED0A36D00CF2935 /* GWSExtensibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 790D8DC00ED0A36700CF2935 /* GWSExtensibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		790D8DC40ED0A37000CF2935 /* GWSExtensibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 790D8DC10ED0A36700CF2935 /* GWSExtensibility.m */; };
+		7913D43C0F24CBD400234EF8 /* WebServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* WebServices.framework */; };
+		791866D90D4A46A0003EBF9C /* GWSBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 791866C40D4A46A0003EBF9C /* GWSBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		791866DA0D4A46A1003EBF9C /* GWSBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 791866C50D4A46A0003EBF9C /* GWSBinding.m */; };
+		791866DB0D4A46A1003EBF9C /* GWSCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 791866C60D4A46A0003EBF9C /* GWSCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		791866DC0D4A46A1003EBF9C /* GWSCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 791866C70D4A46A0003EBF9C /* GWSCoder.m */; };
+		791866DD0D4A46A1003EBF9C /* GWSConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 791866C80D4A46A0003EBF9C /* GWSConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		791866DE0D4A46A1003EBF9C /* GWSElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 791866C90D4A46A0003EBF9C /* GWSElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		791866DF0D4A46A1003EBF9C /* GWSElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 791866CA0D4A46A0003EBF9C /* GWSElement.m */; };
+		791866E20D4A46A1003EBF9C /* GWSMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 791866CD0D4A46A0003EBF9C /* GWSMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		791866E30D4A46A1003EBF9C /* GWSMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 791866CE0D4A46A0003EBF9C /* GWSMessage.m */; };
+		791866E40D4A46A1003EBF9C /* GWSPortType.h in Headers */ = {isa = PBXBuildFile; fileRef = 791866CF0D4A46A0003EBF9C /* GWSPortType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		791866E50D4A46A1003EBF9C /* GWSPortType.m in Sources */ = {isa = PBXBuildFile; fileRef = 791866D00D4A46A0003EBF9C /* GWSPortType.m */; };
+		791866E60D4A46A1003EBF9C /* GWSPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 791866D10D4A46A0003EBF9C /* GWSPrivate.h */; };
+		791866E70D4A46A1003EBF9C /* GWSService.h in Headers */ = {isa = PBXBuildFile; fileRef = 791866D20D4A46A0003EBF9C /* GWSService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		791866E80D4A46A1003EBF9C /* GWSService.m in Sources */ = {isa = PBXBuildFile; fileRef = 791866D30D4A46A0003EBF9C /* GWSService.m */; };
+		791866E90D4A46A1003EBF9C /* GWSSOAPCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 791866D40D4A46A0003EBF9C /* GWSSOAPCoder.m */; };
+		791866EA0D4A46A1003EBF9C /* GWSType.h in Headers */ = {isa = PBXBuildFile; fileRef = 791866D50D4A46A0003EBF9C /* GWSType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		791866EB0D4A46A1003EBF9C /* GWSXMLRPCCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 791866D60D4A46A0003EBF9C /* GWSXMLRPCCoder.m */; };
+		791866EC0D4A46A1003EBF9C /* WebServices.h in Headers */ = {isa = PBXBuildFile; fileRef = 791866D70D4A46A0003EBF9C /* WebServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		791866ED0D4A46A1003EBF9C /* WebServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 791866D80D4A46A0003EBF9C /* WebServices.m */; };
+		791867280D4A4C82003EBF9C /* testWebServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 791867270D4A4C82003EBF9C /* testWebServices.m */; };
+		79DC40BD0ED21ED9009451BF /* GWSPort.h in Headers */ = {isa = PBXBuildFile; fileRef = 79DC40B80ED21E79009451BF /* GWSPort.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79DC40BE0ED21ED9009451BF /* GWSPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DC40B70ED21E79009451BF /* GWSPort.m */; };
+		79E778FE0D5BB5DE000C97BA /* GWSDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 792C21700D55B94900459A2C /* GWSDocument.m */; };
+		79E778FF0D5BB5E1000C97BA /* GWSDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 792C216F0D55B94900459A2C /* GWSDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8591FB731A12E2F300923420 /* Performance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8591FA991A12E27A00923420 /* Performance.framework */; };
+		8591FBC71A12E74600923420 /* GWSHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 8591FBC41A12E74600923420 /* GWSHash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8591FBC81A12E74600923420 /* GWSHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8591FBC51A12E74600923420 /* GWSHash.m */; };
+		8591FBE61A12E85800923420 /* GWSJSONCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8591FBE31A12E85800923420 /* GWSJSONCoder.m */; };
+		8591FBE71A12E85800923420 /* WSSUsernameToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 8591FBE41A12E85800923420 /* WSSUsernameToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8591FBE81A12E85800923420 /* WSSUsernameToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 8591FBE51A12E85800923420 /* WSSUsernameToken.m */; };
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7918673B0D4A4E28003EBF9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = WebServices;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF5E0370ADEE00C91783 /* WebServices_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServices_Prefix.pch; sourceTree = "<group>"; };
+		790D8DC00ED0A36700CF2935 /* GWSExtensibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSExtensibility.h; sourceTree = "<group>"; };
+		790D8DC10ED0A36700CF2935 /* GWSExtensibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSExtensibility.m; sourceTree = "<group>"; };
+		791866C40D4A46A0003EBF9C /* GWSBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSBinding.h; sourceTree = "<group>"; };
+		791866C50D4A46A0003EBF9C /* GWSBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSBinding.m; sourceTree = "<group>"; };
+		791866C60D4A46A0003EBF9C /* GWSCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSCoder.h; sourceTree = "<group>"; };
+		791866C70D4A46A0003EBF9C /* GWSCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSCoder.m; sourceTree = "<group>"; };
+		791866C80D4A46A0003EBF9C /* GWSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSConstants.h; sourceTree = "<group>"; };
+		791866C90D4A46A0003EBF9C /* GWSElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSElement.h; sourceTree = "<group>"; };
+		791866CA0D4A46A0003EBF9C /* GWSElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSElement.m; sourceTree = "<group>"; };
+		791866CD0D4A46A0003EBF9C /* GWSMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSMessage.h; sourceTree = "<group>"; };
+		791866CE0D4A46A0003EBF9C /* GWSMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSMessage.m; sourceTree = "<group>"; };
+		791866CF0D4A46A0003EBF9C /* GWSPortType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSPortType.h; sourceTree = "<group>"; };
+		791866D00D4A46A0003EBF9C /* GWSPortType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSPortType.m; sourceTree = "<group>"; };
+		791866D10D4A46A0003EBF9C /* GWSPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSPrivate.h; sourceTree = "<group>"; };
+		791866D20D4A46A0003EBF9C /* GWSService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSService.h; sourceTree = "<group>"; };
+		791866D30D4A46A0003EBF9C /* GWSService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSService.m; sourceTree = "<group>"; };
+		791866D40D4A46A0003EBF9C /* GWSSOAPCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSSOAPCoder.m; sourceTree = "<group>"; };
+		791866D50D4A46A0003EBF9C /* GWSType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSType.h; sourceTree = "<group>"; };
+		791866D60D4A46A0003EBF9C /* GWSXMLRPCCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSXMLRPCCoder.m; sourceTree = "<group>"; };
+		791866D70D4A46A0003EBF9C /* WebServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServices.h; sourceTree = "<group>"; };
+		791866D80D4A46A0003EBF9C /* WebServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServices.m; sourceTree = "<group>"; };
+		7918671F0D4A4C45003EBF9C /* testWebServices */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testWebServices; sourceTree = BUILT_PRODUCTS_DIR; };
+		791867270D4A4C82003EBF9C /* testWebServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testWebServices.m; sourceTree = "<group>"; };
+		792C216F0D55B94900459A2C /* GWSDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSDocument.h; sourceTree = "<group>"; };
+		792C21700D55B94900459A2C /* GWSDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSDocument.m; sourceTree = "<group>"; };
+		79DC40B70ED21E79009451BF /* GWSPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSPort.m; sourceTree = "<group>"; };
+		79DC40B80ED21E79009451BF /* GWSPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSPort.h; sourceTree = "<group>"; };
+		8591FA991A12E27A00923420 /* Performance.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Performance.framework; path = /Library/Frameworks/Performance.framework; sourceTree = "<absolute>"; };
+		8591FBC41A12E74600923420 /* GWSHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSHash.h; sourceTree = "<group>"; };
+		8591FBC51A12E74600923420 /* GWSHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSHash.m; sourceTree = "<group>"; };
+		8591FBE31A12E85800923420 /* GWSJSONCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSJSONCoder.m; sourceTree = "<group>"; };
+		8591FBE41A12E85800923420 /* WSSUsernameToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSSUsernameToken.h; sourceTree = "<group>"; };
+		8591FBE51A12E85800923420 /* WSSUsernameToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSSUsernameToken.m; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* WebServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7918671D0D4A4C45003EBF9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7913D43C0F24CBD400234EF8 /* WebServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+				8591FB731A12E2F300923420 /* Performance.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* WebServices.framework */,
+				7918671F0D4A4C45003EBF9C /* testWebServices */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				791867270D4A4C82003EBF9C /* testWebServices.m */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = WebServices;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8591FBE31A12E85800923420 /* GWSJSONCoder.m */,
+				8591FBE41A12E85800923420 /* WSSUsernameToken.h */,
+				8591FBE51A12E85800923420 /* WSSUsernameToken.m */,
+				8591FBC41A12E74600923420 /* GWSHash.h */,
+				8591FBC51A12E74600923420 /* GWSHash.m */,
+				792C216F0D55B94900459A2C /* GWSDocument.h */,
+				792C21700D55B94900459A2C /* GWSDocument.m */,
+				791866C40D4A46A0003EBF9C /* GWSBinding.h */,
+				791866C50D4A46A0003EBF9C /* GWSBinding.m */,
+				791866C60D4A46A0003EBF9C /* GWSCoder.h */,
+				791866C70D4A46A0003EBF9C /* GWSCoder.m */,
+				791866C80D4A46A0003EBF9C /* GWSConstants.h */,
+				791866C90D4A46A0003EBF9C /* GWSElement.h */,
+				791866CA0D4A46A0003EBF9C /* GWSElement.m */,
+				790D8DC00ED0A36700CF2935 /* GWSExtensibility.h */,
+				790D8DC10ED0A36700CF2935 /* GWSExtensibility.m */,
+				791866CD0D4A46A0003EBF9C /* GWSMessage.h */,
+				791866CE0D4A46A0003EBF9C /* GWSMessage.m */,
+				79DC40B70ED21E79009451BF /* GWSPort.m */,
+				79DC40B80ED21E79009451BF /* GWSPort.h */,
+				791866CF0D4A46A0003EBF9C /* GWSPortType.h */,
+				791866D00D4A46A0003EBF9C /* GWSPortType.m */,
+				791866D10D4A46A0003EBF9C /* GWSPrivate.h */,
+				791866D20D4A46A0003EBF9C /* GWSService.h */,
+				791866D30D4A46A0003EBF9C /* GWSService.m */,
+				791866D40D4A46A0003EBF9C /* GWSSOAPCoder.m */,
+				791866D50D4A46A0003EBF9C /* GWSType.h */,
+				791866D60D4A46A0003EBF9C /* GWSXMLRPCCoder.m */,
+				791866D70D4A46A0003EBF9C /* WebServices.h */,
+				791866D80D4A46A0003EBF9C /* WebServices.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				D2F7E79907B2D74100F64583 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+				8591FA991A12E27A00923420 /* Performance.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* WebServices_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				791866D90D4A46A0003EBF9C /* GWSBinding.h in Headers */,
+				791866DB0D4A46A1003EBF9C /* GWSCoder.h in Headers */,
+				791866DD0D4A46A1003EBF9C /* GWSConstants.h in Headers */,
+				791866DE0D4A46A1003EBF9C /* GWSElement.h in Headers */,
+				791866E20D4A46A1003EBF9C /* GWSMessage.h in Headers */,
+				791866E40D4A46A1003EBF9C /* GWSPortType.h in Headers */,
+				791866E60D4A46A1003EBF9C /* GWSPrivate.h in Headers */,
+				791866E70D4A46A1003EBF9C /* GWSService.h in Headers */,
+				791866EA0D4A46A1003EBF9C /* GWSType.h in Headers */,
+				791866EC0D4A46A1003EBF9C /* WebServices.h in Headers */,
+				79E778FF0D5BB5E1000C97BA /* GWSDocument.h in Headers */,
+				790D8DC30ED0A36D00CF2935 /* GWSExtensibility.h in Headers */,
+				79DC40BD0ED21ED9009451BF /* GWSPort.h in Headers */,
+				8591FBC71A12E74600923420 /* GWSHash.h in Headers */,
+				8591FBE71A12E85800923420 /* WSSUsernameToken.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7918671E0D4A4C45003EBF9C /* testWebServices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 791867290D4A4C82003EBF9C /* Build configuration list for PBXNativeTarget "testWebServices" */;
+			buildPhases = (
+				7918671C0D4A4C45003EBF9C /* Sources */,
+				7918671D0D4A4C45003EBF9C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7918673C0D4A4E28003EBF9C /* PBXTargetDependency */,
+			);
+			name = testWebServices;
+			productName = testWebServices;
+			productReference = 7918671F0D4A4C45003EBF9C /* testWebServices */;
+			productType = "com.apple.product-type.tool";
+		};
+		8DC2EF4F0486A6940098B216 /* WebServices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "WebServices" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebServices;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = WebServices;
+			productReference = 8DC2EF5B0486A6940098B216 /* WebServices.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "WebServices" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* WebServices */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* WebServices */,
+				7918671E0D4A4C45003EBF9C /* testWebServices */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7918671C0D4A4C45003EBF9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				791867280D4A4C82003EBF9C /* testWebServices.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				791866DA0D4A46A1003EBF9C /* GWSBinding.m in Sources */,
+				791866DC0D4A46A1003EBF9C /* GWSCoder.m in Sources */,
+				791866DF0D4A46A1003EBF9C /* GWSElement.m in Sources */,
+				791866E30D4A46A1003EBF9C /* GWSMessage.m in Sources */,
+				791866E50D4A46A1003EBF9C /* GWSPortType.m in Sources */,
+				791866E80D4A46A1003EBF9C /* GWSService.m in Sources */,
+				791866E90D4A46A1003EBF9C /* GWSSOAPCoder.m in Sources */,
+				791866EB0D4A46A1003EBF9C /* GWSXMLRPCCoder.m in Sources */,
+				791866ED0D4A46A1003EBF9C /* WebServices.m in Sources */,
+				79E778FE0D5BB5DE000C97BA /* GWSDocument.m in Sources */,
+				790D8DC40ED0A37000CF2935 /* GWSExtensibility.m in Sources */,
+				79DC40BE0ED21ED9009451BF /* GWSPort.m in Sources */,
+				8591FBC81A12E74600923420 /* GWSHash.m in Sources */,
+				8591FBE61A12E85800923420 /* GWSJSONCoder.m in Sources */,
+				8591FBE81A12E85800923420 /* WSSUsernameToken.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7918673C0D4A4E28003EBF9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* WebServices */;
+			targetProxy = 7918673B0D4A4E28003EBF9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WebServices_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = WebServices;
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WebServices_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = WebServices;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SYMROOT = "$(PROJECT_DIR)/build";
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SYMROOT = "$(PROJECT_DIR)/build";
+			};
+			name = Release;
+		};
+		791867210D4A4C45003EBF9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = testWebServices;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		791867220D4A4C45003EBF9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = testWebServices;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "WebServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "WebServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		791867290D4A4C82003EBF9C /* Build configuration list for PBXNativeTarget "testWebServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				791867210D4A4C45003EBF9C /* Debug */,
+				791867220D4A4C45003EBF9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

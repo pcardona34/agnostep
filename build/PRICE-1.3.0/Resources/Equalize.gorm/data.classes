@@ -1,0 +1,36 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    FirstResponder = {
+	Actions = (
+	    "equalizeCancel:",
+	    "equalizeOK:",
+	    "filterCancel:",
+	    "filterOK:",
+	    "orderFrontFontPanel:",
+	    "parametersChanged:",
+	    "showEqualize:",
+	    "showFilter:"
+	);
+	Super = NSObject;
+    };
+    PRCEqualize = {
+	Actions = (
+	);
+	Outlets = (
+	    equalWindow,
+	    colorSpaceChoice
+	);
+	Super = PRFilterController;
+    };
+    PRFilterController = {
+	Actions = (
+	    "showFilter:",
+	    "filterOK:",
+	    "filterCancel:",
+	    "parametersChanged:"
+	);
+	Outlets = (
+	);
+	Super = NSObject;
+    };
+}

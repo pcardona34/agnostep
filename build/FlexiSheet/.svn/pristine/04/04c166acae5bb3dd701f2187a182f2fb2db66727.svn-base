@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<title>Concept</title>
+</head>
+<body marginwidth=4 marginheight=8>
+<h2 align=left>Conceptual Overview</h2>
+<img src="../av/3PixelRule.tiff">
+<p>
+FlexiSheet is a multi-dimensional spreadsheet designed to facilitate the construction and manipulation of financial models. Using a multi-dimensional spreadsheet is different and significantly more powerful than the simple rows and columns found in traditional spreadsheets. 
+</p><p>
+A FlexiSheet document is known as a model. A model is comprised of any number of tables that each contain data and formulas, made visible through one or more spreadsheet or chart views. Within a view, information is organized into items or groups of items within categories. The intersection of two or more items from different categories is known as a cell. 
+</p>
+<img src="../av/1PixelRule.tiff">
+<p>
+<b>Model</b>
+<br>A <i>model</i> is loosely defined as a collection of tables and views of those tables that together present and examine a problem through spreadsheets and charts.
+<p>
+<b>Table</b>
+<br>A <i>table</i> is a collection of information, made visible only through spreadsheet and chart view - you'll never actually 'see' a table. A table might be something like "Personal Budget."
+<p>
+<b>View</b>
+<br>A <i>table</i> is visible to the user in one or more views. A view is either a spreadsheet view or a chart view. Any given table can have multiple views, each of which presents, formats and arranges that table's data differently. 
+<p>
+<b>Category</b>
+<br><i>Categories</i> are classes of information that comprise a table. Categories are presented and manipulated with category tiles, each of which is associated with a set of rows, columns or tabs, depending on where the tile is placed in a view.
+<p>
+<b>Item</b>
+<br>An <i>item</i> is a member or instance of a category. For example, the "January" and "February" items are items within the "Months" category, and "Salary" might be an item within the "Budget Items" category. All categories must have at least one item.
+<p>
+<b>Group</b>
+<br>Items within a category can be logically associated with one another. In considering your monthly expenses, for example, you might <i>group</i> together the items "Utilities," "Food," and "Car Payments," and name the group "Expenses." Similarly, you might group "Jan," "Feb," and "Mar" together to form a "Q1" group.
+<p>
+Grouping makes it easier to see relationships among the items.
+<p>
+<b>Cell</b>
+<br>A <i>cell</i> is the intersection of two or more items from rows, columns and/or tabs, such as "Jan:Salary" (in FlexiSheet, the ":" indicates an intersection of two items), or "Oct:Utilities." The value in a cell is calculated by a formula or entered directly. 
+</p>
+<img src="../av/1PixelRule.tiff">
+<p><b>Related topics</b></p>
+<ul>
+<li><a href="./DesigningAModel.html">Designing a Model</a>
+<li><a href="./WritingFormulas.html">Writing Formulas</a>
+</ul>
+</body>
+</html>

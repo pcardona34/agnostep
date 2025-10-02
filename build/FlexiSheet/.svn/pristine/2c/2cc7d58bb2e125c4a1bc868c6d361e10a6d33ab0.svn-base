@@ -1,0 +1,368 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/FSTable">FSTable</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>NSObject</DD>
+</DL></blockquote>
+
+
+
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSTable.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+No class description.
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Global Variables</H2>
+	<blockquote>
+	
+		
+		<H4>Synopsis:</H4>
+		
+			<CODE>NSString* <B><A NAME="//apple_ref/c/data/FSTableWillChangeNotification">FSTableWillChangeNotification</A></B>;</CODE><BR>
+		
+			<CODE>NSString* <B><A NAME="//apple_ref/c/data/FSTableDidChangeNotification">FSTableDidChangeNotification</A></B>;</CODE><BR>
+		
+			<CODE>NSString* <B><A NAME="//apple_ref/c/data/FSItemWillChangeNotification">FSItemWillChangeNotification</A></B>;</CODE><BR>
+		
+			<CODE>NSString* <B><A NAME="//apple_ref/c/data/FSItemDidChangeNotification">FSItemDidChangeNotification</A></B>;</CODE><BR>
+		
+			<CODE>NSString* <B><A NAME="//apple_ref/c/data/FSValueDidChangeNotification">FSValueDidChangeNotification</A></B>;</CODE><BR>
+		
+			<CODE>NSString* <B><A NAME="//apple_ref/c/data/FSEditRevertedNotification">FSEditRevertedNotification</A></B>;</CODE><BR>
+		
+			<CODE>NSString* <B><A NAME="//apple_ref/c/data/FSNewNameUserInfo">FSNewNameUserInfo</A></B>;</CODE><BR>
+		
+			<CODE>NSString* <B><A NAME="//apple_ref/c/data/FSOldPathUserInfo">FSOldPathUserInfo</A></B>;</CODE><BR>
+		
+		
+	
+	</blockquote>
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Variables</H2>
+	<blockquote>
+	
+		<CODE>NSMutableArray *<B>_headers</B>;</CODE><BR>
+		<CODE>NSMutableDictionary *<B>_values</B>;</CODE><BR>
+		<CODE>FSFormulaSpace *<B>_formulaSpace</B>;</CODE><BR>
+		<CODE>id&lt;FSDocument&gt; <B>_document</B>;</CODE><BR>
+		<CODE>NSString *<B>_name</B>;</CODE><BR>
+		<CODE>NSData *<B>_comment</B>;</CODE><BR>
+	<P><TABLE>
+	
+		<TR><TD>_headers</TD><TD>The categories. Type: FSHeader</TD></TR>
+	
+		<TR><TD>_values</TD><TD>All values in the sheet. Type: FSValue</TD></TR>
+	
+		<TR><TD>_formulaSpace</TD><TD>Storage for formulae</TD></TR>
+	
+		<TR><TD>_document</TD><TD>Description forthcoming.</TD></TR>
+	
+		<TR><TD>_name</TD><TD>The table's name.</TD></TR>
+	
+		<TR><TD>_comment</TD><TD>An RTF comment entered by the user.</TD></TR>
+	
+	</TABLE>
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- name">- name</A></DD>
+		
+			<DD> <A HREF="#- setName:">- setName:</A></DD>
+		
+			<DD> <A HREF="#- comment">- comment</A></DD>
+		
+			<DD> <A HREF="#- setComment:">- setComment:</A></DD>
+		
+			<DD> <A HREF="#- document">- document</A></DD>
+		
+			<DD> <A HREF="#- setDocument:">- setDocument:</A></DD>
+		
+			<DD> <A HREF="#- undoManager">- undoManager</A></DD>
+		
+			<DD> <A HREF="#- formulae">- formulae</A></DD>
+		
+			<DD> <A HREF="#- addFormula:">- addFormula:</A></DD>
+		
+			<DD> <A HREF="#- insertFormula:atIndex:">- insertFormula:atIndex:</A></DD>
+		
+			<DD> <A HREF="#- removeFormula:">- removeFormula:</A></DD>
+		
+			<DD> <A HREF="#- moveFormulaAtIndex:toIndex:">- moveFormulaAtIndex:toIndex:</A></DD>
+		
+			<DD> <A HREF="#- recalculateFormulaSpace">- recalculateFormulaSpace</A></DD>
+		
+			<DD> <A HREF="#- disableRecalculation">- disableRecalculation</A></DD>
+		
+			<DD> <A HREF="#- enableRecalculation">- enableRecalculation</A></DD>
+		
+			<DD> <A HREF="#- setCreator:forFormula:">- setCreator:forFormula:</A></DD>
+		
+			<DD> <A HREF="#- formulaCalculatingKeySet:">- formulaCalculatingKeySet:</A></DD>
+		
+			<DD> <A HREF="#- headers">- headers</A></DD>
+		
+			<DD> <A HREF="#- addHeader:">- addHeader:</A></DD>
+		
+			<DD> <A HREF="#- removeHeader:">- removeHeader:</A></DD>
+		
+			<DD> <A HREF="#- nextAvailableHeaderName">- nextAvailableHeaderName</A></DD>
+		
+			<DD> <A HREF="#- headerWithName:">- headerWithName:</A></DD>
+		
+			<DD> <A HREF="#- headersWithNames:">- headersWithNames:</A></DD>
+		
+			<DD> <A HREF="#- keySetsForHeaders:">- keySetsForHeaders:</A></DD>
+		
+			<DD> <A HREF="#- valueForKeySet:">- valueForKeySet:</A></DD>
+		
+			<DD> <A HREF="#- _revalidateAllExistingValues">- _revalidateAllExistingValues</A></DD>
+		
+			<DD> <A HREF="#- valuesInSelection:">- valuesInSelection:</A></DD>
+		
+			<DD> <A HREF="#- setValues:inSelection:">- setValues:inSelection:</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- _revalidateAllExistingValues"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/_revalidateAllExistingValues">_revalidateAllExistingValues</A></H3><P>
+		<CODE>- (void)<B>_revalidateAllExistingValues</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- addFormula:"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/addFormula:">addFormula:</A></H3><P>
+		<CODE>- (void)<B>addFormula:</B>(NSString*)<EM>aFormula</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- addHeader:"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/addHeader:">addHeader:</A></H3><P>
+		<CODE>- (void)<B>addHeader:</B>(FSHeader*)<EM>newHeader</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- comment"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/comment">comment</A></H3><P>
+		<CODE>- (NSData*)<B>comment</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- disableRecalculation"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/disableRecalculation">disableRecalculation</A></H3><P>
+		<CODE>- (void)<B>disableRecalculation</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- document"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/document">document</A></H3><P>
+		<CODE>- (id&lt;FSDocument&gt;)<B>document</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- enableRecalculation"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/enableRecalculation">enableRecalculation</A></H3><P>
+		<CODE>- (void)<B>enableRecalculation</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- formulaCalculatingKeySet:"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/formulaCalculatingKeySet:">formulaCalculatingKeySet:</A></H3><P>
+		<CODE>- (FSFormula*)<B>formulaCalculatingKeySet:</B>(FSKeySet*)<EM>keySet</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- formulae"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/formulae">formulae</A></H3><P>
+		<CODE>- (NSArray*)<B>formulae</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- headerWithName:"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/headerWithName:">headerWithName:</A></H3><P>
+		<CODE>- (FSHeader*)<B>headerWithName:</B>(NSString*)<EM>name</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- headers"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/headers">headers</A></H3><P>
+		<CODE>- (NSArray*)<B>headers</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- headersWithNames:"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/headersWithNames:">headersWithNames:</A></H3><P>
+		<CODE>- (NSArray*)<B>headersWithNames:</B>(NSArray*)<EM>names</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- insertFormula:atIndex:"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/insertFormula:atIndex:">insertFormula:atIndex:</A></H3><P>
+		<CODE>- (void)<B>insertFormula:</B>(NSString*)<EM>aFormula</EM> <B>atIndex:</B>(int)<EM>index</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- keySetsForHeaders:"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/keySetsForHeaders:">keySetsForHeaders:</A></H3><P>
+		<CODE>- (NSArray*)<B>keySetsForHeaders:</B>(NSArray*)<EM>headers</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- moveFormulaAtIndex:toIndex:"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/moveFormulaAtIndex:toIndex:">moveFormulaAtIndex:toIndex:</A></H3><P>
+		<CODE>- (void)<B>moveFormulaAtIndex:</B>(int)<EM>idx1</EM> <B>toIndex:</B>(int)<EM>idx2</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- name"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/name">name</A></H3><P>
+		<CODE>- (NSString*)<B>name</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- nextAvailableHeaderName"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/nextAvailableHeaderName">nextAvailableHeaderName</A></H3><P>
+		<CODE>- (NSString*)<B>nextAvailableHeaderName</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- recalculateFormulaSpace"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/recalculateFormulaSpace">recalculateFormulaSpace</A></H3><P>
+		<CODE>- (void)<B>recalculateFormulaSpace</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- removeFormula:"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/removeFormula:">removeFormula:</A></H3><P>
+		<CODE>- (void)<B>removeFormula:</B>(FSFormula*)<EM>aFormula</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- removeHeader:"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/removeHeader:">removeHeader:</A></H3><P>
+		<CODE>- (void)<B>removeHeader:</B>(FSHeader*)<EM>aHeader</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setComment:"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/setComment:">setComment:</A></H3><P>
+		<CODE>- (void)<B>setComment:</B>(NSData*)<EM>comment</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setCreator:forFormula:"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/setCreator:forFormula:">setCreator:forFormula:</A></H3><P>
+		<CODE>- (void)<B>setCreator:</B>(NSString*)<EM>creator</EM> <B>forFormula:</B>(FSFormula*)<EM>formula</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setDocument:"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/setDocument:">setDocument:</A></H3><P>
+		<CODE>- (void)<B>setDocument:</B>(id&lt;FSDocument&gt;)<EM>document</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setName:"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/setName:">setName:</A></H3><P>
+		<CODE>- (void)<B>setName:</B>(NSString*)<EM>name</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setValues:inSelection:"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/setValues:inSelection:">setValues:inSelection:</A></H3><P>
+		<CODE>- (void)<B>setValues:</B>(NSArray*)<EM>values</EM> <B>inSelection:</B>(FSSelection*)<EM>selection</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- undoManager"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/undoManager">undoManager</A></H3><P>
+		<CODE>- (NSUndoManager*)<B>undoManager</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- valueForKeySet:"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/valueForKeySet:">valueForKeySet:</A></H3><P>
+		<CODE>- (FSValue*)<B>valueForKeySet:</B>(FSKeySet*)<EM>keySet</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- valuesInSelection:"></A><H3><A NAME="//apple_ref/occ/instm/FSTable/valuesInSelection:">valuesInSelection:</A></H3><P>
+		<CODE>- (NSArray*)<B>valuesInSelection:</B>(FSSelection*)<EM>selection</EM>
+			
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2002 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

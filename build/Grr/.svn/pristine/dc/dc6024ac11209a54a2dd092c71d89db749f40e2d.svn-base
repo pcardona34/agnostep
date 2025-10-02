@@ -1,0 +1,17 @@
+/***
+English.lproj/Localizable.strings
+updated by make_strings 2007-02-17 10:47:10 +0000
+add comments above this one
+***/
+
+
+/*** Strings from ArticleTextViewPlugin.m ***/
+/* File: ArticleTextViewPlugin.m:69 */
+/* Comment: Shown in the article view headline */
+"%d articles selected" = "%d articles selected";
+/* File: ArticleTextViewPlugin.m:62 */
+/* Comment: Shown in the article view headline */
+"No articles selected." = "No articles selected.";
+/* File: ArticleTextViewPlugin.m:73 */
+/* Comment: Shown in the article view text area */
+"\nPlease select only one article." = "\nPlease select only one article.";

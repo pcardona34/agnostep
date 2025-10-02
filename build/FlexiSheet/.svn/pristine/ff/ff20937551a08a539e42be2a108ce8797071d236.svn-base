@@ -1,0 +1,100 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/SLOutlineView">SLOutlineView</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>NSOutlineView</DD>
+</DL></blockquote>
+
+
+
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>SLOutlineView.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+No class description.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- parentItemForItem:">- parentItemForItem:</A></DD>
+		
+			<DD> <A HREF="#- parentItemForRow:child:">- parentItemForRow:child:</A></DD>
+		
+			<DD> <A HREF="#- parentItemForRow:indentLevel:child:">- parentItemForRow:indentLevel:child:</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- parentItemForItem:"></A><H3><A NAME="//apple_ref/occ/instm/SLOutlineView/parentItemForItem:">parentItemForItem:</A></H3><P>
+		<CODE>- (id)<B>parentItemForItem:</B>(id)<EM>child</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- parentItemForRow:child:"></A><H3><A NAME="//apple_ref/occ/instm/SLOutlineView/parentItemForRow:child:">parentItemForRow:child:</A></H3><P>
+		<CODE>- (id)<B>parentItemForRow:</B>(int)<EM>row</EM> <B>child:</B>(unsigned int *)<EM>childIndexPointer</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- parentItemForRow:indentLevel:child:"></A><H3><A NAME="//apple_ref/occ/instm/SLOutlineView/parentItemForRow:indentLevel:child:">parentItemForRow:indentLevel:child:</A></H3><P>
+		<CODE>- (id)<B>parentItemForRow:</B>(int)<EM>row</EM> <B>indentLevel:</B>(int)<EM>childLevel</EM> <B>child:</B>(unsigned int *)<EM>childIndexPointer</EM>
+			
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2001 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

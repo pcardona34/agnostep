@@ -1,0 +1,46 @@
+{
+    IBClasses =     (
+                {
+            ACTIONS =             {
+                runFontSelectPanel = id;
+                setBackgroundColor = id;
+                setForegroundColor = id;
+                setNegativeColor = id;
+                setTextAlignment = id;
+            };
+            CLASS = FSCellInspectorPane;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                addFormatButton = NSButton;
+                alignmentMatrix = NSMatrix;
+                backgroundColorWell = NSColorWell;
+                defaultButton = NSButton;
+                foregroundColorWell = NSColorWell;
+                formats = NSBrowser;
+                lineColorWell = NSColorWell;
+                lineStylePopup = NSPopUpButton;
+                negativeColorSwitch = NSButton;
+                negativeColorWell = NSColorWell;
+                removeFormatButton = NSButton;
+                selectFont = NSButton;
+                textPreview = NSTextField;
+                typeMatrix = NSMatrix;
+            };
+            SUPERCLASS = FSInspectorPane;
+        },
+                {
+            CLASS = FSInspectorPane;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                paneView = NSView;
+            };
+            SUPERCLASS = NSObject;
+        },
+                {
+            CLASS = FirstResponder;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSObject;
+        }
+    );
+    IBVersion = 1;
+}

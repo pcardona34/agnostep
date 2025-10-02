@@ -1,0 +1,77 @@
+<HTML><HEAD><META HTTP-EQUIV="content-type" CONTENT="text/html;charset=iso-8859-1"><TITLE>
+
+Formula List
+
+</TITLE><META NAME="Copyright" CONTENT="Copyright Stefan Leuker."></HEAD><BODY BGCOLOR="#ffffff"><DIV ALIGN="left"><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%"><TR HEIGHT="40"><TD WIDTH="6" HEIGHT="40"></TD><TD HEIGHT="40" VALIGN="middle"><FONT FACE="Lucida Grande,Helvetica,Arial" SIZE="4"><B>
+
+Formula List
+
+</B></FONT></TD></TR></TABLE>
+<img src="../av/3PixelRule.tiff">
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+Each formula appears as a numbered entry in a list at the top of a table view. Messages and icons relating to a formula appear in the lines beneath it.
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial"><B>
+
+Formula Hierarchy
+
+</B></FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+The closer a formula is to the top of the list, the higher its precedence in calculating the value of cells with overlapping formulas. If two formulas apply to the same selection or cell, the one closer to the top of the list (with the lowest number, thus highest priority) <b>eclipses</b> the other formula. 
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial"><B>
+
+Changing Formula Order
+
+</B></FONT></P>
+<P><TABLE BORDER="0" CELLPADDING="5" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#fff8dc"><TD>
+<FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+You can rearrange formulas by dragging them to higher or lower positions. Click on a formula (including its icon and number) to start a drag operation.  <!---You can also move formulas by selecting one and choosing the Move Formula Up/Down commands in the Arrange menu.--->
+
+</FONT></TD></TR></TABLE></P><P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial"><B>
+
+Formula Icons
+
+</B></FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+Error messages indicate why a formula might be invalidated. Error messages are displayed in bold, accompanied by an icon to the left of the formula to which they apply.
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+One or more warning messages explain a condition that leaves a formula in use, but in a manner that you probably did not intend. Warning messages are displayed in italics, accompanied by a triangle icon to the left of the formula.
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+
+</FONT></P>
+<img src="../av/1PixelRule.tiff">
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial"><B>
+Related Topics</B></FONT>
+<TABLE BORDER="0" CELLPADDING="2" CELLSPACING="0" WIDTH="100%">
+
+<TR><TD WIDTH="16" BGCOLOR="#eeeeee"></TD><TD><FONT FACE="Lucida Grande,Helvetica,Arial" SIZE="2">
+
+<A HREF="FormulaArea.html">
+
+Formula Area
+
+</A></FONT></TD></TR>
+
+<TR><TD WIDTH="16" BGCOLOR="#eeeeee"></TD><TD><FONT FACE="Lucida Grande,Helvetica,Arial" SIZE="2">
+
+<A HREF="WritingFormulas.html">
+
+Writing Formulas
+
+</A></FONT></TD></TR>
+</TABLE>
+</DIV></BODY></HTML>

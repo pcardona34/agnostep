@@ -1,0 +1,104 @@
+/*
+ * Highlighting rules for the GNUmakefile files of the HighlighterKit
+ * framework.
+ */
+{
+  Contexts = (
+    {
+      Keywords = (
+        {
+          Pattern = "<include>";
+          ForegroundColor = "0 0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<export>";
+          ForegroundColor = "0 0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<ifeq>";
+          ForegroundColor = "0.5 0.5 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<else>";
+          ForegroundColor = "0.5 0.5 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<endif>";
+          ForegroundColor = "0.5 0.5 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<-include>";
+          ForegroundColor = "0 0 1.0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<GNUSTEP_MAKEFILES>";
+          ForegroundColor = "0 0.8 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<GNUmakefile.preamble>";
+          ForegroundColor = "0 0.8 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<GNUmakefile.postamble>";
+          ForegroundColor = "0 0.8 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<VERSION>";
+          ForegroundColor = "0.6 0 0.6";
+          Bold = YES;
+        },
+        {
+          Pattern = "<SUBPROJECTS>";
+          ForegroundColor = "0.6 0 0.6";
+          Bold = YES;
+        },        
+        {
+          Pattern = "[abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ]{3,20}_[ABCDEFGHIJKLMNOPQRSTUVWXYZ]{1,20}[_ABCDEFGHIJKLMNOPQRSTUVWXYZ]{0,30}";
+          ForegroundColor = "0.6 0 0.6";
+          Bold = YES;
+        },
+        {
+          Pattern = "<before-all>";
+          ForegroundColor = "0 0.5 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<before-install>";
+          ForegroundColor = "0 0.5 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<after-clean>";
+          ForegroundColor = "0 0.5 0";
+          Bold = YES;
+        },
+        {
+          Pattern = "<after-uninstall>";
+          ForegroundColor = "0 0.5 0";
+          Bold = YES;
+        }
+      );
+    },
+
+
+    /* Comments */
+    {
+      Beginning = "^#";
+      Ending = "\n";
+      ContextSkips = (
+        "\\\\\n"
+      );
+      ForegroundColor = "0.8 0 0";
+      Bold = YES;
+    }
+  );
+}

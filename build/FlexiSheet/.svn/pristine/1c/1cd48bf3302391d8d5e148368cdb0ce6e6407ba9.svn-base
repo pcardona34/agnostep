@@ -1,0 +1,179 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/FSTableTabs">FSTableTabs</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>NSControl</DD>
+</DL></blockquote>
+
+
+
+	<blockquote><DL><DT><B>Conforms To:</B></DT>
+	<DD>FSEditableSelection</DD>
+</DL></blockquote>
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSTableTabs.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+No class description.
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Defined Types</H2>
+	<blockquote>
+	
+		
+		<H4>Synopsis:</H4>
+		
+			<CODE><A NAME="//apple_ref/c/tdef/FSTabOrientation">
+			typedef enum _FSTabOrientation {&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;FSOnTop = 0,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;FSLeftSide = 1,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;FSRightSide = 3,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;FSAtBottom = 2<BR>
+} <B>FSTabOrientation</B>;</A></CODE><BR>
+		
+		
+	
+	</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Variables</H2>
+	<blockquote>
+	
+		<CODE>NSArray *<B>_items</B>;</CODE><BR>
+		<CODE>NSRange <B>_visibleRange</B>;</CODE><BR>
+		<CODE>int <B>_selectedItem</B>;</CODE><BR>
+		<CODE>int *<B>_widths</B>;</CODE><BR>
+		<CODE>NSButtonCell *<B>_backButton</B>;</CODE><BR>
+		<CODE>NSButtonCell *<B>_foreButton</B>;</CODE><BR>
+		<CODE>NSRect <B>_backRect</B>;</CODE><BR>
+		<CODE>NSRect <B>_foreRect</B>;</CODE><BR>
+		<CODE>NSBezierPath *<B>_backPath</B>;</CODE><BR>
+		<CODE>NSBezierPath *<B>_forePath</B>;</CODE><BR>
+		<CODE>FSTabOrientation <B>_orientation</B>;</CODE><BR>
+	<P><TABLE>
+	
+		<TR><TD>_items</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_visibleRange</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_selectedItem</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_widths</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_backButton</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_foreButton</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_backRect</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_foreRect</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_backPath</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_forePath</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_orientation</TD><TD>No description.</TD></TR>
+	
+	</TABLE>
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- keySets">- keySets</A></DD>
+		
+			<DD> <A HREF="#- setKeySets:">- setKeySets:</A></DD>
+		
+			<DD> <A HREF="#- selectedKeySet">- selectedKeySet</A></DD>
+		
+			<DD> <A HREF="#- orientation">- orientation</A></DD>
+		
+			<DD> <A HREF="#- setOrientation:">- setOrientation:</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- keySets"></A><H3><A NAME="//apple_ref/occ/instm/FSTableTabs/keySets">keySets</A></H3><P>
+		<CODE>- (NSArray*)<B>keySets</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- orientation"></A><H3><A NAME="//apple_ref/occ/instm/FSTableTabs/orientation">orientation</A></H3><P>
+		<CODE>- (FSTabOrientation)<B>orientation</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- selectedKeySet"></A><H3><A NAME="//apple_ref/occ/instm/FSTableTabs/selectedKeySet">selectedKeySet</A></H3><P>
+		<CODE>- (FSKeySet*)<B>selectedKeySet</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setKeySets:"></A><H3><A NAME="//apple_ref/occ/instm/FSTableTabs/setKeySets:">setKeySets:</A></H3><P>
+		<CODE>- (void)<B>setKeySets:</B>(NSArray*)<EM>keySets</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setOrientation:"></A><H3><A NAME="//apple_ref/occ/instm/FSTableTabs/setOrientation:">setOrientation:</A></H3><P>
+		<CODE>- (void)<B>setOrientation:</B>(FSTabOrientation)<EM>newOrientation</EM>
+			
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2002 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

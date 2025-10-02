@@ -1,0 +1,174 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/FSFormula">FSFormula</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>NSObject</DD>
+</DL></blockquote>
+
+
+
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSFormula.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+No class description.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Variables</H2>
+	<blockquote>
+	
+		<CODE>FSTable *<B>_table</B>;</CODE><BR>
+		<CODE>FSFormulaSelection *<B>_selection</B>;</CODE><BR>
+		<CODE>FSFormulaDefinition *<B>_definition</B>;</CODE><BR>
+		<CODE>NSArray *<B>_skipElements</B>;</CODE><BR>
+		<CODE>NSString *<B>_originalString</B>;</CODE><BR>
+		<CODE>FSSelection *<B>_touchedSel</B>;</CODE><BR>
+	<P><TABLE>
+	
+		<TR><TD>_table</TD><TD>Table this formula belongs to. Not retained.</TD></TR>
+	
+		<TR><TD>_selection</TD><TD>The left side of the formula.</TD></TR>
+	
+		<TR><TD>_definition</TD><TD>The right side of the formula.</TD></TR>
+	
+		<TR><TD>_skipElements</TD><TD>The SKIP part of the formula. Type: FSKeySet.</TD></TR>
+	
+		<TR><TD>_originalString</TD><TD>String this formula was created with.</TD></TR>
+	
+		<TR><TD>_touchedSel</TD><TD>Cached from last calculation.</TD></TR>
+	
+	</TABLE>
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#+ formulaWithString:inTable:">+ formulaWithString:inTable:</A></DD>
+		
+			<DD> <A HREF="#- initWithString:inTable:">- initWithString:inTable:</A></DD>
+		
+			<DD> <A HREF="#- replaceFormulaWithString:">- replaceFormulaWithString:</A></DD>
+		
+			<DD> <A HREF="#- selectedKeySets">- selectedKeySets</A></DD>
+		
+			<DD> <A HREF="#- touchedSelection">- touchedSelection</A></DD>
+		
+			<DD> <A HREF="#- recalculateInFormulaSpace:">- recalculateInFormulaSpace:</A></DD>
+		
+			<DD> <A HREF="#- isOK">- isOK</A></DD>
+		
+			<DD> <A HREF="#- errorString">- errorString</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Class Methods</H2>
+ 
+	
+		
+		<A NAME="+ formulaWithString:inTable:"></A><H3><A NAME="//apple_ref/occ/clm/FSFormula/formulaWithString:inTable:">formulaWithString:inTable:</A></H3>
+		<CODE>+ (FSFormula*)<B>formulaWithString:</B>(NSString*)<EM>formulaString</EM> <B>inTable:</B>(FSTable*)<EM>table</EM>
+			
+		</CODE><P>
+		Use this instead of calling alloc/init.
+	
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- errorString"></A><H3><A NAME="//apple_ref/occ/instm/FSFormula/errorString">errorString</A></H3><P>
+		<CODE>- (NSString*)<B>errorString</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- initWithString:inTable:"></A><H3><A NAME="//apple_ref/occ/instm/FSFormula/initWithString:inTable:">initWithString:inTable:</A></H3><P>
+		<CODE>- (id)<B>initWithString:</B>(NSString*)<EM>formulaString</EM> <B>inTable:</B>(FSTable*)<EM>table</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- isOK"></A><H3><A NAME="//apple_ref/occ/instm/FSFormula/isOK">isOK</A></H3><P>
+		<CODE>- (BOOL)<B>isOK</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- recalculateInFormulaSpace:"></A><H3><A NAME="//apple_ref/occ/instm/FSFormula/recalculateInFormulaSpace:">recalculateInFormulaSpace:</A></H3><P>
+		<CODE>- (BOOL)<B>recalculateInFormulaSpace:</B>(FSFormulaSpace*)<EM>fs</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- replaceFormulaWithString:"></A><H3><A NAME="//apple_ref/occ/instm/FSFormula/replaceFormulaWithString:">replaceFormulaWithString:</A></H3><P>
+		<CODE>- (void)<B>replaceFormulaWithString:</B>(NSString*)<EM>formulaString</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- selectedKeySets"></A><H3><A NAME="//apple_ref/occ/instm/FSFormula/selectedKeySets">selectedKeySets</A></H3><P>
+		<CODE>- (NSArray*)<B>selectedKeySets</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- touchedSelection"></A><H3><A NAME="//apple_ref/occ/instm/FSFormula/touchedSelection">touchedSelection</A></H3><P>
+		<CODE>- (FSSelection*)<B>touchedSelection</B>
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2001 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

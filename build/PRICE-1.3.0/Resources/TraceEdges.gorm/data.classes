@@ -1,0 +1,47 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    FirstResponder = {
+	Actions = (
+	    "changeThreshold:",
+	    "edgeCancel:",
+	    "edgeOK:",
+	    "filterCancel:",
+	    "filterOK:",
+	    "filterTypeToggle:",
+	    "orderFrontFontPanel:",
+	    "parametersChanged:",
+	    "showEdges:",
+	    "showFilter:",
+	    "thresholdToggle:",
+	    "zeroCrossToggle:"
+	);
+	Super = NSObject;
+    };
+    PRCTraceEdges = {
+	Actions = (
+	    "thresholdToggle:",
+	    "changeThreshold:",
+	    "filterTypeToggle:"
+	);
+	Outlets = (
+	    edgeWindow,
+	    thresholdCheck,
+	    thresholdSlider,
+	    zeroCrossCheck,
+	    thresholdField,
+	    filterType
+	);
+	Super = PRFilterController;
+    };
+    PRFilterController = {
+	Actions = (
+	    "showFilter:",
+	    "filterOK:",
+	    "filterCancel:",
+	    "parametersChanged:"
+	);
+	Outlets = (
+	);
+	Super = NSObject;
+    };
+}

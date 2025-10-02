@@ -1,0 +1,119 @@
+GNUMail Version 1.2.2
+
+===============================================================================
+Copyright (C) 2001-2006 Ludovic Marcotte
+              2011-2017 Riccardo Mottola
+
+Author: Ludovic Marcotte <ludovic@Sophos.ca>
+        Riccardo Mottola <rm@gnu.org>
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+===============================================================================
+
+If you want very good documentation on how to get GNUMail running on
+your computer, look at the following documentation provided by
+Dennis Leeuw:
+
+http://gnustep.made-it.com/Guides/GNUmail.html
+
+For a quick installation guide, read the following lines.
+
+
+
+Compiling GNUMail for GNUstep
+===============================================================================
+
+To install GNUMail, install first GNUstep. You can get GNUstep at:
+
+http://www.gnustep.org
+ 
+Be sure to fully read and understand the GNUstep installation procedure. You
+can read a comprehensive guide on how to install GNUstep on Unix systems here:
+
+http://documents.made-it.com/GNUstep/Build/
+
+Once you've installed GNUstep, you have to install Pantomime.
+To install Pantomime, see:
+
+http://www.collaboration-world.com/pantomime/
+
+Once you've installed Pantomime, you have to install Addresses for GNUstep.
+To install Addresses for GNUstep, see:
+
+http://giesler.biz/bjoern/en/sw_addr.html
+
+Once you've installed GNUstep, Pantomime and Addresses for GNUstep, you can 
+install GNUMail. To compile it:
+
+make
+make install 
+
+To run it:
+
+openapp GNUMail
+
+To run it in a different language (English, French, German):
+
+defaults write NSGlobalDomain NSLanguages '(French)'
+openapp GNUMail
+
+
+
+Compiling GNUMail for Apple Mac OS X
+===============================================================================
+
+Get Pantomime and GNUMail sources from the URLs above.
+
+Uncompress them by using OpenUp (http://www.stepwise.com/Software/OpenUp/)
+or from the command-line using tar:
+
+% cd ~/Desktop (or whereever you saved the source files)
+% tar -zxvf GNUMail-x.y.z.tar.gz
+% tar -zxvf Pantomime-x.y.z.tar.gz
+
+Start Xcode. Open ~/Desktop/Pantomime/Pantomime.xcodeproj and
+choose from the menu Build -> Build. Close the project.
+
+Now, we are ready to compile GNUMail.
+
+Open in Xcode ~/Desktop/GNUMail/GNUMail.xcodeproj and
+choose from the menu Build -> Build.
+
+
+
+Compiling and installing the Emoticon and PGP bundles
+==============================================================================
+
+If you are an OS X user and you've compiled GNUMail, the Emoticon
+and PGP bundles have also been compiled when compiling the "GNUMail" target.
+
+Under GNUstep, simply do the following commands:
+
+% cd Bundles/Emoticon; make
+% cd ../PGP; make
+% cd ../../
+
+To install the bundles on OS X, simply copy GNUMail/build/Emoticon.bundle
+and GNUMail/build/PGP.bundle to ~/Library/GNUMail/.
+For example, one would do:
+
+% cp -R build/Emoticon.bundle ~/Library/GNUMail/
+
+Under GNUstep, simply copy GNUMail/Bundles/Emoticon.bundle
+and GNUMail/Bundles/PGP/PGP.bundle to 
+~/GNUstep/Library/GNUMail/. For example, one would do:
+
+% cp -a Bundles/PGP/PGP.bundle ~/GNUstep/Library/GNUMail/
+
+You must restart GNUMail if you've installed bundles and you want to use them.

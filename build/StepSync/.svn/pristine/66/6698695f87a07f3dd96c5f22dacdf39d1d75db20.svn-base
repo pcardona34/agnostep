@@ -1,0 +1,53 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    AppController = {
+	Actions = (
+	    "showPreferences:",
+	    "applyPreferences:",
+	    "setSourcePath:",
+	    "setTargetPath:",
+	    "analyzeAction:",
+	    "syncAction:",
+	    "stopTask:"
+	);
+	Outlets = (
+	    sourcePathField,
+	    sourceDirNumberField,
+	    sourceFileNumberField,
+	    sourceSizeField,
+	    targetPathField,
+	    targetDirNumberField,
+	    targetFileNumberField,
+	    targetSizeField,
+	    handleDirectoriesCheck,
+	    updateSourceCheck,
+	    insertItemsCheck,
+	    updateItemsCheck,
+	    deleteItemsCheck,
+	    analyzeButton,
+	    syncButton,
+	    stopButton,
+	    progressBar,
+	    logView,
+	    prefPanel,
+	    skipHiddenFoldersCheck,
+	    skipHiddenFilesCheck,
+	    skipThumbFilesCheck,
+	    forceUpdateIfOnlyDateDiffersCheck,
+	    timeToleranceField
+	);
+	Super = NSObject;
+    };
+    FirstResponder = {
+	Actions = (
+	    "analyzeAction:",
+	    "applyPreferences:",
+	    "setSourcePath:",
+	    "setTargetPath:",
+	    "showPreferences:",
+	    "stopTask:",
+	    "syncAction:"
+	);
+	Super = NSObject;
+    };
+}

@@ -1,0 +1,28 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = GSBoard; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {
+            ACTIONS = {
+                buttonOk = id; 
+                getHint = id; 
+                newGame = id; 
+                pause = id; 
+                showHallOfFame = id; 
+                undo = id; 
+            }; 
+            CLASS = GShisen; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                askNamePanel = NSPanel; 
+                board = GSBoard; 
+                hallOfFamePanel = NSPanel; 
+                nameField = NSTextField; 
+                scoresMatrix = NSMatrix; 
+                win = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

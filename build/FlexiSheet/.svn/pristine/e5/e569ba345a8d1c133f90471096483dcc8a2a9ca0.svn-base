@@ -1,0 +1,52 @@
+<HTML><HEAD><META HTTP-EQUIV="content-type" CONTENT="text/html;charset=iso-8859-1"><TITLE>
+
+fv (future value) Function
+
+</TITLE><META NAME="Copyright" CONTENT="Copyright Stefan Leuker."></HEAD><BODY BGCOLOR="#ffffff"><DIV ALIGN="left"><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%"><TR HEIGHT="40"><TD WIDTH="6" HEIGHT="40"></TD><TD HEIGHT="40" VALIGN="middle"><FONT FACE="Lucida Grande,Helvetica,Arial" SIZE="4"><B>
+
+fv&nbsp;(future value)&nbsp;Function
+
+</B></FONT></TD></TR></TABLE>
+<img src="../av/3PixelRule.tiff">
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+fv is a financial function that gives the future value of an investment based on equal payments and the interest earned during the period. It assumes payments are made at the end of each period.
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+Use fv to calculate the results of investing at a specified rate for a specified length of time.
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial"><B>
+
+Syntax:</B>
+<pre>  fv(payment, interest, term)</pre>
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+<B>payment:</B> the value of each payment.<BR>
+<B>interest:</B> the interest rate in percent.<BR>
+<B>term:</B> the number of payment periods.
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+Interest and term must be for the same period such as monthly or yearly. Fv assumes the payment occurs at the end of each period. If each payment occurs at the beginning of each period, multiply fv by (1 + interest).
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+<B>Example:</B><BR>
+Find how much you will have if you save $6000 at the end of each year for 20 years at 7.5% annual rate.
+<BLOCKQUOTE>fv(6000, 7.5, 20) gives $259,828.</BLOCKQUOTE>
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+If you save $500 at the end of each month for 20 years at 7.5% annual rate, how much more money will you have? 
+<BLOCKQUOTE> fv(500, 7.5/12, 20*12) gives $276,865. The monthly savings yields $17,037 more than the annual savings over 20 years.</BLOCKQUOTE>
+
+</FONT></P>
+</DIV></BODY></HTML>

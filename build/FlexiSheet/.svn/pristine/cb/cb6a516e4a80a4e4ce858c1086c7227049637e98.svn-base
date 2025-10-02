@@ -1,0 +1,49 @@
+<HTML><HEAD><META HTTP-EQUIV="content-type" CONTENT="text/html;charset=iso-8859-1"><TITLE>
+
+Writing Formulas
+
+</TITLE><META NAME="Copyright" CONTENT="Copyright Stefan Leuker."></HEAD><BODY BGCOLOR="#ffffff"><DIV ALIGN="left"><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%"><TR HEIGHT="40"><TD WIDTH="6" HEIGHT="40"></TD><TD HEIGHT="40" VALIGN="middle"><FONT FACE="Lucida Grande,Helvetica,Arial" SIZE="4"><B>
+
+Writing Formulas
+
+</B></FONT></TD></TR></TABLE>
+<img src="../av/3PixelRule.tiff">
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+A <i>formula</i> is a statement of the form selection&nbsp;=&nbsp;definition that determines the values assigned to a set of cells, items and categories.
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+Formulas help you evaluate, analyze and manipulate the information contained in a table. FlexiSheet allows you to use the mouse to create an unlimited number of formulas. Rather than using cryptic cell references, FlexiSheet formulas refer to the plain English names of tables, categories, groups, cells and items:
+<blockquote>
+Amount&nbsp;Available = After&nbsp;Tax&nbsp;Income - Expenses.Total
+</blockquote>
+
+</FONT></P>
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial">
+
+FlexiSheet displays formulas as a numbered list in the formula area.
+
+</FONT></P>
+<img src="../av/1PixelRule.tiff">
+<P><FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial"><B>
+Related Topics</B></FONT>
+<TABLE BORDER="0" CELLPADDING="2" CELLSPACING="0" WIDTH="100%">
+<TR><TD WIDTH="16" BGCOLOR="#eeeeee"></TD><TD><FONT FACE="Lucida Grande,Helvetica,Arial" SIZE="2">
+
+<A HREF="FormulaArea.html">
+
+Formula Area
+
+</A></FONT></TD></TR>
+<TR><TD WIDTH="16" BGCOLOR="#eeeeee"></TD><TD><FONT FACE="Lucida Grande,Helvetica,Arial" SIZE="2">
+
+<A HREF="FormulaList.html">
+
+Formula List
+
+</A></FONT></TD></TR>
+
+</TABLE>
+</DIV></BODY></HTML>

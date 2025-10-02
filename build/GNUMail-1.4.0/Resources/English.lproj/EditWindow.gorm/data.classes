@@ -1,0 +1,63 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    AutoCompletingTextField = {
+	Actions = (
+	    "complete:",
+	    "setDataSource:"
+	);
+	Outlets = (
+	    "_dataSource"
+	);
+	Super = NSTextField;
+    };
+    EditWindowController = {
+	Actions = (
+	    "insertFile:",
+	    "sendMessage:",
+	    "showBcc:",
+	    "showCc:",
+	    "accountSelectionHasChanged:"
+	);
+	Outlets = (
+	    subjectText,
+	    toText,
+	    ccText,
+	    bccText,
+	    subjectLabel,
+	    toLabel,
+	    ccLabel,
+	    bccLabel,
+	    sizeLabel,
+	    scrollView,
+	    textView,
+	    send,
+	    insert,
+	    addBcc,
+	    addCc,
+	    addresses,
+	    saveInDrafts,
+	    accountPopUpButton
+	);
+	Super = NSWindowController;
+    };
+    ExtendedTextView = {
+	Actions = (
+	    "pasteAsQuoted:"
+	);
+	Outlets = (
+	);
+	Super = NSTextView;
+    };
+    FirstResponder = {
+	Actions = (
+	    "accountSelectionHasChanged:",
+	    "insertFile:",
+	    "pasteAsQuoted:",
+	    "sendMessage:",
+	    "setDataSource:",
+	    "showBcc:",
+	    "showCc:"
+	);
+	Super = NSObject;
+    };
+}

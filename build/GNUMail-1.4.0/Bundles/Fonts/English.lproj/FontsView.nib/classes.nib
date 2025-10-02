@@ -1,0 +1,28 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {checkboxClicked = id; selectionInPopUpHasChanged = id; }; 
+            CLASS = FontsViewController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                checkbox = NSButton; 
+                headerNamePopUp = NSPopUpButton; 
+                headerNameSizePopUp = NSPopUpButton; 
+                headerValuePopUp = NSPopUpButton; 
+                headerValueSizePopUp = NSPopUpButton; 
+                messageListPopUp = NSPopUpButton; 
+                messageListSizePopUp = NSPopUpButton; 
+                messagePopUp = NSPopUpButton; 
+                messageSizePopUp = NSPopUpButton; 
+                plainTextMessagePopUp = NSPopUpButton; 
+                plainTextMessageSizePopUp = NSPopUpButton; 
+                previewLabel = NSTextField; 
+                previewTextField = NSTextField; 
+                view = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

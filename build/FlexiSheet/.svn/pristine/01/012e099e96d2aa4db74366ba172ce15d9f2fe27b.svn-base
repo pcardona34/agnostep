@@ -1,0 +1,268 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/FSFormulaSpace">FSFormulaSpace</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>NSObject</DD>
+</DL></blockquote>
+
+
+
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSFormulaSpace.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+A FSFormulaSpace instance (or short a formula space) 
+is the environment formulae belonging to a table 
+are executed in.<P>
+
+If variables are defined by one formula, the formula 
+space is the place this variable gets stored in. 
+So a formula that is executed later can access that variable.<P>
+
+The formula space is completely capsulated by FSTable. 
+An instance is automatically created for each FSTable instance. 
+Further instances should not be needed and are useless 
+without being attached to a table.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Variables</H2>
+	<blockquote>
+	
+		<CODE>FSTable *<B>_table</B>;</CODE><BR>
+		<CODE>NSMutableDictionary *<B>_variables</B>;</CODE><BR>
+		<CODE>NSMutableArray *<B>_formulae</B>;</CODE><BR>
+		<CODE>NSMutableArray *<B>_touchedKeySets</B>;</CODE><BR>
+		<CODE>FSKeySet *<B>_selection</B>;</CODE><BR>
+		<CODE>BOOL <B>_inRecalc</B>;</CODE><BR>
+		<CODE>int <B>_disabled</B>;</CODE><BR>
+	<P><TABLE>
+	
+		<TR><TD>_table</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_variables</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_formulae</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_touchedKeySets</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_selection</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_inRecalc</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>_disabled</TD><TD>No description.</TD></TR>
+	
+	</TABLE>
+	</blockquote>
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- initWithTable:">- initWithTable:</A></DD>
+		
+			<DD> <A HREF="#- table">- table</A></DD>
+		
+			<DD> <A HREF="#- formulae">- formulae</A></DD>
+		
+			<DD> <A HREF="#- addFormula:">- addFormula:</A></DD>
+		
+			<DD> <A HREF="#- insertFormula:atIndex:">- insertFormula:atIndex:</A></DD>
+		
+			<DD> <A HREF="#- removeFormula:">- removeFormula:</A></DD>
+		
+			<DD> <A HREF="#- declareVariable:withValue:">- declareVariable:withValue:</A></DD>
+		
+			<DD> <A HREF="#- valueForVariable:">- valueForVariable:</A></DD>
+		
+			<DD> <A HREF="#- removeVariable:">- removeVariable:</A></DD>
+		
+			<DD> <A HREF="#- removeAllVariables">- removeAllVariables</A></DD>
+		
+			<DD> <A HREF="#- formulaCalculatingKeySet:">- formulaCalculatingKeySet:</A></DD>
+		
+			<DD> <A HREF="#- confirmTouchedKeySets:">- confirmTouchedKeySets:</A></DD>
+		
+			<DD> <A HREF="#- selection">- selection</A></DD>
+		
+			<DD> <A HREF="#- setSelection:">- setSelection:</A></DD>
+		
+			<DD> <A HREF="#- recalculate">- recalculate</A></DD>
+		
+			<DD> <A HREF="#- disableRecalculation">- disableRecalculation</A></DD>
+		
+			<DD> <A HREF="#- enableRecalculation">- enableRecalculation</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- addFormula:"></A><H3><A NAME="//apple_ref/occ/instm/FSFormulaSpace/addFormula:">addFormula:</A></H3><P>
+		<CODE>- (void)<B>addFormula:</B>(FSFormula*)<EM>aFormula</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- confirmTouchedKeySets:"></A><H3><A NAME="//apple_ref/occ/instm/FSFormulaSpace/confirmTouchedKeySets:">confirmTouchedKeySets:</A></H3><P>
+		<CODE>- (NSArray*)<B>confirmTouchedKeySets:</B>(NSArray*)<EM>keySets</EM>
+			
+		</CODE><P>
+		Removes all key sets from the array that have been touched 
+by prior formulae already. Adds all other key sets to the 
+touched list.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- declareVariable:withValue:"></A><H3><A NAME="//apple_ref/occ/instm/FSFormulaSpace/declareVariable:withValue:">declareVariable:withValue:</A></H3><P>
+		<CODE>- (void)<B>declareVariable:</B>(NSString*)<EM>varName</EM> <B>withValue:</B>(id)<EM>value</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- disableRecalculation"></A><H3><A NAME="//apple_ref/occ/instm/FSFormulaSpace/disableRecalculation">disableRecalculation</A></H3><P>
+		<CODE>- (void)<B>disableRecalculation</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- enableRecalculation"></A><H3><A NAME="//apple_ref/occ/instm/FSFormulaSpace/enableRecalculation">enableRecalculation</A></H3><P>
+		<CODE>- (void)<B>enableRecalculation</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- formulaCalculatingKeySet:"></A><H3><A NAME="//apple_ref/occ/instm/FSFormulaSpace/formulaCalculatingKeySet:">formulaCalculatingKeySet:</A></H3><P>
+		<CODE>- (FSFormula*)<B>formulaCalculatingKeySet:</B>(FSKeySet*)<EM>keySet</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- formulae"></A><H3><A NAME="//apple_ref/occ/instm/FSFormulaSpace/formulae">formulae</A></H3><P>
+		<CODE>- (NSArray*)<B>formulae</B>
+		</CODE><P>
+		Returns the list of formulas in the formula space.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- initWithTable:"></A><H3><A NAME="//apple_ref/occ/instm/FSFormulaSpace/initWithTable:">initWithTable:</A></H3><P>
+		<CODE>- (id)<B>initWithTable:</B>(FSTable*)<EM>table</EM>
+			
+		</CODE><P>
+		Designated initializer.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- insertFormula:atIndex:"></A><H3><A NAME="//apple_ref/occ/instm/FSFormulaSpace/insertFormula:atIndex:">insertFormula:atIndex:</A></H3><P>
+		<CODE>- (void)<B>insertFormula:</B>(FSFormula*)<EM>aFormula</EM> <B>atIndex:</B>(int)<EM>index</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- recalculate"></A><H3><A NAME="//apple_ref/occ/instm/FSFormulaSpace/recalculate">recalculate</A></H3><P>
+		<CODE>- (void)<B>recalculate</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- removeAllVariables"></A><H3><A NAME="//apple_ref/occ/instm/FSFormulaSpace/removeAllVariables">removeAllVariables</A></H3><P>
+		<CODE>- (void)<B>removeAllVariables</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- removeFormula:"></A><H3><A NAME="//apple_ref/occ/instm/FSFormulaSpace/removeFormula:">removeFormula:</A></H3><P>
+		<CODE>- (void)<B>removeFormula:</B>(FSFormula*)<EM>aFormula</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- removeVariable:"></A><H3><A NAME="//apple_ref/occ/instm/FSFormulaSpace/removeVariable:">removeVariable:</A></H3><P>
+		<CODE>- (void)<B>removeVariable:</B>(NSString*)<EM>varName</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- selection"></A><H3><A NAME="//apple_ref/occ/instm/FSFormulaSpace/selection">selection</A></H3><P>
+		<CODE>- (FSKeySet*)<B>selection</B>
+		</CODE><P>
+		Returns the current selection, i.e. the key set representing 
+the value that is currently calculated.<P>
+
+This method should only be called by formulas in this 
+formula space during execution of their calculate method.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setSelection:"></A><H3><A NAME="//apple_ref/occ/instm/FSFormulaSpace/setSelection:">setSelection:</A></H3><P>
+		<CODE>- (void)<B>setSelection:</B>(FSKeySet*)<EM>keySet</EM>
+			
+		</CODE><P>
+		Sets the key set representing the value currently in calculation. 
+There should be no need to call this method directly.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- table"></A><H3><A NAME="//apple_ref/occ/instm/FSFormulaSpace/table">table</A></H3><P>
+		<CODE>- (FSTable*)<B>table</B>
+		</CODE><P>
+		Returns the FSTable instance this formula space is attached to. 
+All FSFormulaSpace instances are attached to exactly one table.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- valueForVariable:"></A><H3><A NAME="//apple_ref/occ/instm/FSFormulaSpace/valueForVariable:">valueForVariable:</A></H3><P>
+		<CODE>- (id)<B>valueForVariable:</B>(NSString*)<EM>varName</EM>
+			
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2001 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

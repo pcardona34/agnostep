@@ -1,0 +1,47 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    FirstResponder = {
+	Actions = (
+	    "briconCancel:",
+	    "briconOk:",
+	    "briconReset:",
+	    "changeBri:",
+	    "changeCon:",
+	    "filterCancel:",
+	    "filterOK:",
+	    "parametersChanged:",
+	    "showBriCon:",
+	    "showFilter:"
+	);
+	Super = NSObject;
+    };
+    PRCBriCon = {
+	Actions = (
+	    "showBriCon:",
+	    "briconReset:",
+	    "changeBri:",
+	    "changeCon:"
+	);
+	Outlets = (
+	    briconWindow,
+	    briStep,
+	    briSlider,
+	    briVal,
+	    conStep,
+	    conSlider,
+	    conVal
+	);
+	Super = PRFilterController;
+    };
+    PRFilterController = {
+	Actions = (
+	    "showFilter:",
+	    "filterOK:",
+	    "filterCancel:",
+	    "parametersChanged:"
+	);
+	Outlets = (
+	);
+	Super = NSObject;
+    };
+}

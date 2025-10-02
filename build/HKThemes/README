@@ -1,0 +1,10 @@
+README
+======
+
+Each directory "xxx.definition" defines a theme for HighlighterKit. Gemas.app 
+will search these themes at user path "$(GNUSTEP_USER_DIR_LIBRARY)/HKThemes". 
+You can make your own themes. Just create a directory "xxx.definition", where 
+xxx is your desired name. And copy the content of any other theme inside this 
+directory. Then you only need change the definition of the syntax files 
+according with the HighlighterKit's documentation. And next time you launch 
+Gemas.app your theme will be available at preferences panel.

@@ -86,28 +86,6 @@ done
 
 stop
 
-### Target of Tools
-if ! [ -d $HOME/.local/bin ];then
-	mkdir -p $HOME/.local/bin
-fi
-
-###################################################
-### Prevent .cache issue
-
-TITLE="Fixing cache issue"
-echo "$TITLE" >>$LOG
-title "$TITLE"
-
-grep -e ".cache" $HOME/.bashrc &>/dev/null
-if [ $? -eq 0 ];then
-	info "$HOME/.bashrc already fixes the '.cache' issue."
-else
-	cat RESOURCES/SCRIPTS/_bashrc >> $HOME/.bashrc
-fi
-ok "Done"
-
-#stop
-
 ###################################################
 ### User WindowMaker profile
 TITLE="User's WindowMaker profile"
@@ -132,9 +110,12 @@ stop
 TITLE="Autostart"
 echo "$TITLE" >>$LOG
 title "$TITLE"
-
+DEST_AUTO=$HOME/GNUstep/Library/WindowMaker
+if [ -f ${DEST_AUTO}/autostart ];then
+	rm --force ${DEST_AUTO}/autostart
+fi
 cd RESOURCES/SCRIPTS
-cp --remove-destination autostart $HOME/GNUstep/Library/WindowMaker/autostart
+cp autostart ${DEST_AUTO}/
 printf "Autostart for Window Maker has been updated.\n"
 cd $_PWD
 ok "Done"
@@ -172,7 +153,7 @@ TITLE="Wallpaper"
 echo "$TITLE" >>$LOG
 title "$TITLE"
 
-WP=fond_pi_step_initiative.png
+WP=fond_agnostep.png
 #WP_FOLDER=$HOME/GNUstep/Library/WindowMaker/Backgrounds
 WP_FOLDER=/usr/share/wallpapers
 if [ ! -d $WP_FOLDER ];then
@@ -198,6 +179,18 @@ ok "Done"
 
 stop
 
+### Installing Tools and confs... Setup_Printer
+TITLE="Setup_Printer"
+echo "$TITLE" >>$LOG
+title "$TITLE"
+
+cd TOOLS || exit 1
+sudo cp Setup_Printer /usr/local/bin/
+cd $_PWD
+ok "Done"
+
+stop
+
 ### Installing Tools and confs... Conky
 TITLE="Conky Monitoring Board"
 echo "$TITLE" >>$LOG
@@ -205,6 +198,13 @@ title "$TITLE"
 
 cd TOOLS/agnostep_conky || exit 1
 . ./install_agnostep_conky.sh
+cd $_PWD
+### We must complete conky symbols: icon battery
+ICOBAT=RESOURCES/ICONS/battery.png
+if [ ! -d /usr/local/share/icons/conky ];then
+	sudo mkdir -p /usr/local/share/icons/conky
+fi
+sudo cp ${ICOBAT} /usr/local/share/icons/conky/
 cd $_PWD
 ok "Done"
 
@@ -430,18 +430,16 @@ do
 		mv $LOG Documents/
 	fi
 done
-info "All the logs were moved into the Documents Folder, apart from 'ENJOY.log'."
 
 stop
 
 ###########################################
 
-MESSAGE="The PiStep Initiative Desktop is ready to use now."
+MESSAGE="A G N o S t e p   Desktop is ready to use now."
 
 info "$MESSAGE"
 
 info "Login/Display Manager: after testing the Desktop, log out and execute:"
 cli "./7_install_DM.sh"
 
-info "The Desktop will load soon. Wait..."
-sleep 10
+sleep 5

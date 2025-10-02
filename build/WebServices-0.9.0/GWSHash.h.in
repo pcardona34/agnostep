@@ -1,0 +1,217 @@
+/** 
+   Copyright (C) 2013 Free Software Foundation, Inc.
+   
+   Written by:  Niels Grewe <niels.grewe@halbordnung.de>
+   Date:	May 2013
+   
+   This file is part of the WebServices Library.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 3 of the License, or (at your option) any later version.
+   
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Library General Public License for more details.
+   
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free
+   Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111 USA.
+
+   */ 
+
+#ifndef	INCLUDED_GWSHASH_H
+#define	INCLUDED_GWSHASH_H
+
+#import <Foundation/NSObject.h>
+
+#if     defined(__cplusplus)
+extern "C" {
+#endif
+
+#ifndef GWSHash_INTERNAL
+#define GWSHash_DEPRECATED __attribute__((deprecated))
+#else
+#define GWSHash_DEPRECATED
+#endif
+
+/**
+ * Plain SHA1 hash. Has known weaknesses. Avoid
+ */
+extern NSString* const kGWSHashSHA1 GWSHash_DEPRECATED;
+
+#ifndef USE_GNUTLS
+#define USE_GNUTLS      @HAVE_GNUTLS@
+#endif
+
+#if  defined(GNUSTEP) || USE_GNUTLS == 1
+/**
+ * Plain MD5 hash. Insecure. Do not use.
+ */
+extern NSString* const kGWSHashMD5 GWSHash_DEPRECATED;
+
+#endif
+
+#if USE_GNUTLS == 1
+/**
+ * Salted SHA1 hash. Hash known weaknesses. Avoid.
+ */
+extern NSString* const kGWSHashSSHA1 GWSHash_DEPRECATED;
+
+/**
+ * Salted MD5 hash. Insecure. Do not use.
+ */
+extern NSString* const kGWSHashSMD5 GWSHash_DEPRECATED;
+
+
+extern NSString* const kGWSHashSHA256;
+
+extern NSString* const kGWSHashSHA512;
+
+extern NSString* const kGWSHashSSHA256;
+
+extern NSString* const kGWSHashSSHA512;
+#endif
+
+/**
+ * This class can use different hash algorithms to generate or verify hashes
+ * from parameters used in web service requests. It can be used to ensure that
+ * the request has not been tampered with. 
+ * The procedure for generating a hash is as follows:
+ * 
+ * 1. Select a hash algorithm
+ * 2. Generate a random salt
+ * 3. Add the value of GWSMethodKey or the explicit method argument
+ *    (and GWSRPCID if present) to the input string.
+ * 4. Fix the order of all parameters from GWSParametersKey
+ *    or GWSFaultKey, depending on whether the later exists 
+ *    (order is either explicit or by alphabetic)
+ * 5. Serialise the parameters in a stable way. The format is JSON.
+ *    Stability is achieved by doing the following:
+ *    - No whitespace (except where significant in string parameters,
+ *      of course)
+ *    - If the order of keys in a dictionary is not given, use
+ *      alphabetic order.
+ *    - convert timestamps to standard ISO8601 strings in the UTC
+ *      timezone               
+ * 6. Add any extra "secret" string the user has specified.
+ * 7. Prepend the salt
+ * 8. Hash the resulting string
+ * 9. Output the following string '{' + hashMethod + '}' + hash + salt.
+ *
+ * This can be done using +hashWithAlgorithm:method:parameters:order:extra: 
+ * and calling -stringValue on the resulting object.
+ * The resulting string should be added to the parameters at a suitable key.
+ *
+ * The procedure for verifying a hash is as follows:
+ *
+ * 1. Get the hash string from the parameters and remove the corresponding key
+ * 2. Get the hash method, salt and actual hash from the hash string.
+ * 3. Use the parameters to look up potential additional "secrets" 
+ * 4. Perform steps 3. to 8. from the hash generation algorithm  
+ * 5. Verify that the computed hash matches the one specified.
+ * 
+ * You do this by obtaining an hash object using +hashWithString: and calling 
+ * -verifyWithParameters:order:extra:excluding: on it.
+ */
+@interface      GWSHash : NSObject <NSCopying>
+{
+@private
+  NSString              *method;
+  NSString              *salt;
+  NSString		*hash;
+}
+
+/** Compute and return a digest of the supplied data using the specified
+ * hashAlgorithm.
+ */
++ (NSData*) computeDigest: (NSString*)hashAlgorithm
+                     from: (NSData*)data;
+
+/** Compute and return the HMAC of the supplied data using the specified
+ * hashAlgorithm and key.
+ */
++ (NSData*) computeHMAC: (NSString*)hashAlgorithm
+                   from: (NSData*)data
+                    key: (NSData*)key;
+
+/**
+ * Parses a string of the format '{' + hashMethod + '}' + hash + salt
+ * into a GWSHash. Returns nil if the string cannot be parsed.
+ */
++ (GWSHash*) hashWithString: (NSString*)string;
+
+/** Generates a cryptographically random salt of the specified length in
+ * the supplied buffer.  This attmpts to use the best random data source
+ * available (from gnutls or /dev/urandom or the C library random number
+ * generator).<br />
+ * This method is used internally to generate the nonce (which is a hex
+ * encoded string representation of 16 bytes of random data).
+ */
++ (void) salt: (uint8_t*)buffer size: (unsigned)length;
+
+/** Return the hash algorithm used by the receiver.
+ */
+- (NSString*) hashAlgorithm;
+
+/** Return the hash value of the receiver.
+ */
+- (NSString*) hashValue;
+
+/**
+ * Generate a hash for the specified parameters and order. Returns nil
+ * if the hash algorithm is not supported. If parameters is empty or nil,
+ * returns the hash of the empty string (or of the salt, if a salted 
+ * hash is requested).
+ * If <var>order</var> is nil and GWSOrderKey is not present in the
+ * parameters, the parameters are hashed in alphabetic
+ * order. GWSHash tries to ensure that they are written to the wire to that 
+ * order, but you should consider it your responsibility to ensure that the
+ * order is correct.
+ * <var>additionalValue</var> can be a secret shared between sender
+ * and receiver that should not been transmitted over the wire. Pass an 
+ * NSString if you just want to append it to the string. Pass a NSData 
+ * object and set <var>extraIsKey</var> to YES if you want to use the additional
+ * value as a key for HMAC generation.
+ */
++ (GWSHash*) hashWithAlgorithm: (NSString*)hashAlgorithm
+                        method: (NSString*)rpcMethod
+                    parameters: (NSDictionary*)parameters
+                         order: (NSArray*)order
+                         extra: (id)additionalValue
+			asHMAC: (BOOL)extraIsKey;
+
+/** Return the salt used by the receiver.
+ */
+- (NSString*) salt;
+
+/** return the string value of the receiver.
+ */
+- (NSString*) stringValue;
+
+/**
+ * Verifies a previously initialized hash using the parameters
+ * and order values from the web service request. The
+ * <var>additionalValue</var> can be secret shared between sender
+ * and receiver that has not been transmitted over the wire.
+ * Pass an NSString to append it to the string that weill be hashed.
+ * Pass an NSData and set <var>extraIsKey</var> to use it as key
+ * data for HMAC generation.
+ * <var>hashKey</var> specifies a key in the parameters dictionary
+ * to be excluded. This should be the key containing the hash itself. 
+ */
+- (BOOL) verifyWithParameters: (NSDictionary*)parameters
+                        order: (NSArray*)order
+                        extra: (id)additionalValue
+		       asHMAC: (BOOL)extraIsKey
+                    excluding: (NSString*)hashKey;
+@end
+
+#if	defined(__cplusplus)
+}
+#endif
+
+#endif
+

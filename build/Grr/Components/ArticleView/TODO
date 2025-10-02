@@ -1,0 +1,4 @@
+
+- Make the parser understand <br> and <br/> tags in <pre> tags
+  This is going to be an ugly hack, but there's no way around.
+

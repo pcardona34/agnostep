@@ -1,0 +1,175 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<BR><BR><FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/NSObject (FSTableDataSource)">NSObject (FSTableDataSource)</A></H1></FONT><BR>
+
+
+
+
+
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>FSTableView.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Category Description</H2>
+No category description.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- pageHeadersForTableView:">- pageHeadersForTableView:</A></DD>
+		
+			<DD> <A HREF="#- rightHeadersForTableView:">- rightHeadersForTableView:</A></DD>
+		
+			<DD> <A HREF="#- topHeadersForTableView:">- topHeadersForTableView:</A></DD>
+		
+			<DD> <A HREF="#- sideHeadersForTableView:">- sideHeadersForTableView:</A></DD>
+		
+			<DD> <A HREF="#- pageKeySetsForTableView:">- pageKeySetsForTableView:</A></DD>
+		
+			<DD> <A HREF="#- rightKeySetsForTableView:">- rightKeySetsForTableView:</A></DD>
+		
+			<DD> <A HREF="#- topKeySetsForTableView:">- topKeySetsForTableView:</A></DD>
+		
+			<DD> <A HREF="#- sideKeySetsForTableView:">- sideKeySetsForTableView:</A></DD>
+		
+			<DD> <A HREF="#- tableView:objectForKeySet:">- tableView:objectForKeySet:</A></DD>
+		
+			<DD> <A HREF="#- tableView:setObject:forKeySet:">- tableView:setObject:forKeySet:</A></DD>
+		
+			<DD> <A HREF="#- tableShouldBecomeFirstResponder">- tableShouldBecomeFirstResponder</A></DD>
+		
+			<DD> <A HREF="#- defaultFont">- defaultFont</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- defaultFont"></A><H3><A NAME="//apple_ref/occ/instm/NSObject (FSTableDataSource)/defaultFont">defaultFont</A></H3><P>
+		<CODE>- (NSFont*)<B>defaultFont</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- pageHeadersForTableView:"></A><H3><A NAME="//apple_ref/occ/instm/NSObject (FSTableDataSource)/pageHeadersForTableView:">pageHeadersForTableView:</A></H3><P>
+		<CODE>- (NSArray*)<B>pageHeadersForTableView:</B>(FSTableView*)<EM>tv</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- pageKeySetsForTableView:"></A><H3><A NAME="//apple_ref/occ/instm/NSObject (FSTableDataSource)/pageKeySetsForTableView:">pageKeySetsForTableView:</A></H3><P>
+		<CODE>- (NSArray*)<B>pageKeySetsForTableView:</B>(FSTableView*)<EM>tv</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- rightHeadersForTableView:"></A><H3><A NAME="//apple_ref/occ/instm/NSObject (FSTableDataSource)/rightHeadersForTableView:">rightHeadersForTableView:</A></H3><P>
+		<CODE>- (NSArray*)<B>rightHeadersForTableView:</B>(FSTableView*)<EM>tv</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- rightKeySetsForTableView:"></A><H3><A NAME="//apple_ref/occ/instm/NSObject (FSTableDataSource)/rightKeySetsForTableView:">rightKeySetsForTableView:</A></H3><P>
+		<CODE>- (NSArray*)<B>rightKeySetsForTableView:</B>(FSTableView*)<EM>tv</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- sideHeadersForTableView:"></A><H3><A NAME="//apple_ref/occ/instm/NSObject (FSTableDataSource)/sideHeadersForTableView:">sideHeadersForTableView:</A></H3><P>
+		<CODE>- (NSArray*)<B>sideHeadersForTableView:</B>(FSTableView*)<EM>tv</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- sideKeySetsForTableView:"></A><H3><A NAME="//apple_ref/occ/instm/NSObject (FSTableDataSource)/sideKeySetsForTableView:">sideKeySetsForTableView:</A></H3><P>
+		<CODE>- (NSArray*)<B>sideKeySetsForTableView:</B>(FSTableView*)<EM>tv</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- tableShouldBecomeFirstResponder"></A><H3><A NAME="//apple_ref/occ/instm/NSObject (FSTableDataSource)/tableShouldBecomeFirstResponder">tableShouldBecomeFirstResponder</A></H3><P>
+		<CODE>- (BOOL)<B>tableShouldBecomeFirstResponder</B>
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- tableView:objectForKeySet:"></A><H3><A NAME="//apple_ref/occ/instm/NSObject (FSTableDataSource)/tableView:objectForKeySet:">tableView:objectForKeySet:</A></H3><P>
+		<CODE>- (id)<B>tableView:</B>(FSTableView*)<EM>tv</EM> <B>objectForKeySet:</B>(FSKeySet*)<EM>aKeySet</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- tableView:setObject:forKeySet:"></A><H3><A NAME="//apple_ref/occ/instm/NSObject (FSTableDataSource)/tableView:setObject:forKeySet:">tableView:setObject:forKeySet:</A></H3><P>
+		<CODE>- (id)<B>tableView:</B>(FSTableView*)<EM>tv</EM> <B>setObject:</B>(id)<EM>anObject</EM> <B>forKeySet:</B>(FSKeySet*)<EM>aKeySet</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- topHeadersForTableView:"></A><H3><A NAME="//apple_ref/occ/instm/NSObject (FSTableDataSource)/topHeadersForTableView:">topHeadersForTableView:</A></H3><P>
+		<CODE>- (NSArray*)<B>topHeadersForTableView:</B>(FSTableView*)<EM>tv</EM>
+			
+		</CODE><P>
+		No method description.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- topKeySetsForTableView:"></A><H3><A NAME="//apple_ref/occ/instm/NSObject (FSTableDataSource)/topKeySetsForTableView:">topKeySetsForTableView:</A></H3><P>
+		<CODE>- (NSArray*)<B>topKeySetsForTableView:</B>(FSTableView*)<EM>tv</EM>
+			
+		</CODE><P>
+		No method description.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2002 by Stefan Leuker.  All Rights Reserved.  
+<P>
+</BODY></HTML>

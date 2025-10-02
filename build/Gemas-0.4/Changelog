@@ -1,0 +1,451 @@
+2014-02-06 German A. Arias <germanandre@gmx.es>
+
+        * GemasInfo.plist: Update info to make a release.
+
+2014-01-26 German A. Arias <germanandre@gmx.es>
+
+        * GemasInfo.plist:
+        * GNUmakefile: Update version.
+
+2014-01-25 German A. Arias <germanandre@gmx.es>
+
+        * Bundle/Gemas/GemasEditorView.m: Update methods -insertNewLine: and
+        -insertText:.
+
+2014-01-25 German A. Arias <germanandre@gmx.es>
+
+        * GemasEditorView.m: Add comments at -insertNewLine: and
+        at -insertText:.
+
+2014-01-25 German A. Arias <germanandre@gmx.es>
+
+        * GemasEditorView.m: Fix bug in -insertNewLine:.
+
+2014-01-24 German A. Arias <germanandre@gmx.es>
+
+        * Bundle/Gemas/GemasEditorView.m: Update method -nextPArameter:.
+
+2014-01-24 German A. Arias <germanandre@gmx.es>
+
+        * GemasEditorView.m: Rewrite method -nextParameter:.
+
+2014-01-18 German A. Arias <germanandre@gmx.es>
+
+        * GemasEditorView.m:
+        * Bundle/Gemas/GemasEditorView.m: Fix bug in methods that handle the
+        TAB key.
+
+2014-01-18 German A. Arias <germanandre@gmx.es>
+
+        * Bundle/Gemas/GemasEditor.h:
+        * Bundle/Gemas/GemasEditor.m: Add code at -createInternalView to add
+        labels for line number and column number. Add also the corresponding
+        delegate method -textViewDidChangeSelection: to handle the content of
+        these labels.
+
+2014-01-17 German A. Arias <germanandre@gmx.es>
+
+        * Bundle/Gemas/GemasEditorView.m (-openGoToLinePanel): Remove the title
+        at panel.
+
+2014-01-17 German A. Arias <germanandre@gmx.es>
+
+        * Bundle/Gemas/GemasEditorView.h:
+        * Bundle/Gemas/GemasEditorView.m: Add methods -openGoToLinePanel: and
+        -goToLine:, to search a line.
+
+2014-01-12 German A. Arias <germanandre@gmx.es>
+
+        * Bundle/Gemas/GemasEditorView.m (-keyDown:):
+        * English.lproj/Gemas.gorm/objects.gorm:
+        * Spanish.lproj/Gemas.gorm/objects.gorm: Change Command key for
+        Alternate key in some menu options.
+
+2014-01-12 German A. Arias <germanandre@gmx.es>
+
+        * GemasEditorView.m: Update year.
+        * Bundle/Gemas/Resources/words.plist: Update list of automplete words.
+        * Bundle/Gemas/GemasEditorView.h:
+        * Bundle/Gemas/GemasEditorView.m: Update methods.
+
+2014-01-11 German A. Arias <germanandre@gmx.es>
+
+        * Resources/words.plist: Add more methods and classes.
+        * GemasEditorView.m: Improve the usage of TAB key, to indent the line
+        when the user is writing a method in several lines (new method
+         -insertSpace). In other cases insert 2 or 4 spaces.
+
+2013-11-23 German A. Arias <germanandre@gmx.es>
+
+        * Bundle/Gemas/GemasEditorView.m: Update methods.
+
+2013-11-15 German A. Arias <germanandre@gmx.es>
+
+        * GemasEditorView.m (-insertNewLine:): Fix problem with "case"
+        indentation.
+
+2013-11-05 German A. Arias <germanandre@gmx.es>
+
+        * GemasEditorView.m (-insertNewLine:) and (-insertText:): Move the
+        indentation for ChangeLog files from (-insertNewLine:) to (-insertText:).
+
+2013-11-05 German A. Arias <germanandre@gmx.es>
+        
+        * GemasEditorView.m (-insertNewLine) and (-indentForCloseBracket):
+        Small improvement to indent new line, 
+
+2013-11-01 German A. Arias <germanandre@gmx.es>
+        
+        * GemasEditorView.m: Change indent for previous changes, 5 spaces to 3.
+
+2013-11-01 German A. Arias <germanandre@gmx.es>
+        
+        * GemasEditorView.m (-insertText): Improvements to handle parenthesis
+        and open brackets when statements has multiple lines (part 3).
+
+2013-11-01 German A. Arias <germanandre@gmx.es>
+        
+        * GemasEditorView.m (-insertText): Improvements to handle parenthesis
+        and open brackets when statements has multiple lines (part 2).
+
+2013-11-01 German A. Arias <germanandre@gmx.es>
+        
+        * GemasEditorView.m (-insertText): Fix problem in last commit.
+
+2013-10-30 German A. Arias <germanandre@gmx.es>
+
+        * GemasEditorView.h: Add otherIndentCharacters.
+        * GemasEditorView.m (-insertText): Improvements to handle parenthesis
+        and open brackets when statements has multiple lines.
+
+2013-10-30 German A. Arias <germanandre@gmx.es>
+        
+        * GemasEditorView.m: Add private method (-indentForCloseBracket) to
+        calculate the indentation of a close bracket.
+        * GemasEditorView.m (-insertText): Use the new method when type a close
+        bracket.
+
+2013-10-29 German A. Arias <germanandre@gmx.es>
+        
+        * Spanish.lproj/Gemas.gorm:
+        * English.lproj/Gemas.gorm: Add two new menu items.
+        * GemasEditorView.m: Add methods -deleteToBeginningOfLine: and
+        -deleteToEndOfLine:.
+
+2013-10-27 German A. Arias <germanandre@gmx.es>
+        
+        * English.lproj/Gemas.gorm:
+        * Spanish.lproj/Gemas.gorm: Add new option to menu.
+        * GemasEditorView.m (-nextParameter:): New method to jump to the next
+        parameter (:).
+        * Resources/words.plist: Add methods of class NSApplication.
+
+2013-10-09 German A. Arias <germanandre@gmx.es>
+        
+        * GemasDocument.m (-setupNewDefaults):
+        * Bundle/Gemas/GemasEditor.m (-setupNewDefaults): Added comment.
+
+2013-10-07 German A. Arias <germanandre@gmx.es>
+        
+        * Bundle/Gemas: Added bundle Gemas for use with ProjectCenter.
+
+2013-09-29 German A. Arias <germanandre@gmx.es>
+
+  * GemasEditorView.m (-rangeForUserCompletion): Add this method to determine
+  correctly the range of the word, ignoring characters "[" and "(".
+
+2013-09-25 German A. Arias <germanandre@gmx.es>
+        
+  * English.lproj/Preferences.gorm:
+  * Spanish.lproj/Preferences.gorm: Add close button.
+
+2013-07-28 German A. Arias <german@xelalug.org>
+
+  * English.lproj/Preferences.gorm:
+  * Spanish.lproj/Preferences.gorm: Connect outlet fontSizeStepper.
+
+2013-07-28 German A. Arias <german@xelalug.org>
+
+  * GemasEditorView.m (-insertTab:): Insert a real TAB if user add it
+  from menu.
+  * English.lproj/Gemas.gorm:
+  * Spanish.lproj/Gemas.gorm: Add a new menu item to add a real TAB.
+
+2013-07-26 German A. Arias <german@xelalug.org>
+
+  * GemasDocument.m: Changes in -readFromFile:ofType: and in
+  -revertToContentsOfURL:ofType:error: to a better replace for tabs.
+  Add also changes in -writeToFile:ofType: to remove the added tabs
+  when load the file. This ensure a better compatibility with other
+  editors.
+
+2013-07-24 German A. Arias <german@xelalug.org>
+
+  * GemasDocument.m: Set the color and font at -setupNewDefaults
+  and don't set the highlighter in -awakeFromNib. This is done by
+  -setupNewDefaults.
+
+2013-07-23 German A. Arias <german@xelalug.org>
+
+  * English.lproj/Editor.gorm:
+  * Spanish.lproj/Editor.gorm: Remove horizontal scrollbar.
+
+2013-07-23 German A. Arias <german@xelalug.org>
+
+  * GemasDocument.h:
+  * GemasController.h: Update years in copyright.
+
+2013-07-12 German A. Arias <german@xelalug.org>
+
+  * GemasController.h:
+  * GemasController.m: Remove delegate method for autocomplete. And
+  add a method to return the list of words.
+  * GemasEditorView.m: Remove last change.
+  * GemasDocument.h:
+  * GemasDocument.m: Add here the delegate method for autocomplete.
+
+2013-07-05 German A. Arias <german@xelalug.org>
+
+  * GemasController.h:
+  * GemasController.m: Add delegate method for autocomplete.
+  * GemasEditorView.m: Set as delegate the app delegate.
+  * Resources/words.plist: Words for autocomplete.
+  * English.lproj/Gemas.gorm:
+  * Spanish.lproj/Gemas.gorm: Add "Complete" item.
+  * GNUmakefile: Add new file.
+
+2013-03-10 German A. Arias <german@xelalug.org>
+
+	* GemasDocument.m:
+	* GemasEditorView.m: Don't convert tabs into spaces in makefiles. And
+	use "TabConversion" value when load the file, not "Indentation". This
+	is the correct way.
+
+2013-03-10 German A. Arias <german@xelalug.org>
+
+	* Resources/nonEnglishCharacters.plist: Add inverted exclamation.
+
+2013-03-10 German A. Arias <german@xelalug.org>
+
+	* GemasDocument.m: Don't resize the window in -awakeFromNib.
+	* EditorWindow.h:
+	* EditorWindow.m: New class to handle the user editor size.
+	* English.lproj/Editor.gorm:
+	* Spanish.lproj/Editor.gorm: Adopt new class.
+	* GNUmakefile: Add new files.
+
+2013-03-01 German A. Arias <german@xelalug.org>
+
+	* GemasDocument.m:
+	* GemasEditorView.m:
+	* GemasController.m: Fix compiler warnings with clang.
+
+2012-07-11 German Arias <german@xelalug.org>
+
+	* GemasDocument.m: Revert last change. Bad idea.
+
+2012-04-07 German Arias <german@xelalug.org>
+
+	* GemasDocument.m: Set the editor size at -windowDidBecomeMainWindow:
+	since doing this at -awakeFromNib: result in a wrong place for the
+	in-window menu in some desktops.
+
+2012-02-07 German Arias <german@xelalug.org>
+        
+        * GemasEditorView (-createSyntaxHighlighterForFileType:): Check if 
+        is a new file.
+
+2012-02-07 German Arias <german@xelalug.org>
+
+        * GemasInfo.plist: Added ChangeLog and Generic files.
+        * GemasEditorView.m (-insertText:): Fix bugs.
+
+2012-02-07 German Arias <german@xelalug.org>
+        
+        * Resources/AppResources/Info.plist: Remove ApplicationIcon since
+        is not used. The user should set it if have another icon.
+
+2012-02-04 German Arias <german@xelalug.org>
+        
+        * GemasInfo.plist: Update the release date.
+
+2012-02-04 German Arias <german@xelalug.org>
+        
+        * GemasEditorView.m: Corrections for new syntax files and for
+        autoindentation.
+        * Resources/nonEnglishCharacters.plist: New characters.
+        * Spanish.lproj/Localizable.strings:
+        * English.lproj/Localizable.strings: Updated.
+
+2012-02-03 German Arias <german@xelalug.org>
+
+        * Spanish.lproj/Gemas.gorm:
+        * English.lproj/Gemas.gorm:
+        * GemasController.m:
+        * GemasEditorView.m: Added ChangeLog and Other (plain text) files.
+
+2012-02-03 German Arias <german@xelalug.org>
+
+        * GNUmakefile:
+        * INSTALL:
+        * INSTALACION:
+        * README:
+        * LEEME: Updated to latest gnustep packages and to version 0.3.
+
+2012-01-27 German Arias <german@xelalug.org>
+
+        * Spanish.lproj/Preferences.gorm:
+        * English.lproj/Preferences.gorm:
+        * GemasController.h:
+        * GemasController.m: Added the feature to switch theme for the
+        highlighter.
+
+2012-01-26 German Arias <german@xelalug.org>
+
+        * GemasController.m (-openPreferences:) (-restoreDefaults): Fix a bug on
+        last commit.
+
+2012-01-25 German Arias <german@xelalug.org>
+
+        * Spanish.lproj/Preferences.gorm:
+        * English.lproj/Preferences.gorm: Set delegate.
+        * GemasController.m (-openPreferences): Run Preferences panel in modal.
+
+2012-01-23 German Arias <german@xelalug.org>
+
+        * GemasDocument.m: Call -setDrawsBackground: only in -awakeFromNib.
+
+2012-01-21 German Arias <german@xelalug.org>
+
+        * Resources/AppResources/Info.plist: Added "ApplicationIcon" entry
+        since this works now with gnustep.
+
+2012-01-19 German Arias <german@xelalug.org>
+
+        * GemasController.h: Updated copyright year.
+        * GemasController.m (-validateMenuItem:): Improvements and updated
+        copyright year.
+        * GemasDocument.m (-goToLineNumber:): Improvements.
+        * GemasEditorView.h:
+        * GemasEditorView.m (-insertText:): Put the code character when is
+        a Strings or Plist file.
+        * Resources/nonEnglishCharacters.plist: New file.
+        * English/Gemas.app:
+        * Spanish/Gemas.app: New menu items.
+        * English/Localized.strings:
+        * Spanish/Localized.strings: Updated.
+        * GNUmakefile: Added new file.
+
+2012-01-16 German Arias <german@xelalug.org>
+
+        * English.lproj/Preferences.gorm:
+        * Spanish.lproj/Preferences.gorm: New optios.
+        * English.lproj/Editor.gorm:
+        * Spanish.lproj/Editor.gorm: Default size 680x510.
+        * GemasController.h:
+        * GemasController.m: New methods for new preferences.
+        * GemasDocument.h:
+        * GemasDocument.m:
+        * GemasEditor.m: Cleanign the code.
+
+2012-01-03 German Arias <german@xelalug.org>
+
+        * English/Editor.gorm:
+        * Spanish/Editor.gorm: Add a new outlet.
+        * GemasDocument.m: Improvements for color preferences.
+
+2012-01-02 German Arias <german@xelalug.org>
+
+        * English.lproj/Localizable.strings:
+        * Spanish.lproj/Localizable.strings: Fix some spaces.
+
+2012-01-01 German Arias <german@xelalug.org>
+
+        * GemasInfo.plist: Remove unnecessary entries.
+        * Resources/AppResources/Info.plist: Minor changes.
+        * English.lproj/Localizable.strings:
+        * Spanish.lproj/Localizable.strings: Updated.
+        * GemasController.m: Add example authors in Info.plist file.
+
+2011-12-31 German Arias <german@xelalug.org>
+
+        * Resources/ToolResources/GNUmakefile: Minor changes.
+        * Resources/AppResources/interface.gorm: Added info item at menu.
+        * Resources/AppResources/Info.plist: Remove unnecessary entries.
+        * Resources/AppResources/GNUmakefile: Minor changes.
+
+2011-12-31 German Arias <german@xelalug.org>
+
+        * Resources/ToolResources/Info.plist: Deleted.
+        * GemasController.m (-newProject:): Deleted Info.plist file in Tool
+        project since this is not needed.
+
+2011-12-27 German Arias <german@xelalug.org>
+
+        * English.lproj/Localizable.strings:
+        * Spanish.lproj/Localizable.strings: Updated.
+        * GemasDocument.h:
+        * GemasDocument.m: Remove old code.
+        * GemasController.m: Open new files after create a new project.
+
+2011-12-26 German Arias <german@xelalug.org>
+
+        * English.lproj/Gemas.gorm:
+        * Spanish.lproj/Gemas.gorm: New items at menu.
+        * Resources/AppResources:
+        * Resources/ToolResources:
+        * GNUmakefile: New files to create a simple App or a simple Tool.
+        * GemsController.h:
+        * GemasController.m: Added method -newProject.
+
+2011-12-12 German Arias <german@xelalug.org>
+
+        * Spanish.lproj/Localizable.strings:
+        * English.lproj/Localizable.strings: Added a deleted string.
+
+2011-12-06 German Arias <german@xelalug.org>
+
+        * GemasEditorView.m (-insertText:): Improvements for "break" in
+        switch blocks.
+
+2011-12-05 German Arias <german@xelalug.org>
+
+        * Spanish.lproj/Localizable.strings:
+        * English.lproj/Localizable.strings: Added new strings.
+        * GemasController.m: Take care if the user close the last visible window
+        with NSWindows95InterfaceStyle.
+        * GemasDocument.m: Display an Error panel if we can't open a file.
+
+2011-09-10 German Arias <german@xelalug.org>
+
+        * GemasController.h:
+        * GemasController.m: Added delegate method
+        -applicationShouldTerminateAfterLastWindowClosed:
+        to work properly with menu in window.
+
+2011-08-16 German Arias <german@xelalug.org>
+
+        * Spanish.lproj/Localizable.strings: Fix a typo.
+
+2011-08-15 German Arias <german@xelalug.org>
+
+        * GemasDocument.m (-init): Set empty string to work with
+        recent changes in gnustep.
+
+2011-05-18 German Arias <german@xelalug.org>
+
+        * GemasDocument.m:
+        * GemasController.m:
+        * GemasEditorView.m: Applied patch of Sebastian Reitenbach
+        <sebastia@l00-bugdead-prods.de>        to compile with gcc-2.95.
+        With a change to don't break the parentheses selection in
+        GemasEditorView.m.
+
+2011-05-17 German Arias <german@xelalug.org>
+
+        * INSTALL:
+        * INSTALACION: HighlighterKit is now a requisite.
+
+2011-05-15 German Arias <german@xelalug.org>
+
+        * Repository: Uploaded at "GNUstep Non-FSF" at GNA.

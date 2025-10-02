@@ -1,0 +1,33 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {concludeDragOperation = id; draggingExited = id; }; 
+            CLASS = ExtendedTextView; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSTextView; 
+        }, 
+        {CLASS = ExtendedWindow; LANGUAGE = ObjC; SUPERCLASS = NSWindow; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                deleteMessage = id; 
+                forwardMessage = id; 
+                nextMessage = id; 
+                previousMessage = id; 
+                replyAllMessage = id; 
+                replyMessage = id; 
+            }; 
+            CLASS = MessageViewWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                deleteView = NSView; 
+                navigationView = NSView; 
+                nextMessage = NSButton; 
+                previousMessage = NSButton; 
+                textView = NSTextView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

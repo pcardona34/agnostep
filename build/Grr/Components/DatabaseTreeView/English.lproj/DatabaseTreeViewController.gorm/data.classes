@@ -1,0 +1,47 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    Component = {
+	Actions = (
+	);
+	Outlets = (
+	);
+	Super = UKNibOwner;
+    };
+    DatabaseTreeViewController = {
+	Actions = (
+	);
+	Outlets = (
+	    outlineView
+	);
+	Super = ViewProvidingComponent;
+    };
+    ImageTextCell = {
+	Actions = (
+	);
+	Outlets = (
+	);
+	Super = NSTextFieldCell;
+    };
+    NumberedImageTextCell = {
+	Actions = (
+	);
+	Outlets = (
+	);
+	Super = ImageTextCell;
+    };
+    UKNibOwner = {
+	Actions = (
+	);
+	Outlets = (
+	);
+	Super = NSObject;
+    };
+    ViewProvidingComponent = {
+	Actions = (
+	);
+	Outlets = (
+	    _view
+	);
+	Super = Component;
+    };
+}
