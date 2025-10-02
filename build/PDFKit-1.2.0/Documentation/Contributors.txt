@@ -1,9 +1,0 @@
-Comments and Suggestions:
-   Fabien Vallon
-
-Author of xpdf:
-   Derek B. Noonburg
-      
-Testing, freetype detection
-   Rob Burns
-

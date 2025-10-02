@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <soapenv:Body>
-    <view:getDevice xmlns:view="http://some.company.co.uk/device/viewdevicedata">
-      <misisdn>447799999999</misisdn>
-    </view:getDevice>
-  </soapenv:Body>
-</soapenv:Envelope>

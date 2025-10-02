@@ -1,6 +1,0 @@
-/* Localized versions of Info.plist keys */
-
-CFBundleName = "GNUMail";
-CFBundleShortVersionString = "GNUMail version 1.4.0";
-CFBundleGetInfoString = "GNUMail version 1.4.0, Copyright 1998-2023 Ludovic Marcotte and contributors";
-NSHumanReadableCopyright = "Copyright 1998-2023 Ludovic Marcotte and contributors";
