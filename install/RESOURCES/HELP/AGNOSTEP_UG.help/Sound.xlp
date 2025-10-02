@@ -1,39 +1,23 @@
 
-<section name="Saving the settings of the Mixer">
+<section name="Setting the Sound">
 
-We must set and save the default volume level at startup.
+Maybe you will need to set the sound to work with Alsa.
+Read the relevant help on the Debian online documentation.
 
-<br>To do this, you must open once the CLI ALSA Mixer in the console (or in the Terminal App) like this:<br>
+<section name="How to set a working sound on a MacBookPro Intel">
 
-		<listing>
-			alsamixer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		</listing>	
+<b>Example with my model 6.2 (Intel Core i5, 2010, 15")</b>
 
-			<section name="ALSA Mixer CLI">
-				<legendfig src="alsamixer_cli.tiff">
-					<legend x="10" y="35">Default card</legend>
-					<legend x="300" y="160">Volume gauge</legend>
-				</legendfig>
-			</section>
-
-			<br>Setting the level via 'PCM':
-			<ol>
-				<li>Adjust the level with the up/down arrow keys.</li>
-				<li>Quit the CLI Alsa Mixer with <b>ESC</b>&nbsp; key.</li>
-				<li>Store this setting as a superuser:
-				<br>
-				<listing>
-					sudo&nbsp;alsactl&nbsp;store&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				</listing>
-				</li>
-				<li>Logout the Desktop and then restart the computer:
-				<br>
-				<listing>
-					sudo&nbsp;reboot&nbsp;&nbsp;&nbsp;&nbsp;
-				</listing>
-				</li>
-			</ol>
-
+<ul>
+<li>Open a new shell in the Terminal App.</li>
+<li>Create a kernel mode file for Alsa like this:
+<listing>sudo touch /etc/modprobe.d/alsa-base &nbsp;&nbsp;&nbsp;</listing>
+</li>
+<li>Then add this line like this:
+<listing>echo "options snd-hda-intel model=mbp61" | sudo tee -a /etc/modprobe.d/alsa-base &nbsp;&nbsp;&nbsp;</listing>
+</li>
+<li>Close the Terminal, logout and reboot the computer.</li>
+</ul>
 </section>
 
 <section name="Testing the sound">
@@ -52,15 +36,13 @@ We must set and save the default volume level at startup.
 
 <section name="VolumeControl">
 
-				Open the application: 'VolumeControl'... Set the desired volume with the PCM gauge.
+				Open the application: 'VolumeControl'... Set the desired volume with the 'Vol' gauge.
 
 			<section name="Volume setting">
-				<legendfig src="VolumeControl.tiff">
-					<legend x="210" y="80">PCM gauge</legend>
+				<legendfig src="VolumeControl_mbp.tiff">
+					<legend x="10" y="80">Vol. gauge</legend>
 				</legendfig>
 			</section>
-
-				
 
 </section>
 </section>
