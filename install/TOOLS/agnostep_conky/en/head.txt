@@ -76,4 +76,3 @@ ${voffset -22}${goto 40}Mem: ${memperc}% ${alignr 39}${color 8686BF}$mem${color}
 ${alignc}${font ConkySymbols:size=24}K${voffset -10}${font SansSerif:size=14}${color1}${color1}${font sans:size=14} Storage ${font}
 ${voffset 6}${color3}${fs_bar 16,280 /}${color}
 ${goto 5}${voffset -22}$font root ${goto 80}${fs_type /}${goto 119}${fs_size /}${goto 184}${color8}${fs_free_perc /}%${color}${goto 224}${fs_free /}${goto 279}${voffset 1}
-
