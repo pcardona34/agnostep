@@ -197,7 +197,8 @@ echo "$TITLE" >>$LOG
 title "$TITLE"
 
 cd TOOLS/agnostep_conky || exit 1
-. ./install_agnostep_conky.sh
+. ./prepare_agnostep_conky.sh || exit 1
+. ./install_agnostep_conky.sh || exit 1
 cd $_PWD
 ### We must complete conky symbols: icon battery
 ICOBAT=RESOURCES/ICONS/battery.png

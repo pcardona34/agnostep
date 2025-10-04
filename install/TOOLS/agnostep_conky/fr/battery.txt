@@ -1,0 +1,7 @@
+
+${image /usr/local/share/icons/conky/battery.png -p 70,510}
+${hr}
+${voffset 1}
+${alignc}${font SansSerif:size=14}${color1} Batterie ${font}${color}
+${voffset 2}
+${goto 60}${battery} - ${battery_time}

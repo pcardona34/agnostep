@@ -77,21 +77,3 @@ ${alignc}${font ConkySymbols:size=24}K${voffset -10}${font SansSerif:size=14}${c
 ${voffset 6}${color3}${fs_bar 16,280 /}${color}
 ${goto 5}${voffset -22}$font root ${goto 80}${fs_type /}${goto 119}${fs_size /}${goto 184}${color8}${fs_free_perc /}%${color}${goto 224}${fs_free /}${goto 279}${voffset 1}
 
-${image /usr/local/share/icons/conky/battery.png -p 70,510}
-${hr}
-${voffset 1}
-${alignc}${font SansSerif:size=14}${color1} Battery ${font}${color}
-${voffset 2}
-${goto 60}${battery} - ${battery_time}
-
-${hr}
-${alignc}${font ConkySymbols:size=24}I${voffset -10}${font SansSerif:size=14}${color1} Network ${font}${color}
-${if_up enp2s0}
-${alignc}IP: ${addr enp2s0}
-${goto 40}${upspeedgraph enp2s0 26,80 FFB7C5 FFB7C5}${goto 150}${downspeedgraph enp2s0 26,80 3A3A56 D7D7FF}
-${goto 40}${color5}Up: ${color7}${upspeed enp2s0}${color5}${goto 150}Down: ${color2}${downspeed enp2s0}
-${goto 40}${color5}Sent: ${color7}${totalup enp2s0}${color5}${goto 150}Received: ${color2}${totaldown enp2s0}
-${endif}
-${color}
-
-]]

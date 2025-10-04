@@ -17,16 +17,16 @@
 
 AUTO=$HOME/GNUstep/Library/WindowMaker/autostart
 HOME_DIR_CONF=$HOME/.config
-TRANS=`echo ${LANG%.UTF-8} | awk -F_ '{print $1}'`
 
 if [ ! -d $HOME_DIR_CONF/agnostep ];then
 	mkdir -p "${HOME_DIR_CONF}/agnostep"
 fi
 
-if [ -n $TRANS ] && [ -f conky.conf.${TRANS} ];then
-	cp --force conky.conf.${TRANS} $HOME_DIR_CONF/agnostep/conky.conf
+if [ -f conky.conf ];then
+	mv --force conky.conf $HOME_DIR_CONF/agnostep/conky.conf
 else
-	cp --force conky.conf $HOME_DIR_CONF/agnostep/
+	printf "Conky conf file was not found. Aborting."
+	exit 1
 fi
 
 grep -e "conky" $AUTO &>/dev/null
@@ -43,13 +43,15 @@ if ! [ -d $DEST ];then
 fi
 
 printf "Conky Symbols TTF...\n"
-cd $_PWD/RESOURCES/THEMES || exit 1
-cp ConkySymbols.ttf.tar.gz $DEST/
-cd $DEST
-gunzip --force ConkySymbols.ttf.tar.gz
-tar -xf ConkySymbols.ttf.tar
-rm ConkySymbols.ttf.tar
-fc-cache -f
+if [ ! -f $DEST/ConkySymbols.ttf ];then
+	cd $_PWD/RESOURCES/THEMES || exit 1
+	cp ConkySymbols.ttf.tar.gz $DEST/
+	cd $DEST
+	gunzip --force ConkySymbols.ttf.tar.gz
+	tar -xf ConkySymbols.ttf.tar
+	rm ConkySymbols.ttf.tar
+	fc-cache -f
+fi
 ok "Done"
 
 printf "\nConky has been set.\n"

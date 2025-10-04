@@ -1,0 +1,12 @@
+
+${hr}
+${alignc}${font ConkySymbols:size=24}I${voffset -10}${font SansSerif:size=14}${color1} Réseau ${font}${color}
+${if_up enp2s0}
+${alignc}IP: ${addr enp2s0}
+${goto 40}${upspeedgraph enp2s0 26,80 FFB7C5 FFB7C5}${goto 150}${downspeedgraph enp2s0 26,80 3A3A56 D7D7FF}
+${goto 40}${color5}Montée: ${color7}${upspeed enp2s0}${color5}${goto 150}Descente: ${color2}${downspeed enp2s0}
+${goto 40}${color5}Envoyés: ${color7}${totalup enp2s0}${color5}${goto 150}Reçus: ${color2}${totaldown enp2s0}
+${endif}
+${color}
+
+]]

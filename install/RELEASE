@@ -3,7 +3,7 @@ AGNOSTEP - agnostic GNUstep Desktop
 
 INFO: We started from the release 0.8.3 of PiSiN to make it agnostic. Many changes in the meanwhile.
 
-- **Release**: 0.8.4
+- **Release**: 0.8.5
 - **Status**: Beta
 
 ### Tests protocol
@@ -20,7 +20,7 @@ Passed: 18 / 18
 - Home customized folders: ok
 - Applications Folder / TabbedShelf: ok
 - Autostart: ok
-- Sysinfo Panel (on laptop: see also battery monitoring): ok 
+- Sysinfo Panel (if a laptop, battery monitoring is showing): ok 
 - Notify: ok
 - Open/save: ok
 - Web Browser: ok
