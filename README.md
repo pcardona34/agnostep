@@ -25,17 +25,18 @@ But if you can run Debian Trixie on your computer, we can say with optimism that
 
 ## How to install
 
-Read [install/INSTALL] first.
+Read [INSTALL](install/INSTALL) first.
 
 Quick way: on a fresh minimal Debian Trixie (13.1) on a computer wired to Internet, execute:
-
-	````cd install
-	./enjoy.sh````
+	
+	cd install
+	./enjoy.sh
 
 Than logout the desktop if all is ok, and install the Display Manager:
-	````./7_install_DM.sh````
+
+	./7_install_DM.sh
 
 
 ## Screenshots
 
-[AGNoStep Desktop on Debian Trixie](Screenshots/screenshot_agnostep_debian13.png)
+![AGNoStep Desktop on Debian Trixie](Screenshots/screenshot_agnostep_debian13.png)
