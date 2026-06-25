@@ -62,6 +62,13 @@
         [textView setString: @"Loading..."];
         [textView setEditable:NO];
                        
+        // Edit Button
+        editButton = [[NSButton alloc] 
+            initWithFrame:NSMakeRect(20, 16, 100, 28)];
+        [editButton setTitle:@"Edit..."];
+        [editButton setTarget:self];
+        [editButton setAction:@selector(edit:)];
+        [content addSubview: editButton];  
         
         // Pass Button
         passButton = [[NSButton alloc] 
@@ -165,5 +172,45 @@
   
 }
 
+/* ******************************************* */
+- (IBAction) edit:(id)sender 
+{
+   NSLog(@"Edit query...");
+   // Get the selected range  
+   NSRange selectedRange = [textView selectedRange];  
+  
+   // Get the selected text as a plain string  
+   NSString *selectedText = [[textView string] substringWithRange:selectedRange];
+   if (selectedText && [selectedText length] > 0){
+     NSLog(@"You selected: %@", selectedText); 
+     // here query edit
+     NSString *myCommand = @"/usr/bin/xterm";
+     NSArray *myArgs = [NSArray arrayWithObjects:
+                            @"-T",
+                            @"Edit",
+                            @"-hold",
+                            @"-e",
+                            @"/usr/bin/pass",
+                            @"edit",
+                            [NSString stringWithFormat:@"/Root/%@", selectedText],
+                            nil];
+    // We set the NSTask:
+    NSTask *task = [[NSTask alloc] init];
+    [task setLaunchPath: myCommand];
+    [task setArguments: myArgs];
+    
+    [task launch];
+    NSLog(@"Last Task has been launched");
+    [task waitUntilExit];
+    [task release];
+
+ }else{
+   
+   NSLog(@"No key was selected");
+ }  
+     [listWindow orderOut:nil];
+  
+  
+}
 
 @end

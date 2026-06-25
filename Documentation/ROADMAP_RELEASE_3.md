@@ -27,6 +27,7 @@
 
 ## Enhancing some apps:
 
+- [x] Pass.app (0.2): add Edit button and action on the list Panel after a search.
 - [ ] Sound.app and Mixer.app: dynamic guess of the sound card and the Volume controller
 - [ ] Launcher.app (not depending on GWorkspace).
 - [ ] Maybe extending supported languages within Gemas Editor: markdown, bash.

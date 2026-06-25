@@ -1,13 +1,13 @@
 {
     ApplicationDescription = "A password manager";
     ApplicationName = Pass;
-    ApplicationRelease = "0.1";
+    ApplicationRelease = "0.2";
     Authors = (
 	"Patrick CARDONA"
     );
     Copyright = "Copyright (C) 2026 - Part of Agnostep project";
     CopyrightDescription = "Released under GNU General Public License 3.0";
-    FullVersionID = "0.1";
+    FullVersionID = "0.2";
     NSExecutable = Pass;
     NSIcon = "pass.tiff";
     GSHelpContentsFile = "Pass.help";

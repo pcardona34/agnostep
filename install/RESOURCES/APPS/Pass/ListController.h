@@ -26,6 +26,7 @@
   NSScrollView *scrollView;
   NSTextView *textView;
   NSButton *passButton;
+  NSButton *editButton;
   
 }
 
@@ -33,6 +34,7 @@
 - (IBAction) showList: (id)sender;
 - (IBAction) closeWindow:(id)sender;
 - (IBAction) pass:(id) sender;
+- (IBAction) edit:(id) sender;
 - (void) loadDataSynchronously;
 
 @end

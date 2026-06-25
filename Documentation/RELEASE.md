@@ -2,5 +2,5 @@
 
 ## Release
 
-- Release: 2.0.4
-- Status: RC
+- Release: 3.0.0
+- Status: Beta
