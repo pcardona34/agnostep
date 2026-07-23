@@ -26,5 +26,6 @@
 }
 
 - (void) openAppFolder: (id) sender;
+- (void) showInfoPanel: (id)sender;
 
 @end

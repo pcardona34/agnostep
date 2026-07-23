@@ -8,9 +8,12 @@ Do not try nor report any issue until a release is tagged Stable.
 
 ## Changes
 
-### Changes of the Release Beta 3.0.0
+### Changes of the Release Beta 3.0.0 (work in progress)
+
+See Unstable branch until now.
 
 - Pass.app: release 0.2. Added Edit button and action to the List Panel.
+- Launcher.app: release 0.2. Full French localization (help bundle, UI and Info Panel)
 
 ### Changes of the Release Candidate 2.0.4
 

@@ -35,7 +35,9 @@
 ## L18N: French target
 
 - [ ] French interface provided for all Core Apps and Native apps.
+  - [x] Launcher: UI and Info Panel.
 - [ ] Help bundles all translated to French.
+  - [x] Launcher: French help bundle.
 - [ ] Documentation: namely README, INSTALL translated too.
 
 > [!Note]

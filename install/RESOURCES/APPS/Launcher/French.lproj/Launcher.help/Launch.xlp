@@ -1,0 +1,17 @@
+<section name="Sélection d'une application">
+
+Quand le dossier des Applications est affiché, il suffit de saisir au clavier la première lettre de l'application pour déplacer le sélecteur vers le groupe des applications dont le nom débute par cette lettre.   
+
+<caution>
+Ce filtre fourni par GWorkspace est sensible à la casse. 
+</caution>
+
+<information>
+La plupart des applications ont un nom qui débute par une Capitale, c'est pourquoi vous devez en même temps appuyer sur le modificateur MAJ ou SHIFT du clavier afin d'obtenir cette première lettre en capitale. 
+</information>
+
+<caution>
+Seul un nombre limité d'applications comporte un nom qui débute par une minuscule&nbsp;: par exemple, <i>batmon</i>.
+</caution>
+  
+</section>

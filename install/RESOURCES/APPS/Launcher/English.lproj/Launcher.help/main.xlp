@@ -24,6 +24,8 @@ Site: <url>https://github.com/pcardona34/agnostep</url>&nbsp;
 
 </plain>
 
+<chapter src="First.xlp" name="First Time"></chapter>
 <chapter src="Launch.xlp" name="Launching Apps"></chapter>
+
 
 </document>

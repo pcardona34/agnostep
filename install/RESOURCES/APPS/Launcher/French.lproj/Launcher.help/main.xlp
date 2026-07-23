@@ -1,0 +1,30 @@
+<document>
+
+<header>
+<title>Guide Utilisateur de Launcher</title>
+</header>
+
+<plain name="Accueil">
+
+<center><img src="banniere_Launcher.tiff"></center>
+
+<information>
+Launcher permet d'afficher le dossier des Applications et de sélectionner rapidement l'application qu'on désire lancer.
+</information>
+
+<caution>
+(c) 2025-2026 Patrick Cardona. Ce projet est un logiciel libre fourni sous la licence publique GNU (GPL).<br>
+Il appartient au projet de Bureau Agnostep Desktop.
+</caution>
+
+<note>
+Site: <url>https://github.com/pcardona34/agnostep</url>&nbsp;
+<br />Veuillez saisir tout problème constaté dans la section <i>issues</i> du projet.
+</note>
+
+</plain>
+
+<chapter src="First.xlp" name="La Première Fois"></chapter>
+<chapter src="Launch.xlp" name="Lancer des applications"></chapter>
+
+</document>
