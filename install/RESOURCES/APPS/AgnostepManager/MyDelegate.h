@@ -26,5 +26,6 @@
 
 - (void) manager: (id) sender;
 - (BOOL) checkAM;
+- (void) showInfoPanel: (id)sender;
 
 @end

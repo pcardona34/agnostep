@@ -1,0 +1,30 @@
+<section name="Définir les touches de modification">
+
+<caution>
+Avec cette version du bureau Agnostep, ces réglages ont déjà 
+été effectués.
+</caution>
+
+Comme expliqué dans l'Introduction du <i>Guide Utilisateur de 
+GWorkspace<i>, section "Une disposition spéciale du clavier", 
+un système GNUstep a besoin de trois touches de  modification&nbsp;: 
+COMMANDE, CONTRÔLE et ALTERNATIVE.
+
+Pour définir ces touches:
+
+<ol>
+<li>Dans le dossier des "Applications", sélectionnez 
+"SystemPreferences" et démarrez cette application avec ENTRÉE.</li>
+<li>Cliquez sur l'icône "Modifier Keys" afin de sélectionner 
+ cet onglet.</li>
+<li>Puis sélectionnez l'affectation des touches comme sur la
+figure ci-dessous.</li>
+<li>Fermez la fenêtre de SystemPreferences.</li>
+</ol>
+
+<section name="Figure 0.1: Touches de modification">
+<legendfig src="ModifierKeys.tiff"></legendfig>
+</section>
+
+</section>
+

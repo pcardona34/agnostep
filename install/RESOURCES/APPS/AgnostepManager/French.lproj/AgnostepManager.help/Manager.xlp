@@ -1,0 +1,29 @@
+<section name="Qu'est-ce que le Gestionnaire d'Agnostep?">
+
+Grâce au Gestionnaire d'Agnostep, vous pouvez installer 
+des applications et des ressources.
+
+<br>Ces applications et ces ressources sont divisées en 
+catégories&nbsp;:
+
+<ul>
+<li>Apps: toutes les applications déjà installées par défauts. C'est la  base du bureau Agnostep.</li>
+<li>Devel: applications pour les développeurs, telles que l'éditeur Gemas,  Emacs, Gorm et ProjectCenter...</li>
+<li>Extra: davantage d'applications afin de compléter ce qui est déjà installé.</li>
+<li>Util: Utilitaires comme Affiche (Notes) Calculator, etc.</li>
+<li>Games: de grands jeux comme Chess, NeXTGo, etc.</li>
+<li>Native: ce sont les applications spécifiquement développées
+  pour Agnostep: Meteo.app, Birthday.app, etc.</li>
+<li>Dockapps: plusieurs dockapps placées dans le trombone.</li>
+</ul>
+
+<br><br>Enfin, les <b>Wrappers</b> fournissent des lanceurs pour 
+ certaines applications non développées avec GNUstep,comme 
+ Inkscape, LibreOffice, Scribus... 
+
+<br><b>Update Agnostep</b> permet de mettre à jour le dépôt 
+source depuis github et d'obtenir les mises à jour du projet.
+
+<br><b>Logs</b> offre un moyen de lire les journaux d'installation.
+
+</section>

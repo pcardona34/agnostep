@@ -1,0 +1,196 @@
+<part name="1.1 L'espace de travail (Workspace)">
+
+<section name="Figure 1.1: Composants de l'espace de travail">
+<legendfig src="desktop01_menu.tiff">
+  <legend x="1" y="52">Menu vertical</legend>
+  <legend x="78" y="70">Flèche de sous-menu</legend>
+  <legend x="72" y="144">Raccourci clavier</legend>
+  <legend x="20" y="240">Icône d'application</legend>
+  <legend x="2" y="265">Barre rapide des applications (Dock)</legend>
+  <legend x="320" y="300">Fenêtre du gestionnaire de fichiers</legend>
+  <legend x="148" y="80">Bouton de réduction</legend>
+  <legend x="250" y="80">Bandeau de la fenêtre</legend>
+  <legend x="260" y="20">Bureau</legend>
+</legendfig>
+</section>
+
+<section name="1.1.1 Le Menu vertical">
+
+<p>Il s'agit du menu de l'application active. 
+Si vous démarrez une autre application 
+ou si vous cliquez sur la fenêtre d'une autre application 
+c'est cette application qui devient active 
+et son menu s'affiche à la place du précédent.</p>
+
+<p>Un item du menu est une commande au sein de l'application
+active. 
+<br />Si un raccourci est affiché à droite d'une commande,
+vous pouvez l'utiliser comme alternative.</p>
+		
+<p>Le symbole dièse <b>#</b> devant une lettre signifie que vous
+ devez maintenir enfoncée la touche 'Commande' en guise de 
+préfixe et appuyer une fois sur la lettre du raccourci.</p>
+ 
+<caution>
+Sur un clavier de Raspberry Pi, la touche  'Commande' est 
+la touche <b>Alt (de gauche)</b> comme sur la plupart des 
+PC gérés par un système d'exploitation GNU/Linux.<br />
+Ce n'est <b>pas</b> la touche <b>not</b> 'Pi' (framboise).
+</caution>
+
+<p>La <b>flèche</b> à droite d'un item suggère un sous-menu.</p>
+
+</section>
+
+<section name="1.1.2 La barre rapide des applications (Dock)">
+
+<p>Il s'agit du panneau vertical placé à droite&nbsp;: les 
+icônes des applications favorites sont déjà placées sur ce 
+Dock. Dans ce contexte, ces icônes sont également appelées 
+<b>appicons</b> et les applications associées sont dites 
+"dockées". La première en partant du haut est associée à la 
+commande <i>WPrefs</i> (réglage des préférences du gestionnaire
+ de fenêtres Window Maker). La seconde est associée à  
+<b>GWorkspace</b>, qui est le gestionnaire de l'espace de 
+travail (workspace). La dernière, en bas, est le <b>Recycleur</b>, 
+ qui gère la Corbeille où sont provoirement placés les fichiers
+ supprimés.</p>
+
+<p>Les <b>trois points</b> sous une <i>appicon</i> indiquent 
+que cette applicaion n'a pas encore été démarrée. Un <b>double 
+clic</b> sur cette <i>appicon</i> permet de démarrer cette app
+à partir du <i>Dock</i> ou de la rendre active si elle était 
+déjà démarrée.</p> 
+
+<section name="Figure 1.2: Le Dock et les points souscrits">
+<legendfig src="Dock.tiff">
+   <legend x="20" y="20">Application active et démarrée</legend>
+  <legend x="1" y="142">Trois points</legend>
+  <legend x="1" y="189">Point simple</legend>
+</legendfig>
+</section>
+
+<p>Si vous démarrez une application à partir d'un autre 
+endroit, (par exemple, la fenêtre des Applications) 
+son icône n'apparaîtra pas sur le <i>Dock</i> si son 
+<i>appicon</i> n'y figure pas préalablement. Dans ce cas
+cette icône sera affichée au bas de l'écran, dans le coin de 
+gauche.<br />
+
+Si une application dockée et démarrée est inactive, 
+vous verrez un <b>point unique</b> sous son <i>appicon</i>.</p>
+
+</section>
+
+<section name="1.1.3 Mini-fenêtres">
+
+<section name="Figure 1.3: Exemple de mini-fenêtre">
+<legendfig src="desktop03_MiniWindows.tiff">
+  <legend x="180" y="150">Une fenêtre de document réduite</legend>
+</legendfig>
+</section>
+		
+<p>Si vous cliquez sur le bouton de réduction à gauche de la 
+barre de titre d'une fenêtre, cette dernière sera réduite 
+et l'icône associée à cette mini-fenêtre sera placée en bas à 
+gauche de l'espace de travail. Dans le cas d'un document, cette
+icône de mini-fenêtre comportera en son sommet une sorte de
+mini-barre de titre foncée..</p>
+
+<p>Pour afficher de nouveau le contenu de cette fenêtre, 
+ il suffit de faire un double clic sur la mini-fenêtre.</p>
+
+</section>
+
+<section name="1.1.4 L'étagère à onglets (TabbedShelf)">
+
+<section name="Figure 1.4: Exemple d'onglets">
+<legendfig src="desktop02_TShelf.tiff">
+  <legend x="155" y="230">Onglet nommé</legend>
+</legendfig>
+</section>
+
+<p>Avec le raccourci <i>Commande + s</i>, lorsque l'application 
+active est GWorkspace, vous afficherez ou masquerez l'étagère à 
+onglets.</p>
+<P>Si elle se réduit automatiquement, déplacez la souris au bas 
+de l'écran pour l'afficher. Il s'agit d'un ensemble d'étagères 
+que vous pouvez organiser à votre guise avec des applications 
+regroupées par catégories, un presse-papier avec des blocs de 
+texte copiés, le tout géré par de simples glisser-déposer.</p>
+
+</section>
+</part>
+
+<part name="1.2 Le Gestionnaire de fichiers">
+
+<section name="1.2.1 Fenêtre du Gestionnaire de fichiers">
+
+<section name="Figure 1.5: Dossier personnel">
+<legendfig src="Home_window.tiff">
+  <legend x="1" y="40">Étagère</legend>
+  <legend x="15" y="50">Raccourci du dossier personnel</legend>
+  <legend x="15" y="120">Vue de chemin</legend>
+  <legend x="30" y="250">Mode Icône</legend>
+</legendfig>
+</section>
+		
+<p>Pour gérer les fichiers, sélectionnez la fenêtre du 
+gestionnaire de fichiers et cliquez sur l'icône de dossier 
+personnel pour afficher le contenu de ce dossier.  
+Vous pouvez changer de mode d'affichage au moyen de raccourcis&nbsp;:</p>
+
+<ul>
+<li><b>#i</b>: Vue en icônes</li>
+<li><b>#l</b>: Liste</li>
+<li><b>#b</b>: Mode explorateur</li>
+</ul>
+		
+<information>
+Pour afficher une nouvelle fenêtre du gestionnaire de fichiers&nbsp;:
+ menu "Affichage" &gt; Visualisateur" 
+<br>(ou raccourci: #V)
+</information>
+
+<p>Pour afficher toutes les applications disponibles, démarrez
+ l'application "Launcher" (dernière icône à droite de la barre 
+horizontale aussi appelée "trombone") et consultez l'aide 
+associée.</p> 
+
+<section name="Figure 1.6: Dossier des applications">
+<legendfig src="App_window.tiff">
+  <legend x="250" y="40">Raccourci vers les Applications</legend>
+  <legend x="30" y="260">Icônes des applications</legend>
+</legendfig>
+</section>
+
+</section>
+</part>
+
+<part name="1.3 Le panneau système">
+
+<p>Le bureau AGNoStep fournit plusieurs icônes placées dans la 
+barre du Trombone placée au sommet du bureau.</p>
+
+<p>Il s'agit d'un ensemble d'outils de surveillance
+affichant des infos utiles sur votre ordinateur&nbsp;: 
+activité du processeur, usage de la mémoire... autant de bons
+ indicateurs en cas de dysfonctionnement d'une application. 
+Avec un espace de stockage réduit, il est aussi utile de 
+surveiller l'espace occupé.</p>
+
+<section name="Figure 1.7: Infos Système du Trombone">
+<legendfig src="sysinfo.tiff">
+  <legend x="130" y="20">Horloge</legend>
+  <legend x="64" y="12">Date courante et Météo</legend>
+  <legend x="168" y="24">Durée d'usage et usage de la mémoire</legend>
+  <legend x="216" y="32">TimeMon: activité du CPU</legend>
+  <legend x="292" y="32">Activité réseau</legend>
+  <legend x="340" y="38">Mise à jour du système</legend>
+  <legend x="390" y="42">Notification d'événements familiaux</legend>
+  <legend x="460" y="46">Stockage et montage des disques amovibles</legend>
+</legendfig>
+</section>
+
+</section>
+</part>

@@ -1,0 +1,32 @@
+<document>
+
+<header>
+<title>Guide Utilisateur du Bureau AGNOSTEP</title>
+</header>
+
+<plain name="Accueil">
+
+<img src="banniere_UG.tiff">
+
+	
+<information>
+AGNoStep signifie: Bureau AGNostique GNUstep. 
+<br />C'est-à-dire un environment de bureau sur un ordinateur pourvu du cadriciel GNUstep.
+</information>
+
+<caution>
+(c) 2025-2026 Patrick Cardona. Ce projet est un logiciel libre distribué sous la licence générale publique GNU (GPL).
+</caution>
+
+<note>
+Site: <url>https://github.com/pcardona34/agnostep</url>&nbsp;
+<br />Veuillez saisir tout problème constaté dans la section <i>issues</i> de ce site.
+</note>
+
+</plain>
+
+<chapter src="Keyboard.xlp" name="Configurer le clavier"></chapter>
+<chapter src="Compo.xlp" name="Un Bref Tour du Bureau Agnostep"></chapter>
+<chapter src="Manager.xlp" name="Le gestionnaire d'Agnostep"></chapter>
+
+</document>

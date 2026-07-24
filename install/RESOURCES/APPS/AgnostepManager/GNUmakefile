@@ -3,7 +3,7 @@ include $(GNUSTEP_MAKEFILES)/common.make
 #
 # Application
 #
-VERSION = 0.2
+VERSION = 0.3
 PACKAGE_NAME = AgnostepManager
 APP_NAME = AgnostepManager
 AgnostepManager_APPLICATION_ICON = AgnostepManager.tiff
@@ -13,8 +13,16 @@ AgnostepManager_APPLICATION_ICON = AgnostepManager.tiff
 # Resource files
 #
 AgnostepManager_RESOURCE_FILES = \
-Resources/AgnostepManager.tiff \
-Resources/AgnostepManager.help
+Resources/AgnostepManager.tiff
+
+#
+# Localization
+#
+AgnostepManager_LANGUAGES = English French
+AgnostepManager_LOCALIZED_RESOURCE_FILES = \
+Localizable.strings \
+AgnostepManagerInfo.plist \
+AgnostepManager.help
 
 #
 # Header files

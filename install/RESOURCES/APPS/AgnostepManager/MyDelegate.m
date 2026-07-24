@@ -36,8 +36,8 @@
     return YES;  
   } else {  
     NSAlert *alert = [[[NSAlert alloc] init] autorelease];
-    [alert setMessageText: @"Agnostep Manager Fatal Error"];
-    [alert setInformativeText: [NSString stringWithFormat: @"The expected folder: %@ was not found.\nYou must repair it. You should read Help.",  am]];
+    [alert setMessageText: _(@"Agnostep Manager Fatal Error")];
+    [alert setInformativeText: [NSString stringWithFormat: _(@"The expected folder: %@ was not found.\nYou must repair it. You should read Help."),  am]];
     [alert runModal];
     [NSApp terminate:nil];
     return NO; // this will never be executed  
@@ -71,6 +71,18 @@
   } 
 }
 
+/* The code below was previously suggested by DeepWiki and then adapted */
+- (void) showInfoPanel: (id)sender
+{  
+  NSBundle *bundle = [NSBundle mainBundle];  
+  NSString *path = [bundle pathForResource: @"AgnostepManagerInfo"   
+                                   ofType: @"plist"];  
+  NSDictionary *localizedInfo = [NSDictionary dictionaryWithContentsOfFile: path];  
+    
+  [NSApp orderFrontStandardInfoPanelWithOptions: localizedInfo];  
+}
+/* End of DeepWiki suggest */
+
 
 /* **************************************************************************** */
 /*
@@ -87,25 +99,25 @@
     menu = AUTORELEASE ([NSMenu new]);
     infoMenu = AUTORELEASE ([NSMenu new]);
   
-    [infoMenu addItemWithTitle: @"Info Panel..." 
-            action: @selector (orderFrontStandardInfoPanel:) 
+    [infoMenu addItemWithTitle: _(@"Info Panel...") 
+            action: @selector (showInfoPanel:) 
             keyEquivalent: @""];
 
-    [infoMenu addItemWithTitle: @"Help..." 
+    [infoMenu addItemWithTitle: _(@"Help...") 
             action: @selector (orderFrontHelpPanel:)
             keyEquivalent: @"?"];
 
-    menuItem = [menu addItemWithTitle: @"Info..." 
+    menuItem = [menu addItemWithTitle: _(@"Info...") 
                    action: NULL 
                    keyEquivalent: @""];
 
     [menu setSubmenu: infoMenu  forItem: menuItem];
   
-    [menu addItemWithTitle: @"Manager..."
+    [menu addItemWithTitle: _(@"Manager...")
           action:@selector(manager:) 
           keyEquivalent: @""];
   
-    [menu addItemWithTitle: @"Quit" 
+    [menu addItemWithTitle: _(@"Quit") 
           action:@selector(terminate:) 
           keyEquivalent:@"q"];
         

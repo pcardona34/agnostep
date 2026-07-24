@@ -1,0 +1,12 @@
+/* Localizable Strings for AgnostepManager */
+
+/* Check AM */
+"Agnostep Manager Fatal Error" = "Gestionnaire Agnostep: Erreur fatale";
+"The expected folder: %@ was not found.\nYou must repair it. You should read Help." = "Le dossier requis: %@ est absent.\nVous devez le restaurer. Vous devriez consulter l'aide.";
+
+/* Menu  */
+"Info Panel..." = "À propos...";
+"Help..." = "Aide...";
+"Info..." = "Informations...";
+"Manager..." = "Gestionnaire...";
+"Quit" = "Quitter";
