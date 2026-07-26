@@ -1,0 +1,16 @@
+/* TRANSLATORS: Make sure to quote all translated strings if
+   they contain spaces or non-ASCII characters.  */
+
+"Close Window" = "Fermer la fenêtre";
+Services = Services;
+Dico = Dico;
+"Arrange In Front" = "Placer devant";
+"Preferences..." = "Pr\U00E9f\U00E9rences...";
+"Help..." = "Aide...";
+Hide = Cacher;
+Windows = "Fenêtres";
+Quit = Quitter;
+Search = Chercher;
+Info = Informations;
+"Miniaturize Window" = "R\U00E9duire la fenêtre";
+"Info Panel..." = "À propos...";

@@ -29,5 +29,6 @@
 - (NSArray *) nameToCelebrate;
 - (void) updateBadge;
 - (void) who: (id) sender;
+- (void) showInfoPanel: (id)sender;
 
 @end

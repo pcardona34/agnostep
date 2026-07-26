@@ -42,7 +42,7 @@
   // We set the NSTask:
   NSArray *myArgs = [NSArray arrayWithObjects:
                              @"-T",
-                             @"Weather Prediction",
+                             _(@"Weather Prediction"),
                              @"-hold",
                              @"-geometry",
                              @"130x42+100+66",

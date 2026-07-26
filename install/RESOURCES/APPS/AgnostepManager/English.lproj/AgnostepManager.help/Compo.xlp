@@ -30,7 +30,7 @@ hold the 'Command' key as a prefix.</p>
  
 <caution>
 On a Pi keyboard, the 'Command' key is the <b>left Alt</b> 
-key as on almost the PC running a GNU/Linux operating system. 
+key as on almost PC running a GNU/Linux operating system. 
 It is <b>not</b> the 'Pi' key.
 </caution>
 
@@ -44,8 +44,8 @@ It is <b>not</b> the 'Pi' key.
 applications are yet placed on the Dock. In this context, those 
 are also named <b>appicons</b> and the relevant applications 
 are so called 'docked' apps. The first one at the top of the 
-Dock is associated to WPrefs (the preferences of WindowMaker, 
-the window manager) that is not launched. The second item is 
+Dock is associated to <i>WPrefs</i> (the preferences of WindowMaker, 
+the window manager) that is not yet launched. The second item is 
 <b>GWorkspace</b>, which manages the whole workspace. 
 The last one, at the bottom, is the <b>Recycler</b>, 
 which namely manages the Trash Folder.</p>
@@ -98,16 +98,16 @@ on its top.</p>
 </legendfig>
 </section>
 
-<p>If you use command+s, You will enable the TabbedShelf.</p>
+<p>If you use command+s while GWorkspace is active, You will enable the TabbedShelf.</p>
 <P>When it  autohides itself, if you move the mouse pointer to 
 the bottom of the workspace, 
 the Tabbed Shelf will show on. This is an organized shelf with 
-different categories of apps shortcuts: 'Utilities', 'Devel', 
-'Games' and a 'Pasteboard' where you can put pasted parts of a 
+different categories of apps shortcuts following your taste: by example, 'Utilities', 'Devel', 
+'Games'and so on. And a 'Pasteboard' where you can put pasted parts of a 
 selected text with a simple drag and drop.</p>
 
 <information>
-To Hide again the Tabbed Shelf, just move the mouse pointer to the top.
+To Hide again the Tabbed Shelf, just move the mouse pointer to the top if you chose autohide option or type again Command+s while GWorkspace is active.
 </information>
 
 </section>
@@ -160,7 +160,9 @@ select its icon, and press the 'Enter' key.</p>
 <p>AGNoStep Desktop provides several icons in the Clip on the 
 top of the Desktop.</p>
 
-<p>The Monitoring Panel gives you useful infos about your computer. CPU and Memory usage are good clues for an application misbehaviour. With small SD cards, it is also useful 
+<p>The Monitoring Panel gives you useful infos about your computer. 
+CPU and Memory usage are good clues for an application misbehaviour. 
+With small SD cards, it is also useful 
 to look at the storage amount.</p>
 
 <section name="Figure 1.7: System Infos within the Clip">

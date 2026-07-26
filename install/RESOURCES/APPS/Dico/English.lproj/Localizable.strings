@@ -1,0 +1,17 @@
+/* TRANSLATORS: Make sure to quote all translated strings if
+   they contain spaces or non-ASCII characters.  */
+
+"Close Window" = "Close Window";
+"";
+Services = Services;
+Dico = Dico;
+"Arrange In Front" = "Arrange In Front";
+"Preferences..." = "Preferences...";
+"Help..." = "Help...";
+Hide = Hide;
+Windows = Windows;
+Quit = Quit;
+Search = Search;
+Info = Info;
+"Miniaturize Window" = "Miniaturize Window";
+"Info Panel..." = "Info Panel...";

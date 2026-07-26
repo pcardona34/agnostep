@@ -1,0 +1,17 @@
+/* Localizable strings for Meteo */ 
+
+"Info Panel..." = "À propos...";
+"Preferences..." = "Pr\U00E9f\U00E9rences...";
+"Help..." = "Aide...";
+"Info..." = "Informations...";
+"Prediction" = "Pr\U00E9vision";
+"Quit" = "Quitter";
+
+/* PredictionController */
+/* Title without accents du to Xterm limitation */
+"Weather Prediction" = "Prevision meteo";
+
+/* PreferencesController */
+"Preferences" = "Pr\U00E9f\U00E9rences";
+"Location:" = "Ville:";
+"Cancel" = "Annuler"; 

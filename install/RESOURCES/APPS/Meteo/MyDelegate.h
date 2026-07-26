@@ -39,5 +39,6 @@
 - (void) drawImageRep;
 - (void) drawRepOnIcon;
 - (IBAction) showPrediction: (id) sender;
+- (void) showInfoPanel: (id)sender;
 
 @end

@@ -1,0 +1,17 @@
+{
+    ApplicationDescription = "Application M\U00E9t\U00E9o";
+    ApplicationName = Meteo;
+    ApplicationRelease = "0.2";
+    Authors = (
+	"Patrick CARDONA"
+    );
+    Copyright = "Copyright (C) 2026 - Un outil d'Agnostep";
+    CopyrightDescription = "Distribu\U00E9 sous la licence g\U00E9n\U00E9rale GNU (GPL) 3.0";
+    FullVersionID = "0.2";
+    NSExecutable = Meteo;
+    NSIcon = "weather.tiff";
+    NSMainNibFile = ;
+    NSPrincipalClass = NSApplication;
+    NSRole = Application;
+    
+}

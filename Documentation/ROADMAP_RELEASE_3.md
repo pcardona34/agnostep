@@ -36,9 +36,13 @@
 
 - [ ] French interface provided for all Core Apps and Native apps.
   - [x] AgnostepManager: UI and Info Panel
+  - [x] Birthday: UI and Info Panel.
+  - [x] Dico: UI.
   - [x] Launcher: UI and Info Panel.
+  - [x] Meteo: UI and Info Panel.
 - [ ] Help bundles all translated to French.
   - [x] AgnostepManager: French help bundle
+  - [x] Birthday: French help bundle.
   - [x] Launcher: French help bundle.
 - [ ] Documentation: namely README, INSTALL translated too.
 

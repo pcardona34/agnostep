@@ -1,0 +1,13 @@
+/* Localizablestrings for Birthday app */
+
+"Event: " = "Event: ";
+"Birthday" = "Birthday";
+"Feast" = "Feast";
+"Unknown" = "Unknown";
+"Today, we celebrate: %@!" = "Today, we celebrate: %@!";
+"Nobody to celebrate today." = "Nobody to celebrate today.";
+"Info Panel..." = "Info Panel...";
+"Help..." = "Help...";
+"Info..." = "Info...";
+"Who..." = "Who...";
+"Quit" = "Quit";

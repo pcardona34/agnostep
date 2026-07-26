@@ -1,0 +1,32 @@
+<document>
+
+<header>
+<title>Guide Utilisateur de Birthday</title>
+</header>
+
+<plain name="Accueil">
+
+<center><img src="Banniere_Birthday.tiff"></center>
+
+<left>	
+
+<information>
+Birthday est un outil du projet de Bureau AGNoStep. 
+</information>
+
+<caution>
+(c) 2026 Patrick Cardona. Ce projet est un logiciel libre distribué sous la licence générale publique GNU (GPL).
+</caution>
+
+<note>
+Site: <url>https://github.com/pcardona34/agnostep-desktop</url>
+<br>Veuillez saisir toute anomalie constatée dans la section 
+<i>issues</i> du projet.
+</note>
+</left>
+
+</plain>
+
+<chapter src="Birth.xlp" name="Fêtes et anniversaires"></chapter>
+
+</document>

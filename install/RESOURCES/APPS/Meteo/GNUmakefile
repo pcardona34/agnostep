@@ -3,7 +3,7 @@ include $(GNUSTEP_MAKEFILES)/common.make
 #
 # Application
 #
-VERSION = 0.1
+VERSION = 0.2
 PACKAGE_NAME = Meteo
 APP_NAME = Meteo
 Meteo_APPLICATION_ICON = weather.tiff 
@@ -13,6 +13,14 @@ Meteo_APPLICATION_ICON = weather.tiff
 #
 Meteo_RESOURCE_FILES = \
 Resources/weather.tiff 
+
+#
+# Localization
+#
+Meteo_LANGUAGES = English French
+Meteo_LOCALIZED_RESOURCE_FILES = \
+Localizable.strings \
+MeteoInfo.plist
 
 #
 # Header files

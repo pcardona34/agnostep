@@ -14,7 +14,10 @@ See Unstable branch until now.
 
 - Pass.app: release 0.2. Added Edit button and action to the List Panel.
 - Launcher.app: release 0.2. Full French localization (help bundle, UI and Info Panel)
-- AgnostepManager: release 0.3. Full French localization (help bundle, UI and Info Panel)
+- AgnostepManager: release 0.3. Full French localization (help bundle, UI and Info Panel) - Misc. in help bundle.
+- Birthday: release 0.2. Full French Localization (help bundle, UI and Info Panel)
+- Dico: release 0.2. Full French Localization (UI)
+- Meteo: release 0.2. Full French Localization (UI and Info Panel)
 
 ### Changes of the Release Candidate 2.0.4
 

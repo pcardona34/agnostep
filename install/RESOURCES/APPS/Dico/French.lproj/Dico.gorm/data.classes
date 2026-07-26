@@ -1,0 +1,29 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    AppController = {
+	Actions = (
+	    "showPrefPanel:"
+	);
+	Outlets = (
+	    "_window"
+	);
+	Super = NSObject;
+    };
+    Dico = {
+	Actions = (
+	    "searchMotif:"
+	);
+	Outlets = (
+	    motif
+	);
+	Super = NSObject;
+    };
+    FirstResponder = {
+	Actions = (
+	    "searchMotif:",
+	    "orderFrontFontPanel:",
+	    "showPrefPanel:"
+	);
+	Super = NSObject;
+    };
+}

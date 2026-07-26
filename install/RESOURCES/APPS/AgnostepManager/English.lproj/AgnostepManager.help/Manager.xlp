@@ -2,19 +2,12 @@
 
 With Agnostep Manager, you are able to install more applications and Resources.
 
-<br>These applications and resources are splitted in categories: the top ones are useful when 
-you install Agnostep Desktop the first time:<br>
+<br>These applications and resources are splitted in categories.<br>
 
 <ul>
-<li>Prep</li>
-<li>Core (Desktop)</li>
-<li>(Core) Apps</li>
-<li>(User) Settings</li>
-<li>DM (i.e. the Display Manager)</li>
+<li>Apps: these are the Core apps of Agnostep already installed by Agnowiz, 
+the Agnostep Wizard at first installation stage.</li>
 </ul>
-
-<br><br>The <b>Help</b> item is only useful to provide Help translations for 
-non English users when they do not  already exist within the program.<br>
 
 <section name="Figure: Agnostep Manager">
 <legendfig src="Manager.tiff"></legendfig>
@@ -27,10 +20,15 @@ non English users when they do not  already exist within the program.<br>
 <li>Extra: More current applications to complete the Core apps already installed</li>
 <li>Util: Utilities like Affiche (sticky Notes) Calculator and do on...</li>
 <li>Games: great gameslike Chess, NeXTGo and so on.</li>
+<li>Native: these are applications created in purpose for Agnostep. 
+They are already installed.</li>
+<li>Dockapps: useful dockapps installed within the Clip panel.</li>
 </ul>
 
 <br><br>Finally, <b>Wrappers</b> tend to provide launchers for non GNUstep native applications
- like Inkscape, LibreOffice, Scribus... 
+ like Inkscape, LibreOffice, Scribus...
+
+<br>Of course, 'Emove' item helps you remove cleanly an application.
 
 <br><b>Update Agnostep</b> allows to fetch the latest code from the Git repository.
 

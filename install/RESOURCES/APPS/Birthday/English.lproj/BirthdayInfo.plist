@@ -1,0 +1,17 @@
+{
+    ApplicationDescription = "A Birthday Reminder";
+    ApplicationName = Birthday;
+    ApplicationRelease = "0.2";
+    Authors = (
+	"Patrick CARDONA"
+    );
+    Copyright = "Copyright (C) 2026 - An Agnostep Tool";
+    CopyrightDescription = "Released under GNU General Public License 3.0";
+    FullVersionID = "0.1";
+    NSExecutable = Birthday;
+    NSIcon = "Birthday.tiff";
+    NSMainNibFile = ;
+    NSPrincipalClass = NSApplication;
+    NSRole = Application;
+    GSHelpContentsFile = "Birthday.help";
+}

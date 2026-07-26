@@ -15,7 +15,7 @@
            styleMask:(NSTitledWindowMask | NSClosableWindowMask)
            backing:NSBackingStoreBuffered
            defer:NO];
-        [prefsWindow setTitle:@"Preferences"];
+        [prefsWindow setTitle: _(@"Preferences")];
         [prefsWindow center];
  
         // The view on the window
@@ -24,7 +24,7 @@
         // text field label
         NSTextField *label = [[NSTextField alloc] 
            initWithFrame:NSMakeRect(16, 72, 100, 20)];
-        [label setStringValue:@"Location:"];
+        [label setStringValue: _(@"Location:")];
         [label setBezeled:NO];
         [label setDrawsBackground:NO];
         [label setEditable:NO];
@@ -48,7 +48,7 @@
         // Cancel Button
         NSButton *cancel = [[NSButton alloc] 
             initWithFrame:NSMakeRect(96, 12, 116, 28)];
-        [cancel setTitle:@"Cancel"];
+        [cancel setTitle: _(@"Cancel")];
         [cancel setTarget:self];
         [cancel setAction:@selector(cancelPreferences:)];
         [content addSubview:cancel];

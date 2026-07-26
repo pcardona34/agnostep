@@ -21,7 +21,6 @@
 
 @implementation MyDelegate
 
-
 /*
  * currentDate: getting the current Date
  *
@@ -129,23 +128,23 @@
   NSString *thename = (NSString *)[[self nameToCelebrate] firstObject];
   NSString *theevent = (NSString *)[[self nameToCelebrate] lastObject];
   NSLog(@"event:%@", theevent);
-  NSMutableString *title = [NSMutableString stringWithString: @"Event: "];
+  NSMutableString *title = [NSMutableString stringWithString: _(@"Event: ")];
  
   if (theevent && [theevent length] > 0)
     {
       if ([theevent containsString:@"bd"])
         {
-          [title appendString: @"Birthday"];
+          [title appendString: _(@"Birthday")];
         }
       else
         {
           if ([theevent containsString:@"st"])
           {
-            [title appendString: @"Feast"];
+            [title appendString: _(@"Feast")];
           }
           else
           {
-             [title appendString: @"Unknown"];
+             [title appendString: _(@"Unknown")];
           }
         }
     }
@@ -153,11 +152,11 @@
   NSString *message;
   if (thename && [thename length] > 0)
     { 
-      message = [NSString stringWithFormat: @"Today, we celebrate: %@!", thename];
+      message = [NSString stringWithFormat: _(@"Today, we celebrate: %@!"), thename];
     }
   else
     {
-      message = [NSString stringWithFormat: @"Nobody to celebrate today."];
+      message = [NSString stringWithFormat: _(@"Nobody to celebrate today.")];
     }
   NSAlert *alert = [[[NSAlert alloc] init] autorelease];
   [alert setMessageText: title];
@@ -189,6 +188,19 @@
   [NSApp setApplicationIconImage: currentIcon];   
 }
 
+
+/* The code below was previously suggested by DeepWiki and then adapted */
+- (void) showInfoPanel: (id)sender
+{  
+  NSBundle *bundle = [NSBundle mainBundle];  
+  NSString *path = [bundle pathForResource: @"BirthdayInfo"   
+                                   ofType: @"plist"];  
+  NSDictionary *localizedInfo = [NSDictionary dictionaryWithContentsOfFile: path];  
+    
+  [NSApp orderFrontStandardInfoPanelWithOptions: localizedInfo];  
+}
+/* End of DeepWiki suggest */
+
 /* **************************************************************************** */
 /*
  * Standard method to prepare the UI from the delegate: applicationDidFinishLaunching
@@ -204,25 +216,25 @@
     menu = AUTORELEASE ([NSMenu new]);
     infoMenu = AUTORELEASE ([NSMenu new]);
   
-    [infoMenu addItemWithTitle: @"Info Panel..." 
-          action: @selector (orderFrontStandardInfoPanel:) 
+    [infoMenu addItemWithTitle: _(@"Info Panel...") 
+          action: @selector (showInfoPanel:) 
           keyEquivalent: @""];
 
-    [infoMenu addItemWithTitle: @"Help..." 
+    [infoMenu addItemWithTitle: _(@"Help...") 
           action: @selector (orderFrontHelpPanel:)
           keyEquivalent: @"?"];
 
-    menuItem = [menu addItemWithTitle: @"Info..." 
+    menuItem = [menu addItemWithTitle: _(@"Info...") 
           action: NULL 
           keyEquivalent: @""];
 
     [menu setSubmenu: infoMenu  forItem: menuItem];
   
-    [menu addItemWithTitle: @"Who..."
+    [menu addItemWithTitle: _(@"Who...")
           action:@selector(who:)
           keyEquivalent:@""];
   
-    [menu addItemWithTitle: @"Quit"
+    [menu addItemWithTitle: _(@"Quit")
           action:@selector(terminate:)
           keyEquivalent:@"q"];
   

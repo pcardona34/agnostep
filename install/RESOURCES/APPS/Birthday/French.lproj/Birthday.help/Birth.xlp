@@ -1,0 +1,113 @@
+<section name="Introduction">
+
+Ne les  oubliez pas&nbsp;!
+<br>Afin de vous y aider, AGNoStep fournit plusieurs outils.
+
+</section>
+
+<section name="1. Base des Anniversaires et fêtes">
+
+C'est un fichier texte&nbsp;: chaque ligne y figure un événement
+ avec une syntaxe appropriée&nbsp;:
+
+<ul>
+<li>Syntaxe de l'anniversaire&nbsp;: mot clé "bd":
+<note>
+Qui=jj/mm/aaaa bd
+</note>
+</li>
+<li>Syntaxe de la fête&nbsp;: mot clé "st":
+<note>
+Qui=jj/mm st
+</note>
+</li>
+<li>Pour commenter ou exclure une ligne, il suffit d'ajouter au 
+début le symbole dièse:
+<note>
+#Cette ligne est commentée
+</note>
+<li>
+</ul>
+
+<caution>
+Cas particulier: si un anniversaire ou une fête ont lieu le 
+même jour, ne dupliquez pas cette date, mais utilisez la syntaxe
+ spéciale ci-dessous.
+</caution>
+
+<note>
+Qui,Qui=jj/mm/aaaa bd,st
+</note>
+
+Ce fichier doit être renommé "Birthdays" et copié dans le 
+sous-dossier "Documents/Private".
+
+<caution>
+Conservez l'original en un autre lieu sûr.
+</caution>
+
+Maintenant, quand vous vous connectez, l'application 
+<i>Birthday</i> vérifie s'il existe un anniversaire ou une fête 
+aujourd'hui, et dans l'affirmative, elle affiche un badge sur son
+ icône dockée dans la barre du Trombone.
+</section>
+
+<section name="2. Importer des anniversaires dans l'Agenda">
+
+Vous pouvez exporter ces événements à partir de la base 
+"Birthdays" à destination du calendrier de l'agenda 
+<i>SimpleAgenda</i> 
+ou de la base du gestionnaire d'adresses <i>AddressManager</i>.
+
+<section name="2.1 Anniversaires">
+
+Dans une fenêtre du Terminal, executez&nbsp;:
+
+<listing>
+cd Documents/Private
+<br />birth2vcf Birthdays
+</listing>
+
+Ce qui produira un fichier vcard "bdaaaammjj.vcf".
+
+Pour importer ce fichier dans la base des Adresss&nbsp;: 
+sélectionnez ce fichier vcard et appuyez sur ENTRÉE, 
+ou bien&nbsp;:
+
+<listing>
+openpapp AddressManager
+<br />menu: Base de Donnée / Importer...
+</listing>
+
+Dans le dialogue Ouvrir, naviguez vers "Documents/Private" et 
+ sélectionnez le fichier vcard  '.vcf' que vous venez de créer.
+C'est fait.
+
+<br>Puis démarrez "SimpleAgenda" pour vérifier qu'il soit en 
+ mesure de retrouver un anniversaire à partir de la base des 
+adresses&nbsp;: chaque anniversaire sera alors affiché avec 
+ fond violet.
+
+</section>
+<section name="2.2 Fêtes">
+
+Dans une fenêtre du Terminal, exécutez&nbsp;:
+
+<listing>
+cd Documents/Private
+<br />feast2ics Birthdays
+</listing>
+
+Cela produira un fichier de calendrier 'staaaammjj.ics'.
+
+Pour l'importer dans l'agenda "SimpleAgenda"&nbsp;:
+
+<listing>
+openapp SimpleAgenda staaaammjj.ics
+</listing>
+
+Voilà qui est fait. Les fêtes s'afficheront désormais dans 
+l'agenda avec une couleur de fond jaune dans la vue quotidienne.
+
+</section>
+</section>

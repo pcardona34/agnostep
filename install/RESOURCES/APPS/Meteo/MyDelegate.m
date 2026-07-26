@@ -233,6 +233,18 @@
   [predictionController openPrediction: nil];
 }
 
+/* The code below was previously suggested by DeepWiki and then adapted */
+- (void) showInfoPanel: (id)sender  
+{  
+  NSBundle *bundle = [NSBundle mainBundle];  
+  NSString *path = [bundle pathForResource: @"MeteoInfo"   
+                                   ofType: @"plist"];  
+  NSDictionary *localizedInfo = [NSDictionary dictionaryWithContentsOfFile: path];  
+    
+  [NSApp orderFrontStandardInfoPanelWithOptions: localizedInfo];  
+}
+/* End of DeepWiki suggest */
+
 /* **************************************************************************** */
 /*
  * Standard method to prepare the UI from the delegate: applicationDidFinishLaunching
@@ -266,27 +278,32 @@
     menu = AUTORELEASE ([NSMenu new]);
     infoMenu = AUTORELEASE ([NSMenu new]);
   
-    [infoMenu addItemWithTitle: @"Info Panel..." 
-            action: @selector (orderFrontStandardInfoPanel:) 
+    [infoMenu addItemWithTitle: _(@"Info Panel...") 
+            action: @selector (showInfoPanel:) 
             keyEquivalent: @""];
   
-    [infoMenu addItemWithTitle: @"Preferences..." 
+    [infoMenu addItemWithTitle: _(@"Preferences...") 
             action: @selector (openPreferences:)
             keyEquivalent: @""];
 
 
-    [infoMenu addItemWithTitle: @"Help..." 
+    [infoMenu addItemWithTitle: _(@"Help...") 
             action: @selector (orderFrontHelpPanel:)
             keyEquivalent: @"?"];
 
-    menuItem = [menu addItemWithTitle: @"Info..." 
+    menuItem = [menu addItemWithTitle: _(@"Info...") 
                    action: NULL 
                    keyEquivalent: @""];
 
     [menu setSubmenu: infoMenu forItem: menuItem];
   
-    [menu addItemWithTitle:@"Prediction" action:@selector(showPrediction:) keyEquivalent:@""];
-    [menu addItemWithTitle:@"Quit" action:@selector(terminate:) keyEquivalent:@"q"];
+    [menu addItemWithTitle: _(@"Prediction") 
+          action:@selector(showPrediction:) 
+          keyEquivalent:@""];
+  
+    [menu addItemWithTitle: _(@"Quit") 
+          action:@selector(terminate:) 
+          keyEquivalent:@"q"];
     
     // Add the menu to the application
     NSApplication.sharedApplication.mainMenu = menu;  

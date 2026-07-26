@@ -5,7 +5,7 @@
     Authors = (
 	"Patrick CARDONA"
     );
-    Copyright = "Copyright (C) 2026";
+    Copyright = "Copyright (C) 2026 - Un outil d'Agnostep";
     CopyrightDescription = "Distribu\U00E9 sous la licence g\U00E9n\U00E9rale publique GNU (GPL) 3.0";
     FullVersionID = "0.3";
     NSExecutable = AgnostepManager;

@@ -5,7 +5,7 @@ Do not forget them!
 
 </section>
 
-<section name="1 The Birthdays base">
+<section name="1. The Birthdays base">
 
 It is a text file: each line is an event with appropriate syntax:
 
@@ -27,19 +27,30 @@ Who=dd/mm st
 <li>
 </ul>
 
+<caution>
+Particular case: with twins or a birthday and a feast at the same date, 
+do not duplicate this date, but use this particular syntax below.
+</caution>
+
+<note>
+Who,Who=dd/mm/yyyy bd,st
+</note>
+
 This file must be renamed 'Birthdays' and copied to the 'Documents/Private' folder.
 
 <caution>
 Keep safe the original file in another place.
 </caution>
 
-Now, when you log in, the 'Birthday' app checks if a birthday or a feast is today and it displays abadge if it is.
+Now, when you log in, the 'Birthday' app checks if a birthday or a feast is today 
+and it displays a badge if it is.
 
 </section>
 
-<section name="2 Feed the Agenda calendar">
+<section name="2. Feed the Agenda calendar">
 
-You can export these infos from the Birthdays base into 'SimpleAgenda' and into 'AddressManager'.
+You can export these infos from the Birthdays base into 'SimpleAgenda' and into 
+'AddressManager'.
 
 <section name="2.1 Birthdays">
 
@@ -59,9 +70,11 @@ openpapp AddressManager
 <br />menu: Database / Import...
 </listing>
 
-In the Open Panel, navigate to 'Documents/Private' and choose the 'vcf' file you have created. Thats done.
+In the Open Panel, navigate to 'Documents/Private' and choose the 'vcf' file you have 
+created. Thats done.
 
-Then open 'SimpleAgenda' to verify it is able to retrieve the birthdays from the Address base: each birthday will be shown with a violet background.
+Then open 'SimpleAgenda' to verify it is able to retrieve the birthdays from the 
+Address base: each birthday will be shown with a violet background.
 
 </section>
 <section name="2.2 Feasts">
@@ -81,7 +94,8 @@ To import in SimpleAgenda:
 openapp SimpleAgenda styyyymmdd.ics
 </listing>
 
-That's done. The feasts will be shown now in the agenda with a yellow background in the Day view.
+That's done. The feasts will be shown now in the agenda with a yellow background in 
+the Day view.
 
 </section>
 </section>

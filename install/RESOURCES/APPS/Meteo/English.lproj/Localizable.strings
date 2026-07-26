@@ -1,0 +1,16 @@
+/* Localizable strings for Meteo */ 
+
+"Info Panel..." = "Info Panel...";
+"Preferences..." = "Preferences...";
+"Help..." = "Help...";
+"Info..." = "Info...";
+"Prediction" = "Prediction";
+"Quit" = "Quit";
+
+/* PredictionController */
+"Weather Prediction" = "Weather Prediction";
+
+/* PreferencesController */
+"Preferences" = "Preferences";
+"Location:" = "Location:";
+"Cancel" = "Cancel"; 
