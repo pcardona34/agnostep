@@ -18,4 +18,13 @@
 
 @implementation AppController
 
+- (void) showInfoPanel: (id) sender
+{
+  NSBundle *bundle = [NSBundle mainBundle];
+  NSString *path = [bundle pathForResource: @"SaveLinkInfo"
+                           ofType: @"plist"];
+  NSDictionary *localizedInfo = [NSDictionary dictionaryWithContentsOfFile: path];
+  [NSApp orderFrontStandardInfoPanelWithOptions: localizedInfo];
+}
+
 @end

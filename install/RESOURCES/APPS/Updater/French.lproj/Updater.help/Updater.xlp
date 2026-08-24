@@ -1,0 +1,55 @@
+<section name="Introduction">
+
+Updater est un outil qui se procure des infos au sujet des paquets Debian susceptibles d'être mis à jour. 
+
+</section>
+
+<section name="1. Fonctionnement">
+
+<p> Le panneau du Trombone possède une icône dockée de l'application <i>Updater</i>. Son statut sera modifié en fonction de
+ des infos reçues: quand des paquets disposent d'une mise à jour, un badge est affiché sur l'icône avec le décompte des 
+paquets concernés.</p>
+<p>Alors, à partir du menu, vous ouvrez le panneau des paquets à mettre à jour où leur liste est affichée, et finalement,
+ vous pouvez effectuer la mise à jour si vous le souhaitez.</p>
+
+
+<ul>
+<li>Badge: plusieurs paquets peuvent être mis à jour.</li>
+<li>Aucun badge: le système Debian est à jour.</li>
+</ul>
+
+<section name="Figure 1.1: Icône de l'application">
+<legendfig src="UpdaterTile.tiff">
+<legend x="282" y="25">Badge: plusieurs paquets sont susceptibles d'une mise à jour</legend>
+</legendfig>
+</section>
+
+Afin de voir la liste détaillée des paquets concernés, sélectionnez dans le menu l'item:
+
+<listing>
+Liste des paquets à mettre à jour...
+</listing>
+
+<section name="Figure 1.2: Liste des paquets à mettre à jour">
+<legendfig src="List.tiff">
+<legend x="240" y="400">Bouton permettant d'effectuer la mise à jour</legend>
+</legendfig>
+</section>
+
+</section>
+
+<section name="2. Réalisation de la mise à jour">
+
+<p>Pour effectuer la mise à jour du système Debian: cliquez sur le bouton "Mettre à jour" situé au bas du panneau 
+ de la liste des paquets concernés.</p>
+
+<section name="Figure 2.1: Panneau de mise à jour">
+<legendfig src="Upgrade.tiff">
+<legend x="10" y="50">Opération courante de mise à jour</legend>
+</legendfig>
+</section>
+
+<p>Lorsque le processus de mise à jour est terminé, le bouton "Fermer" devient disponible afin de refermer le panneau.
+ De même, le badge disparaît à la surface de l'icône de l'application: votre système est alors à jour.</p>
+
+</section>

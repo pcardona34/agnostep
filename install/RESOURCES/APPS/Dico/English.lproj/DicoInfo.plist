@@ -6,12 +6,11 @@
     Authors = (
 	"Patrick CARDONA"
     );
-    Copyright = "Copyright (C) 2026";
+    Copyright = "Copyright (C) 2026 - An Agnostep Desktop Tool";
     CopyrightDescription = "Released under GNU General Public License 3.0";
     FullVersionID = "0.1";
     NSExecutable = Dico;
     NSMainNibFile = "Dico.gorm";
     NSPrincipalClass = NSApplication;
     NSRole = Application;
-    URL = "https://github.com/pcardona34/agnostep-desktop";
 }

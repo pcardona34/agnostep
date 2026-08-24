@@ -1,0 +1,87 @@
+<section name="Migration de la base des mots de passe">
+
+<information>
+Inspiré de:<br>
+<site>https://www.planetroast.com/migrating-linux-pass-to-new-machine</site>
+</information>
+
+<p>Quand vous changez d'ordinateur, une tâche critique 
+consiste à préserver les données personnelles, et notammant la base des mots de passe.</p>
+
+<section name="Étape 1: Clonage de la base des mots de passe">
+
+<p>Copiez intégralement le dossier <code>.password-store</code> sur le nouvel ordinateur. 
+Le chemin par défaut est:
+
+<listing>
+$HOME/.password-store
+</listing>
+
+</section>
+
+<section name="Étape 2: Exportation de vos clés GPG">
+
+<p>Sur le précédent ordinateur, exécutez les commandes suivantes, <i>mutatis 
+mutandis</i> afin de créer une version 
+texte archivée de vos clés:</p>
+
+<listing>
+gpg --output votre_cle_privee.pgp --armor --export-secret-key username@example
+</listing>
+
+<p>Puis recopiez cette clé sur le nouvel ordinateur.</p>
+
+</section>
+
+<section name="Étape 3: Importation des clés sur le nouvel ordinateur">
+
+<listing>
+gpg --import votre_cle_privee.pgp
+</listing>
+
+<p>Vérifiez-la et affichez-la:</p>
+
+<listing>
+patrick@pi500:~ $ gpg --list-secret-keys<br>
+</listing>
+
+<p>Vous obtiendrez alors:</p>
+
+<listing>
+/home/patrick/.gnupg/pubring.kbx<br>
+--------------------------------<br>
+sec   rsa1024 2025-10-06 [SC]<br>
+      70FAC54E...<br>
+uid          [  ultime ] patrick (Clé Pass) &lt;patrick.cardona@...&gt;<br>
+ssb   rsa1024 2025-10-06 [E]
+</listing>
+
+<caution>
+L'identifiant (ID) de la clé est la longue chaîne de texte à la quatrième ligne.
+</caution>
+
+<p>(Dans mon exemple: <code>70FAC54E...</code>)</p>
+
+</section>
+
+<section name="Étape 4: Configuration de Pass">
+
+<listing>
+pass init 70FAC54E...
+</listing>
+
+</section>
+
+<section name="Étape 5: élévation du niveau de confiance">
+
+<listing>
+gpg --edit-key &lt;id_de_votre_cle&gt;<br>
+gpg&gt; trust
+</listing>
+
+<p>Choisissez le niveau 5 (c-à-d: ultimate) puis quitter avec <code>'quit'</code> 
+l'invite de commande gpg.</p>
+
+</section>
+</section>
+

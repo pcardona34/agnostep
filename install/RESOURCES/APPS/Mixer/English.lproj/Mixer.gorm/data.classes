@@ -1,0 +1,28 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    AppController = {
+	Actions = (
+	    "setVolume:",
+	    "showInfoPanel:"
+	);
+	Outlets = (
+	    pcmL,
+	    pcmR,
+	    pcmLock,
+	    pcmMute,
+	    pcmL,
+	    pcmR,
+	    pcmLock,
+	    pcmMute
+	);
+	Super = NSObject;
+    };
+    FirstResponder = {
+	Actions = (
+	    "orderFrontFontPanel:",
+	    "setVolume:",
+	    "showInfoPanel:"
+	);
+	Super = NSObject;
+    };
+}

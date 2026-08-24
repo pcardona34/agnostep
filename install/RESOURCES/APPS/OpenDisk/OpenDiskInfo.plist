@@ -1,7 +1,7 @@
 {
     ApplicationDescription = "Open the media folder where removable disks are mounted.";
     ApplicationName = OpenDisk;
-    ApplicationRelease = "0.1";
+    ApplicationRelease = "0.2";
     Authors = (
 	"Patrick CARDONA"
     );

@@ -1,0 +1,76 @@
+<section name="Introduction">
+
+Jusqu'à présent, nous ne disposons pas d'une application native GNUstep pour gérer les mots de 
+passe. C'est pourquoi nous utilisons un programme dans la console: <i>pass</i>, aussi appelé 
+"the standard unix password manager".
+<br>Site: <url>https://www.passwordstore.org/</url>
+<br>Cependant <b>Pass.app</b> nous fournira aussi une sorte d'interface utilisateur 
+qui rendra son utilisation plus simple et mieux intégrée au bureau Agnostep.
+<br>Nous devons d'abord créer la Base des mots de passe (Passwords Store)... 
+</section>
+
+<section name="1. Paramétrage -1- Clé secrète principale">
+
+Le programme et ses dépendances ont déjà été installés. 
+Pour l'utiliser, nous devons générer une clé numérique.
+Ouvrez une nouvelle invite de commande (shell) dans l'application Terminal.
+Puis exécutez:
+
+<listing>
+gpg --expert --pinentry-mode=loopback --full-gen-key
+</listing>
+
+Ci-dessous, mes paramètres:
+
+<note>
+Type: 1
+<br />Size: 1024
+<br />Sub-key: 1024
+<br />Never dies
+<br />Identity: patrick
+<br />Your passphrase: &hellip;
+</note>
+
+</section>
+
+<section name="2. Paramétrage -2- Clé secrète secondaire">
+
+Exécutez maintenant, <i>mutatis mutandis</i>:
+
+<listing>
+gpg --edit-key "patrick"
+</listing>
+
+Vérifiez sa création avec:
+
+<listing>
+gpg --list-secret-keys
+</listing>
+
+<information>
+Pour obtenir l'identifiant de la clé secondaire (Key-ID), copiez les 16 derniers caractères
+ de la sous-clé (fin du champ 'ssb')
+</information>
+
+Exemple factice:
+<listing>
+59FEA9BF714DC50B
+</listing>
+
+</section>
+
+<section name="3. Paramétrage -3- Création de la base des mots de passe">
+
+Exécutez en y substituant votre clé (Key-ID):
+
+<listing>
+pass init 59FEA9BF714DC50B
+</listing>
+
+Un message comme le suivant doit confirmer la création de la base des mots de passe:
+<listing>
+mkdir /home/patrick/.password-store/
+<br />Password store initialized for 59FEA9BF714DC50B
+</listing>
+
+</section>

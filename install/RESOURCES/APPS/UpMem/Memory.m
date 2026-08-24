@@ -30,7 +30,7 @@
                                                       NSWindowStyleMaskResizable)
                                              backing:NSBackingStoreBuffered
                                                defer:NO];
-      [window setTitle:@"Memory Usage"];
+      [window setTitle: _(@"Memory Usage")];
 
        // Create a label to display memory usage
       memoryUsageLabel = [[NSTextField alloc] initWithFrame:NSMakeRect(10, 60, 280, 40)];
@@ -77,7 +77,7 @@
     double percentageUsed = (double)memoryUsage / memoryTotal * 100.0;
 
     // Update the label with memory usage
-    NSString *displayText = [NSString stringWithFormat:@"Memory Usage: %lu MB (%.2f%%)", memoryUsage / (1024 * 1024), percentageUsed];
+    NSString *displayText = [NSString stringWithFormat: _(@"Memory Usage: %lu MB (%.2f%%)"), memoryUsage / (1024 * 1024), percentageUsed];
     [memoryUsageLabel setStringValue:displayText];
 
     // Update the progress bar

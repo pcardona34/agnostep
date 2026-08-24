@@ -32,7 +32,7 @@
            styleMask:(NSTitledWindowMask | NSClosableWindowMask)
            backing:NSBackingStoreBuffered
            defer:NO];
-        [listWindow setTitle:@"Available Keys"];
+        [listWindow setTitle: _(@"Available Keys")];
         [listWindow center];
 
         // The view on the window
@@ -59,13 +59,13 @@
         [content addSubview: scrollView];  
         
         // Set text placeholder only
-        [textView setString: @"Loading..."];
+        [textView setString: _(@"Loading...")];
         [textView setEditable:NO];
                        
         // Edit Button
         editButton = [[NSButton alloc] 
             initWithFrame:NSMakeRect(20, 16, 100, 28)];
-        [editButton setTitle:@"Edit..."];
+        [editButton setTitle: _(@"Edit...")];
         [editButton setTarget:self];
         [editButton setAction:@selector(edit:)];
         [content addSubview: editButton];  
@@ -73,7 +73,7 @@
         // Pass Button
         passButton = [[NSButton alloc] 
             initWithFrame:NSMakeRect(130, 16, 120, 28)];
-        [passButton setTitle:@"Password..."];
+        [passButton setTitle: _(@"Password...")];
         [passButton setTarget:self];
         [passButton setAction:@selector(pass:)];
         [content addSubview: passButton];  
@@ -81,7 +81,7 @@
         // Close Button
         closeButton = [[NSButton alloc] 
             initWithFrame:NSMakeRect(260, 16, 120, 28)];
-        [closeButton setTitle:@"Close"];
+        [closeButton setTitle: _(@"Close")];
         [closeButton setTarget:self];
         [closeButton setAction:@selector(closeWindow:)];
         [content addSubview:closeButton];  

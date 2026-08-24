@@ -36,7 +36,7 @@
            styleMask:(NSTitledWindowMask | NSClosableWindowMask)
            backing:NSBackingStoreBuffered
            defer:NO];
-        [listWindow setTitle:@"Debian upgradable packages"];
+        [listWindow setTitle: _(@"Debian upgradable packages")];
         [listWindow center];
 
         // The view on the window
@@ -63,20 +63,20 @@
         [content addSubview: scrollView];  
         
         // Set text placeholder only
-        [textView setString: @"Loading..."];
+        [textView setString: _(@"Loading...")];
         [textView setEditable:NO];
                        
         // Upgrade Button
         upgradeButton = [[NSButton alloc] 
             initWithFrame:NSMakeRect(130, 16, 120, 28)];
-        [upgradeButton setTitle:@"Upgrade"];
+        [upgradeButton setTitle: _(@"Upgrade")];
         [upgradeButton setTarget:self];
         [upgradeButton setAction:@selector(upgrade:)];
         
         // Close Button
         closeButton = [[NSButton alloc] 
             initWithFrame:NSMakeRect(260, 16, 120, 28)];
-        [closeButton setTitle:@"Close"];
+        [closeButton setTitle: _(@"Close")];
         [closeButton setTarget:self];
         [closeButton setAction:@selector(closeWindow:)];
         [content addSubview:closeButton];  
@@ -108,7 +108,7 @@
     NSString *str = [[NSString alloc] initWithData: data   
                                              encoding: NSUTF8StringEncoding];    
     
-    NSString *header = @"List of Upgradable Packages:\n\n"; 
+    NSString *header = _(@"List of Upgradable Packages:\n\n"); 
     NSMutableString *list = [NSMutableString stringWithString: header];  
     NSArray *lines = [str componentsSeparatedByString: @"\n"];    
     for(id line in lines) {    

@@ -1,0 +1,31 @@
+<document>
+
+<header>
+<title>Guide Utilisateur de Printer</title>
+</header>
+
+<plain name="Accueil">
+
+<center><img src="banniere_Printer.tiff"></center>
+
+<left>	
+<information>
+Printer permet de gérer votre imprimante au moyen de l'interface CUPS. 
+</information>
+
+<caution>
+(c) 2025-2026 Patrick Cardona. Ce projet est un logiciel libre distribué sous la licence 
+générale publique GNU (GPL).<br>
+C'est un outil du projet de Bureau Agnostep.
+</caution>
+
+<note>
+Site: <url>https://github.com/pcardona34/agnostep</url>&nbsp;
+<br />Veuillez y saisir tout problème constaté dans la section <i>issues</i>.
+</note>
+</left>
+</plain>
+
+<chapter src="Printing.xlp" name="Gestion de l'impression"></chapter>
+
+</document>

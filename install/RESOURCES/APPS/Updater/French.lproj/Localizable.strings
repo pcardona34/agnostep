@@ -1,0 +1,17 @@
+/* Localizable strings for Updater */
+
+"Debian upgradable packages" = "Paquets Debian à mettre à jour";
+"Loading..." = "Chargement...";
+"Upgrade" = "Mettre à jour";
+"Close" = "Fermer";
+"List of Upgradable Packages:\n\n" = "Liste des paquets à mettre à jour:\n\n";
+
+"Info Panel..." = "À propos...";
+"Help..." = "Aide...";
+"Info..." = "Informations...";
+"List Updates..." = "Lister les mises à jour...";
+"Quit" = "Quitter";
+
+"Upgrading Debian packages" = "Mise à jour des paquets Debian";
+/*"Close" = "Close"; */
+"Upgrading..." = "Mise à jour...";

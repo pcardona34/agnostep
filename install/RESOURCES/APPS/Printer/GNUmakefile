@@ -13,8 +13,7 @@ Printer_APPLICATION_ICON = Printer.tiff
 # Resource files
 #
 Printer_RESOURCE_FILES = \
-Resources/Printer.tiff \
-Resources/Printer.help
+Resources/Printer.tiff
 
 #
 # Header files
@@ -33,6 +32,15 @@ MyDelegate.m
 #
 Printer_OBJC_FILES += \
 Main.m
+
+#
+# Localization
+#
+Printer_LANGUAGES = English French
+Printer_LOCALIZED_RESOURCE_FILES = \
+Localizable.strings \
+Printer.help \
+PrinterInfo.plist
 
 #
 # Makefiles

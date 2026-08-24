@@ -2,9 +2,10 @@
     "## Comment" = "Do NOT change this file, Gorm maintains it";
     AppController = {
 	Actions = (
-	    "showPrefPanel:"
+	    "showInfoPanel:"
 	);
 	Outlets = (
+	    "_window",
 	    "_window"
 	);
 	Super = NSObject;
@@ -20,9 +21,17 @@
     };
     FirstResponder = {
 	Actions = (
-	    "searchMotif:",
 	    "orderFrontFontPanel:",
+	    "searchMotif:",
+	    "setVolume:",
+	    "showInfoPanel:",
 	    "showPrefPanel:"
+	);
+	Super = NSObject;
+    };
+    NSController = {
+	Actions = (
+	    "showInfoPanel:"
 	);
 	Super = NSObject;
     };

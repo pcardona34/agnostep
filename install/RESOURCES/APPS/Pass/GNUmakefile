@@ -3,17 +3,16 @@ include $(GNUSTEP_MAKEFILES)/common.make
 #
 # Application
 #
-VERSION = 0.1
+VERSION = 0.2
 PACKAGE_NAME = Pass
 APP_NAME = Pass
-Pass_APPLICATION_ICON = pass.tiff 
+Pass_APPLICATION_ICON = pass.tiff
 
 #
 # Resource files
 #
 Pass_RESOURCE_FILES = \
-Resources/pass.tiff \
-Resources/Pass.help 
+Resources/pass.tiff
 
 #
 # Header files
@@ -38,6 +37,15 @@ New.m
 #
 Pass_OBJC_FILES += \
 Main.m
+
+#
+# Localization
+#
+Pass_LANGUAGES = English French
+Pass_LOCALIZED_RESOURCE_FILES = \
+Pass.help \
+Localizable.strings \
+PassInfo.plist
 
 #
 # Makefiles

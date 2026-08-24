@@ -1,0 +1,17 @@
+{
+    ApplicationDescription = "Mise à jour des paquets Debian";
+    ApplicationName = Updater;
+    ApplicationRelease = "0.2";
+    Authors = (
+	"Patrick CARDONA"
+    );
+    Copyright = "Copyright (C) 2026 - Un outil du bureau Agnostep";
+    CopyrightDescription = "Distribu\U00E9 sous la licence g\U00E9n\U00E9rale publique GNU (GPL) version 3.0";
+    FullVersionID = "0.2";
+    NSExecutable = Updater;
+    NSMainNibFile = ;
+    NSIcon = "Upgrade.tiff";
+    NSPrincipalClass = NSApplication;
+    NSRole = Application;
+    GSHelpContentsFile = "Updater.help";
+}

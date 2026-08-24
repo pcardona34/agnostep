@@ -32,7 +32,7 @@
            /* backing:NSBackingStoreBuffered */
            backing:NSBackingStoreNonretained
            defer:NO];
-        [progressWindow setTitle:@"Upgrading Debian packages"];
+        [progressWindow setTitle: _(@"Upgrading Debian packages")];
         [progressWindow center];
 
         // The view on the window
@@ -62,7 +62,7 @@
         // Close Button
         closeButton = [[NSButton alloc] 
             initWithFrame:NSMakeRect(260, 16, 120, 28)];
-        [closeButton setTitle:@"Close"];
+        [closeButton setTitle: _(@"Close")];
         [closeButton setTarget:self];
         [closeButton setAction:@selector(closeWindow:)];
         [closeButton setEnabled:NO];
@@ -102,7 +102,7 @@
       [progressBar setDoubleValue: 0.0];
       [progressBar setIndeterminate:NO];
       [progressBar setNeedsDisplay:YES];
-      [label setStringValue: @"Upgrading..."];   
+      [label setStringValue: _(@"Upgrading...")];   
   
       // Start timer 
       [NSTimer scheduledTimerWithTimeInterval: 0.05  

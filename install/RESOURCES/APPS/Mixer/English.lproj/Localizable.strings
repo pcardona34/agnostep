@@ -1,0 +1,18 @@
+/* TRANSLATORS: Make sure to quote all translated strings if
+   they contain spaces or non-ASCII characters.  */
+
+"Close Window" = "Close Window";
+"";
+Mixer = Mixer;
+"Arrange In Front" = "Arrange In Front";
+"Preferences..." = "Preferences...";
+"Help..." = "Help...";
+Mute = Mute;
+Lock = Lock;
+Hide = Hide;
+Windows = Windows;
+Quit = Quit;
+Info = Info;
+"Miniaturize Window" = "Miniaturize Window";
+"Info Panel..." = "Info Panel...";
+Pcm = Pcm;

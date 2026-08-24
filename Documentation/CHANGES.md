@@ -12,12 +12,20 @@ Do not try nor report any issue until a release is tagged Stable.
 
 See Unstable branch until now.
 
-- Pass.app: release 0.2. Added Edit button and action to the List Panel.
-- Launcher.app: release 0.2. Full French localization (help bundle, UI and Info Panel)
 - AgnostepManager: release 0.3. Full French localization (help bundle, UI and Info Panel) - Misc. in help bundle.
 - Birthday: release 0.2. Full French Localization (help bundle, UI and Info Panel)
-- Dico: release 0.2. Full French Localization (UI)
+- Dico: release 0.2. Full French Localization (UI and Info Panel)
+- Launcher: release 0.2. Full French localization (help bundle, UI and Info Panel)
 - Meteo: release 0.2. Full French Localization (UI and Info Panel)
+- Mixer: release 0.7.1. Full French Localization (UI and Info Panel)
+- OpenDisk: release 0.2. Full French Localization (Help bundle, UI and Info Panel)
+- Pass: release 0.2. Added Edit button and action to the List Panel. Full French Localization (help bundle, UI and Info Panel)
+- Printer: release 0.2. Full French Localization (Help bundle, UI and Info Panel)
+- SaveLink: release 0.2. Full French Localization (Help bundle, UI and Info Panel)
+- ScreenLock: release 0.2. Full French Localization (Help bundle, UI and Info Panel)
+- Sound: release 0.2. Full French Localization (Help bundle, UI and Info Panel)
+- Updater: release 0.2. Full French Localization (Help bundle, UI and Info Panel)
+- UpMem: release 0.2. Full French Localization (UI and Info Panel)
 
 ### Changes of the Release Candidate 2.0.4
 

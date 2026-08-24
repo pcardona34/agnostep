@@ -46,7 +46,7 @@
   NSInteger minutes = ((totalSeconds / 60) % 60);
   NSInteger hours = (totalSeconds / 3600);    
   return (hours > 99) ? @"99+ h" : [NSString stringWithFormat:
-                                                     @"Up/Mem:\n%02ld:%02ld\n", 
+                                                     _(@"Up/Mem:\n%02ld:%02ld\n"), 
                                                      (long)hours, (long)minutes];
 }
 
@@ -199,6 +199,17 @@
   [memory openMemory: nil];
 }
 
+/* **************************************************************************** */
+- (void) showInfoPanel: (id) sender
+{
+  NSBundle *bundle = [NSBundle mainBundle];
+  NSString *path = [bundle pathForResource: @"UpMemInfo"
+                           ofType: @"plist"];
+  NSDictionary *localizedInfo = [NSDictionary 
+     dictionaryWithContentsOfFile: path];
+  [NSApp orderFrontStandardInfoPanelWithOptions: localizedInfo]; 
+}
+
 
 /* ********************************************************************* */
 /* Standard method to prepare the UI from the delegate: applicationDidFinishLaunching
@@ -214,20 +225,21 @@
     NSMenu *infoMenu = AUTORELEASE ([NSMenu new]);
     NSMenuItem *menuItem;
     
-    [infoMenu addItemWithTitle: @"Info Panel..." 
-            action: @selector (orderFrontStandardInfoPanel:) 
+    [infoMenu addItemWithTitle: _(@"Info Panel...") 
+            action: @selector (showInfoPanel:) 
             keyEquivalent: @""];
   
-    menuItem = [menu addItemWithTitle: @"Info..." 
+    menuItem = [menu addItemWithTitle: _(@"Info...") 
                    action: NULL 
                    keyEquivalent: @""];
   
     [menu setSubmenu: infoMenu forItem: menuItem];
   
-    [menu addItemWithTitle:@"Show Memory..." 
+    [menu addItemWithTitle: _(@"Show Memory...") 
           action:@selector(showMemory:) 
           keyEquivalent:@""];
-    [menu addItemWithTitle:@"Quit" 
+  
+    [menu addItemWithTitle: _(@"Quit") 
           action:@selector(terminate:) 
           keyEquivalent:@"q"];
   

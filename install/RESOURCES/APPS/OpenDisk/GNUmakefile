@@ -3,7 +3,7 @@ include $(GNUSTEP_MAKEFILES)/common.make
 #
 # Application
 #
-VERSION = 0.2
+VERSION = 0.3
 PACKAGE_NAME = OpenDisk
 APP_NAME = OpenDisk
 OpenDisk_APPLICATION_ICON = OpenDisk.tiff
@@ -13,8 +13,7 @@ OpenDisk_APPLICATION_ICON = OpenDisk.tiff
 # Resource files
 #
 OpenDisk_RESOURCE_FILES = \
-Resources/OpenDisk.tiff \
-Resources/OpenDisk.help
+Resources/OpenDisk.tiff
 
 #
 # Header files
@@ -33,6 +32,13 @@ MyDelegate.m
 #
 OpenDisk_OBJC_FILES += \
 Main.m
+
+# Localization
+OpenDisk_LANGUAGES = English French
+OpenDisk_LOCALIZED_RESOURCE_FILES = \
+Localizable.strings \
+OpenDisk.help \
+OpenDiskInfo.plist
 
 #
 # Makefiles

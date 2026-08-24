@@ -1,0 +1,64 @@
+<section name="Introduction">
+
+L'économiseur d'écran de GNUstep est InnerSpace. Par défaut, 
+cet économiseur utilise le module <i>Polyhedra</i>:
+ il affiche à l'écran un polyhèdre en mouvement.
+
+</section>
+
+<section name="5.1 Exécution">
+
+Cliquez sur l'icône de l'application <i>Innerspace</i> depuis 
+le dossier des applications... 
+
+<br>Dans le mode initial, seul le fond est remplacé par 
+l'animation: 
+ les fenêtres actives sont encore affichées.
+<br />Pour lancer complètement l'économiseur, sélectionnez 
+l'action suivante dans le menu:
+
+<listing>
+Run
+</listing>
+
+</section>
+<section name="5.2 Quitter">
+
+Il suffit d'abord de cliquer n'importe où sur le bureau. 
+Le menu de l'application <i>InnerSpace</i> s'affiche.
+<br />Pour un arrêt définitif, sélectionner l'action de menu:
+
+<listing>
+Quitter
+</listing>
+
+</section>
+
+<section name="5.3. Verrouillage de l'écran">
+
+<caution>
+Soyez bien conscient que l'application InnerSpace n'offre pas de 
+verrouillage de l'écran.
+</caution>
+
+Pour verrouiller votre espace de travail, utilisez plutôt 
+<code>ScreenLock.app</code> à partir du Dock.
+<br>Un petit cadenas bleu apparaîtra alors sur fond noir.
+
+</section>
+<section name="5.4. Déverrouillage de l'écran">
+
+Pour déverrouiller votre espace de travail, il suffit de saisir 
+au clavier votre mot de passe associé à 
+l'utilisateur courant et de valider cette saisie avec la touche 
+<code>Entrée</code>.
+
+<br />
+<information>
+Vous ne verrez pas de champ de saisie: quand vous voyez l'écran 
+noir avec un pointeur en forme de cadenas bleu,
+tapez simplement votre mot de passe comme expliqué ci-dessus.
+</information>
+
+</section>
+

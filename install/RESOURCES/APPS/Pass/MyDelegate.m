@@ -55,6 +55,17 @@
 }
 
 /* **************************************************************************** */
+- (void) showInfoPanel:  (id) sender
+{
+  NSBundle *bundle = [NSBundle mainBundle];
+  NSString *path = [bundle pathForResource: @"PassInfo"
+                           ofType: @"plist"];
+  NSDictionary *localizedInfo = [NSDictionary
+    dictionaryWithContentsOfFile: path];
+  [NSApp orderFrontStandardInfoPanelWithOptions: localizedInfo];
+}
+
+/* **************************************************************************** */
 /*
  * Standard method to prepare the UI from the delegate: applicationDidFinishLaunching
  *
@@ -74,29 +85,29 @@
     menu = AUTORELEASE ([NSMenu new]);
     infoMenu = AUTORELEASE ([NSMenu new]);
   
-    [infoMenu addItemWithTitle: @"Info Panel..." 
-            action: @selector (orderFrontStandardInfoPanel:) 
+    [infoMenu addItemWithTitle: _(@"Info Panel...") 
+            action: @selector (showInfoPanel:) 
             keyEquivalent: @""];
   
-    [infoMenu addItemWithTitle: @"Help..." 
+    [infoMenu addItemWithTitle: _(@"Help...") 
             action: @selector (orderFrontHelpPanel:)
             keyEquivalent: @"?"];
 
-    menuItem = [menu addItemWithTitle: @"Info..." 
+    menuItem = [menu addItemWithTitle: _(@"Info...") 
                    action: NULL 
                    keyEquivalent: @""];
 
     [menu setSubmenu: infoMenu forItem: menuItem];
   
-    [menu addItemWithTitle:@"Search..." 
+    [menu addItemWithTitle:_(@"Search...") 
           action:@selector(openSearch:) 
           keyEquivalent:@""];
   
-    [menu addItemWithTitle:@"New..." 
+    [menu addItemWithTitle:_(@"New...") 
           action:@selector(openNew:) 
           keyEquivalent:@""];
   
-    [menu addItemWithTitle:@"Quit" 
+    [menu addItemWithTitle:_(@"Quit") 
           action:@selector(terminate:) 
           keyEquivalent:@"q"];
     

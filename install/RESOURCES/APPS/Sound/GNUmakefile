@@ -21,8 +21,7 @@ Sound_APPLICATION_ICON = Sound.tiff
 Sound_RESOURCE_FILES = \
 Resources \
 Resources/Sound.tiff \
-Resources/cuckoo.wav \
-Resources/Sound.help
+Resources/cuckoo.wav
 
 Sound_HEADER_FILES = \
 Delegate.h
@@ -31,4 +30,14 @@ Sound_OBJC_FILES = \
 Delegate.m \
 Main.m
 
+#
+# Localization
+#
+Sound_LANGUAGES = English French
+Sound_LOCALIZED_RESOURCE_FILES = \
+Sound.help \
+SoundInfo.plist \
+Localizable.strings
+
 include $(GNUSTEP_MAKEFILES)/application.make
+

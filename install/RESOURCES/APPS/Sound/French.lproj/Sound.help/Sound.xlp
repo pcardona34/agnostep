@@ -1,0 +1,176 @@
+<section name="1. Configurer le son">
+
+Vous devrez peut-être configurer le son de votre système avec Alsa.
+Lisez l'aide appropriée à ce sujet sur la documentation en ligne du système Debian.
+
+<br />
+<caution>
+Avec la dernière version du bureau Agnostep, nous nous sommes efforcés de rendre le son opérationnel dès la phase de préparation 
+qui précède l'installation effective du bureau. Le pas à pas suivant sera utile si cette configuration initiale a échoué.
+</caution>
+
+<section name="1.1 Comment disposer du son avec un ordinateur portable MacBookPro Intel">
+
+<b>Exemple avec un modèle 6.2 (Intel Core i5, 2010, 15")</b>
+
+<ul>
+<li>Ouvrez une nouvelle invite de commande du Terminal.</li>
+<li>Créez une fichier de configuration Alsa en mode noyau comme ci-dessous:
+<listing>
+sudo touch /etc/modprobe.d/alsa-base
+</listing>
+</li>
+<li>Ajoutez-y la ligne suivante ainsi:
+<listing>
+echo "options snd-hda-intel model=mbp61" | sudo tee -a /etc/modprobe.d/alsa-base
+</listing>
+</li>
+<li>Quittez l'application Terminal, déconnectez-vous et redémarrez l'ordinateur.</li>
+</ul>
+</section>
+
+
+
+<section name="1.2 Configuration du son avec un Raspberry Pi">
+
+<section name="1.2.1 Son sans port HDMI">
+
+		Quelques modèles ont une prise jack, d'autres non. Sur certains ordianteurs comme les Raspberry Pi's, le système est 
+ est conçu par défaut pour utiliser le son via le port HDMI. Cela devrait fonctionner tel quel si vous disposez d'un écran 
+multimédia doté de haut-parleurs embarqués.
+
+			<br /><br />Dans le cas contraire, c-à-d quand vous ne disposez pas de tel écran multimédia screen, mais seulement 
+d'un adaptateur USB vers jack avec des haut-parleurs externes, vous devrez modifier la configuration par défaut afin de disposer 
+du son sur votre système.
+
+</section>
+
+<section name="1.2.2 Comprendre la configuration par défaut">
+
+		Ainsi, la configuration par défaut suppose que son passe via le port HDMI. Si vous avez des haut-parleurs connectés via le 
+ port USB avec un adaptateur Jack, vous constaterez que la carte son associée sera listée en troisième position, avec un identifiant 
+ ID 2, après donc les deux ports HDMI, respectivement identifiés par ID 0 et ID 1. Exécutez la commande suivante (1) afin de le 
+vérifier:<br />
+
+		<listing>
+		Command (1):
+        <br />cat proc/asound/cards
+		</listing>
+
+</section>
+
+<section name="1.2.3 Résolution du problème">
+
+<section name="ÉTAPE 1 &mdash; Désactivation du son via les ports HDMI">
+
+		Ainsi il convient de désactiver le son via HDMI. Cette directive sera donnée au noyau via une instruction du fichier de 
+configuration <code>'config.txt'</code> sur un ordinateur Raspberry Pi. Nous devons éditer ce  fichier avec des privilèges 
+administrateur au moyen de la commande <i>sudo</i>:<br />
+
+		<listing>
+		Command (2):
+        <br />sudo nano /boot/firmware/config.txt
+		</listing>
+
+		Dans le fichier ouvert, vous devez rechercher la ligne suivante, dont le rôle consiste à charger un module vidéo du noyau 
+Linux:<br />
+
+		<information>
+		<code>dtoverlay=vc4-kms-v3d</code>
+		</information>
+
+        Et l'ayant trouvée, vous devez ajouter le paramètre à la fin de cette ligne: 
+		<br /><code>'noaudio'</code> juste après une virgule sans espace comme ceci:
+
+		<note>
+		<code>dtoverlay=vc4-kms-v3d,noaudio</code>
+		</note>
+
+		Enregistrez le fichier avec le raccourci <b>F3</b> et fermez l'éditeur avec <b>F2</b>. Puis redémarrez le Pi:
+
+		<listing>
+		Command (3):
+        <br />sudo reboot
+		</listing>
+		
+		Lors de la connexion suivante, vérifiez que la nouvelle configuration s'applique à votre système au moyen de la 
+commande (1). Vous devriez maintenant ne voir que la carte active USB, dans mon cas: <code>'UC02'</code> cette fois avec 
+l'ID zero:
+
+		<information>
+		<code>0 [UC02]: USB-Audio - UC02 </code>
+		<br /><code>UC02 UC02 at usb-0000:01:00.0-1.3.3, full speed</code>
+		</information>
+
+</section>
+
+<section name="ÉTAPE 2 &mdash; Conserver les réglages du Mixeur">
+
+			Désormais, nous avons accès au mixeur par défaut et nous devons définir le volume du son au démarrage du système.
+
+			Pour ce faire, vous devez exécuter le mixeur ALSA en mode console (CLI) (ou via une invite du Terminal) ainsi:
+
+		<listing>
+			alsamixer
+		</listing>	
+
+			<section name="Mixeur ALSA en mode console">
+				<legendfig src="alsamixer_cli.tiff">
+					<legend x="10" y="35">Carte son par défaut</legend>
+					<legend x="300" y="160">Jauge du volume</legend>
+				</legendfig>
+			</section>
+
+			Définir le volume via 'PCM':
+			<ol>
+				<li>Ajustez le niveau avec les touches haut/bas du clavier.</li>
+				<li>Quittez le programme avec la touche d'échappement <b>ESC</b>.</li>
+				<li>Puis stockez cette valeur en tant que administrateur du système:
+				
+				<listing>
+					sudo alsactl store
+				</listing>
+				</li>
+				<li>Déconnectez-vous du bureau et redémarrez le Raspberry Pi:
+				
+				<listing>
+					sudo reboot
+				</listing>
+				</li>
+			</ol>
+
+</section>
+</section>
+
+</section>
+
+
+<section name="2 Tester le son">
+
+<section name="2.1 Écouter de la musique avec Cynthiune">
+
+			Ouvrez l'application <i>Cynthiune</i>. Dans le dossier des exemples, sélectionnez et faites glisser un fichier mp3
+vers la liste de lecteur de Cynthiune. Enfin, jouez ce morceau.
+
+			<section name="Écoute dans Cynthiune">
+				<legendfig src="Cynthiune.tiff">
+					<legend x="10" y="100">Lecteur</legend>
+					<legend x="200" y="260">Fenêtre des morceaux à lire</legend>
+				</legendfig>
+			</section>
+
+</section>
+
+<section name="2.2 Contrôle du son">
+
+				Ouvrez l'application: 'Mixeur' à partir du Dock... Modifiez le volume grâce à la jauge.
+
+			<section name="Volume">
+				<legendfig src="Mixer.tiff">
+					<legend x="10" y="80">Jauge PCM</legend>
+				</legendfig>
+			</section>
+
+</section>
+</section>
+

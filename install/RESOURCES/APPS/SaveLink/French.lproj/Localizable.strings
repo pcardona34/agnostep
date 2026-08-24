@@ -1,23 +1,28 @@
 /* TRANSLATORS: Make sure to quote all translated strings if
    they contain spaces or non-ASCII characters.  */
 
-"Nouveau Lien" = "Nouveau Lien";
-Fermer = Fermer;
-Info = Info;
-Ouvrir = Ouvrir;
+"Name:" = "Nom:";
+"Info Panel..." = "À propos...";
+Info = Informations;
 Services = Services;
-"Placer devant" = "Placer devant";
-"Aide..." = "Aide...";
-"Pr\U00E9f\U00E9rences..." = "Pr\U00E9f\U00E9rences...";
-"Information..." = "Information...";
+Quit = Quitter;
+NewLink = "Nouveau lien";
 SaveLink = SaveLink;
-"Nom :" = "Nom :";
-"Fen\U00EAtre" = "Fen\U00EAtre";
-Quitter = Quitter;
-"Raccourci Internet" = "Raccourci Internet";
-Miniaturiser = Miniaturiser;
+Savelink = Savelink;
+"Close Window" = "Fermer la fenêtre";
+"Help..." = "Aide...";
+"Arrange In Front" = "Placer devant";
+Hide = Cacher;
 "";
-"R\U00E9initialiser" = "R\U00E9initialiser";
-"Enregistrer le lien" = "Enregistrer le lien";
-Cacher = Cacher;
-"Lien :" = "Lien :";
+"Preferences..." = "Pr\U00E9f\U00E9rences...";
+"Miniaturize Window" = "R\U00E9duire la fenêtre";
+"Link:" = "Lien:";
+Windows = "Fenêtres";
+Open = Ouvrir;
+Reset = Vider;
+"Save Link" = "Enregistrer le lien";
+
+/* SaveLink */
+"Path of Favorites not found!" = "Chemin des Favoris introuvable!";
+"You should have a Favorites folder in your Home Directory." = "Vous devriez disposer d'un dossier des Favoris dans votre dossier personnel";
+

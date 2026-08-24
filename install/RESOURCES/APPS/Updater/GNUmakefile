@@ -38,6 +38,15 @@ Updater_OBJC_FILES += \
 Main.m
 
 #
+# Localization
+#
+Updater_LANGUAGES = English French
+Updater_LOCALIZED_RESOURCE_FILES = \
+Localizable.strings \
+Updater.help \
+UpdaterInfo.plist
+
+#
 # Makefiles
 #
 include $(GNUSTEP_MAKEFILES)/application.make

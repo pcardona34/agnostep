@@ -1,0 +1,9 @@
+{
+    ApplicationDescription = "Contrôlez le volume du son - d\U00E9riv\U00E9 de VolumeControl - Bureau Agnostep";
+    ApplicationRelease = "0.7.2";
+    Authors = ("G\u00fcrkan Myczko <alex@aiei.ch>, 
+      Yavor Doganov <yavor@gnu.org>",
+      "Patrick  Cardona");
+    Copyright = "Copyright 2004-2018 G\u00fcrkan Myczko, Yavor Doganov - 2026 Patrick Cardona";
+    CopyrightDescription = "Licence G\U00E9n\U00E9rale Publique GNU";
+}

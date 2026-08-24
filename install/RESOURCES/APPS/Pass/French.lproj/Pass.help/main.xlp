@@ -1,0 +1,35 @@
+<document>
+
+<header>
+<title>Pass</title>
+</header>
+
+<plain name="Accueil">
+
+<center><img src="banniere_Pass.tiff"></center>
+
+<left>	
+<information>
+Pass fournit une interface au gestionnaire  de mots de passe 
+ <i>Unix Password Manager</i>. 
+<br />Il fournit aussi le présent guide afin de constituer 
+ou de migrer votre base de mots de passe.
+</information>
+
+<caution>
+(c) 2025-2026 Patrick Cardona. Ce projet est un logiciel libre 
+distribué sous la licence publique générale GNU (GPL).
+</caution>
+
+<note>
+Site: <url>https://github.com/pcardona34/agnostep</url>&nbsp;
+<br />Veuillez y saisir tout problème constaté dans la section 
+<i>issues</i>.
+</note>
+</left>
+</plain>
+
+<chapter src="Setting.xlp" name="Constituer la base des mots de passe"></chapter>
+<chapter src="Using.xlp" name="Utilisation de Pass"></chapter>
+<chapter src="Migrate.xlp" name="Comment migrer votre base existante"></chapter>
+</document>

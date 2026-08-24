@@ -1,0 +1,18 @@
+{
+    ApplicationDescription = "Open the media folder where removable disks are mounted.";
+    ApplicationName = OpenDisk;
+    ApplicationRelease = "0.1";
+    Authors = (
+	"Patrick CARDONA"
+    );
+    Copyright = "Copyright (C) 2026";
+    CopyrightDescription = "Released under GNU General Public License 3.0";
+    FullVersionID = "0.1";
+    NSExecutable = OpenDisk;
+    NSMainNibFile = ;
+    NSPrincipalClass = NSApplication;
+    NSRole = Application;
+    NSIcon = "OpenDisk.tiff";
+    GSHelpContentsFile = "OpenDisk.help";
+    URL = "https://github.com/pcardona34/agnostep-desktop";
+}

@@ -137,8 +137,8 @@ return self;
  {
    NSLog(@"Path of Favorites not found!");
    NSAlert *alert = [[[NSAlert alloc] init] autorelease];
-   [alert setMessageText:@"Path of Favorites not found!"];
-   [alert setInformativeText:@"You should have a Favorites folder in your Home Directory."];
+   [alert setMessageText: _(@"Path of Favorites not found!")];
+   [alert setInformativeText: _(@"You should have a Favorites folder in your Home Directory.")];
    [alert runModal];
    [NSApp terminate:nil];
  }

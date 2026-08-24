@@ -1,0 +1,10 @@
+/* Localizable strings for UpMem */
+
+"Up/Mem:\n%02ld:%02ld\n" = "Up/M\U00E9m:\n%02ld:%02ld\n";
+"Info Panel..." = "À propos...";
+"Info..." = "Informations...";
+"Show Memory..." = "Utilisation de la m\U00E9moire...";
+"Quit" = "Quitter";
+
+"Memory Usage" = "Utilisation de la m\U00E9moire";
+"Memory Usage: %lu MB (%.2f%%)" = "Utilisation de la m\U00E9moire: %lu MB (%.2f%%)";

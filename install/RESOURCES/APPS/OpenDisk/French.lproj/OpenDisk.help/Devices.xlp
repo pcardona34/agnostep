@@ -1,0 +1,134 @@
+<part name="Introduction">
+
+AGNoStep utilise l'outil <i>udisks2</i> et l'application dockée 
+<i>wmudmount</i> afin de  détecter un média branché à 
+l'ordinateur et de le rattacher au système de fichiers local.
+
+<caution>
+Comme nous n'utilisons plus le fond de bureau de GWorkspace, 
+vous n'avez pas besoin de définir de préférences dans le 
+gestionnaire des préférences SystemPreferences ni dans 
+<i>/etc/fstab</i>.
+<br>Les choses sont désormais simplifiées: suivez ce guide.
+</caution>  
+
+</part>
+
+<part name="Pas à pas">
+
+<section name="ÉTAPE 1 - Identifier et monter le disque">
+			
+<ol>
+<li>Branchez le disque...</li>
+<li>Cliquez sur la flèche de droite de wmudmount&nbsp;: 
+troisième icône du Clip en partant de la droite.</li>
+<li>Dès que l'icône du disque détecté est affichée, 
+cliquez sur le petit cercle afin de monter ce disque 
+(c-à-d l'attacher au systèmede fichiers local).</li>
+<li>Retenez le nom associé au disque ainsi monté.</li> 
+</ol>
+
+<br />
+<information>
+Le chemin est de la forme:<br />
+<code>/media/patrick/NOM</code>
+</information>
+		
+Où:
+
+<ul>
+<li><i>patrick</i> sera remplacé par votre nom d'utilisateur.</li>
+<li><i>NOM</i> sera le nom donné au disque.</li>
+</ul>
+
+</section>
+
+<section name="ÉTAPE 2 - Afficher le contenu du disque">
+
+<ol>
+<li>Exécutez l'application <b>DiskOpen</b>.</li>
+<li>Selectionnez la commande: <b>Ouvrir le dossier des médias...</b></li>
+<li>Dans la fenêtre du gestionnaire de fichiers, 
+sélectionnez the dossier nommé NOM afin de naviguer dans le
+contenu du disque monté...</li>
+</ol>
+
+</section>
+
+<section name="Retirer un disque monté">
+		
+<ol>
+<li>Dans l'étagère du gestionnaire de fichiers, 
+ sélectionnez le dossier NOM, et faites glisser son icône sur
+celle de la Corbeille au bas du Dock.</li>
+<li>Relâchez le bouton de la souris quand le pointeur est vert. 
+Sinon, faites un très léger mouvement au-dessus de la corbeille
+jusqu'à obtenir ce pointeur vert.
+<br>Notez que dans le même temps, l'application dockée 
+<i> wmudmount</i> modifiera le statut du disque en  "unmounted" 
+et de même le dossier cessera d'être affiché dans le gestionnaire
+de fichiers.</li>
+<li>Fermez la fenêtre du gestionnaire de fichiers.</li>
+<li>Sur wmudmount, cliquez sur triangle pour éjecter 
+(c-à-d cesser d'alimenter les disque démonté).</li>
+<li>Maintenant, vous pouvez débrancher ce disque en toute
+sécurité.</li>
+</ol> 
+
+<information>
+Vous pourriez aussi n'utiliser que l'application <i>wmudmount</i>
+afin de démonter le disque au lieu de tirer vers la corbeille.
+</information>
+
+</section>
+</part>
+
+<part name="Cas particuliers">
+
+<section name="Problèmes connus avec la norme UASP">
+
+<caution>
+Certains disques amovibles SATA/USB3.0 sont connus pour 
+dysfonctionner avec la norme UASP sur les ordinateurs 
+Raspberry Pi.
+</caution>
+
+Afin de prévenir toute perte de données, assurez-vous d'identifier
+de tels contrôleurs défectueux: leur identifiant (ID obtenu 
+grâce à la commande <b>lsusb</b>) débute par "152d" ce qui
+identifie un contrôleur de la marque "JMicron".
+
+Pour utiliser sans dommage de tels disques, vous devez modifier
+la séquence de démarrage du noyau Linux avec des  exceptions 
+(quirks) comme ceci:
+
+<ol>
+<li>Éditez le fichier 'cmdline.txt' en tant que super utilisateur:
+<listing>
+sudo nano /boot/firmware/cmdline.txt
+</listing>
+</li>
+<li>Ajoutez cette séquence au tout début la ligne, 
+<i>mutatis mutandis</i>, avec l'identifiant (xxxx:xxxx) de votre 
+disque:
+<note>usb-storage.quirks=xxxx:xxxx:u</note>
+</li>
+<li>Enregistrez (F3), fermez (F2), déconnectez-vous de l'Espace
+de travail, et redémarrez l'ordinateur Pi pour appliquer ces
+changements:
+<listing>sudo reboot</listing>
+</li>
+<li>Reconnectez-vous et suivez les <ref id="Prerequisite">prérequis</ref> pour monter votre disque et l'afficher dans 
+votre espace de travail.</li>
+</ol>
+
+<br />
+<caution>
+Veillez à ne pas confondre l'identifant ID (xxxx:xxxx) 
+et l'UUID (XXXX-XXXX). L'ID désigne une info liée au fabricant
+tandis que l'UUID est une étiquette utilisée pour identifier 
+localement ce disque au sein de votre système.
+</caution>
+ 
+</section>
+</part>

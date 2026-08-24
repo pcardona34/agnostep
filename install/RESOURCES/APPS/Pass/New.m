@@ -31,7 +31,7 @@
            styleMask:(NSTitledWindowMask | NSClosableWindowMask)
            backing:NSBackingStoreBuffered
            defer:NO];
-        [newWindow setTitle:@"New Password"];
+        [newWindow setTitle: _(@"New Password")];
         [newWindow center];
 
         // The view on the window
@@ -40,7 +40,7 @@
         // text field label
         NSTextField *label = [[NSTextField alloc] 
            initWithFrame:NSMakeRect(16, 72, 100, 20)];
-        [label setStringValue:@"New Key:"];
+        [label setStringValue: _(@"New Key:")];
         [label setBezeled:NO];
         [label setDrawsBackground:NO];
         [label setEditable:NO];
@@ -56,7 +56,7 @@
         // ok Button
         NSButton *okButton = [[NSButton alloc] 
             initWithFrame:NSMakeRect(220, 12, 116, 28)];
-        [okButton setTitle:@"Create"];
+        [okButton setTitle: _(@"Create")];
         [okButton setTarget:self];
         [okButton setAction:@selector(create:)];
         [content addSubview:okButton];
@@ -64,7 +64,7 @@
         // Cancel Button
         NSButton *cancel = [[NSButton alloc] 
             initWithFrame:NSMakeRect(96, 12, 116, 28)];
-        [cancel setTitle:@"Cancel"];
+        [cancel setTitle: _(@"Cancel")];
         [cancel setTarget:self];
         [cancel setAction:@selector(cancelCreate:)];
         [content addSubview:cancel];

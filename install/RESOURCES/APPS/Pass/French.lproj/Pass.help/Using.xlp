@@ -1,0 +1,48 @@
+<section name="4. Utilisation de Pass">
+
+<section name="4.1. Interface GNUstep">
+
+Exécutez <b>Pass.app</b> à partir du Dock ou du dossier des Applications.
+<ol>
+<li>Sélectionnez l'action <b>Chercher...</b> du menu.</li>
+<li>Dans le dialogue "Chercher une clé", saisissez un mot clé, puis cliquez sur le bouton <b>Chercher</b>.</li>
+<li>Dans la fenêtre des "Clés trouvées", sélectionnez le mot clé avec votre souris (ou faites dessus un double clic) et cliquez sur lebouton <b>Mot de passe...</b>.</li>
+<li>Dans le dialogue du Mot de passe, saisissez votre phrase secrète associée à votre base des mots de passe.</li>
+<li>Quand le mot de passe est affiché (sur la première ligne), faites un double clic pour  le sélectionner.</li>
+<li>Là où vous en avez besoin, collez ce mot de passe avec le bouton médian de votre souris.</li>
+</ol>
+
+</section>
+
+<section name="4.2. Usage en mode console (CLI)">  
+
+Dans une invite du Terminal, le mode console de <i>Pass</i> utilise des commandes (en anglais) simples et intuitives 
+comme: <i>insert<i>, <i>edit</i>, <i>delete</i>, <i>find</i>...
+Pour en savoir plus:
+
+<listing>
+man pass
+</listing>
+
+</section>
+
+<section name="4.3. Avec un navigateur Internet">
+
+Si vous avez choisi <code>Firefox</code>, une extension de <code>pass</code> a aussi été installée.
+
+Autrement:
+<ul>
+<li>Avec l'interface GNUstep: voir ci-dessus.</li>
+<li>Avec la console dans un Terminal: sélectionnez et copiez le mot de passe avec la combinaison <code>CMD+c<:code>.</li>
+<li>Puis collez dans le champ <i>ad hoc</i> du navigateur Internet au moyen de la combinaison <code>CTRL+v</code></li>
+</ul>
+
+<caution>
+Prêtez attention au fait que ni Firefox, ni Chromium ne sont des applications natives GNUstep. C'est 
+pourquoi ils utilisent les raccourcis Xorg (donc avec le préfixe CTRL) tandis que Terminal, qui est une 
+application GNUstep, utilise les raccourcis du système GNUstep dont le préfixe est <code>CMD</code> 
+(c-à-d.: <i>command</i>, qui est associée à la touche ALT sur un système GNU/Linux.)
+<br>Dans tous les cas, cliquer avec le bouton médian de la souris devrait aussi fonctionner.
+</caution>
+
+</section>

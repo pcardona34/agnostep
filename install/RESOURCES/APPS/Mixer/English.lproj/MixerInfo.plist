@@ -1,0 +1,10 @@
+{
+    ApplicationDescription = "Control your volume settings - forked from VolumeControl";
+    ApplicationRelease = "0.7.1";
+    Authors = ("G\u00fcrkan Myczko <alex@aiei.ch>, 
+      Yavor Doganov <yavor@gnu.org>",
+      "Patrick  Cardona");
+    Copyright = "Copyright 2004-2018 G\u00fcrkan Myczko, Yavor Doganov - 2026 Patrick Cardona";
+    CopyrightDescription = "GNU General Public License";
+    URL = "https://github.com/pcardona34/agnostep-desktop/";
+}

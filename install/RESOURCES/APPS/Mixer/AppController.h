@@ -27,7 +27,10 @@
   id pcmR;
   id pcmLock;
   id pcmMute;
+  
+  
 }
 - (void) awakeFromNib;
 - (void) setVolume: (id)sender;
+- (void) showInfoPanel:(id) sender;
 @end

@@ -1,0 +1,18 @@
+{
+    ApplicationDescription = "Gestionnaire de mots de passe";
+    ApplicationName = Pass;
+    ApplicationRelease = "0.3";
+    Authors = (
+	"Patrick CARDONA"
+    );
+    Copyright = "Copyright (C) 2026 - Une application du bureau Agnostep";
+    CopyrightDescription = "Distribu\U00E9e sous la licence publique g\U00E9n\U00E9rale GNU version 3.0";
+    FullVersionID = "0.3";
+    NSExecutable = Pass;
+    NSIcon = "pass.tiff";
+    GSHelpContentsFile = "Pass.help";
+    NSMainNibFile = ;
+    NSPrincipalClass = NSApplication;
+    NSRole = Application;
+    
+}

@@ -1,0 +1,17 @@
+{
+    ApplicationDescription = "Verrouillage de l'\U00E9cran";
+    ApplicationName = ScreenLock;
+    ApplicationRelease = "0.2";
+    Authors = (
+	"Patrick CARDONA"
+    );
+    Copyright = "Copyright (C) 2026 - Un outil du bureau Agnostep";
+    CopyrightDescription = "Distribu\U00E9 sous la licence publique g\U00E9n\U00E9rale GNU (GPL) version 3.0";
+    FullVersionID = "0.2";
+    NSExecutable = ScreenLock;
+    NSMainNibFile = ;
+    NSPrincipalClass = NSApplication;
+    NSRole = Application;
+    NSIcon = "ScreenLock.tiff";
+    GSHelpContentsFile = "ScreenLock.help";
+}

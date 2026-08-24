@@ -1,0 +1,16 @@
+{
+    ApplicationDescription = "AppIcon qui affiche la dur\U00E9e d'utilisation et l'utilisation de la m\U00E9moire";
+    ApplicationName = UpMem;
+    ApplicationRelease = "0.1";
+    Authors = (
+	"Patrick CARDONA"
+    );
+    Copyright = "Copyright (C) 2026 - Un outil du Bureau Agnostep";
+    CopyrightDescription = "Distribu\U00E9 sous la licence g\U00E9n\U00E9rale publique GNU (GPL) version 3.0";
+    FullVersionID = "0.1";
+    NSExecutable = UpMem;
+    NSMainNibFile = ;
+    NSPrincipalClass = NSApplication;
+    NSIcon = "Memory.tiff";
+    NSRole = Application;
+}

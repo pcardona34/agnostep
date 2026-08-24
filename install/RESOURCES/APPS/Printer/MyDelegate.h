@@ -25,5 +25,6 @@
 }
 
 - (void) manager: (id) sender;
+- (void) showInfoPanel: (id) sender;
 
 @end

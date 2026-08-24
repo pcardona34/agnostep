@@ -13,8 +13,7 @@ ScreenLock_APPLICATION_ICON = ScreenLock.tiff
 # Resource files
 #
 ScreenLock_RESOURCE_FILES = \
-Resources/ScreenLock.tiff \
-Resources/ScreenLock.help
+Resources/ScreenLock.tiff
 
 #
 # Header files
@@ -33,6 +32,15 @@ MyDelegate.m
 #
 ScreenLock_OBJC_FILES += \
 Main.m
+
+#
+# Localization
+#
+ScreenLock_LANGUAGES = English French
+ScreenLock_LOCALIZED_RESOURCE_FILES = \
+ScreenLock.help \
+Localizable.strings \
+ScreenLockInfo.plist
 
 #
 # Makefiles

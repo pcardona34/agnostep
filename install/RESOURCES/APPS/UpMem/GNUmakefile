@@ -36,6 +36,14 @@ UpMem_OBJC_FILES += \
 Main.m
 
 #
+# Localization
+#
+UpMem_LANGUAGES = English French
+UpMem_LOCALIZED_RESOURCE_FILES = \
+Localizable.strings \
+UpMemInfo.plist
+
+#
 # Makefiles
 #
 include $(GNUSTEP_MAKEFILES)/application.make

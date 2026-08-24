@@ -1,0 +1,32 @@
+<document>
+
+<header>
+<title>ScreenLock</title>
+</header>
+
+<plain name="Accueil">
+
+<center><img src="banniere_ScreenLock.tiff"></center>
+
+<left>	
+<information>
+ScreenLock est un outil de verrouillage de l'écran. 
+</information>
+
+<caution>
+(c) 2025-2026 Patrick Cardona. Ce projet est un logiciel libre
+ distribué sous la licence publique générale GNU (GPL).<br>
+Il relève du projet de bureau Agnostep.
+</caution>
+
+<note>
+Site: <url>https://github.com/pcardona34/agnostep</url>&nbsp;
+<br />Veuillez y saisir tout problème constaté dans la rubrique 
+<i>issue</i>.
+</note>
+</left>
+</plain>
+
+<chapter src="Screen.xlp" name="ScreenLock et InnerSpace"></chapter>
+
+</document>

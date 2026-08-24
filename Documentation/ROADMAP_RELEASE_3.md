@@ -3,7 +3,7 @@
 ## GNUstep Applications to add / enhance
 
 - [ ] Add application: LUserNET
-- [ ] New release of SimpleAgenda: 0.48  
+- [ ] New release of SimpleAgenda: 0.48
   https://github.com/poroussel/simpleagenda/archive/refs/tags/v0.48.tar.gz
 - [ ] Try to build [Oolite](https://github.com/OoliteProject/oolite) depending on modern runtime: see below.
 
@@ -35,16 +35,13 @@
 ## L18N: French target
 
 - [ ] French interface provided for all Core Apps and Native apps.
-  - [x] AgnostepManager: UI and Info Panel
-  - [x] Birthday: UI and Info Panel.
-  - [x] Dico: UI.
-  - [x] Launcher: UI and Info Panel.
-  - [x] Meteo: UI and Info Panel.
-- [ ] Help bundles all translated to French.
-  - [x] AgnostepManager: French help bundle
-  - [x] Birthday: French help bundle.
-  - [x] Launcher: French help bundle.
-- [ ] Documentation: namely README, INSTALL translated too.
+  - [x] Native apps: AgnostepManager, Birthday, Dico, Launcher  
+Meteo, Mixer, OpenDisk, Pass, Printer, SaveLink, ScreenLock,  
+Sound, Updater, UpMem.
+  - [x] Help bundles of the Native Apps  all translated to French.
+  - [ ] Core Apps: FlexiSheet, Gemas, Grr, HelpViewer, Ink,   
+Innerspace, Player, PRICE, ScanImage, SystemPreferences.
+  - [ ] Documentation: namely README, INSTALL translated too.
 
 > [!Note]
 > Of course, if some contributor wish to add its language, he/she is welcome.

@@ -1,0 +1,36 @@
+<document>
+
+<header>
+<title>Updater</title>
+</header>
+
+<plain name="Accueil">
+
+<center><img src="banniere_Updater.tiff"></center>
+
+<left>	
+<information>
+Updater est un outil de mise à jour des paquets Debian.
+<br>Il se procure des informations au sujet des mises à jour 
+disponibles
+<br>et il permet à l'utilisateur courant d'effectuer les mises
+ à jour effectives. 
+</information>
+
+<caution>
+(c) 2026 Patrick Cardona. Cette application est un logiciel libre 
+distribué sous la licence publique générale (GPL).
+<br>Il relève du projet de bureau Agnostep.
+</caution>
+
+<note>
+Site: <url>https://github.com/pcardona34/agnostep-desktop</url>&nbsp;
+<br />Veuillez y reporter tout problème constaté dans la 
+rubrique <i>issue</i>.
+</note>
+</left>
+</plain>
+
+<chapter src="Updater.xlp" name="Updater pour Debian"></chapter>
+
+</document>

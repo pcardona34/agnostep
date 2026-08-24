@@ -1,0 +1,28 @@
+/* Localizable strings for Pass */
+
+/* MyDelegate */
+"Info Panel..." = "Info Panel...";
+"Help..." = "Help...";
+"Info..." = "Info...";
+"Search..." = "Search...";
+"New..." = "New...";
+"Quit" = "Quit";
+
+/* ListController */
+"Available Keys" = "Available Keys";
+"Loading..." = "Loading...";
+"Edit..." = "Edit...";
+"Password..." = "Password...";
+"Close" = "Close";
+
+/* New */
+"New Password" = "New Password";
+"New Key:" = "New Key:";
+"Create" = "Create";
+"Cancel" = "Cancel";
+
+/* Search */
+"Search a key" = "Search a key";
+"Key:" = "Key:";
+"Search" = "Search";
+/* "Cancel" = "Cancel";  */

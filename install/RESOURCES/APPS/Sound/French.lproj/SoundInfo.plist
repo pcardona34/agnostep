@@ -1,0 +1,17 @@
+{
+  NSExecutable = "Sound";
+  NSMainNibFile = "";
+  NSMainStoryboardFile = "";
+  GSMainMarkupFile = "";
+  NSIcon = "Sound.tiff";
+  NSPrincipalClass = "NSApplication";
+  ApplicationName = "Sound";
+  ApplicationDescription = "Test du son et aide à sa configuration";
+  ApplicationRelease = "0.2";
+  Authors = ("Patrick Cardona");
+  Copyright = 
+    "Copyright (c) 2026 Patrick Cardona - un outil du Bureau AGNoStep";
+  CopyrightDescription = 
+    "Cet outil est distribu\U00E9 sous la licence g\U00E9n\U00E9rale publique GNU (GPL) version 3";
+   GSHelpContentsFile = "Sound.help";
+}

@@ -23,6 +23,9 @@
 {
   IBOutlet NSWindow *_window;
 }
+
+- (void) showInfoPanel: (id) sender;
+
 @end
 
 #endif

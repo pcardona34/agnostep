@@ -34,5 +34,6 @@
 - (void) setCounter: (NSUInteger) newValue;
 - (NSUInteger) counter;
 - (NSData *) updateData; // return data containing the list of upgradable packages
+- (void) showInfoPanel: (id) sender;
 
 @end

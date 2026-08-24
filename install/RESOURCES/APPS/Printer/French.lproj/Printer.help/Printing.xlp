@@ -1,0 +1,33 @@
+<section name="1. Définir l'imprimante par défaut">
+
+<ul>
+<li>Exécutez:
+  <listing>
+    Applications / Printer.app
+    <br>Dans le menu: Gestionnaire de l'imprimante...
+  </listing>
+</li>
+<li>Dans l'interface CUPS, si la liste des imprimantes est vide, 
+sélectionnez l'onglet 'Admininstration'. </li>
+<li>Puis cliquez sur [Trouver de nouvelles imprimantes]... 
+Puis ajoutez l'imprimante détectée.</li>
+<li>Lorsque cette nouvelle imprimante a été ajoutée, 
+ dans la liste des Imprimantes, sélectionnez-la.</li>
+<li>Puis, dans le menu déroulant [Administration], sélectionnez 
+l'item "Définir par dafaut".</li>
+</ul>
+</section>
+
+<section name="2. Tester l'imprimante">
+
+<ul>
+<li>Ouvrez un nouveau document dans Ink. Saisissez du texte et
+sauvegardez ce document au format rtf.</li>
+<li>Sélectionnez l'action Imprimer ('Print...') dans le menu . 
+Le dialogue d'impression sera alors affiché avec la nouvelle 
+imprimante par défaut.</li>
+<li>Cliquez sur le bouton Imprimer [Print] pour imprimer 
+effectivement ce document.
+</ul>
+  
+</section>

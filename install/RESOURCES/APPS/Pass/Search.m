@@ -33,7 +33,7 @@
            styleMask:(NSTitledWindowMask | NSClosableWindowMask)
            backing:NSBackingStoreBuffered
            defer:NO];
-        [searchWindow setTitle:@"Search a key"];
+        [searchWindow setTitle: _(@"Search a key")];
         [searchWindow center];
 
         // The view on the window
@@ -42,7 +42,7 @@
         // text field label
         NSTextField *label = [[NSTextField alloc] 
            initWithFrame:NSMakeRect(16, 72, 100, 20)];
-        [label setStringValue:@"Key:"];
+        [label setStringValue: _(@"Key:")];
         [label setBezeled:NO];
         [label setDrawsBackground:NO];
         [label setEditable:NO];
@@ -58,7 +58,7 @@
         // ok Button
         NSButton *okButton = [[NSButton alloc] 
             initWithFrame:NSMakeRect(220, 12, 116, 28)];
-        [okButton setTitle:@"Search"];
+        [okButton setTitle: _(@"Search")];
         [okButton setTarget:self];
         [okButton setAction:@selector(performSearch:)];
         [content addSubview:okButton];
@@ -66,7 +66,7 @@
         // Cancel Button
         NSButton *cancel = [[NSButton alloc] 
             initWithFrame:NSMakeRect(96, 12, 116, 28)];
-        [cancel setTitle:@"Cancel"];
+        [cancel setTitle: _(@"Cancel")];
         [cancel setTarget:self];
         [cancel setAction:@selector(cancelSearch:)];
         [content addSubview:cancel];

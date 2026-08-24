@@ -28,7 +28,7 @@
   Memory *memory;
 }
 
-/* Method relatedto uptime */
+/* Method related to uptime */
 - (NSString *) getUptime;
 - (NSString *) stringFromSeconds: (NSInteger) totalSeconds;
 
@@ -40,5 +40,8 @@
 /* Displaying the Icon part */
 - (void) drawImageRep;
 - (void) drawRepOnIcon;
+
+/* Show localized infos */
+- (void) showInfoPanel: (id) sender;
 
 @end

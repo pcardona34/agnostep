@@ -1,0 +1,31 @@
+<document>
+
+<header>
+<title>Tester et configurer le son avec le bureau AGNOSTEP</title>
+</header>
+
+<plain name="Accueil">
+
+<center><img src="banniere_Sound.tiff"></center>
+
+<left>	
+<information>
+Sound.app permet à l'utilisateur de tester et de configurer le son du système.
+</information>
+
+<caution>
+(c) 2025-2026 Patrick Cardona. Ce projet est un logiciel libre distribué sous la licence publique 
+générale GNU (GPL).
+<br>Il relève du projet de bureau Agnostep.
+</caution>
+
+<note>
+Site: <url>https://github.com/pcardona34/agnostep</url>
+<br />Veuillez y reporter tout problème éventuel dans la rubrique <i>issue</i>.
+</note>
+</left>
+</plain>
+
+<chapter src="Sound.xlp" name="Le son"></chapter>
+
+</document>

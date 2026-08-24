@@ -252,4 +252,14 @@ static BOOL mixerOpened = NO;
 #endif
 }
 
+- (void) showInfoPanel:(id) sender
+{
+  NSBundle *bundle = [NSBundle mainBundle];
+  NSString *path = [bundle pathForResource: @"MixerInfo"
+                           ofType: @"plist"];
+  NSDictionary *localizedInfo = [NSDictionary
+    dictionaryWithContentsOfFile: path];
+  [NSApp orderFrontStandardInfoPanelWithOptions: localizedInfo];
+}
+
 @end

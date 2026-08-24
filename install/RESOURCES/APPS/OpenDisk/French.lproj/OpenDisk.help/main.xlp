@@ -1,0 +1,34 @@
+<document>
+
+<header>
+<title>OpenDisk</title>
+</header>
+
+<plain name="Accueil">
+
+<center><img src="banniere_OpenDisk.tiff"></center>
+
+<left>	
+<information>
+OpenDisk est un outil qui affiche directement le dossier 
+où sont montés les disques amovibles.
+</information>
+
+<caution>
+(c) 2025-2026 Patrick Cardona. 
+Ce projet est un logiciel libre 
+distribué sous la licence générale publique GNU 
+(GPL).
+<br>C'est un outil du projet de bureau Agnostep.
+</caution>
+
+<note>
+Site: <url>https://github.com/pcardona34/agnostep</url>&nbsp;
+<br />Please, post there any issue.
+</note>
+</left>
+</plain>
+
+<chapter src="Devices.xlp" name="Gestion des disques amovibles"></chapter>
+
+</document>

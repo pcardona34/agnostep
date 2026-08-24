@@ -32,5 +32,6 @@
 - (IBAction) openSearch: (id)sender;
 - (void) updateData: (NSData *) newdata;
 - (NSData *) data;
+- (void) showInfoPanel:  (id) sender;
 
 @end

@@ -1,0 +1,27 @@
+/* TRANSLATORS: Make sure to quote all translated strings if
+   they contain spaces or non-ASCII characters.  */
+
+"Name:" = "Name:";
+"Info Panel..." = "Info Panel...";
+Info = Info;
+Services = Services;
+Quit = Quit;
+NewLink = NewLink;
+SaveLink = SaveLink;
+Savelink = Savelink;
+"Close Window" = "Close Window";
+"Help..." = "Help...";
+"Arrange In Front" = "Arrange In Front";
+Hide = Hide;
+"";
+"Preferences..." = "Preferences...";
+"Miniaturize Window" = "Miniaturize Window";
+"Link:" = "Link:";
+Windows = Windows;
+Open = Open;
+Reset = Reset;
+"Save Link" = "Save Link";
+
+/* SaveLink */
+"Path of Favorites not found!" = "Path of Favorites not found!";
+"You should have a Favorites folder in your Home Directory." = "You should have a Favorites folder in your Home Directory.";

@@ -25,5 +25,6 @@
 }
 
 - (void) locker: (id) sender;
+- (void) showInfoPanel: (id) sender;
 
 @end

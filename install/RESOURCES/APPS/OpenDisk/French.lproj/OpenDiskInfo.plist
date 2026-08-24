@@ -1,0 +1,17 @@
+{
+    ApplicationDescription = "Ouvre le dossier des m\U00E9dias où sont mont\U00E9s les disques amovibles.";
+    ApplicationName = OpenDisk;
+    ApplicationRelease = "0.2";
+    Authors = (
+	"Patrick CARDONA"
+    );
+    Copyright = "Copyright (C) 2026 - Un outil d'Agnostep";
+    CopyrightDescription = "Distribu\U00E9 sous la licence g\U00E9n\U00E9rale publique GNU version 3.0";
+    FullVersionID = "0.2";
+    NSExecutable = OpenDisk;
+    NSMainNibFile = ;
+    NSPrincipalClass = NSApplication;
+    NSRole = Application;
+    NSIcon = "OpenDisk.tiff";
+    GSHelpContentsFile = "OpenDisk.help";
+}

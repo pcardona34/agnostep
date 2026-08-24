@@ -24,6 +24,7 @@
 
 - (void) createMenu;
 - (void) createWindow;
+- (void) showInfoPanel: (id) sender;
 - (void) applicationWillFinishLaunching: (NSNotification *)notification;
 - (void) applicationDidFinishLaunching: (NSNotification *)notification;
 

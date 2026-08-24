@@ -44,23 +44,24 @@
   infoMenu = [NSMenu new];
   menuItem = [NSMenuItem new];
   
-  [infoMenu addItemWithTitle: @"Info Panel..." 
-          action: @selector (orderFrontStandardInfoPanel:) 
+  [infoMenu addItemWithTitle: _(@"Info Panel...") 
+          action: @selector (showInfoPanel:) 
           keyEquivalent: @""];
-  [infoMenu addItemWithTitle: @"Help..." 
+  
+  [infoMenu addItemWithTitle: _(@"Help...") 
           action: @selector (orderFrontHelpPanel:)
           keyEquivalent: @"?"];
   
-  menuItem = [menu addItemWithTitle: @"Info..." 
+  menuItem = [menu addItemWithTitle: _(@"Info...") 
                  action: NULL 
                  keyEquivalent: @""];
   [menu setSubmenu: infoMenu forItem: menuItem];
   
-  [menu addItemWithTitle: @"Test Sound"  
+  [menu addItemWithTitle: _(@"Test Sound...")  
         action: @selector (testCuckoo:)  
         keyEquivalent: @"t"];
 
-  [menu addItemWithTitle: @"Quit"  
+  [menu addItemWithTitle: _(@"Quit")  
         action: @selector (terminate:)  
         keyEquivalent: @"q"];
 
@@ -76,7 +77,7 @@
   NSSize buttonSize;
 
   myButton = [NSButton new];
-  [myButton setTitle: @"Test of Sound"];
+  [myButton setTitle: _(@"Test of Sound")];
   [myButton sizeToFit];
   [myButton setTarget: self];
   [myButton setAction: @selector (testCuckoo:)];
@@ -91,7 +92,7 @@
                        styleMask: styleMask
                        backing: NSBackingStoreBuffered
                        defer: NO];
-  [myWindow setTitle: @"Sound Test"];
+  [myWindow setTitle: _(@"Sound Test")];
   [myWindow setContentView: myButton];
 }
 
@@ -99,6 +100,17 @@
 {
   [self createMenu];
   [self createWindow];
+}
+
+/* **************************************************************************** */
+- (void) showInfoPanel: (id) sender
+{
+  NSBundle *bundle = [NSBundle mainBundle];
+  NSString *path = [bundle pathForResource: @"SoundInfo"
+                           ofType: @"plist"];
+  NSDictionary *localizedInfo = [NSDictionary 
+     dictionaryWithContentsOfFile: path];
+  [NSApp orderFrontStandardInfoPanelWithOptions: localizedInfo]; 
 }
 
 - (void) applicationDidFinishLaunching: (NSNotification *)notification;

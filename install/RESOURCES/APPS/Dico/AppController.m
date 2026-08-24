@@ -20,4 +20,14 @@
 
 @implementation AppController
 
+- (void) showInfoPanel: (id) sender
+{
+  NSBundle *bundle = [NSBundle mainBundle];
+  NSString *path = [bundle pathForResource: @"DicoInfo"
+                           ofType: @"plist"];
+  NSDictionary *localizedInfo = [NSDictionary 
+    dictionaryWithContentsOfFile: path];
+  [NSApp orderFrontStandardInfoPanelWithOptions: localizedInfo];
+}
+
 @end
