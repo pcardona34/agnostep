@@ -1,0 +1,77 @@
+<?xml encoding="utf-8"?>
+	<section name="Bases" src="Bases.xlp"/>
+
+	<section name="Tags Disponibles">
+			Chaque tag doit être fermé avec le tag fermant correspondant.
+			Par exemple, pour mettre un texte en gras, on doit l'entourer avec le tag <code>&lt;b&gt;</code> :
+		       <listing><code>&lt;b&gt;</code><b>votre texte en gras</b><code>&lt;/b&gt;</code></listing>
+
+		<section name="Tags de structure">
+			Voici les deux tags de structure principaux :
+			<ul>
+				<li><code>&lt;part&gt;</code> : déclare une nouvelle partie (chaque partie est visible dans la NSTableView au dessus du texte de l'aide). Au moins un élément part est obligatoire pour un fichier d'aide. Dans le cas contraire le fichier ne sera pas considéré comme valide.</li>
+				<li><code>&lt;section&gt;</code> : déclare une section (vous pouvez imbriquer une section dans une autre pour créer une sous-section, etc.). La numérotation des sections, sous-sections, etc. est faite automatiquement.
+				</li>
+			</ul>
+			<br><br>
+			Ces deux tags ont un attribut, <code><b>name</b></code>, permettant de spécifier le nom de la partie ou de la section.
+			Exemple : 
+			<pre><section name="Structure Tags"></pre>
+			<br><br>
+			Il y a également une série de tags, similaires au HTML, pour créer des listes 
+			(avec les tags <code>&lt;ul&gt;</code> et <code>&lt;li&gt;</code>).
+		</section>
+
+		<section name="Positionnement">
+			Vous pouvez changer l'alignement du texte avec trois tags :
+			<ul>
+				<li><code><b>&lt;left&gt;</b></code> : pour aligner à gauche</li>
+				<li><code><b>&lt;center&gt;</b></code> : pour centrer le texte</li>
+				<li><code><b>&lt;right&gt;</b></code> : pour aligner à droite</li>
+			</ul>
+		</section>
+
+		<section name="Text Formatting">
+			Vous pouvez utiliser les tags suivants :
+			<ul>
+			    <li><code><b>&lt;b&gt;</b></code> : pour mettre le texte en gras</li>
+			    <li><code><b>&lt;i&gt;</b></code> : pour mettre le texte en italique</li>
+			    <li><code><b>&lt;sc&gt;</b></code> : pour mettre le texte en petites majuscules</li>
+			    <li><code><b>&lt;code&gt;</b></code> : pour utiliser une fonte à taille fixe</li>
+			    <li><code><b>&lt;em&gt;</b></code> : mettre l'accent sur cette partie du texte</li>
+			</ul>
+		</section>
+
+		<section name="References">
+		    Il y a deux possibilitées pour référencer quelque chose :
+		    <ul>
+			<li>lier une url, en utilisant <code><b>&lt;url&gt;</b></code>...<code><b>&lt;/url&gt;</b></code></li>
+			<li>lier à une référence interne, en utilisant <code><b>&lt;ref id="RefID"&gt;</b>your text<b>&lt;/ref&gt;</b></code></li>
+		    </ul>
+
+		    <section name="Internal References">
+			
+			Vous pouvez référencer des parties ou des sections, en utilisant leur attribut <i>name</i> comme ID; ou vous
+			pouvez définir des points d'ancrages, en utilisante le tag <i>label</i> :
+			<listing><code><b>&lt;label id=&quot;RefID&quot;&gt;</b></listing>
+	            </section>
+                </section>		    
+
+		<section name="Figure with legends">
+
+                  You can add legends to an image which are autmatically drawn and positioned. You can see an example <ref id="Introduction">here</ref>.  The advantage is that when you need to translate your xlp files, it is enough to translate the &quot;legend&quot; tags to update the figures. The other advantage is that it is easy to do and usually faster than to draw manually with gimp :)
+		  <br>
+			Vous pouvez inclure une figure avec légendes avec les tags suivants : 
+			<listing>
+		        <code>&lt;legendfig src=&quot;helpviewer-200.tiff&quot;&gt;<br>
+		        &lt;legend x=&quot;113&quot; y=&quot;31&quot;&gt;Click to view the index&lt;/legend&gt;<br>
+		        ... (etc.)<br>
+		        &lt;/legendfig&gt;<br></code>
+			</listing>
+			<br>
+                        The attribute &quot;src&quot; indicates the file image to be used and the tag &quot;legend&quot; determines the designated legends.
+                        The attributes &quot;x&quot; and &quot;y&quot; are the positions, in pixels, of the target pointed by the legend. To determine these attributes, you can load the images in a program like gimp, the mouse coordinates should be shown somewhere :)
+		</section>
+		
+
+	</section>

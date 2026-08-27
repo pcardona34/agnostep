@@ -1,0 +1,16 @@
+{\rtf1\ansi\ansicpg10000\cocoartf102{\fonttbl\f0\fswiss Helvetica;}
+\f0\fs32\b\pard\tx0\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\ql \uc0 INK \fs24\b0 \uc0 is the GNUstep text editor. It is based on the GNUstep implementation of \b \uc0 NSText\b0 \uc0  which is still partialy based on work by \b \uc0 Daniel B*hringer\b0 \uc0 . His code is still used for the layout, which is now done in the class GSSimpleLayoutManager.\par
+\par
+What this application already does is laying out text (plain or RTF). You can modify the selection, format and text as with NeXT\rquote s NSText class. There are problems remaining however (pasting newline characters at the end of a paragraph and performance on very large text)... but these problems will eventually fixed :-)\par
+\par
+Since the major rewrite of the GNUstep text system, by Alexander Malmberg, many of these initial problems have been rectified. Also, Axel \rquote Mikesch\rquote  Katerbau\rquote s recent work on RTFProducer, has added support for saving rtfd files, and greatly improved the conciseness, and correctness of rtf files saved from within Ink.  \par
+\par
+Some annotations: \par
+\par
+At implementation level rtf is not treated different from rtfd since both are handled by NSAttributed string.\par
+\par
+Words wraps use the selectionGranularity configuration for word/paragraph boundry detection.\par
+\par
+Tabs are not treated differently from other characters but nevertheles work as expected thanks to the implementation of -sizeWithAttributes: and -drawAtPoint: (in plain mode tab information comes from [NSParagraphStyle defaultParagraphStyle]).\par
+\par
+}

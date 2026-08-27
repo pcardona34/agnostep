@@ -264,7 +264,8 @@ cd ../build || exit 1
 
 APPNAME="Ink"
 REPO="tests-examples"
-OWNER="gnustep"
+#OWNER="gnustep"
+OWNER="pcardona34"
 HUB="https://github.com"
 BUILD_DIR="gui"
 CONFIG_ARGS=""
@@ -366,14 +367,16 @@ sleep $SLEEP
 
 ##########################################
 ## SimpleAgenda
-### Repo/Release: github/poroussel: 0.4.7
+### Repo/Release: github/poroussel: 0.4.8
 ##########################################
 
 function install_simpleagenda()
 {
 clear
+
 APPNAME=SimpleAgenda
-RELEASE="0.4.7"
+RELEASE="0.4.8"
+ARCH_PATH="https://github.com/poroussel/simpleagenda/archive/refs/tags/v0.48.tar.gz"
 CONFIG_ARGS=""
 BUILD_ARGS=""
 INSTALL_ARGS=""
@@ -384,13 +387,18 @@ subtitulo
 cd ../build || exit 1
 
 printf "Fetching...\n"
-if [ -d simpleagenda ];then
-	cd simpleagenda
-	git pull
-else
-	git clone https://github.com/poroussel/simpleagenda.git
-	cd simpleagenda
+if [ -d simpleagenda* ];then
+	rm -fR simpleagenda*
 fi
+
+fetch "$ARCH_PATH"
+if [ -f v0.48.tar.gz ];then
+    gunzip v0.48.tar.gz && tar -xf v0.48.tar || exit 1
+    rm v0.48.tar
+fi
+
+cd simpleagenda-0.48 || exit 1
+
 clear
 subtitulo
 ok "$APPNAME: Fetched"

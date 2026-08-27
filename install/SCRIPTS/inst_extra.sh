@@ -86,6 +86,7 @@ Check with space bar the Applications you want to install." 20 70 13 \
 "Graphos" "Vector Drawing" off \
 "Grr" "Günters Reliable RSS Reader" off \
 "LaternaMagica" "Image Collection Viewer" off \
+"LuserNET" "News Reader for GNUstep" off \
 "NetSurf" "NetSurf Web Browser ported to GNUstep" off \
 "PikoPixel" "Pixel Art Editor" off \
 "Player" "A Video Player from GSDE" off \
@@ -133,6 +134,11 @@ case "$i" in
 	remove_ifx_app "LaternaMagica"
 	install_laternamagica
 	update_info_plist LaternaMagica;;
+"LuserNET")
+	printf "You chose LuserNET\n"
+	remove_ifx_app "LuserNET"
+	install_lusernet
+	update_info_plist LuserNET;;
 "NetSurf")
 	printf "You chose NetSurf\n"
 	remove_ifx_app "NetSurf"

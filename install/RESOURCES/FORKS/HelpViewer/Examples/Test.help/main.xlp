@@ -1,0 +1,28 @@
+<document>
+
+<header>
+<title>Test Document</title>
+</header>
+
+
+<plain name="Root">
+
+       <section name="first section">
+
+       <p>Paragraph: &lt;b&gt;hallo</p>
+       <br>
+       Kn&uuml;ppel<br>
+       Entity: Perch&eacute;<br>
+       Numeric Entity: Perch&#x00e9;
+       <pre>Preformatted</pre>
+
+       </section>
+
+<chapter src="text-no-enc.xlp" name="Text No Encoding"></chapter>
+<chapter src="text-utf8.xlp" name="Text UTF-8"></chapter>
+<chapter src="text-Latin1.xlp" name="Text Latin1"></chapter>
+<chapter src="text-Latin9.xlp" name="Text Latin9"></chapter>
+
+</plain>
+
+</document>

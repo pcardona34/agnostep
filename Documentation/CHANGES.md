@@ -12,20 +12,23 @@ Do not try nor report any issue until a release is tagged Stable.
 
 See Unstable branch until now.
 
-- AgnostepManager: release 0.3. Full French localization (help bundle, UI and Info Panel) - Misc. in help bundle.
-- Birthday: release 0.2. Full French Localization (help bundle, UI and Info Panel)
-- Dico: release 0.2. Full French Localization (UI and Info Panel)
-- Launcher: release 0.2. Full French localization (help bundle, UI and Info Panel)
-- Meteo: release 0.2. Full French Localization (UI and Info Panel)
-- Mixer: release 0.7.1. Full French Localization (UI and Info Panel)
-- OpenDisk: release 0.2. Full French Localization (Help bundle, UI and Info Panel)
-- Pass: release 0.2. Added Edit button and action to the List Panel. Full French Localization (help bundle, UI and Info Panel)
-- Printer: release 0.2. Full French Localization (Help bundle, UI and Info Panel)
-- SaveLink: release 0.2. Full French Localization (Help bundle, UI and Info Panel)
-- ScreenLock: release 0.2. Full French Localization (Help bundle, UI and Info Panel)
-- Sound: release 0.2. Full French Localization (Help bundle, UI and Info Panel)
-- Updater: release 0.2. Full French Localization (Help bundle, UI and Info Panel)
-- UpMem: release 0.2. Full French Localization (UI and Info Panel)
+- Full French Localization of the Native Apps, it means: UI, Info Panel, Help   
+bundle if there.  
+Are concerned: AgnostepManager, Birthday, Dico, Launcher, Meteo, 
+Mixer, OpenDisk, Pass, Printer, SaveLink, ScreenLock, Sound, Updater, UpMem.
+- Full French Localization of several Core Apps as forked in purpose.   
+Are concerned: HelpViewer, Ink... (to be completed: see Roadmap of rel. 3)
+
+- AgnostepManager: Misc. in help bundle contents.
+- Pass: release 0.2. Added Edit button and action to the List Panel.
+- HelpViewer (forked): removed the useless Bookshelf Button as Help bundles are  
+provided within respective apps. 
+- Fixed an issue within misc_info.sh: path of INFOS folder was broken since  
+Agnostep-theme was included in the core Agnostep project.
+- Added installation of LuserNET in Extra apps.
+- Updated SimpleAgenda to 0.48 stable release.
+
+- More todo: see Roadmap of future Rel. 3.
 
 ### Changes of the Release Candidate 2.0.4
 

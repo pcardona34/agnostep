@@ -25,7 +25,7 @@ fi
 LA=`pwd`
 THEME=$(defaults read NSGlobalDomain GSTheme | awk '{print $3}')
 APP_DIR=$(gnustep-config --variable=GNUSTEP_LOCAL_APPS)
-INFO="../build/agnostep-theme/install/RESOURCES/INFOS/Info-gnustep.plist_${APPNAME}"
+INFO="RESOURCES/INFOS/Info-gnustep.plist_${APPNAME}"
 
 if [ "$THEME" != "AGNOSTEP" ] || [ -z "$APPNAME" ];then
 	printf "No Info updating.\n"

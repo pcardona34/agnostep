@@ -1,0 +1,15 @@
+/* TRANSLATORS: Make sure to quote all translated strings if
+   they contain spaces or non-ASCII characters.  */
+
+"Preferences..." = "Preferences...";
+"Open Recent" = "Open Recent";
+"Print ..." = "Print ...";
+"Open ..." = "Open ...";
+"Main Menu" = "Main Menu";
+"Clear List" = "Clear List";
+"Help..." = "Help...";
+"Info Panel..." = "Info Panel...";
+Services = Services;
+Quit = Quit;
+Hide = Hide;
+Info = Info;

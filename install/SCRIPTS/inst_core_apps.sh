@@ -53,6 +53,18 @@ trap "rm -f $TEMPFILE" EXIT
 . SCRIPTS/fetcher.sh
 . SCRIPTS/functions_inst_core_apps.sh
 
+function install_forked
+ {
+ FORKED="$1"
+ FORKS=RESOURCES/FORKS
+
+ if [ -n "$1" ];then
+      cd ${FORKS}/${FORKED} || exit 1
+      ./install.sh
+      cd $_PWD
+ fi
+ }
+
 ### End of Include functions
 ################################
 
@@ -139,12 +151,14 @@ case "$i" in
 "HelpViewer")
     printf "You chose HelpViewer\n"
     remove_ifx_app "HelpViewer"
-    install_helpviewer
+    #install_helpviewer
+    install_forked "HelpViewer"
     update_info_plist "HelpViewer";;
 "Ink")
 	printf "You chose Ink\n"
 	remove_ifx_app "Ink"
-	install_ink
+	#install_ink
+    install_forked "Ink"
 	update_info_plist "Ink";;
 "InnerSpace")
 	printf "You chose InnerSpace\n"

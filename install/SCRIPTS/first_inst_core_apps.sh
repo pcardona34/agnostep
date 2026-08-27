@@ -49,6 +49,16 @@ trap "rm -f $TEMPFILE" EXIT
 . SCRIPTS/functions_prep.sh
 . SCRIPTS/functions_inst_core_apps.sh
 
+function install_forked
+{
+FORKED="$1"
+FORKS=RESOURCES/FORKS
+if [ -n "$1" ];then
+       cd ${FORKS}/${FORKED} || exit 1
+       ./install.sh
+        cd $_PWD
+fi
+}
 
 ### End of Include functions
 ################################
@@ -80,8 +90,10 @@ install_aclock
 install_addressmanager
 install_batmon
 install_gnumail_svn
-install_helpviewer
-install_ink
+install_forked "HelpViewer"
+#install_helpviewer
+install_forked "Ink"
+#install_ink
 install_innerspace
 install_simpleagenda
 install_terminal

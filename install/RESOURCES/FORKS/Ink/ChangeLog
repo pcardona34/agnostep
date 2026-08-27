@@ -1,0 +1,158 @@
+2012-10-03  Wolfgang Lux  <wolfgang.lux@gmail.com>
+
+	* AppDelegate.m (-openSelection:userData:error:): Update change
+	count of a fresh document created with the Open Selection service,
+	so it cannot be accidentally closed.
+
+2011-12-23  Eric Wasylishen  <ewasylishen@gmail.com>
+
+	* English.lproj/MainMenu.gorm: Connect "Print" to printDocument:
+	instead of print: so the document's print info is used, so changes
+	made in the page layout panel are used for printing.
+
+2011-04-26  Eric Wasylishen  <ewasylishen@gmail.com>
+
+	* Document.m: Call -[NSTextView breakUndoCoalescing] when
+	a save is performed so that the first characters typed after
+	a save mark the document as having changes.
+
+2011-03-13  Eric Wasylishen  <ewasylishen@gmail.com>
+
+	* English.lproj/MainMenu.gorm:
+	Change Cmd+u from revert document to underine.
+	Add a "Check spelling automatically" menu item.
+
+2011-01-20  Wolfgang Lux  <wolfgang.lux@gmail.com>
+
+	* GNUmakefile:
+	* InkInfo.plist:
+	* English.lproj/MainMenu.gorm/data.classes:
+	* English.lproj/MainMenu.gorm/objects.gorm:
+	* AppDelegate.h:
+	* AppDelegate.m:
+	Add an application delegate to make Ink a service provider. The
+	services allow opening new documents with the current selection
+	and for the selected file, respectively.
+
+2010-08-02  Wolfgang Lux  <wolfgang.lux@gmail.com>
+
+	* Document.m (-windowControllerDidLoadNib:):
+	Enable the standard NSTextView find panel.
+	Also enable smart insert and delete.
+
+	* English.lproj/MainMenu.gorm:
+	Add a Find menu.
+
+2010-05-15  Wolfgang Lux  <wolfgang.lux@gmail.com>
+
+	* English.lproj/MainMenu.gorm:
+	Add an Open Recent menu to the Document menu.
+	Add a few more key equivalents and fix the key equivalents of the
+	Larger and Smaller Font menu items (the latter was conflicting
+	with the Save menu item).
+
+2010-02-02  Gregory Casamento  <greg.casamento@gmail.com>
+
+	* Ink_app.ico: Windows icon for Ink.
+	* GNUmakefile: Modified to copy ico file into app wrapper.
+	
+2008-11-26  Wolfgang Lux  <wolfgang.lux@gmail.com>
+
+	* English.lproj/MainMenu.gorm: Use keyboard equivalents Cmd-z and
+	Cmd-Z for undo and redo menu items.
+
+2008-06-09  Fred Kiefer <FredKiefer@gmx.de>
+
+	* English.lproj/MainMenu.gorm: Change action close: to performClose:
+	
+2007-10-01  Fred Kiefer <FredKiefer@gmx.de>
+
+	* Document.m (-textDidChange:): Only change update count if there
+	is no undo manager. Patch by Wolfgang Lux <wolfgang.lux@gmail.com>. 
+
+2007-02-05  Fred Kiefer <FredKiefer@gmx.de>
+
+	* Document.m (-windowControllerDidLoadNib:):
+	Allow undo.
+	* English.lproj/MainMenu.gorm: Converted to current Gorm format and add undo
+	menu entries.
+	
+2005-10-14  Fred Kiefer <FredKiefer@gmx.de>
+
+	* Document.m (-windowControllerDidLoadNib:):
+	Added a vertical ruler view.
+	
+2005-07-17  Adam Fedor  <fedor@gnu.org>
+
+	* Convert Ink to use gorm files.
+	* Document.m: Remove programmatic window creating. Add nib name.
+	* GNUmakefile: Add gorm resource files.
+	* main.m: Remove programmatic gui.
+	* Readme.rtf: Update.
+	* Document.gorm, English.lproj: New.
+	(Patches from Rob Burns).
+
+Mon Apr 28 13:22:49 2003  Nicola Pero  <n.pero@mi.flashnet.it>
+
+	* Document.m ([Document -makeWindow]): Do not make the document
+	the window delegate.
+
+2003-04-24  Adam Fedor  <fedor@gnu.org>
+
+	* InkInfo.plist: Add new Icon images
+	* GNUmakefile: Install new images.
+	(Icons and patches from Rob Burns <rburns@softhome.net>).
+
+2003-04-09  Adam Fedor  <fedor@gnu.org>
+
+	* main.m: In application delegate implement ([application:openFile:])
+	so we will open rtf files; 
+
+2002-11-01  Adam Fedor  <fedor@gnu.org>
+
+	* main.m: Don't set NSDocumentController as app delegate
+	(set automatically now in gui).
+
+2002-04-03  Fred Kiefer <FredKiefer@gmx.de>
+
+	* Document.m
+	Added a horizontal ruler view in [makeWindow].
+	* main.m
+	Restructured all the menu creation. Release the delegate when no
+	longer needed in [applicationDidFinishLaunching:]. 
+	
+Wed Feb 20 19:25:20 2002  Nicola Pero  <nicola@brainstorm.co.uk>
+
+	Removed the memory panel, now available in the gui library
+	for all applications.
+	* GNUmakefile: Do not link to the memory panel classes; do
+	not compile the memory panel.
+	* main.m: Do not include MemoryPanel.h
+	* main.m ([MyDelegate -applicationWillFinishLaunching:]): Do not
+	add the memory panel submenu.  Click on the application icon in
+	the info panel to get the memory panel now.
+	
+	* GNUmakefile (Ink_HEADERS): variable unused removed.
+
+2001-12-09  Fred Kiefer <FredKiefer@gmx.de>
+
+	* InkInfo.plist
+	Added MIME types.
+	* Ink.desktop
+	New desktop link file generated with pl2link.
+	
+Mon Oct 22 16:48:19 2001  Nicola Pero  <nicola@brainstorm.co.uk>
+
+	* Document.m ([Document -makeWindowControllers]): Fixed memory
+	leak (Patch by Ludovic Marcotte <ludovi@Sophos.ca>).
+
+Mon Oct 22 16:46:21 2001  Nicola Pero  <nicola@brainstorm.co.uk>
+
+	* Document.m ([Document -makeWindow]): Reverted last change
+	(Patch by Ludovic Marcotte <ludovi@Sohpos.ca>).
+
+Thu Oct 18 15:11:08 2001  Nicola Pero  <nicola@brainstorm.co.uk>
+
+	* Document.m ([Document -makeWindow]): Fixed memory leak 
+	(Found by Ludovic Marcotte <ludovic@Sophos.ca>). 
+

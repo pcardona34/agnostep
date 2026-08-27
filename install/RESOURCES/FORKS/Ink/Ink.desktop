@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.1
+Name=Ink
+Type=Application
+Path=/usr/src/gnustep/usr-apps/examples/gui/Ink
+#TryExec=Ink.app
+Comment=An Example of how to use NSTextView
+Exec=openapp Ink.app
+Icon=Ink_app.tiff
+MimeType=text/plain;text/rtf;

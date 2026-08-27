@@ -1,0 +1,146 @@
+{
+    APPLICATIONICON = "HelpViewer.tiff";
+    "APP_DOCUMENT_BASED" = YES;
+    "APP_TYPE" = GORM;
+    "BUILDER_PARALLELISM" = 2;
+    "BUILDER_TARGETS" = (
+	all,
+	install,
+	uninstall,
+	clean,
+	distclean,
+	dist
+    );
+    "BUNDLE_IDENTIFIER" = "org.gnustep.HelpViewer";
+    "CLASS_FILES" = (
+	"BRCell.m",
+	"BrowserCell.m",
+	"Controller.m",
+	"FigureCell.m",
+	"HandlerStructureXLP.m",
+	"Label.m",
+	"Legend.m",
+	"HelpDocument.m",
+	"ModNSString.m",
+	"NoteCell.m",
+	"Page.m",
+	"Parser.m",
+	"Section.m",
+	"Table.m",
+	"TextFormatterXLP.m",
+	"TextViewCell.m",
+	"ViewCell.m"
+    );
+    COMPILEROPTIONS = "";
+    CPPOPTIONS = "";
+    "CREATION_DATE" = "2026-02-19 23:10:56 +0100";
+    "DOCU_FILES" = (
+    );
+    FRAMEWORKS = (
+    );
+    "HEADER_FILES" = (
+	"BRCell.h",
+	"BrowserCell.h",
+	"Controller.h",
+	"FigureCell.h",
+	"HandlerStructureXLP.h",
+	"Label.h",
+	"Legend.h",
+	"HelpDocument.h",
+	"ModNSString.h",
+	"NoteCell.h",
+	"Page.h",
+	"Parser.h",
+	"Section.h",
+	"Table.h",
+	"TextFormatterXLP.h",
+	"TextViewCell.h",
+	"ViewCell.h",
+	"HandlerStructure.h"
+    );
+    IMAGES = (
+	"Back.tiff",
+	"Bookshelf.tiff",
+	"caution.png",
+	"chapter.tiff",
+	"errorloading.tiff",
+	"helpviewer-200.tiff",
+	"HelpViewer.tiff",
+	"Icon-hlpd.tiff",
+	"Index.tiff",
+	"information.png",
+	"listing.png",
+	"Logo.tiff",
+	"note.png",
+	"notloaded.tiff",
+	"part.tiff",
+	"Point.tiff",
+	"Point2.tiff",
+	"Search.tiff"
+    );
+    INSTALLDIR = "$(HOME)/GNUstep";
+    INTERFACES = (
+	"MainMenu.gorm",
+	"HelpDocument.gorm"
+    );
+    LANGUAGE = English;
+    LIBRARIES = (
+	"gnustep-base",
+	"gnustep-gui"
+    );
+    LINKEROPTIONS = "";
+    "LOCALIZED_RESOURCES" = (
+    );
+    MAININTERFACE = "MainMenu.gorm";
+    MAKEFILEDIR = "$(GNUSTEP_MAKEFILES)";
+    "OBJC_COMPILEROPTIONS" = "";
+    "OTHER_RESOURCES" = (
+    );
+    "OTHER_SOURCES" = (
+	"main.m"
+    );
+    "PRINCIPAL_CLASS" = NSApplication;
+    "PROJECT_AUTHORS" = (
+	"Nicolas Roard",
+	"Riccardo Mottola"
+    );
+    "PROJECT_COPYRIGHT" = "Copyright (C) 2023 Nicolas Roard, 2020-2026 Riccardo Mottola";
+    "PROJECT_COPYRIGHT_DESC" = "This program is released under the GNU GPL 2 or later";
+    "PROJECT_CREATOR" = "Riccardo Mottola";
+    "PROJECT_DESCRIPTION" = "GNUstep Help Viewer";
+    "PROJECT_DOCUMENTTYPES" = (
+	{
+	    NSDocumentClass = HelpDocument;
+	    NSHumanReadableName = "GNUstep Help Document";
+	    NSIcon = "Icon-hlpd.tiff";
+	    NSName = help;
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		help
+	    );
+	}
+    );
+    "PROJECT_GROUP" = "No group avaliable!";
+    "PROJECT_MAINTAINER" = "Riccardo Mottola";
+    "PROJECT_NAME" = HelpViewer;
+    "PROJECT_RELEASE" = "0.4";
+    "PROJECT_SUMMARY" = "No summary avaliable!";
+    "PROJECT_TYPE" = Application;
+    "PROJECT_URL" = "http://www.roard.com/helpviewer";
+    "SEARCH_HEADER_DIRS" = (
+    );
+    "SEARCH_LIB_DIRS" = (
+    );
+    SUBPROJECTS = (
+    );
+    "SUPPORTING_FILES" = (
+	"GNUmakefile.preamble",
+	GNUmakefile,
+	"GNUmakefile.postamble",
+	"HelpViewerInfo.plist"
+    );
+    "USER_LANGUAGES" = (
+	BritainEnglish,
+	English
+    );
+}

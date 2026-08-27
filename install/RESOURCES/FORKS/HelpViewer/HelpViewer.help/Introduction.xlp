@@ -1,0 +1,19 @@
+ 	<section name="What is this program ?">
+		It is a program that allows visualization of on-line help. It can pe used for GNUstep programs.
+		<br>
+		This program is distributed under the GNU Public Licence (GPL).
+	</section>
+
+	<section name="How does it work ?">
+		<legendfig src="helpviewer-200.tiff">
+			<legend x="113" y="31" >Click to see the index</legend>
+			<legend x="59"  y="76" >Click on a topic in the content table browser</legend>
+			<legend x="144" y="31" >Click to return</legend>
+			<legend x="9"   y="66" >Move this knob to see the entire list of topics</legend>
+			<legend x="180" y="31" >Click here to see more guides</legend>
+			<legend x="105" y="205">The guide is displayed here</legend>
+			<legend x="9"   y="184">Moce this knob to see the entire text</legend>
+			<legend x="131" y="267">You can click on the links</legend>
+			<legend x="78"  y="31">Click here to search something</legend>
+		</legendfig>
+	</section>

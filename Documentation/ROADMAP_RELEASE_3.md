@@ -2,10 +2,56 @@
 
 ## GNUstep Applications to add / enhance
 
-- [ ] Add application: LUserNET
-- [ ] New release of SimpleAgenda: 0.48
+- [x] Add application: LUserNET
+- [x] New release of SimpleAgenda: 0.48
   https://github.com/poroussel/simpleagenda/archive/refs/tags/v0.48.tar.gz
-- [ ] Try to build [Oolite](https://github.com/OoliteProject/oolite) depending on modern runtime: see below.
+
+## Enhancing some apps:
+
+- [x] Pass.app (0.2): add Edit button and action on the list Panel after a search.
+
+## L18N: French target
+
+- [ ] French interface provided for all Core Apps and Native apps.
+  - [x] Native apps: AgnostepManager, Birthday, Dico, Launcher  
+Meteo, Mixer, OpenDisk, Pass, Printer, SaveLink, ScreenLock,  
+Sound, Updater, UpMem.
+  - [x] Help bundles of the Native Apps  all translated to French.
+  - [ ] FORKED Core Apps: FlexiSheet, Gemas, Grr, HelpViewer, 
+Ink, Innerspace, Player, PRICE, ScanImage, SystemPreferences.
+  - [ ] Documentation: namely README, INSTALL translated too.
+
+> [!Note]
+> Of course, if some contributor wish to add its language, he/she is welcome.
+
+## Testing
+
+- [ ] All tests with a fresh install on a Pi 500.
+- [ ] All tests with a new amd-64 Debian netinstall iso.
+- [ ] All tests with an Intel MacBook.
+
+## Create and publish the new Release
+
+- [ ] Merge with main branch and tag SOURCE Beta release: 3.0.0 will begin a new cycle of tests.
+- [ ] RC release...
+
+> [!WARNING]
+> Due to limitation size, I cannot publish ISOs nor SD-Card images on Github.
+> If you could help on this, let me know.
+
+---
+
+# Postponed to a future release (target: 4)
+
+## Other apps to add
+
+- [ ] Try to build [Oolite](https://github.com/OoliteProject/oolite) depending on a modern runtime.
+
+## Enhancing some apps:
+
+- [ ] Sound.app and Mixer.app: dynamic guess of the sound card and the Volume controller
+- [ ] Launcher.app (not depending on GWorkspace).
+- [ ] Maybe extending supported languages within Gemas Editor: markdown, bash.
 
 ## Native applications to create
 
@@ -24,28 +70,6 @@
     - [ ] Maybe another WM like [uroswm](https://github.com/AlessandroSangiuliano/uroswm) by Alessandro Sangiuliano? That could involve a radical change on GNUstep runtime (see below).
 - [ ] If needed, a try to build a modern GNUstep with libobjc2 from sources on Debian! 
 
-
-## Enhancing some apps:
-
-- [x] Pass.app (0.2): add Edit button and action on the list Panel after a search.
-- [ ] Sound.app and Mixer.app: dynamic guess of the sound card and the Volume controller
-- [ ] Launcher.app (not depending on GWorkspace).
-- [ ] Maybe extending supported languages within Gemas Editor: markdown, bash.
-
-## L18N: French target
-
-- [ ] French interface provided for all Core Apps and Native apps.
-  - [x] Native apps: AgnostepManager, Birthday, Dico, Launcher  
-Meteo, Mixer, OpenDisk, Pass, Printer, SaveLink, ScreenLock,  
-Sound, Updater, UpMem.
-  - [x] Help bundles of the Native Apps  all translated to French.
-  - [ ] Core Apps: FlexiSheet, Gemas, Grr, HelpViewer, Ink,   
-Innerspace, Player, PRICE, ScanImage, SystemPreferences.
-  - [ ] Documentation: namely README, INSTALL translated too.
-
-> [!Note]
-> Of course, if some contributor wish to add its language, he/she is welcome.
-
 ## Universal Package for Installer
 
 The idea is to propose an Universal way of installing a GNUstep app...
@@ -54,18 +78,3 @@ The idea is to propose an Universal way of installing a GNUstep app...
 - [ ] Specs
 - [ ] First Universal Package
 - [ ] Adapt Installer.app to handle those UPs.
-
-## Testing
-
-- [ ] All tests with a fresh install on a Pi 500.
-- [ ] All tests with a new amd-64 Debian netinstall iso.
-- [ ] All tests with an Intel MacBook.
-
-## Create and publish the new Release
-
-- [ ] SOURCE Beta release: 3.0.0 will begin a new cycle of tests.
-- [ ] RC release...
-
-> [!WARNING]
-> Due to limitation size, I cannot publish ISOs nor SD-Card images on Github.
-> If you could help on this, let me know.

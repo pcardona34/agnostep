@@ -1,0 +1,27 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    Controller = {
+	Actions = (
+	    "showInfoPanel:"
+	);
+	Outlets = (
+	    infoMenu,
+	    helpMenu,
+	    servicesMenu,
+	    helpMenu,
+	    servicesMenu
+	);
+	Super = NSObject;
+    };
+    FirstResponder = {
+	Actions = (
+	    "back:",
+	    "bookshelf:",
+	    "index:",
+	    "openFile:",
+	    "search:",
+	    "showInfoPanel:"
+	);
+	Super = NSObject;
+    };
+}

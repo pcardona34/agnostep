@@ -1,0 +1,65 @@
+{
+    "## Comment" = "Do NOT change this file, Gorm maintains it";
+    Controller = {
+	Actions = (
+	    "openFile:",
+	    "search:",
+	    "index:",
+	    "back:",
+	    "bookshelf:",
+	    "print:"
+	);
+	Outlets = (
+	    query,
+	    search,
+	    index,
+	    back,
+	    bookshelf,
+	    textview,
+	    tocview,
+	    window,
+	    infoMenu,
+	    helpMenu,
+	    servicesMenu
+	);
+	Super = NSObject;
+    };
+    FirstResponder = {
+	Actions = (
+	    "back:",
+	    "bookshelf:",
+	    "browserClick:",
+	    "find:",
+	    "index:",
+	    "openFile:",
+	    "search:"
+	);
+	Super = NSObject;
+    };
+    HelpDocument = {
+	Actions = (
+	    "find:",
+	    "browserClick:",
+	    "print:"
+	);
+	Outlets = (
+	    queryField,
+	    findButton,
+	    index,
+	    back,
+	    bookshelf,
+	    textView,
+	    tocBrowser,
+	    handler,
+	    queryField,
+	    findButton,
+	    index,
+	    back,
+	    bookshelf,
+	    textView,
+	    tocBrowser,
+	    "<HandlerStructure>"
+	);
+	Super = NSDocument;
+    };
+}

@@ -261,6 +261,51 @@ _build
 sleep $SLEEP
 }
 
+##################################################
+## LuserNET
+### Repo/Release: Salsa debian
+##################################################
+
+function install_lusernet
+{
+clear
+
+APPNAME=LuserNET
+RELEASE=""
+HUB="https://salsa.debian.org/gnustep-team/lusernet.app"
+DIR="lusernet.app"
+CONFIG_ARGS=""
+BUILD_ARGS=""
+INSTALL_ARGS=""
+
+STR="$APPNAME $RELEASE"
+subtitulo
+
+cd ../build || exit 1
+subtitulo
+
+printf "Fetching...\n"
+if [ ! -d $DIR ];then
+	git clone $HUB
+	cd $DIR
+else
+	cd $DIR
+	git pull
+fi
+clear
+subtitulo
+ok "$APPNAME fetched"
+
+
+printf "Patching...\n"
+is_quilt
+set_quilt
+quilt push -a
+
+_build
+sleep $SLEEP
+}
+
 
 ########################## - N - ########################## 
 

@@ -1,0 +1,41 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {back = id; bookshelf = id; index = id; openFile = id; search = id; }; 
+            CLASS = Controller; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                back = id; 
+                bookshelf = id; 
+                helpMenu = id; 
+                index = id; 
+                infoMenu = id; 
+                query = id; 
+                search = id; 
+                servicesMenu = id; 
+                textview = id; 
+                tocview = id; 
+                window = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {browserClick = id; print = id; }; 
+            CLASS = HelpDocument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                back = id; 
+                bookshelf = id; 
+                handler = id; 
+                index = id; 
+                query = id; 
+                search = id; 
+                textView = NSTextView; 
+                tocBrowser = NSBrowser; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }
+    ); 
+    IBVersion = 1; 
+}

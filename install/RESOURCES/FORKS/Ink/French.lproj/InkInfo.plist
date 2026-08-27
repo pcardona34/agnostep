@@ -1,0 +1,70 @@
+{
+  ApplicationName = "Ink";
+  ApplicationDescription = "Un exemple d'utilisation de NSTextView";
+  ApplicationRelease = "0.1";
+  Authors = ("Fred Kiefer <fredkiefer@gmx.de>");
+  Copyright = "Copyright (c) 2000 Fred Kiefer <fredkiefer@gmx.de>";
+  CopyrightDescription = "Ce programme est distribu\U00E9 sous la licence publique g\U00E9n\U00E9rale GNU"; 
+  NSIcon = Ink_app;
+  CFBundleIdentifier = org.gnustep.Ink;
+  CFBundleURLTypes = (
+    {
+      CFBundleTypeRole = Editor;
+      CFBundleURLSchemes = (
+	file
+      );
+    }
+  );
+  NSServices = (
+        {
+             NSMenuItem = { default = "Ink/Ouvrir la s\U00E9lection"; };
+	     NSMessage = openSelection;
+	     NSPortName = Ink;
+	     NSSendTypes = (
+	          NSStringPboardType,
+		  NSRTFPboardType,
+		  NSRTFDPboardType
+	     );
+        },
+        {
+             NSMenuItem = { default = "Ink/Ouvrir le fichier"; };
+	     NSMessage = openFile;
+	     NSPortName = Ink;
+	     NSSendTypes = ( 
+	          NSStringPboardType,
+		  NSFilenamesPboardType
+	     );
+        }
+  );
+  NSTypes = (
+        {
+             NSName = "rtf";
+             NSHumanReadableName = "RTF Document";
+             NSUnixExtensions = ("rtf");
+             NSDOSExtensions = ("rtf");
+	     NSMIMETypes = ("text/rtf");
+	     NSIcon = FileIcon_rtf;
+             NSRole = Editor;
+             NSDocumentClass = Document;
+        },
+        {
+             NSName = "rtfd";
+             NSHumanReadableName = "RTFD Document";
+             NSUnixExtensions = ("rtfd");
+             NSDOSExtensions = ("rtfd");
+	     NSIcon = FileIcon_rtf;
+             NSRole = Editor;
+             NSDocumentClass = Document;
+        },
+        {
+             NSName = "text";
+             NSHumanReadableName = "Text Document";
+             NSUnixExtensions = ("txt");
+             NSDOSExtensions = ("txt");
+	     NSMIMETypes = ("text/plain");
+             NSIcon = FileIcon_txt;
+             NSRole = Editor;
+             NSDocumentClass = Document;
+        }
+  );
+}

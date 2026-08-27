@@ -1,0 +1,34 @@
+{
+    ApplicationDescription = "Consultation de l'aide dans GNUstep";
+    ApplicationIcon = "HelpViewer.tiff";
+    ApplicationName = HelpViewer;
+    ApplicationRelease = "0.4";
+    ApplicationURL = "http://www.roard.com/helpviewer";
+    Authors = (
+	"Nicolas Roard",
+	"Riccardo Mottola"
+    );
+    CFBundleIdentifier = "org.gnustep.HelpViewer";
+    Copyright = "Copyright (C) 2023 Nicolas Roard, 2020-2026 Riccardo Mottola";
+    CopyrightDescription = "Ce programme est distribu\U00E9 sous la licence g\U00E9n\U00E9rale publique GNU GPL 2 ou ult\U00E9rieure";
+    FullVersionID = "0.4";
+    GSHelpType = help;
+    NSExecutable = HelpViewer;
+    NSIcon = "HelpViewer.tiff";
+    NSMainNibFile = "MainMenu.gorm";
+    NSPrincipalClass = NSApplication;
+    NSRole = Application;
+    NSTypes = (
+	{
+	    NSDocumentClass = HelpDocument;
+	    NSHumanReadableName = "GNUstep Help Document";
+	    NSIcon = "Icon-hlpd.tiff";
+	    NSName = help;
+	    NSRole = Viewer;
+	    NSUnixExtensions = (
+		help
+	    );
+	}
+    );
+    URL = "http://www.roard.com/helpviewer";
+}

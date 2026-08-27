@@ -1,0 +1,20 @@
+{
+    ApplicationDescription = "News reader";
+    ApplicationName = LuserNET;
+    ApplicationRelease = "0.4.3";
+    CFBundleIdentifier = "org.malmberg.LuserNET";
+    Authors = (
+	"Alexander Malmberg <alexander@malmberg.org>"
+    );
+    Copyright = "Copyright 2002 Alexander Malmberg
+2014-2015 others";
+    CopyrightDescription = "GNU General Public License";
+    GSMainMarkupFile = "";
+    NOTE = "Automatically generated, do not edit!";
+    NSExecutable = LuserNET;
+    NSIcon = "News.app.tiff";
+    NSMainNibFile = "";
+    NSMainStoryboardFile = "";
+    NSPrincipalClass = NSApplication;
+    URL = "http://w1.423.telia.com/~u42308495/alex/LuserNET/LuserNET.html";
+}
