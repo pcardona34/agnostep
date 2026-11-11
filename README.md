@@ -1,5 +1,5 @@
 # agnostep
-How build a complete AGNoStep Desktop
+How to build a complete AGNoStep Desktop
 
 With AGNoStep 3rd release, the AGNoStep project will be dispatched in several modules:
 - agnostep-desktop (rel. 3 not yet published): the core Desktop. It will provide a choice between Classic and Modern features.
